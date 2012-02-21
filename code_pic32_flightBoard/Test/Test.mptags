@@ -1,0 +1,1715 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.5.4	//
+!_TAG_REVISION_NAME	MCHPTags	//
+!_TAG_REVISION_VERSION	6.0.1	//
+ADC_XPOS::ADC_CH0_POS_SAMPLEA_AN11	C:\C32\MikroEMMB 256\Test\HardwareProfile.h	95;"	d	line:95
+ADC_YPOS::ADC_CH0_POS_SAMPLEA_AN10	C:\C32\MikroEMMB 256\Test\HardwareProfile.h	96;"	d	line:96
+ADDRESS_ERR	C:\C32\MikroEMMB 256\Microchip\Include\MDD File System\SD-SPI.h	223;"	m	line:223
+ADDRESS_ERR	C:\C32\MikroEMMB 256\Microchip\Include\MDD File System\SD-SPI.h	246;"	m	line:246
+ADDRESS_ERR	C:\C32\MikroEMMB 256\Microchip\Include\MDD File System\SD-SPI.h	279;"	m	line:279
+ADPCFG_XPOS::_PCFG13	C:\C32\MikroEMMB 256\Test\HardwareProfile.h	99;"	d	line:99
+ADPCFG_YPOS::AD1PCFGbits.PCFG12	C:\C32\MikroEMMB 256\Test\HardwareProfile.h	106;"	d	line:106
+ALLOW_DIRS	C:\C32\MikroEMMB 256\Test\FSconfig.h	83;"	d	line:83
+ALLOW_FILESEARCH	C:\C32\MikroEMMB 256\Test\FSconfig.h	66;"	d	line:66
+APPEND::"a"	C:\C32\MikroEMMB 256\Microchip\Include\MDD File System\FSIO.h	111;"	d	line:111
+APPENDPLUS::"a+"	C:\C32\MikroEMMB 256\Microchip\Include\MDD File System\FSIO.h	137;"	d	line:137
+APP_CMD	C:\C32\MikroEMMB 256\Microchip\Include\MDD File System\SD-SPI.h	433;"	e	line:433
+AT::(x,y)(_cx=(x),_cy=(y))	C:\C32\MikroEMMB 256\MMB\LCDTerminal.h	66;"	d	line:66
+ATTR_ARCHIVE::0x20	C:\C32\MikroEMMB 256\Microchip\Include\MDD File System\FSDefs.h	144;"	d	line:144
+ATTR_DIRECTORY::0x10	C:\C32\MikroEMMB 256\Microchip\Include\MDD File System\FSDefs.h	139;"	d	line:139
+ATTR_HIDDEN::0x02	C:\C32\MikroEMMB 256\Microchip\Include\MDD File System\FSDefs.h	118;"	d	line:118
+ATTR_LONG_NAME::0x0f	C:\C32\MikroEMMB 256\Microchip\Include\MDD File System\FSDefs.h	134;"	d	line:134
+ATTR_MASK::0x3f	C:\C32\MikroEMMB 256\Microchip\Include\MDD File System\FSDefs.h	150;"	d	line:150
+ATTR_READ_ONLY::0x01	C:\C32\MikroEMMB 256\Microchip\Include\MDD File System\FSDefs.h	113;"	d	line:113
+ATTR_SYSTEM::0x04	C:\C32\MikroEMMB 256\Microchip\Include\MDD File System\FSDefs.h	123;"	d	line:123
+ATTR_VOLUME::0x08	C:\C32\MikroEMMB 256\Microchip\Include\MDD File System\FSDefs.h	128;"	d	line:128
+Arc	C:\C32\MikroEMMB 256\Microchip\Graphics\Primitive.c	177;"	f	line:177	signature:(SHORT xL, SHORT yT, SHORT xR, SHORT yB, SHORT r1, SHORT r2, BYTE octant)
+Arc	C:\C32\MikroEMMB 256\Microchip\Include\Graphics\Primitive.h	282;"	p	line:282	signature:(SHORT xL, SHORT yT, SHORT xR, SHORT yB, SHORT r1, SHORT r2, BYTE octant)
+B7	C:\C32\MikroEMMB 256\Microchip\Include\MDD File System\SD-SPI.h	225;"	m	line:225
+B7	C:\C32\MikroEMMB 256\Microchip\Include\MDD File System\SD-SPI.h	248;"	m	line:248
+B7	C:\C32\MikroEMMB 256\Microchip\Include\MDD File System\SD-SPI.h	281;"	m	line:281
+BITMAP_EXTERNAL::EXTDATA	C:\C32\MikroEMMB 256\Microchip\Include\Graphics\Primitive.h	173;"	d	line:173
+BITMAP_FLASH	C:\C32\MikroEMMB 256\Microchip\Include\Graphics\Primitive.h	159;"	t	line:159
+BITMAP_HEADER	C:\C32\MikroEMMB 256\Microchip\Include\Graphics\Primitive.h	149;"	t	line:149
+BITMAP_RAM	C:\C32\MikroEMMB 256\Microchip\Include\Graphics\Primitive.h	169;"	t	line:169
+BL_LAT_BIT::_LATD2	C:\C32\MikroEMMB 256\Test\HardwareProfile.h	82;"	d	line:82
+BL_TRIS_BIT::_TRISD2	C:\C32\MikroEMMB 256\Test\HardwareProfile.h	81;"	d	line:81
+BSec	C:\C32\MikroEMMB 256\Microchip\MDD File System\FSIO.c	1012;"	l	line:1012
+BSec	C:\C32\MikroEMMB 256\Microchip\MDD File System\FSIO.c	1369;"	l	line:1369
+BSec	C:\C32\MikroEMMB 256\Microchip\MDD File System\FSIO.c	868;"	l	line:868
+BTN_A::_RB0	C:\C32\MikroEMMB 256\Test\HardwareProfile.h	134;"	d	line:134
+BTN_B::_RB1	C:\C32\MikroEMMB 256\Test\HardwareProfile.h	135;"	d	line:135
+BTN_C::_RB2	C:\C32\MikroEMMB 256\Test\HardwareProfile.h	136;"	d	line:136
+BTN_CP::_RA10	C:\C32\MikroEMMB 256\Test\HardwareProfile.h	138;"	d	line:138
+BTN_D::_RB3	C:\C32\MikroEMMB 256\Test\HardwareProfile.h	137;"	d	line:137
+BUSFRQ::100000ul	C:\C32\MikroEMMB 256\MMB\SerialEEPROM.c	49;"	d	line:49	file:
+BacklightOff::BL_LAT_BIT=0	C:\C32\MikroEMMB 256\Test\HardwareProfile.h	86;"	d	line:86
+BacklightOn::BL_LAT_BIT=1	C:\C32\MikroEMMB 256\Test\HardwareProfile.h	85;"	d	line:85
+Bar	C:\C32\MikroEMMB 256\Microchip\Graphics\Primitive.c	1392;"	f	line:1392	signature:(SHORT left, SHORT top, SHORT right, SHORT bottom)
+Bar	C:\C32\MikroEMMB 256\Microchip\Include\Graphics\Primitive.h	842;"	p	line:842	signature:(SHORT left, SHORT top, SHORT right, SHORT bottom)
+Bevel	C:\C32\MikroEMMB 256\Microchip\Graphics\Primitive.c	944;"	f	line:944	signature:(SHORT x1, SHORT y1, SHORT x2, SHORT y2, SHORT rad)
+Bevel	C:\C32\MikroEMMB 256\Microchip\Include\Graphics\Primitive.h	721;"	p	line:721	signature:(SHORT x1, SHORT y1, SHORT x2, SHORT y2, SHORT rad)
+BytesPerSec	C:\C32\MikroEMMB 256\Microchip\MDD File System\FSIO.c	1013;"	l	line:1013
+CARD_ECC_FAIL	C:\C32\MikroEMMB 256\Microchip\Include\MDD File System\SD-SPI.h	253;"	m	line:253
+CARD_IS_LOCKED	C:\C32\MikroEMMB 256\Microchip\Include\MDD File System\SD-SPI.h	249;"	m	line:249
+CCC_H	C:\C32\MikroEMMB 256\Microchip\Include\MDD File System\SD-SPI.h	351;"	m	line:351
+CCC_L	C:\C32\MikroEMMB 256\Microchip\Include\MDD File System\SD-SPI.h	350;"	m	line:350
+CC_ERROR	C:\C32\MikroEMMB 256\Microchip\Include\MDD File System\SD-SPI.h	252;"	m	line:252
+CETYPE	C:\C32\MikroEMMB 256\Microchip\Include\MDD File System\FSDefs.h	78;"	t	line:78
+CE_BADCACHEREAD	C:\C32\MikroEMMB 256\Microchip\Include\MDD File System\FSDefs.h	71;"	e	line:71	enum:_CETYPE
+CE_BAD_FILE	C:\C32\MikroEMMB 256\Microchip\Include\MDD File System\FSDefs.h	57;"	e	line:57	enum:_CETYPE
+CE_BAD_PARTITION	C:\C32\MikroEMMB 256\Microchip\Include\MDD File System\FSDefs.h	48;"	e	line:48	enum:_CETYPE
+CE_BAD_SECTOR_READ	C:\C32\MikroEMMB 256\Microchip\Include\MDD File System\FSDefs.h	52;"	e	line:52	enum:_CETYPE
+CE_CARDFAT32	C:\C32\MikroEMMB 256\Microchip\Include\MDD File System\FSDefs.h	72;"	e	line:72	enum:_CETYPE
+CE_COULD_NOT_GET_CLUSTER	C:\C32\MikroEMMB 256\Microchip\Include\MDD File System\FSDefs.h	59;"	e	line:59	enum:_CETYPE
+CE_DELETE_DIR	C:\C32\MikroEMMB 256\Microchip\Include\MDD File System\FSDefs.h	63;"	e	line:63	enum:_CETYPE
+CE_DIR_FULL	C:\C32\MikroEMMB 256\Microchip\Include\MDD File System\FSDefs.h	64;"	e	line:64	enum:_CETYPE
+CE_DIR_NOT_EMPTY	C:\C32\MikroEMMB 256\Microchip\Include\MDD File System\FSDefs.h	66;"	e	line:66	enum:_CETYPE
+CE_DIR_NOT_FOUND	C:\C32\MikroEMMB 256\Microchip\Include\MDD File System\FSDefs.h	56;"	e	line:56	enum:_CETYPE
+CE_DISK_FULL	C:\C32\MikroEMMB 256\Microchip\Include\MDD File System\FSDefs.h	65;"	e	line:65	enum:_CETYPE
+CE_DONE	C:\C32\MikroEMMB 256\Microchip\Include\MDD File System\FSDefs.h	58;"	e	line:58	enum:_CETYPE
+CE_EOF::61	C:\C32\MikroEMMB 256\Microchip\MDD File System\FSIO.c	174;"	d	line:174	file:
+CE_ERASE_FAIL	C:\C32\MikroEMMB 256\Microchip\Include\MDD File System\FSDefs.h	45;"	e	line:45	enum:_CETYPE
+CE_FAT_EOF::60	C:\C32\MikroEMMB 256\Microchip\MDD File System\FSIO.c	173;"	d	line:173	file:
+CE_FILENAME_2_LONG	C:\C32\MikroEMMB 256\Microchip\Include\MDD File System\FSDefs.h	60;"	e	line:60	enum:_CETYPE
+CE_FILENAME_EXISTS	C:\C32\MikroEMMB 256\Microchip\Include\MDD File System\FSDefs.h	61;"	e	line:61	enum:_CETYPE
+CE_FILENOTOPENED	C:\C32\MikroEMMB 256\Microchip\Include\MDD File System\FSDefs.h	69;"	e	line:69	enum:_CETYPE
+CE_FILE_NOT_FOUND	C:\C32\MikroEMMB 256\Microchip\Include\MDD File System\FSDefs.h	55;"	e	line:55	enum:_CETYPE
+CE_GOOD	C:\C32\MikroEMMB 256\Microchip\Include\MDD File System\FSDefs.h	44;"	e	line:44	enum:_CETYPE
+CE_INIT_ERROR	C:\C32\MikroEMMB 256\Microchip\Include\MDD File System\FSDefs.h	50;"	e	line:50	enum:_CETYPE
+CE_INVALID_ARGUMENT	C:\C32\MikroEMMB 256\Microchip\Include\MDD File System\FSDefs.h	75;"	e	line:75	enum:_CETYPE
+CE_INVALID_CLUSTER	C:\C32\MikroEMMB 256\Microchip\Include\MDD File System\FSDefs.h	54;"	e	line:54	enum:_CETYPE
+CE_INVALID_FILENAME	C:\C32\MikroEMMB 256\Microchip\Include\MDD File System\FSDefs.h	62;"	e	line:62	enum:_CETYPE
+CE_NONSUPPORTED_SIZE	C:\C32\MikroEMMB 256\Microchip\Include\MDD File System\FSDefs.h	67;"	e	line:67	enum:_CETYPE
+CE_NOT_FORMATTED	C:\C32\MikroEMMB 256\Microchip\Include\MDD File System\FSDefs.h	47;"	e	line:47	enum:_CETYPE
+CE_NOT_INIT	C:\C32\MikroEMMB 256\Microchip\Include\MDD File System\FSDefs.h	51;"	e	line:51	enum:_CETYPE
+CE_NOT_PRESENT	C:\C32\MikroEMMB 256\Microchip\Include\MDD File System\FSDefs.h	46;"	e	line:46	enum:_CETYPE
+CE_READONLY	C:\C32\MikroEMMB 256\Microchip\Include\MDD File System\FSDefs.h	73;"	e	line:73	enum:_CETYPE
+CE_SEEK_ERROR	C:\C32\MikroEMMB 256\Microchip\Include\MDD File System\FSDefs.h	70;"	e	line:70	enum:_CETYPE
+CE_TOO_MANY_FILES_OPEN	C:\C32\MikroEMMB 256\Microchip\Include\MDD File System\FSDefs.h	76;"	e	line:76	enum:_CETYPE
+CE_UNSUPPORTED_FS	C:\C32\MikroEMMB 256\Microchip\Include\MDD File System\FSDefs.h	49;"	e	line:49	enum:_CETYPE
+CE_UNSUPPORTED_SECTOR_SIZE	C:\C32\MikroEMMB 256\Microchip\Include\MDD File System\FSDefs.h	77;"	e	line:77	enum:_CETYPE
+CE_WRITEONLY	C:\C32\MikroEMMB 256\Microchip\Include\MDD File System\FSDefs.h	74;"	e	line:74	enum:_CETYPE
+CE_WRITE_ERROR	C:\C32\MikroEMMB 256\Microchip\Include\MDD File System\FSDefs.h	53;"	e	line:53	enum:_CETYPE
+CE_WRITE_PROTECTED	C:\C32\MikroEMMB 256\Microchip\Include\MDD File System\FSDefs.h	68;"	e	line:68	enum:_CETYPE
+CID	C:\C32\MikroEMMB 256\Microchip\Include\MDD File System\SD-SPI.h	389;"	t	line:389
+CLUSTER_EMPTY::0x0000	C:\C32\MikroEMMB 256\Microchip\Include\MDD File System\FSDefs.h	156;"	d	line:156
+CLUSTER_FAIL_FAT16::0xFFFF	C:\C32\MikroEMMB 256\Microchip\Include\MDD File System\FSDefs.h	182;"	d	line:182
+CLUSTER_FAIL_FAT32::0x0FFFFFFF	C:\C32\MikroEMMB 256\Microchip\Include\MDD File System\FSDefs.h	200;"	d	line:200
+CMD_INDEX	C:\C32\MikroEMMB 256\Microchip\Include\MDD File System\SD-SPI.h	203;"	m	line:203
+CMD_PACKET	C:\C32\MikroEMMB 256\Microchip\Include\MDD File System\SD-SPI.h	207;"	t	line:207
+COLOR_DEPTH::16	C:\C32\MikroEMMB 256\Test\HardwareProfile.h	56;"	d	line:56
+COPY	C:\C32\MikroEMMB 256\Microchip\Include\MDD File System\SD-SPI.h	322;"	m	line:322
+CRC	C:\C32\MikroEMMB 256\Microchip\Include\MDD File System\SD-SPI.h	162;"	m	line:162
+CRC	C:\C32\MikroEMMB 256\Microchip\Include\MDD File System\SD-SPI.h	317;"	m	line:317
+CRC	C:\C32\MikroEMMB 256\Microchip\Include\MDD File System\SD-SPI.h	381;"	m	line:381
+CRC7	C:\C32\MikroEMMB 256\Microchip\Include\MDD File System\SD-SPI.h	201;"	m	line:201
+CRC_ERR	C:\C32\MikroEMMB 256\Microchip\Include\MDD File System\SD-SPI.h	221;"	m	line:221
+CRC_ERR	C:\C32\MikroEMMB 256\Microchip\Include\MDD File System\SD-SPI.h	244;"	m	line:244
+CRC_ERR	C:\C32\MikroEMMB 256\Microchip\Include\MDD File System\SD-SPI.h	277;"	m	line:277
+CRC_ON_OFF	C:\C32\MikroEMMB 256\Microchip\Include\MDD File System\SD-SPI.h	435;"	e	line:435
+CSD	C:\C32\MikroEMMB 256\Microchip\Include\MDD File System\SD-SPI.h	359;"	t	line:359
+CSDResponse	C:\C32\MikroEMMB 256\Microchip\MDD File System\SD-SPI.c	1178;"	l	line:1178
+CSD_STRUCTURE	C:\C32\MikroEMMB 256\Microchip\Include\MDD File System\SD-SPI.h	357;"	m	line:357
+CS_ACC_LAT_BIT::_LATC3	C:\C32\MikroEMMB 256\Test\HardwareProfile.h	129;"	d	line:129
+CS_ACC_TRIS_BIT::_TRISC3	C:\C32\MikroEMMB 256\Test\HardwareProfile.h	128;"	d	line:128
+CS_FLASH_LAT_BIT::_LATC2	C:\C32\MikroEMMB 256\Test\HardwareProfile.h	117;"	d	line:117
+CS_FLASH_TRIS_BIT::_TRISC2	C:\C32\MikroEMMB 256\Test\HardwareProfile.h	116;"	d	line:116
+CS_LAT_BIT::_LATF12	C:\C32\MikroEMMB 256\Test\HardwareProfile.h	78;"	d	line:78
+CS_RF_LAT_BIT::_LATD8	C:\C32\MikroEMMB 256\Test\HardwareProfile.h	123;"	d	line:123
+CS_RF_TRIS_BIT::_TRISD8	C:\C32\MikroEMMB 256\Test\HardwareProfile.h	122;"	d	line:122
+CS_TRIS_BIT::_TRISF12	C:\C32\MikroEMMB 256\Test\HardwareProfile.h	77;"	d	line:77
+CUSTOM_CONTROLLER::-1	C:\C32\MikroEMMB 256\Microchip\Include\Graphics\Graphics.h	67;"	d	line:67
+CUSTOM_PLATFORM::0xFFFF	C:\C32\MikroEMMB 256\Microchip\Include\Graphics\Graphics.h	80;"	d	line:80
+C_SIZE_H	C:\C32\MikroEMMB 256\Microchip\Include\MDD File System\SD-SPI.h	342;"	m	line:342
+C_SIZE_L	C:\C32\MikroEMMB 256\Microchip\Include\MDD File System\SD-SPI.h	341;"	m	line:341
+C_SIZE_MULT_H	C:\C32\MikroEMMB 256\Microchip\Include\MDD File System\SD-SPI.h	336;"	m	line:336
+C_SIZE_MULT_L	C:\C32\MikroEMMB 256\Microchip\Include\MDD File System\SD-SPI.h	335;"	m	line:335
+C_SIZE_U	C:\C32\MikroEMMB 256\Microchip\Include\MDD File System\SD-SPI.h	343;"	m	line:343
+CacheTime	C:\C32\MikroEMMB 256\Microchip\MDD File System\FSIO.c	219;"	p	line:219	file:	signature:(void)
+CacheTime	C:\C32\MikroEMMB 256\Microchip\MDD File System\FSIO.c	2412;"	f	line:2412	signature:(void)
+Cache_File_Entry	C:\C32\MikroEMMB 256\Microchip\MDD File System\FSIO.c	1901;"	f	line:1901	signature:( FILEOBJ fo, WORD * curEntry, BYTE ForceRead)
+Cache_File_Entry	C:\C32\MikroEMMB 256\Microchip\MDD File System\FSIO.c	212;"	p	line:212	file:	signature:( FILEOBJ fo, WORD * curEntry, BYTE ForceRead)
+Char2Hex	C:\C32\MikroEMMB 256\MMB\SimpleUART.c	187;"	f	line:187	signature:(BYTE ch)
+Char2Hex	C:\C32\MikroEMMB 256\MMB\SimpleUART.h	161;"	p	line:161	signature:(BYTE ch)
+Circle	C:\C32\MikroEMMB 256\Microchip\Include\Graphics\Primitive.h	691;"	p	line:691	signature:(SHORT x, SHORT y, SHORT radius)
+Circle::(x,y,radius)Bevel(x,y,x,y,radi	C:\C32\MikroEMMB 256\Microchip\Include\Graphics\Primitive.h	689;"	d	line:689
+ClearDevice	C:\C32\MikroEMMB 256\Microchip\Graphics\Primitive.c	1432;"	f	line:1432	signature:(void)
+ClearDevice	C:\C32\MikroEMMB 256\Microchip\Include\Graphics\Primitive.h	867;"	p	line:867	signature:(void)
+CloseSPIM	C:\C32\MikroEMMB 256\Microchip\MDD File System\SD-SPI.c	101;"	p	line:101	file:	signature:( void )
+CloseSPIM	C:\C32\MikroEMMB 256\Microchip\MDD File System\SD-SPI.c	105;"	p	line:105	file:	signature:( void )
+CloseSPIM	C:\C32\MikroEMMB 256\Microchip\MDD File System\SD-SPI.c	887;"	f	line:887	signature:(void)
+Cluster2Sector	C:\C32\MikroEMMB 256\Microchip\MDD File System\FSIO.c	214;"	p	line:214	file:	signature:(DISK * disk, DWORD cluster)
+Cluster2Sector	C:\C32\MikroEMMB 256\Microchip\MDD File System\FSIO.c	4551;"	f	line:4551	signature:(DISK * dsk, DWORD cluster)
+ClusterFailValue	C:\C32\MikroEMMB 256\Microchip\Include\MDD File System\FSIO.h	286;"	m	line:286
+ClusterFailValue	C:\C32\MikroEMMB 256\Microchip\MDD File System\FSIO.c	1807;"	l	line:1807
+ClusterFailValue	C:\C32\MikroEMMB 256\Microchip\MDD File System\FSIO.c	2690;"	l	line:2690
+ClusterFailValue	C:\C32\MikroEMMB 256\Microchip\MDD File System\FSIO.c	5682;"	l	line:5682
+ClusterFailValue	C:\C32\MikroEMMB 256\Microchip\MDD File System\FSIO.c	5851;"	l	line:5851
+ClusterFailValue	C:\C32\MikroEMMB 256\Microchip\MDD File System\FSIO.c	704;"	l	line:704
+CmdCode	C:\C32\MikroEMMB 256\Microchip\Include\MDD File System\SD-SPI.h	161;"	m	line:161
+CmdPacket	C:\C32\MikroEMMB 256\Microchip\MDD File System\SD-SPI.c	384;"	l	line:384
+CmdPacket	C:\C32\MikroEMMB 256\Microchip\MDD File System\SD-SPI.c	491;"	l	line:491
+CreateDIR	C:\C32\MikroEMMB 256\Microchip\MDD File System\FSIO.c	256;"	p	line:256	file:	signature:(char * path)
+CreateDIR	C:\C32\MikroEMMB 256\Microchip\MDD File System\FSIO.c	7379;"	f	line:7379	signature:(char * path)
+CreateFileEntry	C:\C32\MikroEMMB 256\Microchip\MDD File System\FSIO.c	2055;"	f	line:2055	signature:(FILEOBJ fo, WORD *fHandle, BYTE mode)
+CreateFileEntry	C:\C32\MikroEMMB 256\Microchip\MDD File System\FSIO.c	249;"	p	line:249	file:	signature:(FILEOBJ fo, WORD *fHandle, BYTE mode)
+CreateFirstCluster	C:\C32\MikroEMMB 256\Microchip\MDD File System\FSIO.c	2114;"	f	line:2114	signature:(FILEOBJ fo)
+CreateFirstCluster	C:\C32\MikroEMMB 256\Microchip\MDD File System\FSIO.c	247;"	p	line:247	file:	signature:(FILEOBJ fo)
+CyHdSc	C:\C32\MikroEMMB 256\Microchip\MDD File System\FSIO.c	1252;"	l	line:1252
+DA210_DEV_BOARD::4	C:\C32\MikroEMMB 256\Microchip\Include\Graphics\Graphics.h	84;"	d	line:84
+DASHED_LINE::4	C:\C32\MikroEMMB 256\Microchip\Include\Graphics\Primitive.h	59;"	d	line:59
+DATA_ACCEPTED::0x05	C:\C32\MikroEMMB 256\Microchip\Include\MDD File System\SD-SPI.h	93;"	d	line:93
+DATA_START_TOKEN::0xFE	C:\C32\MikroEMMB 256\Microchip\Include\MDD File System\SD-SPI.h	90;"	d	line:90
+DEFAULT_ECC	C:\C32\MikroEMMB 256\Microchip\Include\MDD File System\SD-SPI.h	329;"	m	line:329
+DELAY_OVERHEAD::(BYTE)5	C:\C32\MikroEMMB 256\Microchip\Include\MDD File System\SD-SPI.h	406;"	d	line:406
+DELAY_PRESCALER::(BYTE)8	C:\C32\MikroEMMB 256\Microchip\Include\MDD File System\SD-SPI.h	403;"	d	line:403
+DIRECTORY::0x12	C:\C32\MikroEMMB 256\Microchip\MDD File System\FSIO.c	168;"	d	line:168	file:
+DIRENTRIES_PER_SECTOR::(MEDIA_SECTOR_SIZE/32)	C:\C32\MikroEMMB 256\Microchip\MDD File System\FSIO.c	170;"	d	line:170	file:
+DIRENTRY	C:\C32\MikroEMMB 256\Microchip\MDD File System\FSIO.c	166;"	t	line:166	file:
+DIR_Attr	C:\C32\MikroEMMB 256\Microchip\MDD File System\FSIO.c	153;"	m	line:153	file:
+DIR_CrtDate	C:\C32\MikroEMMB 256\Microchip\MDD File System\FSIO.c	157;"	m	line:157	file:
+DIR_CrtTime	C:\C32\MikroEMMB 256\Microchip\MDD File System\FSIO.c	156;"	m	line:156	file:
+DIR_CrtTimeTenth	C:\C32\MikroEMMB 256\Microchip\MDD File System\FSIO.c	155;"	m	line:155	file:
+DIR_DEL::0xE5	C:\C32\MikroEMMB 256\Microchip\Include\MDD File System\FSDefs.h	214;"	d	line:214
+DIR_EMPTY::0	C:\C32\MikroEMMB 256\Microchip\Include\MDD File System\FSDefs.h	220;"	d	line:220
+DIR_EXTENSION::3	C:\C32\MikroEMMB 256\Microchip\Include\MDD File System\FSDefs.h	230;"	d	line:230
+DIR_Extension	C:\C32\MikroEMMB 256\Microchip\MDD File System\FSIO.c	152;"	m	line:152	file:
+DIR_FileSize	C:\C32\MikroEMMB 256\Microchip\MDD File System\FSIO.c	163;"	m	line:163	file:
+DIR_FstClusHI	C:\C32\MikroEMMB 256\Microchip\MDD File System\FSIO.c	159;"	m	line:159	file:
+DIR_FstClusLO	C:\C32\MikroEMMB 256\Microchip\MDD File System\FSIO.c	162;"	m	line:162	file:
+DIR_LstAccDate	C:\C32\MikroEMMB 256\Microchip\MDD File System\FSIO.c	158;"	m	line:158	file:
+DIR_NAMECOMP::(DIR_NAMESIZE+DIR_EXTENSION)	C:\C32\MikroEMMB 256\Microchip\Include\MDD File System\FSDefs.h	234;"	d	line:234
+DIR_NAMESIZE::8	C:\C32\MikroEMMB 256\Microchip\Include\MDD File System\FSDefs.h	226;"	d	line:226
+DIR_NTRes	C:\C32\MikroEMMB 256\Microchip\MDD File System\FSIO.c	154;"	m	line:154	file:
+DIR_Name	C:\C32\MikroEMMB 256\Microchip\MDD File System\FSIO.c	151;"	m	line:151	file:
+DIR_WrtDate	C:\C32\MikroEMMB 256\Microchip\MDD File System\FSIO.c	161;"	m	line:161	file:
+DIR_WrtTime	C:\C32\MikroEMMB 256\Microchip\MDD File System\FSIO.c	160;"	m	line:160	file:
+DISK	C:\C32\MikroEMMB 256\Microchip\Include\MDD File System\FSDefs.h	283;"	t	line:283
+DISKmount	C:\C32\MikroEMMB 256\Microchip\MDD File System\FSIO.c	284;"	p	line:284	file:	signature:( DISK *dsk)
+DISKmount	C:\C32\MikroEMMB 256\Microchip\MDD File System\FSIO.c	789;"	f	line:789	signature:( DISK *dsk)
+DISPLAY_CONTROLLER::R61505	C:\C32\MikroEMMB 256\Test\HardwareProfile.h	44;"	d	line:44
+DISP_HOR_RESOLUTION::240	C:\C32\MikroEMMB 256\Test\HardwareProfile.h	49;"	d	line:49
+DISP_ORIENTATION::90	C:\C32\MikroEMMB 256\Test\HardwareProfile.h	62;"	d	line:62
+DISP_VER_RESOLUTION::320	C:\C32\MikroEMMB 256\Test\HardwareProfile.h	50;"	d	line:50
+DOTTED_LINE::1	C:\C32\MikroEMMB 256\Microchip\Include\Graphics\Primitive.h	56;"	d	line:56
+DSR_IMP	C:\C32\MikroEMMB 256\Microchip\Include\MDD File System\SD-SPI.h	345;"	m	line:345
+DT032TFT::0	C:\C32\MikroEMMB 256\Microchip\Include\Graphics\Graphics.h	73;"	d	line:73
+DT032TFT_TS::0	C:\C32\MikroEMMB 256\Microchip\Include\Graphics\Graphics.h	72;"	d	line:72
+DataSec	C:\C32\MikroEMMB 256\Microchip\MDD File System\FSIO.c	1010;"	l	line:1010
+Delayms	C:\C32\MikroEMMB 256\Microchip\MDD File System\SD-SPI.c	94;"	p	line:94	file:	signature:(BYTE milliseconds)
+Delayms::DelayMs	C:\C32\MikroEMMB 256\Microchip\MDD File System\SD-SPI.c	830;"	d	line:830	file:
+DrawPoly	C:\C32\MikroEMMB 256\Microchip\Graphics\Primitive.c	1291;"	f	line:1291	signature:(SHORT numPoints, SHORT *polyPoints)
+DrawPoly	C:\C32\MikroEMMB 256\Microchip\Include\Graphics\Primitive.h	819;"	p	line:819	signature:(SHORT numPoints, SHORT *polyPoints)
+ECC	C:\C32\MikroEMMB 256\Microchip\Include\MDD File System\SD-SPI.h	318;"	m	line:318
+EEPROMInit	C:\C32\MikroEMMB 256\MMB\SerialEEPROM.c	60;"	f	line:60
+EEPROMInit	C:\C32\MikroEMMB 256\MMB\SerialEEPROM.h	64;"	p	line:64	signature:()
+EEPROMReadArray	C:\C32\MikroEMMB 256\MMB\SerialEEPROM.c	320;"	f	line:320	signature:(WORD address, BYTE* pData, WORD nCount)
+EEPROMReadArray	C:\C32\MikroEMMB 256\MMB\SerialEEPROM.h	147;"	p	line:147	signature:(WORD address, BYTE* pData, WORD nCount)
+EEPROMReadByte	C:\C32\MikroEMMB 256\MMB\SerialEEPROM.c	160;"	f	line:160	signature:(WORD address)
+EEPROMReadByte	C:\C32\MikroEMMB 256\MMB\SerialEEPROM.h	88;"	p	line:88	signature:(WORD address)
+EEPROMReadWord	C:\C32\MikroEMMB 256\MMB\SerialEEPROM.c	227;"	f	line:227	signature:(WORD address)
+EEPROMReadWord	C:\C32\MikroEMMB 256\MMB\SerialEEPROM.h	112;"	p	line:112	signature:(WORD address)
+EEPROMWriteArray	C:\C32\MikroEMMB 256\MMB\SerialEEPROM.c	282;"	f	line:282	signature:(DWORD address, BYTE* pData, WORD nCount)
+EEPROMWriteArray	C:\C32\MikroEMMB 256\MMB\SerialEEPROM.h	137;"	p	line:137	signature:(DWORD address, BYTE* pData, WORD nCount)
+EEPROMWriteByte	C:\C32\MikroEMMB 256\MMB\SerialEEPROM.c	130;"	f	line:130	signature:(BYTE data, WORD address)
+EEPROMWriteByte	C:\C32\MikroEMMB 256\MMB\SerialEEPROM.h	76;"	p	line:76	signature:(BYTE data, WORD address)
+EEPROMWriteEnable	C:\C32\MikroEMMB 256\MMB\SerialEEPROM.c	267;"	f	line:267
+EEPROMWriteEnable	C:\C32\MikroEMMB 256\MMB\SerialEEPROM.h	125;"	p	line:125	signature:()
+EEPROMWriteWord	C:\C32\MikroEMMB 256\MMB\SerialEEPROM.c	196;"	f	line:196	signature:(WORD data, WORD address)
+EEPROMWriteWord	C:\C32\MikroEMMB 256\MMB\SerialEEPROM.h	100;"	p	line:100	signature:(WORD data, WORD address)
+END_BIT	C:\C32\MikroEMMB 256\Microchip\Include\MDD File System\SD-SPI.h	200;"	m	line:200
+END_CLUSTER_FAT12::0xFF7	C:\C32\MikroEMMB 256\Microchip\Include\MDD File System\FSDefs.h	171;"	d	line:171
+END_CLUSTER_FAT16::0xFFF7	C:\C32\MikroEMMB 256\Microchip\Include\MDD File System\FSDefs.h	176;"	d	line:176
+END_CLUSTER_FAT32::0x0FFFFFF7	C:\C32\MikroEMMB 256\Microchip\Include\MDD File System\FSDefs.h	195;"	d	line:195
+EOF::((int)-1)	C:\C32\MikroEMMB 256\Microchip\Include\MDD File System\FSDefs.h	260;"	d	line:260
+ERASE	C:\C32\MikroEMMB 256\Microchip\Include\MDD File System\SD-SPI.h	432;"	e	line:432
+ERASE_GRP_SIZE_H	C:\C32\MikroEMMB 256\Microchip\Include\MDD File System\SD-SPI.h	333;"	m	line:333
+ERASE_GRP_SIZE_L	C:\C32\MikroEMMB 256\Microchip\Include\MDD File System\SD-SPI.h	332;"	m	line:332
+ERASE_PARAM	C:\C32\MikroEMMB 256\Microchip\Include\MDD File System\SD-SPI.h	255;"	m	line:255
+ERASE_RESET	C:\C32\MikroEMMB 256\Microchip\Include\MDD File System\SD-SPI.h	219;"	m	line:219
+ERASE_RESET	C:\C32\MikroEMMB 256\Microchip\Include\MDD File System\SD-SPI.h	242;"	m	line:242
+ERASE_RESET	C:\C32\MikroEMMB 256\Microchip\Include\MDD File System\SD-SPI.h	275;"	m	line:275
+ERASE_SEQ_ERR	C:\C32\MikroEMMB 256\Microchip\Include\MDD File System\SD-SPI.h	222;"	m	line:222
+ERASE_SEQ_ERR	C:\C32\MikroEMMB 256\Microchip\Include\MDD File System\SD-SPI.h	245;"	m	line:245
+ERASE_SEQ_ERR	C:\C32\MikroEMMB 256\Microchip\Include\MDD File System\SD-SPI.h	278;"	m	line:278
+ERROR	C:\C32\MikroEMMB 256\Microchip\Include\MDD File System\SD-SPI.h	251;"	m	line:251
+EXTDATA	C:\C32\MikroEMMB 256\Microchip\Include\Graphics\Primitive.h	127;"	t	line:127
+EXTERNAL	C:\C32\MikroEMMB 256\Microchip\Include\Graphics\Primitive.h	113;"	e	line:113
+EXTERNAL_FONT_BUFFER_SIZE::600	C:\C32\MikroEMMB 256\Microchip\Include\Graphics\Primitive.h	230;"	d	line:230
+EndClusterLimit	C:\C32\MikroEMMB 256\Microchip\Include\MDD File System\FSIO.h	285;"	m	line:285
+EndClusterLimit	C:\C32\MikroEMMB 256\Microchip\MDD File System\FSIO.c	2690;"	l	line:2690
+EraseCluster	C:\C32\MikroEMMB 256\Microchip\MDD File System\FSIO.c	246;"	p	line:246	file:	signature:(DISK *disk, DWORD cluster)
+EraseCluster	C:\C32\MikroEMMB 256\Microchip\MDD File System\FSIO.c	4396;"	f	line:4396	signature:(DISK *disk, DWORD cluster)
+Exit	C:\C32\MikroEMMB 256\Microchip\MDD File System\FSIO.c	1808;"	e	line:1808	enum:_status	file:
+ExternalMemoryCallback	C:\C32\MikroEMMB 256\Microchip\Include\Graphics\Primitive.h	968;"	p	line:968	signature:(EXTDATA *memory, LONG offset, WORD nCount, void *buffer)
+F	C:\C32\MikroEMMB 256\Microchip\MDD File System\FSIO.c	5520;"	l	line:5520
+F	C:\C32\MikroEMMB 256\Microchip\MDD File System\FSIO.c	5557;"	l	line:5557
+F	C:\C32\MikroEMMB 256\Microchip\MDD File System\FSIO.c	5596;"	l	line:5596
+F	C:\C32\MikroEMMB 256\Microchip\MDD File System\FSIO.c	5637;"	l	line:5637
+FALSE::0	C:\C32\MikroEMMB 256\Microchip\Include\MDD File System\FSIO.h	67;"	d	line:67
+FALSE::0	C:\C32\MikroEMMB 256\Microchip\Include\MDD File System\SD-SPI.h	392;"	d	line:392
+FAT12::1	C:\C32\MikroEMMB 256\Microchip\Include\MDD File System\FSDefs.h	97;"	d	line:97
+FAT16::2	C:\C32\MikroEMMB 256\Microchip\Include\MDD File System\FSDefs.h	101;"	d	line:101
+FAT16DataClusters	C:\C32\MikroEMMB 256\Microchip\MDD File System\FSIO.c	1368;"	l	line:1368
+FAT32::3	C:\C32\MikroEMMB 256\Microchip\Include\MDD File System\FSDefs.h	105;"	d	line:105
+FAT_erase_cluster_chain	C:\C32\MikroEMMB 256\Microchip\MDD File System\FSIO.c	1805;"	f	line:1805	signature:(DWORD cluster, DISK * dsk)
+FAT_erase_cluster_chain	C:\C32\MikroEMMB 256\Microchip\MDD File System\FSIO.c	241;"	p	line:241	file:	signature:(DWORD cluster, DISK * dsk)
+FATfindEmptyCluster	C:\C32\MikroEMMB 256\Microchip\MDD File System\FSIO.c	242;"	p	line:242	file:	signature:(FILEOBJ fo)
+FATfindEmptyCluster	C:\C32\MikroEMMB 256\Microchip\MDD File System\FSIO.c	2686;"	f	line:2686	signature:(FILEOBJ fo)
+FILECreateHeadCluster	C:\C32\MikroEMMB 256\Microchip\MDD File System\FSIO.c	245;"	p	line:245	file:	signature:( FILEOBJ fo, DWORD *cluster)
+FILECreateHeadCluster	C:\C32\MikroEMMB 256\Microchip\MDD File System\FSIO.c	4320;"	f	line:4320	signature:( FILEOBJ fo, DWORD *cluster)
+FILEFLAGS	C:\C32\MikroEMMB 256\Microchip\Include\MDD File System\FSIO.h	182;"	t	line:182
+FILEOBJ	C:\C32\MikroEMMB 256\Microchip\MDD File System\FSIO.c	176;"	t	line:176	file:
+FILE_FORMAT	C:\C32\MikroEMMB 256\Microchip\Include\MDD File System\SD-SPI.h	319;"	m	line:319
+FILE_FORMAT_GRP	C:\C32\MikroEMMB 256\Microchip\Include\MDD File System\SD-SPI.h	323;"	m	line:323
+FILE_NAME_SIZE::11	C:\C32\MikroEMMB 256\Microchip\Include\MDD File System\FSIO.h	224;"	d	line:224
+FILEallocate_new_cluster	C:\C32\MikroEMMB 256\Microchip\MDD File System\FSIO.c	240;"	p	line:240	file:	signature:( FILEOBJ fo, BYTE mode)
+FILEallocate_new_cluster	C:\C32\MikroEMMB 256\Microchip\MDD File System\FSIO.c	2618;"	f	line:2618	signature:( FILEOBJ fo, BYTE mode)
+FILEerase	C:\C32\MikroEMMB 256\Microchip\MDD File System\FSIO.c	239;"	p	line:239	file:	signature:( FILEOBJ fo, WORD *fHandle, BYTE EraseClusters)
+FILEerase	C:\C32\MikroEMMB 256\Microchip\MDD File System\FSIO.c	3399;"	f	line:3399	signature:( FILEOBJ fo, WORD *fHandle, BYTE EraseClusters)
+FILEfind	C:\C32\MikroEMMB 256\Microchip\MDD File System\FSIO.c	231;"	p	line:231	file:	signature:( FILEOBJ foDest, FILEOBJ foCompareTo, BYTE cmd, BYTE mode)
+FILEfind	C:\C32\MikroEMMB 256\Microchip\MDD File System\FSIO.c	396;"	f	line:396	signature:( FILEOBJ foDest, FILEOBJ foCompareTo, BYTE cmd, BYTE mode)
+FILEget_next_cluster	C:\C32\MikroEMMB 256\Microchip\MDD File System\FSIO.c	232;"	p	line:232	file:	signature:(FILEOBJ fo, DWORD n)
+FILEget_next_cluster	C:\C32\MikroEMMB 256\Microchip\MDD File System\FSIO.c	702;"	f	line:702	signature:(FILEOBJ fo, DWORD n)
+FILEopen	C:\C32\MikroEMMB 256\Microchip\MDD File System\FSIO.c	233;"	p	line:233	file:	signature:(FILEOBJ fo, WORD *fHandle, char type)
+FILEopen	C:\C32\MikroEMMB 256\Microchip\MDD File System\FSIO.c	581;"	f	line:581	signature:(FILEOBJ fo, WORD *fHandle, char type)
+FLASH	C:\C32\MikroEMMB 256\Microchip\Include\Graphics\Primitive.h	112;"	e	line:112
+FLASH_BYTE::char__prog__	C:\C32\MikroEMMB 256\Microchip\Include\Graphics\Primitive.h	135;"	d	line:135
+FLASH_BYTE::constBYTE	C:\C32\MikroEMMB 256\Microchip\Include\Graphics\Primitive.h	130;"	d	line:130
+FLASH_WORD::constWORD	C:\C32\MikroEMMB 256\Microchip\Include\Graphics\Primitive.h	131;"	d	line:131
+FLASH_WORD::shortint__prog__	C:\C32\MikroEMMB 256\Microchip\Include\Graphics\Primitive.h	136;"	d	line:136
+FONT_EXTERNAL::EXTDATA	C:\C32\MikroEMMB 256\Microchip\Include\Graphics\Primitive.h	220;"	d	line:220
+FONT_FLASH	C:\C32\MikroEMMB 256\Microchip\Include\Graphics\Primitive.h	207;"	t	line:207
+FONT_H::20	C:\C32\MikroEMMB 256\MMB\LCDTerminal.c	50;"	d	line:50	file:
+FONT_HEADER	C:\C32\MikroEMMB 256\Microchip\Include\Graphics\Primitive.h	189;"	t	line:189
+FONT_RAM	C:\C32\MikroEMMB 256\Microchip\Include\Graphics\Primitive.h	217;"	t	line:217
+FONT_W::12	C:\C32\MikroEMMB 256\MMB\LCDTerminal.c	49;"	d	line:49	file:
+FOUND::0	C:\C32\MikroEMMB 256\Microchip\Include\MDD File System\FSDefs.h	83;"	d	line:83
+FSCreateMBR	C:\C32\MikroEMMB 256\Microchip\Include\MDD File System\FSIO.h	1412;"	p	line:1412	signature:(unsigned long firstSector, unsigned long numSectors)
+FSCreateMBR	C:\C32\MikroEMMB 256\Microchip\MDD File System\FSIO.c	1249;"	f	line:1249	signature:(unsigned long firstSector, unsigned long numSectors)
+FSFILE	C:\C32\MikroEMMB 256\Microchip\Include\MDD File System\FSIO.h	249;"	t	line:249
+FSGetDiskProperties	C:\C32\MikroEMMB 256\Microchip\Include\MDD File System\FSIO.h	1516;"	p	line:1516	signature:(FS_DISK_PROPERTIES* properties)
+FSGetDiskProperties	C:\C32\MikroEMMB 256\Microchip\MDD File System\FSIO.c	2854;"	f	line:2854	signature:(FS_DISK_PROPERTIES* properties)
+FSInit	C:\C32\MikroEMMB 256\Microchip\Include\MDD File System\FSIO.h	343;"	p	line:343	signature:(void)
+FSInit	C:\C32\MikroEMMB 256\Microchip\MDD File System\FSIO.c	314;"	f	line:314	signature:(void)
+FS_APPEND::"a"	C:\C32\MikroEMMB 256\Microchip\Include\MDD File System\FSIO.h	110;"	d	line:110
+FS_APPENDPLUS::"a+"	C:\C32\MikroEMMB 256\Microchip\Include\MDD File System\FSIO.h	136;"	d	line:136
+FS_DISK_ERRORS	C:\C32\MikroEMMB 256\Microchip\Include\MDD File System\FSIO.h	260;"	t	line:260
+FS_DISK_PROPERTIES	C:\C32\MikroEMMB 256\Microchip\Include\MDD File System\FSIO.h	291;"	t	line:291
+FS_DOT_H	C:\C32\MikroEMMB 256\Microchip\Include\MDD File System\FSIO.h	39;"	d	line:39
+FS_DYNAMIC_MEM	C:\C32\MikroEMMB 256\Test\FSconfig.h	159;"	d	line:159
+FS_GET_PROPERTIES_CLUSTER_FAILURE	C:\C32\MikroEMMB 256\Microchip\Include\MDD File System\FSIO.h	258;"	e	line:258
+FS_GET_PROPERTIES_DISK_NOT_MOUNTED	C:\C32\MikroEMMB 256\Microchip\Include\MDD File System\FSIO.h	257;"	e	line:257
+FS_GET_PROPERTIES_NO_ERRORS	C:\C32\MikroEMMB 256\Microchip\Include\MDD File System\FSIO.h	256;"	e	line:256
+FS_GET_PROPERTIES_STILL_WORKING	C:\C32\MikroEMMB 256\Microchip\Include\MDD File System\FSIO.h	259;"	e	line:259
+FS_MAX_FILES_OPEN::1	C:\C32\MikroEMMB 256\Test\FSconfig.h	48;"	d	line:48
+FS_READ::"r"	C:\C32\MikroEMMB 256\Microchip\Include\MDD File System\FSIO.h	124;"	d	line:124
+FS_READPLUS::"r+"	C:\C32\MikroEMMB 256\Microchip\Include\MDD File System\FSIO.h	150;"	d	line:150
+FS_WRITE::"w"	C:\C32\MikroEMMB 256\Microchip\Include\MDD File System\FSIO.h	117;"	d	line:117
+FS_WRITEPLUS::"w+"	C:\C32\MikroEMMB 256\Microchip\Include\MDD File System\FSIO.h	143;"	d	line:143
+FS_free::SRAMfree	C:\C32\MikroEMMB 256\Test\FSconfig.h	164;"	d	line:164
+FS_free::free	C:\C32\MikroEMMB 256\Test\FSconfig.h	167;"	d	line:167
+FS_malloc::SRAMalloc	C:\C32\MikroEMMB 256\Test\FSconfig.h	162;"	d	line:162
+FS_malloc::malloc	C:\C32\MikroEMMB 256\Test\FSconfig.h	166;"	d	line:166
+FSattrib	C:\C32\MikroEMMB 256\Microchip\Include\MDD File System\FSIO.h	828;"	p	line:828	signature:(FSFILE * file, unsigned char attributes)
+FSattrib	C:\C32\MikroEMMB 256\Microchip\MDD File System\FSIO.c	4610;"	f	line:4610	signature:(FSFILE * file, unsigned char attributes)
+FSchdir	C:\C32\MikroEMMB 256\Microchip\Include\MDD File System\FSIO.h	945;"	p	line:945	signature:(char * path)
+FSchdir	C:\C32\MikroEMMB 256\Microchip\MDD File System\FSIO.c	6033;"	f	line:6033	signature:(char * path)
+FSchdirpgm	C:\C32\MikroEMMB 256\Microchip\Include\MDD File System\FSIO.h	470;"	p	line:470	signature:(const rom char * path)
+FSchdirpgm	C:\C32\MikroEMMB 256\Microchip\MDD File System\FSIO.c	6061;"	f	line:6061	signature:(const rom char * path)
+FSerrno	C:\C32\MikroEMMB 256\Microchip\MDD File System\FSIO.c	111;"	v	line:111
+FSerror	C:\C32\MikroEMMB 256\Microchip\Include\MDD File System\FSIO.h	1375;"	p	line:1375	signature:(void)
+FSerror	C:\C32\MikroEMMB 256\Microchip\MDD File System\FSIO.c	4249;"	f	line:4249	signature:(void)
+FSfclose	C:\C32\MikroEMMB 256\Microchip\Include\MDD File System\FSIO.h	610;"	p	line:610	signature:(FSFILE *fo)
+FSfclose	C:\C32\MikroEMMB 256\Microchip\MDD File System\FSIO.c	2979;"	f	line:2979	signature:(FSFILE *fo)
+FSfeof	C:\C32\MikroEMMB 256\Microchip\Include\MDD File System\FSIO.h	753;"	p	line:753	signature:( FSFILE * stream )
+FSfeof	C:\C32\MikroEMMB 256\Microchip\MDD File System\FSIO.c	4943;"	f	line:4943	signature:( FSFILE * stream )
+FSfopen	C:\C32\MikroEMMB 256\Microchip\Include\MDD File System\FSIO.h	389;"	p	line:389	signature:(const char * fileName, const char *mode)
+FSfopen	C:\C32\MikroEMMB 256\Microchip\MDD File System\FSIO.c	3662;"	f	line:3662	signature:( const char * fileName, const char *mode )
+FSfopenpgm	C:\C32\MikroEMMB 256\Microchip\Include\MDD File System\FSIO.h	417;"	p	line:417	signature:(const rom char * fileName, const rom char *mode)
+FSfopenpgm	C:\C32\MikroEMMB 256\Microchip\MDD File System\FSIO.c	5555;"	f	line:5555	signature:(const rom char * fileName, const rom char *mode)
+FSformat	C:\C32\MikroEMMB 256\Microchip\Include\MDD File System\FSIO.h	793;"	p	line:793	signature:(char mode, long int serialNumber, char * volumeID)
+FSformat	C:\C32\MikroEMMB 256\Microchip\MDD File System\FSIO.c	1365;"	f	line:1365	signature:(char mode, long int serialNumber, char * volumeID)
+FSfprintf	C:\C32\MikroEMMB 256\Microchip\Include\MDD File System\FSIO.h	1183;"	p	line:1183	signature:(FSFILE *fptr, const rom char *fmt, ...)
+FSfprintf	C:\C32\MikroEMMB 256\Microchip\Include\MDD File System\FSIO.h	1185;"	p	line:1185	signature:(FSFILE *fptr, const char * fmt, ...)
+FSfprintf	C:\C32\MikroEMMB 256\Microchip\MDD File System\FSIO.c	8441;"	f	line:8441	signature:(FSFILE *fptr, const rom char *fmt, ...)
+FSfread	C:\C32\MikroEMMB 256\Microchip\Include\MDD File System\FSIO.h	668;"	p	line:668	signature:(void *ptr, size_t size, size_t n, FSFILE *stream)
+FSfread	C:\C32\MikroEMMB 256\Microchip\MDD File System\FSIO.c	4980;"	f	line:4980	signature:(void *ptr, size_t size, size_t n, FSFILE *stream)
+FSfseek	C:\C32\MikroEMMB 256\Microchip\Include\MDD File System\FSIO.h	703;"	p	line:703	signature:(FSFILE *stream, long offset, int whence)
+FSfseek	C:\C32\MikroEMMB 256\Microchip\MDD File System\FSIO.c	5352;"	f	line:5352	signature:(FSFILE *stream, long offset, int whence)
+FSftell	C:\C32\MikroEMMB 256\Microchip\Include\MDD File System\FSIO.h	727;"	p	line:727	signature:(FSFILE *fo)
+FSftell	C:\C32\MikroEMMB 256\Microchip\MDD File System\FSIO.c	3932;"	f	line:3932	signature:(FSFILE * fo)
+FSfwrite	C:\C32\MikroEMMB 256\Microchip\Include\MDD File System\FSIO.h	916;"	p	line:916	signature:(const void *ptr, size_t size, size_t n, FSFILE *stream)
+FSfwrite	C:\C32\MikroEMMB 256\Microchip\MDD File System\FSIO.c	4696;"	f	line:4696	signature:(const void *ptr, size_t size, size_t n, FSFILE *stream)
+FSgetcwd	C:\C32\MikroEMMB 256\Microchip\Include\MDD File System\FSIO.h	989;"	p	line:989	signature:(char * path, int numbchars)
+FSgetcwd	C:\C32\MikroEMMB 256\Microchip\MDD File System\FSIO.c	6522;"	f	line:6522	signature:(char * path, int numchars)
+FSmkdir	C:\C32\MikroEMMB 256\Microchip\Include\MDD File System\FSIO.h	1016;"	p	line:1016	signature:(char * path)
+FSmkdir	C:\C32\MikroEMMB 256\Microchip\MDD File System\FSIO.c	6893;"	f	line:6893	signature:(char * path)
+FSmkdirpgm	C:\C32\MikroEMMB 256\Microchip\Include\MDD File System\FSIO.h	521;"	p	line:521	signature:(const rom char * path)
+FSmkdirpgm	C:\C32\MikroEMMB 256\Microchip\MDD File System\FSIO.c	6921;"	f	line:6921	signature:(const rom char * path)
+FSputc	C:\C32\MikroEMMB 256\Microchip\MDD File System\FSIO.c	280;"	p	line:280	file:	signature:(char c, FSFILE * file)
+FSputc	C:\C32\MikroEMMB 256\Microchip\MDD File System\FSIO.c	8369;"	f	line:8369	signature:(char c, FSFILE * file)
+FSremove	C:\C32\MikroEMMB 256\Microchip\Include\MDD File System\FSIO.h	881;"	p	line:881	signature:(const char * fileName)
+FSremove	C:\C32\MikroEMMB 256\Microchip\MDD File System\FSIO.c	3963;"	f	line:3963	signature:(const char * fileName)
+FSremovepgm	C:\C32\MikroEMMB 256\Microchip\Include\MDD File System\FSIO.h	496;"	p	line:496	signature:(const rom char * fileName)
+FSremovepgm	C:\C32\MikroEMMB 256\Microchip\MDD File System\FSIO.c	5594;"	f	line:5594	signature:(const rom char * fileName)
+FSrename	C:\C32\MikroEMMB 256\Microchip\Include\MDD File System\FSIO.h	856;"	p	line:856	signature:(const char * fileName, FSFILE * fo)
+FSrename	C:\C32\MikroEMMB 256\Microchip\MDD File System\FSIO.c	3502;"	f	line:3502	signature:(const char * fileName, FSFILE * fo)
+FSrenamepgm	C:\C32\MikroEMMB 256\Microchip\Include\MDD File System\FSIO.h	574;"	p	line:574	signature:(const rom char * fileName, FSFILE * fo)
+FSrenamepgm	C:\C32\MikroEMMB 256\Microchip\MDD File System\FSIO.c	5518;"	f	line:5518	signature:(const rom char * fileName, FSFILE * fo)
+FSrewind	C:\C32\MikroEMMB 256\Microchip\Include\MDD File System\FSIO.h	635;"	p	line:635	signature:(FSFILE *fo)
+FSrewind	C:\C32\MikroEMMB 256\Microchip\MDD File System\FSIO.c	4049;"	f	line:4049	signature:(FSFILE * fo)
+FSrmdir	C:\C32\MikroEMMB 256\Microchip\Include\MDD File System\FSIO.h	1043;"	p	line:1043	signature:(char * path, unsigned char rmsubdirs)
+FSrmdir	C:\C32\MikroEMMB 256\Microchip\MDD File System\FSIO.c	7595;"	f	line:7595	signature:(char * path, unsigned char rmsubdirs)
+FSrmdirpgm	C:\C32\MikroEMMB 256\Microchip\Include\MDD File System\FSIO.h	548;"	p	line:548	signature:(const rom char * path, unsigned char rmsubdirs)
+FSrmdirpgm	C:\C32\MikroEMMB 256\Microchip\MDD File System\FSIO.c	7625;"	f	line:7625	signature:(const rom char * path, unsigned char rmsubdirs)
+FSvfprintf	C:\C32\MikroEMMB 256\Microchip\MDD File System\FSIO.c	276;"	p	line:276	file:	signature:(auto FSFILE *handle, auto const rom char *formatString, auto va_list ap)
+FSvfprintf	C:\C32\MikroEMMB 256\Microchip\MDD File System\FSIO.c	278;"	p	line:278	file:	signature:(FSFILE *handle, const char *formatString, va_list ap)
+FSvfprintf	C:\C32\MikroEMMB 256\Microchip\MDD File System\FSIO.c	8483;"	f	line:8483	signature:(auto FSFILE *handle, auto const rom char * formatString, auto va_list ap)
+Fail	C:\C32\MikroEMMB 256\Microchip\MDD File System\FSIO.c	1808;"	e	line:1808	enum:_status	file:
+FatRootDirClusterValue	C:\C32\MikroEMMB 256\Microchip\MDD File System\FSIO.c	109;"	v	line:109
+FileObjectCopy	C:\C32\MikroEMMB 256\Microchip\MDD File System\FSIO.c	228;"	p	line:228	file:	signature:(FILEOBJ foDest,FILEOBJ foSource)
+FileObjectCopy	C:\C32\MikroEMMB 256\Microchip\MDD File System\FSIO.c	4276;"	f	line:4276	signature:(FILEOBJ foDest,FILEOBJ foSource)
+FileWriteEOF	C:\C32\MikroEMMB 256\Microchip\Include\MDD File System\FSIO.h	181;"	m	line:181
+FillBevel	C:\C32\MikroEMMB 256\Microchip\Graphics\Primitive.c	1069;"	f	line:1069	signature:(SHORT x1, SHORT y1, SHORT x2, SHORT y2, SHORT rad)
+FillBevel	C:\C32\MikroEMMB 256\Microchip\Include\Graphics\Primitive.h	749;"	p	line:749	signature:(SHORT x1, SHORT y1, SHORT x2, SHORT y2, SHORT rad)
+FillCircle::(x1,y1,rad)FillBevel(x1,y1,x1,	C:\C32\MikroEMMB 256\Microchip\Include\Graphics\Primitive.h	770;"	d	line:770
+Fill_File_Object	C:\C32\MikroEMMB 256\Microchip\MDD File System\FSIO.c	213;"	p	line:213	file:	signature:(FILEOBJ fo, WORD *fHandle)
+Fill_File_Object	C:\C32\MikroEMMB 256\Microchip\MDD File System\FSIO.c	3194;"	f	line:3194	signature:(FILEOBJ fo, WORD *fHandle)
+FindEmptyEntries	C:\C32\MikroEMMB 256\Microchip\MDD File System\FSIO.c	2179;"	f	line:2179	signature:(FILEOBJ fo, WORD *fHandle)
+FindEmptyEntries	C:\C32\MikroEMMB 256\Microchip\MDD File System\FSIO.c	243;"	p	line:243	file:	signature:(FILEOBJ fo, WORD *fHandle)
+FindFirst	C:\C32\MikroEMMB 256\Microchip\Include\MDD File System\FSIO.h	1121;"	p	line:1121	signature:(const char * fileName, unsigned int attr, SearchRec * rec)
+FindFirst	C:\C32\MikroEMMB 256\Microchip\MDD File System\FSIO.c	8111;"	f	line:8111	signature:(const char * fileName, unsigned int attr, SearchRec * rec)
+FindFirstpgm	C:\C32\MikroEMMB 256\Microchip\Include\MDD File System\FSIO.h	445;"	p	line:445	signature:(const rom char * fileName, unsigned int attr, SearchRec * rec)
+FindFirstpgm	C:\C32\MikroEMMB 256\Microchip\MDD File System\FSIO.c	5635;"	f	line:5635	signature:(const rom char * fileName, unsigned int attr, SearchRec * rec)
+FindNext	C:\C32\MikroEMMB 256\Microchip\Include\MDD File System\FSIO.h	1149;"	p	line:1149	signature:(SearchRec * rec)
+FindNext	C:\C32\MikroEMMB 256\Microchip\MDD File System\FSIO.c	8242;"	f	line:8242	signature:(SearchRec * rec)
+FormatDirName	C:\C32\MikroEMMB 256\Microchip\MDD File System\FSIO.c	255;"	p	line:255	file:	signature:(char * string, BYTE mode)
+FormatDirName	C:\C32\MikroEMMB 256\Microchip\MDD File System\FSIO.c	5202;"	f	line:5202	signature:(char * string, BYTE mode)
+FormatFileName	C:\C32\MikroEMMB 256\Microchip\MDD File System\FSIO.c	230;"	p	line:230	file:	signature:( const char* fileName, char* fN2, BYTE mode)
+FormatFileName	C:\C32\MikroEMMB 256\Microchip\MDD File System\FSIO.c	5114;"	f	line:5114	signature:( const char* fileName, char* fN2, BYTE mode)
+GFX_PICTAIL_V1::1	C:\C32\MikroEMMB 256\Microchip\Include\Graphics\Graphics.h	81;"	d	line:81
+GFX_PICTAIL_V2::2	C:\C32\MikroEMMB 256\Microchip\Include\Graphics\Graphics.h	82;"	d	line:82
+GFX_PICTAIL_V3::3	C:\C32\MikroEMMB 256\Microchip\Include\Graphics\Graphics.h	83;"	d	line:83
+GLYPH_ENTRY	C:\C32\MikroEMMB 256\Microchip\Include\Graphics\Primitive.h	197;"	t	line:197
+GO_IDLE_STATE	C:\C32\MikroEMMB 256\Microchip\Include\MDD File System\SD-SPI.h	418;"	e	line:418
+GRAPHICS_HARDWARE_PLATFORM::PIC32MX4_MMB	C:\C32\MikroEMMB 256\Test\HardwareProfile.h	43;"	d	line:43
+GRAPHICS_LIBRARY_VERSION::0x0200	C:\C32\MikroEMMB 256\Microchip\Include\Graphics\Graphics.h	89;"	d	line:89
+GetFontOrientation::_fontOrientation	C:\C32\MikroEMMB 256\Microchip\Include\Graphics\Primitive.h	406;"	d	line:406
+GetFullClusterNumber	C:\C32\MikroEMMB 256\Microchip\MDD File System\FSIO.c	1193;"	f	line:1193	signature:(DIRENTRY entry)
+GetFullClusterNumber	C:\C32\MikroEMMB 256\Microchip\MDD File System\FSIO.c	287;"	p	line:287	file:	signature:(DIRENTRY entry)
+GetImageHeight	C:\C32\MikroEMMB 256\Microchip\Graphics\Primitive.c	1952;"	f	line:1952	signature:(void *bitmap)
+GetImageHeight	C:\C32\MikroEMMB 256\Microchip\Include\Graphics\Primitive.h	917;"	p	line:917	signature:(void *bitmap)
+GetImageWidth	C:\C32\MikroEMMB 256\Microchip\Graphics\Primitive.c	1911;"	f	line:1911	signature:(void *bitmap)
+GetImageWidth	C:\C32\MikroEMMB 256\Microchip\Include\Graphics\Primitive.h	903;"	p	line:903	signature:(void *bitmap)
+GetPeripheralClock::(GetSystemClock/(1<<OSCCONbits	C:\C32\MikroEMMB 256\Test\HardwareProfile.h	35;"	d	line:35
+GetPreviousEntry	C:\C32\MikroEMMB 256\Microchip\MDD File System\FSIO.c	254;"	p	line:254	file:	signature:(FSFILE * fo)
+GetPreviousEntry	C:\C32\MikroEMMB 256\Microchip\MDD File System\FSIO.c	6778;"	f	line:6778	signature:(FSFILE * fo)
+GetSystemClock	C:\C32\MikroEMMB 256\MMB\MMB.C	26;"	p	line:26	file:
+GetSystemClock::(80000000ul)	C:\C32\MikroEMMB 256\Test\HardwareProfile.h	25;"	d	line:25
+GetTextHeight	C:\C32\MikroEMMB 256\Microchip\Graphics\Primitive.c	1866;"	f	line:1866	signature:(void *font)
+GetTextHeight	C:\C32\MikroEMMB 256\Microchip\Include\Graphics\Primitive.h	531;"	p	line:531	signature:(void *font)
+GetTextWidth	C:\C32\MikroEMMB 256\Microchip\Graphics\Primitive.c	1763;"	f	line:1763	signature:(XCHAR *textString, void *font)
+GetTextWidth	C:\C32\MikroEMMB 256\Microchip\Include\Graphics\Primitive.h	551;"	p	line:551	signature:(XCHAR *textString, void *font)
+GetX::_cursorX	C:\C32\MikroEMMB 256\Microchip\Include\Graphics\Primitive.h	320;"	d	line:320
+GetY::_cursorY	C:\C32\MikroEMMB 256\Microchip\Include\Graphics\Primitive.h	336;"	d	line:336
+Good	C:\C32\MikroEMMB 256\Microchip\MDD File System\FSIO.c	1808;"	e	line:1808	enum:_status	file:
+HIT1270::12	C:\C32\MikroEMMB 256\Microchip\Include\Graphics\Graphics.h	58;"	d	line:58
+HX8347::16	C:\C32\MikroEMMB 256\Microchip\Include\Graphics\Graphics.h	62;"	d	line:62
+HX8347D::17	C:\C32\MikroEMMB 256\Microchip\Include\Graphics\Graphics.h	63;"	d	line:63
+Hex2Char	C:\C32\MikroEMMB 256\MMB\SimpleUART.c	232;"	f	line:232	signature:(BYTE hex)
+Hex2Char	C:\C32\MikroEMMB 256\MMB\SimpleUART.h	179;"	p	line:179	signature:(BYTE hex)
+ID	C:\C32\MikroEMMB 256\Microchip\Include\Graphics\Primitive.h	125;"	m	line:125
+ILI9320::14	C:\C32\MikroEMMB 256\Microchip\Include\Graphics\Graphics.h	60;"	d	line:60
+ILLEGAL_CMD	C:\C32\MikroEMMB 256\Microchip\Include\MDD File System\SD-SPI.h	220;"	m	line:220
+ILLEGAL_CMD	C:\C32\MikroEMMB 256\Microchip\Include\MDD File System\SD-SPI.h	243;"	m	line:243
+ILLEGAL_CMD	C:\C32\MikroEMMB 256\Microchip\Include\MDD File System\SD-SPI.h	276;"	m	line:276
+IMAGE_NORMAL::1	C:\C32\MikroEMMB 256\Microchip\Include\Graphics\Primitive.h	76;"	d	line:76
+IMAGE_X2::2	C:\C32\MikroEMMB 256\Microchip\Include\Graphics\Primitive.h	79;"	d	line:79
+INCREMENTTIMESTAMP	C:\C32\MikroEMMB 256\Test\FSconfig.h	126;"	d	line:126
+INPUT::1	C:\C32\MikroEMMB 256\Microchip\Include\MDD File System\SD-SPI.h	398;"	d	line:398
+IN_IDLE_STATE	C:\C32\MikroEMMB 256\Microchip\Include\MDD File System\SD-SPI.h	218;"	m	line:218
+IN_IDLE_STATE	C:\C32\MikroEMMB 256\Microchip\Include\MDD File System\SD-SPI.h	241;"	m	line:241
+IN_IDLE_STATE	C:\C32\MikroEMMB 256\Microchip\Include\MDD File System\SD-SPI.h	274;"	m	line:274
+IncrementTimeStamp	C:\C32\MikroEMMB 256\Microchip\MDD File System\FSIO.c	217;"	p	line:217	file:	signature:(DIRENTRY dir)
+IncrementTimeStamp	C:\C32\MikroEMMB 256\Microchip\MDD File System\FSIO.c	3091;"	f	line:3091	signature:(DIRENTRY dir)
+Index	C:\C32\MikroEMMB 256\Microchip\MDD File System\FSIO.c	1374;"	l	line:1374
+Index	C:\C32\MikroEMMB 256\Microchip\MDD File System\FSIO.c	4281;"	l	line:4281
+Index	C:\C32\MikroEMMB 256\Microchip\MDD File System\FSIO.c	7683;"	l	line:7683
+Index	C:\C32\MikroEMMB 256\Microchip\MDD File System\FSIO.c	8024;"	l	line:8024
+Index	C:\C32\MikroEMMB 256\Microchip\MDD File System\FSIO.c	8118;"	l	line:8118
+Index2	C:\C32\MikroEMMB 256\Microchip\MDD File System\FSIO.c	7683;"	l	line:7683
+InitGraph	C:\C32\MikroEMMB 256\Microchip\Graphics\Primitive.c	106;"	f	line:106	signature:(void)
+InitGraph	C:\C32\MikroEMMB 256\Microchip\Include\Graphics\Primitive.h	304;"	p	line:304	signature:(void)
+JOY_DOWN::1	C:\C32\MikroEMMB 256\Test\HardwareProfile.h	154;"	d	line:154
+JOY_DOWN::2	C:\C32\MikroEMMB 256\Test\HardwareProfile.h	146;"	d	line:146
+JOY_LEFT::1	C:\C32\MikroEMMB 256\Test\HardwareProfile.h	147;"	d	line:147
+JOY_LEFT::8	C:\C32\MikroEMMB 256\Test\HardwareProfile.h	155;"	d	line:155
+JOY_RIGHT::2	C:\C32\MikroEMMB 256\Test\HardwareProfile.h	153;"	d	line:153
+JOY_RIGHT::4	C:\C32\MikroEMMB 256\Test\HardwareProfile.h	145;"	d	line:145
+JOY_SELECT::16	C:\C32\MikroEMMB 256\Test\HardwareProfile.h	143;"	d	line:143
+JOY_SELECT::16	C:\C32\MikroEMMB 256\Test\HardwareProfile.h	151;"	d	line:151
+JOY_UP::4	C:\C32\MikroEMMB 256\Test\HardwareProfile.h	152;"	d	line:152
+JOY_UP::8	C:\C32\MikroEMMB 256\Test\HardwareProfile.h	144;"	d	line:144
+L8330	C:\C32\MikroEMMB 256\MMB\LCDTerminalFont.c	6;"	v	line:6
+LAST_CLUSTER_FAT12::0xff8	C:\C32\MikroEMMB 256\Microchip\Include\MDD File System\FSDefs.h	161;"	d	line:161
+LAST_CLUSTER_FAT16::0xfff8	C:\C32\MikroEMMB 256\Microchip\Include\MDD File System\FSDefs.h	166;"	d	line:166
+LAST_CLUSTER_FAT32::0x0FFFFFF8	C:\C32\MikroEMMB 256\Microchip\Include\MDD File System\FSDefs.h	190;"	d	line:190
+LAT_XNEG::_LATB11	C:\C32\MikroEMMB 256\Test\HardwareProfile.h	100;"	d	line:100
+LAT_XPOS::_LATB13	C:\C32\MikroEMMB 256\Test\HardwareProfile.h	101;"	d	line:101
+LAT_YNEG::_LATB10	C:\C32\MikroEMMB 256\Test\HardwareProfile.h	107;"	d	line:107
+LAT_YPOS::_LATB12	C:\C32\MikroEMMB 256\Test\HardwareProfile.h	108;"	d	line:108
+LCDCenterString	C:\C32\MikroEMMB 256\MMB\LCDTerminal.c	246;"	f	line:246	signature:( int p, char *s)
+LCDCenterString	C:\C32\MikroEMMB 256\MMB\LCDTerminal.h	57;"	p	line:57	signature:( int, char *)
+LCDClear	C:\C32\MikroEMMB 256\MMB\LCDTerminal.c	109;"	f	line:109	signature:(void)
+LCDClear	C:\C32\MikroEMMB 256\MMB\LCDTerminal.h	53;"	p	line:53	signature:(void)
+LCDClearToEOL	C:\C32\MikroEMMB 256\MMB\LCDTerminal.c	96;"	f	line:96	signature:( void)
+LCDClearToEOL	C:\C32\MikroEMMB 256\MMB\LCDTerminal.h	63;"	p	line:63	signature:( void)
+LCDGetX	C:\C32\MikroEMMB 256\MMB\LCDTerminal.c	59;"	f	line:59
+LCDGetY	C:\C32\MikroEMMB 256\MMB\LCDTerminal.c	64;"	f	line:64
+LCDHome	C:\C32\MikroEMMB 256\MMB\LCDTerminal.c	70;"	f	line:70	signature:(void)
+LCDHome	C:\C32\MikroEMMB 256\MMB\LCDTerminal.h	51;"	p	line:51	signature:(void)
+LCDInit	C:\C32\MikroEMMB 256\MMB\LCDTerminal.c	122;"	f	line:122	signature:(void)
+LCDInit	C:\C32\MikroEMMB 256\MMB\LCDTerminal.h	50;"	p	line:50	signature:(void)
+LCDL1Home::LCDHome	C:\C32\MikroEMMB 256\MMB\LCDTerminal.c	83;"	d	line:83	file:
+LCDL1Home::LCDHome	C:\C32\MikroEMMB 256\MMB\LCDTerminal.h	67;"	d	line:67
+LCDL2Home	C:\C32\MikroEMMB 256\MMB\LCDTerminal.c	85;"	f	line:85	signature:(void)
+LCDL2Home	C:\C32\MikroEMMB 256\MMB\LCDTerminal.h	52;"	p	line:52	signature:(void)
+LCDLineHome	C:\C32\MikroEMMB 256\MMB\LCDTerminal.c	91;"	f	line:91	signature:(void)
+LCDLineHome	C:\C32\MikroEMMB 256\MMB\LCDTerminal.h	62;"	p	line:62	signature:(void)
+LCDPut	C:\C32\MikroEMMB 256\MMB\LCDTerminal.c	205;"	f	line:205	signature:(char A)
+LCDPut	C:\C32\MikroEMMB 256\MMB\LCDTerminal.h	54;"	p	line:54	signature:( char)
+LCDPutChar	C:\C32\MikroEMMB 256\MMB\LCDTerminal.c	185;"	f	line:185	signature:(char A)
+LCDPutChar	C:\C32\MikroEMMB 256\MMB\LCDTerminal.h	55;"	p	line:55	signature:( char)
+LCDPutString	C:\C32\MikroEMMB 256\MMB\LCDTerminal.c	239;"	f	line:239	signature:( char* s)
+LCDPutString	C:\C32\MikroEMMB 256\MMB\LCDTerminal.h	56;"	p	line:56	signature:( char *)
+LCDSetXY	C:\C32\MikroEMMB 256\MMB\LCDTerminal.c	77;"	f	line:77	signature:( int x, int y)
+LCDShiftCursorDown	C:\C32\MikroEMMB 256\MMB\LCDTerminal.c	142;"	f	line:142	signature:(void)
+LCDShiftCursorDown	C:\C32\MikroEMMB 256\MMB\LCDTerminal.h	61;"	p	line:61	signature:(void)
+LCDShiftCursorLeft	C:\C32\MikroEMMB 256\MMB\LCDTerminal.c	130;"	f	line:130	signature:(void)
+LCDShiftCursorLeft	C:\C32\MikroEMMB 256\MMB\LCDTerminal.h	58;"	p	line:58	signature:(void)
+LCDShiftCursorRight	C:\C32\MikroEMMB 256\MMB\LCDTerminal.c	173;"	f	line:173	signature:(void)
+LCDShiftCursorRight	C:\C32\MikroEMMB 256\MMB\LCDTerminal.h	59;"	p	line:59	signature:(void)
+LCDShiftCursorUp	C:\C32\MikroEMMB 256\MMB\LCDTerminal.c	137;"	f	line:137	signature:(void)
+LCDShiftCursorUp	C:\C32\MikroEMMB 256\MMB\LCDTerminal.h	60;"	p	line:60	signature:(void)
+LCD_BACK::BLACK	C:\C32\MikroEMMB 256\Test\GraphicsConfig.h	103;"	d	line:103
+LCD_FORE::WHITE	C:\C32\MikroEMMB 256\Test\GraphicsConfig.h	104;"	d	line:104
+LCD_SCROLL	C:\C32\MikroEMMB 256\Test\GraphicsConfig.h	101;"	d	line:101
+LCD_WRAP	C:\C32\MikroEMMB 256\Test\GraphicsConfig.h	100;"	d	line:100
+LD0::_LATA0	C:\C32\MikroEMMB 256\Test\HardwareProfile.h	165;"	d	line:165
+LD0_TRIS::_TRISA0	C:\C32\MikroEMMB 256\Test\HardwareProfile.h	161;"	d	line:161
+LD1::_LATA1	C:\C32\MikroEMMB 256\Test\HardwareProfile.h	166;"	d	line:166
+LD1_TRIS::_TRISA1	C:\C32\MikroEMMB 256\Test\HardwareProfile.h	162;"	d	line:162
+LD2::_LATA2	C:\C32\MikroEMMB 256\Test\HardwareProfile.h	167;"	d	line:167
+LD2_TRIS::_TRISA2	C:\C32\MikroEMMB 256\Test\HardwareProfile.h	163;"	d	line:163
+LD3::_LATA3	C:\C32\MikroEMMB 256\Test\HardwareProfile.h	168;"	d	line:168
+LD3_TRIS::_TRISA3	C:\C32\MikroEMMB 256\Test\HardwareProfile.h	164;"	d	line:164
+LED_OFF::1	C:\C32\MikroEMMB 256\Test\HardwareProfile.h	172;"	d	line:172
+LED_ON::0	C:\C32\MikroEMMB 256\Test\HardwareProfile.h	171;"	d	line:171
+LGDP4531::5	C:\C32\MikroEMMB 256\Microchip\Include\Graphics\Graphics.h	51;"	d	line:51
+LOOK_FOR_EMPTY_ENTRY	C:\C32\MikroEMMB 256\Microchip\Include\MDD File System\FSIO.h	192;"	e	line:192
+LOOK_FOR_MATCHING_ENTRY	C:\C32\MikroEMMB 256\Microchip\Include\MDD File System\FSIO.h	193;"	e	line:193
+LastClusterLimit	C:\C32\MikroEMMB 256\Microchip\MDD File System\FSIO.c	1906;"	l	line:1906
+LastClusterLimit	C:\C32\MikroEMMB 256\Microchip\MDD File System\FSIO.c	5682;"	l	line:5682
+LastClustervalue	C:\C32\MikroEMMB 256\Microchip\MDD File System\FSIO.c	704;"	l	line:704
+Line	C:\C32\MikroEMMB 256\Microchip\Graphics\Primitive.c	732;"	f	line:732	signature:(SHORT x1, SHORT y1, SHORT x2, SHORT y2)
+Line	C:\C32\MikroEMMB 256\Microchip\Include\Graphics\Primitive.h	625;"	p	line:625	signature:(SHORT x1, SHORT y1, SHORT x2, SHORT y2)
+LineRel::(dX,dY)Line(GetX,GetY,GetX+dX,	C:\C32\MikroEMMB 256\Microchip\Include\Graphics\Primitive.h	647;"	d	line:647
+LineTo::(x,y)Line(_cursorX,_cursorY,x,	C:\C32\MikroEMMB 256\Microchip\Include\Graphics\Primitive.h	668;"	d	line:668
+LoadBootSector	C:\C32\MikroEMMB 256\Microchip\MDD File System\FSIO.c	1007;"	f	line:1007	signature:(DISK *dsk)
+LoadBootSector	C:\C32\MikroEMMB 256\Microchip\MDD File System\FSIO.c	286;"	p	line:286	file:	signature:(DISK *dsk)
+LoadDirAttrib	C:\C32\MikroEMMB 256\Microchip\MDD File System\FSIO.c	215;"	p	line:215	file:	signature:(FILEOBJ fo, WORD *fHandle)
+LoadDirAttrib	C:\C32\MikroEMMB 256\Microchip\MDD File System\FSIO.c	3326;"	f	line:3326	signature:(FILEOBJ fo, WORD *fHandle)
+LoadMBR	C:\C32\MikroEMMB 256\Microchip\MDD File System\FSIO.c	285;"	p	line:285	file:	signature:(DISK *dsk)
+LoadMBR	C:\C32\MikroEMMB 256\Microchip\MDD File System\FSIO.c	863;"	f	line:863	signature:(DISK *dsk)
+M	C:\C32\MikroEMMB 256\Microchip\MDD File System\FSIO.c	5558;"	l	line:5558
+MANUAL_SPI_CLOCK_VALUE::1	C:\C32\MikroEMMB 256\Microchip\MDD File System\SD-SPI.c	1044;"	d	line:1044	file:
+MASK_MAX_FILE_ENTRY_LIMIT_BITS::0x0f	C:\C32\MikroEMMB 256\Microchip\Include\MDD File System\FSIO.h	206;"	d	line:206
+MASTER_ENABLE_ON::0x0020	C:\C32\MikroEMMB 256\Microchip\Include\MDD File System\SD-SPI.h	60;"	d	line:60
+MCHP_DA210::100	C:\C32\MikroEMMB 256\Microchip\Include\Graphics\Graphics.h	66;"	d	line:66
+MDD_CFread::MDD_CFBT_CFread	C:\C32\MikroEMMB 256\Test\FSconfig.h	265;"	d	line:265
+MDD_CFread::MDD_CFPMP_CFread	C:\C32\MikroEMMB 256\Test\FSconfig.h	233;"	d	line:233
+MDD_CFwait::MDD_CFBT_CFwait	C:\C32\MikroEMMB 256\Test\FSconfig.h	259;"	d	line:259
+MDD_CFwait::MDD_CFPMP_CFwait	C:\C32\MikroEMMB 256\Test\FSconfig.h	227;"	d	line:227
+MDD_CFwrite::MDD_CFBT_CFwrite	C:\C32\MikroEMMB 256\Test\FSconfig.h	262;"	d	line:262
+MDD_CFwrite::MDD_CFPMP_CFwrite	C:\C32\MikroEMMB 256\Test\FSconfig.h	230;"	d	line:230
+MDD_InitIO::;	C:\C32\MikroEMMB 256\Test\FSconfig.h	282;"	d	line:282
+MDD_InitIO::MDD_CFBT_InitIO	C:\C32\MikroEMMB 256\Test\FSconfig.h	250;"	d	line:250
+MDD_InitIO::MDD_CFPMP_InitIO	C:\C32\MikroEMMB 256\Test\FSconfig.h	218;"	d	line:218
+MDD_InitIO::MDD_SDSPI_InitIO	C:\C32\MikroEMMB 256\Test\FSconfig.h	189;"	d	line:189
+MDD_MediaDetect::MDD_CFBT_MediaDetect	C:\C32\MikroEMMB 256\Test\FSconfig.h	241;"	d	line:241
+MDD_MediaDetect::MDD_CFPMP_MediaDetect	C:\C32\MikroEMMB 256\Test\FSconfig.h	209;"	d	line:209
+MDD_MediaDetect::MDD_SDSPI_MediaDetect	C:\C32\MikroEMMB 256\Test\FSconfig.h	180;"	d	line:180
+MDD_MediaDetect::USBHostMSDSCSIMediaDetect	C:\C32\MikroEMMB 256\Test\FSconfig.h	273;"	d	line:273
+MDD_MediaInitialize::MDD_CFBT_MediaInitialize	C:\C32\MikroEMMB 256\Test\FSconfig.h	238;"	d	line:238
+MDD_MediaInitialize::MDD_CFPMP_MediaInitialize	C:\C32\MikroEMMB 256\Test\FSconfig.h	206;"	d	line:206
+MDD_MediaInitialize::MDD_SDSPI_MediaInitialize	C:\C32\MikroEMMB 256\Test\FSconfig.h	177;"	d	line:177
+MDD_MediaInitialize::USBHostMSDSCSIMediaInitialize	C:\C32\MikroEMMB 256\Test\FSconfig.h	270;"	d	line:270
+MDD_ReadCapacity::MDD_SDSPI_ReadCapacity	C:\C32\MikroEMMB 256\Test\FSconfig.h	198;"	d	line:198
+MDD_ReadSectorSize::MDD_SDSPI_ReadSectorSize	C:\C32\MikroEMMB 256\Test\FSconfig.h	201;"	d	line:201
+MDD_SDSPI_InitIO	C:\C32\MikroEMMB 256\Microchip\Include\MDD File System\SD-SPI.h	462;"	p	line:462	signature:(void)
+MDD_SDSPI_InitIO	C:\C32\MikroEMMB 256\Microchip\MDD File System\SD-SPI.c	307;"	f	line:307	signature:(void)
+MDD_SDSPI_MediaDetect	C:\C32\MikroEMMB 256\Microchip\Include\MDD File System\SD-SPI.h	464;"	p	line:464	signature:(void)
+MDD_SDSPI_MediaDetect	C:\C32\MikroEMMB 256\Microchip\MDD File System\SD-SPI.c	187;"	f	line:187	signature:(void)
+MDD_SDSPI_MediaInitialize	C:\C32\MikroEMMB 256\Microchip\Include\MDD File System\SD-SPI.h	465;"	p	line:465	signature:(void)
+MDD_SDSPI_MediaInitialize	C:\C32\MikroEMMB 256\Microchip\MDD File System\SD-SPI.c	1174;"	f	line:1174	signature:(void)
+MDD_SDSPI_MediaInitialize	C:\C32\MikroEMMB 256\Microchip\MDD File System\SD-SPI.c	96;"	p	line:96	file:	signature:(void)
+MDD_SDSPI_ReadCapacity	C:\C32\MikroEMMB 256\Microchip\Include\MDD File System\SD-SPI.h	460;"	p	line:460	signature:(void)
+MDD_SDSPI_ReadCapacity	C:\C32\MikroEMMB 256\Microchip\MDD File System\SD-SPI.c	280;"	f	line:280	signature:(void)
+MDD_SDSPI_ReadMedia	C:\C32\MikroEMMB 256\Microchip\MDD File System\SD-SPI.c	95;"	p	line:95	file:	signature:(void)
+MDD_SDSPI_ReadMedia	C:\C32\MikroEMMB 256\Microchip\MDD File System\SD-SPI.c	969;"	f	line:969	signature:(void)
+MDD_SDSPI_ReadSectorSize	C:\C32\MikroEMMB 256\Microchip\Include\MDD File System\SD-SPI.h	461;"	p	line:461	signature:(void)
+MDD_SDSPI_ReadSectorSize	C:\C32\MikroEMMB 256\Microchip\MDD File System\SD-SPI.c	254;"	f	line:254	signature:(void)
+MDD_SDSPI_SectorRead	C:\C32\MikroEMMB 256\Microchip\Include\MDD File System\SD-SPI.h	466;"	p	line:466	signature:(DWORD sector_addr, BYTE* buffer)
+MDD_SDSPI_SectorRead	C:\C32\MikroEMMB 256\Microchip\MDD File System\SD-SPI.c	588;"	f	line:588	signature:(DWORD sector_addr, BYTE* buffer)
+MDD_SDSPI_SectorWrite	C:\C32\MikroEMMB 256\Microchip\Include\MDD File System\SD-SPI.h	467;"	p	line:467	signature:(DWORD sector_addr, BYTE* buffer, BYTE allowWriteToZero)
+MDD_SDSPI_SectorWrite	C:\C32\MikroEMMB 256\Microchip\MDD File System\SD-SPI.c	704;"	f	line:704	signature:(DWORD sector_addr, BYTE* buffer, BYTE allowWriteToZero)
+MDD_SDSPI_ShutdownMedia	C:\C32\MikroEMMB 256\Microchip\Include\MDD File System\SD-SPI.h	470;"	p	line:470	signature:(void)
+MDD_SDSPI_ShutdownMedia	C:\C32\MikroEMMB 256\Microchip\MDD File System\SD-SPI.c	339;"	f	line:339	signature:(void)
+MDD_SDSPI_WriteProtectState	C:\C32\MikroEMMB 256\Microchip\Include\MDD File System\SD-SPI.h	469;"	p	line:469	signature:(void)
+MDD_SDSPI_WriteProtectState	C:\C32\MikroEMMB 256\Microchip\MDD File System\SD-SPI.c	825;"	f	line:825	signature:(void)
+MDD_SDSPI_finalLBA	C:\C32\MikroEMMB 256\Microchip\MDD File System\SD-SPI.c	52;"	v	line:52
+MDD_SectorRead::MDD_CFBT_SectorRead	C:\C32\MikroEMMB 256\Test\FSconfig.h	244;"	d	line:244
+MDD_SectorRead::MDD_CFPMP_SectorRead	C:\C32\MikroEMMB 256\Test\FSconfig.h	212;"	d	line:212
+MDD_SectorRead::MDD_SDSPI_SectorRead	C:\C32\MikroEMMB 256\Test\FSconfig.h	183;"	d	line:183
+MDD_SectorRead::USBHostMSDSCSISectorRead	C:\C32\MikroEMMB 256\Test\FSconfig.h	276;"	d	line:276
+MDD_SectorWrite::MDD_CFBT_SectorWrite	C:\C32\MikroEMMB 256\Test\FSconfig.h	247;"	d	line:247
+MDD_SectorWrite::MDD_CFPMP_SectorWrite	C:\C32\MikroEMMB 256\Test\FSconfig.h	215;"	d	line:215
+MDD_SectorWrite::MDD_SDSPI_SectorWrite	C:\C32\MikroEMMB 256\Test\FSconfig.h	186;"	d	line:186
+MDD_SectorWrite::USBHostMSDSCSISectorWrite	C:\C32\MikroEMMB 256\Test\FSconfig.h	279;"	d	line:279
+MDD_ShutdownMedia::MDD_CFBT_ShutdownMedia	C:\C32\MikroEMMB 256\Test\FSconfig.h	253;"	d	line:253
+MDD_ShutdownMedia::MDD_CFPMP_ShutdownMedia	C:\C32\MikroEMMB 256\Test\FSconfig.h	221;"	d	line:221
+MDD_ShutdownMedia::MDD_SDSPI_ShutdownMedia	C:\C32\MikroEMMB 256\Test\FSconfig.h	192;"	d	line:192
+MDD_ShutdownMedia::USBHostMSDSCSIMediaReset	C:\C32\MikroEMMB 256\Test\FSconfig.h	285;"	d	line:285
+MDD_USE_SPI_2	C:\C32\MikroEMMB 256\Test\HardwareProfile.h	182;"	d	line:182
+MDD_WriteProtectState::MDD_CFBT_WriteProtectState	C:\C32\MikroEMMB 256\Test\FSconfig.h	256;"	d	line:256
+MDD_WriteProtectState::MDD_CFPMP_WriteProtectState	C:\C32\MikroEMMB 256\Test\FSconfig.h	224;"	d	line:224
+MDD_WriteProtectState::MDD_SDSPI_WriteProtectState	C:\C32\MikroEMMB 256\Test\FSconfig.h	195;"	d	line:195
+MDD_WriteProtectState::USBHostMSDSCSIWriteProtectStat	C:\C32\MikroEMMB 256\Test\FSconfig.h	288;"	d	line:288
+MDT	C:\C32\MikroEMMB 256\Microchip\Include\MDD File System\SD-SPI.h	382;"	m	line:382
+MEDIA_SECTOR_SIZE::512	C:\C32\MikroEMMB 256\Test\FSconfig.h	54;"	d	line:54
+MID	C:\C32\MikroEMMB 256\Microchip\Include\MDD File System\SD-SPI.h	387;"	m	line:387
+MILLISECDELAY::(WORD)((GetInstructionClock/DE	C:\C32\MikroEMMB 256\Microchip\Include\MDD File System\SD-SPI.h	409;"	d	line:409
+MMBAccInit	C:\C32\MikroEMMB 256\MMB\MMB.C	181;"	f	line:181	signature:( void)
+MMBAccInit	C:\C32\MikroEMMB 256\MMB\MMB.h	33;"	p	line:33	signature:( void)
+MMBAccRead	C:\C32\MikroEMMB 256\MMB\MMB.C	225;"	f	line:225	signature:( int* x, int* y, int*z)
+MMBAccRead	C:\C32\MikroEMMB 256\MMB\MMB.h	34;"	p	line:34	signature:(int*, int*, int*)
+MMBFadeIn	C:\C32\MikroEMMB 256\MMB\MMB.C	263;"	f	line:263	signature:( int msTime)
+MMBFadeIn	C:\C32\MikroEMMB 256\MMB\MMB.h	36;"	p	line:36	signature:( int msTime)
+MMBFadeOut	C:\C32\MikroEMMB 256\MMB\MMB.C	286;"	f	line:286	signature:( int msTime)
+MMBFadeOut	C:\C32\MikroEMMB 256\MMB\MMB.h	37;"	p	line:37	signature:( int msTime)
+MMBGetKey	C:\C32\MikroEMMB 256\MMB\MMB.C	137;"	f	line:137	signature:( void)
+MMBGetKey	C:\C32\MikroEMMB 256\MMB\MMB.h	24;"	p	line:24	signature:( void)
+MMBGetTdegC::(((3.25/1024)*MMBReadT-.5)/0.0	C:\C32\MikroEMMB 256\MMB\MMB.h	21;"	d	line:21
+MMBInit	C:\C32\MikroEMMB 256\MMB\MMB.C	20;"	f	line:20	signature:( void)
+MMBInit	C:\C32\MikroEMMB 256\MMB\MMB.h	26;"	p	line:26	signature:( void)
+MMBReadKey	C:\C32\MikroEMMB 256\MMB\MMB.C	118;"	f	line:118	signature:( void)
+MMBReadKey	C:\C32\MikroEMMB 256\MMB\MMB.h	23;"	p	line:23	signature:( void)
+MMBReadStopwatch	C:\C32\MikroEMMB 256\MMB\MMB.h	28;"	p	line:28	signature:( void)
+MMBReadT	C:\C32\MikroEMMB 256\MMB\MMB.C	54;"	f	line:54	signature:( void)
+MMBReadT	C:\C32\MikroEMMB 256\MMB\MMB.h	20;"	p	line:20	signature:( void)
+MMBUARTInit	C:\C32\MikroEMMB 256\MMB\MMB.C	90;"	f	line:90	signature:( int baudrate)
+MMBUARTInit	C:\C32\MikroEMMB 256\MMB\MMB.h	31;"	p	line:31	signature:( int baudrate)
+MMBreadStopwatch	C:\C32\MikroEMMB 256\MMB\MMB.C	79;"	f	line:79	signature:( void)
+MMBstartStopwatch	C:\C32\MikroEMMB 256\MMB\MMB.C	72;"	f	line:72	signature:( void)
+MMBstartStopwatch	C:\C32\MikroEMMB 256\MMB\MMB.h	29;"	p	line:29	signature:( void)
+MMC_BAD_RESPONSE::MMC_FLOATING_BUS	C:\C32\MikroEMMB 256\Microchip\Include\MDD File System\SD-SPI.h	105;"	d	line:105
+MMC_FLOATING_BUS::0xFF	C:\C32\MikroEMMB 256\Microchip\Include\MDD File System\SD-SPI.h	102;"	d	line:102
+MMC_RESPONSE	C:\C32\MikroEMMB 256\Microchip\Include\MDD File System\SD-SPI.h	295;"	t	line:295
+MOREDATA::!0	C:\C32\MikroEMMB 256\Microchip\Include\MDD File System\SD-SPI.h	96;"	d	line:96
+ModeC	C:\C32\MikroEMMB 256\Microchip\MDD File System\FSIO.c	3668;"	l	line:3668
+MoveRel::(dX,dY)	C:\C32\MikroEMMB 256\Microchip\Include\Graphics\Primitive.h	378;"	d	line:378
+MoveTo::(x,y)	C:\C32\MikroEMMB 256\Microchip\Include\Graphics\Primitive.h	355;"	d	line:355
+NODATA::0	C:\C32\MikroEMMB 256\Microchip\Include\MDD File System\SD-SPI.h	99;"	d	line:99
+NORMAL_LINE::0	C:\C32\MikroEMMB 256\Microchip\Include\Graphics\Primitive.h	62;"	d	line:62
+NOT_FOUND::1	C:\C32\MikroEMMB 256\Microchip\Include\MDD File System\FSDefs.h	87;"	d	line:87
+NOT_USED	C:\C32\MikroEMMB 256\Microchip\Include\MDD File System\SD-SPI.h	316;"	m	line:316
+NOT_USED	C:\C32\MikroEMMB 256\Microchip\Include\MDD File System\SD-SPI.h	380;"	m	line:380
+NO_CONTROLLER_DEFINED::0	C:\C32\MikroEMMB 256\Microchip\Include\Graphics\Graphics.h	46;"	d	line:46
+NO_MORE::2	C:\C32\MikroEMMB 256\Microchip\Include\MDD File System\FSDefs.h	91;"	d	line:91
+NSAC	C:\C32\MikroEMMB 256\Microchip\Include\MDD File System\SD-SPI.h	353;"	m	line:353
+NUMBER_OF_BYTES_IN_DIR_ENTRY::32	C:\C32\MikroEMMB 256\Microchip\Include\MDD File System\FSDefs.h	207;"	d	line:207
+OID	C:\C32\MikroEMMB 256\Microchip\Include\MDD File System\SD-SPI.h	386;"	m	line:386
+ONEP25::81920	C:\C32\MikroEMMB 256\Microchip\Include\Graphics\Primitive.h	89;"	d	line:89
+ORIENT_HOR::0	C:\C32\MikroEMMB 256\Microchip\Include\Graphics\Primitive.h	98;"	d	line:98
+ORIENT_VER::1	C:\C32\MikroEMMB 256\Microchip\Include\Graphics\Primitive.h	99;"	d	line:99
+OUTPUT::0	C:\C32\MikroEMMB 256\Microchip\Include\MDD File System\SD-SPI.h	399;"	d	line:399
+OUTRANGE_CSD_OVERWRITE	C:\C32\MikroEMMB 256\Microchip\Include\MDD File System\SD-SPI.h	256;"	m	line:256
+OpenSPI::(config1,config2)OpenSPI2(conf	C:\C32\MikroEMMB 256\Test\HardwareProfile.h	236;"	d	line:236
+OpenSPIM	C:\C32\MikroEMMB 256\Microchip\MDD File System\SD-SPI.c	100;"	p	line:100	file:	signature:( unsigned int sync_mode)
+OpenSPIM	C:\C32\MikroEMMB 256\Microchip\MDD File System\SD-SPI.c	1013;"	f	line:1013	signature:(unsigned char sync_mode)
+OpenSPIM	C:\C32\MikroEMMB 256\Microchip\MDD File System\SD-SPI.c	104;"	p	line:104	file:	signature:( unsigned char sync_mode)
+OutChar	C:\C32\MikroEMMB 256\Microchip\Graphics\Primitive.c	1601;"	f	line:1601	signature:(XCHAR ch)
+OutChar	C:\C32\MikroEMMB 256\Microchip\Include\Graphics\Primitive.h	432;"	p	line:432	signature:(XCHAR ch)
+OutText	C:\C32\MikroEMMB 256\Microchip\Graphics\Primitive.c	1508;"	f	line:1508	signature:(XCHAR *textString)
+OutText	C:\C32\MikroEMMB 256\Microchip\Include\Graphics\Primitive.h	461;"	p	line:461	signature:(XCHAR *textString)
+OutTextXY	C:\C32\MikroEMMB 256\Microchip\Graphics\Primitive.c	1550;"	f	line:1550	signature:(SHORT x, SHORT y, XCHAR *textString)
+OutTextXY	C:\C32\MikroEMMB 256\Microchip\Include\Graphics\Primitive.h	512;"	p	line:512	signature:(SHORT x, SHORT y, XCHAR *textString)
+PAGEMASK::(PAGESIZE-1)	C:\C32\MikroEMMB 256\MMB\SerialEEPROM.c	48;"	d	line:48	file:
+PAGESIZE::8	C:\C32\MikroEMMB 256\MMB\SerialEEPROM.c	47;"	d	line:47	file:
+PARAM_ERR	C:\C32\MikroEMMB 256\Microchip\Include\MDD File System\SD-SPI.h	224;"	m	line:224
+PARAM_ERR	C:\C32\MikroEMMB 256\Microchip\Include\MDD File System\SD-SPI.h	247;"	m	line:247
+PARAM_ERR	C:\C32\MikroEMMB 256\Microchip\Include\MDD File System\SD-SPI.h	280;"	m	line:280
+PERM_WRITE_PROTECT	C:\C32\MikroEMMB 256\Microchip\Include\MDD File System\SD-SPI.h	321;"	m	line:321
+PH480272T_005_I06Q::2	C:\C32\MikroEMMB 256\Microchip\Include\Graphics\Graphics.h	76;"	d	line:76
+PH480272T_005_I11Q::3	C:\C32\MikroEMMB 256\Microchip\Include\Graphics\Graphics.h	77;"	d	line:77
+PIC32MX4_MMB::400	C:\C32\MikroEMMB 256\Test\HardwareProfile.h	14;"	d	line:14
+PNM	C:\C32\MikroEMMB 256\Microchip\Include\MDD File System\SD-SPI.h	385;"	m	line:385
+PRI_PRESCAL_1_1::0x0003	C:\C32\MikroEMMB 256\Microchip\Include\MDD File System\SD-SPI.h	78;"	d	line:78
+PRV	C:\C32\MikroEMMB 256\Microchip\Include\MDD File System\SD-SPI.h	384;"	m	line:384
+PSN	C:\C32\MikroEMMB 256\Microchip\Include\MDD File System\SD-SPI.h	383;"	m	line:383
+Partition	C:\C32\MikroEMMB 256\Microchip\MDD File System\FSIO.c	1251;"	l	line:1251
+Partition	C:\C32\MikroEMMB 256\Microchip\MDD File System\FSIO.c	865;"	l	line:865
+PopulateEntries	C:\C32\MikroEMMB 256\Microchip\MDD File System\FSIO.c	2296;"	f	line:2296	signature:(FILEOBJ fo, char *name , WORD *fHandle, BYTE mode)
+PopulateEntries	C:\C32\MikroEMMB 256\Microchip\MDD File System\FSIO.c	244;"	p	line:244	file:	signature:(FILEOBJ fo, char *name , WORD *fHandle, BYTE mode)
+PutImage	C:\C32\MikroEMMB 256\Microchip\Graphics\Primitive.c	2001;"	f	line:2001	signature:(SHORT left, SHORT top, void *bitmap, BYTE stretch)
+PutImage	C:\C32\MikroEMMB 256\Microchip\Include\Graphics\Primitive.h	889;"	p	line:889	signature:(SHORT left, SHORT top, void *bitmap, BYTE stretch)
+PutImage16BPP	C:\C32\MikroEMMB 256\Microchip\Graphics\Primitive.c	2372;"	f	line:2372	signature:(SHORT left, SHORT top, FLASH_BYTE *bitmap, BYTE stretch)
+PutImage16BPP	C:\C32\MikroEMMB 256\Microchip\Graphics\Primitive.c	49;"	p	line:49	file:	signature:(SHORT left, SHORT top, FLASH_BYTE *bitmap, BYTE stretch)
+PutImage16BPPExt	C:\C32\MikroEMMB 256\Microchip\Graphics\Primitive.c	2716;"	f	line:2716	signature:(SHORT left, SHORT top, void *bitmap, BYTE stretch)
+PutImage16BPPExt	C:\C32\MikroEMMB 256\Microchip\Graphics\Primitive.c	54;"	p	line:54	file:	signature:(SHORT left, SHORT top, void *bitmap, BYTE stretch)
+PutImage1BPP	C:\C32\MikroEMMB 256\Microchip\Graphics\Primitive.c	2113;"	f	line:2113	signature:(SHORT left, SHORT top, FLASH_BYTE *bitmap, BYTE stretch)
+PutImage1BPP	C:\C32\MikroEMMB 256\Microchip\Graphics\Primitive.c	46;"	p	line:46	file:	signature:(SHORT left, SHORT top, FLASH_BYTE *bitmap, BYTE stretch)
+PutImage1BPPExt	C:\C32\MikroEMMB 256\Microchip\Graphics\Primitive.c	2442;"	f	line:2442	signature:(SHORT left, SHORT top, void *bitmap, BYTE stretch)
+PutImage1BPPExt	C:\C32\MikroEMMB 256\Microchip\Graphics\Primitive.c	51;"	p	line:51	file:	signature:(SHORT left, SHORT top, void *bitmap, BYTE stretch)
+PutImage4BPP	C:\C32\MikroEMMB 256\Microchip\Graphics\Primitive.c	2203;"	f	line:2203	signature:(SHORT left, SHORT top, FLASH_BYTE *bitmap, BYTE stretch)
+PutImage4BPP	C:\C32\MikroEMMB 256\Microchip\Graphics\Primitive.c	47;"	p	line:47	file:	signature:(SHORT left, SHORT top, FLASH_BYTE *bitmap, BYTE stretch)
+PutImage4BPPExt	C:\C32\MikroEMMB 256\Microchip\Graphics\Primitive.c	2543;"	f	line:2543	signature:(SHORT left, SHORT top, void *bitmap, BYTE stretch)
+PutImage4BPPExt	C:\C32\MikroEMMB 256\Microchip\Graphics\Primitive.c	52;"	p	line:52	file:	signature:(SHORT left, SHORT top, void *bitmap, BYTE stretch)
+PutImage8BPP	C:\C32\MikroEMMB 256\Microchip\Graphics\Primitive.c	2292;"	f	line:2292	signature:(SHORT left, SHORT top, FLASH_BYTE *bitmap, BYTE stretch)
+PutImage8BPP	C:\C32\MikroEMMB 256\Microchip\Graphics\Primitive.c	48;"	p	line:48	file:	signature:(SHORT left, SHORT top, FLASH_BYTE *bitmap, BYTE stretch)
+PutImage8BPPExt	C:\C32\MikroEMMB 256\Microchip\Graphics\Primitive.c	2639;"	f	line:2639	signature:(SHORT left, SHORT top, void *bitmap, BYTE stretch)
+PutImage8BPPExt	C:\C32\MikroEMMB 256\Microchip\Graphics\Primitive.c	53;"	p	line:53	file:	signature:(SHORT left, SHORT top, void *bitmap, BYTE stretch)
+R1	C:\C32\MikroEMMB 256\Microchip\Include\MDD File System\SD-SPI.h	150;"	e	line:150
+R1b	C:\C32\MikroEMMB 256\Microchip\Include\MDD File System\SD-SPI.h	151;"	e	line:151
+R2	C:\C32\MikroEMMB 256\Microchip\Include\MDD File System\SD-SPI.h	152;"	e	line:152
+R2W_FACTOR	C:\C32\MikroEMMB 256\Microchip\Include\MDD File System\SD-SPI.h	328;"	m	line:328
+R3	C:\C32\MikroEMMB 256\Microchip\Include\MDD File System\SD-SPI.h	153;"	e	line:153
+R61505::6	C:\C32\MikroEMMB 256\Microchip\Include\Graphics\Graphics.h	52;"	d	line:52
+R61580::18	C:\C32\MikroEMMB 256\Microchip\Include\Graphics\Graphics.h	64;"	d	line:64
+R7	C:\C32\MikroEMMB 256\Microchip\Include\MDD File System\SD-SPI.h	154;"	e	line:154
+RAM	C:\C32\MikroEMMB 256\Microchip\Include\Graphics\Primitive.h	114;"	e	line:114
+RAMread::(a,f)*(a+f)	C:\C32\MikroEMMB 256\Microchip\Include\MDD File System\FSDefs.h	244;"	d	line:244
+RAMreadD::(a,f)*(DWORD*)(a+f)	C:\C32\MikroEMMB 256\Microchip\Include\MDD File System\FSDefs.h	252;"	d	line:252
+RAMreadW::(a,f)*(WORD*)(a+f)	C:\C32\MikroEMMB 256\Microchip\Include\MDD File System\FSDefs.h	248;"	d	line:248
+RAMwrite::(a,f,d)*(a+f)=d	C:\C32\MikroEMMB 256\Microchip\Include\MDD File System\FSDefs.h	240;"	d	line:240
+READ::"r"	C:\C32\MikroEMMB 256\Microchip\Include\MDD File System\FSIO.h	128;"	d	line:128
+READPLUS::"r+"	C:\C32\MikroEMMB 256\Microchip\Include\MDD File System\FSIO.h	151;"	d	line:151
+READ_BLK_MISALIGN	C:\C32\MikroEMMB 256\Microchip\Include\MDD File System\SD-SPI.h	346;"	m	line:346
+READ_BL_LEN	C:\C32\MikroEMMB 256\Microchip\Include\MDD File System\SD-SPI.h	349;"	m	line:349
+READ_BL_PARTIAL	C:\C32\MikroEMMB 256\Microchip\Include\MDD File System\SD-SPI.h	348;"	m	line:348
+READ_CMD::1	C:\C32\MikroEMMB 256\MMB\SerialEEPROM.h	51;"	d	line:51
+READ_MULTI_BLOCK	C:\C32\MikroEMMB 256\Microchip\Include\MDD File System\SD-SPI.h	427;"	e	line:427
+READ_OCR	C:\C32\MikroEMMB 256\Microchip\Include\MDD File System\SD-SPI.h	434;"	e	line:434
+READ_SINGLE_BLOCK	C:\C32\MikroEMMB 256\Microchip\Include\MDD File System\SD-SPI.h	426;"	e	line:426
+RESERVED_1	C:\C32\MikroEMMB 256\Microchip\Include\MDD File System\SD-SPI.h	324;"	m	line:324
+RESERVED_2	C:\C32\MikroEMMB 256\Microchip\Include\MDD File System\SD-SPI.h	344;"	m	line:344
+RESERVED_3	C:\C32\MikroEMMB 256\Microchip\Include\MDD File System\SD-SPI.h	355;"	m	line:355
+RESP	C:\C32\MikroEMMB 256\Microchip\Include\MDD File System\SD-SPI.h	155;"	t	line:155
+RESPONSE_1	C:\C32\MikroEMMB 256\Microchip\Include\MDD File System\SD-SPI.h	227;"	t	line:227
+RESPONSE_2	C:\C32\MikroEMMB 256\Microchip\Include\MDD File System\SD-SPI.h	258;"	t	line:258
+RESPONSE_7	C:\C32\MikroEMMB 256\Microchip\Include\MDD File System\SD-SPI.h	285;"	t	line:285
+RGB332CONVERT::(red,green,blue)(BYTE)((red&0x	C:\C32\MikroEMMB 256\Microchip\Include\Graphics\Graphics.h	187;"	d	line:187
+RGB565CONVERT::(red,green,blue)(WORD)(((red>>	C:\C32\MikroEMMB 256\Microchip\Include\Graphics\Graphics.h	171;"	d	line:171
+RST_LAT_BIT::_LATC1	C:\C32\MikroEMMB 256\Test\HardwareProfile.h	70;"	d	line:70
+RST_TRIS_BIT::_TRISC1	C:\C32\MikroEMMB 256\Test\HardwareProfile.h	69;"	d	line:69
+RS_LAT_BIT::_LATB15	C:\C32\MikroEMMB 256\Test\HardwareProfile.h	74;"	d	line:74
+RS_TRIS_BIT::_TRISB15	C:\C32\MikroEMMB 256\Test\HardwareProfile.h	73;"	d	line:73
+ReadByte	C:\C32\MikroEMMB 256\Microchip\Include\MDD File System\SD-SPI.h	473;"	p	line:473	signature:( BYTE* pBuffer, WORD index )
+ReadByte	C:\C32\MikroEMMB 256\Microchip\MDD File System\FSIO.c	223;"	p	line:223	file:	signature:( BYTE* pBuffer, WORD index )
+ReadByte	C:\C32\MikroEMMB 256\Microchip\MDD File System\FSIO.c	4450;"	f	line:4450	signature:( BYTE* pBuffer, WORD index )
+ReadDWord	C:\C32\MikroEMMB 256\Microchip\Include\MDD File System\SD-SPI.h	475;"	p	line:475	signature:( BYTE* pBuffer, WORD index )
+ReadDWord	C:\C32\MikroEMMB 256\Microchip\MDD File System\FSIO.c	225;"	p	line:225	file:	signature:( BYTE* pBuffer, WORD index )
+ReadDWord	C:\C32\MikroEMMB 256\Microchip\MDD File System\FSIO.c	4510;"	f	line:4510	signature:( BYTE* pBuffer, WORD index )
+ReadFAT	C:\C32\MikroEMMB 256\Microchip\MDD File System\FSIO.c	211;"	p	line:211	file:	signature:(DISK *dsk, DWORD ccls)
+ReadFAT	C:\C32\MikroEMMB 256\Microchip\MDD File System\FSIO.c	5678;"	f	line:5678	signature:(DISK *dsk, DWORD ccls)
+ReadMediaManual	C:\C32\MikroEMMB 256\Microchip\MDD File System\SD-SPI.c	109;"	p	line:109	file:	signature:(void)
+ReadMediaManual	C:\C32\MikroEMMB 256\Microchip\MDD File System\SD-SPI.c	1119;"	f	line:1119	signature:(void)
+ReadWord	C:\C32\MikroEMMB 256\Microchip\Include\MDD File System\SD-SPI.h	474;"	p	line:474	signature:( BYTE* pBuffer, WORD index )
+ReadWord	C:\C32\MikroEMMB 256\Microchip\MDD File System\FSIO.c	224;"	p	line:224	file:	signature:( BYTE* pBuffer, WORD index )
+ReadWord	C:\C32\MikroEMMB 256\Microchip\MDD File System\FSIO.c	4476;"	f	line:4476	signature:( BYTE* pBuffer, WORD index )
+Rectangle::(left,top,right,bottom)Bevel(l	C:\C32\MikroEMMB 256\Microchip\Include\Graphics\Primitive.h	793;"	d	line:793
+ReservedSectorCount	C:\C32\MikroEMMB 256\Microchip\MDD File System\FSIO.c	1014;"	l	line:1014
+RootDirSectors	C:\C32\MikroEMMB 256\Microchip\MDD File System\FSIO.c	1009;"	l	line:1009
+RootDirSectors	C:\C32\MikroEMMB 256\Microchip\MDD File System\FSIO.c	1368;"	l	line:1368
+S6D0129::3	C:\C32\MikroEMMB 256\Microchip\Include\Graphics\Graphics.h	49;"	d	line:49
+S6D0139::4	C:\C32\MikroEMMB 256\Microchip\Include\Graphics\Graphics.h	50;"	d	line:50
+SDMMC_H	C:\C32\MikroEMMB 256\Microchip\Include\MDD File System\SD-SPI.h	38;"	d	line:38
+SD_CD::_RA6	C:\C32\MikroEMMB 256\Test\HardwareProfile.h	198;"	d	line:198
+SD_CD_TRIS::_TRISA6	C:\C32\MikroEMMB 256\Test\HardwareProfile.h	200;"	d	line:200
+SD_CS::_LATG9	C:\C32\MikroEMMB 256\Test\HardwareProfile.h	193;"	d	line:193
+SD_CS_TRIS::_TRISG9	C:\C32\MikroEMMB 256\Test\HardwareProfile.h	195;"	d	line:195
+SD_MODE_HC::1	C:\C32\MikroEMMB 256\Microchip\Include\MDD File System\SD-SPI.h	440;"	d	line:440
+SD_MODE_NORMAL::0	C:\C32\MikroEMMB 256\Microchip\Include\MDD File System\SD-SPI.h	439;"	d	line:439
+SD_WE::_RA7	C:\C32\MikroEMMB 256\Test\HardwareProfile.h	203;"	d	line:203
+SD_WE_TRIS::_TRISA7	C:\C32\MikroEMMB 256\Test\HardwareProfile.h	205;"	d	line:205
+SEARCH_TYPE	C:\C32\MikroEMMB 256\Microchip\Include\MDD File System\FSIO.h	194;"	t	line:194
+SECTOR_SIZE	C:\C32\MikroEMMB 256\Microchip\Include\MDD File System\SD-SPI.h	334;"	m	line:334
+SEC_PRESCAL_1_1::0x001c	C:\C32\MikroEMMB 256\Microchip\Include\MDD File System\SD-SPI.h	74;"	d	line:74
+SEEK_CUR::1	C:\C32\MikroEMMB 256\Microchip\Include\MDD File System\FSIO.h	90;"	d	line:90
+SEEK_END::2	C:\C32\MikroEMMB 256\Microchip\Include\MDD File System\FSIO.h	99;"	d	line:99
+SEEK_SET::0	C:\C32\MikroEMMB 256\Microchip\Include\MDD File System\FSIO.h	82;"	d	line:82
+SEND_CID	C:\C32\MikroEMMB 256\Microchip\Include\MDD File System\SD-SPI.h	422;"	e	line:422
+SEND_CSD	C:\C32\MikroEMMB 256\Microchip\Include\MDD File System\SD-SPI.h	421;"	e	line:421
+SEND_IF_COND	C:\C32\MikroEMMB 256\Microchip\Include\MDD File System\SD-SPI.h	420;"	e	line:420
+SEND_OP_COND	C:\C32\MikroEMMB 256\Microchip\Include\MDD File System\SD-SPI.h	419;"	e	line:419
+SEND_STATUS	C:\C32\MikroEMMB 256\Microchip\Include\MDD File System\SD-SPI.h	424;"	e	line:424
+SET_BLOCKLEN	C:\C32\MikroEMMB 256\Microchip\Include\MDD File System\SD-SPI.h	425;"	e	line:425
+SFLASHCSHigh::CS_FLASH_LAT_BIT=1;	C:\C32\MikroEMMB 256\MMB\SerialFLASH.h	50;"	d	line:50
+SFLASHCSLow::CS_FLASH_LAT_BIT=0;	C:\C32\MikroEMMB 256\MMB\SerialFLASH.h	36;"	d	line:36
+SFLASHChipErase	C:\C32\MikroEMMB 256\MMB\SerialFLASH.c	326;"	f	line:326	signature:(void)
+SFLASHChipErase	C:\C32\MikroEMMB 256\MMB\SerialFLASH.h	179;"	p	line:179	signature:(void)
+SFLASHInit	C:\C32\MikroEMMB 256\MMB\SerialFLASH.c	13;"	f	line:13
+SFLASHInit	C:\C32\MikroEMMB 256\MMB\SerialFLASH.h	62;"	p	line:62	signature:()
+SFLASHIsWriteBusy	C:\C32\MikroEMMB 256\MMB\SerialFLASH.c	230;"	f	line:230
+SFLASHIsWriteBusy	C:\C32\MikroEMMB 256\MMB\SerialFLASH.h	74;"	p	line:74	signature:()
+SFLASHReadArray	C:\C32\MikroEMMB 256\MMB\SerialFLASH.c	293;"	f	line:293	signature:(DWORD address, BYTE* pData, WORD nCount)
+SFLASHReadArray	C:\C32\MikroEMMB 256\MMB\SerialFLASH.h	169;"	p	line:169	signature:(DWORD address, BYTE* pData, WORD nCount)
+SFLASHReadByte	C:\C32\MikroEMMB 256\MMB\SerialFLASH.c	144;"	f	line:144	signature:(DWORD address)
+SFLASHReadByte	C:\C32\MikroEMMB 256\MMB\SerialFLASH.h	110;"	p	line:110	signature:(DWORD address)
+SFLASHReadID	C:\C32\MikroEMMB 256\MMB\SerialFLASH.c	120;"	f	line:120	signature:( void)
+SFLASHReadID	C:\C32\MikroEMMB 256\MMB\SerialFLASH.h	98;"	p	line:98	signature:( void)
+SFLASHReadWord	C:\C32\MikroEMMB 256\MMB\SerialFLASH.c	193;"	f	line:193	signature:(DWORD address)
+SFLASHReadWord	C:\C32\MikroEMMB 256\MMB\SerialFLASH.h	134;"	p	line:134	signature:(DWORD address)
+SFLASHResetWriteProtection	C:\C32\MikroEMMB 256\MMB\SerialFLASH.c	351;"	f	line:351
+SFLASHResetWriteProtection	C:\C32\MikroEMMB 256\MMB\SerialFLASH.h	191;"	p	line:191	signature:()
+SFLASHSectorErase	C:\C32\MikroEMMB 256\MMB\SerialFLASH.c	380;"	f	line:380	signature:(DWORD address)
+SFLASHSectorErase	C:\C32\MikroEMMB 256\MMB\SerialFLASH.h	203;"	p	line:203	signature:(DWORD address)
+SFLASHWriteArray	C:\C32\MikroEMMB 256\MMB\SerialFLASH.c	254;"	f	line:254	signature:(DWORD address, BYTE* pData, WORD nCount)
+SFLASHWriteArray	C:\C32\MikroEMMB 256\MMB\SerialFLASH.h	159;"	p	line:159	signature:(DWORD address, BYTE* pData, WORD nCount)
+SFLASHWriteByte	C:\C32\MikroEMMB 256\MMB\SerialFLASH.c	84;"	f	line:84	signature:(BYTE data, DWORD address)
+SFLASHWriteByte	C:\C32\MikroEMMB 256\MMB\SerialFLASH.h	86;"	p	line:86	signature:(BYTE data, DWORD address)
+SFLASHWriteEnable	C:\C32\MikroEMMB 256\MMB\SerialFLASH.c	213;"	f	line:213
+SFLASHWriteEnable	C:\C32\MikroEMMB 256\MMB\SerialFLASH.h	147;"	p	line:147	signature:()
+SFLASHWriteWord	C:\C32\MikroEMMB 256\MMB\SerialFLASH.c	177;"	f	line:177	signature:(WORD data, DWORD address)
+SFLASHWriteWord	C:\C32\MikroEMMB 256\MMB\SerialFLASH.h	122;"	p	line:122	signature:(WORD data, DWORD address)
+SFLASH_CMD_ERASE::(unsigned)0xC7	C:\C32\MikroEMMB 256\MMB\SerialFLASH.h	19;"	d	line:19
+SFLASH_CMD_EWSR::(unsigned)0x06	C:\C32\MikroEMMB 256\MMB\SerialFLASH.h	20;"	d	line:20
+SFLASH_CMD_RDID::(unsigned)0x9F	C:\C32\MikroEMMB 256\MMB\SerialFLASH.h	14;"	d	line:14
+SFLASH_CMD_RDSR::(unsigned)0x05	C:\C32\MikroEMMB 256\MMB\SerialFLASH.h	18;"	d	line:18
+SFLASH_CMD_READ::(unsigned)0x03	C:\C32\MikroEMMB 256\MMB\SerialFLASH.h	15;"	d	line:15
+SFLASH_CMD_SER::(unsigned)0x20	C:\C32\MikroEMMB 256\MMB\SerialFLASH.h	22;"	d	line:22
+SFLASH_CMD_WREN::(unsigned)0x06	C:\C32\MikroEMMB 256\MMB\SerialFLASH.h	17;"	d	line:17
+SFLASH_CMD_WRITE::(unsigned)0x02	C:\C32\MikroEMMB 256\MMB\SerialFLASH.h	16;"	d	line:16
+SFLASH_CMD_WRSR::(unsigned)0x01	C:\C32\MikroEMMB 256\MMB\SerialFLASH.h	21;"	d	line:21
+SH1101A::10	C:\C32\MikroEMMB 256\Microchip\Include\Graphics\Graphics.h	56;"	d	line:56
+SIN45::46341	C:\C32\MikroEMMB 256\Microchip\Include\Graphics\Primitive.h	88;"	d	line:88
+SOLID_LINE::0	C:\C32\MikroEMMB 256\Microchip\Include\Graphics\Primitive.h	53;"	d	line:53
+SPEC_VERS	C:\C32\MikroEMMB 256\Microchip\Include\MDD File System\SD-SPI.h	356;"	m	line:356
+SPFD5408::7	C:\C32\MikroEMMB 256\Microchip\Include\Graphics\Graphics.h	53;"	d	line:53
+SPIBRG::SPI2BRG	C:\C32\MikroEMMB 256\Test\HardwareProfile.h	222;"	d	line:222
+SPIBUF::SPI2BUF	C:\C32\MikroEMMB 256\Test\HardwareProfile.h	212;"	d	line:212
+SPICLOCK::TRISGbits.TRISG6	C:\C32\MikroEMMB 256\Test\HardwareProfile.h	227;"	d	line:227
+SPICON1::SPI2CON	C:\C32\MikroEMMB 256\Test\HardwareProfile.h	208;"	d	line:208
+SPICON1bits::SPI2CONbits	C:\C32\MikroEMMB 256\Test\HardwareProfile.h	216;"	d	line:216
+SPICalutateBRG	C:\C32\MikroEMMB 256\Microchip\MDD File System\SD-SPI.c	135;"	f	line:135	file:	signature:(unsigned int pb_clk, unsigned int spi_clk)
+SPIENABLE::SPI2CONbits.ON	C:\C32\MikroEMMB 256\Test\HardwareProfile.h	220;"	d	line:220
+SPIGet::SPI2BUF	C:\C32\MikroEMMB 256\MMB\SerialFLASH.c	72;"	d	line:72	file:
+SPIIN::TRISGbits.TRISG7	C:\C32\MikroEMMB 256\Test\HardwareProfile.h	229;"	d	line:229
+SPIOUT::TRISGbits.TRISG8	C:\C32\MikroEMMB 256\Test\HardwareProfile.h	231;"	d	line:231
+SPIPut	C:\C32\MikroEMMB 256\MMB\SerialFLASH.c	52;"	f	line:52	signature:(BYTE data)
+SPISTAT::SPI2STAT	C:\C32\MikroEMMB 256\Test\HardwareProfile.h	210;"	d	line:210
+SPISTAT_RBF::SPI2STATbits.SPIRBF	C:\C32\MikroEMMB 256\Test\HardwareProfile.h	214;"	d	line:214
+SPISTATbits::SPI2STATbits	C:\C32\MikroEMMB 256\Test\HardwareProfile.h	218;"	d	line:218
+SPI_FREQUENCY::(20000000)	C:\C32\MikroEMMB 256\Test\HardwareProfile.h	189;"	d	line:189
+SPI_START_CFG_1::(PRI_PRESCAL_64_1|SEC_PRESCAL_	C:\C32\MikroEMMB 256\Test\HardwareProfile.h	185;"	d	line:185
+SPI_START_CFG_2::(SPI_ENABLE)	C:\C32\MikroEMMB 256\Test\HardwareProfile.h	186;"	d	line:186
+SSD1289::15	C:\C32\MikroEMMB 256\Microchip\Include\Graphics\Graphics.h	61;"	d	line:61
+SSD1303::11	C:\C32\MikroEMMB 256\Microchip\Include\Graphics\Graphics.h	57;"	d	line:57
+SSD1339::8	C:\C32\MikroEMMB 256\Microchip\Include\Graphics\Graphics.h	54;"	d	line:54
+SSD1906::1	C:\C32\MikroEMMB 256\Microchip\Include\Graphics\Graphics.h	47;"	d	line:47
+SSD1926::2	C:\C32\MikroEMMB 256\Microchip\Include\Graphics\Graphics.h	48;"	d	line:48
+SSD2119::19	C:\C32\MikroEMMB 256\Microchip\Include\Graphics\Graphics.h	65;"	d	line:65
+ST7529::9	C:\C32\MikroEMMB 256\Microchip\Include\Graphics\Graphics.h	55;"	d	line:55
+START_BIT	C:\C32\MikroEMMB 256\Microchip\Include\MDD File System\SD-SPI.h	205;"	m	line:205
+STOP_TRANSMISSION	C:\C32\MikroEMMB 256\Microchip\Include\MDD File System\SD-SPI.h	423;"	e	line:423
+SUPPORT_FAT32	C:\C32\MikroEMMB 256\Test\FSconfig.h	99;"	d	line:99
+SYNC_MODE_FAST::0x00	C:\C32\MikroEMMB 256\Microchip\Include\MDD File System\SD-SPI.h	47;"	d	line:47
+SYNC_MODE_FAST::0x3E	C:\C32\MikroEMMB 256\Microchip\Include\MDD File System\SD-SPI.h	54;"	d	line:54
+SYNC_MODE_FAST::0x3E	C:\C32\MikroEMMB 256\Microchip\Include\MDD File System\SD-SPI.h	65;"	d	line:65
+SYNC_MODE_MED::0x01	C:\C32\MikroEMMB 256\Microchip\Include\MDD File System\SD-SPI.h	49;"	d	line:49
+SYNC_MODE_SLOW::0x02	C:\C32\MikroEMMB 256\Microchip\Include\MDD File System\SD-SPI.h	51;"	d	line:51
+SYNC_MODE_SLOW::0x3C	C:\C32\MikroEMMB 256\Microchip\Include\MDD File System\SD-SPI.h	56;"	d	line:56
+SYNC_MODE_SLOW::0x3C	C:\C32\MikroEMMB 256\Microchip\Include\MDD File System\SD-SPI.h	69;"	d	line:69
+SYS_CFG_PCACHE	C:\C32\MikroEMMB 256\MMB\MMB.C	26;"	l	line:26
+SearchRec	C:\C32\MikroEMMB 256\Microchip\Include\MDD File System\FSIO.h	309;"	t	line:309
+SecPerClus	C:\C32\MikroEMMB 256\Microchip\Include\MDD File System\FSDefs.h	279;"	m	line:279
+SectorAddress	C:\C32\MikroEMMB 256\Microchip\MDD File System\FSIO.c	4399;"	l	line:4399
+SendMMCCmd	C:\C32\MikroEMMB 256\Microchip\MDD File System\SD-SPI.c	379;"	f	line:379	signature:(BYTE cmd, DWORD address)
+SendMMCCmd	C:\C32\MikroEMMB 256\Microchip\MDD File System\SD-SPI.c	97;"	p	line:97	file:	signature:(BYTE cmd, DWORD address)
+SendMMCCmdManual	C:\C32\MikroEMMB 256\Microchip\MDD File System\SD-SPI.c	110;"	p	line:110	file:	signature:(BYTE cmd, DWORD address)
+SendMMCCmdManual	C:\C32\MikroEMMB 256\Microchip\MDD File System\SD-SPI.c	486;"	f	line:486	signature:(BYTE cmd, DWORD address)
+SetClockVars	C:\C32\MikroEMMB 256\Microchip\Include\MDD File System\FSIO.h	1077;"	p	line:1077	signature:(unsigned int year, unsigned char month, unsigned char day, unsigned char hour, unsigned char minute, unsigned char second)
+SetClockVars	C:\C32\MikroEMMB 256\Microchip\MDD File System\FSIO.c	2549;"	f	line:2549	signature:(unsigned int year, unsigned char month, unsigned char day, unsigned char hour, unsigned char minute, unsigned char second)
+SetFont	C:\C32\MikroEMMB 256\Microchip\Graphics\Primitive.c	1457;"	f	line:1457	signature:(void *font)
+SetFont	C:\C32\MikroEMMB 256\Microchip\Include\Graphics\Primitive.h	569;"	p	line:569	signature:(void *font)
+SetFontOrientation::(orient)_fontOrientation=orien	C:\C32\MikroEMMB 256\Microchip\Include\Graphics\Primitive.h	392;"	d	line:392
+SetLineThickness::(lnThickness)_lineThickness=ln	C:\C32\MikroEMMB 256\Microchip\Include\Graphics\Primitive.h	601;"	d	line:601
+SetLineType::(lnType)_lineType=lnType;	C:\C32\MikroEMMB 256\Microchip\Include\Graphics\Primitive.h	587;"	d	line:587
+StrSz	C:\C32\MikroEMMB 256\Microchip\MDD File System\FSIO.c	5280;"	l	line:5280
+TAAC	C:\C32\MikroEMMB 256\Microchip\Include\MDD File System\SD-SPI.h	354;"	m	line:354
+TAG_SECTOR_END	C:\C32\MikroEMMB 256\Microchip\Include\MDD File System\SD-SPI.h	431;"	e	line:431
+TAG_SECTOR_START	C:\C32\MikroEMMB 256\Microchip\Include\MDD File System\SD-SPI.h	430;"	e	line:430
+TFT2N0369_E::0	C:\C32\MikroEMMB 256\Microchip\Include\Graphics\Graphics.h	71;"	d	line:71
+TFT_G240320LTSW_118W_E::0	C:\C32\MikroEMMB 256\Microchip\Include\Graphics\Graphics.h	70;"	d	line:70
+TFT_G320240DTSW_69W_TP_E::1	C:\C32\MikroEMMB 256\Microchip\Include\Graphics\Graphics.h	74;"	d	line:74
+THICK_LINE::1	C:\C32\MikroEMMB 256\Microchip\Include\Graphics\Primitive.h	65;"	d	line:65
+TMP_WRITE_PROTECT	C:\C32\MikroEMMB 256\Microchip\Include\MDD File System\SD-SPI.h	320;"	m	line:320
+TOTAL_FILE_SIZE::8+3+1	C:\C32\MikroEMMB 256\Microchip\Include\MDD File System\FSIO.h	201;"	d	line:201
+TRANSMIT_BIT	C:\C32\MikroEMMB 256\Microchip\Include\MDD File System\SD-SPI.h	204;"	m	line:204
+TRAN_SPEED	C:\C32\MikroEMMB 256\Microchip\Include\MDD File System\SD-SPI.h	352;"	m	line:352
+TRIS_XNEG::_TRISB11	C:\C32\MikroEMMB 256\Test\HardwareProfile.h	102;"	d	line:102
+TRIS_XPOS::_TRISB13	C:\C32\MikroEMMB 256\Test\HardwareProfile.h	103;"	d	line:103
+TRIS_YNEG::_TRISB10	C:\C32\MikroEMMB 256\Test\HardwareProfile.h	109;"	d	line:109
+TRIS_YPOS::_TRISB12	C:\C32\MikroEMMB 256\Test\HardwareProfile.h	110;"	d	line:110
+TRUE::!FALSE	C:\C32\MikroEMMB 256\Microchip\Include\MDD File System\FSIO.h	72;"	d	line:72
+TRUE::!FALSE	C:\C32\MikroEMMB 256\Microchip\Include\MDD File System\SD-SPI.h	395;"	d	line:395
+TYPE_MEMORY	C:\C32\MikroEMMB 256\Microchip\Include\Graphics\Primitive.h	116;"	t	line:116
+TempClusterCalc	C:\C32\MikroEMMB 256\Microchip\MDD File System\FSIO.c	113;"	v	line:113
+TempFullClusterCalc	C:\C32\MikroEMMB 256\Microchip\MDD File System\FSIO.c	1196;"	l	line:1196
+TempMsbCluster	C:\C32\MikroEMMB 256\Microchip\MDD File System\FSIO.c	2117;"	l	line:2117
+TerminalFont	C:\C32\MikroEMMB 256\MMB\LCDTerminalFont.c	5;"	v	line:5
+TotSec	C:\C32\MikroEMMB 256\Microchip\MDD File System\FSIO.c	1010;"	l	line:1010
+UARTGetChar	C:\C32\MikroEMMB 256\MMB\SimpleUART.c	132;"	f	line:132
+UARTGetChar	C:\C32\MikroEMMB 256\MMB\SimpleUART.h	107;"	p	line:107	signature:()
+UARTIsDA::U2STAbits.URXDA	C:\C32\MikroEMMB 256\MMB\SimpleUART.h	143;"	d	line:143
+UARTPutByte	C:\C32\MikroEMMB 256\MMB\SimpleUART.c	47;"	f	line:47	signature:(BYTE byte)
+UARTPutByte	C:\C32\MikroEMMB 256\MMB\SimpleUART.h	35;"	p	line:35	signature:(BYTE byte)
+UARTPutChar	C:\C32\MikroEMMB 256\MMB\SimpleUART.c	25;"	f	line:25	signature:(BYTE ch)
+UARTPutChar	C:\C32\MikroEMMB 256\MMB\SimpleUART.h	17;"	p	line:17	signature:(BYTE ch)
+UARTPutDWord	C:\C32\MikroEMMB 256\MMB\SimpleUART.c	90;"	f	line:90	signature:(DWORD dword)
+UARTPutDWord	C:\C32\MikroEMMB 256\MMB\SimpleUART.h	71;"	p	line:71	signature:(DWORD dword)
+UARTPutString	C:\C32\MikroEMMB 256\MMB\SimpleUART.c	111;"	f	line:111	signature:(char* str)
+UARTPutString	C:\C32\MikroEMMB 256\MMB\SimpleUART.h	89;"	p	line:89	signature:(char* str)
+UARTPutWord	C:\C32\MikroEMMB 256\MMB\SimpleUART.c	68;"	f	line:68	signature:(WORD word)
+UARTPutWord	C:\C32\MikroEMMB 256\MMB\SimpleUART.h	53;"	p	line:53	signature:(WORD word)
+UARTWaitChar	C:\C32\MikroEMMB 256\MMB\SimpleUART.c	159;"	f	line:159
+UARTWaitChar	C:\C32\MikroEMMB 256\MMB\SimpleUART.h	125;"	p	line:125	signature:()
+UC1610::13	C:\C32\MikroEMMB 256\Microchip\Include\Graphics\Graphics.h	59;"	d	line:59
+USE_16BIT_PMP	C:\C32\MikroEMMB 256\Test\HardwareProfile.h	57;"	d	line:57
+USE_BITMAP_FLASH::	C:\C32\MikroEMMB 256\Test\GraphicsConfig.h	92;"	d	line:92
+USE_FONT_FLASH::	C:\C32\MikroEMMB 256\Test\GraphicsConfig.h	79;"	d	line:79
+USE_PRIMITIVE_BEVEL	C:\C32\MikroEMMB 256\Microchip\Graphics\Primitive.c	43;"	d	line:43	file:
+USE_SD_INTERFACE_WITH_SPI	C:\C32\MikroEMMB 256\Test\HardwareProfile.h	179;"	d	line:179
+VALUE_BASED_ON_ENTRIES_PER_CLUSTER::4	C:\C32\MikroEMMB 256\Microchip\Include\MDD File System\FSIO.h	212;"	d	line:212
+VALUE_DOTDOT_CLUSTER_VALUE_FOR_ROOT::0	C:\C32\MikroEMMB 256\Microchip\Include\MDD File System\FSIO.h	218;"	d	line:218
+VDD_R_CURR_MAX	C:\C32\MikroEMMB 256\Microchip\Include\MDD File System\SD-SPI.h	339;"	m	line:339
+VDD_R_CURR_MIN	C:\C32\MikroEMMB 256\Microchip\Include\MDD File System\SD-SPI.h	340;"	m	line:340
+VDD_W_CURR_MAX	C:\C32\MikroEMMB 256\Microchip\Include\MDD File System\SD-SPI.h	337;"	m	line:337
+VDD_W_CUR_MIN	C:\C32\MikroEMMB 256\Microchip\Include\MDD File System\SD-SPI.h	338;"	m	line:338
+VIDEOBUF	C:\C32\MikroEMMB 256\Microchip\Include\Graphics\Primitive.h	115;"	e	line:115
+ValidateChars	C:\C32\MikroEMMB 256\Microchip\MDD File System\FSIO.c	229;"	p	line:229	file:	signature:(char * FileName, BYTE mode)
+ValidateChars	C:\C32\MikroEMMB 256\Microchip\MDD File System\FSIO.c	5278;"	f	line:5278	signature:( char * FileName , BYTE mode)
+WP_ERASE_SKIP_LK_FAIL	C:\C32\MikroEMMB 256\Microchip\Include\MDD File System\SD-SPI.h	250;"	m	line:250
+WP_GRP_ENABLE	C:\C32\MikroEMMB 256\Microchip\Include\MDD File System\SD-SPI.h	330;"	m	line:330
+WP_GRP_SIZE	C:\C32\MikroEMMB 256\Microchip\Include\MDD File System\SD-SPI.h	331;"	m	line:331
+WP_VIOLATION	C:\C32\MikroEMMB 256\Microchip\Include\MDD File System\SD-SPI.h	254;"	m	line:254
+WRITE::"w"	C:\C32\MikroEMMB 256\Microchip\Include\MDD File System\FSIO.h	118;"	d	line:118
+WRITEPLUS::"w+"	C:\C32\MikroEMMB 256\Microchip\Include\MDD File System\FSIO.h	144;"	d	line:144
+WRITE_BLK_MISALIGN	C:\C32\MikroEMMB 256\Microchip\Include\MDD File System\SD-SPI.h	347;"	m	line:347
+WRITE_BL_LEN_H	C:\C32\MikroEMMB 256\Microchip\Include\MDD File System\SD-SPI.h	327;"	m	line:327
+WRITE_BL_LEN_L	C:\C32\MikroEMMB 256\Microchip\Include\MDD File System\SD-SPI.h	326;"	m	line:326
+WRITE_BL_PARTIAL	C:\C32\MikroEMMB 256\Microchip\Include\MDD File System\SD-SPI.h	325;"	m	line:325
+WRITE_CMD::0	C:\C32\MikroEMMB 256\MMB\SerialEEPROM.h	52;"	d	line:52
+WRITE_MULTI_BLOCK	C:\C32\MikroEMMB 256\Microchip\Include\MDD File System\SD-SPI.h	429;"	e	line:429
+WRITE_SINGLE_BLOCK	C:\C32\MikroEMMB 256\Microchip\Include\MDD File System\SD-SPI.h	428;"	e	line:428
+WriteFAT	C:\C32\MikroEMMB 256\Microchip\MDD File System\FSIO.c	248;"	p	line:248	file:	signature:(DISK *dsk, DWORD ccls, DWORD value, BYTE forceWrite)
+WriteFAT	C:\C32\MikroEMMB 256\Microchip\MDD File System\FSIO.c	5848;"	f	line:5848	signature:(DISK *dsk, DWORD ccls, DWORD value, BYTE forceWrite)
+WriteSPIM	C:\C32\MikroEMMB 256\Microchip\MDD File System\SD-SPI.c	102;"	p	line:102	file:	signature:( unsigned char data_out )
+WriteSPIM	C:\C32\MikroEMMB 256\Microchip\MDD File System\SD-SPI.c	106;"	p	line:106	file:	signature:( unsigned char data_out )
+WriteSPIM	C:\C32\MikroEMMB 256\Microchip\MDD File System\SD-SPI.c	922;"	f	line:922	signature:( unsigned char data_out )
+WriteSPIManual	C:\C32\MikroEMMB 256\Microchip\MDD File System\SD-SPI.c	1066;"	f	line:1066	signature:(unsigned char data_out)
+WriteSPIManual	C:\C32\MikroEMMB 256\Microchip\MDD File System\SD-SPI.c	108;"	p	line:108	file:	signature:(unsigned char data_out)
+Write_File_Entry	C:\C32\MikroEMMB 256\Microchip\MDD File System\FSIO.c	1734;"	f	line:1734	signature:( FILEOBJ fo, WORD * curEntry)
+Write_File_Entry	C:\C32\MikroEMMB 256\Microchip\MDD File System\FSIO.c	237;"	p	line:237	file:	signature:( FILEOBJ fo, WORD * curEntry)
+XCHAR::char	C:\C32\MikroEMMB 256\Microchip\Include\Graphics\Primitive.h	105;"	d	line:105
+XCHAR::short	C:\C32\MikroEMMB 256\Microchip\Include\Graphics\Primitive.h	103;"	d	line:103
+_35QVW0T::1	C:\C32\MikroEMMB 256\Microchip\Include\Graphics\Graphics.h	75;"	d	line:75
+_CETYPE	C:\C32\MikroEMMB 256\Microchip\Include\MDD File System\FSDefs.h	42;"	g	line:42
+_DIRENTRY	C:\C32\MikroEMMB 256\Microchip\MDD File System\FSIO.c	164;"	t	line:164	file:
+_DISPLAYDRIVER_H	C:\C32\MikroEMMB 256\Microchip\Include\Graphics\DisplayDriver.h	41;"	d	line:41
+_EEPROM_H	C:\C32\MikroEMMB 256\MMB\SerialEEPROM.h	44;"	d	line:44
+_FLAG_MINUS::0x1	C:\C32\MikroEMMB 256\Microchip\MDD File System\FSIO.c	180;"	d	line:180	file:
+_FLAG_OCTO::0x8	C:\C32\MikroEMMB 256\Microchip\MDD File System\FSIO.c	183;"	d	line:183	file:
+_FLAG_PLUS::0x2	C:\C32\MikroEMMB 256\Microchip\MDD File System\FSIO.c	181;"	d	line:181	file:
+_FLAG_SIGNED::0x80	C:\C32\MikroEMMB 256\Microchip\MDD File System\FSIO.c	185;"	d	line:185	file:
+_FLAG_SPACE::0x4	C:\C32\MikroEMMB 256\Microchip\MDD File System\FSIO.c	182;"	d	line:182	file:
+_FLAG_ZERO::0x10	C:\C32\MikroEMMB 256\Microchip\MDD File System\FSIO.c	184;"	d	line:184	file:
+_FMT_BYTE::3	C:\C32\MikroEMMB 256\Microchip\MDD File System\FSIO.c	191;"	d	line:191	file:
+_FMT_BYTE::3	C:\C32\MikroEMMB 256\Microchip\MDD File System\FSIO.c	196;"	d	line:196	file:
+_FMT_LONG::1	C:\C32\MikroEMMB 256\Microchip\MDD File System\FSIO.c	189;"	d	line:189	file:
+_FMT_LONG::2	C:\C32\MikroEMMB 256\Microchip\MDD File System\FSIO.c	195;"	d	line:195	file:
+_FMT_LONGLONG::1	C:\C32\MikroEMMB 256\Microchip\MDD File System\FSIO.c	194;"	d	line:194	file:
+_FMT_SHRTLONG::2	C:\C32\MikroEMMB 256\Microchip\MDD File System\FSIO.c	190;"	d	line:190	file:
+_FMT_UNSPECIFIED::0	C:\C32\MikroEMMB 256\Microchip\MDD File System\FSIO.c	188;"	d	line:188	file:
+_FMT_UNSPECIFIED::0	C:\C32\MikroEMMB 256\Microchip\MDD File System\FSIO.c	193;"	d	line:193	file:
+_FSDEF__H	C:\C32\MikroEMMB 256\Microchip\Include\MDD File System\FSDefs.h	36;"	d	line:36
+_GRAPHICSCONFIG_H	C:\C32\MikroEMMB 256\Test\GraphicsConfig.h	10;"	d	line:10
+_GRAPHICS_H	C:\C32\MikroEMMB 256\Microchip\Include\Graphics\Graphics.h	41;"	d	line:41
+_MAX_X::GetMaxX/FONT_W	C:\C32\MikroEMMB 256\MMB\LCDTerminal.c	52;"	d	line:52	file:
+_MAX_Y::GetMaxY/FONT_H	C:\C32\MikroEMMB 256\MMB\LCDTerminal.c	53;"	d	line:53	file:
+_MIKROE_MMB	C:\C32\MikroEMMB 256\MMB\MMB.h	12;"	d	line:12
+_MMB_SERIAL_FLASH	C:\C32\MikroEMMB 256\MMB\SerialFLASH.h	7;"	d	line:7
+_PRIMITIVE_H	C:\C32\MikroEMMB 256\Microchip\Include\Graphics\Primitive.h	44;"	d	line:44
+__HARDWARE_PROFILE_H	C:\C32\MikroEMMB 256\Test\HardwareProfile.h	12;"	d	line:12
+_byte	C:\C32\MikroEMMB 256\Microchip\Include\MDD File System\SD-SPI.h	214;"	m	line:214
+_byte	C:\C32\MikroEMMB 256\Microchip\Include\MDD File System\SD-SPI.h	266;"	m	line:266
+_byte	C:\C32\MikroEMMB 256\Microchip\Include\MDD File System\SD-SPI.h	312;"	m	line:312
+_byte	C:\C32\MikroEMMB 256\Microchip\Include\MDD File System\SD-SPI.h	376;"	m	line:376
+_byte0	C:\C32\MikroEMMB 256\Microchip\Include\MDD File System\SD-SPI.h	236;"	m	line:236
+_byte1	C:\C32\MikroEMMB 256\Microchip\Include\MDD File System\SD-SPI.h	237;"	m	line:237
+_cursorX	C:\C32\MikroEMMB 256\Microchip\Graphics\Primitive.c	66;"	v	line:66
+_cursorY	C:\C32\MikroEMMB 256\Microchip\Graphics\Primitive.c	69;"	v	line:69
+_cx	C:\C32\MikroEMMB 256\MMB\LCDTerminal.c	56;"	v	line:56	file:
+_cy	C:\C32\MikroEMMB 256\MMB\LCDTerminal.c	56;"	v	line:56	file:
+_font	C:\C32\MikroEMMB 256\Microchip\Graphics\Primitive.c	72;"	v	line:72
+_fontFirstChar	C:\C32\MikroEMMB 256\Microchip\Graphics\Primitive.c	79;"	v	line:79
+_fontHeight	C:\C32\MikroEMMB 256\Microchip\Graphics\Primitive.c	83;"	v	line:83
+_fontLastChar	C:\C32\MikroEMMB 256\Microchip\Graphics\Primitive.c	80;"	v	line:80
+_fontOrientation	C:\C32\MikroEMMB 256\Microchip\Graphics\Primitive.c	63;"	v	line:63
+_general_exception_handler	C:\C32\MikroEMMB 256\MMB\MMB.C	14;"	f	line:14	signature:( unsigned c, unsigned s)
+_lineThickness	C:\C32\MikroEMMB 256\Microchip\Graphics\Primitive.c	60;"	v	line:60
+_lineType	C:\C32\MikroEMMB 256\Microchip\Graphics\Primitive.c	57;"	v	line:57
+_palette	C:\C32\MikroEMMB 256\Microchip\Graphics\Primitive.c	75;"	v	line:75
+_returnVal	C:\C32\MikroEMMB 256\Microchip\Include\MDD File System\SD-SPI.h	267;"	m	line:267
+_returnVal	C:\C32\MikroEMMB 256\Microchip\Include\MDD File System\SD-SPI.h	283;"	m	line:283
+_status	C:\C32\MikroEMMB 256\Microchip\MDD File System\FSIO.c	1808;"	g	line:1808	file:
+_u320	C:\C32\MikroEMMB 256\Microchip\Include\MDD File System\SD-SPI.h	305;"	m	line:305
+_u320	C:\C32\MikroEMMB 256\Microchip\Include\MDD File System\SD-SPI.h	369;"	m	line:369
+_u321	C:\C32\MikroEMMB 256\Microchip\Include\MDD File System\SD-SPI.h	306;"	m	line:306
+_u321	C:\C32\MikroEMMB 256\Microchip\Include\MDD File System\SD-SPI.h	370;"	m	line:370
+_u322	C:\C32\MikroEMMB 256\Microchip\Include\MDD File System\SD-SPI.h	307;"	m	line:307
+_u322	C:\C32\MikroEMMB 256\Microchip\Include\MDD File System\SD-SPI.h	371;"	m	line:371
+_u323	C:\C32\MikroEMMB 256\Microchip\Include\MDD File System\SD-SPI.h	308;"	m	line:308
+_u323	C:\C32\MikroEMMB 256\Microchip\Include\MDD File System\SD-SPI.h	372;"	m	line:372
+_word	C:\C32\MikroEMMB 256\Microchip\Include\MDD File System\SD-SPI.h	233;"	m	line:233
+a	C:\C32\MikroEMMB 256\Microchip\MDD File System\FSIO.c	2183;"	l	line:2183
+a	C:\C32\MikroEMMB 256\Microchip\MDD File System\FSIO.c	3197;"	l	line:3197
+a	C:\C32\MikroEMMB 256\Microchip\MDD File System\FSIO.c	3329;"	l	line:3329
+a	C:\C32\MikroEMMB 256\Microchip\MDD File System\FSIO.c	3402;"	l	line:3402
+aChar	C:\C32\MikroEMMB 256\Microchip\MDD File System\FSIO.c	6535;"	l	line:6535
+addr	C:\C32\MikroEMMB 256\MMB\SerialFLASH.c	256;"	l	line:256
+addr0	C:\C32\MikroEMMB 256\Microchip\Include\MDD File System\SD-SPI.h	191;"	m	line:191
+addr1	C:\C32\MikroEMMB 256\Microchip\Include\MDD File System\SD-SPI.h	192;"	m	line:192
+addr2	C:\C32\MikroEMMB 256\Microchip\Include\MDD File System\SD-SPI.h	193;"	m	line:193
+addr3	C:\C32\MikroEMMB 256\Microchip\Include\MDD File System\SD-SPI.h	194;"	m	line:194
+address	C:\C32\MikroEMMB 256\Microchip\Include\Graphics\Primitive.h	126;"	m	line:126
+address	C:\C32\MikroEMMB 256\Microchip\Include\Graphics\Primitive.h	158;"	m	line:158
+address	C:\C32\MikroEMMB 256\Microchip\Include\Graphics\Primitive.h	168;"	m	line:168
+address	C:\C32\MikroEMMB 256\Microchip\Include\Graphics\Primitive.h	206;"	m	line:206
+address	C:\C32\MikroEMMB 256\Microchip\Include\Graphics\Primitive.h	216;"	m	line:216
+address	C:\C32\MikroEMMB 256\Microchip\Include\MDD File System\SD-SPI.h	202;"	m	line:202
+addressSEE	C:\C32\MikroEMMB 256\MMB\SerialEEPROM.c	76;"	f	line:76	signature:( long add)
+amountfound	C:\C32\MikroEMMB 256\Microchip\MDD File System\FSIO.c	2182;"	l	line:2182
+ap	C:\C32\MikroEMMB 256\Microchip\MDD File System\FSIO.c	8446;"	l	line:8446
+attrib	C:\C32\MikroEMMB 256\Microchip\MDD File System\FSIO.c	398;"	l	line:398
+attributes	C:\C32\MikroEMMB 256\Microchip\Include\MDD File System\FSIO.h	246;"	m	line:246
+attributes	C:\C32\MikroEMMB 256\Microchip\Include\MDD File System\FSIO.h	300;"	m	line:300
+b	C:\C32\MikroEMMB 256\Microchip\MDD File System\FSIO.c	2185;"	l	line:2185
+bHandle	C:\C32\MikroEMMB 256\Microchip\MDD File System\FSIO.c	2184;"	l	line:2184
+bits	C:\C32\MikroEMMB 256\Microchip\Include\MDD File System\SD-SPI.h	282;"	m	line:282
+bitwise	C:\C32\MikroEMMB 256\Microchip\Include\MDD File System\SD-SPI.h	284;"	m	line:284
+bmp	C:\C32\MikroEMMB 256\Microchip\Graphics\Primitive.c	2445;"	l	line:2445
+bmp	C:\C32\MikroEMMB 256\Microchip\Graphics\Primitive.c	2546;"	l	line:2546
+bmp	C:\C32\MikroEMMB 256\Microchip\Graphics\Primitive.c	2642;"	l	line:2642
+bmp	C:\C32\MikroEMMB 256\Microchip\Graphics\Primitive.c	2719;"	l	line:2719
+brg	C:\C32\MikroEMMB 256\Microchip\MDD File System\SD-SPI.c	137;"	l	line:137
+buf	C:\C32\MikroEMMB 256\Microchip\MDD File System\FSIO.c	8851;"	l	line:8851
+buf	C:\C32\MikroEMMB 256\Microchip\MDD File System\FSIO.c	8857;"	l	line:8857
+buffer	C:\C32\MikroEMMB 256\Microchip\Include\MDD File System\FSDefs.h	269;"	m	line:269
+bufferEnd	C:\C32\MikroEMMB 256\Microchip\MDD File System\FSIO.c	6528;"	l	line:6528
+bufferOverflow	C:\C32\MikroEMMB 256\Microchip\MDD File System\FSIO.c	6530;"	l	line:6530
+byteWidth	C:\C32\MikroEMMB 256\Microchip\Graphics\Primitive.c	2449;"	l	line:2449
+byteWidth	C:\C32\MikroEMMB 256\Microchip\Graphics\Primitive.c	2550;"	l	line:2550
+byteWidth	C:\C32\MikroEMMB 256\Microchip\Graphics\Primitive.c	2722;"	l	line:2722
+bytewise	C:\C32\MikroEMMB 256\Microchip\Include\MDD File System\SD-SPI.h	268;"	m	line:268
+c	C:\C32\MikroEMMB 256\MMB\LCDTerminal.c	241;"	l	line:241
+c	C:\C32\MikroEMMB 256\MMB\MMB.C	120;"	l	line:120
+c	C:\C32\MikroEMMB 256\MMB\MMB.C	140;"	l	line:140
+c	C:\C32\MikroEMMB 256\Microchip\Include\MDD File System\FSIO.h	283;"	m	line:283
+c	C:\C32\MikroEMMB 256\Microchip\MDD File System\FSIO.c	1807;"	l	line:1807
+c	C:\C32\MikroEMMB 256\Microchip\MDD File System\FSIO.c	2414;"	l	line:2414
+c	C:\C32\MikroEMMB 256\Microchip\MDD File System\FSIO.c	2621;"	l	line:2621
+c	C:\C32\MikroEMMB 256\Microchip\MDD File System\FSIO.c	2690;"	l	line:2690
+c	C:\C32\MikroEMMB 256\Microchip\MDD File System\FSIO.c	5682;"	l	line:5682
+c	C:\C32\MikroEMMB 256\Microchip\MDD File System\FSIO.c	5850;"	l	line:5850
+c	C:\C32\MikroEMMB 256\Microchip\MDD File System\FSIO.c	704;"	l	line:704
+c	C:\C32\MikroEMMB 256\Microchip\MDD File System\FSIO.c	8488;"	l	line:8488
+c1	C:\C32\MikroEMMB 256\MMB\MMB.C	94;"	l	line:94
+c2	C:\C32\MikroEMMB 256\MMB\MMB.C	95;"	l	line:95
+c2	C:\C32\MikroEMMB 256\Microchip\MDD File System\FSIO.c	1807;"	l	line:1807
+c2	C:\C32\MikroEMMB 256\Microchip\MDD File System\FSIO.c	704;"	l	line:704
+c3	C:\C32\MikroEMMB 256\MMB\MMB.C	96;"	l	line:96
+c30filler	C:\C32\MikroEMMB 256\Microchip\Include\MDD File System\SD-SPI.h	186;"	m	line:186
+c32filler	C:\C32\MikroEMMB 256\Microchip\Include\MDD File System\SD-SPI.h	188;"	m	line:188
+c4	C:\C32\MikroEMMB 256\MMB\MMB.C	97;"	l	line:97
+c_size	C:\C32\MikroEMMB 256\Microchip\MDD File System\SD-SPI.c	1180;"	l	line:1180
+c_size_mult	C:\C32\MikroEMMB 256\Microchip\MDD File System\SD-SPI.c	1181;"	l	line:1181
+ccls	C:\C32\MikroEMMB 256\Microchip\Include\MDD File System\FSIO.h	235;"	m	line:235
+ccls	C:\C32\MikroEMMB 256\Microchip\MDD File System\FSIO.c	1740;"	l	line:1740
+ccls	C:\C32\MikroEMMB 256\Microchip\MDD File System\FSIO.c	1907;"	l	line:1907
+ch	C:\C32\MikroEMMB 256\Microchip\Graphics\Primitive.c	1512;"	l	line:1512
+ch	C:\C32\MikroEMMB 256\Microchip\Graphics\Primitive.c	1774;"	l	line:1774
+chImage	C:\C32\MikroEMMB 256\Microchip\Graphics\Primitive.c	1608;"	l	line:1608
+chTable	C:\C32\MikroEMMB 256\Microchip\Graphics\Primitive.c	1607;"	l	line:1607
+chTable	C:\C32\MikroEMMB 256\Microchip\Graphics\Primitive.c	1768;"	l	line:1768
+chWidth	C:\C32\MikroEMMB 256\Microchip\Graphics\Primitive.c	1612;"	l	line:1612
+character	C:\C32\MikroEMMB 256\Microchip\MDD File System\FSIO.c	3198;"	l	line:3198
+character	C:\C32\MikroEMMB 256\Microchip\MDD File System\FSIO.c	402;"	l	line:402
+chdirhelper	C:\C32\MikroEMMB 256\Microchip\MDD File System\FSIO.c	264;"	p	line:264	file:	signature:(BYTE mode, char * ramptr, const rom char * romptr)
+chdirhelper	C:\C32\MikroEMMB 256\Microchip\MDD File System\FSIO.c	270;"	p	line:270	file:	signature:(BYTE mode, char * ramptr, char * romptr)
+chdirhelper	C:\C32\MikroEMMB 256\Microchip\MDD File System\FSIO.c	6105;"	f	line:6105	signature:(BYTE mode, char * ramptr, const rom char * romptr)
+chk	C:\C32\MikroEMMB 256\Microchip\Include\MDD File System\FSIO.h	245;"	m	line:245
+clear	C:\C32\MikroEMMB 256\Microchip\MDD File System\SD-SPI.c	925;"	l	line:925
+clock	C:\C32\MikroEMMB 256\Microchip\MDD File System\SD-SPI.c	1069;"	l	line:1069
+clock	C:\C32\MikroEMMB 256\Microchip\MDD File System\SD-SPI.c	1122;"	l	line:1122
+clus	C:\C32\MikroEMMB 256\Microchip\MDD File System\FSIO.c	3404;"	l	line:3404
+cluster	C:\C32\MikroEMMB 256\Microchip\Include\MDD File System\FSIO.h	234;"	m	line:234
+cluster	C:\C32\MikroEMMB 256\Microchip\MDD File System\FSIO.c	1906;"	l	line:1906
+cluster	C:\C32\MikroEMMB 256\Microchip\MDD File System\FSIO.c	2117;"	l	line:2117
+cmd	C:\C32\MikroEMMB 256\MMB\SerialEEPROM.c	132;"	l	line:132
+cmd	C:\C32\MikroEMMB 256\MMB\SerialEEPROM.c	162;"	l	line:162
+cmd	C:\C32\MikroEMMB 256\MMB\SerialEEPROM.c	198;"	l	line:198
+cmd	C:\C32\MikroEMMB 256\MMB\SerialEEPROM.c	229;"	l	line:229
+cmd	C:\C32\MikroEMMB 256\MMB\SerialEEPROM.c	284;"	l	line:284
+cmd	C:\C32\MikroEMMB 256\MMB\SerialEEPROM.c	322;"	l	line:322
+cmd	C:\C32\MikroEMMB 256\MMB\SerialEEPROM.c	80;"	l	line:80
+cmd	C:\C32\MikroEMMB 256\Microchip\Include\MDD File System\SD-SPI.h	195;"	m	line:195
+cmdAPP_CMD::55	C:\C32\MikroEMMB 256\Microchip\Include\MDD File System\SD-SPI.h	140;"	d	line:140
+cmdCRC_ON_OFF::59	C:\C32\MikroEMMB 256\Microchip\Include\MDD File System\SD-SPI.h	144;"	d	line:144
+cmdERASE::38	C:\C32\MikroEMMB 256\Microchip\Include\MDD File System\SD-SPI.h	138;"	d	line:138
+cmdGO_IDLE_STATE::0	C:\C32\MikroEMMB 256\Microchip\Include\MDD File System\SD-SPI.h	110;"	d	line:110
+cmdREAD_MULTI_BLOCK::18	C:\C32\MikroEMMB 256\Microchip\Include\MDD File System\SD-SPI.h	128;"	d	line:128
+cmdREAD_OCR::58	C:\C32\MikroEMMB 256\Microchip\Include\MDD File System\SD-SPI.h	142;"	d	line:142
+cmdREAD_SINGLE_BLOCK::17	C:\C32\MikroEMMB 256\Microchip\Include\MDD File System\SD-SPI.h	126;"	d	line:126
+cmdSEND_CID::10	C:\C32\MikroEMMB 256\Microchip\Include\MDD File System\SD-SPI.h	118;"	d	line:118
+cmdSEND_CSD::9	C:\C32\MikroEMMB 256\Microchip\Include\MDD File System\SD-SPI.h	116;"	d	line:116
+cmdSEND_IF_COND::8	C:\C32\MikroEMMB 256\Microchip\Include\MDD File System\SD-SPI.h	114;"	d	line:114
+cmdSEND_OP_COND::1	C:\C32\MikroEMMB 256\Microchip\Include\MDD File System\SD-SPI.h	112;"	d	line:112
+cmdSEND_STATUS::13	C:\C32\MikroEMMB 256\Microchip\Include\MDD File System\SD-SPI.h	122;"	d	line:122
+cmdSET_BLOCKLEN::16	C:\C32\MikroEMMB 256\Microchip\Include\MDD File System\SD-SPI.h	124;"	d	line:124
+cmdSTOP_TRANSMISSION::12	C:\C32\MikroEMMB 256\Microchip\Include\MDD File System\SD-SPI.h	120;"	d	line:120
+cmdTAG_SECTOR_END::33	C:\C32\MikroEMMB 256\Microchip\Include\MDD File System\SD-SPI.h	136;"	d	line:136
+cmdTAG_SECTOR_START::32	C:\C32\MikroEMMB 256\Microchip\Include\MDD File System\SD-SPI.h	134;"	d	line:134
+cmdWRITE_MULTI_BLOCK::25	C:\C32\MikroEMMB 256\Microchip\Include\MDD File System\SD-SPI.h	132;"	d	line:132
+cmdWRITE_SINGLE_BLOCK::24	C:\C32\MikroEMMB 256\Microchip\Include\MDD File System\SD-SPI.h	130;"	d	line:130
+colorDepth	C:\C32\MikroEMMB 256\Microchip\Graphics\Primitive.c	2004;"	l	line:2004
+colorDepth	C:\C32\MikroEMMB 256\Microchip\Include\Graphics\Primitive.h	146;"	m	line:146
+colorTemp	C:\C32\MikroEMMB 256\Microchip\Graphics\Primitive.c	2005;"	l	line:2005
+compareAttrib	C:\C32\MikroEMMB 256\Microchip\MDD File System\FSIO.c	398;"	l	line:398
+compression	C:\C32\MikroEMMB 256\Microchip\Include\Graphics\Primitive.h	145;"	m	line:145
+count	C:\C32\MikroEMMB 256\Microchip\MDD File System\FSIO.c	4698;"	l	line:4698
+count	C:\C32\MikroEMMB 256\Microchip\MDD File System\FSIO.c	5119;"	l	line:5119
+count	C:\C32\MikroEMMB 256\Microchip\MDD File System\FSIO.c	5521;"	l	line:5521
+count	C:\C32\MikroEMMB 256\Microchip\MDD File System\FSIO.c	5559;"	l	line:5559
+count	C:\C32\MikroEMMB 256\Microchip\MDD File System\FSIO.c	5597;"	l	line:5597
+count	C:\C32\MikroEMMB 256\Microchip\MDD File System\FSIO.c	5638;"	l	line:5638
+count	C:\C32\MikroEMMB 256\Microchip\MDD File System\FSIO.c	8489;"	l	line:8489
+count	C:\C32\MikroEMMB 256\Microchip\MDD File System\SD-SPI.c	1179;"	l	line:1179
+counter	C:\C32\MikroEMMB 256\MMB\SerialFLASH.c	258;"	l	line:258
+counter	C:\C32\MikroEMMB 256\Microchip\Graphics\Primitive.c	1295;"	l	line:1295
+counter	C:\C32\MikroEMMB 256\Microchip\Graphics\Primitive.c	2213;"	l	line:2213
+counter	C:\C32\MikroEMMB 256\Microchip\Graphics\Primitive.c	2302;"	l	line:2302
+counter	C:\C32\MikroEMMB 256\Microchip\MDD File System\SD-SPI.c	707;"	l	line:707
+crc	C:\C32\MikroEMMB 256\Microchip\Include\MDD File System\SD-SPI.h	184;"	m	line:184
+curcls	C:\C32\MikroEMMB 256\Microchip\Include\MDD File System\FSIO.h	284;"	m	line:284
+curcls	C:\C32\MikroEMMB 256\Microchip\MDD File System\FSIO.c	2621;"	l	line:2621
+curcls	C:\C32\MikroEMMB 256\Microchip\MDD File System\FSIO.c	2690;"	l	line:2690
+curclus	C:\C32\MikroEMMB 256\Microchip\MDD File System\FSIO.c	6532;"	l	line:6532
+curent	C:\C32\MikroEMMB 256\Microchip\MDD File System\FSIO.c	6111;"	l	line:6111
+cval	C:\C32\MikroEMMB 256\Microchip\MDD File System\FSIO.c	8504;"	l	line:8504
+cwd	C:\C32\MikroEMMB 256\Microchip\MDD File System\FSIO.c	120;"	v	line:120
+cwdclus	C:\C32\MikroEMMB 256\Microchip\Include\MDD File System\FSIO.h	307;"	m	line:307
+cwdptr	C:\C32\MikroEMMB 256\Microchip\MDD File System\FSIO.c	121;"	v	line:121
+d	C:\C32\MikroEMMB 256\Microchip\MDD File System\FSIO.c	1370;"	l	line:1370
+d	C:\C32\MikroEMMB 256\Microchip\MDD File System\FSIO.c	5682;"	l	line:5682
+d0	C:\C32\MikroEMMB 256\Microchip\MDD File System\FSIO.c	2420;"	l	line:2420
+d1	C:\C32\MikroEMMB 256\Microchip\MDD File System\FSIO.c	2420;"	l	line:2420
+data	C:\C32\MikroEMMB 256\Microchip\Include\MDD File System\FSDefs.h	273;"	m	line:273
+dataBufferPointer	C:\C32\MikroEMMB 256\Microchip\MDD File System\FSIO.c	1378;"	l	line:1378
+data_response	C:\C32\MikroEMMB 256\Microchip\MDD File System\SD-SPI.c	708;"	l	line:708
+data_token	C:\C32\MikroEMMB 256\Microchip\MDD File System\SD-SPI.c	593;"	l	line:593
+date	C:\C32\MikroEMMB 256\Microchip\Include\MDD File System\FSIO.h	242;"	m	line:242
+day	C:\C32\MikroEMMB 256\Microchip\MDD File System\FSIO.c	3097;"	l	line:3097
+defaultArray	C:\C32\MikroEMMB 256\Microchip\MDD File System\FSIO.c	6479;"	v	line:6479
+defaultString	C:\C32\MikroEMMB 256\Microchip\MDD File System\FSIO.c	6007;"	v	line:6007
+delay	C:\C32\MikroEMMB 256\MMB\SerialEEPROM.c	62;"	l	line:62
+delay	C:\C32\MikroEMMB 256\Microchip\MDD File System\SD-SPI.c	591;"	l	line:591
+deltaX	C:\C32\MikroEMMB 256\Microchip\Graphics\Primitive.c	734;"	l	line:734
+deltaY	C:\C32\MikroEMMB 256\Microchip\Graphics\Primitive.c	734;"	l	line:734
+dest	C:\C32\MikroEMMB 256\Microchip\MDD File System\FSIO.c	4279;"	l	line:4279
+digit_cnt	C:\C32\MikroEMMB 256\Microchip\MDD File System\FSIO.c	8845;"	l	line:8845
+dir	C:\C32\MikroEMMB 256\Microchip\MDD File System\FSIO.c	1903;"	l	line:1903
+dir	C:\C32\MikroEMMB 256\Microchip\MDD File System\FSIO.c	2119;"	l	line:2119
+dir	C:\C32\MikroEMMB 256\Microchip\MDD File System\FSIO.c	2186;"	l	line:2186
+dir	C:\C32\MikroEMMB 256\Microchip\MDD File System\FSIO.c	2299;"	l	line:2299
+dir	C:\C32\MikroEMMB 256\Microchip\MDD File System\FSIO.c	2987;"	l	line:2987
+dir	C:\C32\MikroEMMB 256\Microchip\MDD File System\FSIO.c	3196;"	l	line:3196
+dir	C:\C32\MikroEMMB 256\Microchip\MDD File System\FSIO.c	3328;"	l	line:3328
+dir	C:\C32\MikroEMMB 256\Microchip\MDD File System\FSIO.c	3401;"	l	line:3401
+dir	C:\C32\MikroEMMB 256\Microchip\MDD File System\FSIO.c	3507;"	l	line:3507
+dir	C:\C32\MikroEMMB 256\Microchip\MDD File System\FSIO.c	4613;"	l	line:4613
+dir	C:\C32\MikroEMMB 256\Microchip\MDD File System\FSIO.c	7382;"	l	line:7382
+dirCleared	C:\C32\MikroEMMB 256\Microchip\MDD File System\FSIO.c	114;"	v	line:114
+dirEntryPtr	C:\C32\MikroEMMB 256\Microchip\MDD File System\FSIO.c	7381;"	l	line:7381
+dirccls	C:\C32\MikroEMMB 256\Microchip\Include\MDD File System\FSIO.h	248;"	m	line:248
+dirclus	C:\C32\MikroEMMB 256\Microchip\Include\MDD File System\FSIO.h	247;"	m	line:247
+dirclus	C:\C32\MikroEMMB 256\Microchip\MDD File System\FSIO.c	6782;"	l	line:6782
+dirptr	C:\C32\MikroEMMB 256\Microchip\MDD File System\FSIO.c	6783;"	l	line:6783
+disk	C:\C32\MikroEMMB 256\Microchip\Include\MDD File System\FSIO.h	268;"	m	line:268
+disk	C:\C32\MikroEMMB 256\Microchip\MDD File System\FSIO.c	1371;"	l	line:1371
+disk	C:\C32\MikroEMMB 256\Microchip\MDD File System\FSIO.c	2688;"	l	line:2688
+disk	C:\C32\MikroEMMB 256\Microchip\MDD File System\FSIO.c	3405;"	l	line:3405
+disk	C:\C32\MikroEMMB 256\Microchip\MDD File System\FSIO.c	4322;"	l	line:4322
+disk	C:\C32\MikroEMMB 256\Microchip\MDD File System\FSIO.c	706;"	l	line:706
+disk_format	C:\C32\MikroEMMB 256\Microchip\Include\MDD File System\FSIO.h	274;"	m	line:274
+dot	C:\C32\MikroEMMB 256\Microchip\MDD File System\FSIO.c	7384;"	l	line:7384
+dotdot	C:\C32\MikroEMMB 256\Microchip\MDD File System\FSIO.c	7384;"	l	line:7384
+dotdotPath	C:\C32\MikroEMMB 256\Microchip\MDD File System\FSIO.c	6978;"	l	line:6978
+dotdotname	C:\C32\MikroEMMB 256\Microchip\MDD File System\FSIO.c	7688;"	l	line:7688
+dsk	C:\C32\MikroEMMB 256\Microchip\Include\MDD File System\FSIO.h	233;"	m	line:233
+dsk	C:\C32\MikroEMMB 256\Microchip\MDD File System\FSIO.c	1736;"	l	line:1736
+dsk	C:\C32\MikroEMMB 256\Microchip\MDD File System\FSIO.c	1904;"	l	line:1904
+dsk	C:\C32\MikroEMMB 256\Microchip\MDD File System\FSIO.c	2620;"	l	line:2620
+dsk	C:\C32\MikroEMMB 256\Microchip\MDD File System\FSIO.c	4700;"	l	line:4700
+dsk	C:\C32\MikroEMMB 256\Microchip\MDD File System\FSIO.c	4898;"	l	line:4898
+dsk	C:\C32\MikroEMMB 256\Microchip\MDD File System\FSIO.c	4984;"	l	line:4984
+dsk	C:\C32\MikroEMMB 256\Microchip\MDD File System\FSIO.c	5355;"	l	line:5355
+dsk	C:\C32\MikroEMMB 256\Microchip\MDD File System\FSIO.c	583;"	l	line:583
+entry	C:\C32\MikroEMMB 256\Microchip\Include\MDD File System\FSIO.h	244;"	m	line:244
+entry	C:\C32\MikroEMMB 256\Microchip\Include\MDD File System\FSIO.h	304;"	m	line:304
+entry	C:\C32\MikroEMMB 256\Microchip\MDD File System\FSIO.c	6112;"	l	line:6112
+entry	C:\C32\MikroEMMB 256\Microchip\MDD File System\FSIO.c	6536;"	l	line:6536
+entry	C:\C32\MikroEMMB 256\Microchip\MDD File System\FSIO.c	7475;"	l	line:7475
+entry	C:\C32\MikroEMMB 256\Microchip\MDD File System\FSIO.c	7679;"	l	line:7679
+entryptr	C:\C32\MikroEMMB 256\Microchip\MDD File System\FSIO.c	7476;"	l	line:7476
+eraseDir	C:\C32\MikroEMMB 256\Microchip\MDD File System\FSIO.c	258;"	p	line:258	file:	signature:(char * path)
+eraseDir	C:\C32\MikroEMMB 256\Microchip\MDD File System\FSIO.c	8021;"	f	line:8021	signature:(char * path)
+err	C:\C32\MikroEMMB 256\Microchip\Graphics\Primitive.c	1073;"	l	line:1073
+err1	C:\C32\MikroEMMB 256\Microchip\Graphics\Primitive.c	185;"	l	line:185
+err2	C:\C32\MikroEMMB 256\Microchip\Graphics\Primitive.c	185;"	l	line:185
+error	C:\C32\MikroEMMB 256\Microchip\Graphics\Primitive.c	735;"	l	line:735
+error	C:\C32\MikroEMMB 256\Microchip\Graphics\Primitive.c	946;"	l	line:946
+error	C:\C32\MikroEMMB 256\Microchip\MDD File System\FSIO.c	1011;"	l	line:1011
+error	C:\C32\MikroEMMB 256\Microchip\MDD File System\FSIO.c	2058;"	l	line:2058
+error	C:\C32\MikroEMMB 256\Microchip\MDD File System\FSIO.c	2116;"	l	line:2116
+error	C:\C32\MikroEMMB 256\Microchip\MDD File System\FSIO.c	2298;"	l	line:2298
+error	C:\C32\MikroEMMB 256\Microchip\MDD File System\FSIO.c	2985;"	l	line:2985
+error	C:\C32\MikroEMMB 256\Microchip\MDD File System\FSIO.c	4323;"	l	line:4323
+error	C:\C32\MikroEMMB 256\Microchip\MDD File System\FSIO.c	4400;"	l	line:4400
+error	C:\C32\MikroEMMB 256\Microchip\MDD File System\FSIO.c	4701;"	l	line:4701
+error	C:\C32\MikroEMMB 256\Microchip\MDD File System\FSIO.c	4987;"	l	line:4987
+error	C:\C32\MikroEMMB 256\Microchip\MDD File System\FSIO.c	586;"	l	line:586
+error	C:\C32\MikroEMMB 256\Microchip\MDD File System\FSIO.c	705;"	l	line:705
+error	C:\C32\MikroEMMB 256\Microchip\MDD File System\FSIO.c	791;"	l	line:791
+error	C:\C32\MikroEMMB 256\Microchip\MDD File System\FSIO.c	866;"	l	line:866
+ex	C:\C32\MikroEMMB 256\Microchip\Graphics\Primitive.c	1296;"	l	line:1296
+ey	C:\C32\MikroEMMB 256\Microchip\Graphics\Primitive.c	1296;"	l	line:1296
+f	C:\C32\MikroEMMB 256\Microchip\MDD File System\FSIO.c	8113;"	l	line:8113
+f	C:\C32\MikroEMMB 256\Microchip\MDD File System\FSIO.c	8244;"	l	line:8244
+fHandle	C:\C32\MikroEMMB 256\Microchip\MDD File System\FSIO.c	2118;"	l	line:2118
+fHandle	C:\C32\MikroEMMB 256\Microchip\MDD File System\FSIO.c	2981;"	l	line:2981
+fHandle	C:\C32\MikroEMMB 256\Microchip\MDD File System\FSIO.c	3506;"	l	line:3506
+fHandle	C:\C32\MikroEMMB 256\Microchip\MDD File System\FSIO.c	3669;"	l	line:3669
+fHandle	C:\C32\MikroEMMB 256\Microchip\MDD File System\FSIO.c	399;"	l	line:399
+fHandle	C:\C32\MikroEMMB 256\Microchip\MDD File System\FSIO.c	4612;"	l	line:4612
+fHandle	C:\C32\MikroEMMB 256\Microchip\MDD File System\FSIO.c	6533;"	l	line:6533
+fHandle	C:\C32\MikroEMMB 256\Microchip\MDD File System\FSIO.c	6781;"	l	line:6781
+fHandle	C:\C32\MikroEMMB 256\Microchip\MDD File System\FSIO.c	8116;"	l	line:8116
+fIndex	C:\C32\MikroEMMB 256\Microchip\MDD File System\FSIO.c	2983;"	l	line:2983
+fIndex	C:\C32\MikroEMMB 256\Microchip\MDD File System\FSIO.c	316;"	l	line:316
+fIndex	C:\C32\MikroEMMB 256\Microchip\MDD File System\FSIO.c	3666;"	l	line:3666
+fTemp	C:\C32\MikroEMMB 256\Test\main.c	43;"	l	line:43
+fat	C:\C32\MikroEMMB 256\Microchip\Include\MDD File System\FSDefs.h	271;"	m	line:271
+fatcopy	C:\C32\MikroEMMB 256\Microchip\Include\MDD File System\FSDefs.h	278;"	m	line:278
+fatsize	C:\C32\MikroEMMB 256\Microchip\Include\MDD File System\FSDefs.h	277;"	m	line:277
+fatsize	C:\C32\MikroEMMB 256\Microchip\MDD File System\FSIO.c	1373;"	l	line:1373
+field	C:\C32\MikroEMMB 256\Microchip\Include\MDD File System\SD-SPI.h	176;"	m	line:176
+filePtr	C:\C32\MikroEMMB 256\Microchip\MDD File System\FSIO.c	3664;"	l	line:3664
+filename	C:\C32\MikroEMMB 256\Microchip\Include\MDD File System\FSIO.h	299;"	m	line:299
+filesize	C:\C32\MikroEMMB 256\Microchip\Include\MDD File System\FSIO.h	301;"	m	line:301
+filesize	C:\C32\MikroEMMB 256\Microchip\MDD File System\FSIO.c	4704;"	l	line:4704
+final	C:\C32\MikroEMMB 256\Microchip\MDD File System\FSIO.c	3670;"	l	line:3670
+firstChar	C:\C32\MikroEMMB 256\Microchip\Include\Graphics\Primitive.h	185;"	m	line:185
+firsts	C:\C32\MikroEMMB 256\Microchip\Include\MDD File System\FSDefs.h	270;"	m	line:270
+flags	C:\C32\MikroEMMB 256\Microchip\Include\MDD File System\FSIO.h	240;"	m	line:240
+flags	C:\C32\MikroEMMB 256\Microchip\MDD File System\FSIO.c	8495;"	l	line:8495
+flashAddress	C:\C32\MikroEMMB 256\Microchip\Graphics\Primitive.c	2003;"	l	line:2003
+flashAddress	C:\C32\MikroEMMB 256\Microchip\Graphics\Primitive.c	2115;"	l	line:2115
+flashAddress	C:\C32\MikroEMMB 256\Microchip\Graphics\Primitive.c	2205;"	l	line:2205
+flashAddress	C:\C32\MikroEMMB 256\Microchip\Graphics\Primitive.c	2294;"	l	line:2294
+flashAddress	C:\C32\MikroEMMB 256\Microchip\Graphics\Primitive.c	2374;"	l	line:2374
+flushData	C:\C32\MikroEMMB 256\Microchip\MDD File System\FSIO.c	238;"	p	line:238	file:	signature:(void)
+flushData	C:\C32\MikroEMMB 256\Microchip\MDD File System\FSIO.c	4895;"	f	line:4895	signature:(void)
+fo	C:\C32\MikroEMMB 256\Microchip\MDD File System\FSIO.c	3965;"	l	line:3965
+fo	C:\C32\MikroEMMB 256\Microchip\MDD File System\FSIO.c	7678;"	l	line:7678
+fo	C:\C32\MikroEMMB 256\Microchip\MDD File System\FSIO.c	8114;"	l	line:8114
+fo	C:\C32\MikroEMMB 256\Microchip\MDD File System\FSIO.c	8245;"	l	line:8245
+fontFirstChar	C:\C32\MikroEMMB 256\Microchip\Graphics\Primitive.c	1775;"	l	line:1775
+fontID	C:\C32\MikroEMMB 256\Microchip\Include\Graphics\Primitive.h	181;"	m	line:181
+fontLastChar	C:\C32\MikroEMMB 256\Microchip\Graphics\Primitive.c	1776;"	l	line:1776
+fpb	C:\C32\MikroEMMB 256\MMB\MMB.C	93;"	l	line:93
+free_clusters	C:\C32\MikroEMMB 256\Microchip\Include\MDD File System\FSIO.h	278;"	m	line:278
+gBufferOwner	C:\C32\MikroEMMB 256\Microchip\MDD File System\FSIO.c	102;"	v	line:102
+gBufferZeroed	C:\C32\MikroEMMB 256\Microchip\MDD File System\FSIO.c	107;"	v	line:107
+gDataBuffer	C:\C32\MikroEMMB 256\Microchip\MDD File System\FSIO.c	127;"	v	line:127
+gDataBuffer	C:\C32\MikroEMMB 256\Microchip\MDD File System\FSIO.c	133;"	v	line:133
+gDiskData	C:\C32\MikroEMMB 256\Microchip\MDD File System\FSIO.c	140;"	v	line:140
+gFATBuffer	C:\C32\MikroEMMB 256\Microchip\MDD File System\FSIO.c	129;"	v	line:129
+gFATBuffer	C:\C32\MikroEMMB 256\Microchip\MDD File System\FSIO.c	134;"	v	line:134
+gFileArray	C:\C32\MikroEMMB 256\Microchip\MDD File System\FSIO.c	86;"	v	line:86
+gFileSlotOpen	C:\C32\MikroEMMB 256\Microchip\MDD File System\FSIO.c	87;"	v	line:87
+gFileTemp	C:\C32\MikroEMMB 256\Microchip\MDD File System\FSIO.c	117;"	v	line:117
+gLastDataSectorRead	C:\C32\MikroEMMB 256\Microchip\MDD File System\FSIO.c	103;"	v	line:103
+gLastFATSectorRead	C:\C32\MikroEMMB 256\Microchip\MDD File System\FSIO.c	100;"	v	line:100
+gMediaSectorSize	C:\C32\MikroEMMB 256\Microchip\MDD File System\SD-SPI.c	53;"	v	line:53
+gNeedDataWrite	C:\C32\MikroEMMB 256\Microchip\MDD File System\FSIO.c	104;"	v	line:104
+gNeedFATWrite	C:\C32\MikroEMMB 256\Microchip\MDD File System\FSIO.c	101;"	v	line:101
+gSDMode	C:\C32\MikroEMMB 256\Microchip\MDD File System\SD-SPI.c	54;"	v	line:54
+gTimeAccDate	C:\C32\MikroEMMB 256\Microchip\MDD File System\FSIO.c	95;"	v	line:95
+gTimeCrtDate	C:\C32\MikroEMMB 256\Microchip\MDD File System\FSIO.c	94;"	v	line:94
+gTimeCrtMS	C:\C32\MikroEMMB 256\Microchip\MDD File System\FSIO.c	92;"	v	line:92
+gTimeCrtTime	C:\C32\MikroEMMB 256\Microchip\MDD File System\FSIO.c	93;"	v	line:93
+gTimeWrtDate	C:\C32\MikroEMMB 256\Microchip\MDD File System\FSIO.c	97;"	v	line:97
+gTimeWrtTime	C:\C32\MikroEMMB 256\Microchip\MDD File System\FSIO.c	96;"	v	line:96
+getcSPI::getcSPI2	C:\C32\MikroEMMB 256\Test\HardwareProfile.h	235;"	d	line:235
+glyphOffset	C:\C32\MikroEMMB 256\Microchip\Graphics\Primitive.c	1610;"	l	line:1610
+goodHandle	C:\C32\MikroEMMB 256\Microchip\MDD File System\FSIO.c	3506;"	l	line:3506
+h	C:\C32\MikroEMMB 256\MMB\SimpleUART.c	233;"	l	line:233
+handle	C:\C32\MikroEMMB 256\Microchip\MDD File System\FSIO.c	7383;"	l	line:7383
+handle	C:\C32\MikroEMMB 256\Microchip\MDD File System\FSIO.c	7680;"	l	line:7680
+handle2	C:\C32\MikroEMMB 256\Microchip\MDD File System\FSIO.c	7681;"	l	line:7681
+have_precision	C:\C32\MikroEMMB 256\Microchip\MDD File System\FSIO.c	8498;"	l	line:8498
+header	C:\C32\MikroEMMB 256\Microchip\Graphics\Primitive.c	1462;"	l	line:1462
+header	C:\C32\MikroEMMB 256\Microchip\Graphics\Primitive.c	1769;"	l	line:1769
+height	C:\C32\MikroEMMB 256\MMB\LCDTerminal.c	248;"	l	line:248
+height	C:\C32\MikroEMMB 256\Microchip\Graphics\Primitive.c	1870;"	l	line:1870
+height	C:\C32\MikroEMMB 256\Microchip\Graphics\Primitive.c	1956;"	l	line:1956
+height	C:\C32\MikroEMMB 256\Microchip\Include\Graphics\Primitive.h	147;"	m	line:147
+height	C:\C32\MikroEMMB 256\Microchip\Include\Graphics\Primitive.h	187;"	m	line:187
+hiByte	C:\C32\MikroEMMB 256\Microchip\MDD File System\FSIO.c	4478;"	l	line:4478
+hiWord	C:\C32\MikroEMMB 256\Microchip\MDD File System\FSIO.c	4512;"	l	line:4512
+hours	C:\C32\MikroEMMB 256\Microchip\MDD File System\FSIO.c	3095;"	l	line:3095
+i	C:\C32\MikroEMMB 256\MMB\LCDTerminal.c	111;"	l	line:111
+i	C:\C32\MikroEMMB 256\MMB\LCDTerminal.c	144;"	l	line:144
+i	C:\C32\MikroEMMB 256\MMB\LCDTerminal.c	207;"	l	line:207
+i	C:\C32\MikroEMMB 256\MMB\LCDTerminal.c	99;"	l	line:99
+i	C:\C32\MikroEMMB 256\MMB\MMB.C	139;"	l	line:139
+i	C:\C32\MikroEMMB 256\MMB\SerialEEPROM.c	284;"	l	line:284
+i	C:\C32\MikroEMMB 256\Microchip\MDD File System\FSIO.c	2856;"	l	line:2856
+i	C:\C32\MikroEMMB 256\Microchip\MDD File System\FSIO.c	5204;"	l	line:5204
+i	C:\C32\MikroEMMB 256\Microchip\MDD File System\FSIO.c	5850;"	l	line:5850
+i	C:\C32\MikroEMMB 256\Microchip\MDD File System\FSIO.c	6110;"	l	line:6110
+i	C:\C32\MikroEMMB 256\Microchip\MDD File System\FSIO.c	6534;"	l	line:6534
+i	C:\C32\MikroEMMB 256\Microchip\MDD File System\FSIO.c	6780;"	l	line:6780
+i	C:\C32\MikroEMMB 256\Microchip\MDD File System\FSIO.c	6969;"	l	line:6969
+i	C:\C32\MikroEMMB 256\Microchip\MDD File System\FSIO.c	7385;"	l	line:7385
+i	C:\C32\MikroEMMB 256\Microchip\MDD File System\FSIO.c	7473;"	l	line:7473
+i	C:\C32\MikroEMMB 256\Microchip\MDD File System\FSIO.c	8247;"	l	line:8247
+i	C:\C32\MikroEMMB 256\Microchip\MDD File System\SD-SPI.c	1068;"	l	line:1068
+i	C:\C32\MikroEMMB 256\Microchip\MDD File System\SD-SPI.c	1121;"	l	line:1121
+imageSize	C:\C32\MikroEMMB 256\Microchip\Graphics\Primitive.c	1609;"	l	line:1609
+index	C:\C32\MikroEMMB 256\Microchip\MDD File System\FSIO.c	2057;"	l	line:2057
+index	C:\C32\MikroEMMB 256\Microchip\MDD File System\FSIO.c	3197;"	l	line:3197
+index	C:\C32\MikroEMMB 256\Microchip\MDD File System\FSIO.c	400;"	l	line:400
+index	C:\C32\MikroEMMB 256\Microchip\MDD File System\FSIO.c	4398;"	l	line:4398
+index	C:\C32\MikroEMMB 256\Microchip\MDD File System\FSIO.c	5280;"	l	line:5280
+index	C:\C32\MikroEMMB 256\Microchip\MDD File System\FSIO.c	6534;"	l	line:6534
+index	C:\C32\MikroEMMB 256\Microchip\MDD File System\SD-SPI.c	1179;"	l	line:1179
+index	C:\C32\MikroEMMB 256\Microchip\MDD File System\SD-SPI.c	382;"	l	line:382
+index	C:\C32\MikroEMMB 256\Microchip\MDD File System\SD-SPI.c	489;"	l	line:489
+index	C:\C32\MikroEMMB 256\Microchip\MDD File System\SD-SPI.c	590;"	l	line:590
+index	C:\C32\MikroEMMB 256\Microchip\MDD File System\SD-SPI.c	706;"	l	line:706
+initialized	C:\C32\MikroEMMB 256\Microchip\Include\MDD File System\FSIO.h	308;"	m	line:308
+intmax_t::longlong	C:\C32\MikroEMMB 256\Microchip\Include\MDD File System\FSIO.h	160;"	d	line:160
+intmax_t::longlong	C:\C32\MikroEMMB 256\Microchip\Include\MDD File System\FSIO.h	162;"	d	line:162
+intmax_t::longlong	C:\C32\MikroEMMB 256\Microchip\Include\MDD File System\FSIO.h	164;"	d	line:164
+intmax_t::longlong	C:\C32\MikroEMMB 256\Microchip\Include\MDD File System\FSIO.h	166;"	d	line:166
+j	C:\C32\MikroEMMB 256\MMB\LCDTerminal.c	111;"	l	line:111
+j	C:\C32\MikroEMMB 256\MMB\LCDTerminal.c	144;"	l	line:144
+j	C:\C32\MikroEMMB 256\MMB\MMB.C	139;"	l	line:139
+j	C:\C32\MikroEMMB 256\Microchip\MDD File System\FSIO.c	1372;"	l	line:1372
+j	C:\C32\MikroEMMB 256\Microchip\MDD File System\FSIO.c	3504;"	l	line:3504
+j	C:\C32\MikroEMMB 256\Microchip\MDD File System\FSIO.c	5204;"	l	line:5204
+j	C:\C32\MikroEMMB 256\Microchip\MDD File System\FSIO.c	6110;"	l	line:6110
+j	C:\C32\MikroEMMB 256\Microchip\MDD File System\FSIO.c	6531;"	l	line:6531
+j	C:\C32\MikroEMMB 256\Microchip\MDD File System\FSIO.c	6969;"	l	line:6969
+j	C:\C32\MikroEMMB 256\Microchip\MDD File System\FSIO.c	8117;"	l	line:8117
+j	C:\C32\MikroEMMB 256\Microchip\MDD File System\FSIO.c	8247;"	l	line:8247
+k	C:\C32\MikroEMMB 256\Microchip\MDD File System\FSIO.c	3504;"	l	line:3504
+l	C:\C32\MikroEMMB 256\Microchip\MDD File System\FSIO.c	4703;"	l	line:4703
+l	C:\C32\MikroEMMB 256\Microchip\MDD File System\FSIO.c	4897;"	l	line:4897
+l	C:\C32\MikroEMMB 256\Microchip\MDD File System\FSIO.c	5681;"	l	line:5681
+l	C:\C32\MikroEMMB 256\Microchip\MDD File System\FSIO.c	5851;"	l	line:5851
+l	C:\C32\MikroEMMB 256\Microchip\MDD File System\FSIO.c	585;"	l	line:585
+larg	C:\C32\MikroEMMB 256\Microchip\MDD File System\FSIO.c	8506;"	l	line:8506
+larg	C:\C32\MikroEMMB 256\Microchip\MDD File System\FSIO.c	8509;"	l	line:8509
+lastChar	C:\C32\MikroEMMB 256\Microchip\Include\Graphics\Primitive.h	186;"	m	line:186
+len	C:\C32\MikroEMMB 256\Microchip\MDD File System\FSIO.c	4982;"	l	line:4982
+li	C:\C32\MikroEMMB 256\Microchip\MDD File System\FSIO.c	5851;"	l	line:5851
+lineBuffer	C:\C32\MikroEMMB 256\Microchip\Graphics\Primitive.c	2447;"	l	line:2447
+lineBuffer	C:\C32\MikroEMMB 256\Microchip\Graphics\Primitive.c	2548;"	l	line:2548
+lineBuffer	C:\C32\MikroEMMB 256\Microchip\Graphics\Primitive.c	2644;"	l	line:2644
+lineBuffer	C:\C32\MikroEMMB 256\Microchip\Graphics\Primitive.c	2720;"	l	line:2720
+loByte	C:\C32\MikroEMMB 256\Microchip\MDD File System\FSIO.c	4478;"	l	line:4478
+loWord	C:\C32\MikroEMMB 256\Microchip\MDD File System\FSIO.c	4512;"	l	line:4512
+mReadCRC::WriteSPIM(0xFF);WriteSPIM(0xFF	C:\C32\MikroEMMB 256\Microchip\Include\MDD File System\SD-SPI.h	448;"	d	line:448
+mSend8ClkCycles::WriteSPIM(0xFF);	C:\C32\MikroEMMB 256\Microchip\Include\MDD File System\SD-SPI.h	454;"	d	line:454
+mSendCRC::WriteSPIM(0xFF);WriteSPIM(0xFF	C:\C32\MikroEMMB 256\Microchip\Include\MDD File System\SD-SPI.h	451;"	d	line:451
+main	C:\C32\MikroEMMB 256\Test\main.c	39;"	f	line:39	signature:( void)
+mask	C:\C32\MikroEMMB 256\Microchip\Graphics\Primitive.c	1614;"	l	line:1614
+mask	C:\C32\MikroEMMB 256\Microchip\Graphics\Primitive.c	2123;"	l	line:2123
+mask	C:\C32\MikroEMMB 256\Microchip\Graphics\Primitive.c	2452;"	l	line:2452
+masterBootRecord	C:\C32\MikroEMMB 256\Microchip\MDD File System\FSIO.c	1367;"	l	line:1367
+maxcls	C:\C32\MikroEMMB 256\Microchip\Include\MDD File System\FSDefs.h	275;"	m	line:275
+maxroot	C:\C32\MikroEMMB 256\Microchip\Include\MDD File System\FSDefs.h	274;"	m	line:274
+mediaInfo	C:\C32\MikroEMMB 256\Microchip\MDD File System\FSIO.c	1375;"	l	line:1375
+mediaInformation	C:\C32\MikroEMMB 256\Microchip\MDD File System\FSIO.c	792;"	l	line:792
+mediaInformation	C:\C32\MikroEMMB 256\Microchip\MDD File System\SD-SPI.c	55;"	v	line:55	file:
+memOffset	C:\C32\MikroEMMB 256\Microchip\Graphics\Primitive.c	2444;"	l	line:2444
+memOffset	C:\C32\MikroEMMB 256\Microchip\Graphics\Primitive.c	2545;"	l	line:2545
+memOffset	C:\C32\MikroEMMB 256\Microchip\Graphics\Primitive.c	2641;"	l	line:2641
+memOffset	C:\C32\MikroEMMB 256\Microchip\Graphics\Primitive.c	2718;"	l	line:2718
+minsec	C:\C32\MikroEMMB 256\Microchip\MDD File System\FSIO.c	2414;"	l	line:2414
+minutes	C:\C32\MikroEMMB 256\Microchip\MDD File System\FSIO.c	3094;"	l	line:3094
+mkdirhelper	C:\C32\MikroEMMB 256\Microchip\MDD File System\FSIO.c	261;"	p	line:261	file:	signature:(BYTE mode, char * ramptr, const rom char * romptr)
+mkdirhelper	C:\C32\MikroEMMB 256\Microchip\MDD File System\FSIO.c	267;"	p	line:267	file:	signature:(BYTE mode, char * ramptr, char * romptr)
+mkdirhelper	C:\C32\MikroEMMB 256\Microchip\MDD File System\FSIO.c	6964;"	f	line:6964	signature:(BYTE mode, char * ramptr, const rom char * romptr)
+month	C:\C32\MikroEMMB 256\Microchip\MDD File System\FSIO.c	3098;"	l	line:3098
+monthday	C:\C32\MikroEMMB 256\Microchip\MDD File System\FSIO.c	2414;"	l	line:2414
+moredataexpected	C:\C32\MikroEMMB 256\Microchip\Include\MDD File System\SD-SPI.h	164;"	m	line:164
+mount	C:\C32\MikroEMMB 256\Microchip\Include\MDD File System\FSDefs.h	281;"	m	line:281
+n	C:\C32\MikroEMMB 256\Microchip\MDD File System\FSIO.c	8447;"	l	line:8447
+n	C:\C32\MikroEMMB 256\Microchip\MDD File System\FSIO.c	8512;"	l	line:8512
+name	C:\C32\MikroEMMB 256\Microchip\Include\MDD File System\FSIO.h	243;"	m	line:243
+name	C:\C32\MikroEMMB 256\Microchip\MDD File System\FSIO.c	2059;"	l	line:2059
+needRead	C:\C32\MikroEMMB 256\Microchip\MDD File System\FSIO.c	4779;"	l	line:4779
+new_addr	C:\C32\MikroEMMB 256\Microchip\MDD File System\SD-SPI.c	595;"	l	line:595
+new_request	C:\C32\MikroEMMB 256\Microchip\Include\MDD File System\FSIO.h	269;"	m	line:269
+nextClusterIsLast	C:\C32\MikroEMMB 256\Microchip\MDD File System\FSIO.c	105;"	v	line:105
+numofclus	C:\C32\MikroEMMB 256\Microchip\MDD File System\FSIO.c	1909;"	l	line:1909
+numsector	C:\C32\MikroEMMB 256\Microchip\MDD File System\FSIO.c	5354;"	l	line:5354
+offset	C:\C32\MikroEMMB 256\MMB\MMB.C	56;"	l	line:56
+offset2	C:\C32\MikroEMMB 256\Microchip\MDD File System\FSIO.c	1738;"	l	line:1738
+offset2	C:\C32\MikroEMMB 256\Microchip\MDD File System\FSIO.c	1908;"	l	line:1908
+offset2	C:\C32\MikroEMMB 256\Microchip\MDD File System\FSIO.c	5357;"	l	line:5357
+offsetLSB	C:\C32\MikroEMMB 256\Microchip\Include\Graphics\Primitive.h	195;"	m	line:195
+offsetMSB	C:\C32\MikroEMMB 256\Microchip\Include\Graphics\Primitive.h	196;"	m	line:196
+orient	C:\C32\MikroEMMB 256\Microchip\Include\Graphics\Primitive.h	183;"	m	line:183
+p	C:\C32\MikroEMMB 256\Microchip\MDD File System\FSIO.c	5681;"	l	line:5681
+p	C:\C32\MikroEMMB 256\Microchip\MDD File System\FSIO.c	5851;"	l	line:5851
+pChImage	C:\C32\MikroEMMB 256\Microchip\Graphics\Primitive.c	1604;"	l	line:1604
+pChTable	C:\C32\MikroEMMB 256\Microchip\Graphics\Primitive.c	1603;"	l	line:1603
+pChTable	C:\C32\MikroEMMB 256\Microchip\Graphics\Primitive.c	1765;"	l	line:1765
+pD	C:\C32\MikroEMMB 256\MMB\SerialFLASH.c	257;"	l	line:257
+pData	C:\C32\MikroEMMB 256\Microchip\Graphics\Primitive.c	2448;"	l	line:2448
+pData	C:\C32\MikroEMMB 256\Microchip\Graphics\Primitive.c	2549;"	l	line:2549
+pData	C:\C32\MikroEMMB 256\Microchip\Graphics\Primitive.c	2645;"	l	line:2645
+pData	C:\C32\MikroEMMB 256\Microchip\Graphics\Primitive.c	2721;"	l	line:2721
+pExt	C:\C32\MikroEMMB 256\Microchip\MDD File System\FSIO.c	5116;"	l	line:5116
+pHeader	C:\C32\MikroEMMB 256\Microchip\Graphics\Primitive.c	1459;"	l	line:1459
+pHeader	C:\C32\MikroEMMB 256\Microchip\Graphics\Primitive.c	1766;"	l	line:1766
+page	C:\C32\MikroEMMB 256\MMB\LCDTerminal.c	55;"	v	line:55	file:
+pallete	C:\C32\MikroEMMB 256\Microchip\Graphics\Primitive.c	2122;"	l	line:2122
+pallete	C:\C32\MikroEMMB 256\Microchip\Graphics\Primitive.c	2212;"	l	line:2212
+pallete	C:\C32\MikroEMMB 256\Microchip\Graphics\Primitive.c	2301;"	l	line:2301
+pallete	C:\C32\MikroEMMB 256\Microchip\Graphics\Primitive.c	2446;"	l	line:2446
+pallete	C:\C32\MikroEMMB 256\Microchip\Graphics\Primitive.c	2547;"	l	line:2547
+pallete	C:\C32\MikroEMMB 256\Microchip\Graphics\Primitive.c	2643;"	l	line:2643
+pointer	C:\C32\MikroEMMB 256\Microchip\MDD File System\FSIO.c	4983;"	l	line:4983
+pos	C:\C32\MikroEMMB 256\Microchip\Include\MDD File System\FSIO.h	237;"	m	line:237
+pos	C:\C32\MikroEMMB 256\Microchip\MDD File System\FSIO.c	4702;"	l	line:4702
+pos	C:\C32\MikroEMMB 256\Microchip\MDD File System\FSIO.c	4986;"	l	line:4986
+precision	C:\C32\MikroEMMB 256\Microchip\MDD File System\FSIO.c	8497;"	l	line:8497
+prefix_cnt	C:\C32\MikroEMMB 256\Microchip\MDD File System\FSIO.c	8846;"	l	line:8846
+properties_status	C:\C32\MikroEMMB 256\Microchip\Include\MDD File System\FSIO.h	270;"	m	line:270
+ptr0	C:\C32\MikroEMMB 256\Microchip\MDD File System\FSIO.c	2415;"	l	line:2415
+ptr1	C:\C32\MikroEMMB 256\Microchip\MDD File System\FSIO.c	2415;"	l	line:2415
+putcSPI::putcSPI2	C:\C32\MikroEMMB 256\Test\HardwareProfile.h	234;"	d	line:234
+q	C:\C32\MikroEMMB 256\Microchip\MDD File System\FSIO.c	5680;"	l	line:5680
+q	C:\C32\MikroEMMB 256\Microchip\MDD File System\FSIO.c	5850;"	l	line:5850
+q	C:\C32\MikroEMMB 256\Microchip\MDD File System\FSIO.c	8853;"	l	line:8853
+q	C:\C32\MikroEMMB 256\Microchip\MDD File System\FSIO.c	8858;"	l	line:8858
+r	C:\C32\MikroEMMB 256\MMB\MMB.C	139;"	l	line:139
+r	C:\C32\MikroEMMB 256\MMB\SerialEEPROM.c	162;"	l	line:162
+r	C:\C32\MikroEMMB 256\MMB\SerialEEPROM.c	229;"	l	line:229
+r	C:\C32\MikroEMMB 256\MMB\SerialEEPROM.c	322;"	l	line:322
+r	C:\C32\MikroEMMB 256\Microchip\MDD File System\FSIO.c	584;"	l	line:584
+r1	C:\C32\MikroEMMB 256\Microchip\Include\MDD File System\SD-SPI.h	292;"	m	line:292
+r2	C:\C32\MikroEMMB 256\Microchip\Include\MDD File System\SD-SPI.h	293;"	m	line:293
+r7	C:\C32\MikroEMMB 256\Microchip\Include\MDD File System\SD-SPI.h	294;"	m	line:294
+radix	C:\C32\MikroEMMB 256\Microchip\MDD File System\FSIO.c	5281;"	l	line:5281
+ramstring	C:\C32\MikroEMMB 256\Microchip\MDD File System\FSIO.c	8511;"	l	line:8511
+read	C:\C32\MikroEMMB 256\Microchip\Include\MDD File System\FSIO.h	180;"	m	line:180
+readCount	C:\C32\MikroEMMB 256\Microchip\MDD File System\FSIO.c	4988;"	l	line:4988
+recache	C:\C32\MikroEMMB 256\Microchip\MDD File System\FSIO.c	115;"	v	line:115
+res	C:\C32\MikroEMMB 256\Microchip\MDD File System\FSIO.c	4479;"	l	line:4479
+res1	C:\C32\MikroEMMB 256\Microchip\Include\Graphics\Primitive.h	182;"	m	line:182
+res2	C:\C32\MikroEMMB 256\Microchip\Include\Graphics\Primitive.h	184;"	m	line:184
+reserved	C:\C32\MikroEMMB 256\Microchip\Include\Graphics\Primitive.h	188;"	m	line:188
+response	C:\C32\MikroEMMB 256\Microchip\MDD File System\SD-SPI.c	1177;"	l	line:1177
+response	C:\C32\MikroEMMB 256\Microchip\MDD File System\SD-SPI.c	383;"	l	line:383
+response	C:\C32\MikroEMMB 256\Microchip\MDD File System\SD-SPI.c	490;"	l	line:490
+response	C:\C32\MikroEMMB 256\Microchip\MDD File System\SD-SPI.c	592;"	l	line:592
+response	C:\C32\MikroEMMB 256\Microchip\MDD File System\SD-SPI.c	709;"	l	line:709
+responsetype	C:\C32\MikroEMMB 256\Microchip\Include\MDD File System\SD-SPI.h	163;"	m	line:163
+result	C:\C32\MikroEMMB 256\Microchip\MDD File System\FSIO.c	2414;"	l	line:2414
+result	C:\C32\MikroEMMB 256\Microchip\MDD File System\FSIO.c	2551;"	l	line:2551
+result	C:\C32\MikroEMMB 256\Microchip\MDD File System\FSIO.c	3966;"	l	line:3966
+result	C:\C32\MikroEMMB 256\Microchip\MDD File System\FSIO.c	4513;"	l	line:4513
+result	C:\C32\MikroEMMB 256\Microchip\MDD File System\FSIO.c	8023;"	l	line:8023
+result	C:\C32\MikroEMMB 256\Microchip\MDD File System\FSIO.c	8115;"	l	line:8115
+result	C:\C32\MikroEMMB 256\Microchip\MDD File System\FSIO.c	8246;"	l	line:8246
+result	C:\C32\MikroEMMB 256\Microchip\MDD File System\SD-SPI.c	1123;"	l	line:1123
+results	C:\C32\MikroEMMB 256\Microchip\Include\MDD File System\FSIO.h	279;"	m	line:279
+returnPointer	C:\C32\MikroEMMB 256\Microchip\MDD File System\FSIO.c	6527;"	l	line:6527
+rmdirhelper	C:\C32\MikroEMMB 256\Microchip\MDD File System\FSIO.c	262;"	p	line:262	file:	signature:(BYTE mode, char * ramptr, const rom char * romptr, unsigned char rmsubdirs)
+rmdirhelper	C:\C32\MikroEMMB 256\Microchip\MDD File System\FSIO.c	268;"	p	line:268	file:	signature:(BYTE mode, char * ramptr, char * romptr, unsigned char rmsubdirs)
+rmdirhelper	C:\C32\MikroEMMB 256\Microchip\MDD File System\FSIO.c	7672;"	f	line:7672	signature:(BYTE mode, char * ramptr, const rom char * romptr, unsigned char rmsubdirs)
+romstring	C:\C32\MikroEMMB 256\Microchip\MDD File System\FSIO.c	8507;"	l	line:8507
+root	C:\C32\MikroEMMB 256\Microchip\Include\MDD File System\FSDefs.h	272;"	m	line:272
+s	C:\C32\MikroEMMB 256\Test\main.c	41;"	l	line:41
+s_digits	C:\C32\MikroEMMB 256\Microchip\MDD File System\FSIO.c	200;"	v	line:200	file:
+s_digits	C:\C32\MikroEMMB 256\Microchip\MDD File System\FSIO.c	202;"	v	line:202	file:
+sdmmc_cmd	C:\C32\MikroEMMB 256\Microchip\Include\MDD File System\SD-SPI.h	436;"	t	line:436
+sdmmc_cmdtable	C:\C32\MikroEMMB 256\Microchip\MDD File System\SD-SPI.c	62;"	v	line:62
+searchattr	C:\C32\MikroEMMB 256\Microchip\Include\MDD File System\FSIO.h	306;"	m	line:306
+searchname	C:\C32\MikroEMMB 256\Microchip\Include\MDD File System\FSIO.h	305;"	m	line:305
+sec	C:\C32\MikroEMMB 256\Microchip\Include\MDD File System\FSIO.h	236;"	m	line:236
+secCount	C:\C32\MikroEMMB 256\Microchip\MDD File System\FSIO.c	1368;"	l	line:1368
+sec_sel	C:\C32\MikroEMMB 256\Microchip\MDD File System\FSIO.c	4985;"	l	line:4985
+seconds	C:\C32\MikroEMMB 256\Microchip\MDD File System\FSIO.c	3093;"	l	line:3093
+sector	C:\C32\MikroEMMB 256\Microchip\MDD File System\FSIO.c	1739;"	l	line:1739
+sector	C:\C32\MikroEMMB 256\Microchip\MDD File System\FSIO.c	1905;"	l	line:1905
+sector	C:\C32\MikroEMMB 256\Microchip\MDD File System\FSIO.c	4553;"	l	line:4553
+sector	C:\C32\MikroEMMB 256\Microchip\MDD File System\FSIO.c	7477;"	l	line:7477
+sectorSize	C:\C32\MikroEMMB 256\Microchip\Include\MDD File System\FSDefs.h	276;"	m	line:276
+sector_size	C:\C32\MikroEMMB 256\Microchip\Include\MDD File System\FSIO.h	275;"	m	line:275
+sectors_per_cluster	C:\C32\MikroEMMB 256\Microchip\Include\MDD File System\FSIO.h	276;"	m	line:276
+seek	C:\C32\MikroEMMB 256\Microchip\Include\MDD File System\FSIO.h	238;"	m	line:238
+seek	C:\C32\MikroEMMB 256\Microchip\MDD File System\FSIO.c	4704;"	l	line:4704
+seek	C:\C32\MikroEMMB 256\Microchip\MDD File System\FSIO.c	4985;"	l	line:4985
+sign_char	C:\C32\MikroEMMB 256\Microchip\MDD File System\FSIO.c	8847;"	l	line:8847
+size	C:\C32\MikroEMMB 256\Microchip\Include\MDD File System\FSIO.h	239;"	m	line:239
+size	C:\C32\MikroEMMB 256\Microchip\MDD File System\FSIO.c	4278;"	l	line:4278
+size	C:\C32\MikroEMMB 256\Microchip\MDD File System\FSIO.c	7474;"	l	line:7474
+size	C:\C32\MikroEMMB 256\Microchip\MDD File System\FSIO.c	8499;"	l	line:8499
+size2	C:\C32\MikroEMMB 256\Microchip\MDD File System\FSIO.c	8501;"	l	line:8501
+sizeX	C:\C32\MikroEMMB 256\Microchip\Graphics\Primitive.c	2118;"	l	line:2118
+sizeX	C:\C32\MikroEMMB 256\Microchip\Graphics\Primitive.c	2207;"	l	line:2207
+sizeX	C:\C32\MikroEMMB 256\Microchip\Graphics\Primitive.c	2296;"	l	line:2296
+sizeX	C:\C32\MikroEMMB 256\Microchip\Graphics\Primitive.c	2376;"	l	line:2376
+sizeX	C:\C32\MikroEMMB 256\Microchip\Graphics\Primitive.c	2453;"	l	line:2453
+sizeX	C:\C32\MikroEMMB 256\Microchip\Graphics\Primitive.c	2553;"	l	line:2553
+sizeX	C:\C32\MikroEMMB 256\Microchip\Graphics\Primitive.c	2648;"	l	line:2648
+sizeX	C:\C32\MikroEMMB 256\Microchip\Graphics\Primitive.c	2725;"	l	line:2725
+sizeY	C:\C32\MikroEMMB 256\Microchip\Graphics\Primitive.c	2118;"	l	line:2118
+sizeY	C:\C32\MikroEMMB 256\Microchip\Graphics\Primitive.c	2207;"	l	line:2207
+sizeY	C:\C32\MikroEMMB 256\Microchip\Graphics\Primitive.c	2296;"	l	line:2296
+sizeY	C:\C32\MikroEMMB 256\Microchip\Graphics\Primitive.c	2376;"	l	line:2376
+sizeY	C:\C32\MikroEMMB 256\Microchip\Graphics\Primitive.c	2453;"	l	line:2453
+sizeY	C:\C32\MikroEMMB 256\Microchip\Graphics\Primitive.c	2553;"	l	line:2553
+sizeY	C:\C32\MikroEMMB 256\Microchip\Graphics\Primitive.c	2648;"	l	line:2648
+sizeY	C:\C32\MikroEMMB 256\Microchip\Graphics\Primitive.c	2725;"	l	line:2725
+source	C:\C32\MikroEMMB 256\Microchip\MDD File System\FSIO.c	4280;"	l	line:4280
+space_cnt	C:\C32\MikroEMMB 256\Microchip\MDD File System\FSIO.c	8503;"	l	line:8503
+spiconvalue	C:\C32\MikroEMMB 256\Microchip\MDD File System\SD-SPI.c	1184;"	l	line:1184
+src	C:\C32\MikroEMMB 256\Microchip\MDD File System\FSIO.c	4699;"	l	line:4699
+state	C:\C32\MikroEMMB 256\Microchip\MDD File System\FSIO.c	400;"	l	line:400
+status	C:\C32\MikroEMMB 256\Microchip\MDD File System\FSIO.c	1737;"	l	line:1737
+status	C:\C32\MikroEMMB 256\Microchip\MDD File System\FSIO.c	1808;"	l	line:1808
+status	C:\C32\MikroEMMB 256\Microchip\MDD File System\FSIO.c	2181;"	l	line:2181
+status	C:\C32\MikroEMMB 256\Microchip\MDD File System\FSIO.c	3199;"	l	line:3199
+status	C:\C32\MikroEMMB 256\Microchip\MDD File System\FSIO.c	3403;"	l	line:3403
+status	C:\C32\MikroEMMB 256\Microchip\MDD File System\SD-SPI.c	594;"	l	line:594
+status	C:\C32\MikroEMMB 256\Microchip\MDD File System\SD-SPI.c	710;"	l	line:710
+statusB	C:\C32\MikroEMMB 256\Microchip\MDD File System\FSIO.c	401;"	l	line:401
+steep	C:\C32\MikroEMMB 256\Microchip\Graphics\Primitive.c	737;"	l	line:737
+stepErrorGE	C:\C32\MikroEMMB 256\Microchip\Graphics\Primitive.c	735;"	l	line:735
+stepErrorLT	C:\C32\MikroEMMB 256\Microchip\Graphics\Primitive.c	735;"	l	line:735
+stepX	C:\C32\MikroEMMB 256\Microchip\Graphics\Primitive.c	736;"	l	line:736
+stepY	C:\C32\MikroEMMB 256\Microchip\Graphics\Primitive.c	736;"	l	line:736
+str_put_n_chars	C:\C32\MikroEMMB 256\Microchip\MDD File System\FSIO.c	281;"	p	line:281	file:	signature:(FSFILE * handle, unsigned char n, char c)
+str_put_n_chars	C:\C32\MikroEMMB 256\Microchip\MDD File System\FSIO.c	8403;"	f	line:8403	signature:(FSFILE * handle, unsigned char n, char c)
+stream	C:\C32\MikroEMMB 256\Microchip\MDD File System\FSIO.c	4901;"	l	line:4901
+stretchX	C:\C32\MikroEMMB 256\Microchip\Graphics\Primitive.c	2121;"	l	line:2121
+stretchX	C:\C32\MikroEMMB 256\Microchip\Graphics\Primitive.c	2211;"	l	line:2211
+stretchX	C:\C32\MikroEMMB 256\Microchip\Graphics\Primitive.c	2300;"	l	line:2300
+stretchX	C:\C32\MikroEMMB 256\Microchip\Graphics\Primitive.c	2380;"	l	line:2380
+stretchX	C:\C32\MikroEMMB 256\Microchip\Graphics\Primitive.c	2456;"	l	line:2456
+stretchX	C:\C32\MikroEMMB 256\Microchip\Graphics\Primitive.c	2556;"	l	line:2556
+stretchX	C:\C32\MikroEMMB 256\Microchip\Graphics\Primitive.c	2651;"	l	line:2651
+stretchX	C:\C32\MikroEMMB 256\Microchip\Graphics\Primitive.c	2728;"	l	line:2728
+stretchY	C:\C32\MikroEMMB 256\Microchip\Graphics\Primitive.c	2121;"	l	line:2121
+stretchY	C:\C32\MikroEMMB 256\Microchip\Graphics\Primitive.c	2211;"	l	line:2211
+stretchY	C:\C32\MikroEMMB 256\Microchip\Graphics\Primitive.c	2300;"	l	line:2300
+stretchY	C:\C32\MikroEMMB 256\Microchip\Graphics\Primitive.c	2380;"	l	line:2380
+stretchY	C:\C32\MikroEMMB 256\Microchip\Graphics\Primitive.c	2456;"	l	line:2456
+stretchY	C:\C32\MikroEMMB 256\Microchip\Graphics\Primitive.c	2556;"	l	line:2556
+stretchY	C:\C32\MikroEMMB 256\Microchip\Graphics\Primitive.c	2651;"	l	line:2651
+stretchY	C:\C32\MikroEMMB 256\Microchip\Graphics\Primitive.c	2728;"	l	line:2728
+string	C:\C32\MikroEMMB 256\Microchip\MDD File System\FSIO.c	3505;"	l	line:3505
+style	C:\C32\MikroEMMB 256\Microchip\Graphics\Primitive.c	739;"	l	line:739
+style	C:\C32\MikroEMMB 256\Microchip\Graphics\Primitive.c	946;"	l	line:946
+subDirDepth	C:\C32\MikroEMMB 256\Microchip\MDD File System\FSIO.c	7682;"	l	line:7682
+sx	C:\C32\MikroEMMB 256\Microchip\Graphics\Primitive.c	1296;"	l	line:1296
+sy	C:\C32\MikroEMMB 256\Microchip\Graphics\Primitive.c	1296;"	l	line:1296
+szName	C:\C32\MikroEMMB 256\Microchip\MDD File System\FSIO.c	5118;"	l	line:5118
+t	C:\C32\MikroEMMB 256\MMB\LCDTerminal.c	98;"	l	line:98
+t0	C:\C32\MikroEMMB 256\Microchip\MDD File System\FSIO.c	2419;"	l	line:2419
+t1	C:\C32\MikroEMMB 256\Microchip\MDD File System\FSIO.c	2419;"	l	line:2419
+tab	C:\C32\MikroEMMB 256\MMB\LCDTerminal.c	207;"	l	line:207
+temp	C:\C32\MikroEMMB 256\MMB\SerialFLASH.c	121;"	l	line:121
+temp	C:\C32\MikroEMMB 256\MMB\SerialFLASH.c	145;"	l	line:145
+temp	C:\C32\MikroEMMB 256\MMB\SerialFLASH.c	194;"	l	line:194
+temp	C:\C32\MikroEMMB 256\MMB\SerialFLASH.c	231;"	l	line:231
+temp	C:\C32\MikroEMMB 256\MMB\SimpleUART.c	133;"	l	line:133
+temp	C:\C32\MikroEMMB 256\Microchip\Graphics\Primitive.c	1075;"	l	line:1075
+temp	C:\C32\MikroEMMB 256\Microchip\Graphics\Primitive.c	1614;"	l	line:1614
+temp	C:\C32\MikroEMMB 256\Microchip\Graphics\Primitive.c	188;"	l	line:188
+temp	C:\C32\MikroEMMB 256\Microchip\Graphics\Primitive.c	2117;"	l	line:2117
+temp	C:\C32\MikroEMMB 256\Microchip\Graphics\Primitive.c	2210;"	l	line:2210
+temp	C:\C32\MikroEMMB 256\Microchip\Graphics\Primitive.c	2299;"	l	line:2299
+temp	C:\C32\MikroEMMB 256\Microchip\Graphics\Primitive.c	2379;"	l	line:2379
+temp	C:\C32\MikroEMMB 256\Microchip\Graphics\Primitive.c	2451;"	l	line:2451
+temp	C:\C32\MikroEMMB 256\Microchip\Graphics\Primitive.c	2552;"	l	line:2552
+temp	C:\C32\MikroEMMB 256\Microchip\Graphics\Primitive.c	2647;"	l	line:2647
+temp	C:\C32\MikroEMMB 256\Microchip\Graphics\Primitive.c	2724;"	l	line:2724
+temp	C:\C32\MikroEMMB 256\Microchip\Graphics\Primitive.c	738;"	l	line:738
+temp	C:\C32\MikroEMMB 256\Microchip\Graphics\Primitive.c	947;"	l	line:947
+temp	C:\C32\MikroEMMB 256\Microchip\MDD File System\FSIO.c	5117;"	l	line:5117
+temp	C:\C32\MikroEMMB 256\Microchip\MDD File System\FSIO.c	5354;"	l	line:5354
+tempArray	C:\C32\MikroEMMB 256\Microchip\MDD File System\FSIO.c	6118;"	l	line:6118
+tempArray	C:\C32\MikroEMMB 256\Microchip\MDD File System\FSIO.c	6974;"	l	line:6974
+tempArray	C:\C32\MikroEMMB 256\Microchip\MDD File System\FSIO.c	7567;"	v	line:7567
+tempArray	C:\C32\MikroEMMB 256\Microchip\MDD File System\FSIO.c	7686;"	l	line:7686
+tempCWD	C:\C32\MikroEMMB 256\Microchip\MDD File System\FSIO.c	6119;"	l	line:6119
+tempCWD	C:\C32\MikroEMMB 256\Microchip\MDD File System\FSIO.c	6529;"	l	line:6529
+tempCWD	C:\C32\MikroEMMB 256\Microchip\MDD File System\FSIO.c	6975;"	l	line:6975
+tempCWD	C:\C32\MikroEMMB 256\Microchip\MDD File System\FSIO.c	7677;"	l	line:7677
+tempCWDobj	C:\C32\MikroEMMB 256\Microchip\MDD File System\FSIO.c	116;"	v	line:116
+tempCWDobj2	C:\C32\MikroEMMB 256\Microchip\MDD File System\FSIO.c	6117;"	l	line:6117
+tempCWDobj2	C:\C32\MikroEMMB 256\Microchip\MDD File System\FSIO.c	8025;"	l	line:8025
+tempFlashAddress	C:\C32\MikroEMMB 256\Microchip\Graphics\Primitive.c	2116;"	l	line:2116
+tempFlashAddress	C:\C32\MikroEMMB 256\Microchip\Graphics\Primitive.c	2206;"	l	line:2206
+tempFlashAddress	C:\C32\MikroEMMB 256\Microchip\Graphics\Primitive.c	2295;"	l	line:2295
+tempFlashAddress	C:\C32\MikroEMMB 256\Microchip\Graphics\Primitive.c	2375;"	l	line:2375
+tempSector	C:\C32\MikroEMMB 256\Microchip\MDD File System\FSIO.c	1253;"	l	line:1253
+tempString	C:\C32\MikroEMMB 256\Microchip\MDD File System\FSIO.c	5205;"	l	line:5205
+tempindex	C:\C32\MikroEMMB 256\Microchip\MDD File System\FSIO.c	6533;"	l	line:6533
+temppath	C:\C32\MikroEMMB 256\Microchip\MDD File System\FSIO.c	6113;"	l	line:6113
+temppath	C:\C32\MikroEMMB 256\Microchip\MDD File System\FSIO.c	6970;"	l	line:6970
+temppath2	C:\C32\MikroEMMB 256\Microchip\MDD File System\FSIO.c	6115;"	l	line:6115
+temppath2	C:\C32\MikroEMMB 256\Microchip\MDD File System\FSIO.c	6972;"	l	line:6972
+test	C:\C32\MikroEMMB 256\Microchip\MDD File System\FSIO.c	1373;"	l	line:1373
+test	C:\C32\MikroEMMB 256\Microchip\MDD File System\FSIO.c	3200;"	l	line:3200
+test	C:\C32\MikroEMMB 256\Microchip\MDD File System\FSIO.c	402;"	l	line:402
+test	C:\C32\MikroEMMB 256\Microchip\MDD File System\FSIO.c	5356;"	l	line:5356
+textWidth	C:\C32\MikroEMMB 256\Microchip\Graphics\Primitive.c	1771;"	l	line:1771
+time	C:\C32\MikroEMMB 256\Microchip\Include\MDD File System\FSIO.h	241;"	m	line:241
+timeout	C:\C32\MikroEMMB 256\Microchip\MDD File System\SD-SPI.c	1176;"	l	line:1176
+timeout	C:\C32\MikroEMMB 256\Microchip\MDD File System\SD-SPI.c	381;"	l	line:381
+timeout	C:\C32\MikroEMMB 256\Microchip\MDD File System\SD-SPI.c	488;"	l	line:488
+timestamp	C:\C32\MikroEMMB 256\Microchip\Include\MDD File System\FSIO.h	302;"	m	line:302
+total_clusters	C:\C32\MikroEMMB 256\Microchip\Include\MDD File System\FSIO.h	277;"	m	line:277
+totalchars	C:\C32\MikroEMMB 256\Microchip\MDD File System\FSIO.c	6526;"	l	line:6526
+typMMC_CMD	C:\C32\MikroEMMB 256\Microchip\Include\MDD File System\SD-SPI.h	165;"	t	line:165
+type	C:\C32\MikroEMMB 256\Microchip\Graphics\Primitive.c	739;"	l	line:739
+type	C:\C32\MikroEMMB 256\Microchip\Graphics\Primitive.c	946;"	l	line:946
+type	C:\C32\MikroEMMB 256\Microchip\Include\Graphics\Primitive.h	124;"	m	line:124
+type	C:\C32\MikroEMMB 256\Microchip\Include\Graphics\Primitive.h	157;"	m	line:157
+type	C:\C32\MikroEMMB 256\Microchip\Include\Graphics\Primitive.h	167;"	m	line:167
+type	C:\C32\MikroEMMB 256\Microchip\Include\Graphics\Primitive.h	205;"	m	line:205
+type	C:\C32\MikroEMMB 256\Microchip\Include\Graphics\Primitive.h	215;"	m	line:215
+type	C:\C32\MikroEMMB 256\Microchip\Include\MDD File System\FSDefs.h	280;"	m	line:280
+type	C:\C32\MikroEMMB 256\Microchip\MDD File System\FSIO.c	867;"	l	line:867
+ui	C:\C32\MikroEMMB 256\MMB\MMB.C	81;"	l	line:81
+va_arg	C:\C32\MikroEMMB 256\Microchip\MDD File System\FSIO.c	9073;"	p	line:9073	file:	signature:(ap, long *)
+va_arg	C:\C32\MikroEMMB 256\Microchip\MDD File System\FSIO.c	9077;"	p	line:9077	file:	signature:(ap, short long *)
+va_arg	C:\C32\MikroEMMB 256\Microchip\MDD File System\FSIO.c	9081;"	p	line:9081	file:	signature:(ap, long long *)
+va_arg	C:\C32\MikroEMMB 256\Microchip\MDD File System\FSIO.c	9085;"	p	line:9085	file:	signature:(ap, signed char *)
+va_arg	C:\C32\MikroEMMB 256\Microchip\MDD File System\FSIO.c	9088;"	p	line:9088	file:	signature:(ap, int *)
+value	C:\C32\MikroEMMB 256\Microchip\MDD File System\FSIO.c	2689;"	l	line:2689
+value	C:\C32\MikroEMMB 256\Microchip\MDD File System\FSIO.c	2857;"	l	line:2857
+w	C:\C32\MikroEMMB 256\MMB\MMB.C	183;"	l	line:183
+w	C:\C32\MikroEMMB 256\MMB\MMB.C	227;"	l	line:227
+w	C:\C32\MikroEMMB 256\MMB\MMB.C	266;"	l	line:266
+w	C:\C32\MikroEMMB 256\MMB\MMB.C	289;"	l	line:289
+w	C:\C32\MikroEMMB 256\Test\main.c	42;"	l	line:42
+weekhour	C:\C32\MikroEMMB 256\Microchip\MDD File System\FSIO.c	2414;"	l	line:2414
+width	C:\C32\MikroEMMB 256\Microchip\Graphics\Primitive.c	1915;"	l	line:1915
+width	C:\C32\MikroEMMB 256\Microchip\Include\Graphics\Primitive.h	148;"	m	line:148
+width	C:\C32\MikroEMMB 256\Microchip\Include\Graphics\Primitive.h	194;"	m	line:194
+width	C:\C32\MikroEMMB 256\Microchip\MDD File System\FSIO.c	8496;"	l	line:8496
+write	C:\C32\MikroEMMB 256\Microchip\Include\MDD File System\FSIO.h	179;"	m	line:179
+writeCount	C:\C32\MikroEMMB 256\Microchip\MDD File System\FSIO.c	4705;"	l	line:4705
+writeDotEntries	C:\C32\MikroEMMB 256\Microchip\MDD File System\FSIO.c	257;"	p	line:257	file:	signature:(DISK * dsk, DWORD dotAddress, DWORD dotdotAddress)
+writeDotEntries	C:\C32\MikroEMMB 256\Microchip\MDD File System\FSIO.c	7471;"	f	line:7471	signature:(DISK * disk, DWORD dotAddress, DWORD dotdotAddress)
+x	C:\C32\MikroEMMB 256\MMB\LCDTerminal.c	248;"	l	line:248
+x	C:\C32\MikroEMMB 256\Microchip\Graphics\Primitive.c	1394;"	l	line:1394
+x	C:\C32\MikroEMMB 256\Microchip\Graphics\Primitive.c	1613;"	l	line:1613
+x	C:\C32\MikroEMMB 256\Microchip\Graphics\Primitive.c	2119;"	l	line:2119
+x	C:\C32\MikroEMMB 256\Microchip\Graphics\Primitive.c	2208;"	l	line:2208
+x	C:\C32\MikroEMMB 256\Microchip\Graphics\Primitive.c	2297;"	l	line:2297
+x	C:\C32\MikroEMMB 256\Microchip\Graphics\Primitive.c	2377;"	l	line:2377
+x	C:\C32\MikroEMMB 256\Microchip\Graphics\Primitive.c	2454;"	l	line:2454
+x	C:\C32\MikroEMMB 256\Microchip\Graphics\Primitive.c	2554;"	l	line:2554
+x	C:\C32\MikroEMMB 256\Microchip\Graphics\Primitive.c	2649;"	l	line:2649
+x	C:\C32\MikroEMMB 256\Microchip\Graphics\Primitive.c	2726;"	l	line:2726
+x1	C:\C32\MikroEMMB 256\Microchip\Graphics\Primitive.c	184;"	l	line:184
+x1Cur	C:\C32\MikroEMMB 256\Microchip\Graphics\Primitive.c	186;"	l	line:186
+x2	C:\C32\MikroEMMB 256\Microchip\Graphics\Primitive.c	184;"	l	line:184
+x2Cur	C:\C32\MikroEMMB 256\Microchip\Graphics\Primitive.c	187;"	l	line:187
+xCnt	C:\C32\MikroEMMB 256\Microchip\Graphics\Primitive.c	1613;"	l	line:1613
+xCur	C:\C32\MikroEMMB 256\Microchip\Graphics\Primitive.c	1074;"	l	line:1074
+xLimit	C:\C32\MikroEMMB 256\Microchip\Graphics\Primitive.c	946;"	l	line:946
+xPos	C:\C32\MikroEMMB 256\Microchip\Graphics\Primitive.c	1073;"	l	line:1073
+xPos	C:\C32\MikroEMMB 256\Microchip\Graphics\Primitive.c	946;"	l	line:946
+xc	C:\C32\MikroEMMB 256\Microchip\Graphics\Primitive.c	2120;"	l	line:2120
+xc	C:\C32\MikroEMMB 256\Microchip\Graphics\Primitive.c	2209;"	l	line:2209
+xc	C:\C32\MikroEMMB 256\Microchip\Graphics\Primitive.c	2298;"	l	line:2298
+xc	C:\C32\MikroEMMB 256\Microchip\Graphics\Primitive.c	2378;"	l	line:2378
+xc	C:\C32\MikroEMMB 256\Microchip\Graphics\Primitive.c	2455;"	l	line:2455
+xc	C:\C32\MikroEMMB 256\Microchip\Graphics\Primitive.c	2555;"	l	line:2555
+xc	C:\C32\MikroEMMB 256\Microchip\Graphics\Primitive.c	2650;"	l	line:2650
+xc	C:\C32\MikroEMMB 256\Microchip\Graphics\Primitive.c	2727;"	l	line:2727
+y	C:\C32\MikroEMMB 256\MMB\LCDTerminal.c	248;"	l	line:248
+y	C:\C32\MikroEMMB 256\Microchip\Graphics\Primitive.c	1394;"	l	line:1394
+y	C:\C32\MikroEMMB 256\Microchip\Graphics\Primitive.c	1613;"	l	line:1613
+y	C:\C32\MikroEMMB 256\Microchip\Graphics\Primitive.c	2119;"	l	line:2119
+y	C:\C32\MikroEMMB 256\Microchip\Graphics\Primitive.c	2208;"	l	line:2208
+y	C:\C32\MikroEMMB 256\Microchip\Graphics\Primitive.c	2297;"	l	line:2297
+y	C:\C32\MikroEMMB 256\Microchip\Graphics\Primitive.c	2377;"	l	line:2377
+y	C:\C32\MikroEMMB 256\Microchip\Graphics\Primitive.c	2454;"	l	line:2454
+y	C:\C32\MikroEMMB 256\Microchip\Graphics\Primitive.c	2554;"	l	line:2554
+y	C:\C32\MikroEMMB 256\Microchip\Graphics\Primitive.c	2649;"	l	line:2649
+y	C:\C32\MikroEMMB 256\Microchip\Graphics\Primitive.c	2726;"	l	line:2726
+y1	C:\C32\MikroEMMB 256\Microchip\Graphics\Primitive.c	184;"	l	line:184
+y1Cur	C:\C32\MikroEMMB 256\Microchip\Graphics\Primitive.c	186;"	l	line:186
+y1Limit	C:\C32\MikroEMMB 256\Microchip\Graphics\Primitive.c	183;"	l	line:183
+y1New	C:\C32\MikroEMMB 256\Microchip\Graphics\Primitive.c	186;"	l	line:186
+y2	C:\C32\MikroEMMB 256\Microchip\Graphics\Primitive.c	184;"	l	line:184
+y2Cur	C:\C32\MikroEMMB 256\Microchip\Graphics\Primitive.c	187;"	l	line:187
+y2Limit	C:\C32\MikroEMMB 256\Microchip\Graphics\Primitive.c	183;"	l	line:183
+y2New	C:\C32\MikroEMMB 256\Microchip\Graphics\Primitive.c	187;"	l	line:187
+yCnt	C:\C32\MikroEMMB 256\Microchip\Graphics\Primitive.c	1613;"	l	line:1613
+yCur	C:\C32\MikroEMMB 256\Microchip\Graphics\Primitive.c	1074;"	l	line:1074
+yLimit	C:\C32\MikroEMMB 256\Microchip\Graphics\Primitive.c	1073;"	l	line:1073
+yNew	C:\C32\MikroEMMB 256\Microchip\Graphics\Primitive.c	1074;"	l	line:1074
+yPos	C:\C32\MikroEMMB 256\Microchip\Graphics\Primitive.c	1073;"	l	line:1073
+yPos	C:\C32\MikroEMMB 256\Microchip\Graphics\Primitive.c	946;"	l	line:946
+yc	C:\C32\MikroEMMB 256\Microchip\Graphics\Primitive.c	2120;"	l	line:2120
+yc	C:\C32\MikroEMMB 256\Microchip\Graphics\Primitive.c	2209;"	l	line:2209
+yc	C:\C32\MikroEMMB 256\Microchip\Graphics\Primitive.c	2298;"	l	line:2298
+yc	C:\C32\MikroEMMB 256\Microchip\Graphics\Primitive.c	2378;"	l	line:2378
+yc	C:\C32\MikroEMMB 256\Microchip\Graphics\Primitive.c	2455;"	l	line:2455
+yc	C:\C32\MikroEMMB 256\Microchip\Graphics\Primitive.c	2555;"	l	line:2555
+yc	C:\C32\MikroEMMB 256\Microchip\Graphics\Primitive.c	2650;"	l	line:2650
+yc	C:\C32\MikroEMMB 256\Microchip\Graphics\Primitive.c	2727;"	l	line:2727
+year	C:\C32\MikroEMMB 256\Microchip\MDD File System\FSIO.c	2414;"	l	line:2414
+year	C:\C32\MikroEMMB 256\Microchip\MDD File System\FSIO.c	3099;"	l	line:3099

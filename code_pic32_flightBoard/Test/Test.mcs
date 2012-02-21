@@ -1,0 +1,175 @@
+[Header]
+MagicCookie={0b13fe8c-dfe0-40eb-8900-6712719559a7}
+Version=1.0
+[File000]
+Location=C:\sredjivanje\mikroMMB for PIC32\Test\obj\main.o
+Folder=Intermediary
+DeviceName=PIC32MX460F512L
+LanguageToolSuiteID={14495C23-81F8-43F3-8A44-859C583D7760}
+LanguageToolID={430F471F-7ECB-4852-A80D-DEF9A5C8E751}
+LanguageToolLocation=C:\Program Files\Microchip\MPLAB C32 Suite\bin\pic32-gcc.exe
+PPAD=$(BINDIR)|bin||$(TMPDIR)|obj||$(AINDIR)||$(INCDIR)|.;..\MMB;..\Microchip\include||$(LIBDIR)|C:\Program Files\Microchip\MPLAB C32\lib;C:\Program Files\Microchip\MPLAB C32\pic32mx\lib||$(LKRDIR)||
+SOLK=<src>|main.c|..\MMB\SimpleUART.c|..\MMB\LCDTerminal.c|..\MMB\LCDTerminalFont.c|..\Microchip\Graphics\Primitive.c|..\Microchip\Graphics\DisplayDriver.c|..\Microchip\MDD File System\SD-SPI.c|..\Microchip\MDD File System\FSIO.c|..\MMB\SerialEEPROM.c|..\MMB\MMB.C|..\MMB\SerialFLASH.c||<obj>||<lib>||<lkr>||
+SuiteArgsString=
+ToolArgsString=-g
+TraceCmdString=
+DebugOptions=
+[File001]
+Location=C:\sredjivanje\mikroMMB for PIC32\Test\obj\SimpleUART.o
+Folder=Intermediary
+DeviceName=PIC32MX460F512L
+LanguageToolSuiteID={14495C23-81F8-43F3-8A44-859C583D7760}
+LanguageToolID={430F471F-7ECB-4852-A80D-DEF9A5C8E751}
+LanguageToolLocation=C:\Program Files\Microchip\MPLAB C32 Suite\bin\pic32-gcc.exe
+PPAD=$(BINDIR)|bin||$(TMPDIR)|obj||$(AINDIR)||$(INCDIR)|.;..\MMB;..\Microchip\include||$(LIBDIR)|C:\Program Files\Microchip\MPLAB C32\lib;C:\Program Files\Microchip\MPLAB C32\pic32mx\lib||$(LKRDIR)||
+SOLK=<src>|main.c|..\MMB\SimpleUART.c|..\MMB\LCDTerminal.c|..\MMB\LCDTerminalFont.c|..\Microchip\Graphics\Primitive.c|..\Microchip\Graphics\DisplayDriver.c|..\Microchip\MDD File System\SD-SPI.c|..\Microchip\MDD File System\FSIO.c|..\MMB\SerialEEPROM.c|..\MMB\MMB.C|..\MMB\SerialFLASH.c||<obj>||<lib>||<lkr>||
+SuiteArgsString=
+ToolArgsString=-g
+TraceCmdString=
+DebugOptions=
+[File002]
+Location=C:\sredjivanje\mikroMMB for PIC32\Test\obj\LCDTerminal.o
+Folder=Intermediary
+DeviceName=PIC32MX460F512L
+LanguageToolSuiteID={14495C23-81F8-43F3-8A44-859C583D7760}
+LanguageToolID={430F471F-7ECB-4852-A80D-DEF9A5C8E751}
+LanguageToolLocation=C:\Program Files\Microchip\MPLAB C32 Suite\bin\pic32-gcc.exe
+PPAD=$(BINDIR)|bin||$(TMPDIR)|obj||$(AINDIR)||$(INCDIR)|.;..\MMB;..\Microchip\include||$(LIBDIR)|C:\Program Files\Microchip\MPLAB C32\lib;C:\Program Files\Microchip\MPLAB C32\pic32mx\lib||$(LKRDIR)||
+SOLK=<src>|main.c|..\MMB\SimpleUART.c|..\MMB\LCDTerminal.c|..\MMB\LCDTerminalFont.c|..\Microchip\Graphics\Primitive.c|..\Microchip\Graphics\DisplayDriver.c|..\Microchip\MDD File System\SD-SPI.c|..\Microchip\MDD File System\FSIO.c|..\MMB\SerialEEPROM.c|..\MMB\MMB.C|..\MMB\SerialFLASH.c||<obj>||<lib>||<lkr>||
+SuiteArgsString=
+ToolArgsString=-g
+TraceCmdString=
+DebugOptions=
+[File003]
+Location=C:\sredjivanje\mikroMMB for PIC32\Test\obj\LCDTerminalFont.o
+Folder=Intermediary
+DeviceName=PIC32MX460F512L
+LanguageToolSuiteID={14495C23-81F8-43F3-8A44-859C583D7760}
+LanguageToolID={430F471F-7ECB-4852-A80D-DEF9A5C8E751}
+LanguageToolLocation=C:\Program Files\Microchip\MPLAB C32 Suite\bin\pic32-gcc.exe
+PPAD=$(BINDIR)|bin||$(TMPDIR)|obj||$(AINDIR)||$(INCDIR)|.;..\MMB;..\Microchip\include||$(LIBDIR)|C:\Program Files\Microchip\MPLAB C32\lib;C:\Program Files\Microchip\MPLAB C32\pic32mx\lib||$(LKRDIR)||
+SOLK=<src>|main.c|..\MMB\SimpleUART.c|..\MMB\LCDTerminal.c|..\MMB\LCDTerminalFont.c|..\Microchip\Graphics\Primitive.c|..\Microchip\Graphics\DisplayDriver.c|..\Microchip\MDD File System\SD-SPI.c|..\Microchip\MDD File System\FSIO.c|..\MMB\SerialEEPROM.c|..\MMB\MMB.C|..\MMB\SerialFLASH.c||<obj>||<lib>||<lkr>||
+SuiteArgsString=
+ToolArgsString=-g
+TraceCmdString=
+DebugOptions=
+[File004]
+Location=C:\sredjivanje\mikroMMB for PIC32\Test\obj\Primitive.o
+Folder=Intermediary
+DeviceName=PIC32MX460F512L
+LanguageToolSuiteID={14495C23-81F8-43F3-8A44-859C583D7760}
+LanguageToolID={430F471F-7ECB-4852-A80D-DEF9A5C8E751}
+LanguageToolLocation=C:\Program Files\Microchip\MPLAB C32 Suite\bin\pic32-gcc.exe
+PPAD=$(BINDIR)|bin||$(TMPDIR)|obj||$(AINDIR)||$(INCDIR)|.;..\MMB;..\Microchip\include||$(LIBDIR)|C:\Program Files\Microchip\MPLAB C32\lib;C:\Program Files\Microchip\MPLAB C32\pic32mx\lib||$(LKRDIR)||
+SOLK=<src>|main.c|..\MMB\SimpleUART.c|..\MMB\LCDTerminal.c|..\MMB\LCDTerminalFont.c|..\Microchip\Graphics\Primitive.c|..\Microchip\Graphics\DisplayDriver.c|..\Microchip\MDD File System\SD-SPI.c|..\Microchip\MDD File System\FSIO.c|..\MMB\SerialEEPROM.c|..\MMB\MMB.C|..\MMB\SerialFLASH.c||<obj>||<lib>||<lkr>||
+SuiteArgsString=
+ToolArgsString=-g
+TraceCmdString=
+DebugOptions=
+[File005]
+Location=C:\sredjivanje\mikroMMB for PIC32\Test\obj\DisplayDriver.o
+Folder=Intermediary
+DeviceName=PIC32MX460F512L
+LanguageToolSuiteID={14495C23-81F8-43F3-8A44-859C583D7760}
+LanguageToolID={430F471F-7ECB-4852-A80D-DEF9A5C8E751}
+LanguageToolLocation=C:\Program Files\Microchip\MPLAB C32 Suite\bin\pic32-gcc.exe
+PPAD=$(BINDIR)|bin||$(TMPDIR)|obj||$(AINDIR)||$(INCDIR)|.;..\MMB;..\Microchip\include||$(LIBDIR)|C:\Program Files\Microchip\MPLAB C32\lib;C:\Program Files\Microchip\MPLAB C32\pic32mx\lib||$(LKRDIR)||
+SOLK=<src>|main.c|..\MMB\SimpleUART.c|..\MMB\LCDTerminal.c|..\MMB\LCDTerminalFont.c|..\Microchip\Graphics\Primitive.c|..\Microchip\Graphics\DisplayDriver.c|..\Microchip\MDD File System\SD-SPI.c|..\Microchip\MDD File System\FSIO.c|..\MMB\SerialEEPROM.c|..\MMB\MMB.C|..\MMB\SerialFLASH.c||<obj>||<lib>||<lkr>||
+SuiteArgsString=
+ToolArgsString=-g
+TraceCmdString=
+DebugOptions=
+[File006]
+Location=C:\sredjivanje\mikroMMB for PIC32\Test\obj\SD-SPI.o
+Folder=Intermediary
+DeviceName=PIC32MX460F512L
+LanguageToolSuiteID={14495C23-81F8-43F3-8A44-859C583D7760}
+LanguageToolID={430F471F-7ECB-4852-A80D-DEF9A5C8E751}
+LanguageToolLocation=C:\Program Files\Microchip\MPLAB C32 Suite\bin\pic32-gcc.exe
+PPAD=$(BINDIR)|bin||$(TMPDIR)|obj||$(AINDIR)||$(INCDIR)|.;..\MMB;..\Microchip\include||$(LIBDIR)|C:\Program Files\Microchip\MPLAB C32\lib;C:\Program Files\Microchip\MPLAB C32\pic32mx\lib||$(LKRDIR)||
+SOLK=<src>|main.c|..\MMB\SimpleUART.c|..\MMB\LCDTerminal.c|..\MMB\LCDTerminalFont.c|..\Microchip\Graphics\Primitive.c|..\Microchip\Graphics\DisplayDriver.c|..\Microchip\MDD File System\SD-SPI.c|..\Microchip\MDD File System\FSIO.c|..\MMB\SerialEEPROM.c|..\MMB\MMB.C|..\MMB\SerialFLASH.c||<obj>||<lib>||<lkr>||
+SuiteArgsString=
+ToolArgsString=-g
+TraceCmdString=
+DebugOptions=
+[File007]
+Location=C:\sredjivanje\mikroMMB for PIC32\Test\obj\FSIO.o
+Folder=Intermediary
+DeviceName=PIC32MX460F512L
+LanguageToolSuiteID={14495C23-81F8-43F3-8A44-859C583D7760}
+LanguageToolID={430F471F-7ECB-4852-A80D-DEF9A5C8E751}
+LanguageToolLocation=C:\Program Files\Microchip\MPLAB C32 Suite\bin\pic32-gcc.exe
+PPAD=$(BINDIR)|bin||$(TMPDIR)|obj||$(AINDIR)||$(INCDIR)|.;..\MMB;..\Microchip\include||$(LIBDIR)|C:\Program Files\Microchip\MPLAB C32\lib;C:\Program Files\Microchip\MPLAB C32\pic32mx\lib||$(LKRDIR)||
+SOLK=<src>|main.c|..\MMB\SimpleUART.c|..\MMB\LCDTerminal.c|..\MMB\LCDTerminalFont.c|..\Microchip\Graphics\Primitive.c|..\Microchip\Graphics\DisplayDriver.c|..\Microchip\MDD File System\SD-SPI.c|..\Microchip\MDD File System\FSIO.c|..\MMB\SerialEEPROM.c|..\MMB\MMB.C|..\MMB\SerialFLASH.c||<obj>||<lib>||<lkr>||
+SuiteArgsString=
+ToolArgsString=-g
+TraceCmdString=
+DebugOptions=
+[File008]
+Location=C:\sredjivanje\mikroMMB for PIC32\Test\obj\SerialEEPROM.o
+Folder=Intermediary
+DeviceName=PIC32MX460F512L
+LanguageToolSuiteID={14495C23-81F8-43F3-8A44-859C583D7760}
+LanguageToolID={430F471F-7ECB-4852-A80D-DEF9A5C8E751}
+LanguageToolLocation=C:\Program Files\Microchip\MPLAB C32 Suite\bin\pic32-gcc.exe
+PPAD=$(BINDIR)|bin||$(TMPDIR)|obj||$(AINDIR)||$(INCDIR)|.;..\MMB;..\Microchip\include||$(LIBDIR)|C:\Program Files\Microchip\MPLAB C32\lib;C:\Program Files\Microchip\MPLAB C32\pic32mx\lib||$(LKRDIR)||
+SOLK=<src>|main.c|..\MMB\SimpleUART.c|..\MMB\LCDTerminal.c|..\MMB\LCDTerminalFont.c|..\Microchip\Graphics\Primitive.c|..\Microchip\Graphics\DisplayDriver.c|..\Microchip\MDD File System\SD-SPI.c|..\Microchip\MDD File System\FSIO.c|..\MMB\SerialEEPROM.c|..\MMB\MMB.C|..\MMB\SerialFLASH.c||<obj>||<lib>||<lkr>||
+SuiteArgsString=
+ToolArgsString=-g
+TraceCmdString=
+DebugOptions=
+[File009]
+Location=C:\sredjivanje\mikroMMB for PIC32\Test\obj\MMB.o
+Folder=Intermediary
+DeviceName=PIC32MX460F512L
+LanguageToolSuiteID={14495C23-81F8-43F3-8A44-859C583D7760}
+LanguageToolID={430F471F-7ECB-4852-A80D-DEF9A5C8E751}
+LanguageToolLocation=C:\Program Files\Microchip\MPLAB C32 Suite\bin\pic32-gcc.exe
+PPAD=$(BINDIR)|bin||$(TMPDIR)|obj||$(AINDIR)||$(INCDIR)|.;..\MMB;..\Microchip\include||$(LIBDIR)|C:\Program Files\Microchip\MPLAB C32\lib;C:\Program Files\Microchip\MPLAB C32\pic32mx\lib||$(LKRDIR)||
+SOLK=<src>|main.c|..\MMB\SimpleUART.c|..\MMB\LCDTerminal.c|..\MMB\LCDTerminalFont.c|..\Microchip\Graphics\Primitive.c|..\Microchip\Graphics\DisplayDriver.c|..\Microchip\MDD File System\SD-SPI.c|..\Microchip\MDD File System\FSIO.c|..\MMB\SerialEEPROM.c|..\MMB\MMB.C|..\MMB\SerialFLASH.c||<obj>||<lib>||<lkr>||
+SuiteArgsString=
+ToolArgsString=-g
+TraceCmdString=
+DebugOptions=
+[File010]
+Location=C:\sredjivanje\mikroMMB for PIC32\Test\obj\SerialFLASH.o
+Folder=Intermediary
+DeviceName=PIC32MX460F512L
+LanguageToolSuiteID={14495C23-81F8-43F3-8A44-859C583D7760}
+LanguageToolID={430F471F-7ECB-4852-A80D-DEF9A5C8E751}
+LanguageToolLocation=C:\Program Files\Microchip\MPLAB C32 Suite\bin\pic32-gcc.exe
+PPAD=$(BINDIR)|bin||$(TMPDIR)|obj||$(AINDIR)||$(INCDIR)|.;..\MMB;..\Microchip\include||$(LIBDIR)|C:\Program Files\Microchip\MPLAB C32\lib;C:\Program Files\Microchip\MPLAB C32\pic32mx\lib||$(LKRDIR)||
+SOLK=<src>|main.c|..\MMB\SimpleUART.c|..\MMB\LCDTerminal.c|..\MMB\LCDTerminalFont.c|..\Microchip\Graphics\Primitive.c|..\Microchip\Graphics\DisplayDriver.c|..\Microchip\MDD File System\SD-SPI.c|..\Microchip\MDD File System\FSIO.c|..\MMB\SerialEEPROM.c|..\MMB\MMB.C|..\MMB\SerialFLASH.c||<obj>||<lib>||<lkr>||
+SuiteArgsString=
+ToolArgsString=-g
+TraceCmdString=
+DebugOptions=
+[File011]
+Location=C:\sredjivanje\mikroMMB for PIC32\Test\bin\Test.elf
+Folder=Output
+DeviceName=PIC32MX460F512L
+LanguageToolSuiteID={14495C23-81F8-43F3-8A44-859C583D7760}
+LanguageToolID={C68E5105-1196-4333-A0BF-3DC57271E614}
+LanguageToolLocation=C:\Program Files\Microchip\MPLAB C32 Suite\bin\pic32-ld.exe
+PPAD=$(BINDIR)|bin||$(TMPDIR)|obj||$(AINDIR)||$(INCDIR)|.;..\MMB;..\Microchip\include||$(LIBDIR)|C:\Program Files\Microchip\MPLAB C32\lib;C:\Program Files\Microchip\MPLAB C32\pic32mx\lib||$(LKRDIR)||
+SOLK=<src>|main.c|..\MMB\SimpleUART.c|..\MMB\LCDTerminal.c|..\MMB\LCDTerminalFont.c|..\Microchip\Graphics\Primitive.c|..\Microchip\Graphics\DisplayDriver.c|..\Microchip\MDD File System\SD-SPI.c|..\Microchip\MDD File System\FSIO.c|..\MMB\SerialEEPROM.c|..\MMB\MMB.C|..\MMB\SerialFLASH.c||<obj>||<lib>||<lkr>||
+SuiteArgsString=
+ToolArgsString=-o"$(BINDIR_)$(TARGETBASE).$(TARGETSUFFIX)" -Map="$(BINDIR_)$(TARGETBASE).map"
+TraceCmdString=
+DebugOptions=
+[File012]
+Location=C:\sredjivanje\mikroMMB for PIC32\Test\bin\Test.hex
+Folder=Output
+DeviceName=PIC32MX460F512L
+LanguageToolSuiteID={14495C23-81F8-43F3-8A44-859C583D7760}
+LanguageToolID={C68E5105-1196-4333-A0BF-3DC57271E614}
+LanguageToolLocation=C:\Program Files\Microchip\MPLAB C32 Suite\bin\pic32-ld.exe
+PPAD=$(BINDIR)|bin||$(TMPDIR)|obj||$(AINDIR)||$(INCDIR)|.;..\MMB;..\Microchip\include||$(LIBDIR)|C:\Program Files\Microchip\MPLAB C32\lib;C:\Program Files\Microchip\MPLAB C32\pic32mx\lib||$(LKRDIR)||
+SOLK=<src>|main.c|..\MMB\SimpleUART.c|..\MMB\LCDTerminal.c|..\MMB\LCDTerminalFont.c|..\Microchip\Graphics\Primitive.c|..\Microchip\Graphics\DisplayDriver.c|..\Microchip\MDD File System\SD-SPI.c|..\Microchip\MDD File System\FSIO.c|..\MMB\SerialEEPROM.c|..\MMB\MMB.C|..\MMB\SerialFLASH.c||<obj>||<lib>||<lkr>||
+SuiteArgsString=
+ToolArgsString=-o"$(BINDIR_)$(TARGETBASE).$(TARGETSUFFIX)" -Map="$(BINDIR_)$(TARGETBASE).map"
+TraceCmdString=
+DebugOptions=
+[TOOL_LOC_STAMPS]
+tool_loc{430F471F-7ECB-4852-A80D-DEF9A5C8E751}=C:\Program Files\Microchip\MPLAB C32 Suite\bin\pic32-gcc.exe
+tool_loc{C68E5105-1196-4333-A0BF-3DC57271E614}=C:\Program Files\Microchip\MPLAB C32 Suite\bin\pic32-ld.exe
