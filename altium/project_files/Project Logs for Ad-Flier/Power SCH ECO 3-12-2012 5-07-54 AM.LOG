@@ -1,0 +1,8 @@
+Change Component Designator: Old Designator=* New Designator=*1
+Change Component Designator: Old Designator=* New Designator=*2
+Change Component Designator: Old Designator=* New Designator=*3
+Change Component Designator: Old Designator=Conn_Battery New Designator=Conn_Battery1
+Change Component Designator: Old Designator=Conn_Wall New Designator=Conn_Wall1
+Change Component Designator: Old Designator=REG1 New Designator=REG4
+Change Component Designator: Old Designator=REG3 New Designator=REG1
+Change Component Designator: Old Designator=REG4 New Designator=REG3
