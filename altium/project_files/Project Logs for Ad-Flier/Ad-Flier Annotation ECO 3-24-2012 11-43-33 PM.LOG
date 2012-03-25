@@ -1,0 +1,11 @@
+Change Component Physical Designator: Old Designator=Debug1 New Designator=Debug2
+Change Component Physical Designator: Old Designator=Debug2 New Designator=Debug3
+Change Component Physical Designator: Old Designator=Debug3 New Designator=Debug5
+Change Component Physical Designator: Old Designator=Debug4 New Designator=Debug6
+Change Component Physical Designator: Old Designator=Header9 New Designator=Debug1
+Change Component Physical Designator: Old Designator=Header10 New Designator=Debug4
+Change Component Physical Designator: Old Designator=Header11 New Designator=Header9
+Change Component Physical Designator: Old Designator=Header12 New Designator=Header10
+Change Component Physical Designator: Old Designator=Header13 New Designator=Header11
+Change Component Physical Designator: Old Designator=Header14 New Designator=Header12
+Change Component Physical Designator: Old Designator=Header15 New Designator=Header13

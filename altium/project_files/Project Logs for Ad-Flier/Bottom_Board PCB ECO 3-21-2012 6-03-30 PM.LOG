@@ -1,0 +1,408 @@
+Removed Pin From Net: NetName=GND Pin=C9-1
+Removed Pin From Net: NetName=+1.5V Pin=C9-2
+Removed Pin From Net: NetName=VUSB Pin=IC_FPGA_A1-5
+Removed Pin From Net: NetName=GND Pin=IC_FPGA_A1-6
+Removed Pin From Net: NetName=TDO Pin=IC_FPGA_A1-10
+Removed Pin From Net: NetName=TMS Pin=IC_FPGA_A1-11
+Removed Pin From Net: NetName=TCK Pin=IC_FPGA_A1-12
+Removed Pin From Net: NetName=TDI Pin=IC_FPGA_A1-13
+Removed Pin From Net: NetName=DATAO Pin=IC_FPGA_A1-14
+Removed Pin From Net: NetName=DCLK Pin=IC_FPGA_A1-15
+Removed Pin From Net: NetName=NCE Pin=IC_FPGA_A1-16
+Removed Pin From Net: NetName=25MHZ_CLOCK Pin=IC_FPGA_A1-17
+Removed Pin From Net: NetName=GND Pin=IC_FPGA_A1-19
+Removed Pin From Net: NetName=NCONFIG Pin=IC_FPGA_A1-20
+Removed Pin From Net: NetName=CLOCK_SYNTH_0 Pin=IC_FPGA_A1-21
+Removed Pin From Net: NetName=VUSB Pin=IC_FPGA_A1-23
+Removed Pin From Net: NetName=+1.2V Pin=IC_FPGA_A1-26
+Removed Pin From Net: NetName=GND Pin=IC_FPGA_A1-27
+Removed Pin From Net: NetName=VUSB Pin=IC_FPGA_A1-29
+Removed Pin From Net: NetName=GND Pin=IC_FPGA_A1-33
+Removed Pin From Net: NetName=GND Pin=IC_FPGA_A1-34
+Removed Pin From Net: NetName=+1.2V Pin=IC_FPGA_A1-35
+Removed Pin From Net: NetName=GND Pin=IC_FPGA_A1-36
+Removed Pin From Net: NetName=+1.2V Pin=IC_FPGA_A1-37
+Removed Pin From Net: NetName=GND Pin=IC_FPGA_A1-38
+Removed Pin From Net: NetName=GND Pin=IC_FPGA_A1-39
+Removed Pin From Net: NetName=FPGA_SPI_CLOCK Pin=IC_FPGA_A1-40
+Removed Pin From Net: NetName=FPGA_SPI_DATAIN Pin=IC_FPGA_A1-41
+Removed Pin From Net: NetName=FPGA_SPI_DATAOUT Pin=IC_FPGA_A1-42
+Removed Pin From Net: NetName=ACCEL_SCL Pin=IC_FPGA_A1-43
+Removed Pin From Net: NetName=ACCEL_SDA Pin=IC_FPGA_A1-44
+Removed Pin From Net: NetName=FPGA_SPI_/GYROCS Pin=IC_FPGA_A1-45
+Removed Pin From Net: NetName=VUSB Pin=IC_FPGA_A1-46
+Removed Pin From Net: NetName=GYRO_DRDY Pin=IC_FPGA_A1-47
+Removed Pin From Net: NetName=GYRO_INT1 Pin=IC_FPGA_A1-48
+Removed Pin From Net: NetName=GND Pin=IC_FPGA_A1-49
+Removed Pin From Net: NetName=+1.2V Pin=IC_FPGA_A1-50
+Removed Pin From Net: NetName=FPGA_SPI_/SRAMCS Pin=IC_FPGA_A1-51
+Removed Pin From Net: NetName=FPGASRAM_/WP Pin=IC_FPGA_A1-52
+Removed Pin From Net: NetName=ACCEL_SA0 Pin=IC_FPGA_A1-53
+Removed Pin From Net: NetName=VUSB Pin=IC_FPGA_A1-54
+Removed Pin From Net: NetName=ACCEL_INT1 Pin=IC_FPGA_A1-55
+Removed Pin From Net: NetName=GND Pin=IC_FPGA_A1-56
+Removed Pin From Net: NetName=ACCEL_INT2 Pin=IC_FPGA_A1-57
+Removed Pin From Net: NetName=P58 Pin=IC_FPGA_A1-58
+Removed Pin From Net: NetName=BULTRASONIC_TRIGGER Pin=IC_FPGA_A1-59
+Removed Pin From Net: NetName=BULTRASONIC_EDGE Pin=IC_FPGA_A1-60
+Removed Pin From Net: NetName=GND Pin=IC_FPGA_A1-61
+Removed Pin From Net: NetName=+1.2V Pin=IC_FPGA_A1-62
+Removed Pin From Net: NetName=BLED_ORANGE1 Pin=IC_FPGA_A1-63
+Removed Pin From Net: NetName=BLED_ORANGE2 Pin=IC_FPGA_A1-64
+Removed Pin From Net: NetName=BLED_ORANGE3 Pin=IC_FPGA_A1-65
+Removed Pin From Net: NetName=VUSB Pin=IC_FPGA_A1-66
+Removed Pin From Net: NetName=BLED_ORANGE4 Pin=IC_FPGA_A1-67
+Removed Pin From Net: NetName=GND Pin=IC_FPGA_A1-68
+Removed Pin From Net: NetName=BLED_BLUE1 Pin=IC_FPGA_A1-69
+Removed Pin From Net: NetName=BLED_BLUE2 Pin=IC_FPGA_A1-70
+Removed Pin From Net: NetName=BLED_BLUE3 Pin=IC_FPGA_A1-71
+Removed Pin From Net: NetName=BLED_BLUE4 Pin=IC_FPGA_A1-72
+Removed Pin From Net: NetName=CAMERA_SCL Pin=IC_FPGA_A1-73
+Removed Pin From Net: NetName=CAMERA_SDA Pin=IC_FPGA_A1-74
+Removed Pin From Net: NetName=CAMERA_RESET Pin=IC_FPGA_A1-75
+Removed Pin From Net: NetName=+2.8V Pin=IC_FPGA_A1-77
+Removed Pin From Net: NetName=GND Pin=IC_FPGA_A1-78
+Removed Pin From Net: NetName=CAMERA_EXTCLK Pin=IC_FPGA_A1-79
+Removed Pin From Net: NetName=GND Pin=IC_FPGA_A1-80
+Removed Pin From Net: NetName=+1.2V Pin=IC_FPGA_A1-81
+Removed Pin From Net: NetName=NSTATUS Pin=IC_FPGA_A1-82
+Removed Pin From Net: NetName=CONF_DONE Pin=IC_FPGA_A1-83
+Removed Pin From Net: NetName=MSEL1 Pin=IC_FPGA_A1-84
+Removed Pin From Net: NetName=MSEL0 Pin=IC_FPGA_A1-85
+Removed Pin From Net: NetName=CAMERA_HD Pin=IC_FPGA_A1-86
+Removed Pin From Net: NetName=CAMERA_VD Pin=IC_FPGA_A1-87
+Removed Pin From Net: NetName=CLOCK_SYNTH_1 Pin=IC_FPGA_A1-91
+Removed Pin From Net: NetName=CAMERA_DCLK Pin=IC_FPGA_A1-92
+Removed Pin From Net: NetName=CAMERA_DOUT0 Pin=IC_FPGA_A1-93
+Removed Pin From Net: NetName=CAMERA_DOUT1 Pin=IC_FPGA_A1-94
+Removed Pin From Net: NetName=+2.8V Pin=IC_FPGA_A1-95
+Removed Pin From Net: NetName=CAMERA_DOUT2 Pin=IC_FPGA_A1-96
+Removed Pin From Net: NetName=CAMERA_DOUT3 Pin=IC_FPGA_A1-97
+Removed Pin From Net: NetName=GND Pin=IC_FPGA_A1-98
+Removed Pin From Net: NetName=CAMERA_DOUT4 Pin=IC_FPGA_A1-99
+Removed Pin From Net: NetName=CAMERA_DOUT5 Pin=IC_FPGA_A1-100
+Removed Pin From Net: NetName=CAMERA_DOUT6 Pin=IC_FPGA_A1-101
+Removed Pin From Net: NetName=+2.8V Pin=IC_FPGA_A1-102
+Removed Pin From Net: NetName=CAMERA_DOUT7 Pin=IC_FPGA_A1-103
+Removed Pin From Net: NetName=P104 Pin=IC_FPGA_A1-104
+Removed Pin From Net: NetName=GND Pin=IC_FPGA_A1-105
+Removed Pin From Net: NetName=GND Pin=IC_FPGA_A1-106
+Removed Pin From Net: NetName=+1.2V Pin=IC_FPGA_A1-107
+Removed Pin From Net: NetName=GND Pin=IC_FPGA_A1-108
+Removed Pin From Net: NetName=+1.2V Pin=IC_FPGA_A1-109
+Removed Pin From Net: NetName=GND Pin=IC_FPGA_A1-110
+Removed Pin From Net: NetName=GND Pin=IC_FPGA_A1-111
+Removed Pin From Net: NetName=FPGA_D0 Pin=IC_FPGA_A1-112
+Removed Pin From Net: NetName=FPGA_D1 Pin=IC_FPGA_A1-113
+Removed Pin From Net: NetName=FPGA_D2 Pin=IC_FPGA_A1-114
+Removed Pin From Net: NetName=FPGA_D3 Pin=IC_FPGA_A1-115
+Removed Pin From Net: NetName=VUSB Pin=IC_FPGA_A1-116
+Removed Pin From Net: NetName=GND Pin=IC_FPGA_A1-117
+Removed Pin From Net: NetName=FPGA_D4 Pin=IC_FPGA_A1-118
+Removed Pin From Net: NetName=FPGA_D5 Pin=IC_FPGA_A1-119
+Removed Pin From Net: NetName=FPGA_D6 Pin=IC_FPGA_A1-120
+Removed Pin From Net: NetName=FPGA_D7 Pin=IC_FPGA_A1-121
+Removed Pin From Net: NetName=FPGA_A-/D Pin=IC_FPGA_A1-122
+Removed Pin From Net: NetName=GND Pin=IC_FPGA_A1-123
+Removed Pin From Net: NetName=+1.2V Pin=IC_FPGA_A1-124
+Removed Pin From Net: NetName=FPGA_R-/W Pin=IC_FPGA_A1-125
+Removed Pin From Net: NetName=FPGA_OK-OUT Pin=IC_FPGA_A1-126
+Removed Pin From Net: NetName=VUSB Pin=IC_FPGA_A1-127
+Removed Pin From Net: NetName=GND Pin=IC_FPGA_A1-128
+Removed Pin From Net: NetName=FPGA_OK-IN Pin=IC_FPGA_A1-129
+Removed Pin From Net: NetName=GND Pin=IC_FPGA_A1-130
+Removed Pin From Net: NetName=+1.2V Pin=IC_FPGA_A1-131
+Removed Pin From Net: NetName=P132 Pin=IC_FPGA_A1-132
+Removed Pin From Net: NetName=P133 Pin=IC_FPGA_A1-133
+Removed Pin From Net: NetName=P134 Pin=IC_FPGA_A1-134
+Removed Pin From Net: NetName=P135 Pin=IC_FPGA_A1-135
+Removed Pin From Net: NetName=P136 Pin=IC_FPGA_A1-136
+Removed Pin From Net: NetName=P137 Pin=IC_FPGA_A1-137
+Removed Pin From Net: NetName=VUSB Pin=IC_FPGA_A1-138
+Removed Pin From Net: NetName=P139 Pin=IC_FPGA_A1-139
+Removed Pin From Net: NetName=GND Pin=IC_FPGA_A1-140
+Removed Pin From Net: NetName=MOTOR_W1 Pin=IC_FPGA_A1-141
+Removed Pin From Net: NetName=MOTOR_W2 Pin=IC_FPGA_A1-142
+Removed Pin From Net: NetName=MOTOR_W3 Pin=IC_FPGA_A1-143
+Removed Pin From Net: NetName=MOTOR_W4 Pin=IC_FPGA_A1-144
+Removed Member From Class: ClassName=Power Member=C9
+Change Component Footprint: Designator=IC_Navigator Old Footprint=ST-100_N New Footprint=TQFP-PT100_N
+Change Component Comment : Designator=C1 Old Comment=Cap New Comment=0.1uF
+Change Component Comment : Designator=C5 Old Comment=Cap New Comment=0.1uF
+Change Component Comment : Designator=C6 Old Comment=Cap New Comment=0.1uF
+Change Component Comment : Designator=C12 Old Comment=Cap New Comment=0.1uF
+Change Component Comment : Designator=C15 Old Comment=Cap New Comment=0.1uF
+Change Component Comment : Designator=C17 Old Comment=Cap New Comment=0.1uF
+Change Component Comment : Designator=C19 Old Comment=Cap New Comment=0.1uF
+Change Component Comment : Designator=C22 Old Comment=Cap New Comment=0.1uF
+Change Component Comment : Designator=C25 Old Comment=Cap New Comment=0.1uF
+Change Component Comment : Designator=C27 Old Comment=Cap New Comment=0.1uF
+Change Component Comment : Designator=C37 Old Comment=Cap New Comment=0.1uF
+Change Component Comment : Designator=C38 Old Comment=Cap New Comment=0.1uF
+Change Component Comment : Designator=C39 Old Comment=Cap New Comment=0.1uF
+Change Component Comment : Designator=C40 Old Comment=Cap New Comment=0.1uF
+Change Component Comment : Designator=C41 Old Comment=Cap New Comment=0.1uF
+Change Component Comment : Designator=C42 Old Comment=Cap New Comment=0.1uF
+Change Component Comment : Designator=C43 Old Comment=Cap New Comment=0.1uF
+Change Component Comment : Designator=C45 Old Comment=Cap New Comment=0.1uF
+Change Component Comment : Designator=C50 Old Comment=Cap New Comment=0.1uF
+Change Component Comment : Designator=C51 Old Comment=Cap New Comment=0.1uF
+Change Component Comment : Designator=C52 Old Comment=Cap New Comment=0.1uF
+Change Component Comment : Designator=C55 Old Comment=Cap New Comment=0.1uF
+Change Component Comment : Designator=C78 Old Comment=Cap New Comment=0.1uF
+Change Component Comment : Designator=C79 Old Comment=Cap New Comment=0.01uF
+Change Component Comment : Designator=C8 Old Comment=Cap New Comment=1.0uF
+Change Component Comment : Designator=C24 Old Comment=Cap New Comment=1.0uF
+Change Component Comment : Designator=C29 Old Comment=Cap New Comment=1.0uF
+Change Component Comment : Designator=C30 Old Comment=Cap New Comment=1.0uF
+Change Component Comment : Designator=C32 Old Comment=Cap New Comment=1.0uF
+Change Component Comment : Designator=C54 Old Comment=Cap New Comment=1.0uF
+Change Component Comment : Designator=C70 Old Comment=Cap New Comment=1.0uF
+Change Component Comment : Designator=C75 Old Comment=Cap New Comment=1.0uF
+Change Component Comment : Designator=C77 Old Comment=Cap New Comment=1.0uF
+Change Component Comment : Designator=C2 Old Comment=Cap New Comment=1uF
+Change Component Comment : Designator=C4 Old Comment=Cap New Comment=1uF
+Change Component Comment : Designator=C10 Old Comment=Cap New Comment=1uF
+Change Component Comment : Designator=C14 Old Comment=Cap New Comment=1uF
+Change Component Comment : Designator=C18 Old Comment=Cap New Comment=4.7uF
+Change Component Comment : Designator=C34 Old Comment=Cap New Comment=4.7uF
+Change Component Comment : Designator=C33 Old Comment=Cap New Comment=8.2pF
+Change Component Comment : Designator=C3 Old Comment=Cap New Comment=10uF
+Change Component Comment : Designator=C7 Old Comment=Cap New Comment=10uF
+Change Component Comment : Designator=C11 Old Comment=Cap New Comment=10uF
+Change Component Comment : Designator=C13 Old Comment=Cap New Comment=10uF
+Change Component Comment : Designator=C16 Old Comment=Cap New Comment=10uF
+Change Component Comment : Designator=C23 Old Comment=Cap New Comment=10uF
+Change Component Comment : Designator=C53 Old Comment=Cap New Comment=10uF
+Change Component Comment : Designator=C46 Old Comment=Cap New Comment=22pF
+Change Component Comment : Designator=C47 Old Comment=Cap New Comment=22pF
+Change Component Comment : Designator=C48 Old Comment=Cap New Comment=22pF
+Change Component Comment : Designator=C49 Old Comment=Cap New Comment=22pF
+Change Component Comment : Designator=C21 Old Comment=Cap New Comment=100nF
+Change Component Comment : Designator=C26 Old Comment=Cap New Comment=100nF
+Change Component Comment : Designator=C28 Old Comment=Cap New Comment=100nF
+Change Component Comment : Designator=C31 Old Comment=Cap New Comment=100nF
+Change Component Comment : Designator=C35 Old Comment=Cap New Comment=100nF
+Change Component Comment : Designator=C56 Old Comment=Cap New Comment=100nF
+Change Component Comment : Designator=C57 Old Comment=Cap New Comment=100nF
+Change Component Comment : Designator=C58 Old Comment=Cap New Comment=100nF
+Change Component Comment : Designator=C59 Old Comment=Cap New Comment=100nF
+Change Component Comment : Designator=C60 Old Comment=Cap New Comment=100nF
+Change Component Comment : Designator=C61 Old Comment=Cap New Comment=100nF
+Change Component Comment : Designator=C62 Old Comment=Cap New Comment=100nF
+Change Component Comment : Designator=C63 Old Comment=Cap New Comment=100nF
+Change Component Comment : Designator=C64 Old Comment=Cap New Comment=100nF
+Change Component Comment : Designator=C65 Old Comment=Cap New Comment=100nF
+Change Component Comment : Designator=C66 Old Comment=Cap New Comment=100nF
+Change Component Comment : Designator=C67 Old Comment=Cap New Comment=100nF
+Change Component Comment : Designator=C68 Old Comment=Cap New Comment=100nF
+Change Component Comment : Designator=C69 Old Comment=Cap New Comment=100nF
+Change Component Comment : Designator=C71 Old Comment=Cap New Comment=100nF
+Change Component Comment : Designator=C72 Old Comment=Cap New Comment=100nF
+Change Component Comment : Designator=C73 Old Comment=Cap New Comment=100nF
+Change Component Comment : Designator=C74 Old Comment=Cap New Comment=100nF
+Change Component Comment : Designator=C76 Old Comment=Cap New Comment=100nF
+Change Component Comment : Designator=C36 Old Comment=Cap New Comment=220nF
+Change Component Comment : Designator=C20 Old Comment=Cap New Comment=470nF
+Change Component Comment : Designator=Conn_Battery Old Comment=Header 2 New Comment=Battery Connector
+Change Component Comment : Designator=Conn_Wall Old Comment=Header 2 New Comment=Wall Connector
+Change Component Comment : Designator=R2 Old Comment=Res2 New Comment=1.3K
+Change Component Comment : Designator=R13 Old Comment=Res2 New Comment=1K
+Change Component Comment : Designator=R14 Old Comment=Res2 New Comment=1K
+Change Component Comment : Designator=R17 Old Comment=Res2 New Comment=1K
+Change Component Comment : Designator=R31 Old Comment=Res2 New Comment=1K
+Change Component Comment : Designator=R32 Old Comment=Res2 New Comment=1K
+Change Component Comment : Designator=R33 Old Comment=Res2 New Comment=1K
+Change Component Comment : Designator=R34 Old Comment=Res2 New Comment=1K
+Change Component Comment : Designator=R35 Old Comment=Res2 New Comment=1K
+Change Component Comment : Designator=R36 Old Comment=Res2 New Comment=1K
+Change Component Comment : Designator=R37 Old Comment=Res2 New Comment=1K
+Change Component Comment : Designator=R38 Old Comment=Res2 New Comment=1K
+Change Component Comment : Designator=R18 Old Comment=Res2 New Comment=2.2K
+Change Component Comment : Designator=R19 Old Comment=Res2 New Comment=2.2K
+Change Component Comment : Designator=R1 Old Comment=Res2 New Comment=3.9K
+Change Component Comment : Designator=R3 Old Comment=Res2 New Comment=4K7
+Change Component Comment : Designator=R4 Old Comment=Res2 New Comment=4K7
+Change Component Comment : Designator=R29 Old Comment=Res2 New Comment=4K7
+Change Component Comment : Designator=R30 Old Comment=Res2 New Comment=4K7
+Change Component Comment : Designator=R24 Old Comment=Res2 New Comment=10
+Change Component Comment : Designator=R5 Old Comment=Res2 New Comment=10K
+Change Component Comment : Designator=R6 Old Comment=Res2 New Comment=10K
+Change Component Comment : Designator=R7 Old Comment=Res2 New Comment=10K
+Change Component Comment : Designator=R8 Old Comment=Res2 New Comment=10K
+Change Component Comment : Designator=R9 Old Comment=Res2 New Comment=10K
+Change Component Comment : Designator=R10 Old Comment=Res2 New Comment=10K
+Change Component Comment : Designator=R11 Old Comment=Res2 New Comment=10K
+Change Component Comment : Designator=R12 Old Comment=Res2 New Comment=10K
+Change Component Comment : Designator=R15 Old Comment=Res2 New Comment=10K
+Change Component Comment : Designator=R16 Old Comment=Res2 New Comment=10K
+Change Component Comment : Designator=R25 Old Comment=Res2 New Comment=10K
+Change Component Comment : Designator=R28 Old Comment=Res2 New Comment=10K
+Change Component Comment : Designator=R39 Old Comment=Res2 New Comment=10K
+Change Component Comment : Designator=R40 Old Comment=Res2 New Comment=10K
+Change Component Comment : Designator=R41 Old Comment=Res2 New Comment=10K
+Change Component Comment : Designator=R42 Old Comment=Res2 New Comment=10K
+Change Component Comment : Designator=R43 Old Comment=Res2 New Comment=10K
+Change Component Comment : Designator=R44 Old Comment=Res2 New Comment=10K
+Change Component Comment : Designator=R45 Old Comment=Res2 New Comment=10K
+Change Component Comment : Designator=R46 Old Comment=Res2 New Comment=10K
+Change Component Comment : Designator=R47 Old Comment=Res2 New Comment=10K
+Change Component Comment : Designator=R48 Old Comment=Res2 New Comment=10K
+Change Component Comment : Designator=R49 Old Comment=Res2 New Comment=10K
+Change Component Comment : Designator=R50 Old Comment=Res2 New Comment=10K
+Change Component Comment : Designator=R51 Old Comment=Res2 New Comment=10K
+Change Component Comment : Designator=R20 Old Comment=Res2 New Comment=100
+Change Component Comment : Designator=R21 Old Comment=Res2 New Comment=100
+Change Component Comment : Designator=R26 Old Comment=Res2 New Comment=100
+Change Component Comment : Designator=R22 Old Comment=Res2 New Comment=100K
+Change Component Comment : Designator=R23 Old Comment=Res2 New Comment=100K
+Change Component Comment : Designator=R27 Old Comment=Res2 New Comment=330
+Added Component: Designator=C44(RAD-0.3)
+Added Component: Designator=IC_FPGA_A1(TQFP144_N)
+Added Component: Designator=IC_FPGA_A1(TQFP144_N)
+Added Component: Designator=IC_FPGA_A1(TQFP144_N)
+Added Component: Designator=IC_FPGA_A1(TQFP144_N)
+Added Component: Designator=IC_FPGA_A1(TQFP144_N)
+Added Component: Designator=IC_FPGA_A1(TQFP144_N)
+Added Component: Designator=IC_FPGA_A1(TQFP144_N)
+Added Component: Designator=IC_FPGA_A1(TQFP144_N)
+Added Component: Designator=S1(SMD Tactile Switch)
+Added Pin To Net: NetName=GND Pin=C44-1
+Added Pin To Net: NetName=+1.5V Pin=C44-2
+Added Pin To Net: NetName=VUSB Pin=IC_FPGA_A1-5
+Added Pin To Net: NetName=GND Pin=IC_FPGA_A1-6
+Added Pin To Net: NetName=TDO Pin=IC_FPGA_A1-10
+Added Pin To Net: NetName=TMS Pin=IC_FPGA_A1-11
+Added Pin To Net: NetName=TCK Pin=IC_FPGA_A1-12
+Added Pin To Net: NetName=TDI Pin=IC_FPGA_A1-13
+Added Pin To Net: NetName=DATAO Pin=IC_FPGA_A1-14
+Added Pin To Net: NetName=DCLK Pin=IC_FPGA_A1-15
+Added Pin To Net: NetName=NCE Pin=IC_FPGA_A1-16
+Added Pin To Net: NetName=25MHZ_CLOCK Pin=IC_FPGA_A1-17
+Added Pin To Net: NetName=GND Pin=IC_FPGA_A1-19
+Added Pin To Net: NetName=NCONFIG Pin=IC_FPGA_A1-20
+Added Pin To Net: NetName=CLOCK_SYNTH_0 Pin=IC_FPGA_A1-21
+Added Pin To Net: NetName=VUSB Pin=IC_FPGA_A1-23
+Added Pin To Net: NetName=+1.2V Pin=IC_FPGA_A1-26
+Added Pin To Net: NetName=GND Pin=IC_FPGA_A1-27
+Added Pin To Net: NetName=VUSB Pin=IC_FPGA_A1-29
+Added Pin To Net: NetName=GND Pin=IC_FPGA_A1-33
+Added Pin To Net: NetName=GND Pin=IC_FPGA_A1-34
+Added Pin To Net: NetName=+1.2V Pin=IC_FPGA_A1-35
+Added Pin To Net: NetName=GND Pin=IC_FPGA_A1-36
+Added Pin To Net: NetName=+1.2V Pin=IC_FPGA_A1-37
+Added Pin To Net: NetName=GND Pin=IC_FPGA_A1-38
+Added Pin To Net: NetName=GND Pin=IC_FPGA_A1-39
+Added Pin To Net: NetName=FPGA_SPI_CLOCK Pin=IC_FPGA_A1-40
+Added Pin To Net: NetName=FPGA_SPI_DATAIN Pin=IC_FPGA_A1-41
+Added Pin To Net: NetName=FPGA_SPI_DATAOUT Pin=IC_FPGA_A1-42
+Added Pin To Net: NetName=ACCEL_SCL Pin=IC_FPGA_A1-43
+Added Pin To Net: NetName=ACCEL_SDA Pin=IC_FPGA_A1-44
+Added Pin To Net: NetName=FPGA_SPI_/GYROCS Pin=IC_FPGA_A1-45
+Added Pin To Net: NetName=VUSB Pin=IC_FPGA_A1-46
+Added Pin To Net: NetName=GYRO_DRDY Pin=IC_FPGA_A1-47
+Added Pin To Net: NetName=GYRO_INT1 Pin=IC_FPGA_A1-48
+Added Pin To Net: NetName=GND Pin=IC_FPGA_A1-49
+Added Pin To Net: NetName=+1.2V Pin=IC_FPGA_A1-50
+Added Pin To Net: NetName=FPGA_SPI_/SRAMCS Pin=IC_FPGA_A1-51
+Added Pin To Net: NetName=FPGASRAM_/WP Pin=IC_FPGA_A1-52
+Added Pin To Net: NetName=ACCEL_SA0 Pin=IC_FPGA_A1-53
+Added Pin To Net: NetName=VUSB Pin=IC_FPGA_A1-54
+Added Pin To Net: NetName=ACCEL_INT1 Pin=IC_FPGA_A1-55
+Added Pin To Net: NetName=GND Pin=IC_FPGA_A1-56
+Added Pin To Net: NetName=ACCEL_INT2 Pin=IC_FPGA_A1-57
+Added Pin To Net: NetName=P58 Pin=IC_FPGA_A1-58
+Added Pin To Net: NetName=BULTRASONIC_TRIGGER Pin=IC_FPGA_A1-59
+Added Pin To Net: NetName=BULTRASONIC_EDGE Pin=IC_FPGA_A1-60
+Added Pin To Net: NetName=GND Pin=IC_FPGA_A1-61
+Added Pin To Net: NetName=+1.2V Pin=IC_FPGA_A1-62
+Added Pin To Net: NetName=BLED_ORANGE1 Pin=IC_FPGA_A1-63
+Added Pin To Net: NetName=BLED_ORANGE2 Pin=IC_FPGA_A1-64
+Added Pin To Net: NetName=BLED_ORANGE3 Pin=IC_FPGA_A1-65
+Added Pin To Net: NetName=VUSB Pin=IC_FPGA_A1-66
+Added Pin To Net: NetName=BLED_ORANGE4 Pin=IC_FPGA_A1-67
+Added Pin To Net: NetName=GND Pin=IC_FPGA_A1-68
+Added Pin To Net: NetName=BLED_BLUE1 Pin=IC_FPGA_A1-69
+Added Pin To Net: NetName=BLED_BLUE2 Pin=IC_FPGA_A1-70
+Added Pin To Net: NetName=BLED_BLUE3 Pin=IC_FPGA_A1-71
+Added Pin To Net: NetName=BLED_BLUE4 Pin=IC_FPGA_A1-72
+Added Pin To Net: NetName=CAMERA_SCL Pin=IC_FPGA_A1-73
+Added Pin To Net: NetName=CAMERA_SDA Pin=IC_FPGA_A1-74
+Added Pin To Net: NetName=CAMERA_RESET Pin=IC_FPGA_A1-75
+Added Pin To Net: NetName=+2.8V Pin=IC_FPGA_A1-77
+Added Pin To Net: NetName=GND Pin=IC_FPGA_A1-78
+Added Pin To Net: NetName=CAMERA_EXTCLK Pin=IC_FPGA_A1-79
+Added Pin To Net: NetName=GND Pin=IC_FPGA_A1-80
+Added Pin To Net: NetName=+1.2V Pin=IC_FPGA_A1-81
+Added Pin To Net: NetName=NSTATUS Pin=IC_FPGA_A1-82
+Added Pin To Net: NetName=CONF_DONE Pin=IC_FPGA_A1-83
+Added Pin To Net: NetName=MSEL1 Pin=IC_FPGA_A1-84
+Added Pin To Net: NetName=MSEL0 Pin=IC_FPGA_A1-85
+Added Pin To Net: NetName=CAMERA_HD Pin=IC_FPGA_A1-86
+Added Pin To Net: NetName=CAMERA_VD Pin=IC_FPGA_A1-87
+Added Pin To Net: NetName=CLOCK_SYNTH_1 Pin=IC_FPGA_A1-91
+Added Pin To Net: NetName=CAMERA_DCLK Pin=IC_FPGA_A1-92
+Added Pin To Net: NetName=CAMERA_DOUT0 Pin=IC_FPGA_A1-93
+Added Pin To Net: NetName=CAMERA_DOUT1 Pin=IC_FPGA_A1-94
+Added Pin To Net: NetName=+2.8V Pin=IC_FPGA_A1-95
+Added Pin To Net: NetName=CAMERA_DOUT2 Pin=IC_FPGA_A1-96
+Added Pin To Net: NetName=CAMERA_DOUT3 Pin=IC_FPGA_A1-97
+Added Pin To Net: NetName=GND Pin=IC_FPGA_A1-98
+Added Pin To Net: NetName=CAMERA_DOUT4 Pin=IC_FPGA_A1-99
+Added Pin To Net: NetName=CAMERA_DOUT5 Pin=IC_FPGA_A1-100
+Added Pin To Net: NetName=CAMERA_DOUT6 Pin=IC_FPGA_A1-101
+Added Pin To Net: NetName=+2.8V Pin=IC_FPGA_A1-102
+Added Pin To Net: NetName=CAMERA_DOUT7 Pin=IC_FPGA_A1-103
+Added Pin To Net: NetName=P104 Pin=IC_FPGA_A1-104
+Added Pin To Net: NetName=GND Pin=IC_FPGA_A1-105
+Added Pin To Net: NetName=GND Pin=IC_FPGA_A1-106
+Added Pin To Net: NetName=+1.2V Pin=IC_FPGA_A1-107
+Added Pin To Net: NetName=GND Pin=IC_FPGA_A1-108
+Added Pin To Net: NetName=+1.2V Pin=IC_FPGA_A1-109
+Added Pin To Net: NetName=GND Pin=IC_FPGA_A1-110
+Added Pin To Net: NetName=GND Pin=IC_FPGA_A1-111
+Added Pin To Net: NetName=FPGA_D0 Pin=IC_FPGA_A1-112
+Added Pin To Net: NetName=FPGA_D1 Pin=IC_FPGA_A1-113
+Added Pin To Net: NetName=FPGA_D2 Pin=IC_FPGA_A1-114
+Added Pin To Net: NetName=FPGA_D3 Pin=IC_FPGA_A1-115
+Added Pin To Net: NetName=VUSB Pin=IC_FPGA_A1-116
+Added Pin To Net: NetName=GND Pin=IC_FPGA_A1-117
+Added Pin To Net: NetName=FPGA_D4 Pin=IC_FPGA_A1-118
+Added Pin To Net: NetName=FPGA_D5 Pin=IC_FPGA_A1-119
+Added Pin To Net: NetName=FPGA_D6 Pin=IC_FPGA_A1-120
+Added Pin To Net: NetName=FPGA_D7 Pin=IC_FPGA_A1-121
+Added Pin To Net: NetName=FPGA_A-/D Pin=IC_FPGA_A1-122
+Added Pin To Net: NetName=GND Pin=IC_FPGA_A1-123
+Added Pin To Net: NetName=+1.2V Pin=IC_FPGA_A1-124
+Added Pin To Net: NetName=FPGA_R-/W Pin=IC_FPGA_A1-125
+Added Pin To Net: NetName=FPGA_OK-OUT Pin=IC_FPGA_A1-126
+Added Pin To Net: NetName=VUSB Pin=IC_FPGA_A1-127
+Added Pin To Net: NetName=GND Pin=IC_FPGA_A1-128
+Added Pin To Net: NetName=FPGA_OK-IN Pin=IC_FPGA_A1-129
+Added Pin To Net: NetName=GND Pin=IC_FPGA_A1-130
+Added Pin To Net: NetName=+1.2V Pin=IC_FPGA_A1-131
+Added Pin To Net: NetName=P132 Pin=IC_FPGA_A1-132
+Added Pin To Net: NetName=P133 Pin=IC_FPGA_A1-133
+Added Pin To Net: NetName=P134 Pin=IC_FPGA_A1-134
+Added Pin To Net: NetName=P135 Pin=IC_FPGA_A1-135
+Added Pin To Net: NetName=P136 Pin=IC_FPGA_A1-136
+Added Pin To Net: NetName=P137 Pin=IC_FPGA_A1-137
+Added Pin To Net: NetName=VUSB Pin=IC_FPGA_A1-138
+Added Pin To Net: NetName=P139 Pin=IC_FPGA_A1-139
+Added Pin To Net: NetName=GND Pin=IC_FPGA_A1-140
+Added Pin To Net: NetName=MOTOR_W1 Pin=IC_FPGA_A1-141
+Added Pin To Net: NetName=MOTOR_W2 Pin=IC_FPGA_A1-142
+Added Pin To Net: NetName=MOTOR_W3 Pin=IC_FPGA_A1-143
+Added Pin To Net: NetName=MOTOR_W4 Pin=IC_FPGA_A1-144
+Added Pin To Net: NetName=MCLR Pin=S1-1
+Added Pin To Net: NetName=MCLR Pin=S1-1
+Added Member To Class: ClassName=Power Member=Component C44 1.0uF
+Added Member To Class: ClassName=FPGA_Clocks Member=Component IC_FPGA_A1 (IC_FPGA_A8A) EP2C8T144C8N
+Added Member To Class: ClassName=FPGA_Clocks Member=Component IC_FPGA_A1 (IC_FPGA_A9A) EP2C8T144C8N
+Added Member To Class: ClassName=FPGA_Core Member=Component IC_FPGA_A1 (IC_FPGA_A3A) EP2C8T144C8N
+Added Member To Class: ClassName=FPGA_Core Member=Component IC_FPGA_A1 (IC_FPGA_A6A) EP2C8T144C8N
+Added Member To Class: ClassName=FPGA_Core Member=Component IC_FPGA_A1 (IC_FPGA_A5A) EP2C8T144C8N
+Added Member To Class: ClassName=FPGA_Core Member=Component IC_FPGA_A1 (IC_FPGA_A2A) EP2C8T144C8N
+Added Member To Class: ClassName=FPGA_Core Member=Component IC_FPGA_A1 (IC_FPGA_A7A) EP2C8T144C8N
+Added Member To Class: ClassName=FPGA_Core Member=Component IC_FPGA_A1 (IC_FPGA_A4A) EP2C8T144C8N
+Added Member To Class: ClassName=Navigator_Core Member=Component S1 (S5) SMD Tactile Switch

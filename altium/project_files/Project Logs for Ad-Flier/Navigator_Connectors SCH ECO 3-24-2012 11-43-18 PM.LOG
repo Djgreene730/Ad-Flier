@@ -1,0 +1,6 @@
+Change Component Designator: Old Designator=Debug1 New Designator=Debug2
+Change Component Designator: Old Designator=Debug2 New Designator=Debug3
+Change Component Designator: Old Designator=Debug3 New Designator=Debug5
+Change Component Designator: Old Designator=Debug4 New Designator=Debug6
+Change Component Designator: Old Designator=Debug? New Designator=Debug1
+Change Component Designator: Old Designator=Debug? New Designator=Debug4

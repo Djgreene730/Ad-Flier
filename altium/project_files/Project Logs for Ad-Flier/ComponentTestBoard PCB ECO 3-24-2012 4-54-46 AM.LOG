@@ -1,0 +1,7 @@
+Change Physical Footprint: Designator=Designator22 Old Footprint=TCM8230MD CAMERA MODULE New Footprint=TCM8230MD CAMERA MODULE
+Change Physical Footprint: Designator=Designator24 Old Footprint=32.768KHz Crystal New Footprint=32.768KHz Crystal
+Change Physical Footprint: Designator=Designator27 Old Footprint=TO-263 D2PACK New Footprint=TO-263 D2PACK
+Change Physical Footprint: Designator=Designator28 Old Footprint=MBRS540T3G New Footprint=MBRS540T3G
+Change Physical Footprint: Designator=Designator29 Old Footprint=1SMA5913BT3G New Footprint=1SMA5913BT3G
+Change Physical Footprint: Designator=Designator31 Old Footprint=MIC49300-1.2WR SPACK-5 New Footprint=MIC49300-1.2WR SPACK-5
+Change Physical Footprint: Designator=Resistor Array YC164 Old Footprint=Resistor Array YC164 New Footprint=Resistor Array YC164
