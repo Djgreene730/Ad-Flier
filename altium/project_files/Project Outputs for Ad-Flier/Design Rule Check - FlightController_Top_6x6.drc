@@ -1,0 +1,473 @@
+Protel Design System Design Rule Check
+PCB File : C:\Users\David\Desktop\Ad-Flier\altium\project_files\FlightController_Top_6x6.PcbDoc
+Date     : 4/2/2012
+Time     : 1:46:27 AM
+
+Processing Rule : Clearance Constraint (Gap=0.5mm) (IsRegion),(All)
+   Violation between Polygon Region (10 hole(s)) Top Layer and 
+                     Arc (27.465mm,124.668mm)  Top Layer
+   Violation between Polygon Region (40 hole(s)) Top Layer and 
+                     Arc (140.635mm,65.782mm)  Top Layer
+   Violation between Polygon Region (40 hole(s)) Top Layer and 
+                     Arc (141.373mm,65.045mm)  Top Layer
+   Violation between Polygon Region (40 hole(s)) Top Layer and 
+                     Arc (141.315mm,108.367mm)  Top Layer
+   Violation between Polygon Region (40 hole(s)) Top Layer and 
+                     Arc (140.625mm,108.367mm)  Top Layer
+   Violation between Polygon Region (40 hole(s)) Top Layer and 
+                     Arc (140.965mm,106.111mm)  Top Layer
+   Violation between Polygon Region (40 hole(s)) Top Layer and 
+                     Arc (140.609mm,106.956mm)  Top Layer
+   Violation between Polygon Region (3 hole(s)) Top Layer and 
+                     Pad Debug3-1(43.815mm,114.046mm)  Multi-Layer
+   Violation between Polygon Region (3 hole(s)) Top Layer and 
+                     Pad Debug3-2(41.275mm,114.046mm)  Multi-Layer
+   Violation between Polygon Region (3 hole(s)) Top Layer and 
+                     Pad Debug3-3(38.735mm,114.046mm)  Multi-Layer
+   Violation between Polygon Region (3 hole(s)) Top Layer and 
+                     Pad Debug6-1(5.715mm,115.316mm)  Multi-Layer
+   Violation between Polygon Region (3 hole(s)) Top Layer and 
+                     Pad Debug6-2(8.255mm,115.316mm)  Multi-Layer
+   Violation between Polygon Region (3 hole(s)) Top Layer and 
+                     Pad Debug6-3(10.795mm,115.316mm)  Multi-Layer
+   Violation between Polygon Region (3 hole(s)) Top Layer and 
+                     Pad Debug5-1(17.399mm,115.316mm)  Multi-Layer
+   Violation between Polygon Region (3 hole(s)) Top Layer and 
+                     Pad Debug5-2(19.939mm,115.316mm)  Multi-Layer
+   Violation between Polygon Region (3 hole(s)) Top Layer and 
+                     Pad Debug5-3(22.479mm,115.316mm)  Multi-Layer
+   Violation between Polygon Region (12 hole(s)) Top Layer and 
+                     Pad Header1-1(16.891mm,2.032mm)  Multi-Layer
+   Violation between Polygon Region (12 hole(s)) Top Layer and 
+                     Pad Header1-2(16.891mm,4.572mm)  Multi-Layer
+   Violation between Polygon Region (12 hole(s)) Top Layer and 
+                     Pad Header1-23(1.651mm,4.572mm)  Multi-Layer
+   Violation between Polygon Region (12 hole(s)) Top Layer and 
+                     Pad Header1-22(1.651mm,7.112mm)  Multi-Layer
+   Violation between Polygon Region (12 hole(s)) Top Layer and 
+                     Pad Header1-21(1.651mm,9.652mm)  Multi-Layer
+   Violation between Polygon Region (12 hole(s)) Top Layer and 
+                     Pad Header1-20(1.651mm,12.192mm)  Multi-Layer
+   Violation between Polygon Region (12 hole(s)) Top Layer and 
+                     Pad Header1-19(1.651mm,14.732mm)  Multi-Layer
+   Violation between Polygon Region (12 hole(s)) Top Layer and 
+                     Pad Header1-15(1.651mm,24.892mm)  Multi-Layer
+   Violation between Polygon Region (12 hole(s)) Top Layer and 
+                     Pad Header1-13(1.651mm,29.972mm)  Multi-Layer
+   Violation between Polygon Region (10 hole(s)) Top Layer and 
+                     Pad Module2-13(25.481mm,125.155mm)  Multi-Layer
+   Violation between Polygon Region (10 hole(s)) Top Layer and 
+                     Pad Module2-14(25.481mm,127.695mm)  Multi-Layer
+   Violation between Polygon Region (10 hole(s)) Top Layer and 
+                     Pad Module2-15(25.481mm,130.235mm)  Multi-Layer
+   Violation between Polygon Region (10 hole(s)) Top Layer and 
+                     Pad Module2-17(25.481mm,135.315mm)  Multi-Layer
+   Violation between Polygon Region (10 hole(s)) Top Layer and 
+                     Pad Module2-18(25.481mm,137.855mm)  Multi-Layer
+   Violation between Polygon Region (10 hole(s)) Top Layer and 
+                     Pad Module2-10(2.981mm,120.075mm)  Multi-Layer
+   Violation between Polygon Region (10 hole(s)) Top Layer and 
+                     Pad Module2-9(2.981mm,122.615mm)  Multi-Layer
+   Violation between Polygon Region (10 hole(s)) Top Layer and 
+                     Pad Module2-8(2.981mm,125.155mm)  Multi-Layer
+   Violation between Polygon Region (10 hole(s)) Top Layer and 
+                     Pad Module2-7(2.981mm,127.695mm)  Multi-Layer
+   Violation between Polygon Region (10 hole(s)) Top Layer and 
+                     Pad Module2-6(2.981mm,130.235mm)  Multi-Layer
+   Violation between Polygon Region (10 hole(s)) Top Layer and 
+                     Pad Module2-5(2.981mm,132.775mm)  Multi-Layer
+   Violation between Polygon Region (10 hole(s)) Top Layer and 
+                     Pad Module2-4(2.981mm,135.315mm)  Multi-Layer
+   Violation between Polygon Region (10 hole(s)) Top Layer and 
+                     Pad Module2-3(2.981mm,137.855mm)  Multi-Layer
+   Violation between Polygon Region (10 hole(s)) Top Layer and 
+                     Pad Module2-1(2.981mm,142.935mm)  Multi-Layer
+   Violation between Polygon Region (4 hole(s)) Top Layer and 
+                     Pad S1-1(66.421mm,2.35mm)  Multi-Layer
+   Violation between Polygon Region (4 hole(s)) Top Layer and 
+                     Pad S1-2(68.961mm,2.35mm)  Multi-Layer
+   Violation between Polygon Region (4 hole(s)) Top Layer and 
+                     Pad S1-3(71.501mm,2.35mm)  Multi-Layer
+   Violation between Polygon Region (4 hole(s)) Top Layer and 
+                     Pad S1-4(74.041mm,2.35mm)  Multi-Layer
+   Violation between Polygon Region (4 hole(s)) Top Layer and 
+                     Pad S1-8(66.421mm,9.97mm)  Multi-Layer
+   Violation between Polygon Region (4 hole(s)) Top Layer and 
+                     Pad S1-7(68.961mm,9.97mm)  Multi-Layer
+   Violation between Polygon Region (4 hole(s)) Top Layer and 
+                     Pad S1-6(71.501mm,9.97mm)  Multi-Layer
+   Violation between Polygon Region (4 hole(s)) Top Layer and 
+                     Pad S1-5(74.041mm,9.97mm)  Multi-Layer
+   Violation between Polygon Region (4 hole(s)) Top Layer and 
+                     Pad Module1-4(86.499mm,129.994mm)  Multi-Layer
+   Violation between Polygon Region (4 hole(s)) Top Layer and 
+                     Pad Module1-3(83.959mm,129.994mm)  Multi-Layer
+   Violation between Polygon Region (4 hole(s)) Top Layer and 
+                     Pad Module1-2(81.419mm,129.994mm)  Multi-Layer
+   Violation between Polygon Region (4 hole(s)) Top Layer and 
+                     Pad Module1-1(78.879mm,129.994mm)  Multi-Layer
+   Violation between Polygon Region (2 hole(s)) Top Layer and 
+                     Pad J6-1(87.503mm,103.084mm)  Multi-Layer
+   Violation between Polygon Region (2 hole(s)) Top Layer and 
+                     Pad J6-2(90.043mm,103.084mm)  Multi-Layer
+   Violation between Polygon Region (2 hole(s)) Top Layer and 
+                     Pad J5-1(87.503mm,106.005mm)  Multi-Layer
+   Violation between Polygon Region (2 hole(s)) Top Layer and 
+                     Pad J5-2(90.043mm,106.005mm)  Multi-Layer
+   Violation between Polygon Region (2 hole(s)) Top Layer and 
+                     Pad J4-1(43.15mm,9.241mm)  Multi-Layer
+   Violation between Polygon Region (2 hole(s)) Top Layer and 
+                     Pad J4-2(43.15mm,6.701mm)  Multi-Layer
+   Violation between Polygon Region (2 hole(s)) Top Layer and 
+                     Pad J3-1(53.509mm,9.241mm)  Multi-Layer
+   Violation between Polygon Region (2 hole(s)) Top Layer and 
+                     Pad J3-2(53.509mm,6.701mm)  Multi-Layer
+   Violation between Polygon Region (2 hole(s)) Top Layer and 
+                     Pad J2-1(32.99mm,9.241mm)  Multi-Layer
+   Violation between Polygon Region (2 hole(s)) Top Layer and 
+                     Pad J2-2(32.99mm,6.701mm)  Multi-Layer
+   Violation between Polygon Region (2 hole(s)) Top Layer and 
+                     Pad J1-1(22.703mm,9.241mm)  Multi-Layer
+   Violation between Polygon Region (2 hole(s)) Top Layer and 
+                     Pad J1-2(22.703mm,6.701mm)  Multi-Layer
+   Violation between Polygon Region (10 hole(s)) Top Layer and 
+                     Pad BB-10(121.739mm,4.432mm)  Multi-Layer
+   Violation between Polygon Region (10 hole(s)) Top Layer and 
+                     Pad BB-9(121.739mm,1.892mm)  Multi-Layer
+   Violation between Polygon Region (10 hole(s)) Top Layer and 
+                     Pad BB-5(116.659mm,1.892mm)  Multi-Layer
+   Violation between Polygon Region (10 hole(s)) Top Layer and 
+                     Pad BB-4(114.119mm,4.432mm)  Multi-Layer
+   Violation between Polygon Region (10 hole(s)) Top Layer and 
+                     Pad BB-3(114.119mm,1.892mm)  Multi-Layer
+   Violation between Polygon Region (10 hole(s)) Top Layer and 
+                     Pad BB-2(111.579mm,4.432mm)  Multi-Layer
+   Violation between Polygon Region (10 hole(s)) Top Layer and 
+                     Pad BB-1(111.579mm,1.892mm)  Multi-Layer
+   Violation between Polygon Region (10 hole(s)) Top Layer and 
+                     Pad JEPC-10(121.739mm,10.274mm)  Multi-Layer
+   Violation between Polygon Region (10 hole(s)) Top Layer and 
+                     Pad JEPC-9(121.739mm,7.734mm)  Multi-Layer
+   Violation between Polygon Region (10 hole(s)) Top Layer and 
+                     Pad JEPC-8(119.199mm,10.274mm)  Multi-Layer
+   Violation between Polygon Region (10 hole(s)) Top Layer and 
+                     Pad JEPC-7(119.199mm,7.734mm)  Multi-Layer
+   Violation between Polygon Region (10 hole(s)) Top Layer and 
+                     Pad JEPC-6(116.659mm,10.274mm)  Multi-Layer
+   Violation between Polygon Region (10 hole(s)) Top Layer and 
+                     Pad JEPC-5(116.659mm,7.734mm)  Multi-Layer
+   Violation between Polygon Region (10 hole(s)) Top Layer and 
+                     Pad JEPC-4(114.119mm,10.274mm)  Multi-Layer
+   Violation between Polygon Region (10 hole(s)) Top Layer and 
+                     Pad JEPC-3(114.119mm,7.734mm)  Multi-Layer
+   Violation between Polygon Region (10 hole(s)) Top Layer and 
+                     Pad JEPC-2(111.579mm,10.274mm)  Multi-Layer
+   Violation between Polygon Region (10 hole(s)) Top Layer and 
+                     Pad JEPC-1(111.579mm,7.734mm)  Multi-Layer
+   Violation between Polygon Region (6 hole(s)) Top Layer and 
+                     Pad Header 8-5(3.018mm,91.664mm)  Multi-Layer
+   Violation between Polygon Region (6 hole(s)) Top Layer and 
+                     Pad Header 8-4(3.018mm,94.204mm)  Multi-Layer
+   Violation between Polygon Region (6 hole(s)) Top Layer and 
+                     Pad Header 8-3(3.018mm,96.744mm)  Multi-Layer
+   Violation between Polygon Region (6 hole(s)) Top Layer and 
+                     Pad Header 8-2(3.018mm,99.284mm)  Multi-Layer
+   Violation between Polygon Region (6 hole(s)) Top Layer and 
+                     Pad Header 8-1(3.018mm,101.824mm)  Multi-Layer
+   Violation between Polygon Region (40 hole(s)) Top Layer and 
+                     Pad Header7-40(145.415mm,63.5mm)  Multi-Layer
+   Violation between Polygon Region (40 hole(s)) Top Layer and 
+                     Pad Header7-39(142.875mm,63.5mm)  Multi-Layer
+   Violation between Polygon Region (40 hole(s)) Top Layer and 
+                     Pad Header7-38(145.415mm,66.04mm)  Multi-Layer
+   Violation between Polygon Region (40 hole(s)) Top Layer and 
+                     Pad Header7-37(142.875mm,66.04mm)  Multi-Layer
+   Violation between Polygon Region (40 hole(s)) Top Layer and 
+                     Pad Header7-36(145.415mm,68.58mm)  Multi-Layer
+   Violation between Polygon Region (40 hole(s)) Top Layer and 
+                     Pad Header7-35(142.875mm,68.58mm)  Multi-Layer
+   Violation between Polygon Region (40 hole(s)) Top Layer and 
+                     Pad Header7-34(145.415mm,71.12mm)  Multi-Layer
+   Violation between Polygon Region (40 hole(s)) Top Layer and 
+                     Pad Header7-33(142.875mm,71.12mm)  Multi-Layer
+   Violation between Polygon Region (40 hole(s)) Top Layer and 
+                     Pad Header7-32(145.415mm,73.66mm)  Multi-Layer
+   Violation between Polygon Region (40 hole(s)) Top Layer and 
+                     Pad Header7-31(142.875mm,73.66mm)  Multi-Layer
+   Violation between Polygon Region (40 hole(s)) Top Layer and 
+                     Pad Header7-30(145.415mm,76.2mm)  Multi-Layer
+   Violation between Polygon Region (40 hole(s)) Top Layer and 
+                     Pad Header7-29(142.875mm,76.2mm)  Multi-Layer
+   Violation between Polygon Region (40 hole(s)) Top Layer and 
+                     Pad Header7-28(145.415mm,78.74mm)  Multi-Layer
+   Violation between Polygon Region (40 hole(s)) Top Layer and 
+                     Pad Header7-27(142.875mm,78.74mm)  Multi-Layer
+   Violation between Polygon Region (40 hole(s)) Top Layer and 
+                     Pad Header7-26(145.415mm,81.28mm)  Multi-Layer
+   Violation between Polygon Region (40 hole(s)) Top Layer and 
+                     Pad Header7-25(142.875mm,81.28mm)  Multi-Layer
+   Violation between Polygon Region (40 hole(s)) Top Layer and 
+                     Pad Header7-23(142.875mm,83.82mm)  Multi-Layer
+   Violation between Polygon Region (40 hole(s)) Top Layer and 
+                     Pad Header7-21(142.875mm,86.36mm)  Multi-Layer
+   Violation between Polygon Region (40 hole(s)) Top Layer and 
+                     Pad Header7-19(142.875mm,88.9mm)  Multi-Layer
+   Violation between Polygon Region (40 hole(s)) Top Layer and 
+                     Pad Header7-17(142.875mm,91.44mm)  Multi-Layer
+   Violation between Polygon Region (40 hole(s)) Top Layer and 
+                     Pad Header7-16(145.415mm,93.98mm)  Multi-Layer
+   Violation between Polygon Region (40 hole(s)) Top Layer and 
+                     Pad Header7-15(142.875mm,93.98mm)  Multi-Layer
+   Violation between Polygon Region (40 hole(s)) Top Layer and 
+                     Pad Header7-14(145.415mm,96.52mm)  Multi-Layer
+   Violation between Polygon Region (40 hole(s)) Top Layer and 
+                     Pad Header7-13(142.875mm,96.52mm)  Multi-Layer
+   Violation between Polygon Region (40 hole(s)) Top Layer and 
+                     Pad Header7-11(142.875mm,99.06mm)  Multi-Layer
+   Violation between Polygon Region (40 hole(s)) Top Layer and 
+                     Pad Header7-10(145.415mm,101.6mm)  Multi-Layer
+   Violation between Polygon Region (40 hole(s)) Top Layer and 
+                     Pad Header7-9(142.875mm,101.6mm)  Multi-Layer
+   Violation between Polygon Region (40 hole(s)) Top Layer and 
+                     Pad Header7-8(145.415mm,104.14mm)  Multi-Layer
+   Violation between Polygon Region (40 hole(s)) Top Layer and 
+                     Pad Header7-7(142.875mm,104.14mm)  Multi-Layer
+   Violation between Polygon Region (40 hole(s)) Top Layer and 
+                     Pad Header7-6(145.415mm,106.68mm)  Multi-Layer
+   Violation between Polygon Region (40 hole(s)) Top Layer and 
+                     Pad Header7-5(142.875mm,106.68mm)  Multi-Layer
+   Violation between Polygon Region (40 hole(s)) Top Layer and 
+                     Pad Header7-4(145.415mm,109.22mm)  Multi-Layer
+   Violation between Polygon Region (40 hole(s)) Top Layer and 
+                     Pad Header7-3(142.875mm,109.22mm)  Multi-Layer
+   Violation between Polygon Region (40 hole(s)) Top Layer and 
+                     Pad Header7-2(145.415mm,111.76mm)  Multi-Layer
+   Violation between Polygon Region (40 hole(s)) Top Layer and 
+                     Pad Header7-1(142.875mm,111.76mm)  Multi-Layer
+   Violation between Polygon Region (3 hole(s)) Top Layer and 
+                     Pad Header6-1(40.652mm,3.526mm)  Multi-Layer
+   Violation between Polygon Region (3 hole(s)) Top Layer and 
+                     Pad Header6-2(43.192mm,3.526mm)  Multi-Layer
+   Violation between Polygon Region (3 hole(s)) Top Layer and 
+                     Pad Header6-3(45.732mm,3.526mm)  Multi-Layer
+   Violation between Polygon Region (3 hole(s)) Top Layer and 
+                     Pad Header5-1(30.535mm,3.526mm)  Multi-Layer
+   Violation between Polygon Region (3 hole(s)) Top Layer and 
+                     Pad Header5-2(33.075mm,3.526mm)  Multi-Layer
+   Violation between Polygon Region (3 hole(s)) Top Layer and 
+                     Pad Header5-3(35.615mm,3.526mm)  Multi-Layer
+   Violation between Polygon Region (3 hole(s)) Top Layer and 
+                     Pad Header4-1(50.969mm,3.526mm)  Multi-Layer
+   Violation between Polygon Region (3 hole(s)) Top Layer and 
+                     Pad Header4-2(53.509mm,3.526mm)  Multi-Layer
+   Violation between Polygon Region (3 hole(s)) Top Layer and 
+                     Pad Header4-3(56.049mm,3.526mm)  Multi-Layer
+   Violation between Polygon Region (3 hole(s)) Top Layer and 
+                     Pad Header3-1(20.163mm,3.526mm)  Multi-Layer
+   Violation between Polygon Region (3 hole(s)) Top Layer and 
+                     Pad Header3-2(22.703mm,3.526mm)  Multi-Layer
+   Violation between Polygon Region (3 hole(s)) Top Layer and 
+                     Pad Header3-3(25.243mm,3.526mm)  Multi-Layer
+   Violation between Polygon Region (6 hole(s)) Top Layer and 
+                     Pad Header2-1(60.706mm,31.496mm)  Multi-Layer
+   Violation between Polygon Region (6 hole(s)) Top Layer and 
+                     Pad Header2-2(58.166mm,31.496mm)  Multi-Layer
+   Violation between Polygon Region (6 hole(s)) Top Layer and 
+                     Pad Header2-3(55.626mm,31.496mm)  Multi-Layer
+   Violation between Polygon Region (6 hole(s)) Top Layer and 
+                     Pad Header2-4(53.086mm,31.496mm)  Multi-Layer
+   Violation between Polygon Region (6 hole(s)) Top Layer and 
+                     Pad Header2-5(50.546mm,31.496mm)  Multi-Layer
+   Violation between Polygon Region (6 hole(s)) Top Layer and 
+                     Pad Header2-6(48.006mm,31.496mm)  Multi-Layer
+   Violation between Polygon Region (4 hole(s)) Top Layer and 
+                     Pad Debug4-4(67.183mm,90.551mm)  Multi-Layer
+   Violation between Polygon Region (4 hole(s)) Top Layer and 
+                     Pad Debug4-3(67.183mm,93.091mm)  Multi-Layer
+   Violation between Polygon Region (4 hole(s)) Top Layer and 
+                     Pad Debug4-2(67.183mm,95.631mm)  Multi-Layer
+   Violation between Polygon Region (4 hole(s)) Top Layer and 
+                     Pad Debug4-1(67.183mm,98.171mm)  Multi-Layer
+   Violation between Polygon Region (3 hole(s)) Top Layer and 
+                     Pad Debug2-1(68.58mm,34.925mm)  Multi-Layer
+   Violation between Polygon Region (3 hole(s)) Top Layer and 
+                     Pad Debug2-2(68.58mm,37.465mm)  Multi-Layer
+   Violation between Polygon Region (3 hole(s)) Top Layer and 
+                     Pad Debug2-3(68.58mm,40.005mm)  Multi-Layer
+   Violation between Polygon Region (4 hole(s)) Top Layer and 
+                     Pad Debug1-4(16.897mm,57.822mm)  Multi-Layer
+   Violation between Polygon Region (4 hole(s)) Top Layer and 
+                     Pad Debug1-3(16.897mm,55.282mm)  Multi-Layer
+   Violation between Polygon Region (4 hole(s)) Top Layer and 
+                     Pad Debug1-2(16.897mm,52.742mm)  Multi-Layer
+   Violation between Polygon Region (4 hole(s)) Top Layer and 
+                     Pad Debug1-1(16.897mm,50.202mm)  Multi-Layer
+   Violation between Polygon Region (2 hole(s)) Top Layer and 
+                     Pad C37-1(146.274mm,126.379mm)  Multi-Layer
+   Violation between Polygon Region (2 hole(s)) Top Layer and 
+                     Pad C37-2(146.274mm,124.379mm)  Multi-Layer
+   Violation between Polygon Region (2 hole(s)) Top Layer and 
+                     Pad C36-1(140.744mm,126.386mm)  Multi-Layer
+   Violation between Polygon Region (2 hole(s)) Top Layer and 
+                     Pad C36-2(140.744mm,124.386mm)  Multi-Layer
+   Violation between Polygon Region (2 hole(s)) Top Layer and 
+                     Pad C10-1(81.774mm,124.557mm)  Multi-Layer
+   Violation between Polygon Region (2 hole(s)) Top Layer and 
+                     Pad C10-2(83.774mm,124.557mm)  Multi-Layer
+   Violation between Polygon Region (40 hole(s)) Top Layer and 
+                     Via (140.965mm,106.599mm) Top Layer to Bottom Layer
+   Violation between Polygon Region (40 hole(s)) Top Layer and 
+                     Via (140.97mm,108.712mm) Top Layer to Bottom Layer
+   Violation between Polygon Region (3 hole(s)) Top Layer and 
+                     Via (20.087mm,5.304mm) Top Layer to Bottom Layer
+   Violation between Polygon Region (40 hole(s)) Top Layer and 
+                     Via (144.877mm,113.635mm) Top Layer to Bottom Layer
+   Violation between Polygon Region (40 hole(s)) Top Layer and 
+                     Via (147.29mm,63.5mm) Top Layer to Bottom Layer
+   Violation between Polygon Region (3 hole(s)) Top Layer and 
+                     Via (15.362mm,115.316mm) Top Layer to Bottom Layer
+   Violation between Polygon Region (10 hole(s)) Top Layer and 
+                     Via (27.986mm,125.19mm) Top Layer to Bottom Layer
+   Violation between Polygon Region (10 hole(s)) Top Layer and 
+                     Via (116.734mm,12.213mm) Top Layer to Bottom Layer
+   Violation between Polygon Region (4 hole(s)) Top Layer and 
+                     Via (69.287mm,90.038mm) Top Layer to Bottom Layer
+   Violation between Polygon Region (6 hole(s)) Top Layer and 
+                     Track (45.969mm,32.634mm)(46.833mm,33.498mm)  Top Layer
+   Violation between Polygon Region (3 hole(s)) Top Layer and 
+                     Track (4.064mm,113.888mm)(4.287mm,113.665mm)  Top Layer
+   Violation between Polygon Region (3 hole(s)) Top Layer and 
+                     Track (4.064mm,113.888mm)(4.064mm,116.744mm)  Top Layer
+   Violation between Polygon Region (3 hole(s)) Top Layer and 
+                     Track (4.064mm,116.744mm)(4.415mm,117.095mm)  Top Layer
+   Violation between Polygon Region (3 hole(s)) Top Layer and 
+                     Track (4.415mm,117.095mm)(4.415mm,117.318mm)  Top Layer
+   Violation between Polygon Region (3 hole(s)) Top Layer and 
+                     Track (4.287mm,113.665mm)(8.068mm,113.665mm)  Top Layer
+   Violation between Polygon Region (3 hole(s)) Top Layer and 
+                     Track (8.068mm,113.665mm)(13.335mm,108.398mm)  Top Layer
+   Violation between Polygon Region (4 hole(s)) Top Layer and 
+                     Track (69.287mm,5.634mm)(72.011mm,8.359mm)  Top Layer
+   Violation between Polygon Region (4 hole(s)) Top Layer and 
+                     Track (72.011mm,8.359mm)(77.724mm,8.359mm)  Top Layer
+   Violation between Polygon Region (40 hole(s)) Top Layer and 
+                     Track (139.695mm,105.329mm)(140.965mm,106.599mm)  Top Layer
+   Violation between Polygon Region (40 hole(s)) Top Layer and 
+                     Track (140.97mm,106.604mm)(140.97mm,108.712mm)  Top Layer
+   Violation between Polygon Region (40 hole(s)) Top Layer and 
+                     Track (142.202mm,113.635mm)(144.877mm,113.635mm)  Top Layer
+   Violation between Polygon Region (40 hole(s)) Top Layer and 
+                     Track (142.164mm,113.674mm)(142.202mm,113.635mm)  Top Layer
+   Violation between Polygon Region (40 hole(s)) Top Layer and 
+                     Track (140.774mm,113.674mm)(142.164mm,113.674mm)  Top Layer
+   Violation between Polygon Region (40 hole(s)) Top Layer and 
+                     Track (140.589mm,101.667mm)(141.067mm,101.189mm)  Top Layer
+   Violation between Polygon Region (3 hole(s)) Top Layer and 
+                     Track (47.997mm,11.176mm)(80.391mm,43.57mm)  Top Layer
+   Violation between Polygon Region (2 hole(s)) Top Layer and 
+                     Track (20.087mm,9.927mm)(21.336mm,11.176mm)  Top Layer
+   Violation between Polygon Region (3 hole(s)) Top Layer and 
+                     Track (46.655mm,1.215mm)(48.895mm,3.454mm)  Top Layer
+   Violation between Polygon Region (6 hole(s)) Top Layer and 
+                     Track (1.138mm,86.873mm)(1.138mm,103.78mm)  Top Layer
+   Violation between Polygon Region (4 hole(s)) Top Layer and 
+                     Track (13.127mm,57.145mm)(18.309mm,62.327mm)  Top Layer
+   Violation between Polygon Region (40 hole(s)) Top Layer and 
+                     Track (140.203mm,61.768mm)(146.985mm,61.768mm)  Top Layer
+   Violation between Polygon Region (40 hole(s)) Top Layer and 
+                     Track (146.985mm,61.768mm)(147.29mm,62.073mm)  Top Layer
+   Violation between Polygon Region (40 hole(s)) Top Layer and 
+                     Track (147.29mm,62.073mm)(147.29mm,63.5mm)  Top Layer
+   Violation between Polygon Region (40 hole(s)) Top Layer and 
+                     Track (140.635mm,65.045mm)(141.067mm,65.477mm)  Top Layer
+   Violation between Polygon Region (40 hole(s)) Top Layer and 
+                     Track (141.067mm,65.477mm)(141.067mm,101.189mm)  Top Layer
+   Violation between Polygon Region (3 hole(s)) Top Layer and 
+                     Track (23.465mm,117.623mm)(24.151mm,116.937mm)  Top Layer
+   Violation between Polygon Region (3 hole(s)) Top Layer and 
+                     Track (24.151mm,113.533mm)(24.151mm,116.937mm)  Top Layer
+   Violation between Polygon Region (10 hole(s)) Top Layer and 
+                     Track (22.83mm,119.005mm)(24.684mm,117.151mm)  Top Layer
+   Violation between Polygon Region (6 hole(s)) Top Layer and 
+                     Track (1.138mm,103.78mm)(4.542mm,103.78mm)  Top Layer
+   Violation between Polygon Region (6 hole(s)) Top Layer and 
+                     Track (4.542mm,103.78mm)(5.634mm,102.688mm)  Top Layer
+Rule Violations :194
+
+Processing Rule : Short-Circuit Constraint (Allowed=No) (All),(All)
+Rule Violations :0
+
+Processing Rule : Un-Routed Net Constraint ( (All) )
+Rule Violations :0
+
+Processing Rule : Clearance Constraint (Gap=0.254mm) (All),(All)
+Rule Violations :0
+
+Processing Rule : Power Plane Connect Rule(Relief Connect )(Expansion=0.508mm) (Conductor Width=0.254mm) (Air Gap=0.254mm) (Entries=4) (All)
+Rule Violations :0
+
+Processing Rule : Width Constraint (Min=0.154mm) (Max=2mm) (Preferred=0.254mm) (All)
+Rule Violations :0
+
+Processing Rule : Height Constraint (Min=0mm) (Max=25.4mm) (Prefered=12.7mm) (All)
+Rule Violations :0
+
+Processing Rule : Hole Size Constraint (Min=0.381mm) (Max=3mm) (All)
+Rule Violations :0
+
+Processing Rule : Hole To Hole Clearance (Gap=0.254mm) (All),(All)
+Rule Violations :0
+
+Processing Rule : Minimum Solder Mask Sliver (Gap=0.152mm) (All),(All)
+Rule Violations :0
+
+Processing Rule : Silkscreen Over Component Pads (Clearance=0.1mm) (All),(All)
+Rule Violations :0
+
+Processing Rule : Silk to Silk (Clearance=0.1mm) (All),(All)
+Rule Violations :0
+
+Processing Rule : Net Antennae (Tolerance=0mm) (All)
+Rule Violations :0
+
+Processing Rule : Clearance Constraint (Gap=0.2mm) (IsPad),(All)
+Rule Violations :0
+
+Processing Rule : Minimum Annular Ring (Minimum=0.178mm) (Not IsVia)
+Rule Violations :0
+
+Processing Rule : SMD Neck-Down Constraint (Percent=70%) (All)
+   Violation between SMD Neck-Down Constraint Between Pad on BottomLayer And Track on BottomLayer
+   Violation between SMD Neck-Down Constraint Between Pad on BottomLayer And Track on BottomLayer
+   Violation between SMD Neck-Down Constraint Between Pad on BottomLayer And Track on BottomLayer
+   Violation between SMD Neck-Down Constraint Between Pad on BottomLayer And Track on BottomLayer
+   Violation between SMD Neck-Down Constraint Between Pad on BottomLayer And Track on BottomLayer
+   Violation between SMD Neck-Down Constraint Between Pad on BottomLayer And Track on BottomLayer
+   Violation between SMD Neck-Down Constraint Between Pad on BottomLayer And Track on BottomLayer
+   Violation between SMD Neck-Down Constraint Between Pad on BottomLayer And Track on BottomLayer
+   Violation between SMD Neck-Down Constraint Between Pad on BottomLayer And Track on BottomLayer
+   Violation between SMD Neck-Down Constraint Between Pad on BottomLayer And Track on BottomLayer
+   Violation between SMD Neck-Down Constraint Between Pad on BottomLayer And Track on BottomLayer
+   Violation between SMD Neck-Down Constraint Between Pad on BottomLayer And Track on BottomLayer
+   Violation between SMD Neck-Down Constraint Between Pad on BottomLayer And Track on BottomLayer
+   Violation between SMD Neck-Down Constraint Between Pad on BottomLayer And Track on BottomLayer
+   Violation between SMD Neck-Down Constraint Between Pad on BottomLayer And Track on BottomLayer
+   Violation between SMD Neck-Down Constraint Between Pad on BottomLayer And Track on BottomLayer
+   Violation between SMD Neck-Down Constraint Between Pad on BottomLayer And Track on BottomLayer
+   Violation between SMD Neck-Down Constraint Between Pad on BottomLayer And Track on BottomLayer
+   Violation between SMD Neck-Down Constraint Between Pad on BottomLayer And Track on BottomLayer
+   Violation between SMD Neck-Down Constraint Between Pad on BottomLayer And Track on BottomLayer
+   Violation between SMD Neck-Down Constraint Between Pad on BottomLayer And Track on BottomLayer
+   Violation between SMD Neck-Down Constraint Between Pad on BottomLayer And Track on BottomLayer
+   Violation between SMD Neck-Down Constraint Between Pad on BottomLayer And Track on BottomLayer
+   Violation between SMD Neck-Down Constraint Between Pad on BottomLayer And Track on BottomLayer
+   Violation between SMD Neck-Down Constraint Between Pad on BottomLayer And Track on BottomLayer
+   Violation between SMD Neck-Down Constraint Between Pad on BottomLayer And Track on BottomLayer
+   Violation between SMD Neck-Down Constraint Between Pad on BottomLayer And Track on BottomLayer
+   Violation between SMD Neck-Down Constraint Between Pad on BottomLayer And Track on BottomLayer
+   Violation between SMD Neck-Down Constraint Between Pad on TopLayer And Track on TopLayer
+Rule Violations :29
+
+
+Violations Detected : 223
+Time Elapsed        : 00:00:09

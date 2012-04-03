@@ -1,0 +1,6 @@
+DRC Rules Export File for PCB: C:\Users\David\Desktop\Ad-Flier\altium\project_files\FlightController_Bottom.PcbDoc
+RuleKind=Clearance|RuleName=Via Clearance|Scope=Board|Minimum=39.37
+RuleKind=ShortCircuit|RuleName=ShortCircuit|Scope=Board|Allowed=0
+RuleKind=Clearance|RuleName=Clearance|Scope=Board|Minimum=11.81
+RuleKind=Width|RuleName=Width|Scope=Board|Minimum=11.81
+RuleKind=SolderMaskExpansion|RuleName=SolderMaskExpansion|Scope=Board|Minimum=1.97

@@ -1,0 +1,7 @@
+Change Component Comment: Designator=Module3 Old Comment=Bluetooth Serial New Comment=Bluetooth
+Change Component Comment: Designator=J1 Old Comment=GPS Select Jumper New Comment=GPS Select
+Change Component Comment: Designator=Module5 Old Comment=MicroSD Socket New Comment=MicroSD
+Change Component Comment: Designator=Module6 Old Comment=PS2 Wireless Controller New Comment=PS2 Controller
+Change Component Comment: Designator=LED1 Old Comment=SMD LED New Comment=Link
+Change Component Comment: Designator=S2 Old Comment=SMD Tactile Switch New Comment=Key
+Change Component Comment: Designator=S1 Old Comment=SMD Tactile Switch New Comment=Reset

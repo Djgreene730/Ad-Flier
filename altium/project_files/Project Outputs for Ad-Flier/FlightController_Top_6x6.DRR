@@ -1,0 +1,24 @@
+---------------------------------------------------------------------------
+NCDrill File Report For: FlightController_Top_6x6.PcbDoc   4/2/2012  1:49:51 AM
+---------------------------------------------------------------------------
+
+Layer Pair : Top Layer to Bottom Layer
+ASCII RoundHoles File : FlightController_Top_6x6.TXT
+EIA File   : FlightController_Top_6x6.DRL
+
+Tool         Hole Size           Hole Type     Hole Count Plated       Tool Travel
+---------------------------------------------------------------------------
+T1        15mil (0.381mm)          Round          391              86.99 Inch (2209.44 mm)
+T2        23.62mil (0.59995mm)     Round          24               3.76 Inch (95.45 mm)
+T3        28mil (0.7112mm)         Round          32               35.17 Inch (893.33 mm)
+T4        29.53mil (0.75006mm)     Round          30               10.96 Inch (278.26 mm)
+T5        35.43mil (0.89992mm)     Round          126              36.88 Inch (936.81 mm)
+T6        39.37mil (1mm)           Round          30               9.21 Inch (233.86 mm)
+T7        43.31mil (1.10007mm)     Round          2                0.20 Inch (5.00 mm)
+T8        47.24mil (1.1999mm)      Round          3                0.45 Inch (11.41 mm)
+T9        59.06mil (1.50012mm)     Round          2                1.75 Inch (44.40 mm)
+T10       118.11mil (2.99999mm)    Round          4                5.31 Inch (135.00 mm)
+---------------------------------------------------------------------------
+Totals                                            644              190.67 Inch (4842.96 mm)
+
+Total Processing Time (hh:mm:ss) : 00:00:00

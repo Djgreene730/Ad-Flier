@@ -1,0 +1,14 @@
+Removed Pin From Net: NetName=NetModule3_3 Pin=Module3-3
+Removed Pin From Net: NetName=+3.3V Pin=Module3-4
+Removed Pin From Net: NetName=GND Pin=Module3-5
+Removed Pin From Net: NetName=GND Pin=Module3-6
+Removed Pin From Net: NetName=GND Pin=Module3-7
+Removed Pin From Net: NetName=NetLED1_1 Pin=Module3-8
+Removed Pin From Net: NetName=NetModule3_9 Pin=Module3-9
+Added Pin To Net: NetName=NetModule3_3 Pin=Module3-11
+Added Pin To Net: NetName=+3.3V Pin=Module3-12
+Added Pin To Net: NetName=GND Pin=Module3-13
+Added Pin To Net: NetName=GND Pin=Module3-21
+Added Pin To Net: NetName=GND Pin=Module3-22
+Added Pin To Net: NetName=NetLED1_1 Pin=Module3-24
+Added Pin To Net: NetName=NetModule3_9 Pin=Module3-26

@@ -1,0 +1,1067 @@
+Added Component: Designator=C1(Capacitor - Tantalum Case A)
+Added Component: Designator=C2(SMD 1206)
+Added Component: Designator=C3(Capacitor - Tantalum Case A)
+Added Component: Designator=C4(SMD 1206)
+Added Component: Designator=C5(SMD 1206)
+Added Component: Designator=C6(SMD 0603)
+Added Component: Designator=C7(SMD 1206)
+Added Component: Designator=C8(SMD 1206)
+Added Component: Designator=C9(SMD 1206)
+Added Component: Designator=C10(CAPPR2-5x5)
+Added Component: Designator=C11(Capacitor - Tantalum Case A)
+Added Component: Designator=C12(SMD 1206)
+Added Component: Designator=C13(SMD 1206)
+Added Component: Designator=C14(Capacitor - Tantalum Case A)
+Added Component: Designator=C15(SMD 1206)
+Added Component: Designator=C16(Capacitor - Tantalum Case A)
+Added Component: Designator=C17(SMD 1206)
+Added Component: Designator=C18(Capacitor - Tantalum Case A)
+Added Component: Designator=C19(SMD 0805)
+Added Component: Designator=C20(Capacitor - Tantalum Case A)
+Added Component: Designator=C21(SMD 1206)
+Added Component: Designator=C22(SMD 0603)
+Added Component: Designator=C23(SMD 1206)
+Added Component: Designator=C24(SMD 1206)
+Added Component: Designator=C25(SMD 1206)
+Added Component: Designator=C26(SMD 1206)
+Added Component: Designator=C27(SMD 1206)
+Added Component: Designator=C28(SMD 1206)
+Added Component: Designator=C29(SMD 1206)
+Added Component: Designator=C30(Capacitor - Tantalum Case A)
+Added Component: Designator=C31(SMD 1206)
+Added Component: Designator=C32(SMD 1206)
+Added Component: Designator=C33(SMD 1206)
+Added Component: Designator=C34(SMD 1206)
+Added Component: Designator=C35(SMD 1206)
+Added Component: Designator=C36(CAPPR2-5x5)
+Added Component: Designator=C37(CAPPR2-5x5)
+Added Component: Designator=C38(CAPRD5-6.5x4.5)
+Added Component: Designator=C39(Capacitor - Tantalum Case A)
+Added Component: Designator=C40(SMD 1206)
+Added Component: Designator=C41(Capacitor - Tantalum Case A)
+Added Component: Designator=C42(Capacitor - Tantalum Case A)
+Added Component: Designator=C43(SMD 1206)
+Added Component: Designator=C44(Capacitor - Tantalum Case A)
+Added Component: Designator=C45(Capacitor - Tantalum Case A)
+Added Component: Designator=C46(Capacitor - Tantalum Case A)
+Added Component: Designator=C47(Capacitor - Tantalum Case A)
+Added Component: Designator=C48(Capacitor - Tantalum Case A)
+Added Component: Designator=C49(SMD 1206)
+Added Component: Designator=C56(SMD 1206)
+Added Component: Designator=C57(SMD 1206)
+Added Component: Designator=C58(SMD 1206)
+Added Component: Designator=C59(SMD 1206)
+Added Component: Designator=C60(SMD 1206)
+Added Component: Designator=C61(SMD 1206)
+Added Component: Designator=C62(SMD 1206)
+Added Component: Designator=C63(SMD 1206)
+Added Component: Designator=C64(SMD 1206)
+Added Component: Designator=C65(SMD 1206)
+Added Component: Designator=C66(SMD 1206)
+Added Component: Designator=C67(SMD 1206)
+Added Component: Designator=C68(SMD 1206)
+Added Component: Designator=C69(Capacitor - Tantalum Case A)
+Added Component: Designator=C70(SMD 1206)
+Added Component: Designator=C71(SMD 1206)
+Added Component: Designator=C72(SMD 1206)
+Added Component: Designator=C73(Capacitor - Tantalum Case A)
+Added Component: Designator=C74(SMD 1206)
+Added Component: Designator=C75(SMD 1206)
+Added Component: Designator=C76(SMD 1206)
+Added Component: Designator=C77(Capacitor - Tantalum Case A)
+Added Component: Designator=C78(SMD 1206)
+Added Component: Designator=C79(SMD 1206)
+Added Component: Designator=D1(MBRS540T3G)
+Added Component: Designator=D2(1SMA5913BT3G)
+Added Component: Designator=D3(MBRS540T3G)
+Added Component: Designator=Debug1(HDR1X4)
+Added Component: Designator=Debug2(HDR1X3)
+Added Component: Designator=Debug3(HDR1X3)
+Added Component: Designator=Debug4(HDR1X4)
+Added Component: Designator=Debug5(HDR1X3)
+Added Component: Designator=Debug6(HDR1X3)
+Added Component: Designator=FPGA1(TQFP144_N)
+Added Component: Designator=Header1(DIP24)
+Added Component: Designator=Header2(HDR1X6)
+Added Component: Designator=Header3(HDR1X3H)
+Added Component: Designator=Header4(HDR1X3H)
+Added Component: Designator=Header5(HDR1X3H)
+Added Component: Designator=Header6(HDR1X3H)
+Added Component: Designator=Header7(HDR2X20H)
+Added Component: Designator=Header8(HDR1X6)
+Added Component: Designator=Header9(PC Wire Connector)
+Added Component: Designator=Header10(DC Power Jack)
+Added Component: Designator=Header12(HDR2X5)
+Added Component: Designator=Header13(HDR2X5)
+Added Component: Designator=IC1(L3G4200DTR)
+Added Component: Designator=IC2(MMA8452QT)
+Added Component: Designator=IC3(S25FL128P)
+Added Component: Designator=IC4(S25FL128P)
+Added Component: Designator=IC5(MPL115A1)
+Added Component: Designator=IC6(HMC5883L-TR)
+Added Component: Designator=IC7(TQFP-PT100_N)
+Added Component: Designator=IC8(EPCS16SI8N SO-8)
+Added Component: Designator=IC9(DS1085 SO-150mil)
+Added Component: Designator=J1(HDR1X2)
+Added Component: Designator=J2(HDR1X2)
+Added Component: Designator=J3(HDR1X2)
+Added Component: Designator=J4(HDR1X2)
+Added Component: Designator=J5(HDR1X2)
+Added Component: Designator=J6(HDR1X2)
+Added Component: Designator=LED1(PLCC-4 LED)
+Added Component: Designator=LED2(PLCC-4 LED)
+Added Component: Designator=LED3(PLCC-4 LED)
+Added Component: Designator=Module1(HC-SR04 Ultrasonic Ranger)
+Added Component: Designator=Module2(Copernicus GPS Module)
+Added Component: Designator=Module3(MicroSD Card Slot)
+Added Component: Designator=Module4(XBee Pro S1 Wireless Module)
+Added Component: Designator=Module5(RHT03 Humidity Sensor)
+Added Component: Designator=Module6(Mini B USB Connector)
+Added Component: Designator=R1(SMD 0805)
+Added Component: Designator=R2(SMD 0805)
+Added Component: Designator=R3(SMD 0805)
+Added Component: Designator=R4(Resistor Array YC164)
+Added Component: Designator=R5(Resistor Array YC164)
+Added Component: Designator=R6(SMD 0805)
+Added Component: Designator=R7(SMD 0805)
+Added Component: Designator=R8(SMD 0805)
+Added Component: Designator=R9(SMD 0805)
+Added Component: Designator=R10(SMD 0805)
+Added Component: Designator=R11(SMD 0805)
+Added Component: Designator=R12(SMD 0805)
+Added Component: Designator=R13(Resistor Array YC164)
+Added Component: Designator=R14(SMD 0805)
+Added Component: Designator=R15(SMD 0805)
+Added Component: Designator=R16(SMD 0805)
+Added Component: Designator=R17(SMD 0805)
+Added Component: Designator=R18(SMD 0805)
+Added Component: Designator=R19(RES12.2-8.5X3.3)
+Added Component: Designator=R20(RES12.2-8.5X3.3)
+Added Component: Designator=R21(SMD 0805)
+Added Component: Designator=R27(Resistor Array YC164)
+Added Component: Designator=R28(SMD 0805)
+Added Component: Designator=R29(Resistor Array YC164)
+Added Component: Designator=R30(Resistor Array YC164)
+Added Component: Designator=REG1(MIC5330-MFYML TR)
+Added Component: Designator=REG2(TO-263 D2PACK)
+Added Component: Designator=REG3(MIC49300-1.2WR SPACK-5)
+Added Component: Designator=REG4(TO-263 D2PACK)
+Added Component: Designator=S1(DIP-8)
+Added Component: Designator=S2(SMD Tactile Switch)
+Added Component: Designator=S3(SMD Tactile Switch)
+Added Component: Designator=S4(SMD Tactile Switch)
+Added Component: Designator=S5(SMD Tactile Switch)
+Added Component: Designator=X1(XT9M20ANA8M - 8MHz Capacitor)
+Added Component: Designator=X2(32.768KHz Crystal)
+Added Component: Designator=X3(SG-636PCE 25.175MHz Crystal)
+Added Pin To Net: NetName=VUSB Pin=C1-1
+Added Pin To Net: NetName=NetC1_2 Pin=C1-2
+Added Pin To Net: NetName=GND Pin=C2-1
+Added Pin To Net: NetName=VUSB Pin=C2-2
+Added Pin To Net: NetName=VUSB Pin=C3-1
+Added Pin To Net: NetName=GND Pin=C3-2
+Added Pin To Net: NetName=VUSB Pin=C4-1
+Added Pin To Net: NetName=GND Pin=C4-2
+Added Pin To Net: NetName=GND Pin=C5-1
+Added Pin To Net: NetName=NetC5_2 Pin=C5-2
+Added Pin To Net: NetName=NetC6_1 Pin=C6-1
+Added Pin To Net: NetName=NetC6_2 Pin=C6-2
+Added Pin To Net: NetName=NetC6_1 Pin=C7-1
+Added Pin To Net: NetName=GND Pin=C7-2
+Added Pin To Net: NetName=VUSB Pin=C8-1
+Added Pin To Net: NetName=GND Pin=C8-2
+Added Pin To Net: NetName=GND Pin=C9-1
+Added Pin To Net: NetName=+5.0V Pin=C9-2
+Added Pin To Net: NetName=+5.0V Pin=C10-1
+Added Pin To Net: NetName=GND Pin=C10-2
+Added Pin To Net: NetName=+5.0V Pin=C11-1
+Added Pin To Net: NetName=GND Pin=C11-2
+Added Pin To Net: NetName=VUSB Pin=C12-1
+Added Pin To Net: NetName=GND Pin=C12-2
+Added Pin To Net: NetName=VUSB Pin=C13-1
+Added Pin To Net: NetName=GND Pin=C13-2
+Added Pin To Net: NetName=VUSB Pin=C14-1
+Added Pin To Net: NetName=GND Pin=C14-2
+Added Pin To Net: NetName=GND Pin=C15-1
+Added Pin To Net: NetName=VUSB Pin=C15-2
+Added Pin To Net: NetName=NetC16_1 Pin=C16-1
+Added Pin To Net: NetName=GND Pin=C16-2
+Added Pin To Net: NetName=VUSB Pin=C17-1
+Added Pin To Net: NetName=GND Pin=C17-2
+Added Pin To Net: NetName=VUSB Pin=C18-1
+Added Pin To Net: NetName=GND Pin=C18-2
+Added Pin To Net: NetName=GND Pin=C19-1
+Added Pin To Net: NetName=VUSB Pin=C19-2
+Added Pin To Net: NetName=NetC20_1 Pin=C20-1
+Added Pin To Net: NetName=GND Pin=C20-2
+Added Pin To Net: NetName=VUSB Pin=C21-1
+Added Pin To Net: NetName=GND Pin=C21-2
+Added Pin To Net: NetName=NetC22_1 Pin=C22-1
+Added Pin To Net: NetName=NetC22_2 Pin=C22-2
+Added Pin To Net: NetName=GND Pin=C23-1
+Added Pin To Net: NetName=VUSB Pin=C23-2
+Added Pin To Net: NetName=VUSB Pin=C24-1
+Added Pin To Net: NetName=GND Pin=C24-2
+Added Pin To Net: NetName=VUSB Pin=C25-1
+Added Pin To Net: NetName=GND Pin=C25-2
+Added Pin To Net: NetName=VUSB Pin=C26-1
+Added Pin To Net: NetName=GND Pin=C26-2
+Added Pin To Net: NetName=VUSB Pin=C27-1
+Added Pin To Net: NetName=GND Pin=C27-2
+Added Pin To Net: NetName=VUSB Pin=C28-1
+Added Pin To Net: NetName=GND Pin=C28-2
+Added Pin To Net: NetName=VUSB Pin=C29-1
+Added Pin To Net: NetName=GND Pin=C29-2
+Added Pin To Net: NetName=NetC30_1 Pin=C30-1
+Added Pin To Net: NetName=GND Pin=C30-2
+Added Pin To Net: NetName=NetC31_1 Pin=C31-1
+Added Pin To Net: NetName=GND Pin=C31-2
+Added Pin To Net: NetName=GND Pin=C32-1
+Added Pin To Net: NetName=OSC1 Pin=C32-2
+Added Pin To Net: NetName=GND Pin=C33-1
+Added Pin To Net: NetName=OSC2 Pin=C33-2
+Added Pin To Net: NetName=GND Pin=C34-1
+Added Pin To Net: NetName=SOSCI Pin=C34-2
+Added Pin To Net: NetName=GND Pin=C35-1
+Added Pin To Net: NetName=SOSCO Pin=C35-2
+Added Pin To Net: NetName=SYS Pin=C36-1
+Added Pin To Net: NetName=GND Pin=C36-2
+Added Pin To Net: NetName=SYS Pin=C37-1
+Added Pin To Net: NetName=GND Pin=C37-2
+Added Pin To Net: NetName=GND Pin=C38-1
+Added Pin To Net: NetName=SYS Pin=C38-2
+Added Pin To Net: NetName=+5.0V Pin=C39-1
+Added Pin To Net: NetName=GND Pin=C39-2
+Added Pin To Net: NetName=GND Pin=C40-1
+Added Pin To Net: NetName=NetC40_2 Pin=C40-2
+Added Pin To Net: NetName=+5.0V Pin=C41-1
+Added Pin To Net: NetName=GND Pin=C41-2
+Added Pin To Net: NetName=+2.8V Pin=C42-1
+Added Pin To Net: NetName=GND Pin=C42-2
+Added Pin To Net: NetName=SYS Pin=C43-1
+Added Pin To Net: NetName=GND Pin=C43-2
+Added Pin To Net: NetName=+1.5V Pin=C44-1
+Added Pin To Net: NetName=GND Pin=C44-2
+Added Pin To Net: NetName=+5.0V Pin=C45-1
+Added Pin To Net: NetName=GND Pin=C45-2
+Added Pin To Net: NetName=+1.2V Pin=C46-1
+Added Pin To Net: NetName=GND Pin=C46-2
+Added Pin To Net: NetName=VUSB Pin=C47-1
+Added Pin To Net: NetName=GND Pin=C47-2
+Added Pin To Net: NetName=+5.0V Pin=C48-1
+Added Pin To Net: NetName=GND Pin=C48-2
+Added Pin To Net: NetName=GND Pin=C49-1
+Added Pin To Net: NetName=SYS Pin=C49-2
+Added Pin To Net: NetName=+1.2V Pin=C56-1
+Added Pin To Net: NetName=GND Pin=C56-2
+Added Pin To Net: NetName=+2.8V Pin=C57-1
+Added Pin To Net: NetName=GND Pin=C57-2
+Added Pin To Net: NetName=VUSB Pin=C58-1
+Added Pin To Net: NetName=GND Pin=C58-2
+Added Pin To Net: NetName=VUSB Pin=C59-1
+Added Pin To Net: NetName=GND Pin=C59-2
+Added Pin To Net: NetName=+1.2V Pin=C60-1
+Added Pin To Net: NetName=GND Pin=C60-2
+Added Pin To Net: NetName=+2.8V Pin=C61-1
+Added Pin To Net: NetName=GND Pin=C61-2
+Added Pin To Net: NetName=VUSB Pin=C62-1
+Added Pin To Net: NetName=GND Pin=C62-2
+Added Pin To Net: NetName=VUSB Pin=C63-1
+Added Pin To Net: NetName=GND Pin=C63-2
+Added Pin To Net: NetName=VUSB Pin=C64-1
+Added Pin To Net: NetName=GND Pin=C64-2
+Added Pin To Net: NetName=+1.2V Pin=C65-1
+Added Pin To Net: NetName=GND Pin=C65-2
+Added Pin To Net: NetName=+2.8V Pin=C66-1
+Added Pin To Net: NetName=GND Pin=C66-2
+Added Pin To Net: NetName=VUSB Pin=C67-1
+Added Pin To Net: NetName=GND Pin=C67-2
+Added Pin To Net: NetName=VUSB Pin=C68-1
+Added Pin To Net: NetName=GND Pin=C68-2
+Added Pin To Net: NetName=+2.8V Pin=C69-1
+Added Pin To Net: NetName=GND Pin=C69-2
+Added Pin To Net: NetName=+1.2V Pin=C70-1
+Added Pin To Net: NetName=GND Pin=C70-2
+Added Pin To Net: NetName=VUSB Pin=C71-1
+Added Pin To Net: NetName=GND Pin=C71-2
+Added Pin To Net: NetName=VUSB Pin=C72-1
+Added Pin To Net: NetName=GND Pin=C72-2
+Added Pin To Net: NetName=VUSB Pin=C73-1
+Added Pin To Net: NetName=GND Pin=C73-2
+Added Pin To Net: NetName=+1.2V Pin=C74-1
+Added Pin To Net: NetName=GND Pin=C74-2
+Added Pin To Net: NetName=VUSB Pin=C75-1
+Added Pin To Net: NetName=GND Pin=C75-2
+Added Pin To Net: NetName=+1.2V Pin=C76-1
+Added Pin To Net: NetName=GND Pin=C76-2
+Added Pin To Net: NetName=+1.2V Pin=C77-1
+Added Pin To Net: NetName=GND Pin=C77-2
+Added Pin To Net: NetName=GND Pin=C78-1
+Added Pin To Net: NetName=+5.0V Pin=C78-2
+Added Pin To Net: NetName=GND Pin=C79-1
+Added Pin To Net: NetName=+5.0V Pin=C79-2
+Added Pin To Net: NetName=NetD1_0 Pin=D1-A
+Added Pin To Net: NetName=SYS Pin=D1-K
+Added Pin To Net: NetName=GND Pin=D2-A
+Added Pin To Net: NetName=SYSPOWMONITOR Pin=D2-K
+Added Pin To Net: NetName=NetD3_0 Pin=D3-A
+Added Pin To Net: NetName=SYS Pin=D3-K
+Added Pin To Net: NetName=BAROMETER_SCLK Pin=Debug1-1
+Added Pin To Net: NetName=BAROMETER_DOUT Pin=Debug1-2
+Added Pin To Net: NetName=BAROMETER_DIN Pin=Debug1-3
+Added Pin To Net: NetName=GND Pin=Debug1-4
+Added Pin To Net: NetName=DS1085_SCL Pin=Debug2-1
+Added Pin To Net: NetName=DS1085_SDA Pin=Debug2-2
+Added Pin To Net: NetName=GND Pin=Debug2-3
+Added Pin To Net: NetName=PIC_UART1_TX Pin=Debug3-1
+Added Pin To Net: NetName=PIC_UART1_RX Pin=Debug3-2
+Added Pin To Net: NetName=GND Pin=Debug3-3
+Added Pin To Net: NetName=P132 Pin=Debug4-1
+Added Pin To Net: NetName=P134 Pin=Debug4-2
+Added Pin To Net: NetName=P133 Pin=Debug4-3
+Added Pin To Net: NetName=GND Pin=Debug4-4
+Added Pin To Net: NetName=GPS_RXB Pin=Debug5-1
+Added Pin To Net: NetName=GPS_TXB Pin=Debug5-2
+Added Pin To Net: NetName=GND Pin=Debug5-3
+Added Pin To Net: NetName=GPS_RXA Pin=Debug6-1
+Added Pin To Net: NetName=GPS_TXA Pin=Debug6-2
+Added Pin To Net: NetName=GND Pin=Debug6-3
+Added Pin To Net: NetName=ASDO Pin=FPGA1-1
+Added Pin To Net: NetName=NCSO Pin=FPGA1-2
+Added Pin To Net: NetName=CONFSWITCH_1 Pin=FPGA1-3
+Added Pin To Net: NetName=CONFSWITCH_2 Pin=FPGA1-4
+Added Pin To Net: NetName=VUSB Pin=FPGA1-5
+Added Pin To Net: NetName=GND Pin=FPGA1-6
+Added Pin To Net: NetName=CONFSWITCH_3 Pin=FPGA1-7
+Added Pin To Net: NetName=CONFSWITCH_4 Pin=FPGA1-8
+Added Pin To Net: NetName=CONFSWITCH_5 Pin=FPGA1-9
+Added Pin To Net: NetName=TDO Pin=FPGA1-10
+Added Pin To Net: NetName=TMS Pin=FPGA1-11
+Added Pin To Net: NetName=TCK Pin=FPGA1-12
+Added Pin To Net: NetName=TDI Pin=FPGA1-13
+Added Pin To Net: NetName=DATAO Pin=FPGA1-14
+Added Pin To Net: NetName=DCLK Pin=FPGA1-15
+Added Pin To Net: NetName=NCE Pin=FPGA1-16
+Added Pin To Net: NetName=25MHZ_CLOCK Pin=FPGA1-17
+Added Pin To Net: NetName=GND Pin=FPGA1-19
+Added Pin To Net: NetName=NCONFIG Pin=FPGA1-20
+Added Pin To Net: NetName=CLOCK_SYNTH_0 Pin=FPGA1-21
+Added Pin To Net: NetName=VUSB Pin=FPGA1-23
+Added Pin To Net: NetName=CONFSWITCH_6 Pin=FPGA1-24
+Added Pin To Net: NetName=CONFSWITCH_7 Pin=FPGA1-25
+Added Pin To Net: NetName=+1.2V Pin=FPGA1-26
+Added Pin To Net: NetName=GND Pin=FPGA1-27
+Added Pin To Net: NetName=P28 Pin=FPGA1-28
+Added Pin To Net: NetName=VUSB Pin=FPGA1-29
+Added Pin To Net: NetName=P30 Pin=FPGA1-30
+Added Pin To Net: NetName=FULTRASONIC_TRIGGER Pin=FPGA1-31
+Added Pin To Net: NetName=FULTRASONIC_EDGE Pin=FPGA1-32
+Added Pin To Net: NetName=GND Pin=FPGA1-33
+Added Pin To Net: NetName=GND Pin=FPGA1-34
+Added Pin To Net: NetName=+1.2V Pin=FPGA1-35
+Added Pin To Net: NetName=GND Pin=FPGA1-36
+Added Pin To Net: NetName=+1.2V Pin=FPGA1-37
+Added Pin To Net: NetName=GND Pin=FPGA1-38
+Added Pin To Net: NetName=GND Pin=FPGA1-39
+Added Pin To Net: NetName=FPGA_SPI_CLOCK Pin=FPGA1-40
+Added Pin To Net: NetName=FPGA_SPI_DATAIN Pin=FPGA1-41
+Added Pin To Net: NetName=FPGA_SPI_DATAOUT Pin=FPGA1-42
+Added Pin To Net: NetName=ACCEL_SCL Pin=FPGA1-43
+Added Pin To Net: NetName=ACCEL_SDA Pin=FPGA1-44
+Added Pin To Net: NetName=FPGA_SPI_/GYROCS Pin=FPGA1-45
+Added Pin To Net: NetName=VUSB Pin=FPGA1-46
+Added Pin To Net: NetName=GYRO_DRDY Pin=FPGA1-47
+Added Pin To Net: NetName=GYRO_INT1 Pin=FPGA1-48
+Added Pin To Net: NetName=GND Pin=FPGA1-49
+Added Pin To Net: NetName=+1.2V Pin=FPGA1-50
+Added Pin To Net: NetName=FPGA_SPI_/SRAMCS Pin=FPGA1-51
+Added Pin To Net: NetName=FPGASRAM_/WP Pin=FPGA1-52
+Added Pin To Net: NetName=ACCEL_SA0 Pin=FPGA1-53
+Added Pin To Net: NetName=VUSB Pin=FPGA1-54
+Added Pin To Net: NetName=ACCEL_INT1 Pin=FPGA1-55
+Added Pin To Net: NetName=GND Pin=FPGA1-56
+Added Pin To Net: NetName=ACCEL_INT2 Pin=FPGA1-57
+Added Pin To Net: NetName=P58 Pin=FPGA1-58
+Added Pin To Net: NetName=BULTRASONIC_TRIGGER Pin=FPGA1-59
+Added Pin To Net: NetName=BULTRASONIC_EDGE Pin=FPGA1-60
+Added Pin To Net: NetName=GND Pin=FPGA1-61
+Added Pin To Net: NetName=+1.2V Pin=FPGA1-62
+Added Pin To Net: NetName=BLED_ORANGE1 Pin=FPGA1-63
+Added Pin To Net: NetName=BLED_ORANGE2 Pin=FPGA1-64
+Added Pin To Net: NetName=BLED_ORANGE3 Pin=FPGA1-65
+Added Pin To Net: NetName=VUSB Pin=FPGA1-66
+Added Pin To Net: NetName=BLED_ORANGE4 Pin=FPGA1-67
+Added Pin To Net: NetName=GND Pin=FPGA1-68
+Added Pin To Net: NetName=BLED_BLUE1 Pin=FPGA1-69
+Added Pin To Net: NetName=BLED_BLUE2 Pin=FPGA1-70
+Added Pin To Net: NetName=BLED_BLUE3 Pin=FPGA1-71
+Added Pin To Net: NetName=BLED_BLUE4 Pin=FPGA1-72
+Added Pin To Net: NetName=CAMERA_SCL Pin=FPGA1-73
+Added Pin To Net: NetName=CAMERA_SDA Pin=FPGA1-74
+Added Pin To Net: NetName=CAMERA_RESET Pin=FPGA1-75
+Added Pin To Net: NetName=+2.8V Pin=FPGA1-77
+Added Pin To Net: NetName=GND Pin=FPGA1-78
+Added Pin To Net: NetName=CAMERA_EXTCLK Pin=FPGA1-79
+Added Pin To Net: NetName=GND Pin=FPGA1-80
+Added Pin To Net: NetName=+1.2V Pin=FPGA1-81
+Added Pin To Net: NetName=NSTATUS Pin=FPGA1-82
+Added Pin To Net: NetName=CONF_DONE Pin=FPGA1-83
+Added Pin To Net: NetName=MSEL1 Pin=FPGA1-84
+Added Pin To Net: NetName=MSEL0 Pin=FPGA1-85
+Added Pin To Net: NetName=CAMERA_HD Pin=FPGA1-86
+Added Pin To Net: NetName=CAMERA_VD Pin=FPGA1-87
+Added Pin To Net: NetName=CLOCK_SYNTH_1 Pin=FPGA1-91
+Added Pin To Net: NetName=CAMERA_DCLK Pin=FPGA1-92
+Added Pin To Net: NetName=CAMERA_DOUT0 Pin=FPGA1-93
+Added Pin To Net: NetName=CAMERA_DOUT1 Pin=FPGA1-94
+Added Pin To Net: NetName=+2.8V Pin=FPGA1-95
+Added Pin To Net: NetName=CAMERA_DOUT2 Pin=FPGA1-96
+Added Pin To Net: NetName=CAMERA_DOUT3 Pin=FPGA1-97
+Added Pin To Net: NetName=GND Pin=FPGA1-98
+Added Pin To Net: NetName=CAMERA_DOUT4 Pin=FPGA1-99
+Added Pin To Net: NetName=CAMERA_DOUT5 Pin=FPGA1-100
+Added Pin To Net: NetName=CAMERA_DOUT6 Pin=FPGA1-101
+Added Pin To Net: NetName=+2.8V Pin=FPGA1-102
+Added Pin To Net: NetName=CAMERA_DOUT7 Pin=FPGA1-103
+Added Pin To Net: NetName=P104 Pin=FPGA1-104
+Added Pin To Net: NetName=GND Pin=FPGA1-105
+Added Pin To Net: NetName=GND Pin=FPGA1-106
+Added Pin To Net: NetName=+1.2V Pin=FPGA1-107
+Added Pin To Net: NetName=GND Pin=FPGA1-108
+Added Pin To Net: NetName=+1.2V Pin=FPGA1-109
+Added Pin To Net: NetName=GND Pin=FPGA1-110
+Added Pin To Net: NetName=GND Pin=FPGA1-111
+Added Pin To Net: NetName=FPGA_D0 Pin=FPGA1-112
+Added Pin To Net: NetName=FPGA_D1 Pin=FPGA1-113
+Added Pin To Net: NetName=FPGA_D2 Pin=FPGA1-114
+Added Pin To Net: NetName=FPGA_D3 Pin=FPGA1-115
+Added Pin To Net: NetName=VUSB Pin=FPGA1-116
+Added Pin To Net: NetName=GND Pin=FPGA1-117
+Added Pin To Net: NetName=FPGA_D4 Pin=FPGA1-118
+Added Pin To Net: NetName=FPGA_D5 Pin=FPGA1-119
+Added Pin To Net: NetName=FPGA_D6 Pin=FPGA1-120
+Added Pin To Net: NetName=FPGA_D7 Pin=FPGA1-121
+Added Pin To Net: NetName=FPGA_A-/D Pin=FPGA1-122
+Added Pin To Net: NetName=GND Pin=FPGA1-123
+Added Pin To Net: NetName=+1.2V Pin=FPGA1-124
+Added Pin To Net: NetName=FPGA_R-/W Pin=FPGA1-125
+Added Pin To Net: NetName=FPGA_OK-OUT Pin=FPGA1-126
+Added Pin To Net: NetName=VUSB Pin=FPGA1-127
+Added Pin To Net: NetName=GND Pin=FPGA1-128
+Added Pin To Net: NetName=FPGA_OK-IN Pin=FPGA1-129
+Added Pin To Net: NetName=GND Pin=FPGA1-130
+Added Pin To Net: NetName=+1.2V Pin=FPGA1-131
+Added Pin To Net: NetName=P132 Pin=FPGA1-132
+Added Pin To Net: NetName=P133 Pin=FPGA1-133
+Added Pin To Net: NetName=P134 Pin=FPGA1-134
+Added Pin To Net: NetName=P135 Pin=FPGA1-135
+Added Pin To Net: NetName=P136 Pin=FPGA1-136
+Added Pin To Net: NetName=P137 Pin=FPGA1-137
+Added Pin To Net: NetName=VUSB Pin=FPGA1-138
+Added Pin To Net: NetName=P139 Pin=FPGA1-139
+Added Pin To Net: NetName=GND Pin=FPGA1-140
+Added Pin To Net: NetName=MOTOR_W1 Pin=FPGA1-141
+Added Pin To Net: NetName=MOTOR_W2 Pin=FPGA1-142
+Added Pin To Net: NetName=MOTOR_W3 Pin=FPGA1-143
+Added Pin To Net: NetName=MOTOR_W4 Pin=FPGA1-144
+Added Pin To Net: NetName=VUSB Pin=Header1-1
+Added Pin To Net: NetName=VUSB Pin=Header1-2
+Added Pin To Net: NetName=GND Pin=Header1-13
+Added Pin To Net: NetName=GYRO_DRDY Pin=Header1-15
+Added Pin To Net: NetName=FPGA_SPI_/GYROCS Pin=Header1-19
+Added Pin To Net: NetName=FPGA_SPI_CLOCK Pin=Header1-20
+Added Pin To Net: NetName=FPGA_SPI_DATAIN Pin=Header1-21
+Added Pin To Net: NetName=FPGA_SPI_DATAOUT Pin=Header1-22
+Added Pin To Net: NetName=GYRO_INT1 Pin=Header1-23
+Added Pin To Net: NetName=VUSB Pin=Header2-1
+Added Pin To Net: NetName=ACCEL_SDA Pin=Header2-2
+Added Pin To Net: NetName=ACCEL_SCL Pin=Header2-3
+Added Pin To Net: NetName=ACCEL_INT2 Pin=Header2-4
+Added Pin To Net: NetName=ACCEL_INT1 Pin=Header2-5
+Added Pin To Net: NetName=GND Pin=Header2-6
+Added Pin To Net: NetName=MOTOR_W1 Pin=Header3-1
+Added Pin To Net: NetName=NetHeader3_2 Pin=Header3-2
+Added Pin To Net: NetName=GND Pin=Header3-3
+Added Pin To Net: NetName=MOTOR_W4 Pin=Header4-1
+Added Pin To Net: NetName=NetHeader4_2 Pin=Header4-2
+Added Pin To Net: NetName=GND Pin=Header4-3
+Added Pin To Net: NetName=MOTOR_W2 Pin=Header5-1
+Added Pin To Net: NetName=NetHeader5_2 Pin=Header5-2
+Added Pin To Net: NetName=GND Pin=Header5-3
+Added Pin To Net: NetName=MOTOR_W3 Pin=Header6-1
+Added Pin To Net: NetName=NetHeader6_2 Pin=Header6-2
+Added Pin To Net: NetName=GND Pin=Header6-3
+Added Pin To Net: NetName=GND Pin=Header7-1
+Added Pin To Net: NetName=+1.2V Pin=Header7-2
+Added Pin To Net: NetName=GND Pin=Header7-3
+Added Pin To Net: NetName=+1.5V Pin=Header7-4
+Added Pin To Net: NetName=GND Pin=Header7-5
+Added Pin To Net: NetName=+2.8V Pin=Header7-6
+Added Pin To Net: NetName=GND Pin=Header7-7
+Added Pin To Net: NetName=VUSB Pin=Header7-8
+Added Pin To Net: NetName=GND Pin=Header7-9
+Added Pin To Net: NetName=+5.0V Pin=Header7-10
+Added Pin To Net: NetName=CAMERA_SCL Pin=Header7-11
+Added Pin To Net: NetName=CAMERA_SDA Pin=Header7-13
+Added Pin To Net: NetName=BULTRASONIC_TRIGGER Pin=Header7-14
+Added Pin To Net: NetName=CAMERA_RESET Pin=Header7-15
+Added Pin To Net: NetName=BULTRASONIC_EDGE Pin=Header7-16
+Added Pin To Net: NetName=CAMERA_EXTCLK Pin=Header7-17
+Added Pin To Net: NetName=CAMERA_HD Pin=Header7-19
+Added Pin To Net: NetName=CAMERA_VD Pin=Header7-21
+Added Pin To Net: NetName=CAMERA_DCLK Pin=Header7-23
+Added Pin To Net: NetName=CAMERA_DOUT0 Pin=Header7-25
+Added Pin To Net: NetName=BLED_ORANGE1 Pin=Header7-26
+Added Pin To Net: NetName=CAMERA_DOUT1 Pin=Header7-27
+Added Pin To Net: NetName=BLED_ORANGE2 Pin=Header7-28
+Added Pin To Net: NetName=CAMERA_DOUT2 Pin=Header7-29
+Added Pin To Net: NetName=BLED_ORANGE3 Pin=Header7-30
+Added Pin To Net: NetName=CAMERA_DOUT3 Pin=Header7-31
+Added Pin To Net: NetName=BLED_ORANGE4 Pin=Header7-32
+Added Pin To Net: NetName=CAMERA_DOUT4 Pin=Header7-33
+Added Pin To Net: NetName=BLED_BLUE1 Pin=Header7-34
+Added Pin To Net: NetName=CAMERA_DOUT5 Pin=Header7-35
+Added Pin To Net: NetName=BLED_BLUE2 Pin=Header7-36
+Added Pin To Net: NetName=CAMERA_DOUT6 Pin=Header7-37
+Added Pin To Net: NetName=BLED_BLUE3 Pin=Header7-38
+Added Pin To Net: NetName=CAMERA_DOUT7 Pin=Header7-39
+Added Pin To Net: NetName=BLED_BLUE4 Pin=Header7-40
+Added Pin To Net: NetName=ICSP_MCLR Pin=Header8-1
+Added Pin To Net: NetName=VUSB Pin=Header8-2
+Added Pin To Net: NetName=GND Pin=Header8-3
+Added Pin To Net: NetName=NetHeader8_4 Pin=Header8-4
+Added Pin To Net: NetName=NetHeader8_5 Pin=Header8-5
+Added Pin To Net: NetName=NetD1_0 Pin=Header9-L
+Added Pin To Net: NetName=GND Pin=Header9-R
+Added Pin To Net: NetName=DCLK Pin=Header12-1
+Added Pin To Net: NetName=GND Pin=Header12-2
+Added Pin To Net: NetName=CONF_DONE Pin=Header12-3
+Added Pin To Net: NetName=VUSB Pin=Header12-4
+Added Pin To Net: NetName=NCONFIG Pin=Header12-5
+Added Pin To Net: NetName=NCE Pin=Header12-6
+Added Pin To Net: NetName=DATAO Pin=Header12-7
+Added Pin To Net: NetName=NCSO Pin=Header12-8
+Added Pin To Net: NetName=ASDO Pin=Header12-9
+Added Pin To Net: NetName=GND Pin=Header12-10
+Added Pin To Net: NetName=TCK Pin=Header13-1
+Added Pin To Net: NetName=GND Pin=Header13-2
+Added Pin To Net: NetName=TDO Pin=Header13-3
+Added Pin To Net: NetName=VUSB Pin=Header13-4
+Added Pin To Net: NetName=TMS Pin=Header13-5
+Added Pin To Net: NetName=TDI Pin=Header13-9
+Added Pin To Net: NetName=GND Pin=Header13-10
+Added Pin To Net: NetName=VUSB Pin=IC1-1
+Added Pin To Net: NetName=FPGA_SPI_CLOCK Pin=IC1-2
+Added Pin To Net: NetName=FPGA_SPI_DATAIN Pin=IC1-3
+Added Pin To Net: NetName=FPGA_SPI_DATAOUT Pin=IC1-4
+Added Pin To Net: NetName=FPGA_SPI_/GYROCS Pin=IC1-5
+Added Pin To Net: NetName=GYRO_DRDY Pin=IC1-6
+Added Pin To Net: NetName=GYRO_INT1 Pin=IC1-7
+Added Pin To Net: NetName=GND Pin=IC1-8
+Added Pin To Net: NetName=GND Pin=IC1-9
+Added Pin To Net: NetName=GND Pin=IC1-10
+Added Pin To Net: NetName=GND Pin=IC1-11
+Added Pin To Net: NetName=GND Pin=IC1-12
+Added Pin To Net: NetName=NetC1_2 Pin=IC1-13
+Added Pin To Net: NetName=NetC6_1 Pin=IC1-14
+Added Pin To Net: NetName=VUSB Pin=IC1-15
+Added Pin To Net: NetName=VUSB Pin=IC1-16
+Added Pin To Net: NetName=VUSB Pin=IC2-1
+Added Pin To Net: NetName=NetC5_2 Pin=IC2-2
+Added Pin To Net: NetName=ACCEL_SCL Pin=IC2-4
+Added Pin To Net: NetName=GND Pin=IC2-5
+Added Pin To Net: NetName=ACCEL_SDA Pin=IC2-6
+Added Pin To Net: NetName=ACCEL_SA0 Pin=IC2-7
+Added Pin To Net: NetName=GND Pin=IC2-8
+Added Pin To Net: NetName=ACCEL_INT2 Pin=IC2-9
+Added Pin To Net: NetName=GND Pin=IC2-10
+Added Pin To Net: NetName=ACCEL_INT1 Pin=IC2-11
+Added Pin To Net: NetName=GND Pin=IC2-12
+Added Pin To Net: NetName=GND Pin=IC2-13
+Added Pin To Net: NetName=VUSB Pin=IC2-14
+Added Pin To Net: NetName=GND Pin=IC2-15
+Added Pin To Net: NetName=GND Pin=IC2-16
+Added Pin To Net: NetName=FPGA_SPI_/SRAMCS Pin=IC3-1
+Added Pin To Net: NetName=FPGA_SPI_DATAOUT Pin=IC3-2
+Added Pin To Net: NetName=FPGASRAM_/WP Pin=IC3-3
+Added Pin To Net: NetName=GND Pin=IC3-4
+Added Pin To Net: NetName=FPGA_SPI_DATAIN Pin=IC3-5
+Added Pin To Net: NetName=FPGA_SPI_CLOCK Pin=IC3-6
+Added Pin To Net: NetName=VUSB Pin=IC3-7
+Added Pin To Net: NetName=VUSB Pin=IC3-8
+Added Pin To Net: NetName=PIC_SRAM_/CS Pin=IC4-1
+Added Pin To Net: NetName=BAROMETER_DOUT Pin=IC4-2
+Added Pin To Net: NetName=PIC_SRAM_/WP Pin=IC4-3
+Added Pin To Net: NetName=GND Pin=IC4-4
+Added Pin To Net: NetName=BAROMETER_DIN Pin=IC4-5
+Added Pin To Net: NetName=BAROMETER_SCLK Pin=IC4-6
+Added Pin To Net: NetName=VUSB Pin=IC4-7
+Added Pin To Net: NetName=VUSB Pin=IC4-8
+Added Pin To Net: NetName=VUSB Pin=IC5-1
+Added Pin To Net: NetName=NetC16_1 Pin=IC5-2
+Added Pin To Net: NetName=GND Pin=IC5-3
+Added Pin To Net: NetName=BAROMETER_/SHDN Pin=IC5-4
+Added Pin To Net: NetName=BAROMETER_/CS Pin=IC5-5
+Added Pin To Net: NetName=BAROMETER_DOUT Pin=IC5-6
+Added Pin To Net: NetName=BAROMETER_DIN Pin=IC5-7
+Added Pin To Net: NetName=BAROMETER_SCLK Pin=IC5-8
+Added Pin To Net: NetName=DS1085_SCL Pin=IC6-1
+Added Pin To Net: NetName=VUSB Pin=IC6-2
+Added Pin To Net: NetName=VUSB Pin=IC6-4
+Added Pin To Net: NetName=NetC22_2 Pin=IC6-8
+Added Pin To Net: NetName=GND Pin=IC6-9
+Added Pin To Net: NetName=NetC20_1 Pin=IC6-10
+Added Pin To Net: NetName=GND Pin=IC6-11
+Added Pin To Net: NetName=NetC22_1 Pin=IC6-12
+Added Pin To Net: NetName=VUSB Pin=IC6-13
+Added Pin To Net: NetName=MAGNET_DRDY Pin=IC6-15
+Added Pin To Net: NetName=DS1085_SDA Pin=IC6-16
+Added Pin To Net: NetName=VUSB Pin=IC7-2
+Added Pin To Net: NetName=FPGA_D5 Pin=IC7-3
+Added Pin To Net: NetName=FPGA_D6 Pin=IC7-4
+Added Pin To Net: NetName=FPGA_D7 Pin=IC7-5
+Added Pin To Net: NetName=BAROMETER_DOUT Pin=IC7-9
+Added Pin To Net: NetName=P132 Pin=IC7-10
+Added Pin To Net: NetName=P134 Pin=IC7-11
+Added Pin To Net: NetName=P133 Pin=IC7-12
+Added Pin To Net: NetName=MCLR Pin=IC7-13
+Added Pin To Net: NetName=GND Pin=IC7-15
+Added Pin To Net: NetName=VUSB Pin=IC7-16
+Added Pin To Net: NetName=MAGNET_DRDY Pin=IC7-17
+Added Pin To Net: NetName=FPGA_A-/D Pin=IC7-18
+Added Pin To Net: NetName=FPGA_R-/W Pin=IC7-19
+Added Pin To Net: NetName=SYSPOWMONITOR Pin=IC7-23
+Added Pin To Net: NetName=ICSP_PGC Pin=IC7-24
+Added Pin To Net: NetName=ICSP_PGD Pin=IC7-25
+Added Pin To Net: NetName=XBEE_/RESET Pin=IC7-28
+Added Pin To Net: NetName=HUMIDITY_I/O Pin=IC7-29
+Added Pin To Net: NetName=NetC31_1 Pin=IC7-30
+Added Pin To Net: NetName=GND Pin=IC7-31
+Added Pin To Net: NetName=GND Pin=IC7-36
+Added Pin To Net: NetName=VUSB Pin=IC7-37
+Added Pin To Net: NetName=BAROMETER_/SHDN Pin=IC7-38
+Added Pin To Net: NetName=GPS_RXA Pin=IC7-39
+Added Pin To Net: NetName=GPS_TXA Pin=IC7-40
+Added Pin To Net: NetName=GND Pin=IC7-45
+Added Pin To Net: NetName=VUSB Pin=IC7-46
+Added Pin To Net: NetName=PIC_UART1_/CTS Pin=IC7-47
+Added Pin To Net: NetName=PIC_UART1_/RTS Pin=IC7-48
+Added Pin To Net: NetName=GPS_TXB Pin=IC7-49
+Added Pin To Net: NetName=GPS_RXB Pin=IC7-50
+Added Pin To Net: NetName=PIC_UART1_RX Pin=IC7-52
+Added Pin To Net: NetName=PIC_UART1_TX Pin=IC7-53
+Added Pin To Net: NetName=VBUS Pin=IC7-54
+Added Pin To Net: NetName=VUSB Pin=IC7-55
+Added Pin To Net: NetName=USB_D- Pin=IC7-56
+Added Pin To Net: NetName=USB_D+ Pin=IC7-57
+Added Pin To Net: NetName=PIC_SRAM_/WP Pin=IC7-58
+Added Pin To Net: NetName=GPS_PPS Pin=IC7-59
+Added Pin To Net: NetName=GPS_XSTBY Pin=IC7-60
+Added Pin To Net: NetName=GPS_XRST Pin=IC7-61
+Added Pin To Net: NetName=VUSB Pin=IC7-62
+Added Pin To Net: NetName=OSC1 Pin=IC7-63
+Added Pin To Net: NetName=OSC2 Pin=IC7-64
+Added Pin To Net: NetName=GND Pin=IC7-65
+Added Pin To Net: NetName=DS1085_SCL Pin=IC7-66
+Added Pin To Net: NetName=DS1085_SDA Pin=IC7-67
+Added Pin To Net: NetName=BAROMETER_SCLK Pin=IC7-70
+Added Pin To Net: NetName=BAROMETER_DIN Pin=IC7-72
+Added Pin To Net: NetName=SOSCI Pin=IC7-73
+Added Pin To Net: NetName=SOSCO Pin=IC7-74
+Added Pin To Net: NetName=GND Pin=IC7-75
+Added Pin To Net: NetName=BAROMETER_/CS Pin=IC7-76
+Added Pin To Net: NetName=USD_/CS Pin=IC7-77
+Added Pin To Net: NetName=PIC_SRAM_/CS Pin=IC7-78
+Added Pin To Net: NetName=P135 Pin=IC7-81
+Added Pin To Net: NetName=NetC30_1 Pin=IC7-85
+Added Pin To Net: NetName=VUSB Pin=IC7-86
+Added Pin To Net: NetName=FPGA_OK-OUT Pin=IC7-87
+Added Pin To Net: NetName=FPGA_OK-IN Pin=IC7-88
+Added Pin To Net: NetName=XBEE_ASSOCIATE Pin=IC7-91
+Added Pin To Net: NetName=XBEE_/DTR Pin=IC7-92
+Added Pin To Net: NetName=FPGA_D0 Pin=IC7-93
+Added Pin To Net: NetName=FPGA_D1 Pin=IC7-94
+Added Pin To Net: NetName=FPGA_D2 Pin=IC7-98
+Added Pin To Net: NetName=FPGA_D3 Pin=IC7-99
+Added Pin To Net: NetName=FPGA_D4 Pin=IC7-100
+Added Pin To Net: NetName=NCSO Pin=IC8-1
+Added Pin To Net: NetName=DATAO Pin=IC8-2
+Added Pin To Net: NetName=VUSB Pin=IC8-3
+Added Pin To Net: NetName=GND Pin=IC8-4
+Added Pin To Net: NetName=ASDO Pin=IC8-5
+Added Pin To Net: NetName=DCLK Pin=IC8-6
+Added Pin To Net: NetName=VUSB Pin=IC8-7
+Added Pin To Net: NetName=VUSB Pin=IC8-8
+Added Pin To Net: NetName=CLOCK_SYNTH_1 Pin=IC9-1
+Added Pin To Net: NetName=CLOCK_SYNTH_0 Pin=IC9-2
+Added Pin To Net: NetName=+5.0V Pin=IC9-3
+Added Pin To Net: NetName=GND Pin=IC9-4
+Added Pin To Net: NetName=IC9_10K_C Pin=IC9-5
+Added Pin To Net: NetName=IC9_10K_D Pin=IC9-6
+Added Pin To Net: NetName=DS1085_SDA Pin=IC9-7
+Added Pin To Net: NetName=DS1085_SCL Pin=IC9-8
+Added Pin To Net: NetName=VUSB Pin=J1-1
+Added Pin To Net: NetName=NetHeader3_2 Pin=J1-2
+Added Pin To Net: NetName=VUSB Pin=J2-1
+Added Pin To Net: NetName=NetHeader5_2 Pin=J2-2
+Added Pin To Net: NetName=VUSB Pin=J3-1
+Added Pin To Net: NetName=NetHeader4_2 Pin=J3-2
+Added Pin To Net: NetName=VUSB Pin=J4-1
+Added Pin To Net: NetName=NetHeader6_2 Pin=J4-2
+Added Pin To Net: NetName=IC9_10K_C Pin=J5-1
+Added Pin To Net: NetName=+5.0V Pin=J5-2
+Added Pin To Net: NetName=IC9_10K_D Pin=J6-1
+Added Pin To Net: NetName=+5.0V Pin=J6-2
+Added Pin To Net: NetName=NetLED1_2 Pin=LED1-1
+Added Pin To Net: NetName=P28 Pin=LED1-2
+Added Pin To Net: NetName=P28 Pin=LED1-3
+Added Pin To Net: NetName=NetLED1_2 Pin=LED1-4
+Added Pin To Net: NetName=NetLED2_2 Pin=LED2-1
+Added Pin To Net: NetName=P30 Pin=LED2-2
+Added Pin To Net: NetName=P30 Pin=LED2-3
+Added Pin To Net: NetName=NetLED2_2 Pin=LED2-4
+Added Pin To Net: NetName=GND Pin=LED3-1
+Added Pin To Net: NetName=NetLED3_1 Pin=LED3-2
+Added Pin To Net: NetName=+5.0V Pin=Module1-1
+Added Pin To Net: NetName=FULTRASONIC_TRIGGER Pin=Module1-2
+Added Pin To Net: NetName=FULTRASONIC_EDGE Pin=Module1-3
+Added Pin To Net: NetName=GND Pin=Module1-4
+Added Pin To Net: NetName=GND Pin=Module2-1
+Added Pin To Net: NetName=GND Pin=Module2-3
+Added Pin To Net: NetName=VUSB Pin=Module2-4
+Added Pin To Net: NetName=VUSB Pin=Module2-5
+Added Pin To Net: NetName=VUSB Pin=Module2-6
+Added Pin To Net: NetName=GPS_XRST Pin=Module2-7
+Added Pin To Net: NetName=VUSB Pin=Module2-8
+Added Pin To Net: NetName=GND Pin=Module2-9
+Added Pin To Net: NetName=GPS_XSTBY Pin=Module2-10
+Added Pin To Net: NetName=GPS_PPS Pin=Module2-13
+Added Pin To Net: NetName=GPS_RXB Pin=Module2-14
+Added Pin To Net: NetName=GPS_RXA Pin=Module2-15
+Added Pin To Net: NetName=GPS_TXA Pin=Module2-17
+Added Pin To Net: NetName=GPS_TXB Pin=Module2-18
+Added Pin To Net: NetName=USD_/CS Pin=Module3-2
+Added Pin To Net: NetName=BAROMETER_DIN Pin=Module3-3
+Added Pin To Net: NetName=VUSB Pin=Module3-4
+Added Pin To Net: NetName=BAROMETER_SCLK Pin=Module3-5
+Added Pin To Net: NetName=GND Pin=Module3-6
+Added Pin To Net: NetName=BAROMETER_DOUT Pin=Module3-7
+Added Pin To Net: NetName=VUSB Pin=Module4-1
+Added Pin To Net: NetName=PIC_UART1_RX Pin=Module4-2
+Added Pin To Net: NetName=PIC_UART1_TX Pin=Module4-3
+Added Pin To Net: NetName=XBEE_/RESET Pin=Module4-5
+Added Pin To Net: NetName=XBEE_/DTR Pin=Module4-9
+Added Pin To Net: NetName=GND Pin=Module4-10
+Added Pin To Net: NetName=PIC_UART1_/RTS Pin=Module4-12
+Added Pin To Net: NetName=XBEE_ASSOCIATE Pin=Module4-15
+Added Pin To Net: NetName=PIC_UART1_/CTS Pin=Module4-16
+Added Pin To Net: NetName=VUSB Pin=Module5-1
+Added Pin To Net: NetName=HUMIDITY_I/O Pin=Module5-2
+Added Pin To Net: NetName=GND Pin=Module5-4
+Added Pin To Net: NetName=GND Pin=Module6-1
+Added Pin To Net: NetName=GND Pin=Module6-1
+Added Pin To Net: NetName=GND Pin=Module6-1
+Added Pin To Net: NetName=GND Pin=Module6-1
+Added Pin To Net: NetName=GND Pin=Module6-1
+Added Pin To Net: NetName=GND Pin=Module6-1
+Added Pin To Net: NetName=GND Pin=Module6-1
+Added Pin To Net: NetName=USB_D+ Pin=Module6-3
+Added Pin To Net: NetName=USB_D- Pin=Module6-4
+Added Pin To Net: NetName=NetModule6_4 Pin=Module6-5
+Added Pin To Net: NetName=ACCEL_SCL Pin=R1-1
+Added Pin To Net: NetName=VUSB Pin=R1-2
+Added Pin To Net: NetName=VUSB Pin=R2-1
+Added Pin To Net: NetName=ACCEL_SDA Pin=R2-2
+Added Pin To Net: NetName=NetC6_2 Pin=R3-1
+Added Pin To Net: NetName=GND Pin=R3-2
+Added Pin To Net: NetName=CONFSWITCH_4 Pin=R4-1
+Added Pin To Net: NetName=CONFSWITCH_3 Pin=R4-2
+Added Pin To Net: NetName=CONFSWITCH_2 Pin=R4-3
+Added Pin To Net: NetName=CONFSWITCH_1 Pin=R4-4
+Added Pin To Net: NetName=GND Pin=R4-5
+Added Pin To Net: NetName=GND Pin=R4-6
+Added Pin To Net: NetName=GND Pin=R4-7
+Added Pin To Net: NetName=GND Pin=R4-8
+Added Pin To Net: NetName=CONFSWITCH_7 Pin=R5-1
+Added Pin To Net: NetName=CONFSWITCH_6 Pin=R5-2
+Added Pin To Net: NetName=CONFSWITCH_5 Pin=R5-3
+Added Pin To Net: NetName=GND Pin=R5-5
+Added Pin To Net: NetName=GND Pin=R5-6
+Added Pin To Net: NetName=GND Pin=R5-7
+Added Pin To Net: NetName=NetLED1_2 Pin=R6-1
+Added Pin To Net: NetName=GND Pin=R6-2
+Added Pin To Net: NetName=NetLED2_2 Pin=R7-1
+Added Pin To Net: NetName=GND Pin=R7-2
+Added Pin To Net: NetName=VUSB Pin=R8-1
+Added Pin To Net: NetName=GPS_XRST Pin=R8-2
+Added Pin To Net: NetName=VUSB Pin=R9-1
+Added Pin To Net: NetName=GPS_XSTBY Pin=R9-2
+Added Pin To Net: NetName=HUMIDITY_I/O Pin=R10-1
+Added Pin To Net: NetName=VUSB Pin=R10-2
+Added Pin To Net: NetName=DS1085_SCL Pin=R11-1
+Added Pin To Net: NetName=VUSB Pin=R11-2
+Added Pin To Net: NetName=DS1085_SDA Pin=R12-1
+Added Pin To Net: NetName=VUSB Pin=R12-2
+Added Pin To Net: NetName=NetModule6_4 Pin=R13-1
+Added Pin To Net: NetName=NetModule6_4 Pin=R13-2
+Added Pin To Net: NetName=GND Pin=R13-5
+Added Pin To Net: NetName=VBUS Pin=R13-6
+Added Pin To Net: NetName=NetHeader8_4 Pin=R14-1
+Added Pin To Net: NetName=ICSP_PGD Pin=R14-2
+Added Pin To Net: NetName=NetHeader8_5 Pin=R15-1
+Added Pin To Net: NetName=ICSP_PGC Pin=R15-2
+Added Pin To Net: NetName=NetC31_1 Pin=R16-1
+Added Pin To Net: NetName=VUSB Pin=R16-2
+Added Pin To Net: NetName=MCLR Pin=R17-1
+Added Pin To Net: NetName=VUSB Pin=R17-2
+Added Pin To Net: NetName=MCLR Pin=R18-1
+Added Pin To Net: NetName=ICSP_MCLR Pin=R18-2
+Added Pin To Net: NetName=SYSPOWMONITOR Pin=R19-1
+Added Pin To Net: NetName=SYS Pin=R19-2
+Added Pin To Net: NetName=GND Pin=R20-1
+Added Pin To Net: NetName=SYSPOWMONITOR Pin=R20-2
+Added Pin To Net: NetName=NetLED3_1 Pin=R21-1
+Added Pin To Net: NetName=VUSB Pin=R21-2
+Added Pin To Net: NetName=NCONFIG Pin=R27-1
+Added Pin To Net: NetName=NSTATUS Pin=R27-2
+Added Pin To Net: NetName=TMS Pin=R27-3
+Added Pin To Net: NetName=TDI Pin=R27-4
+Added Pin To Net: NetName=VUSB Pin=R27-5
+Added Pin To Net: NetName=VUSB Pin=R27-6
+Added Pin To Net: NetName=VUSB Pin=R27-7
+Added Pin To Net: NetName=VUSB Pin=R27-8
+Added Pin To Net: NetName=VUSB Pin=R28-1
+Added Pin To Net: NetName=CONF_DONE Pin=R28-2
+Added Pin To Net: NetName=+5.0V Pin=R29-1
+Added Pin To Net: NetName=+5.0V Pin=R29-2
+Added Pin To Net: NetName=GND Pin=R29-3
+Added Pin To Net: NetName=GND Pin=R29-4
+Added Pin To Net: NetName=DS1085_SCL Pin=R29-5
+Added Pin To Net: NetName=DS1085_SDA Pin=R29-6
+Added Pin To Net: NetName=IC9_10K_C Pin=R29-7
+Added Pin To Net: NetName=IC9_10K_D Pin=R29-8
+Added Pin To Net: NetName=MSEL0 Pin=R30-1
+Added Pin To Net: NetName=MSEL1 Pin=R30-2
+Added Pin To Net: NetName=NCE Pin=R30-3
+Added Pin To Net: NetName=TCK Pin=R30-4
+Added Pin To Net: NetName=GND Pin=R30-5
+Added Pin To Net: NetName=GND Pin=R30-6
+Added Pin To Net: NetName=GND Pin=R30-7
+Added Pin To Net: NetName=GND Pin=R30-8
+Added Pin To Net: NetName=+5.0V Pin=REG1-1
+Added Pin To Net: NetName=GND Pin=REG1-2
+Added Pin To Net: NetName=GND Pin=REG1-2
+Added Pin To Net: NetName=NetC40_2 Pin=REG1-3
+Added Pin To Net: NetName=NetC40_2 Pin=REG1-4
+Added Pin To Net: NetName=NetC40_2 Pin=REG1-5
+Added Pin To Net: NetName=+1.5V Pin=REG1-7
+Added Pin To Net: NetName=+2.8V Pin=REG1-8
+Added Pin To Net: NetName=SYS Pin=REG2-1
+Added Pin To Net: NetName=GND Pin=REG2-2
+Added Pin To Net: NetName=GND Pin=REG2-2
+Added Pin To Net: NetName=+5.0V Pin=REG2-3
+Added Pin To Net: NetName=+5.0V Pin=REG3-1
+Added Pin To Net: NetName=+5.0V Pin=REG3-2
+Added Pin To Net: NetName=GND Pin=REG3-3
+Added Pin To Net: NetName=GND Pin=REG3-3
+Added Pin To Net: NetName=+5.0V Pin=REG3-4
+Added Pin To Net: NetName=+1.2V Pin=REG3-5
+Added Pin To Net: NetName=SYS Pin=REG4-1
+Added Pin To Net: NetName=GND Pin=REG4-2
+Added Pin To Net: NetName=GND Pin=REG4-2
+Added Pin To Net: NetName=VUSB Pin=REG4-3
+Added Pin To Net: NetName=VUSB Pin=S1-1
+Added Pin To Net: NetName=VUSB Pin=S1-2
+Added Pin To Net: NetName=VUSB Pin=S1-3
+Added Pin To Net: NetName=VUSB Pin=S1-4
+Added Pin To Net: NetName=CONFSWITCH_4 Pin=S1-5
+Added Pin To Net: NetName=CONFSWITCH_3 Pin=S1-6
+Added Pin To Net: NetName=CONFSWITCH_2 Pin=S1-7
+Added Pin To Net: NetName=CONFSWITCH_1 Pin=S1-8
+Added Pin To Net: NetName=VUSB Pin=S2-1
+Added Pin To Net: NetName=VUSB Pin=S2-1
+Added Pin To Net: NetName=CONFSWITCH_5 Pin=S2-2
+Added Pin To Net: NetName=CONFSWITCH_5 Pin=S2-2
+Added Pin To Net: NetName=VUSB Pin=S3-1
+Added Pin To Net: NetName=VUSB Pin=S3-1
+Added Pin To Net: NetName=CONFSWITCH_6 Pin=S3-2
+Added Pin To Net: NetName=CONFSWITCH_6 Pin=S3-2
+Added Pin To Net: NetName=VUSB Pin=S4-1
+Added Pin To Net: NetName=VUSB Pin=S4-1
+Added Pin To Net: NetName=CONFSWITCH_7 Pin=S4-2
+Added Pin To Net: NetName=CONFSWITCH_7 Pin=S4-2
+Added Pin To Net: NetName=GND Pin=S5-1
+Added Pin To Net: NetName=GND Pin=S5-1
+Added Pin To Net: NetName=MCLR Pin=S5-2
+Added Pin To Net: NetName=MCLR Pin=S5-2
+Added Pin To Net: NetName=OSC2 Pin=X1-1
+Added Pin To Net: NetName=OSC1 Pin=X1-2
+Added Pin To Net: NetName=SOSCI Pin=X2-1
+Added Pin To Net: NetName=SOSCO Pin=X2-2
+Added Pin To Net: NetName=VCC Pin=X3-1
+Added Pin To Net: NetName=GND Pin=X3-2
+Added Pin To Net: NetName=25MHZ_CLOCK Pin=X3-3
+Added Pin To Net: NetName=VCC Pin=X3-4
+Added Member To Class: ClassName=FPGA_Components Member=Component C1 10uF Low-ESR Tantalum CaseA
+Added Member To Class: ClassName=FPGA_Components Member=Component C2 0.1uF SMD 1206
+Added Member To Class: ClassName=FPGA_Components Member=Component C3 4.7uF Low-ESR Tantalum CaseA
+Added Member To Class: ClassName=FPGA_Components Member=Component C4 0.1uF SMD 1206
+Added Member To Class: ClassName=FPGA_Components Member=Component C5 0.1uF SMD 1206
+Added Member To Class: ClassName=FPGA_Components Member=Component C6 470nF SMD 0603
+Added Member To Class: ClassName=FPGA_Components Member=Component C7 0.1uF SMD 1206
+Added Member To Class: ClassName=FPGA_Components Member=Component C8 0.1uF SMD 1206
+Added Member To Class: ClassName=FPGA_Components Member=Component C9 0.1uF SMD 1206
+Added Member To Class: ClassName=FPGA_Components Member=Component C10 10uF Electrolitic
+Added Member To Class: ClassName=FPGA_Components Member=Component C11 1.0uF Low-ESR Tantalum CaseA
+Added Member To Class: ClassName=Navigator_Components Member=Component C12 0.1uF SMD 1206
+Added Member To Class: ClassName=Navigator_Components Member=Component C13 0.1uF SMD 1206
+Added Member To Class: ClassName=Navigator_Components Member=Component C14 1.0uF Low-ESR Tantalum CaseA
+Added Member To Class: ClassName=Navigator_Components Member=Component C15 0.1uF SMD 1206
+Added Member To Class: ClassName=Navigator_Components Member=Component C16 1.0uF Low-ESR Tantalum CaseA
+Added Member To Class: ClassName=Navigator_Components Member=Component C17 0.1uF SMD 1206
+Added Member To Class: ClassName=Navigator_Components Member=Component C18 1.0uF Low-ESR Tantalum CaseA
+Added Member To Class: ClassName=Navigator_Components Member=Component C19 8.2pF SMD 0805
+Added Member To Class: ClassName=Navigator_Components Member=Component C20 4.7uF Low-ESR Tantalum CaseA
+Added Member To Class: ClassName=Navigator_Components Member=Component C21 0.1uF SMD 1206
+Added Member To Class: ClassName=Navigator_Components Member=Component C22 220nF SMD 0603
+Added Member To Class: ClassName=Navigator_Connectors Member=Component C23 0.1uF SMD 1206
+Added Member To Class: ClassName=Navigator_Core Member=Component C24 0.1uF SMD 1206
+Added Member To Class: ClassName=Navigator_Core Member=Component C25 0.1uF SMD 1206
+Added Member To Class: ClassName=Navigator_Core Member=Component C26 0.1uF SMD 1206
+Added Member To Class: ClassName=Navigator_Core Member=Component C27 0.1uF SMD 1206
+Added Member To Class: ClassName=Navigator_Core Member=Component C28 0.1uF SMD 1206
+Added Member To Class: ClassName=Navigator_Core Member=Component C29 0.1uF SMD 1206
+Added Member To Class: ClassName=Navigator_Core Member=Component C30 10uF Low-ESR Tantalum CaseA
+Added Member To Class: ClassName=Navigator_Core Member=Component C31 0.1uF SMD 1206
+Added Member To Class: ClassName=Navigator_Core Member=Component C32 22pF SMD 1206
+Added Member To Class: ClassName=Navigator_Core Member=Component C33 22pF SMD 1206
+Added Member To Class: ClassName=Navigator_Core Member=Component C34 22pF SMD 1206
+Added Member To Class: ClassName=Navigator_Core Member=Component C35 22pF SMD 1206
+Added Member To Class: ClassName=Power Member=Component C36 1.0uF Electrolitic
+Added Member To Class: ClassName=Power Member=Component C37 10uF Electrolitic
+Added Member To Class: ClassName=Power Member=Component C38 0.1uF Ceramic
+Added Member To Class: ClassName=Power Member=Component C39 1.0uF Low-ESR Tantalum CaseA
+Added Member To Class: ClassName=Power Member=Component C40 0.1uF SMD 1206
+Added Member To Class: ClassName=Power Member=Component C41 10uF Low-ESR Tantalum CaseA
+Added Member To Class: ClassName=Power Member=Component C42 1.0uF Low-ESR Tantalum CaseA
+Added Member To Class: ClassName=Power Member=Component C43 0.1uF SMD 1206
+Added Member To Class: ClassName=Power Member=Component C44 1.0uF Low-ESR Tantalum CaseA
+Added Member To Class: ClassName=Power Member=Component C45 1.0uF Low-ESR Tantalum CaseA
+Added Member To Class: ClassName=Power Member=Component C46 10uF Low-ESR Tantalum CaseA
+Added Member To Class: ClassName=Power Member=Component C47 10uF Low-ESR Tantalum CaseA
+Added Member To Class: ClassName=Power Member=Component C48 1.0uF Low-ESR Tantalum CaseA
+Added Member To Class: ClassName=Power Member=Component C49 0.1uF SMD 1206
+Added Member To Class: ClassName=FPGA_Clocks Member=Component C56 0.1uF SMD 1206
+Added Member To Class: ClassName=FPGA_Clocks Member=Component C57 0.1uF SMD 1206
+Added Member To Class: ClassName=FPGA_Clocks Member=Component C58 0.1uF SMD 1206
+Added Member To Class: ClassName=FPGA_Clocks Member=Component C59 0.1uF SMD 1206
+Added Member To Class: ClassName=FPGA_Clocks Member=Component C60 0.1uF SMD 1206
+Added Member To Class: ClassName=FPGA_Clocks Member=Component C61 0.1uF SMD 1206
+Added Member To Class: ClassName=FPGA_Clocks Member=Component C62 0.1uF SMD 1206
+Added Member To Class: ClassName=FPGA_Clocks Member=Component C63 0.1uF SMD 1206
+Added Member To Class: ClassName=FPGA_Clocks Member=Component C64 0.1uF SMD 1206
+Added Member To Class: ClassName=FPGA_Clocks Member=Component C65 0.1uF SMD 1206
+Added Member To Class: ClassName=FPGA_Clocks Member=Component C66 0.1uF SMD 1206
+Added Member To Class: ClassName=FPGA_Clocks Member=Component C67 0.1uF SMD 1206
+Added Member To Class: ClassName=FPGA_Clocks Member=Component C68 0.1uF SMD 1206
+Added Member To Class: ClassName=FPGA_Clocks Member=Component C69 1.0uF Low-ESR Tantalum CaseA
+Added Member To Class: ClassName=FPGA_Clocks Member=Component C70 0.1uF SMD 1206
+Added Member To Class: ClassName=FPGA_Clocks Member=Component C71 0.1uF SMD 1206
+Added Member To Class: ClassName=FPGA_Clocks Member=Component C72 0.1uF SMD 1206
+Added Member To Class: ClassName=FPGA_Clocks Member=Component C73 1.0uF Low-ESR Tantalum CaseA
+Added Member To Class: ClassName=FPGA_Clocks Member=Component C74 0.1uF SMD 1206
+Added Member To Class: ClassName=FPGA_Clocks Member=Component C75 0.1uF SMD 1206
+Added Member To Class: ClassName=FPGA_Clocks Member=Component C76 0.1uF SMD 1206
+Added Member To Class: ClassName=FPGA_Clocks Member=Component C77 1.0uF Low-ESR Tantalum CaseA
+Added Member To Class: ClassName=FPGA_Clocks Member=Component C78 0.1uF SMD 1206
+Added Member To Class: ClassName=FPGA_Clocks Member=Component C79 10nF SMD 1206
+Added Member To Class: ClassName=Power Member=Component D1 MBRS540T3G
+Added Member To Class: ClassName=Power Member=Component D2 1SMAS913BT3G
+Added Member To Class: ClassName=Power Member=Component D3 MBRS540T3G
+Added Member To Class: ClassName=Navigator_Connectors Member=Component Debug1 Header 4
+Added Member To Class: ClassName=Navigator_Connectors Member=Component Debug2 Header 3
+Added Member To Class: ClassName=Navigator_Connectors Member=Component Debug3 Header 3
+Added Member To Class: ClassName=Navigator_Connectors Member=Component Debug4 Header 4
+Added Member To Class: ClassName=Navigator_Connectors Member=Component Debug5 Header 3
+Added Member To Class: ClassName=Navigator_Connectors Member=Component Debug6 Header 3
+Added Member To Class: ClassName=FPGA_Core Member=Component FPGA1 EP2C8T144C8N
+Added Member To Class: ClassName=FPGA_Components Member=Component Header1 L3G4200D Header
+Added Member To Class: ClassName=FPGA_Components Member=Component Header2 Header 6
+Added Member To Class: ClassName=FPGA_Components Member=Component Header3 Header 3H
+Added Member To Class: ClassName=FPGA_Components Member=Component Header4 Header 3H
+Added Member To Class: ClassName=FPGA_Components Member=Component Header5 Header 3H
+Added Member To Class: ClassName=FPGA_Components Member=Component Header6 Header 3H
+Added Member To Class: ClassName=FPGA_Core Member=Component Header7 Header 20X2H
+Added Member To Class: ClassName=Navigator_Connectors Member=Component Header8 Header 6
+Added Member To Class: ClassName=Power Member=Component Header9 Battery Conn
+Added Member To Class: ClassName=Power Member=Component Header10 DC Jack
+Added Member To Class: ClassName=FPGA_Clocks Member=Component Header12 Header 5X2
+Added Member To Class: ClassName=FPGA_Clocks Member=Component Header13 Header 5X2
+Added Member To Class: ClassName=FPGA_Components Member=Component IC1 L3G4200D
+Added Member To Class: ClassName=FPGA_Components Member=Component IC2 MMA8452Q
+Added Member To Class: ClassName=FPGA_Components Member=Component IC3 S25FL128P
+Added Member To Class: ClassName=Navigator_Components Member=Component IC4 S25FL128P
+Added Member To Class: ClassName=Navigator_Components Member=Component IC5 MPL115A1
+Added Member To Class: ClassName=Navigator_Components Member=Component IC6 HMC5883L
+Added Member To Class: ClassName=Navigator_Core Member=Component IC7 PIC32MX795F512L-80I/PT
+Added Member To Class: ClassName=FPGA_Clocks Member=Component IC8 EPCS16SI8N
+Added Member To Class: ClassName=FPGA_Clocks Member=Component IC9 DS1085
+Added Member To Class: ClassName=FPGA_Components Member=Component J1 Jumper
+Added Member To Class: ClassName=FPGA_Components Member=Component J2 Jumper
+Added Member To Class: ClassName=FPGA_Components Member=Component J3 Jumper
+Added Member To Class: ClassName=FPGA_Components Member=Component J4 Jumper
+Added Member To Class: ClassName=FPGA_Clocks Member=Component J5 Jumper
+Added Member To Class: ClassName=FPGA_Clocks Member=Component J6 Jumper
+Added Member To Class: ClassName=FPGA_Components Member=Component LED1 LED PLCC-4
+Added Member To Class: ClassName=FPGA_Components Member=Component LED2 LED PLCC-4
+Added Member To Class: ClassName=Power Member=Component LED3 LED PLCC-4
+Added Member To Class: ClassName=FPGA_Components Member=Component Module1 HC-SR04 Ultrasonic Module
+Added Member To Class: ClassName=Navigator_Components Member=Component Module2 Copernicus II DIP Module
+Added Member To Class: ClassName=Navigator_Components Member=Component Module3 MicroSD Socket
+Added Member To Class: ClassName=Navigator_Components Member=Component Module4 XBee Pro S1
+Added Member To Class: ClassName=Navigator_Components Member=Component Module5 RHT03
+Added Member To Class: ClassName=Navigator_Connectors Member=Component Module6 Mini-USB
+Added Member To Class: ClassName=FPGA_Components Member=Component R1 4.7K SMD 0805
+Added Member To Class: ClassName=FPGA_Components Member=Component R2 4.7K SMD 0805
+Added Member To Class: ClassName=FPGA_Components Member=Component R3 10K SMD 0805
+Added Member To Class: ClassName=FPGA_Components Member=Component R4 Value: 10K SMD Resistor Array
+Added Member To Class: ClassName=FPGA_Components Member=Component R5 Value: 10K SMD Resistor Array
+Added Member To Class: ClassName=FPGA_Components Member=Component R6 1K SMD 0805
+Added Member To Class: ClassName=FPGA_Components Member=Component R7 1K SMD 0805
+Added Member To Class: ClassName=Navigator_Components Member=Component R8 10K SMD 0805
+Added Member To Class: ClassName=Navigator_Components Member=Component R9 10K SMD 0805
+Added Member To Class: ClassName=Navigator_Components Member=Component R10 1K SMD 0805
+Added Member To Class: ClassName=Navigator_Components Member=Component R11 2.2K SMD 0805
+Added Member To Class: ClassName=Navigator_Components Member=Component R12 2.2K SMD 0805
+Added Member To Class: ClassName=Navigator_Connectors Member=Component R13 Value: 10K SMD Resistor Array
+Added Member To Class: ClassName=Navigator_Connectors Member=Component R14 100 SMD 0805
+Added Member To Class: ClassName=Navigator_Connectors Member=Component R15 100 SMD 0805
+Added Member To Class: ClassName=Navigator_Core Member=Component R16 10 SMD 0805
+Added Member To Class: ClassName=Navigator_Core Member=Component R17 10K SMD 0805
+Added Member To Class: ClassName=Navigator_Core Member=Component R18 100 SMD 0805
+Added Member To Class: ClassName=Power Member=Component R19 3.9K Radial
+Added Member To Class: ClassName=Power Member=Component R20 1.3K Radial
+Added Member To Class: ClassName=Power Member=Component R21 1K SMD 0805
+Added Member To Class: ClassName=FPGA_Clocks Member=Component R27 Value: 10K SMD Resistor Array
+Added Member To Class: ClassName=FPGA_Clocks Member=Component R28 10K SMD 0805
+Added Member To Class: ClassName=FPGA_Clocks Member=Component R29 Value: 10K SMD Resistor Array
+Added Member To Class: ClassName=FPGA_Clocks Member=Component R30 Value: 10K SMD Resistor Array
+Added Member To Class: ClassName=Power Member=Component REG1 MIC5330-MFYML
+Added Member To Class: ClassName=Power Member=Component REG2 MIC29300-5.0WU
+Added Member To Class: ClassName=Power Member=Component REG3 MIC49300-1.2WR
+Added Member To Class: ClassName=Power Member=Component REG4 MIC29300-3.3WU
+Added Member To Class: ClassName=FPGA_Components Member=Component S1 SW-DIP4
+Added Member To Class: ClassName=FPGA_Components Member=Component S2 SMD Tactile Switch
+Added Member To Class: ClassName=FPGA_Components Member=Component S3 SMD Tactile Switch
+Added Member To Class: ClassName=FPGA_Components Member=Component S4 SMD Tactile Switch
+Added Member To Class: ClassName=Navigator_Core Member=Component S5 SMD Tactile Switch
+Added Member To Class: ClassName=Navigator_Core Member=Component X1 XT9M20ANA8M
+Added Member To Class: ClassName=Navigator_Core Member=Component X2 SSP-T6-7PF-20PPM
+Added Member To Class: ClassName=FPGA_Clocks Member=Component X3 SE2838CT-ND
+Added Room: Name=FPGA_Clocks
+Added Room: Name=FPGA_Components
+Added Room: Name=FPGA_Core
+Added Room: Name=Navigator_Components
+Added Room: Name=Navigator_Connectors
+Added Room: Name=Navigator_Core
+Added Room: Name=Power

@@ -1,0 +1,180 @@
+Added Component: Designator=C50(SMD 1206)
+Added Component: Designator=C51(SMD 1206)
+Added Component: Designator=C52(SMD 1206)
+Added Component: Designator=C53(SMD 1206)
+Added Component: Designator=C54(CAPPR2-5x5)
+Added Component: Designator=C55(Capacitor - Tantalum Case A)
+Added Component: Designator=Header11(HDR2X20H)
+Added Component: Designator=LED4(PLCC-4 LED)
+Added Component: Designator=LED5(Blue LED)
+Added Component: Designator=LED6(PLCC-4 LED)
+Added Component: Designator=LED7(Blue LED)
+Added Component: Designator=LED8(Blue LED)
+Added Component: Designator=LED9(PLCC-4 LED)
+Added Component: Designator=LED10(Blue LED)
+Added Component: Designator=LED11(PLCC-4 LED)
+Added Component: Designator=Module7(TCM8230MD Camera Module)
+Added Component: Designator=Module8(HC-SR04 Ultrasonic Ranger)
+Added Component: Designator=R22(SMD 0805)
+Added Component: Designator=R23(SMD 0805)
+Added Component: Designator=R24(SMD 0805)
+Added Component: Designator=R25(Resistor Array YC164)
+Added Component: Designator=R26(Resistor Array YC164)
+Added Pin To Net: NetName=/+1.2V Pin=Header11-2
+Added Net: Name=/+1.2V
+Added Pin To Net: NetName=/+1.5V Pin=C50-1
+Added Pin To Net: NetName=/+1.5V Pin=Header11-4
+Added Pin To Net: NetName=/+1.5V Pin=Module7-6
+Added Net: Name=/+1.5V
+Added Pin To Net: NetName=/+2.8V Pin=C51-1
+Added Pin To Net: NetName=/+2.8V Pin=C52-1
+Added Pin To Net: NetName=/+2.8V Pin=Header11-6
+Added Pin To Net: NetName=/+2.8V Pin=Module7-1
+Added Pin To Net: NetName=/+2.8V Pin=Module7-16
+Added Pin To Net: NetName=/+2.8V Pin=R23-1
+Added Pin To Net: NetName=/+2.8V Pin=R24-2
+Added Net: Name=/+2.8V
+Added Pin To Net: NetName=/+3.3V Pin=Header11-8
+Added Net: Name=/+3.3V
+Added Pin To Net: NetName=/+5.0V Pin=C53-2
+Added Pin To Net: NetName=/+5.0V Pin=C54-1
+Added Pin To Net: NetName=/+5.0V Pin=C55-1
+Added Pin To Net: NetName=/+5.0V Pin=Header11-10
+Added Pin To Net: NetName=/+5.0V Pin=Module8-1
+Added Net: Name=/+5.0V
+Added Pin To Net: NetName=/BLED_BLUE1 Pin=Header11-34
+Added Pin To Net: NetName=/BLED_BLUE1 Pin=LED5-P
+Added Net: Name=/BLED_BLUE1
+Added Pin To Net: NetName=/BLED_BLUE2 Pin=Header11-36
+Added Pin To Net: NetName=/BLED_BLUE2 Pin=LED7-P
+Added Net: Name=/BLED_BLUE2
+Added Pin To Net: NetName=/BLED_BLUE3 Pin=Header11-38
+Added Pin To Net: NetName=/BLED_BLUE3 Pin=LED8-P
+Added Net: Name=/BLED_BLUE3
+Added Pin To Net: NetName=/BLED_BLUE4 Pin=Header11-40
+Added Pin To Net: NetName=/BLED_BLUE4 Pin=LED10-P
+Added Net: Name=/BLED_BLUE4
+Added Pin To Net: NetName=/BLED_ORANGE1 Pin=Header11-26
+Added Pin To Net: NetName=/BLED_ORANGE1 Pin=LED4-2
+Added Pin To Net: NetName=/BLED_ORANGE1 Pin=LED4-3
+Added Net: Name=/BLED_ORANGE1
+Added Pin To Net: NetName=/BLED_ORANGE2 Pin=Header11-28
+Added Pin To Net: NetName=/BLED_ORANGE2 Pin=LED6-2
+Added Pin To Net: NetName=/BLED_ORANGE2 Pin=LED6-3
+Added Net: Name=/BLED_ORANGE2
+Added Pin To Net: NetName=/BLED_ORANGE3 Pin=Header11-30
+Added Pin To Net: NetName=/BLED_ORANGE3 Pin=LED9-2
+Added Pin To Net: NetName=/BLED_ORANGE3 Pin=LED9-3
+Added Net: Name=/BLED_ORANGE3
+Added Pin To Net: NetName=/BLED_ORANGE4 Pin=Header11-32
+Added Pin To Net: NetName=/BLED_ORANGE4 Pin=LED11-2
+Added Pin To Net: NetName=/BLED_ORANGE4 Pin=LED11-3
+Added Net: Name=/BLED_ORANGE4
+Added Pin To Net: NetName=/CAMERA_DCLK Pin=Header11-23
+Added Pin To Net: NetName=/CAMERA_DCLK Pin=Module7-10
+Added Net: Name=/CAMERA_DCLK
+Added Pin To Net: NetName=/CAMERA_DOUT0 Pin=Header11-25
+Added Pin To Net: NetName=/CAMERA_DOUT0 Pin=Module7-11
+Added Net: Name=/CAMERA_DOUT0
+Added Pin To Net: NetName=/CAMERA_DOUT1 Pin=Header11-27
+Added Pin To Net: NetName=/CAMERA_DOUT1 Pin=Module7-12
+Added Net: Name=/CAMERA_DOUT1
+Added Pin To Net: NetName=/CAMERA_DOUT2 Pin=Header11-29
+Added Pin To Net: NetName=/CAMERA_DOUT2 Pin=Module7-13
+Added Net: Name=/CAMERA_DOUT2
+Added Pin To Net: NetName=/CAMERA_DOUT3 Pin=Header11-31
+Added Pin To Net: NetName=/CAMERA_DOUT3 Pin=Module7-14
+Added Net: Name=/CAMERA_DOUT3
+Added Pin To Net: NetName=/CAMERA_DOUT4 Pin=Header11-33
+Added Pin To Net: NetName=/CAMERA_DOUT4 Pin=Module7-17
+Added Net: Name=/CAMERA_DOUT4
+Added Pin To Net: NetName=/CAMERA_DOUT5 Pin=Header11-35
+Added Pin To Net: NetName=/CAMERA_DOUT5 Pin=Module7-18
+Added Net: Name=/CAMERA_DOUT5
+Added Pin To Net: NetName=/CAMERA_DOUT6 Pin=Header11-37
+Added Pin To Net: NetName=/CAMERA_DOUT6 Pin=Module7-19
+Added Net: Name=/CAMERA_DOUT6
+Added Pin To Net: NetName=/CAMERA_DOUT7 Pin=Header11-39
+Added Pin To Net: NetName=/CAMERA_DOUT7 Pin=Module7-20
+Added Net: Name=/CAMERA_DOUT7
+Added Pin To Net: NetName=/CAMERA_EXTCLK Pin=Header11-17
+Added Pin To Net: NetName=/CAMERA_EXTCLK Pin=Module7-2
+Added Net: Name=/CAMERA_EXTCLK
+Added Pin To Net: NetName=/CAMERA_HD Pin=Header11-19
+Added Pin To Net: NetName=/CAMERA_HD Pin=Module7-9
+Added Net: Name=/CAMERA_HD
+Added Pin To Net: NetName=/CAMERA_RESET Pin=Header11-15
+Added Pin To Net: NetName=/CAMERA_RESET Pin=Module7-3
+Added Pin To Net: NetName=/CAMERA_RESET Pin=R22-2
+Added Net: Name=/CAMERA_RESET
+Added Pin To Net: NetName=/CAMERA_SCL Pin=Header11-11
+Added Pin To Net: NetName=/CAMERA_SCL Pin=Module7-4
+Added Pin To Net: NetName=/CAMERA_SCL Pin=R24-1
+Added Net: Name=/CAMERA_SCL
+Added Pin To Net: NetName=/CAMERA_SDA Pin=Header11-13
+Added Pin To Net: NetName=/CAMERA_SDA Pin=Module7-5
+Added Pin To Net: NetName=/CAMERA_SDA Pin=R23-2
+Added Net: Name=/CAMERA_SDA
+Added Pin To Net: NetName=/CAMERA_VD Pin=Header11-21
+Added Pin To Net: NetName=/CAMERA_VD Pin=Module7-8
+Added Net: Name=/CAMERA_VD
+Added Pin To Net: NetName=/GND Pin=C50-2
+Added Pin To Net: NetName=/GND Pin=C51-2
+Added Pin To Net: NetName=/GND Pin=C52-2
+Added Pin To Net: NetName=/GND Pin=C53-1
+Added Pin To Net: NetName=/GND Pin=C54-2
+Added Pin To Net: NetName=/GND Pin=C55-2
+Added Pin To Net: NetName=/GND Pin=Header11-1
+Added Pin To Net: NetName=/GND Pin=Header11-3
+Added Pin To Net: NetName=/GND Pin=Header11-5
+Added Pin To Net: NetName=/GND Pin=Header11-7
+Added Pin To Net: NetName=/GND Pin=Header11-9
+Added Pin To Net: NetName=/GND Pin=Module7-7
+Added Pin To Net: NetName=/GND Pin=Module7-15
+Added Pin To Net: NetName=/GND Pin=Module8-4
+Added Pin To Net: NetName=/GND Pin=R22-1
+Added Pin To Net: NetName=/GND Pin=R25-5
+Added Pin To Net: NetName=/GND Pin=R25-6
+Added Pin To Net: NetName=/GND Pin=R25-7
+Added Pin To Net: NetName=/GND Pin=R25-8
+Added Pin To Net: NetName=/GND Pin=R26-5
+Added Pin To Net: NetName=/GND Pin=R26-6
+Added Pin To Net: NetName=/GND Pin=R26-7
+Added Pin To Net: NetName=/GND Pin=R26-8
+Added Net: Name=/GND
+Added Pin To Net: NetName=/ULTRASONIC_EDGE Pin=Header11-16
+Added Pin To Net: NetName=/ULTRASONIC_EDGE Pin=Module8-3
+Added Net: Name=/ULTRASONIC_EDGE
+Added Pin To Net: NetName=/ULTRASONIC_TRIGGER Pin=Header11-14
+Added Pin To Net: NetName=/ULTRASONIC_TRIGGER Pin=Module8-2
+Added Net: Name=/ULTRASONIC_TRIGGER
+Added Pin To Net: NetName=NetLED4_2 Pin=LED4-1
+Added Pin To Net: NetName=NetLED4_2 Pin=LED4-4
+Added Pin To Net: NetName=NetLED4_2 Pin=R26-4
+Added Net: Name=NetLED4_2
+Added Pin To Net: NetName=NetLED5_2 Pin=LED5-N
+Added Pin To Net: NetName=NetLED5_2 Pin=R25-4
+Added Net: Name=NetLED5_2
+Added Pin To Net: NetName=NetLED6_2 Pin=LED6-1
+Added Pin To Net: NetName=NetLED6_2 Pin=LED6-4
+Added Pin To Net: NetName=NetLED6_2 Pin=R26-3
+Added Net: Name=NetLED6_2
+Added Pin To Net: NetName=NetLED7_2 Pin=LED7-N
+Added Pin To Net: NetName=NetLED7_2 Pin=R25-3
+Added Net: Name=NetLED7_2
+Added Pin To Net: NetName=NetLED8_2 Pin=LED8-N
+Added Pin To Net: NetName=NetLED8_2 Pin=R25-2
+Added Net: Name=NetLED8_2
+Added Pin To Net: NetName=NetLED9_2 Pin=LED9-1
+Added Pin To Net: NetName=NetLED9_2 Pin=LED9-4
+Added Pin To Net: NetName=NetLED9_2 Pin=R26-2
+Added Net: Name=NetLED9_2
+Added Pin To Net: NetName=NetLED10_2 Pin=LED10-N
+Added Pin To Net: NetName=NetLED10_2 Pin=R25-1
+Added Net: Name=NetLED10_2
+Added Pin To Net: NetName=NetLED11_2 Pin=LED11-1
+Added Pin To Net: NetName=NetLED11_2 Pin=LED11-4
+Added Pin To Net: NetName=NetLED11_2 Pin=R26-1
+Added Net: Name=NetLED11_2
+Added Class: Name=Bottom_Board
+Added Room: Name=Bottom_Board

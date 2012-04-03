@@ -1,0 +1,5 @@
+Change Component Comment: Designator=Debug2 Old Comment=Header 3 New Comment=I2C1
+Change Component Comment: Designator=Debug5 Old Comment=Header 3 New Comment=UART2
+Change Component Comment: Designator=Debug6 Old Comment=Header 3 New Comment=UART5
+Change Component Comment: Designator=Debug1 Old Comment=Header 4 New Comment=SPI1
+Change Component Comment: Designator=Debug4 Old Comment=Header 4 New Comment=SPI2

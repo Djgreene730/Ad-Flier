@@ -1,0 +1,9 @@
+Change Component Footprint: Designator=Bottom Board Old Footprint=HDR2X20 New Footprint=HDR2X20H
+Change Component Designator: OldDesignator=12V NewDesignator=H1
+Change Component Designator: OldDesignator=Battery NewDesignator=Header9
+Change Component Designator: OldDesignator=BB NewDesignator=Header13
+Change Component Designator: OldDesignator=Bottom Board NewDesignator=Header7
+Change Component Designator: OldDesignator=JEPC NewDesignator=Header12
+Added Pin To Net: NetName=VUSB Pin=X3-1
+Added Pin To Net: NetName=VUSB Pin=X3-4
+Added Room: Name=FPGA_Core

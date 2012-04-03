@@ -1,0 +1,10 @@
+Added Component: Designator=REG1(MIC5330-MFYML TR)
+Added Pin To Net: NetName=+5.0V Pin=REG1-1
+Added Pin To Net: NetName=GND Pin=REG1-2
+Added Pin To Net: NetName=GND Pin=REG1-2
+Added Pin To Net: NetName=NetC40_2 Pin=REG1-3
+Added Pin To Net: NetName=+5.0V Pin=REG1-4
+Added Pin To Net: NetName=+5.0V Pin=REG1-5
+Added Pin To Net: NetName=+1.5V Pin=REG1-7
+Added Pin To Net: NetName=+2.8V Pin=REG1-8
+Added Member To Class: ClassName=Power Member=Component REG1 MIC5330-MFYML

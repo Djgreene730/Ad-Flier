@@ -1,0 +1,14 @@
+Removed Pin From Net: NetName=GND Pin=R5-5
+Removed Pin From Net: NetName=GND Pin=R13-5
+Removed Pin From Net: NetName=VBUS Pin=R13-6
+Removed Pin From Net: NetName=DS1085_SCL Pin=R29-5
+Removed Pin From Net: NetName=DS1085_SDA Pin=R29-6
+Removed Pin From Net: NetName=IC9_10K_C Pin=R29-7
+Removed Pin From Net: NetName=IC9_10K_D Pin=R29-8
+Added Pin To Net: NetName=GND Pin=R5-8
+Added Pin To Net: NetName=VBUS Pin=R13-7
+Added Pin To Net: NetName=GND Pin=R13-8
+Added Pin To Net: NetName=IC9_10K_D Pin=R29-5
+Added Pin To Net: NetName=IC9_10K_C Pin=R29-6
+Added Pin To Net: NetName=DS1085_SDA Pin=R29-7
+Added Pin To Net: NetName=DS1085_SCL Pin=R29-8

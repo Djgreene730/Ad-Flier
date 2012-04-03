@@ -1,0 +1,8 @@
+Added Component: Designator=REG3(MIC49300-1.2WR SPACK-5)
+Added Pin To Net: NetName=+5.0V Pin=REG3-1
+Added Pin To Net: NetName=+5.0V Pin=REG3-2
+Added Pin To Net: NetName=GND Pin=REG3-3
+Added Pin To Net: NetName=GND Pin=REG3-3
+Added Pin To Net: NetName=+5.0V Pin=REG3-4
+Added Pin To Net: NetName=+1.2V Pin=REG3-5
+Added Member To Class: ClassName=Power Member=Component REG3 MIC49300-1.2WR

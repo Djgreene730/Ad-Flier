@@ -1,0 +1,19 @@
+---------------------------------------------------------------------------
+NCDrill File Report For: FlightController_Bottom.PcbDoc   3/25/2012  9:34:23 PM
+---------------------------------------------------------------------------
+
+Layer Pair : Top Layer to Bottom Layer
+ASCII RoundHoles File : FlightController_Bottom.TXT
+EIA File   : FlightController_Bottom.DRL
+
+Tool         Hole Size           Hole Type     Hole Count Plated       Tool Travel
+---------------------------------------------------------------------------
+T1        27.56mil (0.70002mm)     Round          8                6.33 Inch (160.83 mm)
+T2        29.53mil (0.75006mm)     Round          2                0.08 Inch (2.00 mm)
+T3        35.43mil (0.89992mm)     Round          40               3.90 Inch (99.06 mm)
+T4        39.37mil (1mm)           Round          45               12.59 Inch (319.81 mm)
+T5        59.06mil (1.50012mm)     Round          2                1.75 Inch (44.40 mm)
+---------------------------------------------------------------------------
+Totals                                            97               24.65 Inch (626.11 mm)
+
+Total Processing Time (hh:mm:ss) : 00:00:00

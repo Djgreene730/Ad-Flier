@@ -1,0 +1,5 @@
+Change Component Physical Designator: Old Designator=Debug3 New Designator=UART1
+Change Component Physical Designator: Old Designator=Header8 New Designator=ICSP
+Change Component Physical Designator: Old Designator=Header12 New Designator=JEPC
+Change Component Physical Designator: Old Designator=Header13 New Designator=BB
+Change Component Physical Designator: Old Designator=S5 New Designator=Reset

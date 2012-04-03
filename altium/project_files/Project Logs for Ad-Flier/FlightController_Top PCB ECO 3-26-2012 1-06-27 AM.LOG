@@ -1,0 +1,9 @@
+Change Component Designator: OldDesignator=Reset NewDesignator=S5
+Change Component Designator: OldDesignator=UART1 NewDesignator=Debug3
+Change Net Name : Old Net Name=NetHeader8_4 New Net Name=NetHeader 8_4
+Change Net Name : Old Net Name=NetHeader8_5 New Net Name=NetHeader 8_5
+Added Room: Name=FPGA_Components
+Added Room: Name=FPGA_Core
+Added Room: Name=Navigator_Components
+Added Room: Name=Navigator_Connectors
+Added Room: Name=Navigator_Core

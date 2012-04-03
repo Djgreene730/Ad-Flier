@@ -1,0 +1,4 @@
+Removed Pin From Net: NetName=NetC40_2 Pin=REG1-4
+Removed Pin From Net: NetName=NetC40_2 Pin=REG1-5
+Added Pin To Net: NetName=+5.0V Pin=REG1-4
+Added Pin To Net: NetName=+5.0V Pin=REG1-5
