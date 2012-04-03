@@ -319,7 +319,7 @@ AddNetPorts=-1
 ExportBOM=0
 TemplateFilename=
 TemplateStoreRelative=-1
-PCB_PrintColor=1
+PCB_PrintColor=2
 SCH_ShowNoErc=-1
 SCH_ShowParameter=-1
 SCH_ShowProbes=-1
@@ -332,7 +332,7 @@ SCH_ExpandPorts=0
 SCH_ExpandSheetNumber=0
 SCH_ExpandDocumentNumber=0
 SCH_HasExpandLogicalToPhysicalSheets=-1
-SaveSettingsToOutJob=-1
+SaveSettingsToOutJob=0
 
 [OutputGroup1]
 Name=Netlist Outputs
