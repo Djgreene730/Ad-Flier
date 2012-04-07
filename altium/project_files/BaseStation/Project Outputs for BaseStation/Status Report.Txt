@@ -1,13 +1,9 @@
-Output: NC Drill Files
-Type  : NC Drill
-From  : Project [BaseStation.PrjPCB]
-   Generated File[Basestation.TXT]
-   Generated File[Basestation.DRL]
-   Generated File[Basestation.LDP]
-   Generated File[Basestation.DRR]
+Output: Bill of Materials
+Type  : BOM
+From  : Variant [[No Variations]] of Project [BaseStation.PrjPCB]
 
 
-Files Generated   : 4
+Files Generated   : 0
 Documents Printed : 0
 
-Finished Output Generation At 9:42:19 PM On 4/1/2012
+Finished Output Generation At 5:54:21 PM On 4/3/2012
