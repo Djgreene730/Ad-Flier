@@ -1,0 +1,50 @@
+|BoardTest
+clk => clk_div:U_1HzPulse.clk_in
+clk => TLED_Orange_2~reg0.CLK
+Switch_1[0] => ~NO_FANOUT~
+Switch_1[1] => ~NO_FANOUT~
+Switch_1[2] => ~NO_FANOUT~
+Switch_1[3] => ~NO_FANOUT~
+Switch_2 => ~NO_FANOUT~
+Switch_3 => ~NO_FANOUT~
+Switch_4 => ~NO_FANOUT~
+PIC_Bus[0] => TLED_Orange_2~reg0.DATAIN
+PIC_Bus[1] => ~NO_FANOUT~
+PIC_Bus[2] => ~NO_FANOUT~
+PIC_Bus[3] => ~NO_FANOUT~
+PIC_Bus[4] => ~NO_FANOUT~
+PIC_Bus[5] => ~NO_FANOUT~
+PIC_Bus[6] => ~NO_FANOUT~
+PIC_Bus[7] => ~NO_FANOUT~
+PIC_A_D => ~NO_FANOUT~
+PIC_R_W => ~NO_FANOUT~
+
+
+|BoardTest|clk_div:U_1HzPulse
+clk_in => clk_out~reg0.CLK
+clk_in => cnt[0].CLK
+clk_in => cnt[1].CLK
+clk_in => cnt[2].CLK
+clk_in => cnt[3].CLK
+clk_in => cnt[4].CLK
+clk_in => cnt[5].CLK
+clk_in => cnt[6].CLK
+clk_in => cnt[7].CLK
+clk_in => cnt[8].CLK
+clk_in => cnt[9].CLK
+clk_in => cnt[10].CLK
+clk_in => cnt[11].CLK
+clk_in => cnt[12].CLK
+clk_in => cnt[13].CLK
+clk_in => cnt[14].CLK
+clk_in => cnt[15].CLK
+clk_in => cnt[16].CLK
+clk_in => cnt[17].CLK
+clk_in => cnt[18].CLK
+clk_in => cnt[19].CLK
+clk_in => cnt[20].CLK
+clk_in => cnt[21].CLK
+clk_in => cnt[22].CLK
+clk_in => cnt[23].CLK
+
+

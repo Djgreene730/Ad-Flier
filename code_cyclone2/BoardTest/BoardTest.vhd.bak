@@ -1,0 +1,41 @@
+--	=	=	=	=	=	=	=	=	=	=	=	=	=	=	=
+--	Title:		Ad-Flier BoardTest Top Level
+--	Project:		The Ad-Flier, Spring 2012
+--	Author:		David Greene
+--	=	=	=	=	=	=	=	=	=	=	=	=	=	=	=
+
+library ieee;
+use ieee.std_logic_1164.all;
+
+entity BoardTest is
+	port( 
+		clk				:	in		std_logic;
+		TLED_Orange_1	:	out	std_logic
+	);
+end BoardTest;
+
+architecture STR of BoardTest is
+
+component clk_div is
+	port( 
+		clk_in			:	in		std_logic;
+		clk_rate			:	in		integer;
+		clk_out			:	out	std_logic
+	);
+end component;
+
+begin
+	process(clk_in)
+		variable cnt : integer range 0 to 12587500;
+	begin
+		if(clk_in'event and clk_in = '1') then
+			if (cnt = clk_rate) then
+				cnt := 0;
+				clk_out <= '1';
+			else
+				cnt := cnt + 1;
+				clk_out <= '0';
+			end if;
+		end if;
+	end process;
+end STR; 

@@ -1,0 +1,77 @@
+# -------------------------------------------------------------------------- #
+#
+# Copyright (C) 1991-2011 Altera Corporation
+# Your use of Altera Corporation's design tools, logic functions 
+# and other software and tools, and its AMPP partner logic 
+# functions, and any output files from any of the foregoing 
+# (including device programming or simulation files), and any 
+# associated documentation or information are expressly subject 
+# to the terms and conditions of the Altera Program License 
+# Subscription Agreement, Altera MegaCore Function License 
+# Agreement, or other applicable license agreement, including, 
+# without limitation, that your use is for the sole purpose of 
+# programming logic devices manufactured by Altera and sold by 
+# Altera or its authorized distributors.  Please refer to the 
+# applicable agreement for further details.
+#
+# -------------------------------------------------------------------------- #
+#
+# Quartus II 32-bit
+# Version 11.1 Build 216 11/23/2011 Service Pack 1 SJ Web Edition
+# Date created = 01:56:08  April 09, 2012
+#
+# -------------------------------------------------------------------------- #
+#
+# Notes:
+#
+# 1) The default values for assignments are stored in the file:
+#		BoardTest_assignment_defaults.qdf
+#    If this file doesn't exist, see file:
+#		assignment_defaults.qdf
+#
+# 2) Altera recommends that you do not modify this file. This
+#    file is updated automatically by the Quartus II software
+#    and any changes you make may be lost or overwritten.
+#
+# -------------------------------------------------------------------------- #
+
+
+set_global_assignment -name FAMILY "Cyclone II"
+set_global_assignment -name DEVICE EP2C8T144C8
+set_global_assignment -name TOP_LEVEL_ENTITY BoardTest
+set_global_assignment -name ORIGINAL_QUARTUS_VERSION "11.1 SP1"
+set_global_assignment -name PROJECT_CREATION_TIME_DATE "01:56:08  APRIL 09, 2012"
+set_global_assignment -name LAST_QUARTUS_VERSION "11.1 SP1"
+set_global_assignment -name MIN_CORE_JUNCTION_TEMP 0
+set_global_assignment -name MAX_CORE_JUNCTION_TEMP 85
+set_global_assignment -name ERROR_CHECK_FREQUENCY_DIVISOR 1
+set_global_assignment -name EDA_SIMULATION_TOOL "ModelSim-Altera (VHDL)"
+set_global_assignment -name EDA_OUTPUT_DATA_FORMAT VHDL -section_id eda_simulation
+set_global_assignment -name VHDL_FILE clk_div.vhd
+set_global_assignment -name VHDL_FILE BoardTest.vhd
+set_global_assignment -name STRATIX_DEVICE_IO_STANDARD "3.3-V LVTTL"
+set_location_assignment PIN_17 -to clk
+set_location_assignment PIN_28 -to TLED_Orange_1
+set_location_assignment PIN_121 -to PIC_Bus[7]
+set_location_assignment PIN_120 -to PIC_Bus[6]
+set_location_assignment PIN_119 -to PIC_Bus[5]
+set_location_assignment PIN_118 -to PIC_Bus[4]
+set_location_assignment PIN_115 -to PIC_Bus[3]
+set_location_assignment PIN_114 -to PIC_Bus[2]
+set_location_assignment PIN_113 -to PIC_Bus[1]
+set_location_assignment PIN_112 -to PIC_Bus[0]
+set_location_assignment PIN_30 -to TLED_Orange_2
+set_global_assignment -name USE_CONFIGURATION_DEVICE ON
+set_global_assignment -name RESERVE_ALL_UNUSED_PINS "AS INPUT TRI-STATED"
+set_global_assignment -name PARTITION_NETLIST_TYPE SOURCE -section_id Top
+set_global_assignment -name PARTITION_FITTER_PRESERVATION_LEVEL PLACEMENT_AND_ROUTING -section_id Top
+set_global_assignment -name PARTITION_COLOR 16764057 -section_id Top
+set_location_assignment PIN_9 -to Switch_2
+set_location_assignment PIN_24 -to Switch_3
+set_location_assignment PIN_25 -to Switch_4
+set_location_assignment PIN_3 -to Switch_1[3]
+set_location_assignment PIN_4 -to Switch_1[2]
+set_location_assignment PIN_7 -to Switch_1[1]
+set_location_assignment PIN_8 -to Switch_1[0]
+set_global_assignment -name RESERVE_ALL_UNUSED_PINS_NO_OUTPUT_GND "AS INPUT TRI-STATED"
+set_instance_assignment -name PARTITION_HIERARCHY root_partition -to | -section_id Top
