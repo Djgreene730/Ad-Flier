@@ -1,0 +1,36 @@
+--	=	=	=	=	=	=	=	=	=	=	=	=	=	=	=
+--	Title:		SPI Slave Module
+--	Project:		The Ad-Flier, Spring 2012
+--	Author:		David Greene
+--	=	=	=	=	=	=	=	=	=	=	=	=	=	=	=
+
+library ieee;
+use ieee.std_logic_1164.all;
+
+entity SPI_slave is
+	port( 
+		clk				:	in		std_logic;
+		SCK				:	in		std_logic;
+		MOSI				:	in		std_logic;
+		MISO				:	out	std_logic;
+		SSEL				:	in		std_logic;
+		LED				:	out	std_logic
+	);
+end SPI_slave;
+
+architecture BHV of SPI_slave is
+begin
+	process(clk_in)
+		variable cnt : integer range 0 to 12587500;
+	begin
+		if(clk_in'event and clk_in = '1') then
+			if (cnt = 12587500) then
+				cnt := 0;
+				clk_out <= '1';
+			else
+				cnt := cnt + 1;
+				clk_out <= '0';
+			end if;
+		end if;
+	end process;
+end BHV; 
