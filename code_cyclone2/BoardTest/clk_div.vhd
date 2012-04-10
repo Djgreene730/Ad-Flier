@@ -1,6 +1,6 @@
 --	=	=	=	=	=	=	=	=	=	=	=	=	=	=	=
 --	Title:		Generic Clock Divider
---	Project:		The Ad-Flier, Spring 2012
+--	Project:	The Ad-Flier, Spring 2012
 --	Author:		David Greene
 --	=	=	=	=	=	=	=	=	=	=	=	=	=	=	=
 

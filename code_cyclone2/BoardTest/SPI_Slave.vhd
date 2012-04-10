@@ -1,136 +1,116 @@
 --	=	=	=	=	=	=	=	=	=	=	=	=	=	=	=
 --	Title:		SPI Slave Module
---	Project:		The Ad-Flier, Spring 2012
+--	Project:	The Ad-Flier, Spring 2012
 --	Author:		David Greene
 --	=	=	=	=	=	=	=	=	=	=	=	=	=	=	=
 
 library ieee;
 use ieee.std_logic_1164.all;
+use ieee.numeric_std.all;
+
 
 entity SPI_Slave is
 	port( 
-		clk				:	in		std_logic;
-		SCK				:	in		std_logic;
-		MOSI				:	in		std_logic;
-		MISO				:	out	std_logic;
-		SSEL				:	in		std_logic;
-		LED				:	out	std_logic
+		clk		:	in		std_logic;
+		SCK		:	in		std_logic;
+		MOSI	:	in		std_logic;
+		MISO	:	out		std_logic;
+		SSEL	:	in		std_logic;
+		LED		:	out		std_logic
 	);
 end SPI_Slave;
 
 architecture BHV of SPI_Slave is
-begin
 	
 	-- Signals
-	signal SCKr		:	std_logic_vector(2 downto 0);
-	signal SSELr	:	std_logic_vector(2 downto 0);
-	signal MOSIr	:	std_logic_vector(1 downto 0);
+	signal SCK_risingedge		:	std_logic 						:= '0';
+	signal SCK_fallingedge		:	std_logic 						:= '0';
+	signal SSEL_active			:	std_logic 						:= '0';
+	signal SSEL_startmessage	:	std_logic 						:= '0';
+	signal SSEL_endmessage		:	std_logic 						:= '0';
+	signal MOSI_data			:	std_logic 						:= '0';
+	signal byte_received		:	std_logic 						:= '0';
+	signal SCKr					:	std_logic_vector(2 downto 0)	:= (others => '0');
+	signal SSELr				:	std_logic_vector(2 downto 0)	:= (others => '0');
+	signal MOSIr				:	std_logic_vector(1 downto 0)	:= (others => '0');
+	signal bitcnt				:	std_logic_vector(2 downto 0)	:= (others => '0');
+	signal byte_data_received	:	std_logic_vector(7 downto 0)	:= (others => '0');
+	signal byte_data_sent		:	std_logic_vector(7 downto 0)	:= (others => '0');
+	signal cnt					:	std_logic_vector(7 downto 0)	:= (others => '0');
+
+begin
 	
-	-- Update SPI Clock
-	process (clk, SCK)
+	-- Update Registers
+	SCK_risingedge		<= '1' when SCKr(2 downto 1) = "01" else '0';		-- Detect SCK Rising Edge
+	SCK_fallingedge 	<= '1' when SCKr(2 downto 1) = "10" else '0';		-- Detect SCK Falling Edge
+	SSEL_startmessage 	<= '1' when SSELr(2 downto 1) = "10" else '0';	-- Message Starts at Falling Edge of SCK
+	SSEL_endmessage 	<= '1' when SSELr(2 downto 1) = "01" else '0';	-- Message Stops at Rising Edge of SCK
+	SSEL_active 		<= not SSELr(1);  									-- Select Line is Active Low
+	MOSI_data 			<= MOSIr(1);
+	
+	-- Update SCK Clocks and Counters
+	process(clk, SCK, SSEL, MOSI, SCKr, SSELr, MOSIr)
 	begin
 		if (clk'event and clk = '1') then
-			SCKr <= SCKr(1 downto 0) & SCK;
-			
-			if (SCKr(2 downto 1) = "01") then
-				SCK_risingedge <= '1';
+			-- Set Simple Signals
+			SCKr 	<= 	SCKr(1 downto 0) & SCK;
+			SSELr	<=	SSELr(1 downto 0) & SSEL;
+			MOSIr	<=	MOSIr(0) & MOSI;
+
+			if (bitcnt = "111") then
+				byte_received <= SSEL_active and SCK_risingedge;
 			else
-				SCK_risingedge <= '0';
+				byte_received <= '0';
 			end if;
 			
-			if (SCKr(2 downto 1) = "10") then
-				SCK_fallingedge <= '1';
+			if (byte_received = '1') then
+				LED <= byte_data_received(0);
+			end if;
+			
+			if (SSEL_startmessage = '1') then
+				cnt <= std_logic_vector(unsigned(cnt) + "00000001");
+			end if;
+			
+		end if;
+	end process;
+
+	-- Update Bit_Count & Received-Data Shift Register
+	process(clk, SSEL_active, SCK_risingedge, bitcnt, byte_data_received, MOSI_data)
+	begin
+		if (clk'event and clk = '1') then
+			if (SSEL_active = '0') then
+				bitcnt <= "000";
 			else
-				SCK_fallingedge <= '0';
+				if (SCK_risingedge = '1') then 
+					bitcnt <= std_logic_vector(unsigned(bitcnt) + "001");
+					byte_data_received <= (byte_data_received(6 downto 0) & MOSI_data);
+				end if;
 			end if;
 		end if;
 	end process;
-	
-	process (clk, SSELr, SSEL)
+
+
+	-- Update Serial Output
+	process(clk, SSEL_active, SSEL_startmessage, cnt, SCK_fallingedge, bitcnt, byte_data_sent)
 	begin
-		SSELr <= SSELr(1 downto 0) & SSEL;
-		
-		SSEL_active <= not SSELr(1);
-	
-	
+		if (clk'event and clk = '1') then
+			if (SSEL_active = '1') then
+				if (SSEL_startmessage = '1') then
+					byte_data_sent <= cnt;
+				else
+					if (SCK_fallingedge = '1') then
+						if (bitcnt = "000") then
+							byte_data_sent <= (others => '0');
+						else
+							byte_data_sent <= (byte_data_sent(6 downto 0) & '0');
+						end if;
+					end if;
+				end if;
+			end if;
+			
+			-- Output Highest Bit to Output Line
+			MISO <= byte_data_sent(7);			
+		end if;
 	end process;
- 
-
-always @(posedge clk) SSELr <= {SSELr[1:0], SSEL};
-wire SSEL_active = ~SSELr[1];  // SSEL is active low
-wire SSEL_startmessage = (SSELr[2:1]==2'b10);  // message starts at falling edge
-wire SSEL_endmessage = (SSELr[2:1]==2'b01);  // message stops at rising edge
-
-// and for MOSI
- 
-
-always @(posedge clk) MOSIr <= {MOSIr[0], MOSI};
-wire MOSI_data = MOSIr[1];
-
-
-
-
--- Receiving Data from Master
-
-// we handle SPI in 8-bits format, so we need a 3 bits counter to count the bits as they come in
-reg [2:0] bitcnt;
-
-reg byte_received;  // high when a byte has been received
-reg [7:0] byte_data_received;
-
-always @(posedge clk)
-begin
-  if(~SSEL_active)
-    bitcnt <= 3'b000;
-  else
-  if(SCK_risingedge)
-  begin
-    bitcnt <= bitcnt + 3'b001;
-
-    // implement a shift-left register (since we receive the data MSB first)
-    byte_data_received <= {byte_data_received[6:0], MOSI_data};
-  end
-end
-
-always @(posedge clk) byte_received <= SSEL_active && SCK_risingedge && (bitcnt==3'b111);
-
-// we use the LSB of the data received to control an LED
-reg LED;
-always @(posedge clk) if(byte_received) LED <= byte_data_received[0];
-
-
-
-
--- Transmission Module
-
-reg [7:0] byte_data_sent;
-
-reg [7:0] cnt;
-always @(posedge clk) if(SSEL_startmessage) cnt<=cnt+8'h1;  // count the messages
-
-always @(posedge clk)
-if(SSEL_active)
-begin
-  if(SSEL_startmessage)
-    byte_data_sent <= cnt;  // first byte sent in a message is the message count
-  else
-  if(SCK_fallingedge)
-  begin
-    if(bitcnt==3'b000)
-      byte_data_sent <= 8'h00;  // after that, we send 0s
-    else
-      byte_data_sent <= {byte_data_sent[6:0], 1'b0};
-  end
-end
-
-assign MISO = byte_data_sent[7];  // send MSB first
-// we assume that there is only one slave on the SPI bus
-// so we don't bother with a tri-state buffer for MISO
-// otherwise we would need to tri-state MISO when SSEL is inactive
-
-endmodule
-
-
-
-
+	
 end BHV; 
