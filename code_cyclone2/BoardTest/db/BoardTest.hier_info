@@ -1,6 +1,14 @@
 |BoardTest
-clk_25MHz => clk_div:U_1HzClkDivider.clk_in
-clk_25MHz => TLED_Orange_2~reg0.CLK
+clk => clk_div:U_1HzClkDivider.clk_in
+clk => BLED_Orange[0]~reg0.CLK
+clk => BLED_Orange[1]~reg0.CLK
+clk => BLED_Orange[2]~reg0.CLK
+clk => BLED_Orange[3]~reg0.CLK
+clk => BLED_Blue[0]~reg0.CLK
+clk => BLED_Blue[1]~reg0.CLK
+clk => BLED_Blue[2]~reg0.CLK
+clk => BLED_Blue[3]~reg0.CLK
+clk => SPI_Slave:U_PICSPI_Slave.clk
 clk_DS1085Z_0 => ~NO_FANOUT~
 clk_DS1085Z_1 => ~NO_FANOUT~
 Switch_1[0] => ~NO_FANOUT~
@@ -11,15 +19,15 @@ Switch_2 => ~NO_FANOUT~
 Switch_3 => ~NO_FANOUT~
 Switch_4 => ~NO_FANOUT~
 TLED_Orange_1 <= TLED_Orange_1~reg0.DB_MAX_OUTPUT_PORT_TYPE
-TLED_Orange_2 <= TLED_Orange_2~reg0.DB_MAX_OUTPUT_PORT_TYPE
-BLED_Blue[0] <= <GND>
-BLED_Blue[1] <= <GND>
-BLED_Blue[2] <= <GND>
-BLED_Blue[3] <= <GND>
-BLED_Orange[0] <= <GND>
-BLED_Orange[1] <= <GND>
-BLED_Orange[2] <= <GND>
-BLED_Orange[3] <= <GND>
+TLED_Orange_2 <= SPI_Slave:U_PICSPI_Slave.LED
+BLED_Blue[0] <= BLED_Blue[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+BLED_Blue[1] <= BLED_Blue[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+BLED_Blue[2] <= BLED_Blue[2]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+BLED_Blue[3] <= BLED_Blue[3]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+BLED_Orange[0] <= BLED_Orange[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+BLED_Orange[1] <= BLED_Orange[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+BLED_Orange[2] <= BLED_Orange[2]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+BLED_Orange[3] <= BLED_Orange[3]~reg0.DB_MAX_OUTPUT_PORT_TYPE
 PIC_PBUS_Data[0] <> PIC_PBUS_Data[0]
 PIC_PBUS_Data[1] <> PIC_PBUS_Data[1]
 PIC_PBUS_Data[2] <> PIC_PBUS_Data[2]
@@ -32,10 +40,10 @@ PIC_PBUS_A_D => ~NO_FANOUT~
 PIC_PBUS_R_W => ~NO_FANOUT~
 PIC_PBUS_OK_IN => ~NO_FANOUT~
 PIC_PBUS_OK_OUT <= <GND>
-PIC_SPI_SCLK => ~NO_FANOUT~
-PIC_SPI_MOSI => ~NO_FANOUT~
-PIC_SPI_MISO <= <GND>
-PIC_SPI_Select => ~NO_FANOUT~
+PIC_SPI_SCLK => SPI_Slave:U_PICSPI_Slave.SCK
+PIC_SPI_MOSI => SPI_Slave:U_PICSPI_Slave.MOSI
+PIC_SPI_MISO <= SPI_Slave:U_PICSPI_Slave.MISO
+PIC_SPI_Select => SPI_Slave:U_PICSPI_Slave.SSEL
 Ultra_T_Trigger <= <GND>
 Ultra_T_Edge => ~NO_FANOUT~
 Ultra_B_Trigger <= <GND>
@@ -101,5 +109,44 @@ clk_in => cnt[21].CLK
 clk_in => cnt[22].CLK
 clk_in => cnt[23].CLK
 clk_out <= clk_out~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|BoardTest|SPI_Slave:U_PICSPI_Slave
+clk => MISO~reg0.CLK
+clk => byte_data_sent[0].CLK
+clk => byte_data_sent[1].CLK
+clk => byte_data_sent[2].CLK
+clk => byte_data_sent[3].CLK
+clk => byte_data_sent[4].CLK
+clk => byte_data_sent[5].CLK
+clk => byte_data_sent[6].CLK
+clk => byte_data_sent[7].CLK
+clk => byte_data_received[0].CLK
+clk => bitcnt[0].CLK
+clk => bitcnt[1].CLK
+clk => bitcnt[2].CLK
+clk => cnt[0].CLK
+clk => cnt[1].CLK
+clk => cnt[2].CLK
+clk => cnt[3].CLK
+clk => cnt[4].CLK
+clk => cnt[5].CLK
+clk => cnt[6].CLK
+clk => cnt[7].CLK
+clk => LED~reg0.CLK
+clk => byte_received.CLK
+clk => MOSIr[0].CLK
+clk => MOSIr[1].CLK
+clk => SSELr[0].CLK
+clk => SSELr[1].CLK
+clk => SSELr[2].CLK
+clk => SCKr[0].CLK
+clk => SCKr[1].CLK
+clk => SCKr[2].CLK
+SCK => SCKr[0].DATAIN
+MOSI => MOSIr[0].DATAIN
+MISO <= MISO~reg0.DB_MAX_OUTPUT_PORT_TYPE
+SSEL => SSELr[0].DATAIN
+LED <= LED~reg0.DB_MAX_OUTPUT_PORT_TYPE
 
 

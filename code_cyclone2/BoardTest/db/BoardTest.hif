@@ -43,6 +43,9 @@ ON
 AUTO_ROM_RECOGNITION
 ON
 }
+# hierarchies {
+SPI_Slave:U_PICSPI_Slave
+}
 # lmf
 |altera|91sp2|quartus|lmf|maxplus2.lmf
 a36c8ec425c8a2589af98b2d4daabc3
@@ -100,7 +103,7 @@ ON
 # case_insensitive
 # source_file
 boardtest.vhd
-d0f8627a2f25e6871846219ebfda7ac4
+9476247d34f21552ad9d3e98a36db
 5
 # internal_option {
 HDL_INITIAL_FANOUT_LIMIT
