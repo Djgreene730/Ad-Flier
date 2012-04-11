@@ -10,24 +10,75 @@ use ieee.std_logic_1164.all;
 entity BoardTest is
 	port( 
 		-- FPGA Clocks
-		clk_25MHz			:	in		std_logic;
-		clk_DS1085Z_0		:	in		std_logic;
-		clk_DS1085Z_1		:	in		std_logic;
+		clk_25MHz			:	in		std_logic;						-- 25.175MHz Oscillator
+		clk_DS1085Z_0		:	in		std_logic;						-- DS1085Z Output 0
+		clk_DS1085Z_1		:	in		std_logic;						-- DS1085Z Output 1
 		
 		-- Board Switches & Lights
-		TLED_Orange_1		:	out		std_logic;
-		TLED_Orange_2		:	out		std_logic;
-		Switch_1			:	in		std_logic_vector(3 downto 0);
-		Switch_2			:	in		std_logic;
-		Switch_3			:	in		std_logic;
-		Switch_4			:	in		std_logic;
+		Switch_1			:	in		std_logic_vector(3 downto 0);	-- DIP Switch Bank
+		Switch_2			:	in		std_logic;						-- Push-Buttom 1
+		Switch_3			:	in		std_logic;						-- Push-Button 2
+		Switch_4			:	in		std_logic;						-- Push-Button 3
+		TLED_Orange_1		:	out		std_logic;						-- Top Board Indicator 1
+		TLED_Orange_2		:	out		std_logic;						-- Top Board Indicator 2
+		
+		-- Bottom Board Lights
+		BLED_Blue			:	out		std_logic_vector(3 downto 0);			-- Bottom Blue Lights
+		BLED_Orange			:	out		std_logic_vector(3 downto 0);			-- Bottom Orange Lights
 		
 		-- PIC & FPGA Bi-Directional 8-Bit Parallel Port
-		PICBUS_Bus			:	inout	std_logic_vector(7 downto 0);
-		PICBUS_A_D			:	in		std_logic;
-		PICBUS_R_W			:	in		std_logic;
-		PICBUS_OK_IN		:	in		std_logic;
-		PICBUS_OK_OUT		:	out		std_logic
+		PIC_PBUS_Data		:	inout	std_logic_vector(7 downto 0);	-- Bi-Directional Data Bus
+		PIC_PBUS_A_D		:	in		std_logic;						-- High=Addr / Low=Data
+		PIC_PBUS_R_W		:	in		std_logic;						-- High=Read / Low=Write
+		PIC_PBUS_OK_IN		:	in		std_logic;						-- Data Bus GOOD from PIC
+		PIC_PBUS_OK_OUT		:	out		std_logic;						-- Data Bus GOOD to PIC
+		
+		-- PIC & FPGA SPI Bus
+		PIC_SPI_SCLK		:	in		std_logic;						-- PIC Controlled Serial Clock
+		PIC_SPI_MOSI		:	in		std_logic;						-- Serial Input from PIC
+		PIC_SPI_MISO		:	out		std_logic;						-- Serial Output to PIC
+		PIC_SPI_Select		:	in		std_logic;						-- Active-High Select Line
+		
+		-- Ultrasonic Modules (Top & Bottom)
+		Ultra_T_Trigger		:	out		std_logic;						-- Top Module
+		Ultra_T_Edge		:	in		std_logic;
+		Ultra_B_Trigger		:	out		std_logic;						-- Bottom Module
+		Ultra_B_Edge		:	in		std_logic;
+		
+		-- PWM Motor Outputs
+		Motor_North			:	out		std_logic;						-- North-Facing Motor
+		Motor_East			:	out		std_logic;						-- East-Facing Motor
+		Motor_South			:	out		std_logic;						-- South-Facing Motor
+		Motor_West			:	out		std_logic;						-- West-Facing Motor
+		
+		-- Camera Module (Bottom Board)
+		Camera_SCL			:	out		std_logic;						-- Camera I2C Clock
+		Camera_SDA			:	inout	std_logic;						-- Camera I2C Data Line
+		Camera_RESET		:	out		std_logic;						-- Camera Active-High Reset
+		Camera_EXTCLK		:	out		std_logic;						-- External Clock Input (25MHz)
+		Camera_HD			:	in		std_logic;						-- Horizontal Sync
+		Camera_VD			:	in		std_logic;						-- Vertical Sync
+		Camera_DCLK			:	in		std_logic;						-- Output Data Bus Clock
+		Camera_DOUT			:	in		std_logic_vector(7 downto 0);	-- Output Data Bus
+		
+		-- FPGA Modules SPI Bus
+		FPGA_SPI_Clock		:	out		std_logic;						-- SPI Clock Output
+		FPGA_SPI_MISO		:	in		std_logic;						-- SPI Serial Input
+		FPGA_SPI_MOSI		:	out		std_logic;						-- SPI Serial Output
+		
+		-- FPGA Modules I2C Bus
+		FPGA_I2C_Clock		:	out		std_logic;						-- I2C Clock Output
+		FPGA_I2C_Data		:	inout	std_logic;						-- I2C Data Line
+		
+		-- Module Control Lines
+		Gyro_ChipSelect		:	out		std_logic;						-- Gyroscope SPI Chip Select (Active-Low)
+		Gyro_DataReady		:	in		std_logic;						-- Gyroscope Data Ready Interrupt
+		Gyro_Interrupt		:	in		std_logic;						-- Gyroscope Programmable Interrupt
+		SRAM_ChipSelect		:	out		std_logic;						-- Flash SRAM SPI Chip Select
+		SRAM_WriteProtect	:	out		std_logic;						-- Flash SRAM Write Protect (Active-Low)
+		Accel_Interrupt1	:	in		std_logic;						-- Accelerometer Programmable Interrupt 1
+		Accel_Interrupt2	:	in		std_logic;						-- Accelerometer Programmable Interrupt 2
+		Accel_SelAddr0		:	out		std_logic						-- Accelerometer I2C Device Address (0:0x1C, 1:0x1D)
 	);
 end BoardTest;
 
@@ -35,21 +86,24 @@ architecture STR of BoardTest is
 
 	-- Generic Clock Divider Component
 	component clk_div is
+		generic (
+			width			:	integer	:= 12587500
+		);
 		port( 
 			clk_in			:	in		std_logic;
-			clk_out			:	out	std_logic
+			clk_out			:	out		std_logic
 		);
 	end component;
 	
 	-- Serial Peripheral Interface Slave Front-End
 	component SPI_Slave is
 		port( 
-			clk		:	in		std_logic;
-			SCK		:	in		std_logic;
-			MOSI	:	in		std_logic;
-			MISO	:	out		std_logic;
-			SSEL	:	in		std_logic;
-			LED		:	out		std_logic
+			clk				:	in		std_logic;
+			SCK				:	in		std_logic;
+			MOSI			:	in		std_logic;
+			MISO			:	out		std_logic;
+			SSEL			:	in		std_logic;
+			LED				:	out		std_logic
 		);
 	end component;
 	
@@ -58,8 +112,36 @@ architecture STR of BoardTest is
 
 begin
 
-	-- Instantiate Clock Divider
-	U_1HzClkDivider			:	clk_div port map (clk_25MHz, clk_1Hz);
+	-- Instantiations:
+	U_1HzClkDivider			:	clk_div generic map (12587500) port map (clk_25MHz, clk_1Hz);
+	
+	-- Setup: Bi-Directional Ports to High Impedance
+	PIC_PBUS_Data			<= (others => 'Z');
+	Camera_SDA				<= 'Z';
+	FPGA_I2C_Data			<= 'Z';
+	
+	-- Setup: Define Initial Condition for Ports
+	BLED_Blue				<= (others => '0');
+	BLED_Orange				<= (others => '0');
+	PIC_PBUS_OK_OUT			<= '0';
+	PIC_SPI_MISO			<= '0';
+	Ultra_T_Trigger			<= '0';
+	Ultra_B_Trigger			<= '0';
+	Motor_North				<= '0';
+	Motor_East				<= '0';
+	Motor_South				<= '0';
+	Motor_West				<= '0';
+	Camera_SCL				<= '0';
+	Camera_RESET			<= '0';
+	Camera_EXTCLK			<= '0';
+	FPGA_SPI_Clock			<= '0';
+	FPGA_SPI_MOSI			<= '0';
+	FPGA_I2C_Clock			<= '0';
+	Gyro_ChipSelect			<= '1';
+	SRAM_ChipSelect			<= '1';
+	SRAM_WriteProtect		<= '0';
+	Accel_SelAddr0			<= '0';	 
+	
 	
 	-- Test 1:
 	-- A.) Toggle TLED_Orange_1 every clk_1Hz Pulse	
@@ -75,12 +157,12 @@ begin
 	-- Test 2:
 	-- A.) Tie PICBUS_BUS to TLED_Orange_2
 	-- B.) Check every clk_25MHz clock pulse
-	process (clk_25MHz, PICBUS_Bus(0))
+	process (clk_25MHz, PIC_PBUS_Data(0))
 	begin
 		if (clk_25MHz'event and clk_25MHz = '1') then
 			TLED_Orange_2 <= '0';	
 			
-			if (PICBUS_Bus(0) = '1') then
+			if (PIC_PBUS_Data(0) = '1') then
 				TLED_Orange_2 <= '1';
 			end if;
 		end if;

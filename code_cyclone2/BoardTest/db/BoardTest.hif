@@ -43,6 +43,75 @@ ON
 AUTO_ROM_RECOGNITION
 ON
 }
+# lmf
+|altera|91sp2|quartus|lmf|maxplus2.lmf
+a36c8ec425c8a2589af98b2d4daabc3
+# macro_sequence
+
+# end
+# entity
+clk_div
+# storage
+db|BoardTest.(1).cnf
+db|BoardTest.(1).cnf
+# logic_option {
+AUTO_RAM_RECOGNITION
+ON
+}
+# case_insensitive
+# source_file
+clk_div.vhd
+f5d118cae16c4225de7a4c5a91d3ec7
+5
+# internal_option {
+HDL_INITIAL_FANOUT_LIMIT
+OFF
+AUTO_RESOURCE_SHARING
+OFF
+AUTO_RAM_RECOGNITION
+ON
+AUTO_ROM_RECOGNITION
+ON
+}
+# user_parameter {
+width
+12587500
+PARAMETER_SIGNED_DEC
+DEF
+}
+# hierarchies {
+clk_div:U_1HzClkDivider
+}
+# lmf
+|altera|91sp2|quartus|lmf|maxplus2.lmf
+a36c8ec425c8a2589af98b2d4daabc3
+# macro_sequence
+
+# end
+# entity
+BoardTest
+# storage
+db|BoardTest.(2).cnf
+db|BoardTest.(2).cnf
+# logic_option {
+AUTO_RAM_RECOGNITION
+ON
+}
+# case_insensitive
+# source_file
+boardtest.vhd
+d0f8627a2f25e6871846219ebfda7ac4
+5
+# internal_option {
+HDL_INITIAL_FANOUT_LIMIT
+OFF
+AUTO_RESOURCE_SHARING
+OFF
+AUTO_RAM_RECOGNITION
+ON
+AUTO_ROM_RECOGNITION
+ON
+}
 # hierarchies {
 |
 }

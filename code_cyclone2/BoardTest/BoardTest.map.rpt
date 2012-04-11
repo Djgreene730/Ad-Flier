@@ -1,5 +1,5 @@
 Analysis & Synthesis report for BoardTest
-Mon Apr 09 20:51:15 2012
+Tue Apr 10 23:15:47 2012
 Quartus II Version 9.1 Build 350 03/24/2010 Service Pack 2 SJ Web Edition
 
 
@@ -14,7 +14,7 @@ Quartus II Version 9.1 Build 350 03/24/2010 Service Pack 2 SJ Web Edition
   6. Analysis & Synthesis Resource Usage Summary
   7. Analysis & Synthesis Resource Utilization by Entity
   8. General Register Statistics
-  9. Multiplexer Restructuring Statistics (Restructuring Performed)
+  9. Parameter Settings for User Entity Instance: clk_div:U_1HzClkDivider
  10. Analysis & Synthesis Messages
 
 
@@ -41,16 +41,16 @@ applicable agreement for further details.
 +-----------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                      ;
 +------------------------------------+----------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Mon Apr 09 20:51:15 2012        ;
+; Analysis & Synthesis Status        ; Successful - Tue Apr 10 23:15:47 2012        ;
 ; Quartus II Version                 ; 9.1 Build 350 03/24/2010 SP 2 SJ Web Edition ;
 ; Revision Name                      ; BoardTest                                    ;
-; Top-level Entity Name              ; SPI_Slave                                    ;
+; Top-level Entity Name              ; BoardTest                                    ;
 ; Family                             ; Cyclone II                                   ;
-; Total logic elements               ; 38                                           ;
-;     Total combinational functions  ; 29                                           ;
-;     Dedicated logic registers      ; 31                                           ;
-; Total registers                    ; 31                                           ;
-; Total pins                         ; 6                                            ;
+; Total logic elements               ; 45                                           ;
+;     Total combinational functions  ; 44                                           ;
+;     Dedicated logic registers      ; 28                                           ;
+; Total registers                    ; 28                                           ;
+; Total pins                         ; 72                                           ;
 ; Total virtual pins                 ; 0                                            ;
 ; Total memory bits                  ; 0                                            ;
 ; Embedded Multiplier 9-bit elements ; 0                                            ;
@@ -64,7 +64,7 @@ applicable agreement for further details.
 ; Option                                                                     ; Setting            ; Default Value      ;
 +----------------------------------------------------------------------------+--------------------+--------------------+
 ; Device                                                                     ; EP2C8T144C8        ;                    ;
-; Top-level entity name                                                      ; SPI_Slave          ; BoardTest          ;
+; Top-level entity name                                                      ; BoardTest          ; BoardTest          ;
 ; Family name                                                                ; Cyclone II         ; Stratix II         ;
 ; Use smart compilation                                                      ; Off                ; Off                ;
 ; Enable parallel Assembler and TimeQuest Timing Analyzer during compilation ; On                 ; On                 ;
@@ -152,46 +152,48 @@ Parallel compilation was disabled, but you have multiple processors available. E
 +----------------------------------+-----------------+-----------------+-----------------------------------------------------------------------+
 ; File Name with User-Entered Path ; Used in Netlist ; File Type       ; File Name with Absolute Path                                          ;
 +----------------------------------+-----------------+-----------------+-----------------------------------------------------------------------+
-; SPI_Slave.vhd                    ; yes             ; User VHDL File  ; C:/Users/David/Desktop/Ad-Flier/code_cyclone2/BoardTest/SPI_Slave.vhd ;
+; clk_div.vhd                      ; yes             ; User VHDL File  ; C:/Users/David/Desktop/Ad-Flier/code_cyclone2/BoardTest/clk_div.vhd   ;
+; BoardTest.vhd                    ; yes             ; User VHDL File  ; C:/Users/David/Desktop/Ad-Flier/code_cyclone2/BoardTest/BoardTest.vhd ;
 +----------------------------------+-----------------+-----------------+-----------------------------------------------------------------------+
 
 
-+-----------------------------------------------------+
-; Analysis & Synthesis Resource Usage Summary         ;
-+---------------------------------------------+-------+
-; Resource                                    ; Usage ;
-+---------------------------------------------+-------+
-; Estimated Total logic elements              ; 38    ;
-;                                             ;       ;
-; Total combinational functions               ; 29    ;
-; Logic element usage by number of LUT inputs ;       ;
-;     -- 4 input functions                    ; 14    ;
-;     -- 3 input functions                    ; 8     ;
-;     -- <=2 input functions                  ; 7     ;
-;                                             ;       ;
-; Logic elements by mode                      ;       ;
-;     -- normal mode                          ; 23    ;
-;     -- arithmetic mode                      ; 6     ;
-;                                             ;       ;
-; Total registers                             ; 31    ;
-;     -- Dedicated logic registers            ; 31    ;
-;     -- I/O registers                        ; 0     ;
-;                                             ;       ;
-; I/O pins                                    ; 6     ;
-; Maximum fan-out node                        ; clk   ;
-; Maximum fan-out                             ; 31    ;
-; Total fan-out                               ; 171   ;
-; Average fan-out                             ; 2.59  ;
-+---------------------------------------------+-------+
++---------------------------------------------------------+
+; Analysis & Synthesis Resource Usage Summary             ;
++---------------------------------------------+-----------+
+; Resource                                    ; Usage     ;
++---------------------------------------------+-----------+
+; Estimated Total logic elements              ; 45        ;
+;                                             ;           ;
+; Total combinational functions               ; 44        ;
+; Logic element usage by number of LUT inputs ;           ;
+;     -- 4 input functions                    ; 17        ;
+;     -- 3 input functions                    ; 1         ;
+;     -- <=2 input functions                  ; 26        ;
+;                                             ;           ;
+; Logic elements by mode                      ;           ;
+;     -- normal mode                          ; 21        ;
+;     -- arithmetic mode                      ; 23        ;
+;                                             ;           ;
+; Total registers                             ; 28        ;
+;     -- Dedicated logic registers            ; 28        ;
+;     -- I/O registers                        ; 0         ;
+;                                             ;           ;
+; I/O pins                                    ; 72        ;
+; Maximum fan-out node                        ; clk_25MHz ;
+; Maximum fan-out                             ; 26        ;
+; Total fan-out                               ; 178       ;
+; Average fan-out                             ; 1.24      ;
++---------------------------------------------+-----------+
 
 
-+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Resource Utilization by Entity                                                                                                                         ;
-+----------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+---------------------+--------------+
-; Compilation Hierarchy Node ; LC Combinationals ; LC Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name ; Library Name ;
-+----------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+---------------------+--------------+
-; |SPI_Slave                 ; 29 (29)           ; 31 (31)      ; 0           ; 0            ; 0       ; 0         ; 6    ; 0            ; |SPI_Slave          ; work         ;
-+----------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+---------------------+--------------+
++----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                          ;
++------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+------------------------------------+--------------+
+; Compilation Hierarchy Node   ; LC Combinationals ; LC Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name                ; Library Name ;
++------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+------------------------------------+--------------+
+; |BoardTest                   ; 44 (2)            ; 28 (3)       ; 0           ; 0            ; 0       ; 0         ; 72   ; 0            ; |BoardTest                         ; work         ;
+;    |clk_div:U_1HzClkDivider| ; 42 (42)           ; 25 (25)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |BoardTest|clk_div:U_1HzClkDivider ;              ;
++------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+------------------------------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
 
 
@@ -200,23 +202,24 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +----------------------------------------------+-------+
 ; Statistic                                    ; Value ;
 +----------------------------------------------+-------+
-; Total registers                              ; 31    ;
+; Total registers                              ; 28    ;
 ; Number of registers using Synchronous Clear  ; 0     ;
 ; Number of registers using Synchronous Load   ; 0     ;
 ; Number of registers using Asynchronous Clear ; 0     ;
 ; Number of registers using Asynchronous Load  ; 0     ;
-; Number of registers using Clock Enable       ; 14    ;
+; Number of registers using Clock Enable       ; 0     ;
 ; Number of registers using Preset             ; 0     ;
 +----------------------------------------------+-------+
 
 
-+--------------------------------------------------------------------------------------------------------------------------------------------+
-; Multiplexer Restructuring Statistics (Restructuring Performed)                                                                             ;
-+--------------------+-----------+---------------+----------------------+------------------------+------------+------------------------------+
-; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered ; Example Multiplexer Output   ;
-+--------------------+-----------+---------------+----------------------+------------------------+------------+------------------------------+
-; 4:1                ; 7 bits    ; 14 LEs        ; 14 LEs               ; 0 LEs                  ; Yes        ; |SPI_Slave|byte_data_sent[7] ;
-+--------------------+-----------+---------------+----------------------+------------------------+------------+------------------------------+
++----------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: clk_div:U_1HzClkDivider ;
++----------------+----------+------------------------------------------+
+; Parameter Name ; Value    ; Type                                     ;
++----------------+----------+------------------------------------------+
+; width          ; 12587500 ; Signed Integer                           ;
++----------------+----------+------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings Tables in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
 
 +-------------------------------+
@@ -225,7 +228,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 Info: *******************************************************************
 Info: Running Quartus II Analysis & Synthesis
     Info: Version 9.1 Build 350 03/24/2010 Service Pack 2 SJ Web Edition
-    Info: Processing started: Mon Apr 09 20:51:14 2012
+    Info: Processing started: Tue Apr 10 23:15:45 2012
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off BoardTest -c BoardTest
 Info: Found 2 design units, including 1 entities, in source file clk_div.vhd
     Info: Found design unit 1: clk_div-BHV
@@ -236,19 +239,81 @@ Info: Found 2 design units, including 1 entities, in source file boardtest.vhd
 Info: Found 2 design units, including 1 entities, in source file spi_slave.vhd
     Info: Found design unit 1: SPI_Slave-BHV
     Info: Found entity 1: SPI_Slave
-Info: Elaborating entity "SPI_Slave" for the top level hierarchy
-Warning (10036): Verilog HDL or VHDL warning at SPI_Slave.vhd(30): object "SSEL_endmessage" assigned a value but never read
-Warning: Ignored assignments for entity "BoardTest" -- entity does not exist in design
-    Warning: Assignment for entity set_global_assignment -name LL_ROOT_REGION ON -entity BoardTest -section_id "Root Region" was ignored
-    Warning: Assignment for entity set_global_assignment -name LL_MEMBER_STATE LOCKED -entity BoardTest -section_id "Root Region" was ignored
-Info: Implemented 44 device resources after synthesis - the final resource count might be different
-    Info: Implemented 4 input pins
-    Info: Implemented 2 output pins
-    Info: Implemented 38 logic cells
-Info: Quartus II Analysis & Synthesis was successful. 0 errors, 4 warnings
-    Info: Peak virtual memory: 233 megabytes
-    Info: Processing ended: Mon Apr 09 20:51:15 2012
-    Info: Elapsed time: 00:00:01
-    Info: Total CPU time (on all processors): 00:00:01
+Info: Elaborating entity "BoardTest" for the top level hierarchy
+Info: Elaborating entity "clk_div" for hierarchy "clk_div:U_1HzClkDivider"
+Warning: Output pins are stuck at VCC or GND
+    Warning (13410): Pin "BLED_Blue[0]" is stuck at GND
+    Warning (13410): Pin "BLED_Blue[1]" is stuck at GND
+    Warning (13410): Pin "BLED_Blue[2]" is stuck at GND
+    Warning (13410): Pin "BLED_Blue[3]" is stuck at GND
+    Warning (13410): Pin "BLED_Orange[0]" is stuck at GND
+    Warning (13410): Pin "BLED_Orange[1]" is stuck at GND
+    Warning (13410): Pin "BLED_Orange[2]" is stuck at GND
+    Warning (13410): Pin "BLED_Orange[3]" is stuck at GND
+    Warning (13410): Pin "PIC_PBUS_OK_OUT" is stuck at GND
+    Warning (13410): Pin "PIC_SPI_MISO" is stuck at GND
+    Warning (13410): Pin "Ultra_T_Trigger" is stuck at GND
+    Warning (13410): Pin "Ultra_B_Trigger" is stuck at GND
+    Warning (13410): Pin "Motor_North" is stuck at GND
+    Warning (13410): Pin "Motor_East" is stuck at GND
+    Warning (13410): Pin "Motor_South" is stuck at GND
+    Warning (13410): Pin "Motor_West" is stuck at GND
+    Warning (13410): Pin "Camera_SCL" is stuck at GND
+    Warning (13410): Pin "Camera_RESET" is stuck at GND
+    Warning (13410): Pin "Camera_EXTCLK" is stuck at GND
+    Warning (13410): Pin "FPGA_SPI_Clock" is stuck at GND
+    Warning (13410): Pin "FPGA_SPI_MOSI" is stuck at GND
+    Warning (13410): Pin "FPGA_I2C_Clock" is stuck at GND
+    Warning (13410): Pin "Gyro_ChipSelect" is stuck at VCC
+    Warning (13410): Pin "SRAM_ChipSelect" is stuck at VCC
+    Warning (13410): Pin "SRAM_WriteProtect" is stuck at GND
+    Warning (13410): Pin "Accel_SelAddr0" is stuck at GND
+Warning: Ignored assignments for entity "SPI_Slave" -- entity does not exist in design
+    Warning: Assignment for entity set_global_assignment -name LL_ROOT_REGION ON -entity SPI_Slave -section_id "Root Region" was ignored
+    Warning: Assignment for entity set_global_assignment -name LL_MEMBER_STATE LOCKED -entity SPI_Slave -section_id "Root Region" was ignored
+Warning: Design contains 33 input pin(s) that do not drive logic
+    Warning (15610): No output dependent on input pin "clk_DS1085Z_0"
+    Warning (15610): No output dependent on input pin "clk_DS1085Z_1"
+    Warning (15610): No output dependent on input pin "Switch_1[0]"
+    Warning (15610): No output dependent on input pin "Switch_1[1]"
+    Warning (15610): No output dependent on input pin "Switch_1[2]"
+    Warning (15610): No output dependent on input pin "Switch_1[3]"
+    Warning (15610): No output dependent on input pin "Switch_2"
+    Warning (15610): No output dependent on input pin "Switch_3"
+    Warning (15610): No output dependent on input pin "Switch_4"
+    Warning (15610): No output dependent on input pin "PIC_PBUS_A_D"
+    Warning (15610): No output dependent on input pin "PIC_PBUS_R_W"
+    Warning (15610): No output dependent on input pin "PIC_PBUS_OK_IN"
+    Warning (15610): No output dependent on input pin "PIC_SPI_SCLK"
+    Warning (15610): No output dependent on input pin "PIC_SPI_MOSI"
+    Warning (15610): No output dependent on input pin "PIC_SPI_Select"
+    Warning (15610): No output dependent on input pin "Ultra_T_Edge"
+    Warning (15610): No output dependent on input pin "Ultra_B_Edge"
+    Warning (15610): No output dependent on input pin "Camera_HD"
+    Warning (15610): No output dependent on input pin "Camera_VD"
+    Warning (15610): No output dependent on input pin "Camera_DCLK"
+    Warning (15610): No output dependent on input pin "Camera_DOUT[0]"
+    Warning (15610): No output dependent on input pin "Camera_DOUT[1]"
+    Warning (15610): No output dependent on input pin "Camera_DOUT[2]"
+    Warning (15610): No output dependent on input pin "Camera_DOUT[3]"
+    Warning (15610): No output dependent on input pin "Camera_DOUT[4]"
+    Warning (15610): No output dependent on input pin "Camera_DOUT[5]"
+    Warning (15610): No output dependent on input pin "Camera_DOUT[6]"
+    Warning (15610): No output dependent on input pin "Camera_DOUT[7]"
+    Warning (15610): No output dependent on input pin "FPGA_SPI_MISO"
+    Warning (15610): No output dependent on input pin "Gyro_DataReady"
+    Warning (15610): No output dependent on input pin "Gyro_Interrupt"
+    Warning (15610): No output dependent on input pin "Accel_Interrupt1"
+    Warning (15610): No output dependent on input pin "Accel_Interrupt2"
+Info: Implemented 117 device resources after synthesis - the final resource count might be different
+    Info: Implemented 34 input pins
+    Info: Implemented 28 output pins
+    Info: Implemented 10 bidirectional pins
+    Info: Implemented 45 logic cells
+Info: Quartus II Analysis & Synthesis was successful. 0 errors, 64 warnings
+    Info: Peak virtual memory: 228 megabytes
+    Info: Processing ended: Tue Apr 10 23:15:47 2012
+    Info: Elapsed time: 00:00:02
+    Info: Total CPU time (on all processors): 00:00:02
 
 
