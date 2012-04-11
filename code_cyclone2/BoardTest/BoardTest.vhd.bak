@@ -78,7 +78,7 @@ entity BoardTest is
 		SRAM_WriteProtect	:	out		std_logic;						-- Flash SRAM Write Protect (Active-Low)
 		Accel_Interrupt1	:	in		std_logic;						-- Accelerometer Programmable Interrupt 1
 		Accel_Interrupt2	:	in		std_logic;						-- Accelerometer Programmable Interrupt 2
-		Accel_SelAddr0		:	out		std_logic						-- Accelerometer Address Select
+		Accel_SelAddr0		:	out		std_logic						-- Accelerometer I2C Device Address (0:0x1C, 1:0x1D)
 	);
 end BoardTest;
 
@@ -140,7 +140,7 @@ begin
 	Gyro_ChipSelect			<= '1';
 	SRAM_ChipSelect			<= '1';
 	SRAM_WriteProtect		<= '0';
-	Accel_SelAddr0			<= '0';	
+	Accel_SelAddr0			<= '0';	 
 	
 	
 	-- Test 1:

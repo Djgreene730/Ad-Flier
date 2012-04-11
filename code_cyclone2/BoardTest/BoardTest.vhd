@@ -120,7 +120,7 @@ begin
 	Camera_SDA				<= 'Z';
 	FPGA_I2C_Data			<= 'Z';
 	
-	-- Setup: Define Initial Condition for Ports
+	-- Setup: Define Initial Condition for Ports (Remove as Used!)
 	BLED_Blue				<= (others => '0');
 	BLED_Orange				<= (others => '0');
 	PIC_PBUS_OK_OUT			<= '0';
