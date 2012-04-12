@@ -79,7 +79,7 @@ entity BoardTest is
 		Accel_Interrupt1	:	in		std_logic;						-- Accelerometer Programmable Interrupt 1
 		Accel_Interrupt2	:	in		std_logic;						-- Accelerometer Programmable Interrupt 2
 		Accel_SelAddr0		:	out		std_logic						-- Accelerometer I2C Device Address (0:0x1C, 1:0x1D)
-	);
+	); 
 end BoardTest;
 
 architecture STR of BoardTest is

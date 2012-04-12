@@ -153,7 +153,7 @@ begin
 	end process;
 
 	-- Test 2:
-	-- A.) Tie PICBUS_BUS to TLED_Orange_2
+	-- A.) Tie PICBUS_BUS to All Bottom LEDs
 	-- B.) Check every clk clock pulse
 	process (clk, PIC_PBUS_Data)
 	begin
