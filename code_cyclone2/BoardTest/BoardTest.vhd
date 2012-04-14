@@ -6,6 +6,7 @@
 
 library ieee;
 use ieee.std_logic_1164.all;
+use IEEE.STD_LOGIC_UNSIGNED.ALL;
 
 entity BoardTest is
 	port( 
@@ -107,14 +108,27 @@ architecture STR of BoardTest is
 		);
 	end component;
 	
+	component motor_pwm is 
+	port (
+			clk : in std_logic;
+			speed : in std_logic_vector(7 downto 0);
+			pwm : out std_logic
+		   );
+	end component;
+	
 	-- Signals
 	signal clk_1Hz			:	std_logic := '0';
+	signal pwm1, pwm2, pwm3, pwm5, count : std_logic_vector(7 downto 0) := "00000000";
 
 begin
 
 	-- Instantiations:
-	U_1HzClkDivider			:	clk_div generic map (12587500) port map (clk, clk_1Hz);
+	U_1HzClkDivider			:	clk_div generic map (6293750) port map (clk, clk_1Hz);
 	U_PICSPI_Slave			:	SPI_Slave port map (clk, PIC_SPI_SCLK, PIC_SPI_MOSI, PIC_SPI_MISO, PIC_SPI_Select, TLED_Orange_2);
+	Motor_1              :  motor_pwm port map (clk, pwm1, Motor_North);
+	Motor_2					:  motor_pwm port map (clk, pwm2, Motor_East);
+	Motor_3					:  motor_pwm port map (clk, pwm3, Motor_South);
+	Motor_5					:  motor_pwm port map (clk, pwm5, Motor_West);
 	
 	-- Setup: Bi-Directional Ports to High Impedance
 	PIC_PBUS_Data			<= (others => 'Z');
@@ -125,10 +139,6 @@ begin
 	PIC_PBUS_OK_OUT			<= '0';
 	Ultra_T_Trigger			<= '0';
 	Ultra_B_Trigger			<= '0';
-	Motor_North				<= '0';
-	Motor_East				<= '0';
-	Motor_South				<= '0';
-	Motor_West				<= '0';
 	Camera_SCL				<= '0';
 	Camera_RESET			<= '0';
 	Camera_EXTCLK			<= '0';
@@ -145,10 +155,13 @@ begin
 	-- A.) Toggle TLED_Orange_1 every clk_1Hz Pulse	
 	process (clk_1Hz)
 		variable current_State	:	std_logic := '0';
+		variable counter				:	std_logic_vector(7 downto 0) := (others => '0');
 	begin
 		if (clk_1Hz'event and clk_1Hz = '1') then
 			current_State := not current_State;
 			TLED_Orange_1 <= current_State;
+			counter := counter + 1;
+			count <= counter;
 		end if;
 	end process;
 
@@ -163,4 +176,13 @@ begin
 		end if;
 	end process;
 	
+	--Test 3:
+	--A.) Run Motors
+
+	
+	pwm1 <= count when Switch_1(0) = '1' else "00001000";
+	pwm2 <= count when Switch_1(1) = '1' else "00001000";
+	pwm3 <= count when Switch_1(2) = '1' else "00001000";
+	pwm5 <= count when Switch_1(3) = '1' else "00001000";
+		
 end STR; 
