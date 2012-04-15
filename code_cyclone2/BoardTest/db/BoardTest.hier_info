@@ -52,21 +52,13 @@ Switch_2 => regmap:Registers.start
 Switch_3 => ~NO_FANOUT~
 Switch_4 => ~NO_FANOUT~
 PIC_PBUS_Data[0] <> regmap:Registers.data[0]
-PIC_PBUS_Data[0] <> PIC_PBUS_Data[0]
 PIC_PBUS_Data[1] <> regmap:Registers.data[1]
-PIC_PBUS_Data[1] <> PIC_PBUS_Data[1]
 PIC_PBUS_Data[2] <> regmap:Registers.data[2]
-PIC_PBUS_Data[2] <> PIC_PBUS_Data[2]
 PIC_PBUS_Data[3] <> regmap:Registers.data[3]
-PIC_PBUS_Data[3] <> PIC_PBUS_Data[3]
 PIC_PBUS_Data[4] <> regmap:Registers.data[4]
-PIC_PBUS_Data[4] <> PIC_PBUS_Data[4]
 PIC_PBUS_Data[5] <> regmap:Registers.data[5]
-PIC_PBUS_Data[5] <> PIC_PBUS_Data[5]
 PIC_PBUS_Data[6] <> regmap:Registers.data[6]
-PIC_PBUS_Data[6] <> PIC_PBUS_Data[6]
 PIC_PBUS_Data[7] <> regmap:Registers.data[7]
-PIC_PBUS_Data[7] <> PIC_PBUS_Data[7]
 PIC_PBUS_A_D => regmap:Registers.a_d
 PIC_PBUS_R_W => regmap:Registers.r_w
 PIC_PBUS_OK_IN => regmap:Registers.ok_out
@@ -388,27 +380,22 @@ address[7] => Equal4.IN8
 address[7] => Equal5.IN8
 address[7] => Equal6.IN8
 address[7] => Equal7.IN8
-a_d => nextstate.DATAA
-a_d => nextstate.DATAB
 a_d => nextstate.DATAB
 a_d => nextstate.DATAA
 a_d => add_rego_en.DATAA
-r_w => nextstate.OUTPUTSELECT
+a_d => nextstate.DATAB
 r_w => nextstate.OUTPUTSELECT
 r_w => nextstate.OUTPUTSELECT
 r_w => nextstate.OUTPUTSELECT
 r_w => add_rego_en.OUTPUTSELECT
-ok_out => add_rego_en.OUTPUTSELECT
 ok_out => Selector1.IN5
-ok_out => Selector1.IN6
+ok_out => nextstate.OUTPUTSELECT
+ok_out => nextstate.OUTPUTSELECT
+ok_out => nextstate.OUTPUTSELECT
 ok_out => add_rego_en.OUTPUTSELECT
-ok_out => nextstate.wd1.OUTPUTSELECT
-ok_out => nextstate.wa1.OUTPUTSELECT
-ok_out => nextstate.rd1.OUTPUTSELECT
-ok_out => nextstate.ra1.OUTPUTSELECT
 ok_out => Selector1.IN2
 ok_out => Selector3.IN1
-ok_out => Selector6.IN4
+ok_out => Selector7.IN2
 
 
 |BoardTest|regmap:Registers|addreg:RegAdd

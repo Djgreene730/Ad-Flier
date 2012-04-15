@@ -69,17 +69,17 @@ begin
 		when fetch =>                         --Fetch
 			if ok_out = '0' then
 				nextstate <= fetch;
-			else
+			elsif ok_out = '1' then
 				if r_w = '1' then
 					if a_d = '1' then
 						nextstate <= ra1;
-					else
+					elsif a_d = '0' then
 						nextstate <= rd1;
 					end if;
-				else
+				elsif r_w = '0' then
 					if a_d = '1' then
 						nextstate <= wa1;
-					else
+					elsif a_d = '0' then
 						add_rego_en <= '1';
 						nextstate <= wd1;
 					end if;
@@ -119,7 +119,7 @@ begin
 			tbo <= '1';
 				if ok_out = '1' then
 					nextstate <= fetch;
-				else
+				elsif ok_out = '0' then
 					nextstate <= ra1;
 				end if;
 		when wa1 =>                           --Write Address

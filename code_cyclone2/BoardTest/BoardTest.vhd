@@ -148,7 +148,7 @@ begin
 															  RegXD, RegYD, RegZD, RegXM, RegYM, RegZM, RegAD, RegAM);
 	
 	-- Setup: Bi-Directional Ports to High Impedance
-	PIC_PBUS_Data			<= (others => 'Z');
+--	PIC_PBUS_Data			<= (others => 'Z');
 	Camera_SDA				<= 'Z';
 	FPGA_I2C_Data			<= 'Z';
 	

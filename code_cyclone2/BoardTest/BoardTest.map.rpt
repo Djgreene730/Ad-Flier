@@ -1,5 +1,5 @@
 Analysis & Synthesis report for BoardTest
-Sun Apr 15 19:07:57 2012
+Sun Apr 15 19:17:44 2012
 Quartus II Version 11.0 Build 157 04/27/2011 SJ Web Edition
 
 
@@ -47,7 +47,7 @@ applicable agreement for further details.
 +-------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                  ;
 +------------------------------------+------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Sun Apr 15 19:07:57 2012    ;
+; Analysis & Synthesis Status        ; Successful - Sun Apr 15 19:17:44 2012    ;
 ; Quartus II Version                 ; 11.0 Build 157 04/27/2011 SJ Web Edition ;
 ; Revision Name                      ; BoardTest                                ;
 ; Top-level Entity Name              ; BoardTest                                ;
@@ -253,14 +253,14 @@ Encoding Type:  One-Hot
 +-------------------------------------------------------------+---------------------------------------------------+------------------------+
 ; Latch Name                                                  ; Latch Enable Signal                               ; Free of Timing Hazards ;
 +-------------------------------------------------------------+---------------------------------------------------+------------------------+
-; regmap:Registers|reg_controller:RegCont|nextstate.wa2_396   ; regmap:Registers|reg_controller:RegCont|state.wd2 ; yes                    ;
-; regmap:Registers|reg_controller:RegCont|nextstate.wd2_374   ; regmap:Registers|reg_controller:RegCont|state.wd2 ; yes                    ;
-; regmap:Registers|reg_controller:RegCont|nextstate.wa1_407   ; regmap:Registers|reg_controller:RegCont|state.wd2 ; yes                    ;
-; regmap:Registers|reg_controller:RegCont|nextstate.wd1_385   ; regmap:Registers|reg_controller:RegCont|state.wd2 ; yes                    ;
-; regmap:Registers|reg_controller:RegCont|nextstate.ra1_440   ; regmap:Registers|reg_controller:RegCont|state.wd2 ; yes                    ;
-; regmap:Registers|reg_controller:RegCont|nextstate.rd2_418   ; regmap:Registers|reg_controller:RegCont|state.wd2 ; yes                    ;
-; regmap:Registers|reg_controller:RegCont|nextstate.fetch_451 ; regmap:Registers|reg_controller:RegCont|state.wd2 ; yes                    ;
-; regmap:Registers|reg_controller:RegCont|nextstate.rd1_429   ; regmap:Registers|reg_controller:RegCont|state.wd2 ; yes                    ;
+; regmap:Registers|reg_controller:RegCont|nextstate.wa2_284   ; regmap:Registers|reg_controller:RegCont|state.wd2 ; yes                    ;
+; regmap:Registers|reg_controller:RegCont|nextstate.wd2_268   ; regmap:Registers|reg_controller:RegCont|state.wd2 ; yes                    ;
+; regmap:Registers|reg_controller:RegCont|nextstate.wa1_292   ; regmap:Registers|reg_controller:RegCont|state.wd2 ; yes                    ;
+; regmap:Registers|reg_controller:RegCont|nextstate.wd1_276   ; regmap:Registers|reg_controller:RegCont|state.wd2 ; yes                    ;
+; regmap:Registers|reg_controller:RegCont|nextstate.ra1_316   ; regmap:Registers|reg_controller:RegCont|state.wd2 ; yes                    ;
+; regmap:Registers|reg_controller:RegCont|nextstate.rd2_300   ; regmap:Registers|reg_controller:RegCont|state.wd2 ; yes                    ;
+; regmap:Registers|reg_controller:RegCont|nextstate.fetch_324 ; regmap:Registers|reg_controller:RegCont|state.wd2 ; yes                    ;
+; regmap:Registers|reg_controller:RegCont|nextstate.rd1_308   ; regmap:Registers|reg_controller:RegCont|state.wd2 ; yes                    ;
 ; Number of user-specified and inferred latches = 8           ;                                                   ;                        ;
 +-------------------------------------------------------------+---------------------------------------------------+------------------------+
 Note: All latches listed above may not be present at the end of synthesis due to various synthesis optimizations.
@@ -359,14 +359,14 @@ Note: All latches listed above may not be present at the end of synthesis due to
 +----------------------------------------------+-------+
 
 
-+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Multiplexer Restructuring Statistics (Restructuring Performed)                                                                                                                                 ;
-+--------------------+-----------+---------------+----------------------+------------------------+------------------------------------------------------------------+----------------------------+
-; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered                                                       ; Example Multiplexer Output ;
-+--------------------+-----------+---------------+----------------------+------------------------+------------------------------------------------------------------+----------------------------+
-; 4:1                ; 7 bits    ; 14 LEs        ; 14 LEs               ; 0 LEs                  ; |BoardTest|SPI_Slave:U_PICSPI_Slave|byte_data_sent[1]            ;                            ;
-; 3:1                ; 2 bits    ; 4 LEs         ; 2 LEs                ; 2 LEs                  ; |BoardTest|regmap:Registers|reg_controller:RegCont|nextstate.wd1 ;                            ;
-+--------------------+-----------+---------------+----------------------+------------------------+------------------------------------------------------------------+----------------------------+
++----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Multiplexer Restructuring Statistics (Restructuring Performed)                                                                                                                               ;
++--------------------+-----------+---------------+----------------------+------------------------+----------------------------------------------------------------+----------------------------+
+; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered                                                     ; Example Multiplexer Output ;
++--------------------+-----------+---------------+----------------------+------------------------+----------------------------------------------------------------+----------------------------+
+; 4:1                ; 7 bits    ; 14 LEs        ; 14 LEs               ; 0 LEs                  ; |BoardTest|SPI_Slave:U_PICSPI_Slave|byte_data_sent[1]          ;                            ;
+; 3:1                ; 2 bits    ; 4 LEs         ; 2 LEs                ; 2 LEs                  ; |BoardTest|regmap:Registers|reg_controller:RegCont|add_rego_en ;                            ;
++--------------------+-----------+---------------+----------------------+------------------------+----------------------------------------------------------------+----------------------------+
 
 
 +----------------------------------------------------------------------+
@@ -410,7 +410,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 Info: *******************************************************************
 Info: Running Quartus II Analysis & Synthesis
     Info: Version 11.0 Build 157 04/27/2011 SJ Web Edition
-    Info: Processing started: Sun Apr 15 19:07:55 2012
+    Info: Processing started: Sun Apr 15 19:17:42 2012
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off BoardTest -c BoardTest
 Warning: Parallel compilation is not licensed and has been disabled
 Info: Found 2 design units, including 1 entities, in source file clk_div.vhd
@@ -552,15 +552,6 @@ Warning: Tri-state node(s) do not directly drive top-level pin(s)
     Warning: Converted tri-state buffer "regmap:Registers|addreg:RegAdd|reg_data[5]" feeding internal logic into a wire
     Warning: Converted tri-state buffer "regmap:Registers|addreg:RegAdd|reg_data[6]" feeding internal logic into a wire
     Warning: Converted tri-state buffer "regmap:Registers|addreg:RegAdd|reg_data[7]" feeding internal logic into a wire
-Warning: Removed fan-outs from the following always-disabled I/O buffers
-    Warning: Removed fan-out from the always-disabled I/O buffer "PIC_PBUS_Data[0]" to the node "PIC_PBUS_Data[0]"
-    Warning: Removed fan-out from the always-disabled I/O buffer "PIC_PBUS_Data[1]" to the node "PIC_PBUS_Data[1]"
-    Warning: Removed fan-out from the always-disabled I/O buffer "PIC_PBUS_Data[2]" to the node "PIC_PBUS_Data[2]"
-    Warning: Removed fan-out from the always-disabled I/O buffer "PIC_PBUS_Data[3]" to the node "PIC_PBUS_Data[3]"
-    Warning: Removed fan-out from the always-disabled I/O buffer "PIC_PBUS_Data[4]" to the node "PIC_PBUS_Data[4]"
-    Warning: Removed fan-out from the always-disabled I/O buffer "PIC_PBUS_Data[5]" to the node "PIC_PBUS_Data[5]"
-    Warning: Removed fan-out from the always-disabled I/O buffer "PIC_PBUS_Data[6]" to the node "PIC_PBUS_Data[6]"
-    Warning: Removed fan-out from the always-disabled I/O buffer "PIC_PBUS_Data[7]" to the node "PIC_PBUS_Data[7]"
 Warning: Output pins are stuck at VCC or GND
     Warning (13410): Pin "Ultra_T_Trigger" is stuck at GND
     Warning (13410): Pin "Ultra_B_Trigger" is stuck at GND
@@ -603,9 +594,9 @@ Info: Implemented 389 device resources after synthesis - the final resource coun
     Info: Implemented 28 output pins
     Info: Implemented 10 bidirectional pins
     Info: Implemented 317 logic cells
-Info: Quartus II Analysis & Synthesis was successful. 0 errors, 130 warnings
+Info: Quartus II Analysis & Synthesis was successful. 0 errors, 121 warnings
     Info: Peak virtual memory: 293 megabytes
-    Info: Processing ended: Sun Apr 15 19:07:57 2012
+    Info: Processing ended: Sun Apr 15 19:17:44 2012
     Info: Elapsed time: 00:00:02
     Info: Total CPU time (on all processors): 00:00:02
 
