@@ -116,9 +116,23 @@ architecture STR of BoardTest is
 		   );
 	end component;
 	
+	component regmap is 
+	port (
+			clk : in std_logic;
+			start : in std_logic;
+			data : inout std_logic_vector(7 downto 0);
+			a_d : in std_logic;
+         r_w : in std_logic;
+			ok_out : in std_logic;
+			ok_in : out std_logic;
+			reg0c, reg1c, reg2c, reg3c, reg4c, reg5c, reg6c, reg7c : out std_logic_vector(7 downto 0)
+			);
+   end component;
+	
 	-- Signals
 	signal clk_1Hz			:	std_logic := '0';
 	signal pwm1, pwm2, pwm3, pwm5, count : std_logic_vector(7 downto 0) := "00000000";
+	signal RegXD, RegYD, RegZD, RegXM, RegYM, RegZM, RegAD, RegAM : std_logic_vector(7 downto 0) := "00000000";
 
 begin
 
@@ -129,6 +143,9 @@ begin
 	Motor_2					:  motor_pwm port map (clk, pwm2, Motor_East);
 	Motor_3					:  motor_pwm port map (clk, pwm3, Motor_South);
 	Motor_5					:  motor_pwm port map (clk, pwm5, Motor_West);
+	Registers            :  regmap    port map (clk, Switch_2, PIC_PBUS_Data, PIC_PBUS_A_D, PIC_PBUS_R_W,
+															  PIC_PBUS_OK_IN, PIC_PBUS_OK_OUT, 
+															  RegXD, RegYD, RegZD, RegXM, RegYM, RegZM, RegAD, RegAM);
 	
 	-- Setup: Bi-Directional Ports to High Impedance
 	PIC_PBUS_Data			<= (others => 'Z');
@@ -136,7 +153,7 @@ begin
 	FPGA_I2C_Data			<= 'Z';
 	
 	-- Setup: Define Initial Condition for Ports (Remove as Used!)
-	PIC_PBUS_OK_OUT			<= '0';
+--	PIC_PBUS_OK_OUT			<= '0';
 	Ultra_T_Trigger			<= '0';
 	Ultra_B_Trigger			<= '0';
 	Camera_SCL				<= '0';

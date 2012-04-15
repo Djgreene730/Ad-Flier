@@ -169,7 +169,7 @@ ON
 # case_insensitive
 # source_file
 boardtest.vhd
-9e4d26836954f5875d8c069ac598365
+a64d9277ba7ac283c054a4912b509da3
 5
 # internal_option {
 HDL_INITIAL_FANOUT_LIMIT
@@ -183,6 +183,249 @@ ON
 }
 # hierarchies {
 |
+}
+# macro_sequence
+
+# end
+# entity
+regmap
+# storage
+db|BoardTest.(5).cnf
+db|BoardTest.(5).cnf
+# logic_option {
+AUTO_RAM_RECOGNITION
+ON
+}
+# case_insensitive
+# source_file
+regmap.vhd
+d11a7c14d81736600fcb7ea5fa05c8f
+5
+# internal_option {
+HDL_INITIAL_FANOUT_LIMIT
+OFF
+AUTO_RESOURCE_SHARING
+OFF
+AUTO_RAM_RECOGNITION
+ON
+AUTO_ROM_RECOGNITION
+ON
+}
+# user_parameter {
+ constraint(data)
+7 downto 0
+PARAMETER_STRING
+USR
+ constraint(reg0c)
+7 downto 0
+PARAMETER_STRING
+USR
+ constraint(reg1c)
+7 downto 0
+PARAMETER_STRING
+USR
+ constraint(reg2c)
+7 downto 0
+PARAMETER_STRING
+USR
+ constraint(reg3c)
+7 downto 0
+PARAMETER_STRING
+USR
+ constraint(reg4c)
+7 downto 0
+PARAMETER_STRING
+USR
+ constraint(reg5c)
+7 downto 0
+PARAMETER_STRING
+USR
+ constraint(reg6c)
+7 downto 0
+PARAMETER_STRING
+USR
+ constraint(reg7c)
+7 downto 0
+PARAMETER_STRING
+USR
+}
+# hierarchies {
+regmap:Registers
+}
+# macro_sequence
+
+# end
+# entity
+reg_controller
+# storage
+db|BoardTest.(6).cnf
+db|BoardTest.(6).cnf
+# logic_option {
+AUTO_RAM_RECOGNITION
+ON
+}
+# case_insensitive
+# source_file
+reg_controller.vhd
+537c58c841629c148780e152d93e691b
+5
+# internal_option {
+HDL_INITIAL_FANOUT_LIMIT
+OFF
+AUTO_RESOURCE_SHARING
+OFF
+AUTO_RAM_RECOGNITION
+ON
+AUTO_ROM_RECOGNITION
+ON
+}
+# user_parameter {
+ constraint(address)
+7 downto 0
+PARAMETER_STRING
+USR
+}
+# hierarchies {
+regmap:Registers|reg_controller:RegCont
+}
+# macro_sequence
+
+# end
+# entity
+quadreg
+# storage
+db|BoardTest.(8).cnf
+db|BoardTest.(8).cnf
+# logic_option {
+AUTO_RAM_RECOGNITION
+ON
+}
+# case_insensitive
+# source_file
+quadreg.vhd
+20351d871631a1da935e543ba763d74
+5
+# internal_option {
+HDL_INITIAL_FANOUT_LIMIT
+OFF
+AUTO_RESOURCE_SHARING
+OFF
+AUTO_RAM_RECOGNITION
+ON
+AUTO_ROM_RECOGNITION
+ON
+}
+# user_parameter {
+ constraint(data)
+7 downto 0
+PARAMETER_STRING
+USR
+ constraint(reg_data)
+7 downto 0
+PARAMETER_STRING
+USR
+ constraint(reg_datac)
+7 downto 0
+PARAMETER_STRING
+USR
+}
+# hierarchies {
+regmap:Registers|quadreg:RegXD
+regmap:Registers|quadreg:RegYD
+regmap:Registers|quadreg:RegZD
+regmap:Registers|quadreg:RegXM
+regmap:Registers|quadreg:RegYM
+regmap:Registers|quadreg:RegZM
+regmap:Registers|quadreg:RegAD
+regmap:Registers|quadreg:RegAM
+}
+# macro_sequence
+
+# end
+# entity
+addreg
+# storage
+db|BoardTest.(7).cnf
+db|BoardTest.(7).cnf
+# logic_option {
+AUTO_RAM_RECOGNITION
+ON
+}
+# case_insensitive
+# source_file
+addreg.vhd
+7b31d6e8a98aacd0a29e92c1f360c245
+5
+# internal_option {
+HDL_INITIAL_FANOUT_LIMIT
+OFF
+AUTO_RESOURCE_SHARING
+OFF
+AUTO_RAM_RECOGNITION
+ON
+AUTO_ROM_RECOGNITION
+ON
+}
+# user_parameter {
+ constraint(data)
+7 downto 0
+PARAMETER_STRING
+USR
+ constraint(reg_data)
+7 downto 0
+PARAMETER_STRING
+USR
+ constraint(reg_datac)
+7 downto 0
+PARAMETER_STRING
+USR
+}
+# hierarchies {
+regmap:Registers|addreg:RegAdd
+}
+# macro_sequence
+
+# end
+# entity
+outmux
+# storage
+db|BoardTest.(9).cnf
+db|BoardTest.(9).cnf
+# logic_option {
+AUTO_RAM_RECOGNITION
+ON
+}
+# case_insensitive
+# source_file
+outmux.vhd
+bf503faf9a89afb79ae5d21946ccf7
+5
+# internal_option {
+HDL_INITIAL_FANOUT_LIMIT
+OFF
+AUTO_RESOURCE_SHARING
+OFF
+AUTO_RAM_RECOGNITION
+ON
+AUTO_ROM_RECOGNITION
+ON
+}
+# user_parameter {
+ constraint(data)
+7 downto 0
+PARAMETER_STRING
+USR
+ constraint(address)
+7 downto 0
+PARAMETER_STRING
+USR
+ constraint(muxout)
+7 downto 0
+PARAMETER_STRING
+USR
+}
+# hierarchies {
+regmap:Registers|outmux:MuxOut
 }
 # macro_sequence
 

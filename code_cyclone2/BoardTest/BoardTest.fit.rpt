@@ -1,5 +1,5 @@
 Fitter report for BoardTest
-Wed Apr 11 23:43:39 2012
+Sun Apr 15 19:08:01 2012
 Quartus II Version 11.0 Build 157 04/27/2011 SJ Web Edition
 
 
@@ -62,17 +62,17 @@ applicable agreement for further details.
 +-------------------------------------------------------------------------------+
 ; Fitter Summary                                                                ;
 +------------------------------------+------------------------------------------+
-; Fitter Status                      ; Successful - Wed Apr 11 23:43:39 2012    ;
+; Fitter Status                      ; Successful - Sun Apr 15 19:08:01 2012    ;
 ; Quartus II Version                 ; 11.0 Build 157 04/27/2011 SJ Web Edition ;
 ; Revision Name                      ; BoardTest                                ;
 ; Top-level Entity Name              ; BoardTest                                ;
 ; Family                             ; Cyclone II                               ;
 ; Device                             ; EP2C8T144C8                              ;
 ; Timing Models                      ; Final                                    ;
-; Total logic elements               ; 181 / 8,256 ( 2 % )                      ;
-;     Total combinational functions  ; 168 / 8,256 ( 2 % )                      ;
-;     Dedicated logic registers      ; 96 / 8,256 ( 1 % )                       ;
-; Total registers                    ; 96                                       ;
+; Total logic elements               ; 282 / 8,256 ( 3 % )                      ;
+;     Total combinational functions  ; 221 / 8,256 ( 3 % )                      ;
+;     Dedicated logic registers      ; 176 / 8,256 ( 2 % )                      ;
+; Total registers                    ; 176                                      ;
 ; Total pins                         ; 72 / 85 ( 85 % )                         ;
 ; Total virtual pins                 ; 0                                        ;
 ; Total memory bits                  ; 0 / 165,888 ( 0 % )                      ;
@@ -149,8 +149,8 @@ Parallel compilation was disabled, but you have multiple processors available. E
 ; Type                ; Value                  ;
 +---------------------+------------------------+
 ; Placement (by node) ;                        ;
-;     -- Requested    ; 0 / 342 ( 0.00 % )     ;
-;     -- Achieved     ; 0 / 342 ( 0.00 % )     ;
+;     -- Requested    ; 0 / 476 ( 0.00 % )     ;
+;     -- Achieved     ; 0 / 476 ( 0.00 % )     ;
 ;                     ;                        ;
 ; Routing (by net)    ;                        ;
 ;     -- Requested    ; 0 / 0 ( 0.00 % )       ;
@@ -173,7 +173,7 @@ Parallel compilation was disabled, but you have multiple processors available. E
 +--------------------------------+---------+-------------------+-------------------------+-------------------+
 ; Partition Name                 ; # Nodes ; # Preserved Nodes ; Preservation Level Used ; Netlist Type Used ;
 +--------------------------------+---------+-------------------+-------------------------+-------------------+
-; Top                            ; 339     ; 0                 ; N/A                     ; Source File       ;
+; Top                            ; 473     ; 0                 ; N/A                     ; Source File       ;
 ; hard_block:auto_generated_inst ; 3       ; 0                 ; N/A                     ; Source File       ;
 +--------------------------------+---------+-------------------+-------------------------+-------------------+
 
@@ -181,57 +181,57 @@ Parallel compilation was disabled, but you have multiple processors available. E
 +--------------+
 ; Pin-Out File ;
 +--------------+
-The pin-out file can be found in C:/Users/Salvatore/Desktop/BoardTest/BoardTest.pin.
+The pin-out file can be found in C:/Users/Salvatore/Desktop/Ad-Flier/code_cyclone2/BoardTest/BoardTest.pin.
 
 
-+---------------------------------------------------------------------------+
-; Fitter Resource Usage Summary                                             ;
-+---------------------------------------------+-----------------------------+
-; Resource                                    ; Usage                       ;
-+---------------------------------------------+-----------------------------+
-; Total logic elements                        ; 181 / 8,256 ( 2 % )         ;
-;     -- Combinational with no register       ; 85                          ;
-;     -- Register only                        ; 13                          ;
-;     -- Combinational with a register        ; 83                          ;
-;                                             ;                             ;
-; Logic element usage by number of LUT inputs ;                             ;
-;     -- 4 input functions                    ; 22                          ;
-;     -- 3 input functions                    ; 52                          ;
-;     -- <=2 input functions                  ; 94                          ;
-;     -- Register only                        ; 13                          ;
-;                                             ;                             ;
-; Logic elements by mode                      ;                             ;
-;     -- normal mode                          ; 90                          ;
-;     -- arithmetic mode                      ; 78                          ;
-;                                             ;                             ;
-; Total registers*                            ; 96 / 8,487 ( 1 % )          ;
-;     -- Dedicated logic registers            ; 96 / 8,256 ( 1 % )          ;
-;     -- I/O registers                        ; 0 / 231 ( 0 % )             ;
-;                                             ;                             ;
-; Total LABs:  partially or completely used   ; 24 / 516 ( 5 % )            ;
-; User inserted logic elements                ; 0                           ;
-; Virtual pins                                ; 0                           ;
-; I/O pins                                    ; 72 / 85 ( 85 % )            ;
-;     -- Clock pins                           ; 3 / 4 ( 75 % )              ;
-; Global signals                              ; 2                           ;
-; M4Ks                                        ; 0 / 36 ( 0 % )              ;
-; Total block memory bits                     ; 0 / 165,888 ( 0 % )         ;
-; Total block memory implementation bits      ; 0 / 165,888 ( 0 % )         ;
-; Embedded Multiplier 9-bit elements          ; 0 / 36 ( 0 % )              ;
-; PLLs                                        ; 0 / 2 ( 0 % )               ;
-; Global clocks                               ; 2 / 8 ( 25 % )              ;
-; JTAGs                                       ; 0 / 1 ( 0 % )               ;
-; ASMI blocks                                 ; 0 / 1 ( 0 % )               ;
-; CRC blocks                                  ; 0 / 1 ( 0 % )               ;
-; Average interconnect usage (total/H/V)      ; 0% / 0% / 0%                ;
-; Peak interconnect usage (total/H/V)         ; 1% / 1% / 2%                ;
-; Maximum fan-out node                        ; clk~clkctrl                 ;
-; Maximum fan-out                             ; 87                          ;
-; Highest non-global fan-out signal           ; motor_pwm:Motor_1|clocktick ;
-; Highest non-global fan-out                  ; 19                          ;
-; Total fan-out                               ; 675                         ;
-; Average fan-out                             ; 1.93                        ;
-+---------------------------------------------+-----------------------------+
++-------------------------------------------------------------------+
+; Fitter Resource Usage Summary                                     ;
++---------------------------------------------+---------------------+
+; Resource                                    ; Usage               ;
++---------------------------------------------+---------------------+
+; Total logic elements                        ; 282 / 8,256 ( 3 % ) ;
+;     -- Combinational with no register       ; 106                 ;
+;     -- Register only                        ; 61                  ;
+;     -- Combinational with a register        ; 115                 ;
+;                                             ;                     ;
+; Logic element usage by number of LUT inputs ;                     ;
+;     -- 4 input functions                    ; 54                  ;
+;     -- 3 input functions                    ; 70                  ;
+;     -- <=2 input functions                  ; 97                  ;
+;     -- Register only                        ; 61                  ;
+;                                             ;                     ;
+; Logic elements by mode                      ;                     ;
+;     -- normal mode                          ; 143                 ;
+;     -- arithmetic mode                      ; 78                  ;
+;                                             ;                     ;
+; Total registers*                            ; 176 / 8,487 ( 2 % ) ;
+;     -- Dedicated logic registers            ; 176 / 8,256 ( 2 % ) ;
+;     -- I/O registers                        ; 0 / 231 ( 0 % )     ;
+;                                             ;                     ;
+; Total LABs:  partially or completely used   ; 33 / 516 ( 6 % )    ;
+; User inserted logic elements                ; 0                   ;
+; Virtual pins                                ; 0                   ;
+; I/O pins                                    ; 72 / 85 ( 85 % )    ;
+;     -- Clock pins                           ; 3 / 4 ( 75 % )      ;
+; Global signals                              ; 3                   ;
+; M4Ks                                        ; 0 / 36 ( 0 % )      ;
+; Total block memory bits                     ; 0 / 165,888 ( 0 % ) ;
+; Total block memory implementation bits      ; 0 / 165,888 ( 0 % ) ;
+; Embedded Multiplier 9-bit elements          ; 0 / 36 ( 0 % )      ;
+; PLLs                                        ; 0 / 2 ( 0 % )       ;
+; Global clocks                               ; 3 / 8 ( 38 % )      ;
+; JTAGs                                       ; 0 / 1 ( 0 % )       ;
+; ASMI blocks                                 ; 0 / 1 ( 0 % )       ;
+; CRC blocks                                  ; 0 / 1 ( 0 % )       ;
+; Average interconnect usage (total/H/V)      ; 0% / 0% / 0%        ;
+; Peak interconnect usage (total/H/V)         ; 1% / 1% / 1%        ;
+; Maximum fan-out node                        ; clk~clkctrl         ;
+; Maximum fan-out                             ; 167                 ;
+; Highest non-global fan-out signal           ; Switch_2            ;
+; Highest non-global fan-out                  ; 80                  ;
+; Total fan-out                               ; 1214                ;
+; Average fan-out                             ; 2.40                ;
++---------------------------------------------+---------------------+
 *  Register count does not include registers inside RAM blocks or DSP blocks.
 
 
@@ -243,33 +243,33 @@ The pin-out file can be found in C:/Users/Salvatore/Desktop/BoardTest/BoardTest.
 +---------------------------------------------+--------------------+--------------------------------+
 ; Difficulty Clustering Region                ; Low                ; Low                            ;
 ;                                             ;                    ;                                ;
-; Total logic elements                        ; 181 / 8256 ( 2 % ) ; 0 / 8256 ( 0 % )               ;
-;     -- Combinational with no register       ; 85                 ; 0                              ;
-;     -- Register only                        ; 13                 ; 0                              ;
-;     -- Combinational with a register        ; 83                 ; 0                              ;
+; Total logic elements                        ; 282 / 8256 ( 3 % ) ; 0 / 8256 ( 0 % )               ;
+;     -- Combinational with no register       ; 106                ; 0                              ;
+;     -- Register only                        ; 61                 ; 0                              ;
+;     -- Combinational with a register        ; 115                ; 0                              ;
 ;                                             ;                    ;                                ;
 ; Logic element usage by number of LUT inputs ;                    ;                                ;
-;     -- 4 input functions                    ; 22                 ; 0                              ;
-;     -- 3 input functions                    ; 52                 ; 0                              ;
-;     -- <=2 input functions                  ; 94                 ; 0                              ;
-;     -- Register only                        ; 13                 ; 0                              ;
+;     -- 4 input functions                    ; 54                 ; 0                              ;
+;     -- 3 input functions                    ; 70                 ; 0                              ;
+;     -- <=2 input functions                  ; 97                 ; 0                              ;
+;     -- Register only                        ; 61                 ; 0                              ;
 ;                                             ;                    ;                                ;
 ; Logic elements by mode                      ;                    ;                                ;
-;     -- normal mode                          ; 90                 ; 0                              ;
+;     -- normal mode                          ; 143                ; 0                              ;
 ;     -- arithmetic mode                      ; 78                 ; 0                              ;
 ;                                             ;                    ;                                ;
-; Total registers                             ; 96                 ; 0                              ;
-;     -- Dedicated logic registers            ; 96 / 8256 ( 1 % )  ; 0 / 8256 ( 0 % )               ;
+; Total registers                             ; 176                ; 0                              ;
+;     -- Dedicated logic registers            ; 176 / 8256 ( 2 % ) ; 0 / 8256 ( 0 % )               ;
 ;     -- I/O registers                        ; 0                  ; 0                              ;
 ;                                             ;                    ;                                ;
-; Total LABs:  partially or completely used   ; 24 / 516 ( 4 % )   ; 0 / 516 ( 0 % )                ;
+; Total LABs:  partially or completely used   ; 33 / 516 ( 6 % )   ; 0 / 516 ( 0 % )                ;
 ;                                             ;                    ;                                ;
 ; Virtual pins                                ; 0                  ; 0                              ;
 ; I/O pins                                    ; 72                 ; 0                              ;
 ; Embedded Multiplier 9-bit elements          ; 0 / 36 ( 0 % )     ; 0 / 36 ( 0 % )                 ;
 ; Total memory bits                           ; 0                  ; 0                              ;
 ; Total RAM block bits                        ; 0                  ; 0                              ;
-; Clock control block                         ; 2 / 10 ( 20 % )    ; 0 / 10 ( 0 % )                 ;
+; Clock control block                         ; 3 / 10 ( 30 % )    ; 0 / 10 ( 0 % )                 ;
 ;                                             ;                    ;                                ;
 ; Connections                                 ;                    ;                                ;
 ;     -- Input Connections                    ; 0                  ; 0                              ;
@@ -278,8 +278,8 @@ The pin-out file can be found in C:/Users/Salvatore/Desktop/BoardTest/BoardTest.
 ;     -- Registered Output Connections        ; 0                  ; 0                              ;
 ;                                             ;                    ;                                ;
 ; Internal Connections                        ;                    ;                                ;
-;     -- Total Connections                    ; 675                ; 0                              ;
-;     -- Registered Connections               ; 255                ; 0                              ;
+;     -- Total Connections                    ; 1214               ; 0                              ;
+;     -- Registered Connections               ; 385                ; 0                              ;
 ;                                             ;                    ;                                ;
 ; External Connections                        ;                    ;                                ;
 ;     -- Top                                  ; 0                  ; 0                              ;
@@ -327,9 +327,9 @@ The pin-out file can be found in C:/Users/Salvatore/Desktop/BoardTest/BoardTest.
 ; FPGA_SPI_MISO    ; 41    ; 4        ; 1            ; 0            ; 2           ; 0                     ; 0                  ; no     ; no             ; no            ; no              ; no       ; Off          ; 3.3-V LVTTL  ; Off         ; User                 ;
 ; Gyro_DataReady   ; 47    ; 4        ; 3            ; 0            ; 0           ; 0                     ; 0                  ; no     ; no             ; no            ; no              ; no       ; Off          ; 3.3-V LVTTL  ; Off         ; User                 ;
 ; Gyro_Interrupt   ; 48    ; 4        ; 5            ; 0            ; 2           ; 0                     ; 0                  ; no     ; no             ; no            ; no              ; no       ; Off          ; 3.3-V LVTTL  ; Off         ; User                 ;
-; PIC_PBUS_A_D     ; 122   ; 2        ; 25           ; 19           ; 0           ; 0                     ; 0                  ; no     ; no             ; no            ; no              ; no       ; Off          ; 3.3-V LVTTL  ; Off         ; User                 ;
-; PIC_PBUS_OK_IN   ; 129   ; 2        ; 14           ; 19           ; 1           ; 0                     ; 0                  ; no     ; no             ; no            ; no              ; no       ; Off          ; 3.3-V LVTTL  ; Off         ; User                 ;
-; PIC_PBUS_R_W     ; 125   ; 2        ; 18           ; 19           ; 0           ; 0                     ; 0                  ; no     ; no             ; no            ; no              ; no       ; Off          ; 3.3-V LVTTL  ; Off         ; User                 ;
+; PIC_PBUS_A_D     ; 122   ; 2        ; 25           ; 19           ; 0           ; 4                     ; 0                  ; no     ; no             ; no            ; no              ; no       ; Off          ; 3.3-V LVTTL  ; Off         ; User                 ;
+; PIC_PBUS_OK_IN   ; 129   ; 2        ; 14           ; 19           ; 1           ; 7                     ; 0                  ; no     ; no             ; no            ; no              ; no       ; Off          ; 3.3-V LVTTL  ; Off         ; User                 ;
+; PIC_PBUS_R_W     ; 125   ; 2        ; 18           ; 19           ; 0           ; 4                     ; 0                  ; no     ; no             ; no            ; no              ; no       ; Off          ; 3.3-V LVTTL  ; Off         ; User                 ;
 ; PIC_SPI_MOSI     ; 133   ; 2        ; 9            ; 19           ; 1           ; 1                     ; 0                  ; no     ; no             ; no            ; no              ; no       ; Off          ; 3.3-V LVTTL  ; Off         ; User                 ;
 ; PIC_SPI_SCLK     ; 132   ; 2        ; 9            ; 19           ; 0           ; 1                     ; 0                  ; no     ; no             ; no            ; no              ; no       ; Off          ; 3.3-V LVTTL  ; Off         ; User                 ;
 ; PIC_SPI_Select   ; 135   ; 2        ; 3            ; 19           ; 0           ; 1                     ; 0                  ; no     ; no             ; no            ; no              ; no       ; Off          ; 3.3-V LVTTL  ; Off         ; User                 ;
@@ -337,7 +337,7 @@ The pin-out file can be found in C:/Users/Salvatore/Desktop/BoardTest/BoardTest.
 ; Switch_1[1]      ; 7     ; 1        ; 0            ; 16           ; 2           ; 8                     ; 0                  ; no     ; no             ; no            ; no              ; no       ; Off          ; 3.3-V LVTTL  ; Off         ; User                 ;
 ; Switch_1[2]      ; 4     ; 1        ; 0            ; 18           ; 3           ; 8                     ; 0                  ; no     ; no             ; no            ; no              ; no       ; Off          ; 3.3-V LVTTL  ; Off         ; User                 ;
 ; Switch_1[3]      ; 3     ; 1        ; 0            ; 18           ; 2           ; 8                     ; 0                  ; no     ; no             ; no            ; no              ; no       ; Off          ; 3.3-V LVTTL  ; Off         ; User                 ;
-; Switch_2         ; 9     ; 1        ; 0            ; 14           ; 3           ; 0                     ; 0                  ; no     ; no             ; no            ; no              ; no       ; Off          ; 3.3-V LVTTL  ; Off         ; User                 ;
+; Switch_2         ; 9     ; 1        ; 0            ; 14           ; 3           ; 80                    ; 0                  ; no     ; no             ; no            ; no              ; no       ; Off          ; 3.3-V LVTTL  ; Off         ; User                 ;
 ; Switch_3         ; 24    ; 1        ; 0            ; 8            ; 0           ; 0                     ; 0                  ; no     ; no             ; no            ; no              ; no       ; Off          ; 3.3-V LVTTL  ; Off         ; User                 ;
 ; Switch_4         ; 25    ; 1        ; 0            ; 8            ; 1           ; 0                     ; 0                  ; no     ; no             ; no            ; no              ; no       ; Off          ; 3.3-V LVTTL  ; Off         ; User                 ;
 ; Ultra_B_Edge     ; 60    ; 4        ; 18           ; 0            ; 0           ; 0                     ; 0                  ; no     ; no             ; no            ; no              ; no       ; Off          ; 3.3-V LVTTL  ; Off         ; User                 ;
@@ -384,22 +384,22 @@ The pin-out file can be found in C:/Users/Salvatore/Desktop/BoardTest/BoardTest.
 +-------------------+-------+----------+--------------+--------------+-------------+-----------------+------------------------+---------------+-----------------+------------+---------------+----------+--------------+--------------+------------------+-------------+----------------------+------+----------------------+---------------------+
 
 
-+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Bidir Pins                                                                                                                                                                                                                                                                                                                                                                                            ;
-+------------------+-------+----------+--------------+--------------+-------------+-----------------------+--------------------+--------+----------------+-----------------+------------------------+---------------+-----------------+------------+----------+--------------+--------------+------------------+-------------+----------------------+------+----------------------+---------------------+
-; Name             ; Pin # ; I/O Bank ; X coordinate ; Y coordinate ; Cell number ; Combinational Fan-Out ; Registered Fan-Out ; Global ; Input Register ; Output Register ; Output Enable Register ; Power Up High ; PCI I/O Enabled ; Open Drain ; Bus Hold ; Weak Pull Up ; I/O Standard ; Current Strength ; Termination ; Location assigned by ; Load ; Output Enable Source ; Output Enable Group ;
-+------------------+-------+----------+--------------+--------------+-------------+-----------------------+--------------------+--------+----------------+-----------------+------------------------+---------------+-----------------+------------+----------+--------------+--------------+------------------+-------------+----------------------+------+----------------------+---------------------+
-; Camera_SDA       ; 74    ; 3        ; 34           ; 1            ; 1           ; 0                     ; 0                  ; no     ; no             ; no              ; no                     ; no            ; no              ; yes        ; no       ; Off          ; 2.5 V        ; 8mA              ; Off         ; User                 ; 0 pF ; -                    ; -                   ;
-; FPGA_I2C_Data    ; 44    ; 4        ; 3            ; 0            ; 2           ; 0                     ; 0                  ; no     ; no             ; no              ; no                     ; no            ; no              ; yes        ; no       ; Off          ; 3.3-V LVTTL  ; 24mA             ; Off         ; User                 ; 0 pF ; -                    ; -                   ;
-; PIC_PBUS_Data[0] ; 112   ; 2        ; 32           ; 19           ; 0           ; 1                     ; 0                  ; no     ; no             ; no              ; no                     ; no            ; no              ; yes        ; no       ; Off          ; 3.3-V LVTTL  ; 24mA             ; Off         ; User                 ; 0 pF ; -                    ; -                   ;
-; PIC_PBUS_Data[1] ; 113   ; 2        ; 32           ; 19           ; 1           ; 1                     ; 0                  ; no     ; no             ; no              ; no                     ; no            ; no              ; yes        ; no       ; Off          ; 3.3-V LVTTL  ; 24mA             ; Off         ; User                 ; 0 pF ; -                    ; -                   ;
-; PIC_PBUS_Data[2] ; 114   ; 2        ; 32           ; 19           ; 2           ; 1                     ; 0                  ; no     ; no             ; no              ; no                     ; no            ; no              ; yes        ; no       ; Off          ; 3.3-V LVTTL  ; 24mA             ; Off         ; User                 ; 0 pF ; -                    ; -                   ;
-; PIC_PBUS_Data[3] ; 115   ; 2        ; 30           ; 19           ; 0           ; 1                     ; 0                  ; no     ; no             ; no              ; no                     ; no            ; no              ; yes        ; no       ; Off          ; 3.3-V LVTTL  ; 24mA             ; Off         ; User                 ; 0 pF ; -                    ; -                   ;
-; PIC_PBUS_Data[4] ; 118   ; 2        ; 28           ; 19           ; 0           ; 1                     ; 0                  ; no     ; no             ; no              ; no                     ; no            ; no              ; yes        ; no       ; Off          ; 3.3-V LVTTL  ; 24mA             ; Off         ; User                 ; 0 pF ; -                    ; -                   ;
-; PIC_PBUS_Data[5] ; 119   ; 2        ; 28           ; 19           ; 1           ; 1                     ; 0                  ; no     ; no             ; no              ; no                     ; no            ; no              ; yes        ; no       ; Off          ; 3.3-V LVTTL  ; 24mA             ; Off         ; User                 ; 0 pF ; -                    ; -                   ;
-; PIC_PBUS_Data[6] ; 120   ; 2        ; 28           ; 19           ; 2           ; 1                     ; 0                  ; no     ; no             ; no              ; no                     ; no            ; no              ; yes        ; no       ; Off          ; 3.3-V LVTTL  ; 24mA             ; Off         ; User                 ; 0 pF ; -                    ; -                   ;
-; PIC_PBUS_Data[7] ; 121   ; 2        ; 28           ; 19           ; 3           ; 1                     ; 0                  ; no     ; no             ; no              ; no                     ; no            ; no              ; yes        ; no       ; Off          ; 3.3-V LVTTL  ; 24mA             ; Off         ; User                 ; 0 pF ; -                    ; -                   ;
-+------------------+-------+----------+--------------+--------------+-------------+-----------------------+--------------------+--------+----------------+-----------------+------------------------+---------------+-----------------+------------+----------+--------------+--------------+------------------+-------------+----------------------+------+----------------------+---------------------+
++------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Bidir Pins                                                                                                                                                                                                                                                                                                                                                                                                                   ;
++------------------+-------+----------+--------------+--------------+-------------+-----------------------+--------------------+--------+----------------+-----------------+------------------------+---------------+-----------------+------------+----------+--------------+--------------+------------------+-------------+----------------------+------+---------------------------------------------+---------------------+
+; Name             ; Pin # ; I/O Bank ; X coordinate ; Y coordinate ; Cell number ; Combinational Fan-Out ; Registered Fan-Out ; Global ; Input Register ; Output Register ; Output Enable Register ; Power Up High ; PCI I/O Enabled ; Open Drain ; Bus Hold ; Weak Pull Up ; I/O Standard ; Current Strength ; Termination ; Location assigned by ; Load ; Output Enable Source                        ; Output Enable Group ;
++------------------+-------+----------+--------------+--------------+-------------+-----------------------+--------------------+--------+----------------+-----------------+------------------------+---------------+-----------------+------------+----------+--------------+--------------+------------------+-------------+----------------------+------+---------------------------------------------+---------------------+
+; Camera_SDA       ; 74    ; 3        ; 34           ; 1            ; 1           ; 0                     ; 0                  ; no     ; no             ; no              ; no                     ; no            ; no              ; yes        ; no       ; Off          ; 2.5 V        ; 8mA              ; Off         ; User                 ; 0 pF ; -                                           ; -                   ;
+; FPGA_I2C_Data    ; 44    ; 4        ; 3            ; 0            ; 2           ; 0                     ; 0                  ; no     ; no             ; no              ; no                     ; no            ; no              ; yes        ; no       ; Off          ; 3.3-V LVTTL  ; 24mA             ; Off         ; User                 ; 0 pF ; -                                           ; -                   ;
+; PIC_PBUS_Data[0] ; 112   ; 2        ; 32           ; 19           ; 0           ; 10                    ; 0                  ; no     ; no             ; no              ; no                     ; no            ; no              ; no         ; no       ; Off          ; 3.3-V LVTTL  ; 24mA             ; Off         ; User                 ; 0 pF ; regmap:Registers|reg_controller:RegCont|tbo ; -                   ;
+; PIC_PBUS_Data[1] ; 113   ; 2        ; 32           ; 19           ; 1           ; 10                    ; 0                  ; no     ; no             ; no              ; no                     ; no            ; no              ; no         ; no       ; Off          ; 3.3-V LVTTL  ; 24mA             ; Off         ; User                 ; 0 pF ; regmap:Registers|reg_controller:RegCont|tbo ; -                   ;
+; PIC_PBUS_Data[2] ; 114   ; 2        ; 32           ; 19           ; 2           ; 10                    ; 0                  ; no     ; no             ; no              ; no                     ; no            ; no              ; no         ; no       ; Off          ; 3.3-V LVTTL  ; 24mA             ; Off         ; User                 ; 0 pF ; regmap:Registers|reg_controller:RegCont|tbo ; -                   ;
+; PIC_PBUS_Data[3] ; 115   ; 2        ; 30           ; 19           ; 0           ; 10                    ; 0                  ; no     ; no             ; no              ; no                     ; no            ; no              ; no         ; no       ; Off          ; 3.3-V LVTTL  ; 24mA             ; Off         ; User                 ; 0 pF ; regmap:Registers|reg_controller:RegCont|tbo ; -                   ;
+; PIC_PBUS_Data[4] ; 118   ; 2        ; 28           ; 19           ; 0           ; 10                    ; 0                  ; no     ; no             ; no              ; no                     ; no            ; no              ; no         ; no       ; Off          ; 3.3-V LVTTL  ; 24mA             ; Off         ; User                 ; 0 pF ; regmap:Registers|reg_controller:RegCont|tbo ; -                   ;
+; PIC_PBUS_Data[5] ; 119   ; 2        ; 28           ; 19           ; 1           ; 10                    ; 0                  ; no     ; no             ; no              ; no                     ; no            ; no              ; no         ; no       ; Off          ; 3.3-V LVTTL  ; 24mA             ; Off         ; User                 ; 0 pF ; regmap:Registers|reg_controller:RegCont|tbo ; -                   ;
+; PIC_PBUS_Data[6] ; 120   ; 2        ; 28           ; 19           ; 2           ; 10                    ; 0                  ; no     ; no             ; no              ; no                     ; no            ; no              ; no         ; no       ; Off          ; 3.3-V LVTTL  ; 24mA             ; Off         ; User                 ; 0 pF ; regmap:Registers|reg_controller:RegCont|tbo ; -                   ;
+; PIC_PBUS_Data[7] ; 121   ; 2        ; 28           ; 19           ; 3           ; 10                    ; 0                  ; no     ; no             ; no              ; no                     ; no            ; no              ; no         ; no       ; Off          ; 3.3-V LVTTL  ; 24mA             ; Off         ; User                 ; 0 pF ; regmap:Registers|reg_controller:RegCont|tbo ; -                   ;
++------------------+-------+----------+--------------+--------------+-------------+-----------------------+--------------------+--------+----------------+-----------------+------------------------+---------------+-----------------+------------+----------+--------------+--------------+------------------+-------------+----------------------+------+---------------------------------------------+---------------------+
 
 
 +------------------------------------------------------------+
@@ -604,19 +604,31 @@ Note: Pin directions (input, output or bidir) are based on device operating in u
 Note: User assignments will override these defaults. The user specified values are listed in the Output Pins and Bidir Pins tables.
 
 
-+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Fitter Resource Utilization by Entity                                                                                                                                                                                                                                              ;
-+-------------------------------+-------------+---------------------------+---------------+-------------+------+--------------+---------+-----------+------+--------------+--------------+-------------------+------------------+-------------------------------------+--------------+
-; Compilation Hierarchy Node    ; Logic Cells ; Dedicated Logic Registers ; I/O Registers ; Memory Bits ; M4Ks ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; LUT-Only LCs ; Register-Only LCs ; LUT/Register LCs ; Full Hierarchy Name                 ; Library Name ;
-+-------------------------------+-------------+---------------------------+---------------+-------------+------+--------------+---------+-----------+------+--------------+--------------+-------------------+------------------+-------------------------------------+--------------+
-; |BoardTest                    ; 181 (49)    ; 96 (17)                   ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 72   ; 0            ; 85 (32)      ; 13 (8)            ; 83 (9)           ; |BoardTest                          ;              ;
-;    |SPI_Slave:U_PICSPI_Slave| ; 33 (33)     ; 31 (31)                   ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 2 (2)        ; 5 (5)             ; 26 (26)          ; |BoardTest|SPI_Slave:U_PICSPI_Slave ;              ;
-;    |clk_div:U_1HzClkDivider|  ; 41 (41)     ; 24 (24)                   ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 17 (17)      ; 0 (0)             ; 24 (24)          ; |BoardTest|clk_div:U_1HzClkDivider  ;              ;
-;    |motor_pwm:Motor_1|        ; 31 (31)     ; 21 (21)                   ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 10 (10)      ; 0 (0)             ; 21 (21)          ; |BoardTest|motor_pwm:Motor_1        ;              ;
-;    |motor_pwm:Motor_2|        ; 9 (9)       ; 1 (1)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 8 (8)        ; 0 (0)             ; 1 (1)            ; |BoardTest|motor_pwm:Motor_2        ;              ;
-;    |motor_pwm:Motor_3|        ; 9 (9)       ; 1 (1)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 8 (8)        ; 0 (0)             ; 1 (1)            ; |BoardTest|motor_pwm:Motor_3        ;              ;
-;    |motor_pwm:Motor_5|        ; 9 (9)       ; 1 (1)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 8 (8)        ; 0 (0)             ; 1 (1)            ; |BoardTest|motor_pwm:Motor_5        ;              ;
-+-------------------------------+-------------+---------------------------+---------------+-------------+------+--------------+---------+-----------+------+--------------+--------------+-------------------+------------------+-------------------------------------+--------------+
++----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Fitter Resource Utilization by Entity                                                                                                                                                                                                                                                              ;
++--------------------------------+-------------+---------------------------+---------------+-------------+------+--------------+---------+-----------+------+--------------+--------------+-------------------+------------------+----------------------------------------------------+--------------+
+; Compilation Hierarchy Node     ; Logic Cells ; Dedicated Logic Registers ; I/O Registers ; Memory Bits ; M4Ks ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; LUT-Only LCs ; Register-Only LCs ; LUT/Register LCs ; Full Hierarchy Name                                ; Library Name ;
++--------------------------------+-------------+---------------------------+---------------+-------------+------+--------------+---------+-----------+------+--------------+--------------+-------------------+------------------+----------------------------------------------------+--------------+
+; |BoardTest                     ; 282 (49)    ; 176 (17)                  ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 72   ; 0            ; 106 (32)     ; 61 (8)            ; 115 (9)          ; |BoardTest                                         ;              ;
+;    |SPI_Slave:U_PICSPI_Slave|  ; 33 (33)     ; 31 (31)                   ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 2 (2)        ; 5 (5)             ; 26 (26)          ; |BoardTest|SPI_Slave:U_PICSPI_Slave                ;              ;
+;    |clk_div:U_1HzClkDivider|   ; 41 (41)     ; 24 (24)                   ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 17 (17)      ; 0 (0)             ; 24 (24)          ; |BoardTest|clk_div:U_1HzClkDivider                 ;              ;
+;    |motor_pwm:Motor_1|         ; 31 (31)     ; 21 (21)                   ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 10 (10)      ; 0 (0)             ; 21 (21)          ; |BoardTest|motor_pwm:Motor_1                       ;              ;
+;    |motor_pwm:Motor_2|         ; 9 (9)       ; 1 (1)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 8 (8)        ; 0 (0)             ; 1 (1)            ; |BoardTest|motor_pwm:Motor_2                       ;              ;
+;    |motor_pwm:Motor_3|         ; 9 (9)       ; 1 (1)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 8 (8)        ; 0 (0)             ; 1 (1)            ; |BoardTest|motor_pwm:Motor_3                       ;              ;
+;    |motor_pwm:Motor_5|         ; 9 (9)       ; 1 (1)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 8 (8)        ; 0 (0)             ; 1 (1)            ; |BoardTest|motor_pwm:Motor_5                       ;              ;
+;    |regmap:Registers|          ; 101 (0)     ; 80 (0)                    ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 21 (0)       ; 48 (0)            ; 32 (16)          ; |BoardTest|regmap:Registers                        ;              ;
+;       |addreg:RegAdd|          ; 8 (8)       ; 8 (8)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 8 (8)            ; |BoardTest|regmap:Registers|addreg:RegAdd          ;              ;
+;       |outmux:MuxOut|          ; 8 (8)       ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 4 (4)        ; 0 (0)             ; 4 (4)            ; |BoardTest|regmap:Registers|outmux:MuxOut          ;              ;
+;       |quadreg:RegAD|          ; 8 (8)       ; 8 (8)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 0 (0)        ; 8 (8)             ; 0 (0)            ; |BoardTest|regmap:Registers|quadreg:RegAD          ;              ;
+;       |quadreg:RegAM|          ; 8 (8)       ; 8 (8)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 0 (0)        ; 8 (8)             ; 0 (0)            ; |BoardTest|regmap:Registers|quadreg:RegAM          ;              ;
+;       |quadreg:RegXD|          ; 8 (8)       ; 8 (8)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 8 (8)            ; |BoardTest|regmap:Registers|quadreg:RegXD          ;              ;
+;       |quadreg:RegXM|          ; 8 (8)       ; 8 (8)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 0 (0)        ; 8 (8)             ; 0 (0)            ; |BoardTest|regmap:Registers|quadreg:RegXM          ;              ;
+;       |quadreg:RegYD|          ; 8 (8)       ; 8 (8)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 0 (0)        ; 8 (8)             ; 0 (0)            ; |BoardTest|regmap:Registers|quadreg:RegYD          ;              ;
+;       |quadreg:RegYM|          ; 8 (8)       ; 8 (8)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 8 (8)            ; |BoardTest|regmap:Registers|quadreg:RegYM          ;              ;
+;       |quadreg:RegZD|          ; 8 (8)       ; 8 (8)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 0 (0)        ; 8 (8)             ; 0 (0)            ; |BoardTest|regmap:Registers|quadreg:RegZD          ;              ;
+;       |quadreg:RegZM|          ; 8 (8)       ; 8 (8)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 0 (0)        ; 8 (8)             ; 0 (0)            ; |BoardTest|regmap:Registers|quadreg:RegZM          ;              ;
+;       |reg_controller:RegCont| ; 29 (29)     ; 8 (8)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 17 (17)      ; 0 (0)             ; 12 (12)          ; |BoardTest|regmap:Registers|reg_controller:RegCont ;              ;
++--------------------------------+-------------+---------------------------+---------------+-------------+------+--------------+---------+-----------+------+--------------+--------------+-------------------+------------------+----------------------------------------------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
 
 
@@ -637,7 +649,6 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; FPGA_I2C_Data     ; Bidir    ; (0) 337 ps    ; (0) 337 ps    ; --                    ; --  ;
 ; clk_DS1085Z_0     ; Input    ; (0) 351 ps    ; (0) 351 ps    ; --                    ; --  ;
 ; clk_DS1085Z_1     ; Input    ; (0) 351 ps    ; (0) 351 ps    ; --                    ; --  ;
-; Switch_2          ; Input    ; (0) 351 ps    ; (0) 351 ps    ; --                    ; --  ;
 ; Switch_3          ; Input    ; (0) 351 ps    ; (0) 351 ps    ; --                    ; --  ;
 ; Switch_4          ; Input    ; (0) 351 ps    ; (0) 351 ps    ; --                    ; --  ;
 ; TLED_Orange_1     ; Output   ; --            ; --            ; --                    ; --  ;
@@ -650,9 +661,6 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; BLED_Orange[1]    ; Output   ; --            ; --            ; --                    ; --  ;
 ; BLED_Orange[2]    ; Output   ; --            ; --            ; --                    ; --  ;
 ; BLED_Orange[3]    ; Output   ; --            ; --            ; --                    ; --  ;
-; PIC_PBUS_A_D      ; Input    ; (0) 337 ps    ; (0) 337 ps    ; --                    ; --  ;
-; PIC_PBUS_R_W      ; Input    ; (0) 337 ps    ; (0) 337 ps    ; --                    ; --  ;
-; PIC_PBUS_OK_IN    ; Input    ; (0) 337 ps    ; (0) 337 ps    ; --                    ; --  ;
 ; PIC_PBUS_OK_OUT   ; Output   ; --            ; --            ; --                    ; --  ;
 ; PIC_SPI_MISO      ; Output   ; --            ; --            ; --                    ; --  ;
 ; Ultra_T_Trigger   ; Output   ; --            ; --            ; --                    ; --  ;
@@ -690,6 +698,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; Accel_Interrupt2  ; Input    ; (0) 337 ps    ; (0) 337 ps    ; --                    ; --  ;
 ; Accel_SelAddr0    ; Output   ; --            ; --            ; --                    ; --  ;
 ; clk               ; Input    ; (0) 351 ps    ; (0) 351 ps    ; --                    ; --  ;
+; Switch_2          ; Input    ; (6) 4641 ps   ; (6) 4641 ps   ; --                    ; --  ;
 ; Switch_1[0]       ; Input    ; (6) 4641 ps   ; (6) 4641 ps   ; --                    ; --  ;
 ; Switch_1[1]       ; Input    ; (6) 4641 ps   ; (6) 4641 ps   ; --                    ; --  ;
 ; Switch_1[2]       ; Input    ; (6) 4641 ps   ; (6) 4641 ps   ; --                    ; --  ;
@@ -697,548 +706,870 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; PIC_SPI_MOSI      ; Input    ; (6) 4686 ps   ; (6) 4686 ps   ; --                    ; --  ;
 ; PIC_SPI_SCLK      ; Input    ; (6) 4686 ps   ; (6) 4686 ps   ; --                    ; --  ;
 ; PIC_SPI_Select    ; Input    ; (6) 4686 ps   ; (6) 4686 ps   ; --                    ; --  ;
+; PIC_PBUS_A_D      ; Input    ; (6) 4686 ps   ; (6) 4686 ps   ; --                    ; --  ;
+; PIC_PBUS_OK_IN    ; Input    ; (6) 4686 ps   ; (6) 4686 ps   ; --                    ; --  ;
+; PIC_PBUS_R_W      ; Input    ; (6) 4686 ps   ; (6) 4686 ps   ; --                    ; --  ;
 +-------------------+----------+---------------+---------------+-----------------------+-----+
 
 
-+-------------------------------------------------------------------------------+
-; Pad To Core Delay Chain Fanout                                                ;
-+-------------------------------------------------+-------------------+---------+
-; Source Pin / Fanout                             ; Pad To Core Index ; Setting ;
-+-------------------------------------------------+-------------------+---------+
-; PIC_PBUS_Data[0]                                ;                   ;         ;
-;      - BLED_Orange[0]~reg0feeder                ; 1                 ; 6       ;
-; PIC_PBUS_Data[1]                                ;                   ;         ;
-;      - BLED_Orange[1]~reg0feeder                ; 0                 ; 6       ;
-; PIC_PBUS_Data[2]                                ;                   ;         ;
-;      - BLED_Orange[2]~reg0                      ; 1                 ; 6       ;
-; PIC_PBUS_Data[3]                                ;                   ;         ;
-;      - BLED_Orange[3]~reg0feeder                ; 1                 ; 6       ;
-; PIC_PBUS_Data[4]                                ;                   ;         ;
-;      - BLED_Blue[0]~reg0feeder                  ; 1                 ; 6       ;
-; PIC_PBUS_Data[5]                                ;                   ;         ;
-;      - BLED_Blue[1]~reg0feeder                  ; 1                 ; 6       ;
-; PIC_PBUS_Data[6]                                ;                   ;         ;
-;      - BLED_Blue[2]~reg0                        ; 0                 ; 6       ;
-; PIC_PBUS_Data[7]                                ;                   ;         ;
-;      - BLED_Blue[3]~reg0feeder                  ; 0                 ; 6       ;
-; Camera_SDA                                      ;                   ;         ;
-; FPGA_I2C_Data                                   ;                   ;         ;
-; clk_DS1085Z_0                                   ;                   ;         ;
-; clk_DS1085Z_1                                   ;                   ;         ;
-; Switch_2                                        ;                   ;         ;
-; Switch_3                                        ;                   ;         ;
-; Switch_4                                        ;                   ;         ;
-; PIC_PBUS_A_D                                    ;                   ;         ;
-; PIC_PBUS_R_W                                    ;                   ;         ;
-; PIC_PBUS_OK_IN                                  ;                   ;         ;
-; Ultra_T_Edge                                    ;                   ;         ;
-; Ultra_B_Edge                                    ;                   ;         ;
-; Camera_HD                                       ;                   ;         ;
-; Camera_VD                                       ;                   ;         ;
-; Camera_DCLK                                     ;                   ;         ;
-; Camera_DOUT[0]                                  ;                   ;         ;
-; Camera_DOUT[1]                                  ;                   ;         ;
-; Camera_DOUT[2]                                  ;                   ;         ;
-; Camera_DOUT[3]                                  ;                   ;         ;
-; Camera_DOUT[4]                                  ;                   ;         ;
-; Camera_DOUT[5]                                  ;                   ;         ;
-; Camera_DOUT[6]                                  ;                   ;         ;
-; Camera_DOUT[7]                                  ;                   ;         ;
-; FPGA_SPI_MISO                                   ;                   ;         ;
-; Gyro_DataReady                                  ;                   ;         ;
-; Gyro_Interrupt                                  ;                   ;         ;
-; Accel_Interrupt1                                ;                   ;         ;
-; Accel_Interrupt2                                ;                   ;         ;
-; clk                                             ;                   ;         ;
-; Switch_1[0]                                     ;                   ;         ;
-;      - pwm1[7]~0                                ; 0                 ; 6       ;
-;      - pwm1[6]~1                                ; 0                 ; 6       ;
-;      - pwm1[5]~2                                ; 0                 ; 6       ;
-;      - pwm1[4]~3                                ; 0                 ; 6       ;
-;      - pwm1[3]~4                                ; 0                 ; 6       ;
-;      - pwm1[2]~5                                ; 0                 ; 6       ;
-;      - pwm1[1]~6                                ; 0                 ; 6       ;
-;      - pwm1[0]~7                                ; 0                 ; 6       ;
-; Switch_1[1]                                     ;                   ;         ;
-;      - pwm2[7]~0                                ; 0                 ; 6       ;
-;      - pwm2[6]~1                                ; 0                 ; 6       ;
-;      - pwm2[5]~2                                ; 0                 ; 6       ;
-;      - pwm2[4]~3                                ; 0                 ; 6       ;
-;      - pwm2[3]~4                                ; 0                 ; 6       ;
-;      - pwm2[2]~5                                ; 0                 ; 6       ;
-;      - pwm2[1]~6                                ; 0                 ; 6       ;
-;      - pwm2[0]~7                                ; 0                 ; 6       ;
-; Switch_1[2]                                     ;                   ;         ;
-;      - pwm3[7]~0                                ; 1                 ; 6       ;
-;      - pwm3[6]~1                                ; 1                 ; 6       ;
-;      - pwm3[5]~2                                ; 1                 ; 6       ;
-;      - pwm3[4]~3                                ; 1                 ; 6       ;
-;      - pwm3[3]~4                                ; 1                 ; 6       ;
-;      - pwm3[2]~5                                ; 1                 ; 6       ;
-;      - pwm3[1]~6                                ; 1                 ; 6       ;
-;      - pwm3[0]~7                                ; 1                 ; 6       ;
-; Switch_1[3]                                     ;                   ;         ;
-;      - pwm5[7]~0                                ; 0                 ; 6       ;
-;      - pwm5[6]~1                                ; 0                 ; 6       ;
-;      - pwm5[5]~2                                ; 0                 ; 6       ;
-;      - pwm5[4]~3                                ; 0                 ; 6       ;
-;      - pwm5[3]~4                                ; 0                 ; 6       ;
-;      - pwm5[2]~5                                ; 0                 ; 6       ;
-;      - pwm5[1]~6                                ; 0                 ; 6       ;
-;      - pwm5[0]~7                                ; 0                 ; 6       ;
-; PIC_SPI_MOSI                                    ;                   ;         ;
-;      - SPI_Slave:U_PICSPI_Slave|MOSIr[0]~feeder ; 0                 ; 6       ;
-; PIC_SPI_SCLK                                    ;                   ;         ;
-;      - SPI_Slave:U_PICSPI_Slave|SCKr[0]         ; 0                 ; 6       ;
-; PIC_SPI_Select                                  ;                   ;         ;
-;      - SPI_Slave:U_PICSPI_Slave|SSELr[0]~feeder ; 0                 ; 6       ;
-+-------------------------------------------------+-------------------+---------+
++-------------------------------------------------------------------------------------------+
+; Pad To Core Delay Chain Fanout                                                            ;
++-------------------------------------------------------------+-------------------+---------+
+; Source Pin / Fanout                                         ; Pad To Core Index ; Setting ;
++-------------------------------------------------------------+-------------------+---------+
+; PIC_PBUS_Data[0]                                            ;                   ;         ;
+;      - regmap:Registers|addreg:RegAdd|tmp[0]                ; 0                 ; 6       ;
+;      - regmap:Registers|quadreg:RegXD|tmp[0]                ; 0                 ; 6       ;
+;      - regmap:Registers|quadreg:RegYD|tmp[0]                ; 0                 ; 6       ;
+;      - regmap:Registers|quadreg:RegYM|tmp[0]                ; 0                 ; 6       ;
+;      - regmap:Registers|quadreg:RegAD|tmp[0]                ; 0                 ; 6       ;
+;      - BLED_Orange[0]~reg0feeder                            ; 0                 ; 6       ;
+;      - regmap:Registers|quadreg:RegAM|tmp[0]~feeder         ; 0                 ; 6       ;
+;      - regmap:Registers|quadreg:RegZM|tmp[0]~feeder         ; 0                 ; 6       ;
+;      - regmap:Registers|quadreg:RegXM|tmp[0]~feeder         ; 0                 ; 6       ;
+;      - regmap:Registers|quadreg:RegZD|tmp[0]~feeder         ; 0                 ; 6       ;
+; PIC_PBUS_Data[1]                                            ;                   ;         ;
+;      - regmap:Registers|addreg:RegAdd|tmp[1]                ; 0                 ; 6       ;
+;      - regmap:Registers|quadreg:RegXD|tmp[1]                ; 0                 ; 6       ;
+;      - regmap:Registers|quadreg:RegYD|tmp[1]                ; 0                 ; 6       ;
+;      - regmap:Registers|quadreg:RegYM|tmp[1]                ; 0                 ; 6       ;
+;      - regmap:Registers|quadreg:RegAD|tmp[1]                ; 0                 ; 6       ;
+;      - BLED_Orange[1]~reg0feeder                            ; 0                 ; 6       ;
+;      - regmap:Registers|quadreg:RegAM|tmp[1]~feeder         ; 0                 ; 6       ;
+;      - regmap:Registers|quadreg:RegZM|tmp[1]~feeder         ; 0                 ; 6       ;
+;      - regmap:Registers|quadreg:RegXM|tmp[1]~feeder         ; 0                 ; 6       ;
+;      - regmap:Registers|quadreg:RegZD|tmp[1]~feeder         ; 0                 ; 6       ;
+; PIC_PBUS_Data[2]                                            ;                   ;         ;
+;      - regmap:Registers|addreg:RegAdd|tmp[2]                ; 0                 ; 6       ;
+;      - regmap:Registers|quadreg:RegXD|tmp[2]                ; 0                 ; 6       ;
+;      - regmap:Registers|quadreg:RegYD|tmp[2]                ; 0                 ; 6       ;
+;      - regmap:Registers|quadreg:RegYM|tmp[2]                ; 0                 ; 6       ;
+;      - regmap:Registers|quadreg:RegAD|tmp[2]                ; 0                 ; 6       ;
+;      - BLED_Orange[2]~reg0feeder                            ; 0                 ; 6       ;
+;      - regmap:Registers|quadreg:RegAM|tmp[2]~feeder         ; 0                 ; 6       ;
+;      - regmap:Registers|quadreg:RegZM|tmp[2]~feeder         ; 0                 ; 6       ;
+;      - regmap:Registers|quadreg:RegXM|tmp[2]~feeder         ; 0                 ; 6       ;
+;      - regmap:Registers|quadreg:RegZD|tmp[2]~feeder         ; 0                 ; 6       ;
+; PIC_PBUS_Data[3]                                            ;                   ;         ;
+;      - BLED_Orange[3]~reg0                                  ; 1                 ; 6       ;
+;      - regmap:Registers|addreg:RegAdd|tmp[3]                ; 1                 ; 6       ;
+;      - regmap:Registers|quadreg:RegXD|tmp[3]                ; 1                 ; 6       ;
+;      - regmap:Registers|quadreg:RegYD|tmp[3]                ; 1                 ; 6       ;
+;      - regmap:Registers|quadreg:RegYM|tmp[3]                ; 1                 ; 6       ;
+;      - regmap:Registers|quadreg:RegAD|tmp[3]                ; 1                 ; 6       ;
+;      - regmap:Registers|quadreg:RegAM|tmp[3]~feeder         ; 1                 ; 6       ;
+;      - regmap:Registers|quadreg:RegZM|tmp[3]~feeder         ; 1                 ; 6       ;
+;      - regmap:Registers|quadreg:RegXM|tmp[3]~feeder         ; 1                 ; 6       ;
+;      - regmap:Registers|quadreg:RegZD|tmp[3]~feeder         ; 1                 ; 6       ;
+; PIC_PBUS_Data[4]                                            ;                   ;         ;
+;      - regmap:Registers|addreg:RegAdd|tmp[4]                ; 0                 ; 6       ;
+;      - regmap:Registers|quadreg:RegXD|tmp[4]                ; 0                 ; 6       ;
+;      - regmap:Registers|quadreg:RegYD|tmp[4]                ; 0                 ; 6       ;
+;      - regmap:Registers|quadreg:RegYM|tmp[4]                ; 0                 ; 6       ;
+;      - regmap:Registers|quadreg:RegZM|tmp[4]                ; 0                 ; 6       ;
+;      - regmap:Registers|quadreg:RegAD|tmp[4]                ; 0                 ; 6       ;
+;      - regmap:Registers|quadreg:RegAM|tmp[4]                ; 0                 ; 6       ;
+;      - BLED_Blue[0]~reg0feeder                              ; 0                 ; 6       ;
+;      - regmap:Registers|quadreg:RegXM|tmp[4]~feeder         ; 0                 ; 6       ;
+;      - regmap:Registers|quadreg:RegZD|tmp[4]~feeder         ; 0                 ; 6       ;
+; PIC_PBUS_Data[5]                                            ;                   ;         ;
+;      - regmap:Registers|addreg:RegAdd|tmp[5]                ; 0                 ; 6       ;
+;      - regmap:Registers|quadreg:RegXD|tmp[5]                ; 0                 ; 6       ;
+;      - regmap:Registers|quadreg:RegYD|tmp[5]                ; 0                 ; 6       ;
+;      - regmap:Registers|quadreg:RegYM|tmp[5]                ; 0                 ; 6       ;
+;      - regmap:Registers|quadreg:RegZM|tmp[5]                ; 0                 ; 6       ;
+;      - regmap:Registers|quadreg:RegAD|tmp[5]                ; 0                 ; 6       ;
+;      - regmap:Registers|quadreg:RegAM|tmp[5]                ; 0                 ; 6       ;
+;      - BLED_Blue[1]~reg0feeder                              ; 0                 ; 6       ;
+;      - regmap:Registers|quadreg:RegXM|tmp[5]~feeder         ; 0                 ; 6       ;
+;      - regmap:Registers|quadreg:RegZD|tmp[5]~feeder         ; 0                 ; 6       ;
+; PIC_PBUS_Data[6]                                            ;                   ;         ;
+;      - BLED_Blue[2]~reg0                                    ; 0                 ; 6       ;
+;      - regmap:Registers|addreg:RegAdd|tmp[6]                ; 0                 ; 6       ;
+;      - regmap:Registers|quadreg:RegXD|tmp[6]                ; 0                 ; 6       ;
+;      - regmap:Registers|quadreg:RegYD|tmp[6]                ; 0                 ; 6       ;
+;      - regmap:Registers|quadreg:RegZD|tmp[6]                ; 0                 ; 6       ;
+;      - regmap:Registers|quadreg:RegXM|tmp[6]                ; 0                 ; 6       ;
+;      - regmap:Registers|quadreg:RegYM|tmp[6]                ; 0                 ; 6       ;
+;      - regmap:Registers|quadreg:RegAD|tmp[6]                ; 0                 ; 6       ;
+;      - regmap:Registers|quadreg:RegAM|tmp[6]~feeder         ; 0                 ; 6       ;
+;      - regmap:Registers|quadreg:RegZM|tmp[6]~feeder         ; 0                 ; 6       ;
+; PIC_PBUS_Data[7]                                            ;                   ;         ;
+;      - regmap:Registers|addreg:RegAdd|tmp[7]                ; 0                 ; 6       ;
+;      - regmap:Registers|quadreg:RegXD|tmp[7]                ; 0                 ; 6       ;
+;      - regmap:Registers|quadreg:RegYD|tmp[7]                ; 0                 ; 6       ;
+;      - regmap:Registers|quadreg:RegZD|tmp[7]                ; 0                 ; 6       ;
+;      - regmap:Registers|quadreg:RegXM|tmp[7]                ; 0                 ; 6       ;
+;      - regmap:Registers|quadreg:RegYM|tmp[7]                ; 0                 ; 6       ;
+;      - regmap:Registers|quadreg:RegZM|tmp[7]                ; 0                 ; 6       ;
+;      - regmap:Registers|quadreg:RegAD|tmp[7]                ; 0                 ; 6       ;
+;      - regmap:Registers|quadreg:RegAM|tmp[7]                ; 0                 ; 6       ;
+;      - BLED_Blue[3]~reg0feeder                              ; 0                 ; 6       ;
+; Camera_SDA                                                  ;                   ;         ;
+; FPGA_I2C_Data                                               ;                   ;         ;
+; clk_DS1085Z_0                                               ;                   ;         ;
+; clk_DS1085Z_1                                               ;                   ;         ;
+; Switch_3                                                    ;                   ;         ;
+; Switch_4                                                    ;                   ;         ;
+; Ultra_T_Edge                                                ;                   ;         ;
+; Ultra_B_Edge                                                ;                   ;         ;
+; Camera_HD                                                   ;                   ;         ;
+; Camera_VD                                                   ;                   ;         ;
+; Camera_DCLK                                                 ;                   ;         ;
+; Camera_DOUT[0]                                              ;                   ;         ;
+; Camera_DOUT[1]                                              ;                   ;         ;
+; Camera_DOUT[2]                                              ;                   ;         ;
+; Camera_DOUT[3]                                              ;                   ;         ;
+; Camera_DOUT[4]                                              ;                   ;         ;
+; Camera_DOUT[5]                                              ;                   ;         ;
+; Camera_DOUT[6]                                              ;                   ;         ;
+; Camera_DOUT[7]                                              ;                   ;         ;
+; FPGA_SPI_MISO                                               ;                   ;         ;
+; Gyro_DataReady                                              ;                   ;         ;
+; Gyro_Interrupt                                              ;                   ;         ;
+; Accel_Interrupt1                                            ;                   ;         ;
+; Accel_Interrupt2                                            ;                   ;         ;
+; clk                                                         ;                   ;         ;
+; Switch_2                                                    ;                   ;         ;
+;      - regmap:Registers|reg_controller:RegCont|state.wa2    ; 1                 ; 6       ;
+;      - regmap:Registers|reg_controller:RegCont|state.wd2    ; 1                 ; 6       ;
+;      - regmap:Registers|reg_controller:RegCont|state.wa1    ; 1                 ; 6       ;
+;      - regmap:Registers|reg_controller:RegCont|state.wd1    ; 1                 ; 6       ;
+;      - regmap:Registers|addreg:RegAdd|tmp[0]                ; 1                 ; 6       ;
+;      - regmap:Registers|quadreg:RegXD|tmp[0]                ; 1                 ; 6       ;
+;      - regmap:Registers|quadreg:RegYD|tmp[0]                ; 1                 ; 6       ;
+;      - regmap:Registers|quadreg:RegZD|tmp[0]                ; 1                 ; 6       ;
+;      - regmap:Registers|quadreg:RegXM|tmp[0]                ; 1                 ; 6       ;
+;      - regmap:Registers|quadreg:RegYM|tmp[0]                ; 1                 ; 6       ;
+;      - regmap:Registers|quadreg:RegZM|tmp[0]                ; 1                 ; 6       ;
+;      - regmap:Registers|quadreg:RegAD|tmp[0]                ; 1                 ; 6       ;
+;      - regmap:Registers|quadreg:RegAM|tmp[0]                ; 1                 ; 6       ;
+;      - regmap:Registers|reg_controller:RegCont|state.ra1    ; 1                 ; 6       ;
+;      - regmap:Registers|reg_controller:RegCont|state.rd2    ; 1                 ; 6       ;
+;      - regmap:Registers|addreg:RegAdd|tmp[1]                ; 1                 ; 6       ;
+;      - regmap:Registers|quadreg:RegXD|tmp[1]                ; 1                 ; 6       ;
+;      - regmap:Registers|quadreg:RegYD|tmp[1]                ; 1                 ; 6       ;
+;      - regmap:Registers|quadreg:RegZD|tmp[1]                ; 1                 ; 6       ;
+;      - regmap:Registers|quadreg:RegXM|tmp[1]                ; 1                 ; 6       ;
+;      - regmap:Registers|quadreg:RegYM|tmp[1]                ; 1                 ; 6       ;
+;      - regmap:Registers|quadreg:RegZM|tmp[1]                ; 1                 ; 6       ;
+;      - regmap:Registers|quadreg:RegAD|tmp[1]                ; 1                 ; 6       ;
+;      - regmap:Registers|quadreg:RegAM|tmp[1]                ; 1                 ; 6       ;
+;      - regmap:Registers|addreg:RegAdd|tmp[2]                ; 1                 ; 6       ;
+;      - regmap:Registers|quadreg:RegXD|tmp[2]                ; 1                 ; 6       ;
+;      - regmap:Registers|quadreg:RegYD|tmp[2]                ; 1                 ; 6       ;
+;      - regmap:Registers|quadreg:RegZD|tmp[2]                ; 1                 ; 6       ;
+;      - regmap:Registers|quadreg:RegXM|tmp[2]                ; 1                 ; 6       ;
+;      - regmap:Registers|quadreg:RegYM|tmp[2]                ; 1                 ; 6       ;
+;      - regmap:Registers|quadreg:RegZM|tmp[2]                ; 1                 ; 6       ;
+;      - regmap:Registers|quadreg:RegAD|tmp[2]                ; 1                 ; 6       ;
+;      - regmap:Registers|quadreg:RegAM|tmp[2]                ; 1                 ; 6       ;
+;      - regmap:Registers|addreg:RegAdd|tmp[3]                ; 1                 ; 6       ;
+;      - regmap:Registers|quadreg:RegXD|tmp[3]                ; 1                 ; 6       ;
+;      - regmap:Registers|quadreg:RegYD|tmp[3]                ; 1                 ; 6       ;
+;      - regmap:Registers|quadreg:RegZD|tmp[3]                ; 1                 ; 6       ;
+;      - regmap:Registers|quadreg:RegXM|tmp[3]                ; 1                 ; 6       ;
+;      - regmap:Registers|quadreg:RegYM|tmp[3]                ; 1                 ; 6       ;
+;      - regmap:Registers|quadreg:RegZM|tmp[3]                ; 1                 ; 6       ;
+;      - regmap:Registers|quadreg:RegAD|tmp[3]                ; 1                 ; 6       ;
+;      - regmap:Registers|quadreg:RegAM|tmp[3]                ; 1                 ; 6       ;
+;      - regmap:Registers|addreg:RegAdd|tmp[4]                ; 1                 ; 6       ;
+;      - regmap:Registers|quadreg:RegXD|tmp[4]                ; 1                 ; 6       ;
+;      - regmap:Registers|quadreg:RegYD|tmp[4]                ; 1                 ; 6       ;
+;      - regmap:Registers|quadreg:RegZD|tmp[4]                ; 1                 ; 6       ;
+;      - regmap:Registers|quadreg:RegXM|tmp[4]                ; 1                 ; 6       ;
+;      - regmap:Registers|quadreg:RegYM|tmp[4]                ; 1                 ; 6       ;
+;      - regmap:Registers|quadreg:RegZM|tmp[4]                ; 1                 ; 6       ;
+;      - regmap:Registers|quadreg:RegAD|tmp[4]                ; 1                 ; 6       ;
+;      - regmap:Registers|quadreg:RegAM|tmp[4]                ; 1                 ; 6       ;
+;      - regmap:Registers|addreg:RegAdd|tmp[5]                ; 1                 ; 6       ;
+;      - regmap:Registers|quadreg:RegXD|tmp[5]                ; 1                 ; 6       ;
+;      - regmap:Registers|quadreg:RegYD|tmp[5]                ; 1                 ; 6       ;
+;      - regmap:Registers|quadreg:RegZD|tmp[5]                ; 1                 ; 6       ;
+;      - regmap:Registers|quadreg:RegXM|tmp[5]                ; 1                 ; 6       ;
+;      - regmap:Registers|quadreg:RegYM|tmp[5]                ; 1                 ; 6       ;
+;      - regmap:Registers|quadreg:RegZM|tmp[5]                ; 1                 ; 6       ;
+;      - regmap:Registers|quadreg:RegAD|tmp[5]                ; 1                 ; 6       ;
+;      - regmap:Registers|quadreg:RegAM|tmp[5]                ; 1                 ; 6       ;
+;      - regmap:Registers|addreg:RegAdd|tmp[6]                ; 1                 ; 6       ;
+;      - regmap:Registers|quadreg:RegXD|tmp[6]                ; 1                 ; 6       ;
+;      - regmap:Registers|quadreg:RegYD|tmp[6]                ; 1                 ; 6       ;
+;      - regmap:Registers|quadreg:RegZD|tmp[6]                ; 1                 ; 6       ;
+;      - regmap:Registers|quadreg:RegXM|tmp[6]                ; 1                 ; 6       ;
+;      - regmap:Registers|quadreg:RegYM|tmp[6]                ; 1                 ; 6       ;
+;      - regmap:Registers|quadreg:RegZM|tmp[6]                ; 1                 ; 6       ;
+;      - regmap:Registers|quadreg:RegAD|tmp[6]                ; 1                 ; 6       ;
+;      - regmap:Registers|quadreg:RegAM|tmp[6]                ; 1                 ; 6       ;
+;      - regmap:Registers|addreg:RegAdd|tmp[7]                ; 1                 ; 6       ;
+;      - regmap:Registers|quadreg:RegXD|tmp[7]                ; 1                 ; 6       ;
+;      - regmap:Registers|quadreg:RegYD|tmp[7]                ; 1                 ; 6       ;
+;      - regmap:Registers|quadreg:RegZD|tmp[7]                ; 1                 ; 6       ;
+;      - regmap:Registers|quadreg:RegXM|tmp[7]                ; 1                 ; 6       ;
+;      - regmap:Registers|quadreg:RegYM|tmp[7]                ; 1                 ; 6       ;
+;      - regmap:Registers|quadreg:RegZM|tmp[7]                ; 1                 ; 6       ;
+;      - regmap:Registers|quadreg:RegAD|tmp[7]                ; 1                 ; 6       ;
+;      - regmap:Registers|quadreg:RegAM|tmp[7]                ; 1                 ; 6       ;
+;      - regmap:Registers|reg_controller:RegCont|state.fetch  ; 1                 ; 6       ;
+;      - regmap:Registers|reg_controller:RegCont|state.rd1    ; 1                 ; 6       ;
+; Switch_1[0]                                                 ;                   ;         ;
+;      - pwm1[7]~0                                            ; 0                 ; 6       ;
+;      - pwm1[6]~1                                            ; 0                 ; 6       ;
+;      - pwm1[5]~2                                            ; 0                 ; 6       ;
+;      - pwm1[4]~3                                            ; 0                 ; 6       ;
+;      - pwm1[3]~4                                            ; 0                 ; 6       ;
+;      - pwm1[2]~5                                            ; 0                 ; 6       ;
+;      - pwm1[1]~6                                            ; 0                 ; 6       ;
+;      - pwm1[0]~7                                            ; 0                 ; 6       ;
+; Switch_1[1]                                                 ;                   ;         ;
+;      - pwm2[7]~0                                            ; 0                 ; 6       ;
+;      - pwm2[6]~1                                            ; 0                 ; 6       ;
+;      - pwm2[5]~2                                            ; 0                 ; 6       ;
+;      - pwm2[4]~3                                            ; 0                 ; 6       ;
+;      - pwm2[3]~4                                            ; 0                 ; 6       ;
+;      - pwm2[2]~5                                            ; 0                 ; 6       ;
+;      - pwm2[1]~6                                            ; 0                 ; 6       ;
+;      - pwm2[0]~7                                            ; 0                 ; 6       ;
+; Switch_1[2]                                                 ;                   ;         ;
+;      - pwm3[7]~0                                            ; 0                 ; 6       ;
+;      - pwm3[6]~1                                            ; 0                 ; 6       ;
+;      - pwm3[5]~2                                            ; 0                 ; 6       ;
+;      - pwm3[4]~3                                            ; 0                 ; 6       ;
+;      - pwm3[3]~4                                            ; 0                 ; 6       ;
+;      - pwm3[2]~5                                            ; 0                 ; 6       ;
+;      - pwm3[1]~6                                            ; 0                 ; 6       ;
+;      - pwm3[0]~7                                            ; 0                 ; 6       ;
+; Switch_1[3]                                                 ;                   ;         ;
+;      - pwm5[7]~0                                            ; 0                 ; 6       ;
+;      - pwm5[6]~1                                            ; 0                 ; 6       ;
+;      - pwm5[5]~2                                            ; 0                 ; 6       ;
+;      - pwm5[4]~3                                            ; 0                 ; 6       ;
+;      - pwm5[3]~4                                            ; 0                 ; 6       ;
+;      - pwm5[2]~5                                            ; 0                 ; 6       ;
+;      - pwm5[1]~6                                            ; 0                 ; 6       ;
+;      - pwm5[0]~7                                            ; 0                 ; 6       ;
+; PIC_SPI_MOSI                                                ;                   ;         ;
+;      - SPI_Slave:U_PICSPI_Slave|MOSIr[0]                    ; 0                 ; 6       ;
+; PIC_SPI_SCLK                                                ;                   ;         ;
+;      - SPI_Slave:U_PICSPI_Slave|SCKr[0]                     ; 0                 ; 6       ;
+; PIC_SPI_Select                                              ;                   ;         ;
+;      - SPI_Slave:U_PICSPI_Slave|SSELr[0]~feeder             ; 0                 ; 6       ;
+; PIC_PBUS_A_D                                                ;                   ;         ;
+;      - regmap:Registers|reg_controller:RegCont|Selector7~0  ; 0                 ; 6       ;
+;      - regmap:Registers|reg_controller:RegCont|Selector10~0 ; 0                 ; 6       ;
+;      - regmap:Registers|reg_controller:RegCont|Selector3~0  ; 0                 ; 6       ;
+;      - regmap:Registers|reg_controller:RegCont|Selector4~0  ; 0                 ; 6       ;
+; PIC_PBUS_OK_IN                                              ;                   ;         ;
+;      - regmap:Registers|reg_controller:RegCont|Selector7~0  ; 0                 ; 6       ;
+;      - regmap:Registers|reg_controller:RegCont|Selector10~0 ; 0                 ; 6       ;
+;      - regmap:Registers|reg_controller:RegCont|Selector3~0  ; 0                 ; 6       ;
+;      - regmap:Registers|reg_controller:RegCont|Selector3~1  ; 0                 ; 6       ;
+;      - regmap:Registers|reg_controller:RegCont|Selector6~0  ; 0                 ; 6       ;
+;      - regmap:Registers|reg_controller:RegCont|Selector1~0  ; 0                 ; 6       ;
+;      - regmap:Registers|reg_controller:RegCont|Selector4~0  ; 0                 ; 6       ;
+; PIC_PBUS_R_W                                                ;                   ;         ;
+;      - regmap:Registers|reg_controller:RegCont|Selector7~0  ; 0                 ; 6       ;
+;      - regmap:Registers|reg_controller:RegCont|Selector10~0 ; 0                 ; 6       ;
+;      - regmap:Registers|reg_controller:RegCont|Selector3~0  ; 0                 ; 6       ;
+;      - regmap:Registers|reg_controller:RegCont|Selector4~0  ; 0                 ; 6       ;
++-------------------------------------------------------------+-------------------+---------+
 
 
-+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Control Signals                                                                                                                                                                       ;
-+----------------------------------------------+-------------------+---------+---------------------------+--------+----------------------+------------------+---------------------------+
-; Name                                         ; Location          ; Fan-Out ; Usage                     ; Global ; Global Resource Used ; Global Line Name ; Enable Signal Source Name ;
-+----------------------------------------------+-------------------+---------+---------------------------+--------+----------------------+------------------+---------------------------+
-; SPI_Slave:U_PICSPI_Slave|Equal2~0            ; LCCOMB_X9_Y13_N30 ; 16      ; Clock enable              ; no     ; --                   ; --               ; --                        ;
-; SPI_Slave:U_PICSPI_Slave|byte_data_sent[0]~2 ; LCCOMB_X9_Y13_N28 ; 8       ; Clock enable              ; no     ; --                   ; --               ; --                        ;
-; clk                                          ; PIN_17            ; 87      ; Clock                     ; yes    ; Global Clock         ; GCLK2            ; --                        ;
-; clk_div:U_1HzClkDivider|clk_out              ; LCFF_X24_Y6_N23   ; 9       ; Clock                     ; yes    ; Global Clock         ; GCLK4            ; --                        ;
-; motor_pwm:Motor_1|clocktick                  ; LCFF_X2_Y15_N1    ; 19      ; Clock enable, Sync. clear ; no     ; --                   ; --               ; --                        ;
-+----------------------------------------------+-------------------+---------+---------------------------+--------+----------------------+------------------+---------------------------+
++---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Control Signals                                                                                                                                                                             ;
++---------------------------------------------------+--------------------+---------+---------------------------+--------+----------------------+------------------+---------------------------+
+; Name                                              ; Location           ; Fan-Out ; Usage                     ; Global ; Global Resource Used ; Global Line Name ; Enable Signal Source Name ;
++---------------------------------------------------+--------------------+---------+---------------------------+--------+----------------------+------------------+---------------------------+
+; SPI_Slave:U_PICSPI_Slave|Equal2~0                 ; LCCOMB_X7_Y8_N0    ; 16      ; Clock enable              ; no     ; --                   ; --               ; --                        ;
+; SPI_Slave:U_PICSPI_Slave|byte_data_sent[0]~2      ; LCCOMB_X7_Y8_N18   ; 8       ; Clock enable              ; no     ; --                   ; --               ; --                        ;
+; Switch_2                                          ; PIN_9              ; 80      ; Async. clear              ; no     ; --                   ; --               ; --                        ;
+; clk                                               ; PIN_17             ; 167     ; Clock                     ; yes    ; Global Clock         ; GCLK2            ; --                        ;
+; clk_div:U_1HzClkDivider|clk_out                   ; LCFF_X12_Y8_N1     ; 9       ; Clock                     ; yes    ; Global Clock         ; GCLK3            ; --                        ;
+; motor_pwm:Motor_1|clocktick                       ; LCFF_X15_Y10_N1    ; 19      ; Clock enable, Sync. clear ; no     ; --                   ; --               ; --                        ;
+; regmap:Registers|reg_controller:RegCont|regi00~0  ; LCCOMB_X30_Y17_N18 ; 8       ; Clock enable              ; no     ; --                   ; --               ; --                        ;
+; regmap:Registers|reg_controller:RegCont|regi01~0  ; LCCOMB_X30_Y17_N2  ; 8       ; Clock enable              ; no     ; --                   ; --               ; --                        ;
+; regmap:Registers|reg_controller:RegCont|regi02~0  ; LCCOMB_X30_Y17_N30 ; 8       ; Clock enable              ; no     ; --                   ; --               ; --                        ;
+; regmap:Registers|reg_controller:RegCont|regi03~1  ; LCCOMB_X30_Y17_N14 ; 8       ; Clock enable              ; no     ; --                   ; --               ; --                        ;
+; regmap:Registers|reg_controller:RegCont|regi04~0  ; LCCOMB_X30_Y17_N12 ; 8       ; Clock enable              ; no     ; --                   ; --               ; --                        ;
+; regmap:Registers|reg_controller:RegCont|regi05~0  ; LCCOMB_X30_Y17_N26 ; 8       ; Clock enable              ; no     ; --                   ; --               ; --                        ;
+; regmap:Registers|reg_controller:RegCont|regi06~1  ; LCCOMB_X30_Y17_N4  ; 8       ; Clock enable              ; no     ; --                   ; --               ; --                        ;
+; regmap:Registers|reg_controller:RegCont|regi07~1  ; LCCOMB_X30_Y17_N6  ; 8       ; Clock enable              ; no     ; --                   ; --               ; --                        ;
+; regmap:Registers|reg_controller:RegCont|state.wa1 ; LCFF_X26_Y17_N27   ; 9       ; Clock enable              ; no     ; --                   ; --               ; --                        ;
+; regmap:Registers|reg_controller:RegCont|state.wd2 ; LCFF_X30_Y17_N17   ; 8       ; Latch enable              ; yes    ; Global Clock         ; GCLK7            ; --                        ;
+; regmap:Registers|reg_controller:RegCont|tbo       ; LCCOMB_X26_Y17_N18 ; 9       ; Output enable             ; no     ; --                   ; --               ; --                        ;
++---------------------------------------------------+--------------------+---------+---------------------------+--------+----------------------+------------------+---------------------------+
 
 
-+-----------------------------------------------------------------------------------------------------------------------------------+
-; Global & Other Fast Signals                                                                                                       ;
-+---------------------------------+-----------------+---------+----------------------+------------------+---------------------------+
-; Name                            ; Location        ; Fan-Out ; Global Resource Used ; Global Line Name ; Enable Signal Source Name ;
-+---------------------------------+-----------------+---------+----------------------+------------------+---------------------------+
-; clk                             ; PIN_17          ; 87      ; Global Clock         ; GCLK2            ; --                        ;
-; clk_div:U_1HzClkDivider|clk_out ; LCFF_X24_Y6_N23 ; 9       ; Global Clock         ; GCLK4            ; --                        ;
-+---------------------------------+-----------------+---------+----------------------+------------------+---------------------------+
++------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Global & Other Fast Signals                                                                                                                          ;
++---------------------------------------------------+------------------+---------+----------------------+------------------+---------------------------+
+; Name                                              ; Location         ; Fan-Out ; Global Resource Used ; Global Line Name ; Enable Signal Source Name ;
++---------------------------------------------------+------------------+---------+----------------------+------------------+---------------------------+
+; clk                                               ; PIN_17           ; 167     ; Global Clock         ; GCLK2            ; --                        ;
+; clk_div:U_1HzClkDivider|clk_out                   ; LCFF_X12_Y8_N1   ; 9       ; Global Clock         ; GCLK3            ; --                        ;
+; regmap:Registers|reg_controller:RegCont|state.wd2 ; LCFF_X30_Y17_N17 ; 8       ; Global Clock         ; GCLK7            ; --                        ;
++---------------------------------------------------+------------------+---------+----------------------+------------------+---------------------------+
 
 
-+------------------------------------------------------------+
-; Non-Global High Fan-Out Signals                            ;
-+--------------------------------------------------+---------+
-; Name                                             ; Fan-Out ;
-+--------------------------------------------------+---------+
-; motor_pwm:Motor_1|clocktick                      ; 19      ;
-; SPI_Slave:U_PICSPI_Slave|Equal2~0                ; 16      ;
-; clk_div:U_1HzClkDivider|Equal0~6                 ; 11      ;
-; clk_div:U_1HzClkDivider|Equal0~4                 ; 11      ;
-; SPI_Slave:U_PICSPI_Slave|SSELr[1]                ; 9       ;
-; Switch_1[3]                                      ; 8       ;
-; Switch_1[2]                                      ; 8       ;
-; Switch_1[1]                                      ; 8       ;
-; Switch_1[0]                                      ; 8       ;
-; SPI_Slave:U_PICSPI_Slave|byte_data_sent[0]~2     ; 8       ;
-; SPI_Slave:U_PICSPI_Slave|byte_data_sent~0        ; 7       ;
-; current_State                                    ; 7       ;
-; motor_pwm:Motor_1|pulsecount[0]                  ; 6       ;
-; SPI_Slave:U_PICSPI_Slave|SCKr[1]                 ; 5       ;
-; motor_pwm:Motor_1|pulsecount[8]                  ; 5       ;
-; counter[1]                                       ; 5       ;
-; motor_pwm:Motor_1|pulsecount[1]                  ; 5       ;
-; counter[2]                                       ; 5       ;
-; motor_pwm:Motor_1|pulsecount[2]                  ; 5       ;
-; counter[3]                                       ; 5       ;
-; motor_pwm:Motor_1|pulsecount[3]                  ; 5       ;
-; counter[4]                                       ; 5       ;
-; motor_pwm:Motor_1|pulsecount[4]                  ; 5       ;
-; counter[5]                                       ; 5       ;
-; motor_pwm:Motor_1|pulsecount[5]                  ; 5       ;
-; counter[6]                                       ; 5       ;
-; motor_pwm:Motor_1|pulsecount[6]                  ; 5       ;
-; counter[7]                                       ; 5       ;
-; motor_pwm:Motor_1|pulsecount[7]                  ; 5       ;
-; SPI_Slave:U_PICSPI_Slave|bitcnt[1]               ; 4       ;
-; SPI_Slave:U_PICSPI_Slave|bitcnt[0]               ; 4       ;
-; SPI_Slave:U_PICSPI_Slave|SCKr[2]                 ; 4       ;
-; motor_pwm:Motor_1|LessThan0~0                    ; 4       ;
-; SPI_Slave:U_PICSPI_Slave|cnt[0]                  ; 3       ;
-; SPI_Slave:U_PICSPI_Slave|SSELr[2]                ; 3       ;
-; SPI_Slave:U_PICSPI_Slave|bitcnt[2]               ; 3       ;
-; SPI_Slave:U_PICSPI_Slave|byte_data_sent[0]       ; 2       ;
-; SPI_Slave:U_PICSPI_Slave|Add1~0                  ; 2       ;
-; SPI_Slave:U_PICSPI_Slave|byte_received~0         ; 2       ;
-; clk_div:U_1HzClkDivider|cnt[20]                  ; 2       ;
-; clk_div:U_1HzClkDivider|cnt[22]                  ; 2       ;
-; clk_div:U_1HzClkDivider|cnt[21]                  ; 2       ;
-; clk_div:U_1HzClkDivider|cnt[19]                  ; 2       ;
-; clk_div:U_1HzClkDivider|cnt[18]                  ; 2       ;
-; clk_div:U_1HzClkDivider|cnt[17]                  ; 2       ;
-; clk_div:U_1HzClkDivider|cnt[16]                  ; 2       ;
-; clk_div:U_1HzClkDivider|cnt[15]                  ; 2       ;
-; clk_div:U_1HzClkDivider|cnt[14]                  ; 2       ;
-; clk_div:U_1HzClkDivider|cnt[13]                  ; 2       ;
-; clk_div:U_1HzClkDivider|cnt[12]                  ; 2       ;
-; clk_div:U_1HzClkDivider|cnt[10]                  ; 2       ;
-; clk_div:U_1HzClkDivider|cnt[9]                   ; 2       ;
-; clk_div:U_1HzClkDivider|cnt[8]                   ; 2       ;
-; clk_div:U_1HzClkDivider|cnt[11]                  ; 2       ;
-; clk_div:U_1HzClkDivider|cnt[0]                   ; 2       ;
-; clk_div:U_1HzClkDivider|cnt[3]                   ; 2       ;
-; clk_div:U_1HzClkDivider|cnt[1]                   ; 2       ;
-; clk_div:U_1HzClkDivider|cnt[2]                   ; 2       ;
-; clk_div:U_1HzClkDivider|cnt[4]                   ; 2       ;
-; clk_div:U_1HzClkDivider|cnt[5]                   ; 2       ;
-; clk_div:U_1HzClkDivider|cnt[6]                   ; 2       ;
-; clk_div:U_1HzClkDivider|cnt[7]                   ; 2       ;
-; SPI_Slave:U_PICSPI_Slave|byte_data_received[0]   ; 2       ;
-; SPI_Slave:U_PICSPI_Slave|LED                     ; 2       ;
-; motor_pwm:Motor_1|clockcount[4]                  ; 2       ;
-; motor_pwm:Motor_1|clockcount[6]                  ; 2       ;
-; motor_pwm:Motor_1|clockcount[5]                  ; 2       ;
-; motor_pwm:Motor_1|clockcount[3]                  ; 2       ;
-; motor_pwm:Motor_1|clockcount[2]                  ; 2       ;
-; motor_pwm:Motor_1|clockcount[1]                  ; 2       ;
-; motor_pwm:Motor_1|clockcount[0]                  ; 2       ;
-; SPI_Slave:U_PICSPI_Slave|cnt[1]                  ; 2       ;
-; SPI_Slave:U_PICSPI_Slave|cnt[2]                  ; 2       ;
-; SPI_Slave:U_PICSPI_Slave|cnt[3]                  ; 2       ;
-; SPI_Slave:U_PICSPI_Slave|cnt[4]                  ; 2       ;
-; SPI_Slave:U_PICSPI_Slave|cnt[5]                  ; 2       ;
-; SPI_Slave:U_PICSPI_Slave|cnt[6]                  ; 2       ;
-; SPI_Slave:U_PICSPI_Slave|cnt[7]                  ; 2       ;
-; motor_pwm:Motor_1|pulsecount[11]                 ; 2       ;
-; motor_pwm:Motor_1|pulsecount[10]                 ; 2       ;
-; motor_pwm:Motor_1|pulsecount[9]                  ; 2       ;
-; PIC_SPI_Select                                   ; 1       ;
-; PIC_SPI_SCLK                                     ; 1       ;
-; PIC_SPI_MOSI                                     ; 1       ;
-; PIC_PBUS_Data[7]~15                              ; 1       ;
-; PIC_PBUS_Data[6]~14                              ; 1       ;
-; PIC_PBUS_Data[5]~13                              ; 1       ;
-; PIC_PBUS_Data[4]~12                              ; 1       ;
-; PIC_PBUS_Data[3]~11                              ; 1       ;
-; PIC_PBUS_Data[2]~10                              ; 1       ;
-; PIC_PBUS_Data[1]~9                               ; 1       ;
-; PIC_PBUS_Data[0]~8                               ; 1       ;
-; current_State~0                                  ; 1       ;
-; TLED_Orange_1~0                                  ; 1       ;
-; clk_div:U_1HzClkDivider|cnt~13                   ; 1       ;
-; clk_div:U_1HzClkDivider|cnt~12                   ; 1       ;
-; SPI_Slave:U_PICSPI_Slave|byte_data_sent[0]~10    ; 1       ;
-; SPI_Slave:U_PICSPI_Slave|byte_data_sent[0]~9     ; 1       ;
-; SPI_Slave:U_PICSPI_Slave|byte_data_sent~8        ; 1       ;
-; SPI_Slave:U_PICSPI_Slave|byte_data_sent~7        ; 1       ;
-; SPI_Slave:U_PICSPI_Slave|byte_data_sent[1]       ; 1       ;
-; SPI_Slave:U_PICSPI_Slave|byte_data_sent~6        ; 1       ;
-; SPI_Slave:U_PICSPI_Slave|byte_data_sent[2]       ; 1       ;
-; SPI_Slave:U_PICSPI_Slave|byte_data_sent~5        ; 1       ;
-; SPI_Slave:U_PICSPI_Slave|byte_data_sent[3]       ; 1       ;
-; SPI_Slave:U_PICSPI_Slave|byte_data_sent~4        ; 1       ;
-; SPI_Slave:U_PICSPI_Slave|byte_data_sent[4]       ; 1       ;
-; SPI_Slave:U_PICSPI_Slave|cnt[0]~21               ; 1       ;
-; motor_pwm:Motor_1|Equal0~1                       ; 1       ;
-; motor_pwm:Motor_1|Equal0~0                       ; 1       ;
-; SPI_Slave:U_PICSPI_Slave|byte_data_sent~3        ; 1       ;
-; SPI_Slave:U_PICSPI_Slave|byte_data_sent[5]       ; 1       ;
-; SPI_Slave:U_PICSPI_Slave|bitcnt~2                ; 1       ;
-; SPI_Slave:U_PICSPI_Slave|bitcnt~1                ; 1       ;
-; SPI_Slave:U_PICSPI_Slave|bitcnt~0                ; 1       ;
-; SPI_Slave:U_PICSPI_Slave|SSELr[0]                ; 1       ;
-; SPI_Slave:U_PICSPI_Slave|SCKr[0]                 ; 1       ;
-; SPI_Slave:U_PICSPI_Slave|MOSIr[0]                ; 1       ;
-; clk_div:U_1HzClkDivider|cnt~11                   ; 1       ;
-; clk_div:U_1HzClkDivider|cnt~10                   ; 1       ;
-; clk_div:U_1HzClkDivider|cnt~9                    ; 1       ;
-; clk_div:U_1HzClkDivider|cnt~8                    ; 1       ;
-; clk_div:U_1HzClkDivider|cnt~7                    ; 1       ;
-; clk_div:U_1HzClkDivider|cnt~6                    ; 1       ;
-; clk_div:U_1HzClkDivider|cnt~5                    ; 1       ;
-; clk_div:U_1HzClkDivider|cnt~4                    ; 1       ;
-; motor_pwm:Motor_1|pulsecount[0]~33               ; 1       ;
-; SPI_Slave:U_PICSPI_Slave|byte_data_sent~1        ; 1       ;
-; SPI_Slave:U_PICSPI_Slave|byte_data_sent[6]       ; 1       ;
-; SPI_Slave:U_PICSPI_Slave|byte_received~1         ; 1       ;
-; SPI_Slave:U_PICSPI_Slave|byte_data_received[0]~0 ; 1       ;
-; SPI_Slave:U_PICSPI_Slave|MOSIr[1]                ; 1       ;
-; clk_div:U_1HzClkDivider|Equal0~7                 ; 1       ;
-; clk_div:U_1HzClkDivider|Equal0~5                 ; 1       ;
-; clk_div:U_1HzClkDivider|Equal0~3                 ; 1       ;
-; clk_div:U_1HzClkDivider|Equal0~2                 ; 1       ;
-; clk_div:U_1HzClkDivider|Equal0~1                 ; 1       ;
-; clk_div:U_1HzClkDivider|Equal0~0                 ; 1       ;
-; motor_pwm:Motor_5|LessThan0~16                   ; 1       ;
-; pwm5[0]~7                                        ; 1       ;
-; pwm5[1]~6                                        ; 1       ;
-; pwm5[2]~5                                        ; 1       ;
-; pwm5[3]~4                                        ; 1       ;
-; pwm5[4]~3                                        ; 1       ;
-; pwm5[5]~2                                        ; 1       ;
-; pwm5[6]~1                                        ; 1       ;
-; pwm5[7]~0                                        ; 1       ;
-; motor_pwm:Motor_3|LessThan0~16                   ; 1       ;
-; pwm3[0]~7                                        ; 1       ;
-; pwm3[1]~6                                        ; 1       ;
-; pwm3[2]~5                                        ; 1       ;
-; pwm3[3]~4                                        ; 1       ;
-; pwm3[4]~3                                        ; 1       ;
-; pwm3[5]~2                                        ; 1       ;
-; pwm3[6]~1                                        ; 1       ;
-; pwm3[7]~0                                        ; 1       ;
-; motor_pwm:Motor_2|LessThan0~16                   ; 1       ;
-; pwm2[0]~7                                        ; 1       ;
-; pwm2[1]~6                                        ; 1       ;
-; pwm2[2]~5                                        ; 1       ;
-; pwm2[3]~4                                        ; 1       ;
-; pwm2[4]~3                                        ; 1       ;
-; pwm2[5]~2                                        ; 1       ;
-; pwm2[6]~1                                        ; 1       ;
-; pwm2[7]~0                                        ; 1       ;
-; motor_pwm:Motor_1|LessThan0~17                   ; 1       ;
-; pwm1[0]~7                                        ; 1       ;
-; pwm1[1]~6                                        ; 1       ;
-; pwm1[2]~5                                        ; 1       ;
-; pwm1[3]~4                                        ; 1       ;
-; pwm1[4]~3                                        ; 1       ;
-; pwm1[5]~2                                        ; 1       ;
-; pwm1[6]~1                                        ; 1       ;
-; pwm1[7]~0                                        ; 1       ;
-; SPI_Slave:U_PICSPI_Slave|byte_data_sent[7]       ; 1       ;
-; SPI_Slave:U_PICSPI_Slave|LED~0                   ; 1       ;
-; SPI_Slave:U_PICSPI_Slave|byte_received           ; 1       ;
-; motor_pwm:Motor_5|pwm                            ; 1       ;
-; motor_pwm:Motor_3|pwm                            ; 1       ;
-; motor_pwm:Motor_2|pwm                            ; 1       ;
-; motor_pwm:Motor_1|pwm                            ; 1       ;
-; SPI_Slave:U_PICSPI_Slave|MISO                    ; 1       ;
-; BLED_Orange[3]~reg0                              ; 1       ;
-; BLED_Orange[2]~reg0                              ; 1       ;
-; BLED_Orange[1]~reg0                              ; 1       ;
-; BLED_Orange[0]~reg0                              ; 1       ;
-; BLED_Blue[3]~reg0                                ; 1       ;
-; BLED_Blue[2]~reg0                                ; 1       ;
-; BLED_Blue[1]~reg0                                ; 1       ;
-; BLED_Blue[0]~reg0                                ; 1       ;
-; TLED_Orange_1~reg0                               ; 1       ;
-; motor_pwm:Motor_1|clockcount[6]~19               ; 1       ;
-; motor_pwm:Motor_1|clockcount[5]~18               ; 1       ;
-; motor_pwm:Motor_1|clockcount[5]~17               ; 1       ;
-; motor_pwm:Motor_1|clockcount[4]~16               ; 1       ;
-; motor_pwm:Motor_1|clockcount[4]~15               ; 1       ;
-; motor_pwm:Motor_1|clockcount[3]~14               ; 1       ;
-; motor_pwm:Motor_1|clockcount[3]~13               ; 1       ;
-; motor_pwm:Motor_1|clockcount[2]~12               ; 1       ;
-; motor_pwm:Motor_1|clockcount[2]~11               ; 1       ;
-; motor_pwm:Motor_1|clockcount[1]~10               ; 1       ;
-; motor_pwm:Motor_1|clockcount[1]~9                ; 1       ;
-; motor_pwm:Motor_1|clockcount[0]~8                ; 1       ;
-; motor_pwm:Motor_1|clockcount[0]~7                ; 1       ;
-; SPI_Slave:U_PICSPI_Slave|cnt[7]~19               ; 1       ;
-; SPI_Slave:U_PICSPI_Slave|cnt[6]~18               ; 1       ;
-; SPI_Slave:U_PICSPI_Slave|cnt[6]~17               ; 1       ;
-; SPI_Slave:U_PICSPI_Slave|cnt[5]~16               ; 1       ;
-; SPI_Slave:U_PICSPI_Slave|cnt[5]~15               ; 1       ;
-; SPI_Slave:U_PICSPI_Slave|cnt[4]~14               ; 1       ;
-; SPI_Slave:U_PICSPI_Slave|cnt[4]~13               ; 1       ;
-; SPI_Slave:U_PICSPI_Slave|cnt[3]~12               ; 1       ;
-; SPI_Slave:U_PICSPI_Slave|cnt[3]~11               ; 1       ;
-; SPI_Slave:U_PICSPI_Slave|cnt[2]~10               ; 1       ;
-; SPI_Slave:U_PICSPI_Slave|cnt[2]~9                ; 1       ;
-; SPI_Slave:U_PICSPI_Slave|cnt[1]~8                ; 1       ;
-; SPI_Slave:U_PICSPI_Slave|cnt[1]~7                ; 1       ;
-; clk_div:U_1HzClkDivider|Add0~44                  ; 1       ;
-; clk_div:U_1HzClkDivider|Add0~43                  ; 1       ;
-; clk_div:U_1HzClkDivider|Add0~42                  ; 1       ;
-; clk_div:U_1HzClkDivider|Add0~41                  ; 1       ;
-; clk_div:U_1HzClkDivider|Add0~40                  ; 1       ;
-; clk_div:U_1HzClkDivider|Add0~39                  ; 1       ;
-; clk_div:U_1HzClkDivider|Add0~38                  ; 1       ;
-; clk_div:U_1HzClkDivider|Add0~37                  ; 1       ;
-; clk_div:U_1HzClkDivider|Add0~36                  ; 1       ;
-; clk_div:U_1HzClkDivider|Add0~35                  ; 1       ;
-; clk_div:U_1HzClkDivider|Add0~34                  ; 1       ;
-; clk_div:U_1HzClkDivider|Add0~33                  ; 1       ;
-; clk_div:U_1HzClkDivider|Add0~32                  ; 1       ;
-; clk_div:U_1HzClkDivider|Add0~31                  ; 1       ;
-; clk_div:U_1HzClkDivider|Add0~30                  ; 1       ;
-; clk_div:U_1HzClkDivider|Add0~29                  ; 1       ;
-; clk_div:U_1HzClkDivider|Add0~28                  ; 1       ;
-; clk_div:U_1HzClkDivider|Add0~27                  ; 1       ;
-; clk_div:U_1HzClkDivider|Add0~26                  ; 1       ;
-; clk_div:U_1HzClkDivider|Add0~25                  ; 1       ;
-; clk_div:U_1HzClkDivider|Add0~24                  ; 1       ;
-; clk_div:U_1HzClkDivider|Add0~23                  ; 1       ;
-; clk_div:U_1HzClkDivider|Add0~22                  ; 1       ;
-; clk_div:U_1HzClkDivider|Add0~21                  ; 1       ;
-; clk_div:U_1HzClkDivider|Add0~20                  ; 1       ;
-; clk_div:U_1HzClkDivider|Add0~19                  ; 1       ;
-; clk_div:U_1HzClkDivider|Add0~18                  ; 1       ;
-; clk_div:U_1HzClkDivider|Add0~17                  ; 1       ;
-; clk_div:U_1HzClkDivider|Add0~16                  ; 1       ;
-; clk_div:U_1HzClkDivider|Add0~15                  ; 1       ;
-; clk_div:U_1HzClkDivider|Add0~14                  ; 1       ;
-; clk_div:U_1HzClkDivider|Add0~13                  ; 1       ;
-; clk_div:U_1HzClkDivider|Add0~12                  ; 1       ;
-; clk_div:U_1HzClkDivider|Add0~11                  ; 1       ;
-; clk_div:U_1HzClkDivider|Add0~10                  ; 1       ;
-; clk_div:U_1HzClkDivider|Add0~9                   ; 1       ;
-; clk_div:U_1HzClkDivider|Add0~8                   ; 1       ;
-; clk_div:U_1HzClkDivider|Add0~7                   ; 1       ;
-; clk_div:U_1HzClkDivider|Add0~6                   ; 1       ;
-; clk_div:U_1HzClkDivider|Add0~5                   ; 1       ;
-; clk_div:U_1HzClkDivider|Add0~4                   ; 1       ;
-; clk_div:U_1HzClkDivider|Add0~3                   ; 1       ;
-; clk_div:U_1HzClkDivider|Add0~2                   ; 1       ;
-; clk_div:U_1HzClkDivider|Add0~1                   ; 1       ;
-; clk_div:U_1HzClkDivider|Add0~0                   ; 1       ;
-; counter[7]~19                                    ; 1       ;
-; counter[6]~18                                    ; 1       ;
-; counter[6]~17                                    ; 1       ;
-; counter[5]~16                                    ; 1       ;
-; counter[5]~15                                    ; 1       ;
-; counter[4]~14                                    ; 1       ;
-; counter[4]~13                                    ; 1       ;
-; counter[3]~12                                    ; 1       ;
-; counter[3]~11                                    ; 1       ;
-; counter[2]~10                                    ; 1       ;
-; counter[2]~9                                     ; 1       ;
-; counter[1]~8                                     ; 1       ;
-; counter[1]~7                                     ; 1       ;
-; motor_pwm:Motor_1|pulsecount[11]~31              ; 1       ;
-; motor_pwm:Motor_1|pulsecount[10]~30              ; 1       ;
-; motor_pwm:Motor_1|pulsecount[10]~29              ; 1       ;
-; motor_pwm:Motor_1|pulsecount[9]~28               ; 1       ;
-; motor_pwm:Motor_1|pulsecount[9]~27               ; 1       ;
-; motor_pwm:Motor_1|pulsecount[8]~26               ; 1       ;
-; motor_pwm:Motor_1|pulsecount[8]~25               ; 1       ;
-; motor_pwm:Motor_1|pulsecount[7]~24               ; 1       ;
-; motor_pwm:Motor_1|pulsecount[7]~23               ; 1       ;
-; motor_pwm:Motor_1|pulsecount[6]~22               ; 1       ;
-; motor_pwm:Motor_1|pulsecount[6]~21               ; 1       ;
-; motor_pwm:Motor_1|pulsecount[5]~20               ; 1       ;
-; motor_pwm:Motor_1|pulsecount[5]~19               ; 1       ;
-; motor_pwm:Motor_1|pulsecount[4]~18               ; 1       ;
-; motor_pwm:Motor_1|pulsecount[4]~17               ; 1       ;
-; motor_pwm:Motor_1|pulsecount[3]~16               ; 1       ;
-; motor_pwm:Motor_1|pulsecount[3]~15               ; 1       ;
-; motor_pwm:Motor_1|pulsecount[2]~14               ; 1       ;
-; motor_pwm:Motor_1|pulsecount[2]~13               ; 1       ;
-; motor_pwm:Motor_1|pulsecount[1]~12               ; 1       ;
-; motor_pwm:Motor_1|pulsecount[1]~11               ; 1       ;
-; motor_pwm:Motor_5|LessThan0~14                   ; 1       ;
-; motor_pwm:Motor_5|LessThan0~13                   ; 1       ;
-; motor_pwm:Motor_5|LessThan0~11                   ; 1       ;
-; motor_pwm:Motor_5|LessThan0~9                    ; 1       ;
-; motor_pwm:Motor_5|LessThan0~7                    ; 1       ;
-; motor_pwm:Motor_5|LessThan0~5                    ; 1       ;
-; motor_pwm:Motor_5|LessThan0~3                    ; 1       ;
-; motor_pwm:Motor_5|LessThan0~1                    ; 1       ;
-; motor_pwm:Motor_3|LessThan0~14                   ; 1       ;
-; motor_pwm:Motor_3|LessThan0~13                   ; 1       ;
-; motor_pwm:Motor_3|LessThan0~11                   ; 1       ;
-; motor_pwm:Motor_3|LessThan0~9                    ; 1       ;
-; motor_pwm:Motor_3|LessThan0~7                    ; 1       ;
-; motor_pwm:Motor_3|LessThan0~5                    ; 1       ;
-; motor_pwm:Motor_3|LessThan0~3                    ; 1       ;
-; motor_pwm:Motor_3|LessThan0~1                    ; 1       ;
-; motor_pwm:Motor_2|LessThan0~14                   ; 1       ;
-; motor_pwm:Motor_2|LessThan0~13                   ; 1       ;
-; motor_pwm:Motor_2|LessThan0~11                   ; 1       ;
-; motor_pwm:Motor_2|LessThan0~9                    ; 1       ;
-; motor_pwm:Motor_2|LessThan0~7                    ; 1       ;
-; motor_pwm:Motor_2|LessThan0~5                    ; 1       ;
-; motor_pwm:Motor_2|LessThan0~3                    ; 1       ;
-; motor_pwm:Motor_2|LessThan0~1                    ; 1       ;
-; motor_pwm:Motor_1|LessThan0~15                   ; 1       ;
-; motor_pwm:Motor_1|LessThan0~14                   ; 1       ;
-; motor_pwm:Motor_1|LessThan0~12                   ; 1       ;
-; motor_pwm:Motor_1|LessThan0~10                   ; 1       ;
-; motor_pwm:Motor_1|LessThan0~8                    ; 1       ;
-; motor_pwm:Motor_1|LessThan0~6                    ; 1       ;
-; motor_pwm:Motor_1|LessThan0~4                    ; 1       ;
-; motor_pwm:Motor_1|LessThan0~2                    ; 1       ;
-+--------------------------------------------------+---------+
++-----------------------------------------------------------------------+
+; Non-Global High Fan-Out Signals                                       ;
++-------------------------------------------------------------+---------+
+; Name                                                        ; Fan-Out ;
++-------------------------------------------------------------+---------+
+; Switch_2                                                    ; 80      ;
+; motor_pwm:Motor_1|clocktick                                 ; 19      ;
+; SPI_Slave:U_PICSPI_Slave|Equal2~0                           ; 16      ;
+; clk_div:U_1HzClkDivider|Equal0~6                            ; 11      ;
+; clk_div:U_1HzClkDivider|Equal0~4                            ; 11      ;
+; PIC_PBUS_Data[7]~15                                         ; 10      ;
+; PIC_PBUS_Data[6]~14                                         ; 10      ;
+; PIC_PBUS_Data[5]~13                                         ; 10      ;
+; PIC_PBUS_Data[4]~12                                         ; 10      ;
+; PIC_PBUS_Data[3]~11                                         ; 10      ;
+; PIC_PBUS_Data[2]~10                                         ; 10      ;
+; PIC_PBUS_Data[1]~9                                          ; 10      ;
+; PIC_PBUS_Data[0]~8                                          ; 10      ;
+; regmap:Registers|reg_controller:RegCont|state.ra1           ; 10      ;
+; regmap:Registers|addreg:RegAdd|tmp[1]                       ; 9       ;
+; regmap:Registers|reg_controller:RegCont|tbo                 ; 9       ;
+; regmap:Registers|addreg:RegAdd|tmp[0]                       ; 9       ;
+; regmap:Registers|reg_controller:RegCont|state.wa1           ; 9       ;
+; SPI_Slave:U_PICSPI_Slave|SSELr[1]                           ; 9       ;
+; Switch_1[3]                                                 ; 8       ;
+; Switch_1[2]                                                 ; 8       ;
+; Switch_1[1]                                                 ; 8       ;
+; Switch_1[0]                                                 ; 8       ;
+; regmap:Registers|reg_controller:RegCont|regi07~1            ; 8       ;
+; regmap:Registers|reg_controller:RegCont|regi06~1            ; 8       ;
+; regmap:Registers|reg_controller:RegCont|regi05~0            ; 8       ;
+; regmap:Registers|reg_controller:RegCont|regi04~0            ; 8       ;
+; regmap:Registers|reg_controller:RegCont|regi03~1            ; 8       ;
+; regmap:Registers|reg_controller:RegCont|regi02~0            ; 8       ;
+; regmap:Registers|reg_controller:RegCont|regi01~0            ; 8       ;
+; regmap:Registers|reg_controller:RegCont|regi00~0            ; 8       ;
+; SPI_Slave:U_PICSPI_Slave|byte_data_sent[0]~2                ; 8       ;
+; PIC_PBUS_OK_IN                                              ; 7       ;
+; SPI_Slave:U_PICSPI_Slave|byte_data_sent~0                   ; 7       ;
+; current_State                                               ; 7       ;
+; motor_pwm:Motor_1|pulsecount[0]                             ; 6       ;
+; regmap:Registers|reg_controller:RegCont|state.fetch         ; 5       ;
+; SPI_Slave:U_PICSPI_Slave|SCKr[1]                            ; 5       ;
+; motor_pwm:Motor_1|pulsecount[8]                             ; 5       ;
+; counter[1]                                                  ; 5       ;
+; motor_pwm:Motor_1|pulsecount[1]                             ; 5       ;
+; counter[2]                                                  ; 5       ;
+; motor_pwm:Motor_1|pulsecount[2]                             ; 5       ;
+; counter[3]                                                  ; 5       ;
+; motor_pwm:Motor_1|pulsecount[3]                             ; 5       ;
+; counter[4]                                                  ; 5       ;
+; motor_pwm:Motor_1|pulsecount[4]                             ; 5       ;
+; counter[5]                                                  ; 5       ;
+; motor_pwm:Motor_1|pulsecount[5]                             ; 5       ;
+; counter[6]                                                  ; 5       ;
+; motor_pwm:Motor_1|pulsecount[6]                             ; 5       ;
+; counter[7]                                                  ; 5       ;
+; motor_pwm:Motor_1|pulsecount[7]                             ; 5       ;
+; PIC_PBUS_R_W                                                ; 4       ;
+; PIC_PBUS_A_D                                                ; 4       ;
+; regmap:Registers|reg_controller:RegCont|regi06~0            ; 4       ;
+; regmap:Registers|reg_controller:RegCont|regi03~0            ; 4       ;
+; SPI_Slave:U_PICSPI_Slave|bitcnt[1]                          ; 4       ;
+; SPI_Slave:U_PICSPI_Slave|bitcnt[0]                          ; 4       ;
+; SPI_Slave:U_PICSPI_Slave|SCKr[2]                            ; 4       ;
+; motor_pwm:Motor_1|LessThan0~0                               ; 4       ;
+; SPI_Slave:U_PICSPI_Slave|cnt[0]                             ; 3       ;
+; regmap:Registers|addreg:RegAdd|tmp[3]                       ; 3       ;
+; regmap:Registers|addreg:RegAdd|tmp[2]                       ; 3       ;
+; SPI_Slave:U_PICSPI_Slave|SSELr[2]                           ; 3       ;
+; regmap:Registers|reg_controller:RegCont|state.wd1           ; 3       ;
+; SPI_Slave:U_PICSPI_Slave|bitcnt[2]                          ; 3       ;
+; regmap:Registers|reg_controller:RegCont|nextstate.rd1_429   ; 2       ;
+; regmap:Registers|reg_controller:RegCont|nextstate.fetch_451 ; 2       ;
+; regmap:Registers|reg_controller:RegCont|nextstate.rd2_418   ; 2       ;
+; regmap:Registers|reg_controller:RegCont|nextstate.ra1_440   ; 2       ;
+; regmap:Registers|reg_controller:RegCont|nextstate.wd1_385   ; 2       ;
+; regmap:Registers|reg_controller:RegCont|nextstate.wa1_407   ; 2       ;
+; regmap:Registers|reg_controller:RegCont|nextstate.wd2_374   ; 2       ;
+; regmap:Registers|reg_controller:RegCont|nextstate.wa2_396   ; 2       ;
+; SPI_Slave:U_PICSPI_Slave|byte_data_sent[0]                  ; 2       ;
+; regmap:Registers|reg_controller:RegCont|regi07~0            ; 2       ;
+; SPI_Slave:U_PICSPI_Slave|Add1~0                             ; 2       ;
+; regmap:Registers|addreg:RegAdd|tmp[7]                       ; 2       ;
+; regmap:Registers|addreg:RegAdd|tmp[6]                       ; 2       ;
+; regmap:Registers|addreg:RegAdd|tmp[5]                       ; 2       ;
+; regmap:Registers|addreg:RegAdd|tmp[4]                       ; 2       ;
+; regmap:Registers|reg_controller:RegCont|state.rd2           ; 2       ;
+; SPI_Slave:U_PICSPI_Slave|byte_received~0                    ; 2       ;
+; clk_div:U_1HzClkDivider|cnt[20]                             ; 2       ;
+; clk_div:U_1HzClkDivider|cnt[22]                             ; 2       ;
+; clk_div:U_1HzClkDivider|cnt[21]                             ; 2       ;
+; clk_div:U_1HzClkDivider|cnt[19]                             ; 2       ;
+; clk_div:U_1HzClkDivider|cnt[18]                             ; 2       ;
+; clk_div:U_1HzClkDivider|cnt[17]                             ; 2       ;
+; clk_div:U_1HzClkDivider|cnt[16]                             ; 2       ;
+; clk_div:U_1HzClkDivider|cnt[15]                             ; 2       ;
+; clk_div:U_1HzClkDivider|cnt[14]                             ; 2       ;
+; clk_div:U_1HzClkDivider|cnt[13]                             ; 2       ;
+; clk_div:U_1HzClkDivider|cnt[12]                             ; 2       ;
+; clk_div:U_1HzClkDivider|cnt[10]                             ; 2       ;
+; clk_div:U_1HzClkDivider|cnt[9]                              ; 2       ;
+; clk_div:U_1HzClkDivider|cnt[8]                              ; 2       ;
+; clk_div:U_1HzClkDivider|cnt[11]                             ; 2       ;
+; clk_div:U_1HzClkDivider|cnt[0]                              ; 2       ;
+; clk_div:U_1HzClkDivider|cnt[3]                              ; 2       ;
+; clk_div:U_1HzClkDivider|cnt[1]                              ; 2       ;
+; clk_div:U_1HzClkDivider|cnt[2]                              ; 2       ;
+; clk_div:U_1HzClkDivider|cnt[4]                              ; 2       ;
+; clk_div:U_1HzClkDivider|cnt[5]                              ; 2       ;
+; clk_div:U_1HzClkDivider|cnt[6]                              ; 2       ;
+; clk_div:U_1HzClkDivider|cnt[7]                              ; 2       ;
+; SPI_Slave:U_PICSPI_Slave|byte_data_received[0]              ; 2       ;
+; regmap:Registers|reg_controller:RegCont|state.wa2           ; 2       ;
+; SPI_Slave:U_PICSPI_Slave|LED                                ; 2       ;
+; motor_pwm:Motor_1|clockcount[4]                             ; 2       ;
+; motor_pwm:Motor_1|clockcount[6]                             ; 2       ;
+; motor_pwm:Motor_1|clockcount[5]                             ; 2       ;
+; motor_pwm:Motor_1|clockcount[3]                             ; 2       ;
+; motor_pwm:Motor_1|clockcount[2]                             ; 2       ;
+; motor_pwm:Motor_1|clockcount[1]                             ; 2       ;
+; motor_pwm:Motor_1|clockcount[0]                             ; 2       ;
+; SPI_Slave:U_PICSPI_Slave|cnt[1]                             ; 2       ;
+; SPI_Slave:U_PICSPI_Slave|cnt[2]                             ; 2       ;
+; SPI_Slave:U_PICSPI_Slave|cnt[3]                             ; 2       ;
+; SPI_Slave:U_PICSPI_Slave|cnt[4]                             ; 2       ;
+; SPI_Slave:U_PICSPI_Slave|cnt[5]                             ; 2       ;
+; SPI_Slave:U_PICSPI_Slave|cnt[6]                             ; 2       ;
+; SPI_Slave:U_PICSPI_Slave|cnt[7]                             ; 2       ;
+; motor_pwm:Motor_1|pulsecount[11]                            ; 2       ;
+; motor_pwm:Motor_1|pulsecount[10]                            ; 2       ;
+; motor_pwm:Motor_1|pulsecount[9]                             ; 2       ;
+; PIC_SPI_Select                                              ; 1       ;
+; PIC_SPI_SCLK                                                ; 1       ;
+; PIC_SPI_MOSI                                                ; 1       ;
+; regmap:Registers|reg_controller:RegCont|state.fetch~0       ; 1       ;
+; current_State~0                                             ; 1       ;
+; TLED_Orange_1~0                                             ; 1       ;
+; clk_div:U_1HzClkDivider|cnt~13                              ; 1       ;
+; clk_div:U_1HzClkDivider|cnt~12                              ; 1       ;
+; SPI_Slave:U_PICSPI_Slave|byte_data_sent[0]~10               ; 1       ;
+; SPI_Slave:U_PICSPI_Slave|byte_data_sent[0]~9                ; 1       ;
+; SPI_Slave:U_PICSPI_Slave|byte_data_sent~8                   ; 1       ;
+; SPI_Slave:U_PICSPI_Slave|byte_data_sent~7                   ; 1       ;
+; SPI_Slave:U_PICSPI_Slave|byte_data_sent[1]                  ; 1       ;
+; regmap:Registers|reg_controller:RegCont|Selector4~0         ; 1       ;
+; SPI_Slave:U_PICSPI_Slave|byte_data_sent~6                   ; 1       ;
+; SPI_Slave:U_PICSPI_Slave|byte_data_sent[2]                  ; 1       ;
+; regmap:Registers|reg_controller:RegCont|Selector1~0         ; 1       ;
+; SPI_Slave:U_PICSPI_Slave|byte_data_sent~5                   ; 1       ;
+; SPI_Slave:U_PICSPI_Slave|byte_data_sent[3]                  ; 1       ;
+; regmap:Registers|reg_controller:RegCont|Selector6~0         ; 1       ;
+; regmap:Registers|reg_controller:RegCont|state.rd1           ; 1       ;
+; regmap:Registers|reg_controller:RegCont|Selector3~1         ; 1       ;
+; regmap:Registers|reg_controller:RegCont|Selector3~0         ; 1       ;
+; SPI_Slave:U_PICSPI_Slave|byte_data_sent~4                   ; 1       ;
+; SPI_Slave:U_PICSPI_Slave|byte_data_sent[4]                  ; 1       ;
+; SPI_Slave:U_PICSPI_Slave|cnt[0]~21                          ; 1       ;
+; regmap:Registers|reg_controller:RegCont|Selector10~0        ; 1       ;
+; regmap:Registers|reg_controller:RegCont|Selector7~0         ; 1       ;
+; motor_pwm:Motor_1|Equal0~1                                  ; 1       ;
+; motor_pwm:Motor_1|Equal0~0                                  ; 1       ;
+; SPI_Slave:U_PICSPI_Slave|byte_data_sent~3                   ; 1       ;
+; SPI_Slave:U_PICSPI_Slave|byte_data_sent[5]                  ; 1       ;
+; SPI_Slave:U_PICSPI_Slave|bitcnt~2                           ; 1       ;
+; SPI_Slave:U_PICSPI_Slave|bitcnt~1                           ; 1       ;
+; SPI_Slave:U_PICSPI_Slave|bitcnt~0                           ; 1       ;
+; SPI_Slave:U_PICSPI_Slave|SSELr[0]                           ; 1       ;
+; SPI_Slave:U_PICSPI_Slave|SCKr[0]                            ; 1       ;
+; SPI_Slave:U_PICSPI_Slave|MOSIr[0]                           ; 1       ;
+; clk_div:U_1HzClkDivider|cnt~11                              ; 1       ;
+; clk_div:U_1HzClkDivider|cnt~10                              ; 1       ;
+; clk_div:U_1HzClkDivider|cnt~9                               ; 1       ;
+; clk_div:U_1HzClkDivider|cnt~8                               ; 1       ;
+; clk_div:U_1HzClkDivider|cnt~7                               ; 1       ;
+; clk_div:U_1HzClkDivider|cnt~6                               ; 1       ;
+; clk_div:U_1HzClkDivider|cnt~5                               ; 1       ;
+; clk_div:U_1HzClkDivider|cnt~4                               ; 1       ;
+; regmap:Registers|outmux:MuxOut|tmp1[7]~7                    ; 1       ;
+; regmap:Registers|databus[7]~15                              ; 1       ;
+; regmap:Registers|quadreg:RegAM|tmp[7]                       ; 1       ;
+; regmap:Registers|quadreg:RegAD|tmp[7]                       ; 1       ;
+; regmap:Registers|quadreg:RegZM|tmp[7]                       ; 1       ;
+; regmap:Registers|quadreg:RegYM|tmp[7]                       ; 1       ;
+; regmap:Registers|databus[7]~14                              ; 1       ;
+; regmap:Registers|quadreg:RegXM|tmp[7]                       ; 1       ;
+; regmap:Registers|quadreg:RegZD|tmp[7]                       ; 1       ;
+; regmap:Registers|quadreg:RegYD|tmp[7]                       ; 1       ;
+; regmap:Registers|quadreg:RegXD|tmp[7]                       ; 1       ;
+; regmap:Registers|outmux:MuxOut|tmp1[6]~6                    ; 1       ;
+; regmap:Registers|databus[6]~13                              ; 1       ;
+; regmap:Registers|quadreg:RegAM|tmp[6]                       ; 1       ;
+; regmap:Registers|quadreg:RegAD|tmp[6]                       ; 1       ;
+; regmap:Registers|quadreg:RegZM|tmp[6]                       ; 1       ;
+; regmap:Registers|quadreg:RegYM|tmp[6]                       ; 1       ;
+; regmap:Registers|databus[6]~12                              ; 1       ;
+; regmap:Registers|quadreg:RegXM|tmp[6]                       ; 1       ;
+; regmap:Registers|quadreg:RegZD|tmp[6]                       ; 1       ;
+; regmap:Registers|quadreg:RegYD|tmp[6]                       ; 1       ;
+; regmap:Registers|quadreg:RegXD|tmp[6]                       ; 1       ;
+; regmap:Registers|outmux:MuxOut|tmp1[5]~5                    ; 1       ;
+; regmap:Registers|databus[5]~11                              ; 1       ;
+; regmap:Registers|quadreg:RegAM|tmp[5]                       ; 1       ;
+; regmap:Registers|quadreg:RegAD|tmp[5]                       ; 1       ;
+; regmap:Registers|quadreg:RegZM|tmp[5]                       ; 1       ;
+; regmap:Registers|quadreg:RegYM|tmp[5]                       ; 1       ;
+; regmap:Registers|databus[5]~10                              ; 1       ;
+; regmap:Registers|quadreg:RegXM|tmp[5]                       ; 1       ;
+; regmap:Registers|quadreg:RegZD|tmp[5]                       ; 1       ;
+; regmap:Registers|quadreg:RegYD|tmp[5]                       ; 1       ;
+; regmap:Registers|quadreg:RegXD|tmp[5]                       ; 1       ;
+; regmap:Registers|outmux:MuxOut|tmp1[4]~4                    ; 1       ;
+; regmap:Registers|databus[4]~9                               ; 1       ;
+; regmap:Registers|quadreg:RegAM|tmp[4]                       ; 1       ;
+; regmap:Registers|quadreg:RegAD|tmp[4]                       ; 1       ;
+; regmap:Registers|quadreg:RegZM|tmp[4]                       ; 1       ;
+; regmap:Registers|quadreg:RegYM|tmp[4]                       ; 1       ;
+; regmap:Registers|databus[4]~8                               ; 1       ;
+; regmap:Registers|quadreg:RegXM|tmp[4]                       ; 1       ;
+; regmap:Registers|quadreg:RegZD|tmp[4]                       ; 1       ;
+; regmap:Registers|quadreg:RegYD|tmp[4]                       ; 1       ;
+; regmap:Registers|quadreg:RegXD|tmp[4]                       ; 1       ;
+; regmap:Registers|outmux:MuxOut|tmp1[3]~3                    ; 1       ;
+; regmap:Registers|databus[3]~7                               ; 1       ;
+; regmap:Registers|quadreg:RegAM|tmp[3]                       ; 1       ;
+; regmap:Registers|quadreg:RegAD|tmp[3]                       ; 1       ;
+; regmap:Registers|quadreg:RegZM|tmp[3]                       ; 1       ;
+; regmap:Registers|quadreg:RegYM|tmp[3]                       ; 1       ;
+; regmap:Registers|databus[3]~6                               ; 1       ;
+; regmap:Registers|quadreg:RegXM|tmp[3]                       ; 1       ;
+; regmap:Registers|quadreg:RegZD|tmp[3]                       ; 1       ;
+; regmap:Registers|quadreg:RegYD|tmp[3]                       ; 1       ;
+; regmap:Registers|quadreg:RegXD|tmp[3]                       ; 1       ;
+; regmap:Registers|outmux:MuxOut|tmp1[2]~2                    ; 1       ;
+; regmap:Registers|databus[2]~5                               ; 1       ;
+; regmap:Registers|quadreg:RegAM|tmp[2]                       ; 1       ;
+; regmap:Registers|quadreg:RegAD|tmp[2]                       ; 1       ;
+; regmap:Registers|quadreg:RegZM|tmp[2]                       ; 1       ;
+; regmap:Registers|quadreg:RegYM|tmp[2]                       ; 1       ;
+; regmap:Registers|databus[2]~4                               ; 1       ;
+; regmap:Registers|quadreg:RegXM|tmp[2]                       ; 1       ;
+; regmap:Registers|quadreg:RegZD|tmp[2]                       ; 1       ;
+; regmap:Registers|quadreg:RegYD|tmp[2]                       ; 1       ;
+; regmap:Registers|quadreg:RegXD|tmp[2]                       ; 1       ;
+; regmap:Registers|outmux:MuxOut|tmp1[1]~1                    ; 1       ;
+; regmap:Registers|databus[1]~3                               ; 1       ;
+; regmap:Registers|quadreg:RegAM|tmp[1]                       ; 1       ;
+; regmap:Registers|quadreg:RegAD|tmp[1]                       ; 1       ;
+; regmap:Registers|quadreg:RegZM|tmp[1]                       ; 1       ;
+; regmap:Registers|quadreg:RegYM|tmp[1]                       ; 1       ;
+; regmap:Registers|databus[1]~2                               ; 1       ;
+; regmap:Registers|quadreg:RegXM|tmp[1]                       ; 1       ;
+; regmap:Registers|quadreg:RegZD|tmp[1]                       ; 1       ;
+; regmap:Registers|quadreg:RegYD|tmp[1]                       ; 1       ;
+; regmap:Registers|quadreg:RegXD|tmp[1]                       ; 1       ;
+; regmap:Registers|outmux:MuxOut|tmp1[0]~0                    ; 1       ;
+; regmap:Registers|databus[0]~1                               ; 1       ;
+; regmap:Registers|quadreg:RegAM|tmp[0]                       ; 1       ;
+; regmap:Registers|quadreg:RegAD|tmp[0]                       ; 1       ;
+; regmap:Registers|quadreg:RegZM|tmp[0]                       ; 1       ;
+; regmap:Registers|quadreg:RegYM|tmp[0]                       ; 1       ;
+; regmap:Registers|databus[0]~0                               ; 1       ;
+; regmap:Registers|quadreg:RegXM|tmp[0]                       ; 1       ;
+; regmap:Registers|quadreg:RegZD|tmp[0]                       ; 1       ;
+; regmap:Registers|quadreg:RegYD|tmp[0]                       ; 1       ;
+; regmap:Registers|quadreg:RegXD|tmp[0]                       ; 1       ;
+; motor_pwm:Motor_1|pulsecount[0]~33                          ; 1       ;
+; SPI_Slave:U_PICSPI_Slave|byte_data_sent~1                   ; 1       ;
+; SPI_Slave:U_PICSPI_Slave|byte_data_sent[6]                  ; 1       ;
+; SPI_Slave:U_PICSPI_Slave|byte_received~1                    ; 1       ;
+; SPI_Slave:U_PICSPI_Slave|byte_data_received[0]~0            ; 1       ;
+; SPI_Slave:U_PICSPI_Slave|MOSIr[1]                           ; 1       ;
+; clk_div:U_1HzClkDivider|Equal0~7                            ; 1       ;
+; clk_div:U_1HzClkDivider|Equal0~5                            ; 1       ;
+; clk_div:U_1HzClkDivider|Equal0~3                            ; 1       ;
+; clk_div:U_1HzClkDivider|Equal0~2                            ; 1       ;
+; clk_div:U_1HzClkDivider|Equal0~1                            ; 1       ;
+; clk_div:U_1HzClkDivider|Equal0~0                            ; 1       ;
+; motor_pwm:Motor_5|LessThan0~16                              ; 1       ;
+; pwm5[0]~7                                                   ; 1       ;
+; pwm5[1]~6                                                   ; 1       ;
+; pwm5[2]~5                                                   ; 1       ;
+; pwm5[3]~4                                                   ; 1       ;
+; pwm5[4]~3                                                   ; 1       ;
+; pwm5[5]~2                                                   ; 1       ;
+; pwm5[6]~1                                                   ; 1       ;
+; pwm5[7]~0                                                   ; 1       ;
+; motor_pwm:Motor_3|LessThan0~16                              ; 1       ;
+; pwm3[0]~7                                                   ; 1       ;
+; pwm3[1]~6                                                   ; 1       ;
+; pwm3[2]~5                                                   ; 1       ;
+; pwm3[3]~4                                                   ; 1       ;
+; pwm3[4]~3                                                   ; 1       ;
+; pwm3[5]~2                                                   ; 1       ;
+; pwm3[6]~1                                                   ; 1       ;
+; pwm3[7]~0                                                   ; 1       ;
+; motor_pwm:Motor_2|LessThan0~16                              ; 1       ;
+; pwm2[0]~7                                                   ; 1       ;
+; pwm2[1]~6                                                   ; 1       ;
+; pwm2[2]~5                                                   ; 1       ;
+; pwm2[3]~4                                                   ; 1       ;
+; pwm2[4]~3                                                   ; 1       ;
+; pwm2[5]~2                                                   ; 1       ;
+; pwm2[6]~1                                                   ; 1       ;
+; pwm2[7]~0                                                   ; 1       ;
+; motor_pwm:Motor_1|LessThan0~17                              ; 1       ;
+; pwm1[0]~7                                                   ; 1       ;
+; pwm1[1]~6                                                   ; 1       ;
+; pwm1[2]~5                                                   ; 1       ;
+; pwm1[3]~4                                                   ; 1       ;
+; pwm1[4]~3                                                   ; 1       ;
+; pwm1[5]~2                                                   ; 1       ;
+; pwm1[6]~1                                                   ; 1       ;
+; pwm1[7]~0                                                   ; 1       ;
+; SPI_Slave:U_PICSPI_Slave|byte_data_sent[7]                  ; 1       ;
+; SPI_Slave:U_PICSPI_Slave|LED~0                              ; 1       ;
+; SPI_Slave:U_PICSPI_Slave|byte_received                      ; 1       ;
+; motor_pwm:Motor_5|pwm                                       ; 1       ;
+; motor_pwm:Motor_3|pwm                                       ; 1       ;
+; motor_pwm:Motor_2|pwm                                       ; 1       ;
+; motor_pwm:Motor_1|pwm                                       ; 1       ;
+; SPI_Slave:U_PICSPI_Slave|MISO                               ; 1       ;
+; regmap:Registers|reg_controller:RegCont|ok_in               ; 1       ;
+; regmap:Registers|reg_controller:RegCont|state.wd2           ; 1       ;
+; BLED_Orange[3]~reg0                                         ; 1       ;
+; BLED_Orange[2]~reg0                                         ; 1       ;
+; BLED_Orange[1]~reg0                                         ; 1       ;
+; BLED_Orange[0]~reg0                                         ; 1       ;
+; BLED_Blue[3]~reg0                                           ; 1       ;
+; BLED_Blue[2]~reg0                                           ; 1       ;
+; BLED_Blue[1]~reg0                                           ; 1       ;
+; BLED_Blue[0]~reg0                                           ; 1       ;
+; TLED_Orange_1~reg0                                          ; 1       ;
+; motor_pwm:Motor_1|clockcount[6]~19                          ; 1       ;
+; motor_pwm:Motor_1|clockcount[5]~18                          ; 1       ;
+; motor_pwm:Motor_1|clockcount[5]~17                          ; 1       ;
+; motor_pwm:Motor_1|clockcount[4]~16                          ; 1       ;
+; motor_pwm:Motor_1|clockcount[4]~15                          ; 1       ;
+; motor_pwm:Motor_1|clockcount[3]~14                          ; 1       ;
+; motor_pwm:Motor_1|clockcount[3]~13                          ; 1       ;
+; motor_pwm:Motor_1|clockcount[2]~12                          ; 1       ;
+; motor_pwm:Motor_1|clockcount[2]~11                          ; 1       ;
+; motor_pwm:Motor_1|clockcount[1]~10                          ; 1       ;
+; motor_pwm:Motor_1|clockcount[1]~9                           ; 1       ;
+; motor_pwm:Motor_1|clockcount[0]~8                           ; 1       ;
+; motor_pwm:Motor_1|clockcount[0]~7                           ; 1       ;
+; SPI_Slave:U_PICSPI_Slave|cnt[7]~19                          ; 1       ;
+; SPI_Slave:U_PICSPI_Slave|cnt[6]~18                          ; 1       ;
+; SPI_Slave:U_PICSPI_Slave|cnt[6]~17                          ; 1       ;
+; SPI_Slave:U_PICSPI_Slave|cnt[5]~16                          ; 1       ;
+; SPI_Slave:U_PICSPI_Slave|cnt[5]~15                          ; 1       ;
+; SPI_Slave:U_PICSPI_Slave|cnt[4]~14                          ; 1       ;
+; SPI_Slave:U_PICSPI_Slave|cnt[4]~13                          ; 1       ;
+; SPI_Slave:U_PICSPI_Slave|cnt[3]~12                          ; 1       ;
+; SPI_Slave:U_PICSPI_Slave|cnt[3]~11                          ; 1       ;
+; SPI_Slave:U_PICSPI_Slave|cnt[2]~10                          ; 1       ;
+; SPI_Slave:U_PICSPI_Slave|cnt[2]~9                           ; 1       ;
+; SPI_Slave:U_PICSPI_Slave|cnt[1]~8                           ; 1       ;
+; SPI_Slave:U_PICSPI_Slave|cnt[1]~7                           ; 1       ;
+; clk_div:U_1HzClkDivider|Add0~44                             ; 1       ;
+; clk_div:U_1HzClkDivider|Add0~43                             ; 1       ;
+; clk_div:U_1HzClkDivider|Add0~42                             ; 1       ;
+; clk_div:U_1HzClkDivider|Add0~41                             ; 1       ;
+; clk_div:U_1HzClkDivider|Add0~40                             ; 1       ;
+; clk_div:U_1HzClkDivider|Add0~39                             ; 1       ;
+; clk_div:U_1HzClkDivider|Add0~38                             ; 1       ;
+; clk_div:U_1HzClkDivider|Add0~37                             ; 1       ;
+; clk_div:U_1HzClkDivider|Add0~36                             ; 1       ;
+; clk_div:U_1HzClkDivider|Add0~35                             ; 1       ;
+; clk_div:U_1HzClkDivider|Add0~34                             ; 1       ;
+; clk_div:U_1HzClkDivider|Add0~33                             ; 1       ;
+; clk_div:U_1HzClkDivider|Add0~32                             ; 1       ;
+; clk_div:U_1HzClkDivider|Add0~31                             ; 1       ;
+; clk_div:U_1HzClkDivider|Add0~30                             ; 1       ;
+; clk_div:U_1HzClkDivider|Add0~29                             ; 1       ;
+; clk_div:U_1HzClkDivider|Add0~28                             ; 1       ;
+; clk_div:U_1HzClkDivider|Add0~27                             ; 1       ;
+; clk_div:U_1HzClkDivider|Add0~26                             ; 1       ;
+; clk_div:U_1HzClkDivider|Add0~25                             ; 1       ;
+; clk_div:U_1HzClkDivider|Add0~24                             ; 1       ;
+; clk_div:U_1HzClkDivider|Add0~23                             ; 1       ;
+; clk_div:U_1HzClkDivider|Add0~22                             ; 1       ;
+; clk_div:U_1HzClkDivider|Add0~21                             ; 1       ;
+; clk_div:U_1HzClkDivider|Add0~20                             ; 1       ;
+; clk_div:U_1HzClkDivider|Add0~19                             ; 1       ;
+; clk_div:U_1HzClkDivider|Add0~18                             ; 1       ;
+; clk_div:U_1HzClkDivider|Add0~17                             ; 1       ;
+; clk_div:U_1HzClkDivider|Add0~16                             ; 1       ;
+; clk_div:U_1HzClkDivider|Add0~15                             ; 1       ;
+; clk_div:U_1HzClkDivider|Add0~14                             ; 1       ;
+; clk_div:U_1HzClkDivider|Add0~13                             ; 1       ;
+; clk_div:U_1HzClkDivider|Add0~12                             ; 1       ;
+; clk_div:U_1HzClkDivider|Add0~11                             ; 1       ;
+; clk_div:U_1HzClkDivider|Add0~10                             ; 1       ;
+; clk_div:U_1HzClkDivider|Add0~9                              ; 1       ;
+; clk_div:U_1HzClkDivider|Add0~8                              ; 1       ;
+; clk_div:U_1HzClkDivider|Add0~7                              ; 1       ;
+; clk_div:U_1HzClkDivider|Add0~6                              ; 1       ;
+; clk_div:U_1HzClkDivider|Add0~5                              ; 1       ;
+; clk_div:U_1HzClkDivider|Add0~4                              ; 1       ;
+; clk_div:U_1HzClkDivider|Add0~3                              ; 1       ;
+; clk_div:U_1HzClkDivider|Add0~2                              ; 1       ;
+; clk_div:U_1HzClkDivider|Add0~1                              ; 1       ;
+; clk_div:U_1HzClkDivider|Add0~0                              ; 1       ;
+; counter[7]~19                                               ; 1       ;
+; counter[6]~18                                               ; 1       ;
+; counter[6]~17                                               ; 1       ;
+; counter[5]~16                                               ; 1       ;
+; counter[5]~15                                               ; 1       ;
+; counter[4]~14                                               ; 1       ;
+; counter[4]~13                                               ; 1       ;
+; counter[3]~12                                               ; 1       ;
+; counter[3]~11                                               ; 1       ;
+; counter[2]~10                                               ; 1       ;
+; counter[2]~9                                                ; 1       ;
+; counter[1]~8                                                ; 1       ;
+; counter[1]~7                                                ; 1       ;
+; motor_pwm:Motor_1|pulsecount[11]~31                         ; 1       ;
+; motor_pwm:Motor_1|pulsecount[10]~30                         ; 1       ;
+; motor_pwm:Motor_1|pulsecount[10]~29                         ; 1       ;
+; motor_pwm:Motor_1|pulsecount[9]~28                          ; 1       ;
+; motor_pwm:Motor_1|pulsecount[9]~27                          ; 1       ;
+; motor_pwm:Motor_1|pulsecount[8]~26                          ; 1       ;
+; motor_pwm:Motor_1|pulsecount[8]~25                          ; 1       ;
+; motor_pwm:Motor_1|pulsecount[7]~24                          ; 1       ;
+; motor_pwm:Motor_1|pulsecount[7]~23                          ; 1       ;
+; motor_pwm:Motor_1|pulsecount[6]~22                          ; 1       ;
+; motor_pwm:Motor_1|pulsecount[6]~21                          ; 1       ;
+; motor_pwm:Motor_1|pulsecount[5]~20                          ; 1       ;
+; motor_pwm:Motor_1|pulsecount[5]~19                          ; 1       ;
+; motor_pwm:Motor_1|pulsecount[4]~18                          ; 1       ;
+; motor_pwm:Motor_1|pulsecount[4]~17                          ; 1       ;
+; motor_pwm:Motor_1|pulsecount[3]~16                          ; 1       ;
+; motor_pwm:Motor_1|pulsecount[3]~15                          ; 1       ;
+; motor_pwm:Motor_1|pulsecount[2]~14                          ; 1       ;
+; motor_pwm:Motor_1|pulsecount[2]~13                          ; 1       ;
+; motor_pwm:Motor_1|pulsecount[1]~12                          ; 1       ;
+; motor_pwm:Motor_1|pulsecount[1]~11                          ; 1       ;
+; motor_pwm:Motor_5|LessThan0~14                              ; 1       ;
+; motor_pwm:Motor_5|LessThan0~13                              ; 1       ;
+; motor_pwm:Motor_5|LessThan0~11                              ; 1       ;
+; motor_pwm:Motor_5|LessThan0~9                               ; 1       ;
+; motor_pwm:Motor_5|LessThan0~7                               ; 1       ;
+; motor_pwm:Motor_5|LessThan0~5                               ; 1       ;
+; motor_pwm:Motor_5|LessThan0~3                               ; 1       ;
+; motor_pwm:Motor_5|LessThan0~1                               ; 1       ;
+; motor_pwm:Motor_3|LessThan0~14                              ; 1       ;
+; motor_pwm:Motor_3|LessThan0~13                              ; 1       ;
+; motor_pwm:Motor_3|LessThan0~11                              ; 1       ;
+; motor_pwm:Motor_3|LessThan0~9                               ; 1       ;
+; motor_pwm:Motor_3|LessThan0~7                               ; 1       ;
+; motor_pwm:Motor_3|LessThan0~5                               ; 1       ;
+; motor_pwm:Motor_3|LessThan0~3                               ; 1       ;
+; motor_pwm:Motor_3|LessThan0~1                               ; 1       ;
+; motor_pwm:Motor_2|LessThan0~14                              ; 1       ;
+; motor_pwm:Motor_2|LessThan0~13                              ; 1       ;
+; motor_pwm:Motor_2|LessThan0~11                              ; 1       ;
+; motor_pwm:Motor_2|LessThan0~9                               ; 1       ;
+; motor_pwm:Motor_2|LessThan0~7                               ; 1       ;
+; motor_pwm:Motor_2|LessThan0~5                               ; 1       ;
+; motor_pwm:Motor_2|LessThan0~3                               ; 1       ;
+; motor_pwm:Motor_2|LessThan0~1                               ; 1       ;
+; motor_pwm:Motor_1|LessThan0~15                              ; 1       ;
+; motor_pwm:Motor_1|LessThan0~14                              ; 1       ;
+; motor_pwm:Motor_1|LessThan0~12                              ; 1       ;
+; motor_pwm:Motor_1|LessThan0~10                              ; 1       ;
+; motor_pwm:Motor_1|LessThan0~8                               ; 1       ;
+; motor_pwm:Motor_1|LessThan0~6                               ; 1       ;
+; motor_pwm:Motor_1|LessThan0~4                               ; 1       ;
+; motor_pwm:Motor_1|LessThan0~2                               ; 1       ;
++-------------------------------------------------------------+---------+
 
 
-+----------------------------------------------------+
-; Interconnect Usage Summary                         ;
-+----------------------------+-----------------------+
-; Interconnect Resource Type ; Usage                 ;
-+----------------------------+-----------------------+
-; Block interconnects        ; 177 / 26,052 ( 1 % )  ;
-; C16 interconnects          ; 8 / 1,156 ( 1 % )     ;
-; C4 interconnects           ; 111 / 17,952 ( 1 % )  ;
-; Direct links               ; 50 / 26,052 ( < 1 % ) ;
-; Global clocks              ; 2 / 8 ( 25 % )        ;
-; Local interconnects        ; 113 / 8,256 ( 1 % )   ;
-; R24 interconnects          ; 0 / 1,020 ( 0 % )     ;
-; R4 interconnects           ; 74 / 22,440 ( < 1 % ) ;
-+----------------------------+-----------------------+
++-----------------------------------------------------+
+; Interconnect Usage Summary                          ;
++----------------------------+------------------------+
+; Interconnect Resource Type ; Usage                  ;
++----------------------------+------------------------+
+; Block interconnects        ; 328 / 26,052 ( 1 % )   ;
+; C16 interconnects          ; 12 / 1,156 ( 1 % )     ;
+; C4 interconnects           ; 106 / 17,952 ( 1 % )   ;
+; Direct links               ; 109 / 26,052 ( < 1 % ) ;
+; Global clocks              ; 3 / 8 ( 38 % )         ;
+; Local interconnects        ; 140 / 8,256 ( 2 % )    ;
+; R24 interconnects          ; 10 / 1,020 ( 1 % )     ;
+; R4 interconnects           ; 157 / 22,440 ( 1 % )   ;
++----------------------------+------------------------+
 
 
 +---------------------------------------------------------------------------+
 ; LAB Logic Elements                                                        ;
 +--------------------------------------------+------------------------------+
-; Number of Logic Elements  (Average = 7.54) ; Number of LABs  (Total = 24) ;
+; Number of Logic Elements  (Average = 8.55) ; Number of LABs  (Total = 33) ;
 +--------------------------------------------+------------------------------+
-; 1                                          ; 10                           ;
+; 1                                          ; 12                           ;
 ; 2                                          ; 1                            ;
 ; 3                                          ; 0                            ;
-; 4                                          ; 1                            ;
+; 4                                          ; 2                            ;
 ; 5                                          ; 0                            ;
 ; 6                                          ; 0                            ;
 ; 7                                          ; 1                            ;
-; 8                                          ; 0                            ;
-; 9                                          ; 1                            ;
+; 8                                          ; 1                            ;
+; 9                                          ; 0                            ;
 ; 10                                         ; 1                            ;
 ; 11                                         ; 0                            ;
 ; 12                                         ; 0                            ;
 ; 13                                         ; 1                            ;
 ; 14                                         ; 1                            ;
 ; 15                                         ; 0                            ;
-; 16                                         ; 7                            ;
+; 16                                         ; 13                           ;
 +--------------------------------------------+------------------------------+
 
 
 +-------------------------------------------------------------------+
 ; LAB-wide Signals                                                  ;
 +------------------------------------+------------------------------+
-; LAB-wide Signals  (Average = 1.04) ; Number of LABs  (Total = 24) ;
+; LAB-wide Signals  (Average = 1.27) ; Number of LABs  (Total = 33) ;
 +------------------------------------+------------------------------+
-; 1 Clock                            ; 23                           ;
-; 1 Clock enable                     ; 1                            ;
+; 1 Async. clear                     ; 6                            ;
+; 1 Clock                            ; 29                           ;
+; 1 Clock enable                     ; 2                            ;
 ; 1 Sync. clear                      ; 1                            ;
+; 2 Clock enables                    ; 4                            ;
 +------------------------------------+------------------------------+
 
 
 +-----------------------------------------------------------------------------+
 ; LAB Signals Sourced                                                         ;
 +----------------------------------------------+------------------------------+
-; Number of Signals Sourced  (Average = 10.21) ; Number of LABs  (Total = 24) ;
+; Number of Signals Sourced  (Average = 12.12) ; Number of LABs  (Total = 33) ;
 +----------------------------------------------+------------------------------+
 ; 0                                            ; 0                            ;
-; 1                                            ; 3                            ;
-; 2                                            ; 7                            ;
+; 1                                            ; 4                            ;
+; 2                                            ; 8                            ;
 ; 3                                            ; 1                            ;
-; 4                                            ; 0                            ;
+; 4                                            ; 1                            ;
 ; 5                                            ; 0                            ;
 ; 6                                            ; 0                            ;
-; 7                                            ; 1                            ;
-; 8                                            ; 1                            ;
+; 7                                            ; 2                            ;
+; 8                                            ; 0                            ;
 ; 9                                            ; 0                            ;
 ; 10                                           ; 1                            ;
 ; 11                                           ; 2                            ;
 ; 12                                           ; 0                            ;
 ; 13                                           ; 0                            ;
-; 14                                           ; 2                            ;
+; 14                                           ; 1                            ;
 ; 15                                           ; 0                            ;
-; 16                                           ; 0                            ;
+; 16                                           ; 1                            ;
 ; 17                                           ; 0                            ;
 ; 18                                           ; 0                            ;
 ; 19                                           ; 0                            ;
 ; 20                                           ; 1                            ;
-; 21                                           ; 0                            ;
+; 21                                           ; 1                            ;
 ; 22                                           ; 0                            ;
-; 23                                           ; 0                            ;
-; 24                                           ; 2                            ;
-; 25                                           ; 1                            ;
-; 26                                           ; 0                            ;
+; 23                                           ; 1                            ;
+; 24                                           ; 3                            ;
+; 25                                           ; 2                            ;
+; 26                                           ; 1                            ;
 ; 27                                           ; 1                            ;
-; 28                                           ; 0                            ;
+; 28                                           ; 1                            ;
 ; 29                                           ; 0                            ;
 ; 30                                           ; 1                            ;
 +----------------------------------------------+------------------------------+
@@ -1247,17 +1578,17 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +--------------------------------------------------------------------------------+
 ; LAB Signals Sourced Out                                                        ;
 +-------------------------------------------------+------------------------------+
-; Number of Signals Sourced Out  (Average = 3.79) ; Number of LABs  (Total = 24) ;
+; Number of Signals Sourced Out  (Average = 5.09) ; Number of LABs  (Total = 33) ;
 +-------------------------------------------------+------------------------------+
 ; 0                                               ; 0                            ;
-; 1                                               ; 12                           ;
+; 1                                               ; 14                           ;
 ; 2                                               ; 4                            ;
 ; 3                                               ; 0                            ;
-; 4                                               ; 0                            ;
-; 5                                               ; 0                            ;
-; 6                                               ; 2                            ;
-; 7                                               ; 2                            ;
-; 8                                               ; 1                            ;
+; 4                                               ; 1                            ;
+; 5                                               ; 1                            ;
+; 6                                               ; 1                            ;
+; 7                                               ; 3                            ;
+; 8                                               ; 3                            ;
 ; 9                                               ; 0                            ;
 ; 10                                              ; 1                            ;
 ; 11                                              ; 0                            ;
@@ -1265,37 +1596,45 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; 13                                              ; 0                            ;
 ; 14                                              ; 0                            ;
 ; 15                                              ; 1                            ;
+; 16                                              ; 2                            ;
+; 17                                              ; 1                            ;
 +-------------------------------------------------+------------------------------+
 
 
 +----------------------------------------------------------------------------+
 ; LAB Distinct Inputs                                                        ;
 +---------------------------------------------+------------------------------+
-; Number of Distinct Inputs  (Average = 6.92) ; Number of LABs  (Total = 24) ;
+; Number of Distinct Inputs  (Average = 8.85) ; Number of LABs  (Total = 33) ;
 +---------------------------------------------+------------------------------+
 ; 0                                           ; 0                            ;
 ; 1                                           ; 0                            ;
-; 2                                           ; 11                           ;
+; 2                                           ; 12                           ;
 ; 3                                           ; 1                            ;
-; 4                                           ; 2                            ;
+; 4                                           ; 3                            ;
 ; 5                                           ; 2                            ;
 ; 6                                           ; 1                            ;
 ; 7                                           ; 0                            ;
 ; 8                                           ; 0                            ;
 ; 9                                           ; 1                            ;
-; 10                                          ; 0                            ;
+; 10                                          ; 2                            ;
 ; 11                                          ; 0                            ;
-; 12                                          ; 0                            ;
-; 13                                          ; 1                            ;
+; 12                                          ; 2                            ;
+; 13                                          ; 2                            ;
 ; 14                                          ; 0                            ;
-; 15                                          ; 1                            ;
+; 15                                          ; 0                            ;
 ; 16                                          ; 0                            ;
 ; 17                                          ; 1                            ;
 ; 18                                          ; 0                            ;
 ; 19                                          ; 0                            ;
 ; 20                                          ; 1                            ;
 ; 21                                          ; 1                            ;
-; 22                                          ; 1                            ;
+; 22                                          ; 2                            ;
+; 23                                          ; 0                            ;
+; 24                                          ; 0                            ;
+; 25                                          ; 0                            ;
+; 26                                          ; 0                            ;
+; 27                                          ; 0                            ;
+; 28                                          ; 2                            ;
 +---------------------------------------------+------------------------------+
 
 
@@ -1334,7 +1673,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 Info: *******************************************************************
 Info: Running Quartus II Fitter
     Info: Version 11.0 Build 157 04/27/2011 SJ Web Edition
-    Info: Processing started: Wed Apr 11 23:43:37 2012
+    Info: Processing started: Sun Apr 15 19:07:58 2012
 Info: Command: quartus_fit --read_settings_files=off --write_settings_files=off BoardTest -c BoardTest
 Warning: Parallel compilation is not licensed and has been disabled
 Info: Selected device EP2C8T144C8 for design "BoardTest"
@@ -1351,6 +1690,15 @@ Info: Fitter converted 3 user pins into dedicated programming pins
     Info: Pin ~nCSO~ is reserved at location 2
     Info: Pin ~LVDS54p/nCEO~ is reserved at location 76
 Info: Timing-driven compilation is using the TimeQuest Timing Analyzer
+Warning: Timing Analysis is analyzing one or more combinational loops as latches
+    Warning: Node "Registers|RegCont|nextstate.ra1_440|combout" is a latch
+    Warning: Node "Registers|RegCont|nextstate.rd2_418|combout" is a latch
+    Warning: Node "Registers|RegCont|nextstate.wa1_407|combout" is a latch
+    Warning: Node "Registers|RegCont|nextstate.wd2_374|combout" is a latch
+    Warning: Node "Registers|RegCont|nextstate.rd1_429|combout" is a latch
+    Warning: Node "Registers|RegCont|nextstate.wd1_385|combout" is a latch
+    Warning: Node "Registers|RegCont|nextstate.fetch_451|combout" is a latch
+    Warning: Node "Registers|RegCont|nextstate.wa2_396|combout" is a latch
 Critical Warning: Synopsys Design Constraints File file not found: 'BoardTest.sdc'. A Synopsys Design Constraints File is required by the TimeQuest Timing Analyzer to get proper timing constraints. Without it, the Compiler will not properly optimize the design.
 Info: No user constrained base clocks found in the design
 Info: Timing requirements not specified -- quality metrics such as performance may be sacrificed to reduce compilation time.
@@ -1358,6 +1706,10 @@ Info: Automatically promoted node clk (placed in PIN 17 (CLK0, LVDSCLK0p, Input)
     Info: Automatically promoted destinations to use location or clock signal Global Clock CLKCTRL_G2
 Info: Automatically promoted node clk_div:U_1HzClkDivider|clk_out 
     Info: Automatically promoted destinations to use location or clock signal Global Clock
+Info: Automatically promoted node regmap:Registers|reg_controller:RegCont|state.wd2 
+    Info: Automatically promoted destinations to use location or clock signal Global Clock
+    Info: Following destination nodes may be non-global or may not use global or regional clocks
+        Info: Destination node regmap:Registers|reg_controller:RegCont|ok_in
 Info: Starting register packing
 Extra Info: Performing register packing on registers with non-logic cell location assignments
 Extra Info: Completed register packing on registers with non-logic cell location assignments
@@ -1367,7 +1719,7 @@ Extra Info: Moving registers into I/O cells, Multiplier Blocks, and RAM blocks t
 Extra Info: Finished moving registers into I/O cells, Multiplier Blocks, and RAM blocks
 Info: Finished register packing
     Extra Info: No registers were packed into other blocks
-Info: Fitter preparation operations ending: elapsed time is 00:00:01
+Info: Fitter preparation operations ending: elapsed time is 00:00:00
 Info: Fitter placement preparation operations beginning
 Info: Fitter placement preparation operations ending: elapsed time is 00:00:00
 Info: Fitter placement operations beginning
@@ -1375,7 +1727,7 @@ Info: Fitter placement was successful
 Info: Fitter placement operations ending: elapsed time is 00:00:00
 Info: Fitter routing operations beginning
 Info: Router estimated average interconnect usage is 0% of the available device resources
-    Info: Router estimated peak interconnect usage is 1% of the available device resources in the region that extends from location X0_Y10 to location X10_Y19
+    Info: Router estimated peak interconnect usage is 1% of the available device resources in the region that extends from location X23_Y10 to location X34_Y19
 Info: Fitter routing operations ending: elapsed time is 00:00:00
 Info: The Fitter performed an Auto Fit compilation.  Optimizations were skipped to reduce compilation time.
     Info: Optimizations that may affect the design's routability were skipped
@@ -1421,21 +1773,13 @@ Warning: Found 38 output pins without output pin load capacitance assignment
     Info: Pin "SRAM_WriteProtect" has no specified output pin load capacitance -- assuming default load capacitance of 0 pF for timing analysis
     Info: Pin "Accel_SelAddr0" has no specified output pin load capacitance -- assuming default load capacitance of 0 pF for timing analysis
 Info: Delay annotation completed successfully
-Warning: Following 10 pins have no output enable or a GND or VCC output enable - later changes to this connectivity may change fitting results
-    Info: Pin PIC_PBUS_Data[0] has a permanently disabled output enable
-    Info: Pin PIC_PBUS_Data[1] has a permanently disabled output enable
-    Info: Pin PIC_PBUS_Data[2] has a permanently disabled output enable
-    Info: Pin PIC_PBUS_Data[3] has a permanently disabled output enable
-    Info: Pin PIC_PBUS_Data[4] has a permanently disabled output enable
-    Info: Pin PIC_PBUS_Data[5] has a permanently disabled output enable
-    Info: Pin PIC_PBUS_Data[6] has a permanently disabled output enable
-    Info: Pin PIC_PBUS_Data[7] has a permanently disabled output enable
+Warning: Following 2 pins have no output enable or a GND or VCC output enable - later changes to this connectivity may change fitting results
     Info: Pin Camera_SDA has a permanently disabled output enable
     Info: Pin FPGA_I2C_Data has a permanently disabled output enable
-Info: Quartus II Fitter was successful. 0 errors, 5 warnings
-    Info: Peak virtual memory: 318 megabytes
-    Info: Processing ended: Wed Apr 11 23:43:39 2012
-    Info: Elapsed time: 00:00:02
-    Info: Total CPU time (on all processors): 00:00:02
+Info: Quartus II Fitter was successful. 0 errors, 14 warnings
+    Info: Peak virtual memory: 320 megabytes
+    Info: Processing ended: Sun Apr 15 19:08:01 2012
+    Info: Elapsed time: 00:00:03
+    Info: Total CPU time (on all processors): 00:00:03
 
 

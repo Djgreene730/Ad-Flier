@@ -1,5 +1,5 @@
 Analysis & Synthesis report for BoardTest
-Wed Apr 11 23:43:36 2012
+Sun Apr 15 19:07:57 2012
 Quartus II Version 11.0 Build 157 04/27/2011 SJ Web Edition
 
 
@@ -13,12 +13,15 @@ Quartus II Version 11.0 Build 157 04/27/2011 SJ Web Edition
   5. Analysis & Synthesis Source Files Read
   6. Analysis & Synthesis Resource Usage Summary
   7. Analysis & Synthesis Resource Utilization by Entity
-  8. Registers Removed During Synthesis
-  9. General Register Statistics
- 10. Multiplexer Restructuring Statistics (Restructuring Performed)
- 11. Parameter Settings for User Entity Instance: clk_div:U_1HzClkDivider
- 12. Elapsed Time Per Partition
- 13. Analysis & Synthesis Messages
+  8. State Machine - |BoardTest|regmap:Registers|reg_controller:RegCont|state
+  9. User-Specified and Inferred Latches
+ 10. Registers Removed During Synthesis
+ 11. General Register Statistics
+ 12. Multiplexer Restructuring Statistics (Restructuring Performed)
+ 13. Parameter Settings for User Entity Instance: clk_div:U_1HzClkDivider
+ 14. Port Connectivity Checks: "regmap:Registers"
+ 15. Elapsed Time Per Partition
+ 16. Analysis & Synthesis Messages
 
 
 
@@ -44,15 +47,15 @@ applicable agreement for further details.
 +-------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                  ;
 +------------------------------------+------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Wed Apr 11 23:43:36 2012    ;
+; Analysis & Synthesis Status        ; Successful - Sun Apr 15 19:07:57 2012    ;
 ; Quartus II Version                 ; 11.0 Build 157 04/27/2011 SJ Web Edition ;
 ; Revision Name                      ; BoardTest                                ;
 ; Top-level Entity Name              ; BoardTest                                ;
 ; Family                             ; Cyclone II                               ;
-; Total logic elements               ; 185                                      ;
-;     Total combinational functions  ; 168                                      ;
-;     Dedicated logic registers      ; 96                                       ;
-; Total registers                    ; 96                                       ;
+; Total logic elements               ; 310                                      ;
+;     Total combinational functions  ; 221                                      ;
+;     Dedicated logic registers      ; 176                                      ;
+; Total registers                    ; 176                                      ;
 ; Total pins                         ; 72                                       ;
 ; Total virtual pins                 ; 0                                        ;
 ; Total memory bits                  ; 0                                        ;
@@ -154,16 +157,21 @@ Parallel compilation was disabled, but you have multiple processors available. E
 +----------------------------+--------+
 
 
-+---------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Source Files Read                                                                                    ;
-+----------------------------------+-----------------+-----------------+----------------------------------------------------+
-; File Name with User-Entered Path ; Used in Netlist ; File Type       ; File Name with Absolute Path                       ;
-+----------------------------------+-----------------+-----------------+----------------------------------------------------+
-; clk_div.vhd                      ; yes             ; User VHDL File  ; C:/Users/Salvatore/Desktop/BoardTest/clk_div.vhd   ;
-; BoardTest.vhd                    ; yes             ; User VHDL File  ; C:/Users/Salvatore/Desktop/BoardTest/BoardTest.vhd ;
-; SPI_Slave.vhd                    ; yes             ; User VHDL File  ; C:/Users/Salvatore/Desktop/BoardTest/SPI_Slave.vhd ;
-; motor_pwm.vhd                    ; yes             ; User VHDL File  ; C:/Users/Salvatore/Desktop/BoardTest/motor_pwm.vhd ;
-+----------------------------------+-----------------+-----------------+----------------------------------------------------+
++-------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                                                ;
++----------------------------------+-----------------+-----------------+--------------------------------------------------------------------------------+
+; File Name with User-Entered Path ; Used in Netlist ; File Type       ; File Name with Absolute Path                                                   ;
++----------------------------------+-----------------+-----------------+--------------------------------------------------------------------------------+
+; clk_div.vhd                      ; yes             ; User VHDL File  ; C:/Users/Salvatore/Desktop/Ad-Flier/code_cyclone2/BoardTest/clk_div.vhd        ;
+; BoardTest.vhd                    ; yes             ; User VHDL File  ; C:/Users/Salvatore/Desktop/Ad-Flier/code_cyclone2/BoardTest/BoardTest.vhd      ;
+; SPI_Slave.vhd                    ; yes             ; User VHDL File  ; C:/Users/Salvatore/Desktop/Ad-Flier/code_cyclone2/BoardTest/SPI_Slave.vhd      ;
+; motor_pwm.vhd                    ; yes             ; User VHDL File  ; C:/Users/Salvatore/Desktop/Ad-Flier/code_cyclone2/BoardTest/motor_pwm.vhd      ;
+; reg_controller.vhd               ; yes             ; User VHDL File  ; C:/Users/Salvatore/Desktop/Ad-Flier/code_cyclone2/BoardTest/reg_controller.vhd ;
+; quadreg.vhd                      ; yes             ; User VHDL File  ; C:/Users/Salvatore/Desktop/Ad-Flier/code_cyclone2/BoardTest/quadreg.vhd        ;
+; outmux.vhd                       ; yes             ; User VHDL File  ; C:/Users/Salvatore/Desktop/Ad-Flier/code_cyclone2/BoardTest/outmux.vhd         ;
+; regmap.vhd                       ; yes             ; User VHDL File  ; C:/Users/Salvatore/Desktop/Ad-Flier/code_cyclone2/BoardTest/regmap.vhd         ;
+; addreg.vhd                       ; yes             ; User VHDL File  ; C:/Users/Salvatore/Desktop/Ad-Flier/code_cyclone2/BoardTest/addreg.vhd         ;
++----------------------------------+-----------------+-----------------+--------------------------------------------------------------------------------+
 
 
 +-----------------------------------------------------+
@@ -171,44 +179,91 @@ Parallel compilation was disabled, but you have multiple processors available. E
 +---------------------------------------------+-------+
 ; Resource                                    ; Usage ;
 +---------------------------------------------+-------+
-; Estimated Total logic elements              ; 185   ;
+; Estimated Total logic elements              ; 310   ;
 ;                                             ;       ;
-; Total combinational functions               ; 168   ;
+; Total combinational functions               ; 221   ;
 ; Logic element usage by number of LUT inputs ;       ;
-;     -- 4 input functions                    ; 22    ;
-;     -- 3 input functions                    ; 52    ;
-;     -- <=2 input functions                  ; 94    ;
+;     -- 4 input functions                    ; 54    ;
+;     -- 3 input functions                    ; 70    ;
+;     -- <=2 input functions                  ; 97    ;
 ;                                             ;       ;
 ; Logic elements by mode                      ;       ;
-;     -- normal mode                          ; 90    ;
+;     -- normal mode                          ; 143   ;
 ;     -- arithmetic mode                      ; 78    ;
 ;                                             ;       ;
-; Total registers                             ; 96    ;
-;     -- Dedicated logic registers            ; 96    ;
+; Total registers                             ; 176   ;
+;     -- Dedicated logic registers            ; 176   ;
 ;     -- I/O registers                        ; 0     ;
 ;                                             ;       ;
 ; I/O pins                                    ; 72    ;
 ; Maximum fan-out node                        ; clk   ;
-; Maximum fan-out                             ; 87    ;
-; Total fan-out                               ; 664   ;
-; Average fan-out                             ; 1.98  ;
+; Maximum fan-out                             ; 167   ;
+; Total fan-out                               ; 1180  ;
+; Average fan-out                             ; 2.52  ;
 +---------------------------------------------+-------+
 
 
-+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                            ;
-+-------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+-------------------------------------+--------------+
-; Compilation Hierarchy Node    ; LC Combinationals ; LC Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name                 ; Library Name ;
-+-------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+-------------------------------------+--------------+
-; |BoardTest                    ; 168 (41)          ; 96 (17)      ; 0           ; 0            ; 0       ; 0         ; 72   ; 0            ; |BoardTest                          ;              ;
-;    |SPI_Slave:U_PICSPI_Slave| ; 28 (28)           ; 31 (31)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |BoardTest|SPI_Slave:U_PICSPI_Slave ;              ;
-;    |clk_div:U_1HzClkDivider|  ; 41 (41)           ; 24 (24)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |BoardTest|clk_div:U_1HzClkDivider  ;              ;
-;    |motor_pwm:Motor_1|        ; 31 (31)           ; 21 (21)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |BoardTest|motor_pwm:Motor_1        ;              ;
-;    |motor_pwm:Motor_2|        ; 9 (9)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |BoardTest|motor_pwm:Motor_2        ;              ;
-;    |motor_pwm:Motor_3|        ; 9 (9)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |BoardTest|motor_pwm:Motor_3        ;              ;
-;    |motor_pwm:Motor_5|        ; 9 (9)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |BoardTest|motor_pwm:Motor_5        ;              ;
-+-------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+-------------------------------------+--------------+
++----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                                            ;
++--------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+----------------------------------------------------+--------------+
+; Compilation Hierarchy Node     ; LC Combinationals ; LC Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name                                ; Library Name ;
++--------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+----------------------------------------------------+--------------+
+; |BoardTest                     ; 221 (41)          ; 176 (17)     ; 0           ; 0            ; 0       ; 0         ; 72   ; 0            ; |BoardTest                                         ;              ;
+;    |SPI_Slave:U_PICSPI_Slave|  ; 28 (28)           ; 31 (31)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |BoardTest|SPI_Slave:U_PICSPI_Slave                ;              ;
+;    |clk_div:U_1HzClkDivider|   ; 41 (41)           ; 24 (24)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |BoardTest|clk_div:U_1HzClkDivider                 ;              ;
+;    |motor_pwm:Motor_1|         ; 31 (31)           ; 21 (21)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |BoardTest|motor_pwm:Motor_1                       ;              ;
+;    |motor_pwm:Motor_2|         ; 9 (9)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |BoardTest|motor_pwm:Motor_2                       ;              ;
+;    |motor_pwm:Motor_3|         ; 9 (9)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |BoardTest|motor_pwm:Motor_3                       ;              ;
+;    |motor_pwm:Motor_5|         ; 9 (9)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |BoardTest|motor_pwm:Motor_5                       ;              ;
+;    |regmap:Registers|          ; 53 (16)           ; 80 (0)       ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |BoardTest|regmap:Registers                        ;              ;
+;       |addreg:RegAdd|          ; 0 (0)             ; 8 (8)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |BoardTest|regmap:Registers|addreg:RegAdd          ;              ;
+;       |outmux:MuxOut|          ; 8 (8)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |BoardTest|regmap:Registers|outmux:MuxOut          ;              ;
+;       |quadreg:RegAD|          ; 0 (0)             ; 8 (8)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |BoardTest|regmap:Registers|quadreg:RegAD          ;              ;
+;       |quadreg:RegAM|          ; 0 (0)             ; 8 (8)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |BoardTest|regmap:Registers|quadreg:RegAM          ;              ;
+;       |quadreg:RegXD|          ; 0 (0)             ; 8 (8)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |BoardTest|regmap:Registers|quadreg:RegXD          ;              ;
+;       |quadreg:RegXM|          ; 0 (0)             ; 8 (8)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |BoardTest|regmap:Registers|quadreg:RegXM          ;              ;
+;       |quadreg:RegYD|          ; 0 (0)             ; 8 (8)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |BoardTest|regmap:Registers|quadreg:RegYD          ;              ;
+;       |quadreg:RegYM|          ; 0 (0)             ; 8 (8)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |BoardTest|regmap:Registers|quadreg:RegYM          ;              ;
+;       |quadreg:RegZD|          ; 0 (0)             ; 8 (8)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |BoardTest|regmap:Registers|quadreg:RegZD          ;              ;
+;       |quadreg:RegZM|          ; 0 (0)             ; 8 (8)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |BoardTest|regmap:Registers|quadreg:RegZM          ;              ;
+;       |reg_controller:RegCont| ; 29 (29)           ; 8 (8)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |BoardTest|regmap:Registers|reg_controller:RegCont ;              ;
++--------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+----------------------------------------------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
+
+
+Encoding Type:  One-Hot
++---------------------------------------------------------------------------------------------------------------+
+; State Machine - |BoardTest|regmap:Registers|reg_controller:RegCont|state                                      ;
++-------------+-----------+-----------+-----------+-----------+-----------+-----------+-----------+-------------+
+; Name        ; state.wd2 ; state.wd1 ; state.wa2 ; state.wa1 ; state.rd2 ; state.rd1 ; state.ra1 ; state.fetch ;
++-------------+-----------+-----------+-----------+-----------+-----------+-----------+-----------+-------------+
+; state.fetch ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0           ;
+; state.ra1   ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 1         ; 1           ;
+; state.rd1   ; 0         ; 0         ; 0         ; 0         ; 0         ; 1         ; 0         ; 1           ;
+; state.rd2   ; 0         ; 0         ; 0         ; 0         ; 1         ; 0         ; 0         ; 1           ;
+; state.wa1   ; 0         ; 0         ; 0         ; 1         ; 0         ; 0         ; 0         ; 1           ;
+; state.wa2   ; 0         ; 0         ; 1         ; 0         ; 0         ; 0         ; 0         ; 1           ;
+; state.wd1   ; 0         ; 1         ; 0         ; 0         ; 0         ; 0         ; 0         ; 1           ;
+; state.wd2   ; 1         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 1           ;
++-------------+-----------+-----------+-----------+-----------+-----------+-----------+-----------+-------------+
+
+
++------------------------------------------------------------------------------------------------------------------------------------------+
+; User-Specified and Inferred Latches                                                                                                      ;
++-------------------------------------------------------------+---------------------------------------------------+------------------------+
+; Latch Name                                                  ; Latch Enable Signal                               ; Free of Timing Hazards ;
++-------------------------------------------------------------+---------------------------------------------------+------------------------+
+; regmap:Registers|reg_controller:RegCont|nextstate.wa2_396   ; regmap:Registers|reg_controller:RegCont|state.wd2 ; yes                    ;
+; regmap:Registers|reg_controller:RegCont|nextstate.wd2_374   ; regmap:Registers|reg_controller:RegCont|state.wd2 ; yes                    ;
+; regmap:Registers|reg_controller:RegCont|nextstate.wa1_407   ; regmap:Registers|reg_controller:RegCont|state.wd2 ; yes                    ;
+; regmap:Registers|reg_controller:RegCont|nextstate.wd1_385   ; regmap:Registers|reg_controller:RegCont|state.wd2 ; yes                    ;
+; regmap:Registers|reg_controller:RegCont|nextstate.ra1_440   ; regmap:Registers|reg_controller:RegCont|state.wd2 ; yes                    ;
+; regmap:Registers|reg_controller:RegCont|nextstate.rd2_418   ; regmap:Registers|reg_controller:RegCont|state.wd2 ; yes                    ;
+; regmap:Registers|reg_controller:RegCont|nextstate.fetch_451 ; regmap:Registers|reg_controller:RegCont|state.wd2 ; yes                    ;
+; regmap:Registers|reg_controller:RegCont|nextstate.rd1_429   ; regmap:Registers|reg_controller:RegCont|state.wd2 ; yes                    ;
+; Number of user-specified and inferred latches = 8           ;                                                   ;                        ;
++-------------------------------------------------------------+---------------------------------------------------+------------------------+
+Note: All latches listed above may not be present at the end of synthesis due to various synthesis optimizations.
 
 
 +---------------------------------------------------------------------------------------+
@@ -294,23 +349,24 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +----------------------------------------------+-------+
 ; Statistic                                    ; Value ;
 +----------------------------------------------+-------+
-; Total registers                              ; 96    ;
+; Total registers                              ; 176   ;
 ; Number of registers using Synchronous Clear  ; 7     ;
 ; Number of registers using Synchronous Load   ; 0     ;
-; Number of registers using Asynchronous Clear ; 0     ;
+; Number of registers using Asynchronous Clear ; 80    ;
 ; Number of registers using Asynchronous Load  ; 0     ;
-; Number of registers using Clock Enable       ; 25    ;
+; Number of registers using Clock Enable       ; 97    ;
 ; Number of registers using Preset             ; 0     ;
 +----------------------------------------------+-------+
 
 
-+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Multiplexer Restructuring Statistics (Restructuring Performed)                                                                                                                      ;
-+--------------------+-----------+---------------+----------------------+------------------------+-------------------------------------------------------+----------------------------+
-; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered                                            ; Example Multiplexer Output ;
-+--------------------+-----------+---------------+----------------------+------------------------+-------------------------------------------------------+----------------------------+
-; 4:1                ; 7 bits    ; 14 LEs        ; 14 LEs               ; 0 LEs                  ; |BoardTest|SPI_Slave:U_PICSPI_Slave|byte_data_sent[3] ;                            ;
-+--------------------+-----------+---------------+----------------------+------------------------+-------------------------------------------------------+----------------------------+
++------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Multiplexer Restructuring Statistics (Restructuring Performed)                                                                                                                                 ;
++--------------------+-----------+---------------+----------------------+------------------------+------------------------------------------------------------------+----------------------------+
+; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered                                                       ; Example Multiplexer Output ;
++--------------------+-----------+---------------+----------------------+------------------------+------------------------------------------------------------------+----------------------------+
+; 4:1                ; 7 bits    ; 14 LEs        ; 14 LEs               ; 0 LEs                  ; |BoardTest|SPI_Slave:U_PICSPI_Slave|byte_data_sent[1]            ;                            ;
+; 3:1                ; 2 bits    ; 4 LEs         ; 2 LEs                ; 2 LEs                  ; |BoardTest|regmap:Registers|reg_controller:RegCont|nextstate.wd1 ;                            ;
++--------------------+-----------+---------------+----------------------+------------------------+------------------------------------------------------------------+----------------------------+
 
 
 +----------------------------------------------------------------------+
@@ -321,6 +377,22 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; width          ; 6293750 ; Signed Integer                            ;
 +----------------+---------+-------------------------------------------+
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-----------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "regmap:Registers"                                                                    ;
++-------+--------+----------+-------------------------------------------------------------------------------------+
+; Port  ; Type   ; Severity ; Details                                                                             ;
++-------+--------+----------+-------------------------------------------------------------------------------------+
+; reg0c ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
+; reg1c ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
+; reg2c ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
+; reg3c ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
+; reg4c ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
+; reg5c ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
+; reg6c ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
+; reg7c ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
++-------+--------+----------+-------------------------------------------------------------------------------------+
 
 
 +-------------------------------+
@@ -338,7 +410,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 Info: *******************************************************************
 Info: Running Quartus II Analysis & Synthesis
     Info: Version 11.0 Build 157 04/27/2011 SJ Web Edition
-    Info: Processing started: Wed Apr 11 23:43:35 2012
+    Info: Processing started: Sun Apr 15 19:07:55 2012
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off BoardTest -c BoardTest
 Warning: Parallel compilation is not licensed and has been disabled
 Info: Found 2 design units, including 1 entities, in source file clk_div.vhd
@@ -353,13 +425,143 @@ Info: Found 2 design units, including 1 entities, in source file spi_slave.vhd
 Info: Found 2 design units, including 1 entities, in source file motor_pwm.vhd
     Info: Found design unit 1: motor_pwm-behavior
     Info: Found entity 1: motor_pwm
+Info: Found 2 design units, including 1 entities, in source file pid_controller.vhd
+    Info: Found design unit 1: pid_controller-behavior
+    Info: Found entity 1: pid_controller
+Info: Found 2 design units, including 1 entities, in source file reg_controller.vhd
+    Info: Found design unit 1: reg_controller-behavior
+    Info: Found entity 1: reg_controller
+Info: Found 2 design units, including 1 entities, in source file quadreg.vhd
+    Info: Found design unit 1: quadreg-behavior
+    Info: Found entity 1: quadreg
+Info: Found 2 design units, including 1 entities, in source file outmux.vhd
+    Info: Found design unit 1: outmux-behavior
+    Info: Found entity 1: outmux
+Info: Found 2 design units, including 1 entities, in source file regmap.vhd
+    Info: Found design unit 1: regmap-behavior
+    Info: Found entity 1: regmap
+Info: Found 2 design units, including 1 entities, in source file addreg.vhd
+    Info: Found design unit 1: addreg-behavior
+    Info: Found entity 1: addreg
 Info: Elaborating entity "BoardTest" for the top level hierarchy
+Warning (10036): Verilog HDL or VHDL warning at BoardTest.vhd(135): object "RegXD" assigned a value but never read
+Warning (10036): Verilog HDL or VHDL warning at BoardTest.vhd(135): object "RegYD" assigned a value but never read
+Warning (10036): Verilog HDL or VHDL warning at BoardTest.vhd(135): object "RegZD" assigned a value but never read
+Warning (10036): Verilog HDL or VHDL warning at BoardTest.vhd(135): object "RegXM" assigned a value but never read
+Warning (10036): Verilog HDL or VHDL warning at BoardTest.vhd(135): object "RegYM" assigned a value but never read
+Warning (10036): Verilog HDL or VHDL warning at BoardTest.vhd(135): object "RegZM" assigned a value but never read
+Warning (10036): Verilog HDL or VHDL warning at BoardTest.vhd(135): object "RegAD" assigned a value but never read
+Warning (10036): Verilog HDL or VHDL warning at BoardTest.vhd(135): object "RegAM" assigned a value but never read
 Info: Elaborating entity "clk_div" for hierarchy "clk_div:U_1HzClkDivider"
 Info: Elaborating entity "SPI_Slave" for hierarchy "SPI_Slave:U_PICSPI_Slave"
 Warning (10036): Verilog HDL or VHDL warning at SPI_Slave.vhd(30): object "SSEL_endmessage" assigned a value but never read
 Info: Elaborating entity "motor_pwm" for hierarchy "motor_pwm:Motor_1"
+Info: Elaborating entity "regmap" for hierarchy "regmap:Registers"
+Info: Elaborating entity "reg_controller" for hierarchy "regmap:Registers|reg_controller:RegCont"
+Warning (10631): VHDL Process Statement warning at reg_controller.vhd(44): inferring latch(es) for signal or variable "nextstate", which holds its previous value in one or more paths through the process
+Info (10041): Inferred latch for "nextstate.wd2" at reg_controller.vhd(44)
+Info (10041): Inferred latch for "nextstate.wd1" at reg_controller.vhd(44)
+Info (10041): Inferred latch for "nextstate.wa2" at reg_controller.vhd(44)
+Info (10041): Inferred latch for "nextstate.wa1" at reg_controller.vhd(44)
+Info (10041): Inferred latch for "nextstate.rd2" at reg_controller.vhd(44)
+Info (10041): Inferred latch for "nextstate.rd1" at reg_controller.vhd(44)
+Info (10041): Inferred latch for "nextstate.ra1" at reg_controller.vhd(44)
+Info (10041): Inferred latch for "nextstate.fetch" at reg_controller.vhd(44)
+Info: Elaborating entity "addreg" for hierarchy "regmap:Registers|addreg:RegAdd"
+Info: Elaborating entity "quadreg" for hierarchy "regmap:Registers|quadreg:RegXD"
+Info: Elaborating entity "outmux" for hierarchy "regmap:Registers|outmux:MuxOut"
+Warning (10631): VHDL Process Statement warning at outmux.vhd(26): inferring latch(es) for signal or variable "tmp1", which holds its previous value in one or more paths through the process
+Info (10041): Inferred latch for "tmp1[0]" at outmux.vhd(26)
+Info (10041): Inferred latch for "tmp1[1]" at outmux.vhd(26)
+Info (10041): Inferred latch for "tmp1[2]" at outmux.vhd(26)
+Info (10041): Inferred latch for "tmp1[3]" at outmux.vhd(26)
+Info (10041): Inferred latch for "tmp1[4]" at outmux.vhd(26)
+Info (10041): Inferred latch for "tmp1[5]" at outmux.vhd(26)
+Info (10041): Inferred latch for "tmp1[6]" at outmux.vhd(26)
+Info (10041): Inferred latch for "tmp1[7]" at outmux.vhd(26)
+Warning: Tri-state node(s) do not directly drive top-level pin(s)
+    Warning: Converted tri-state buffer "regmap:Registers|quadreg:RegAM|reg_data[0]" feeding internal logic into a wire
+    Warning: Converted tri-state buffer "regmap:Registers|quadreg:RegAM|reg_data[1]" feeding internal logic into a wire
+    Warning: Converted tri-state buffer "regmap:Registers|quadreg:RegAM|reg_data[2]" feeding internal logic into a wire
+    Warning: Converted tri-state buffer "regmap:Registers|quadreg:RegAM|reg_data[3]" feeding internal logic into a wire
+    Warning: Converted tri-state buffer "regmap:Registers|quadreg:RegAM|reg_data[4]" feeding internal logic into a wire
+    Warning: Converted tri-state buffer "regmap:Registers|quadreg:RegAM|reg_data[5]" feeding internal logic into a wire
+    Warning: Converted tri-state buffer "regmap:Registers|quadreg:RegAM|reg_data[6]" feeding internal logic into a wire
+    Warning: Converted tri-state buffer "regmap:Registers|quadreg:RegAM|reg_data[7]" feeding internal logic into a wire
+    Warning: Converted tri-state buffer "regmap:Registers|quadreg:RegAD|reg_data[0]" feeding internal logic into a wire
+    Warning: Converted tri-state buffer "regmap:Registers|quadreg:RegAD|reg_data[1]" feeding internal logic into a wire
+    Warning: Converted tri-state buffer "regmap:Registers|quadreg:RegAD|reg_data[2]" feeding internal logic into a wire
+    Warning: Converted tri-state buffer "regmap:Registers|quadreg:RegAD|reg_data[3]" feeding internal logic into a wire
+    Warning: Converted tri-state buffer "regmap:Registers|quadreg:RegAD|reg_data[4]" feeding internal logic into a wire
+    Warning: Converted tri-state buffer "regmap:Registers|quadreg:RegAD|reg_data[5]" feeding internal logic into a wire
+    Warning: Converted tri-state buffer "regmap:Registers|quadreg:RegAD|reg_data[6]" feeding internal logic into a wire
+    Warning: Converted tri-state buffer "regmap:Registers|quadreg:RegAD|reg_data[7]" feeding internal logic into a wire
+    Warning: Converted tri-state buffer "regmap:Registers|quadreg:RegZM|reg_data[0]" feeding internal logic into a wire
+    Warning: Converted tri-state buffer "regmap:Registers|quadreg:RegZM|reg_data[1]" feeding internal logic into a wire
+    Warning: Converted tri-state buffer "regmap:Registers|quadreg:RegZM|reg_data[2]" feeding internal logic into a wire
+    Warning: Converted tri-state buffer "regmap:Registers|quadreg:RegZM|reg_data[3]" feeding internal logic into a wire
+    Warning: Converted tri-state buffer "regmap:Registers|quadreg:RegZM|reg_data[4]" feeding internal logic into a wire
+    Warning: Converted tri-state buffer "regmap:Registers|quadreg:RegZM|reg_data[5]" feeding internal logic into a wire
+    Warning: Converted tri-state buffer "regmap:Registers|quadreg:RegZM|reg_data[6]" feeding internal logic into a wire
+    Warning: Converted tri-state buffer "regmap:Registers|quadreg:RegZM|reg_data[7]" feeding internal logic into a wire
+    Warning: Converted tri-state buffer "regmap:Registers|quadreg:RegYM|reg_data[0]" feeding internal logic into a wire
+    Warning: Converted tri-state buffer "regmap:Registers|quadreg:RegYM|reg_data[1]" feeding internal logic into a wire
+    Warning: Converted tri-state buffer "regmap:Registers|quadreg:RegYM|reg_data[2]" feeding internal logic into a wire
+    Warning: Converted tri-state buffer "regmap:Registers|quadreg:RegYM|reg_data[3]" feeding internal logic into a wire
+    Warning: Converted tri-state buffer "regmap:Registers|quadreg:RegYM|reg_data[4]" feeding internal logic into a wire
+    Warning: Converted tri-state buffer "regmap:Registers|quadreg:RegYM|reg_data[5]" feeding internal logic into a wire
+    Warning: Converted tri-state buffer "regmap:Registers|quadreg:RegYM|reg_data[6]" feeding internal logic into a wire
+    Warning: Converted tri-state buffer "regmap:Registers|quadreg:RegYM|reg_data[7]" feeding internal logic into a wire
+    Warning: Converted tri-state buffer "regmap:Registers|quadreg:RegXM|reg_data[0]" feeding internal logic into a wire
+    Warning: Converted tri-state buffer "regmap:Registers|quadreg:RegXM|reg_data[1]" feeding internal logic into a wire
+    Warning: Converted tri-state buffer "regmap:Registers|quadreg:RegXM|reg_data[2]" feeding internal logic into a wire
+    Warning: Converted tri-state buffer "regmap:Registers|quadreg:RegXM|reg_data[3]" feeding internal logic into a wire
+    Warning: Converted tri-state buffer "regmap:Registers|quadreg:RegXM|reg_data[4]" feeding internal logic into a wire
+    Warning: Converted tri-state buffer "regmap:Registers|quadreg:RegXM|reg_data[5]" feeding internal logic into a wire
+    Warning: Converted tri-state buffer "regmap:Registers|quadreg:RegXM|reg_data[6]" feeding internal logic into a wire
+    Warning: Converted tri-state buffer "regmap:Registers|quadreg:RegXM|reg_data[7]" feeding internal logic into a wire
+    Warning: Converted tri-state buffer "regmap:Registers|quadreg:RegZD|reg_data[0]" feeding internal logic into a wire
+    Warning: Converted tri-state buffer "regmap:Registers|quadreg:RegZD|reg_data[1]" feeding internal logic into a wire
+    Warning: Converted tri-state buffer "regmap:Registers|quadreg:RegZD|reg_data[2]" feeding internal logic into a wire
+    Warning: Converted tri-state buffer "regmap:Registers|quadreg:RegZD|reg_data[3]" feeding internal logic into a wire
+    Warning: Converted tri-state buffer "regmap:Registers|quadreg:RegZD|reg_data[4]" feeding internal logic into a wire
+    Warning: Converted tri-state buffer "regmap:Registers|quadreg:RegZD|reg_data[5]" feeding internal logic into a wire
+    Warning: Converted tri-state buffer "regmap:Registers|quadreg:RegZD|reg_data[6]" feeding internal logic into a wire
+    Warning: Converted tri-state buffer "regmap:Registers|quadreg:RegZD|reg_data[7]" feeding internal logic into a wire
+    Warning: Converted tri-state buffer "regmap:Registers|quadreg:RegYD|reg_data[0]" feeding internal logic into a wire
+    Warning: Converted tri-state buffer "regmap:Registers|quadreg:RegYD|reg_data[1]" feeding internal logic into a wire
+    Warning: Converted tri-state buffer "regmap:Registers|quadreg:RegYD|reg_data[2]" feeding internal logic into a wire
+    Warning: Converted tri-state buffer "regmap:Registers|quadreg:RegYD|reg_data[3]" feeding internal logic into a wire
+    Warning: Converted tri-state buffer "regmap:Registers|quadreg:RegYD|reg_data[4]" feeding internal logic into a wire
+    Warning: Converted tri-state buffer "regmap:Registers|quadreg:RegYD|reg_data[5]" feeding internal logic into a wire
+    Warning: Converted tri-state buffer "regmap:Registers|quadreg:RegYD|reg_data[6]" feeding internal logic into a wire
+    Warning: Converted tri-state buffer "regmap:Registers|quadreg:RegYD|reg_data[7]" feeding internal logic into a wire
+    Warning: Converted tri-state buffer "regmap:Registers|quadreg:RegXD|reg_data[0]" feeding internal logic into a wire
+    Warning: Converted tri-state buffer "regmap:Registers|quadreg:RegXD|reg_data[1]" feeding internal logic into a wire
+    Warning: Converted tri-state buffer "regmap:Registers|quadreg:RegXD|reg_data[2]" feeding internal logic into a wire
+    Warning: Converted tri-state buffer "regmap:Registers|quadreg:RegXD|reg_data[3]" feeding internal logic into a wire
+    Warning: Converted tri-state buffer "regmap:Registers|quadreg:RegXD|reg_data[4]" feeding internal logic into a wire
+    Warning: Converted tri-state buffer "regmap:Registers|quadreg:RegXD|reg_data[5]" feeding internal logic into a wire
+    Warning: Converted tri-state buffer "regmap:Registers|quadreg:RegXD|reg_data[6]" feeding internal logic into a wire
+    Warning: Converted tri-state buffer "regmap:Registers|quadreg:RegXD|reg_data[7]" feeding internal logic into a wire
+    Warning: Converted tri-state buffer "regmap:Registers|addreg:RegAdd|reg_data[0]" feeding internal logic into a wire
+    Warning: Converted tri-state buffer "regmap:Registers|addreg:RegAdd|reg_data[1]" feeding internal logic into a wire
+    Warning: Converted tri-state buffer "regmap:Registers|addreg:RegAdd|reg_data[2]" feeding internal logic into a wire
+    Warning: Converted tri-state buffer "regmap:Registers|addreg:RegAdd|reg_data[3]" feeding internal logic into a wire
+    Warning: Converted tri-state buffer "regmap:Registers|addreg:RegAdd|reg_data[4]" feeding internal logic into a wire
+    Warning: Converted tri-state buffer "regmap:Registers|addreg:RegAdd|reg_data[5]" feeding internal logic into a wire
+    Warning: Converted tri-state buffer "regmap:Registers|addreg:RegAdd|reg_data[6]" feeding internal logic into a wire
+    Warning: Converted tri-state buffer "regmap:Registers|addreg:RegAdd|reg_data[7]" feeding internal logic into a wire
+Warning: Removed fan-outs from the following always-disabled I/O buffers
+    Warning: Removed fan-out from the always-disabled I/O buffer "PIC_PBUS_Data[0]" to the node "PIC_PBUS_Data[0]"
+    Warning: Removed fan-out from the always-disabled I/O buffer "PIC_PBUS_Data[1]" to the node "PIC_PBUS_Data[1]"
+    Warning: Removed fan-out from the always-disabled I/O buffer "PIC_PBUS_Data[2]" to the node "PIC_PBUS_Data[2]"
+    Warning: Removed fan-out from the always-disabled I/O buffer "PIC_PBUS_Data[3]" to the node "PIC_PBUS_Data[3]"
+    Warning: Removed fan-out from the always-disabled I/O buffer "PIC_PBUS_Data[4]" to the node "PIC_PBUS_Data[4]"
+    Warning: Removed fan-out from the always-disabled I/O buffer "PIC_PBUS_Data[5]" to the node "PIC_PBUS_Data[5]"
+    Warning: Removed fan-out from the always-disabled I/O buffer "PIC_PBUS_Data[6]" to the node "PIC_PBUS_Data[6]"
+    Warning: Removed fan-out from the always-disabled I/O buffer "PIC_PBUS_Data[7]" to the node "PIC_PBUS_Data[7]"
 Warning: Output pins are stuck at VCC or GND
-    Warning (13410): Pin "PIC_PBUS_OK_OUT" is stuck at GND
     Warning (13410): Pin "Ultra_T_Trigger" is stuck at GND
     Warning (13410): Pin "Ultra_B_Trigger" is stuck at GND
     Warning (13410): Pin "Camera_SCL" is stuck at GND
@@ -373,15 +575,11 @@ Warning: Output pins are stuck at VCC or GND
     Warning (13410): Pin "SRAM_WriteProtect" is stuck at GND
     Warning (13410): Pin "Accel_SelAddr0" is stuck at GND
 Info: Generating hard_block partition "hard_block:auto_generated_inst"
-Warning: Design contains 26 input pin(s) that do not drive logic
+Warning: Design contains 22 input pin(s) that do not drive logic
     Warning (15610): No output dependent on input pin "clk_DS1085Z_0"
     Warning (15610): No output dependent on input pin "clk_DS1085Z_1"
-    Warning (15610): No output dependent on input pin "Switch_2"
     Warning (15610): No output dependent on input pin "Switch_3"
     Warning (15610): No output dependent on input pin "Switch_4"
-    Warning (15610): No output dependent on input pin "PIC_PBUS_A_D"
-    Warning (15610): No output dependent on input pin "PIC_PBUS_R_W"
-    Warning (15610): No output dependent on input pin "PIC_PBUS_OK_IN"
     Warning (15610): No output dependent on input pin "Ultra_T_Edge"
     Warning (15610): No output dependent on input pin "Ultra_B_Edge"
     Warning (15610): No output dependent on input pin "Camera_HD"
@@ -400,15 +598,15 @@ Warning: Design contains 26 input pin(s) that do not drive logic
     Warning (15610): No output dependent on input pin "Gyro_Interrupt"
     Warning (15610): No output dependent on input pin "Accel_Interrupt1"
     Warning (15610): No output dependent on input pin "Accel_Interrupt2"
-Info: Implemented 257 device resources after synthesis - the final resource count might be different
+Info: Implemented 389 device resources after synthesis - the final resource count might be different
     Info: Implemented 34 input pins
     Info: Implemented 28 output pins
     Info: Implemented 10 bidirectional pins
-    Info: Implemented 185 logic cells
-Info: Quartus II Analysis & Synthesis was successful. 0 errors, 43 warnings
-    Info: Peak virtual memory: 292 megabytes
-    Info: Processing ended: Wed Apr 11 23:43:36 2012
-    Info: Elapsed time: 00:00:01
+    Info: Implemented 317 logic cells
+Info: Quartus II Analysis & Synthesis was successful. 0 errors, 130 warnings
+    Info: Peak virtual memory: 293 megabytes
+    Info: Processing ended: Sun Apr 15 19:07:57 2012
+    Info: Elapsed time: 00:00:02
     Info: Total CPU time (on all processors): 00:00:02
 
 
