@@ -26,6 +26,9 @@ begin
 process (data, address, outsel, tbo, tmp1)
 begin
 
+tmp1 <= "00000000";
+tmp2 <= "ZZZZZZZZ";
+
 	if outsel = '0' then
 		tmp1 <= address;
 	elsif outsel = '1' then

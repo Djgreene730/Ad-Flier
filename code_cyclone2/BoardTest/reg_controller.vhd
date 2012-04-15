@@ -28,7 +28,7 @@ architecture behavior of reg_controller is
 
 type statetype is (fetch, ra1, rd1, rd2, wa1, wa2, wd1, wd2);
 
-signal state, nextstate : statetype;
+signal state, nextstate : statetype := fetch;
 
 begin
 
@@ -64,6 +64,7 @@ begin
 	ok_in <= '0';
 	tbo <= '0';
 	outsel <= '1';
+	nextstate <= fetch;
 	
 	case state is                            --Controller
 		when fetch =>                         --Fetch

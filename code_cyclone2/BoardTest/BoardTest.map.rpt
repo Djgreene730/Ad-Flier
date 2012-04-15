@@ -1,5 +1,5 @@
 Analysis & Synthesis report for BoardTest
-Sun Apr 15 19:17:44 2012
+Sun Apr 15 19:26:17 2012
 Quartus II Version 11.0 Build 157 04/27/2011 SJ Web Edition
 
 
@@ -14,14 +14,13 @@ Quartus II Version 11.0 Build 157 04/27/2011 SJ Web Edition
   6. Analysis & Synthesis Resource Usage Summary
   7. Analysis & Synthesis Resource Utilization by Entity
   8. State Machine - |BoardTest|regmap:Registers|reg_controller:RegCont|state
-  9. User-Specified and Inferred Latches
- 10. Registers Removed During Synthesis
- 11. General Register Statistics
- 12. Multiplexer Restructuring Statistics (Restructuring Performed)
- 13. Parameter Settings for User Entity Instance: clk_div:U_1HzClkDivider
- 14. Port Connectivity Checks: "regmap:Registers"
- 15. Elapsed Time Per Partition
- 16. Analysis & Synthesis Messages
+  9. Registers Removed During Synthesis
+ 10. General Register Statistics
+ 11. Multiplexer Restructuring Statistics (Restructuring Performed)
+ 12. Parameter Settings for User Entity Instance: clk_div:U_1HzClkDivider
+ 13. Port Connectivity Checks: "regmap:Registers"
+ 14. Elapsed Time Per Partition
+ 15. Analysis & Synthesis Messages
 
 
 
@@ -47,13 +46,13 @@ applicable agreement for further details.
 +-------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                  ;
 +------------------------------------+------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Sun Apr 15 19:17:44 2012    ;
+; Analysis & Synthesis Status        ; Successful - Sun Apr 15 19:26:17 2012    ;
 ; Quartus II Version                 ; 11.0 Build 157 04/27/2011 SJ Web Edition ;
 ; Revision Name                      ; BoardTest                                ;
 ; Top-level Entity Name              ; BoardTest                                ;
 ; Family                             ; Cyclone II                               ;
-; Total logic elements               ; 310                                      ;
-;     Total combinational functions  ; 221                                      ;
+; Total logic elements               ; 303                                      ;
+;     Total combinational functions  ; 212                                      ;
 ;     Dedicated logic registers      ; 176                                      ;
 ; Total registers                    ; 176                                      ;
 ; Total pins                         ; 72                                       ;
@@ -179,16 +178,16 @@ Parallel compilation was disabled, but you have multiple processors available. E
 +---------------------------------------------+-------+
 ; Resource                                    ; Usage ;
 +---------------------------------------------+-------+
-; Estimated Total logic elements              ; 310   ;
+; Estimated Total logic elements              ; 303   ;
 ;                                             ;       ;
-; Total combinational functions               ; 221   ;
+; Total combinational functions               ; 212   ;
 ; Logic element usage by number of LUT inputs ;       ;
 ;     -- 4 input functions                    ; 54    ;
-;     -- 3 input functions                    ; 70    ;
-;     -- <=2 input functions                  ; 97    ;
+;     -- 3 input functions                    ; 62    ;
+;     -- <=2 input functions                  ; 96    ;
 ;                                             ;       ;
 ; Logic elements by mode                      ;       ;
-;     -- normal mode                          ; 143   ;
+;     -- normal mode                          ; 134   ;
 ;     -- arithmetic mode                      ; 78    ;
 ;                                             ;       ;
 ; Total registers                             ; 176   ;
@@ -198,8 +197,8 @@ Parallel compilation was disabled, but you have multiple processors available. E
 ; I/O pins                                    ; 72    ;
 ; Maximum fan-out node                        ; clk   ;
 ; Maximum fan-out                             ; 167   ;
-; Total fan-out                               ; 1180  ;
-; Average fan-out                             ; 2.52  ;
+; Total fan-out                               ; 1155  ;
+; Average fan-out                             ; 2.51  ;
 +---------------------------------------------+-------+
 
 
@@ -208,14 +207,14 @@ Parallel compilation was disabled, but you have multiple processors available. E
 +--------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+----------------------------------------------------+--------------+
 ; Compilation Hierarchy Node     ; LC Combinationals ; LC Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name                                ; Library Name ;
 +--------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+----------------------------------------------------+--------------+
-; |BoardTest                     ; 221 (41)          ; 176 (17)     ; 0           ; 0            ; 0       ; 0         ; 72   ; 0            ; |BoardTest                                         ;              ;
+; |BoardTest                     ; 212 (41)          ; 176 (17)     ; 0           ; 0            ; 0       ; 0         ; 72   ; 0            ; |BoardTest                                         ;              ;
 ;    |SPI_Slave:U_PICSPI_Slave|  ; 28 (28)           ; 31 (31)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |BoardTest|SPI_Slave:U_PICSPI_Slave                ;              ;
 ;    |clk_div:U_1HzClkDivider|   ; 41 (41)           ; 24 (24)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |BoardTest|clk_div:U_1HzClkDivider                 ;              ;
 ;    |motor_pwm:Motor_1|         ; 31 (31)           ; 21 (21)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |BoardTest|motor_pwm:Motor_1                       ;              ;
 ;    |motor_pwm:Motor_2|         ; 9 (9)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |BoardTest|motor_pwm:Motor_2                       ;              ;
 ;    |motor_pwm:Motor_3|         ; 9 (9)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |BoardTest|motor_pwm:Motor_3                       ;              ;
 ;    |motor_pwm:Motor_5|         ; 9 (9)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |BoardTest|motor_pwm:Motor_5                       ;              ;
-;    |regmap:Registers|          ; 53 (16)           ; 80 (0)       ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |BoardTest|regmap:Registers                        ;              ;
+;    |regmap:Registers|          ; 44 (16)           ; 80 (0)       ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |BoardTest|regmap:Registers                        ;              ;
 ;       |addreg:RegAdd|          ; 0 (0)             ; 8 (8)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |BoardTest|regmap:Registers|addreg:RegAdd          ;              ;
 ;       |outmux:MuxOut|          ; 8 (8)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |BoardTest|regmap:Registers|outmux:MuxOut          ;              ;
 ;       |quadreg:RegAD|          ; 0 (0)             ; 8 (8)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |BoardTest|regmap:Registers|quadreg:RegAD          ;              ;
@@ -226,7 +225,7 @@ Parallel compilation was disabled, but you have multiple processors available. E
 ;       |quadreg:RegYM|          ; 0 (0)             ; 8 (8)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |BoardTest|regmap:Registers|quadreg:RegYM          ;              ;
 ;       |quadreg:RegZD|          ; 0 (0)             ; 8 (8)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |BoardTest|regmap:Registers|quadreg:RegZD          ;              ;
 ;       |quadreg:RegZM|          ; 0 (0)             ; 8 (8)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |BoardTest|regmap:Registers|quadreg:RegZM          ;              ;
-;       |reg_controller:RegCont| ; 29 (29)           ; 8 (8)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |BoardTest|regmap:Registers|reg_controller:RegCont ;              ;
+;       |reg_controller:RegCont| ; 20 (20)           ; 8 (8)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |BoardTest|regmap:Registers|reg_controller:RegCont ;              ;
 +--------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+----------------------------------------------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
 
@@ -246,24 +245,6 @@ Encoding Type:  One-Hot
 ; state.wd1   ; 0         ; 1         ; 0         ; 0         ; 0         ; 0         ; 0         ; 1           ;
 ; state.wd2   ; 1         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 1           ;
 +-------------+-----------+-----------+-----------+-----------+-----------+-----------+-----------+-------------+
-
-
-+------------------------------------------------------------------------------------------------------------------------------------------+
-; User-Specified and Inferred Latches                                                                                                      ;
-+-------------------------------------------------------------+---------------------------------------------------+------------------------+
-; Latch Name                                                  ; Latch Enable Signal                               ; Free of Timing Hazards ;
-+-------------------------------------------------------------+---------------------------------------------------+------------------------+
-; regmap:Registers|reg_controller:RegCont|nextstate.wa2_284   ; regmap:Registers|reg_controller:RegCont|state.wd2 ; yes                    ;
-; regmap:Registers|reg_controller:RegCont|nextstate.wd2_268   ; regmap:Registers|reg_controller:RegCont|state.wd2 ; yes                    ;
-; regmap:Registers|reg_controller:RegCont|nextstate.wa1_292   ; regmap:Registers|reg_controller:RegCont|state.wd2 ; yes                    ;
-; regmap:Registers|reg_controller:RegCont|nextstate.wd1_276   ; regmap:Registers|reg_controller:RegCont|state.wd2 ; yes                    ;
-; regmap:Registers|reg_controller:RegCont|nextstate.ra1_316   ; regmap:Registers|reg_controller:RegCont|state.wd2 ; yes                    ;
-; regmap:Registers|reg_controller:RegCont|nextstate.rd2_300   ; regmap:Registers|reg_controller:RegCont|state.wd2 ; yes                    ;
-; regmap:Registers|reg_controller:RegCont|nextstate.fetch_324 ; regmap:Registers|reg_controller:RegCont|state.wd2 ; yes                    ;
-; regmap:Registers|reg_controller:RegCont|nextstate.rd1_308   ; regmap:Registers|reg_controller:RegCont|state.wd2 ; yes                    ;
-; Number of user-specified and inferred latches = 8           ;                                                   ;                        ;
-+-------------------------------------------------------------+---------------------------------------------------+------------------------+
-Note: All latches listed above may not be present at the end of synthesis due to various synthesis optimizations.
 
 
 +---------------------------------------------------------------------------------------+
@@ -359,14 +340,14 @@ Note: All latches listed above may not be present at the end of synthesis due to
 +----------------------------------------------+-------+
 
 
-+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Multiplexer Restructuring Statistics (Restructuring Performed)                                                                                                                               ;
-+--------------------+-----------+---------------+----------------------+------------------------+----------------------------------------------------------------+----------------------------+
-; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered                                                     ; Example Multiplexer Output ;
-+--------------------+-----------+---------------+----------------------+------------------------+----------------------------------------------------------------+----------------------------+
-; 4:1                ; 7 bits    ; 14 LEs        ; 14 LEs               ; 0 LEs                  ; |BoardTest|SPI_Slave:U_PICSPI_Slave|byte_data_sent[1]          ;                            ;
-; 3:1                ; 2 bits    ; 4 LEs         ; 2 LEs                ; 2 LEs                  ; |BoardTest|regmap:Registers|reg_controller:RegCont|add_rego_en ;                            ;
-+--------------------+-----------+---------------+----------------------+------------------------+----------------------------------------------------------------+----------------------------+
++------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Multiplexer Restructuring Statistics (Restructuring Performed)                                                                                                                                 ;
++--------------------+-----------+---------------+----------------------+------------------------+------------------------------------------------------------------+----------------------------+
+; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered                                                       ; Example Multiplexer Output ;
++--------------------+-----------+---------------+----------------------+------------------------+------------------------------------------------------------------+----------------------------+
+; 4:1                ; 7 bits    ; 14 LEs        ; 14 LEs               ; 0 LEs                  ; |BoardTest|SPI_Slave:U_PICSPI_Slave|byte_data_sent[1]            ;                            ;
+; 4:1                ; 2 bits    ; 4 LEs         ; 2 LEs                ; 2 LEs                  ; |BoardTest|regmap:Registers|reg_controller:RegCont|nextstate.wa1 ;                            ;
++--------------------+-----------+---------------+----------------------+------------------------+------------------------------------------------------------------+----------------------------+
 
 
 +----------------------------------------------------------------------+
@@ -410,7 +391,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 Info: *******************************************************************
 Info: Running Quartus II Analysis & Synthesis
     Info: Version 11.0 Build 157 04/27/2011 SJ Web Edition
-    Info: Processing started: Sun Apr 15 19:17:42 2012
+    Info: Processing started: Sun Apr 15 19:26:15 2012
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off BoardTest -c BoardTest
 Warning: Parallel compilation is not licensed and has been disabled
 Info: Found 2 design units, including 1 entities, in source file clk_div.vhd
@@ -458,27 +439,9 @@ Warning (10036): Verilog HDL or VHDL warning at SPI_Slave.vhd(30): object "SSEL_
 Info: Elaborating entity "motor_pwm" for hierarchy "motor_pwm:Motor_1"
 Info: Elaborating entity "regmap" for hierarchy "regmap:Registers"
 Info: Elaborating entity "reg_controller" for hierarchy "regmap:Registers|reg_controller:RegCont"
-Warning (10631): VHDL Process Statement warning at reg_controller.vhd(44): inferring latch(es) for signal or variable "nextstate", which holds its previous value in one or more paths through the process
-Info (10041): Inferred latch for "nextstate.wd2" at reg_controller.vhd(44)
-Info (10041): Inferred latch for "nextstate.wd1" at reg_controller.vhd(44)
-Info (10041): Inferred latch for "nextstate.wa2" at reg_controller.vhd(44)
-Info (10041): Inferred latch for "nextstate.wa1" at reg_controller.vhd(44)
-Info (10041): Inferred latch for "nextstate.rd2" at reg_controller.vhd(44)
-Info (10041): Inferred latch for "nextstate.rd1" at reg_controller.vhd(44)
-Info (10041): Inferred latch for "nextstate.ra1" at reg_controller.vhd(44)
-Info (10041): Inferred latch for "nextstate.fetch" at reg_controller.vhd(44)
 Info: Elaborating entity "addreg" for hierarchy "regmap:Registers|addreg:RegAdd"
 Info: Elaborating entity "quadreg" for hierarchy "regmap:Registers|quadreg:RegXD"
 Info: Elaborating entity "outmux" for hierarchy "regmap:Registers|outmux:MuxOut"
-Warning (10631): VHDL Process Statement warning at outmux.vhd(26): inferring latch(es) for signal or variable "tmp1", which holds its previous value in one or more paths through the process
-Info (10041): Inferred latch for "tmp1[0]" at outmux.vhd(26)
-Info (10041): Inferred latch for "tmp1[1]" at outmux.vhd(26)
-Info (10041): Inferred latch for "tmp1[2]" at outmux.vhd(26)
-Info (10041): Inferred latch for "tmp1[3]" at outmux.vhd(26)
-Info (10041): Inferred latch for "tmp1[4]" at outmux.vhd(26)
-Info (10041): Inferred latch for "tmp1[5]" at outmux.vhd(26)
-Info (10041): Inferred latch for "tmp1[6]" at outmux.vhd(26)
-Info (10041): Inferred latch for "tmp1[7]" at outmux.vhd(26)
 Warning: Tri-state node(s) do not directly drive top-level pin(s)
     Warning: Converted tri-state buffer "regmap:Registers|quadreg:RegAM|reg_data[0]" feeding internal logic into a wire
     Warning: Converted tri-state buffer "regmap:Registers|quadreg:RegAM|reg_data[1]" feeding internal logic into a wire
@@ -589,14 +552,14 @@ Warning: Design contains 22 input pin(s) that do not drive logic
     Warning (15610): No output dependent on input pin "Gyro_Interrupt"
     Warning (15610): No output dependent on input pin "Accel_Interrupt1"
     Warning (15610): No output dependent on input pin "Accel_Interrupt2"
-Info: Implemented 389 device resources after synthesis - the final resource count might be different
+Info: Implemented 375 device resources after synthesis - the final resource count might be different
     Info: Implemented 34 input pins
     Info: Implemented 28 output pins
     Info: Implemented 10 bidirectional pins
-    Info: Implemented 317 logic cells
-Info: Quartus II Analysis & Synthesis was successful. 0 errors, 121 warnings
+    Info: Implemented 303 logic cells
+Info: Quartus II Analysis & Synthesis was successful. 0 errors, 119 warnings
     Info: Peak virtual memory: 293 megabytes
-    Info: Processing ended: Sun Apr 15 19:17:44 2012
+    Info: Processing ended: Sun Apr 15 19:26:17 2012
     Info: Elapsed time: 00:00:02
     Info: Total CPU time (on all processors): 00:00:02
 

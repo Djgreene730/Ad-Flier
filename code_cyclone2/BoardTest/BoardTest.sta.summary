@@ -3,20 +3,12 @@ TimeQuest Timing Analyzer Summary
 ------------------------------------------------------------
 
 Type  : Slow Model Setup 'clk'
-Slack : -4.402
-TNS   : -398.056
-
-Type  : Slow Model Setup 'regmap:Registers|reg_controller:RegCont|state.wd2'
-Slack : -2.196
-TNS   : -11.290
+Slack : -4.830
+TNS   : -402.195
 
 Type  : Slow Model Setup 'clk_div:U_1HzClkDivider|clk_out'
-Slack : -1.814
-TNS   : -11.086
-
-Type  : Slow Model Hold 'regmap:Registers|reg_controller:RegCont|state.wd2'
-Slack : -0.061
-TNS   : -0.061
+Slack : -1.424
+TNS   : -8.693
 
 Type  : Slow Model Hold 'clk'
 Slack : 0.499
@@ -34,32 +26,20 @@ Type  : Slow Model Minimum Pulse Width 'clk_div:U_1HzClkDivider|clk_out'
 Slack : -0.742
 TNS   : -13.356
 
-Type  : Slow Model Minimum Pulse Width 'regmap:Registers|reg_controller:RegCont|state.wd2'
-Slack : 0.500
-TNS   : 0.000
-
 Type  : Fast Model Setup 'clk'
-Slack : -0.775
-TNS   : -47.413
-
-Type  : Fast Model Setup 'regmap:Registers|reg_controller:RegCont|state.wd2'
-Slack : -0.195
-TNS   : -0.447
+Slack : -0.770
+TNS   : -48.095
 
 Type  : Fast Model Setup 'clk_div:U_1HzClkDivider|clk_out'
-Slack : 0.059
+Slack : 0.180
 TNS   : 0.000
 
 Type  : Fast Model Hold 'clk'
-Slack : -0.077
-TNS   : -0.400
-
-Type  : Fast Model Hold 'clk_div:U_1HzClkDivider|clk_out'
 Slack : 0.215
 TNS   : 0.000
 
-Type  : Fast Model Hold 'regmap:Registers|reg_controller:RegCont|state.wd2'
-Slack : 0.272
+Type  : Fast Model Hold 'clk_div:U_1HzClkDivider|clk_out'
+Slack : 0.215
 TNS   : 0.000
 
 Type  : Fast Model Minimum Pulse Width 'clk'
@@ -69,9 +49,5 @@ TNS   : -168.380
 Type  : Fast Model Minimum Pulse Width 'clk_div:U_1HzClkDivider|clk_out'
 Slack : -0.500
 TNS   : -9.000
-
-Type  : Fast Model Minimum Pulse Width 'regmap:Registers|reg_controller:RegCont|state.wd2'
-Slack : 0.500
-TNS   : 0.000
 
 ------------------------------------------------------------
