@@ -40,11 +40,11 @@ OBJECTDIR=build/${CND_CONF}/${IMAGE_TYPE}
 DISTDIR=dist/${CND_CONF}/${IMAGE_TYPE}
 
 # Object Files Quoted if spaced
-OBJECTFILES_QUOTED_IF_SPACED=${OBJECTDIR}/Communications.o ${OBJECTDIR}/Ad-Flier_Pins.o ${OBJECTDIR}/Main.o
-POSSIBLE_DEPFILES=${OBJECTDIR}/Communications.o.d ${OBJECTDIR}/Ad-Flier_Pins.o.d ${OBJECTDIR}/Main.o.d
+OBJECTFILES_QUOTED_IF_SPACED=${OBJECTDIR}/Communications.o ${OBJECTDIR}/Ad-Flier_Pins.o ${OBJECTDIR}/Main.o ${OBJECTDIR}/Gyroscope.o
+POSSIBLE_DEPFILES=${OBJECTDIR}/Communications.o.d ${OBJECTDIR}/Ad-Flier_Pins.o.d ${OBJECTDIR}/Main.o.d ${OBJECTDIR}/Gyroscope.o.d
 
 # Object Files
-OBJECTFILES=${OBJECTDIR}/Communications.o ${OBJECTDIR}/Ad-Flier_Pins.o ${OBJECTDIR}/Main.o
+OBJECTFILES=${OBJECTDIR}/Communications.o ${OBJECTDIR}/Ad-Flier_Pins.o ${OBJECTDIR}/Main.o ${OBJECTDIR}/Gyroscope.o
 
 
 CFLAGS=
@@ -110,6 +110,11 @@ ${OBJECTDIR}/Main.o: Main.c  nbproject/Makefile-${CND_CONF}.mk
 	@${RM} ${OBJECTDIR}/Main.o.d 
 	@${FIXDEPS} "${OBJECTDIR}/Main.o.d" $(SILENT) -c ${MP_CC} $(MP_EXTRA_CC_PRE) -g -D__DEBUG -D__MPLAB_DEBUGGER_PK3=1 -x c -c -mprocessor=$(MP_PROCESSOR_OPTION)  -MMD -MF "${OBJECTDIR}/Main.o.d" -o ${OBJECTDIR}/Main.o Main.c  
 	
+${OBJECTDIR}/Gyroscope.o: Gyroscope.c  nbproject/Makefile-${CND_CONF}.mk
+	@${MKDIR} ${OBJECTDIR} 
+	@${RM} ${OBJECTDIR}/Gyroscope.o.d 
+	@${FIXDEPS} "${OBJECTDIR}/Gyroscope.o.d" $(SILENT) -c ${MP_CC} $(MP_EXTRA_CC_PRE) -g -D__DEBUG -D__MPLAB_DEBUGGER_PK3=1 -x c -c -mprocessor=$(MP_PROCESSOR_OPTION)  -MMD -MF "${OBJECTDIR}/Gyroscope.o.d" -o ${OBJECTDIR}/Gyroscope.o Gyroscope.c  
+	
 else
 ${OBJECTDIR}/Communications.o: Communications.c  nbproject/Makefile-${CND_CONF}.mk
 	@${MKDIR} ${OBJECTDIR} 
@@ -125,6 +130,11 @@ ${OBJECTDIR}/Main.o: Main.c  nbproject/Makefile-${CND_CONF}.mk
 	@${MKDIR} ${OBJECTDIR} 
 	@${RM} ${OBJECTDIR}/Main.o.d 
 	@${FIXDEPS} "${OBJECTDIR}/Main.o.d" $(SILENT) -c ${MP_CC} $(MP_EXTRA_CC_PRE)  -g -x c -c -mprocessor=$(MP_PROCESSOR_OPTION)  -MMD -MF "${OBJECTDIR}/Main.o.d" -o ${OBJECTDIR}/Main.o Main.c  
+	
+${OBJECTDIR}/Gyroscope.o: Gyroscope.c  nbproject/Makefile-${CND_CONF}.mk
+	@${MKDIR} ${OBJECTDIR} 
+	@${RM} ${OBJECTDIR}/Gyroscope.o.d 
+	@${FIXDEPS} "${OBJECTDIR}/Gyroscope.o.d" $(SILENT) -c ${MP_CC} $(MP_EXTRA_CC_PRE)  -g -x c -c -mprocessor=$(MP_PROCESSOR_OPTION)  -MMD -MF "${OBJECTDIR}/Gyroscope.o.d" -o ${OBJECTDIR}/Gyroscope.o Gyroscope.c  
 	
 endif
 

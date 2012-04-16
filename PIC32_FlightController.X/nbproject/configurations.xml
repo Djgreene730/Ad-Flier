@@ -6,6 +6,7 @@
                    projectFiles="true">
       <itemPath>Communications.h</itemPath>
       <itemPath>Ad-Flier_Pins.h</itemPath>
+      <itemPath>Gyroscope.h</itemPath>
     </logicalFolder>
     <logicalFolder name="LibraryFiles"
                    displayName="Library Files"
@@ -24,6 +25,7 @@
                    projectFiles="true">
       <itemPath>Communications.c</itemPath>
       <itemPath>Ad-Flier_Pins.c</itemPath>
+      <itemPath>Gyroscope.c</itemPath>
     </logicalFolder>
     <logicalFolder name="ExternalFiles"
                    displayName="Important Files"

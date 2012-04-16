@@ -9,8 +9,11 @@
 #include <stdlib.h>
 #include <p32xxxx.h>
 #include <plib.h>
-#include "Communications.h"
 #include "Ad-Flier_Pins.h"
+#include "Communications.h"
+#include "Gyroscope.h"
+
+
 
 #pragma config FNOSC = PRIPLL       // Oscillator Selection
 #pragma config FPLLIDIV = DIV_2     // PLL Input Divider (PIC32MX Starter Kit: use divide by 2 only)
@@ -43,28 +46,38 @@ int main(int argc, char** argv) {
     initializeAllPins();
 
     // Initialize Communication Systems
-    initializeUART();
+    //initializeUART();
 
     // Configure XBee
-    xbee_baud.size = 1;     strcpy(xbee_baud.data, "6");
-    xbee_channel.size = 2;  strcpy(xbee_channel.data, "15");
-    xbee_network.size = 4;  strcpy(xbee_network.data, "3421");
-    configureXBee(xbee_baud, xbee_channel, xbee_network);
+    //xbee_baud.size = 1;     strcpy(xbee_baud.data, "6");
+    //xbee_channel.size = 2;  strcpy(xbee_channel.data, "15");
+    //xbee_network.size = 4;  strcpy(xbee_network.data, "3421");
+    //configureXBee(xbee_baud, xbee_channel, xbee_network);
 
-
-
-
-
-
-
+    TRISFbits.TRISF8 = 0;
+    PORTFbits.RF8 = 0;
     
     // Loop Infinitely
     while(1) {
-
         // GPS Sentence -> XBee Transmitter
         //rx_size = read_GPS_Sentence(buf, 1024);
-        putsXBee("Testing 1, 2, 3...\r", strlen("Testing 1, 2, 3...\r"));
-        
+        //putsXBee("Testing 1, 2, 3...\r", strlen("Testing 1, 2, 3...\r"));
+
+
+        //  DO NOT USE!!!! CURRENTLY TESTING DELAYS
+
+
+        LATFbits.LATF8 = !(PORTFbits.RF8 = 0);
+        Delayus(1);
+
+        LATFbits.LATF8 = !(PORTFbits.RF8 = 0);
+        Delayus(10);
+
+        LATFbits.LATF8 = !(PORTFbits.RF8 = 0);
+        Delayus(100);
+
+        LATFbits.LATF8 = !(PORTFbits.RF8 = 0);
+        Delayus(1000);
 
         
     }

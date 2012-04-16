@@ -1,1 +1,2 @@
-build/default/production/Main.o: Main.c Communications.h Ad-Flier_Pins.h
+build/default/production/Main.o: Main.c Ad-Flier_Pins.h Communications.h \
+ Gyroscope.h
