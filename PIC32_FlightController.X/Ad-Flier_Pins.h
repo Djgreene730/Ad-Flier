@@ -5,48 +5,59 @@
 // -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -
 
 // GPS Pins
-#define	GPS_PPS             LATAbits.LATA3      // 1Hz Output
+#define GPS_PPS             LATAbits.LATA3      // 1Hz Output
 #define	GPS_PPS_TR          TRISAbits.TRISA3
 #define	GPS_Standby         LATAbits.LATA4      // Activ-Low Standby
 #define	GPS_Standby_TR      TRISAbits.TRISA4
 #define	GPS_Reset           LATAbits.LATA5      // Active-Low Reset
 #define	GPS_Reset_TR        TRISAbits.TRISA5
 
+#define GPS_A_TX_TR         TRISFbits.TRISF5
+#define GPS_A_RX_TR         TRISFbits.TRISF4
+#define GPS_B_TX_TR         TRISFbits.TRISF13
+#define GPS_B_RX_TR         TRISFbits.TRISF12
+
+#define GPS_A_TX            LATFbits.LATF5
+#define GPS_A_RX            LATFbits.LATF4
+#define GPS_B_TX            LATFbits.LATF13
+#define GPS_B_RX            LATFbits.LATF12
+
+
 // XBee Pins
-#define	XBee_Associate      LATAbits.LATA6      // High = Link Active
-#define	XBee_Associate_TR   TRISAbits.TRISA6
+#define XBee_Associate      LATAbits.LATA6      // High = Link Active
+#define XBee_Associate_TR   TRISAbits.TRISA6
 #define XBee_CTS            LATDbits.LATD14     // XBee Clear To Send, Active-Low
 #define XBee_CTS_TR         TRISDbits.TRISD14    // XBee CTS Direction Port, Input
 #define XBee_RTS            LATDbits.LATD15     // XBee Request To Send, Active-Low
 #define XBee_RTS_TR         TRISDbits.TRISD15    // XBee RTS Direction Port, Output
-#define	XBee_DTR            LATAbits.LATA7      // Handshake Line
-#define	XBee_DTR_TR         TRISAbits.TRISA7
-#define	XBee_Reset          LATAbits.LATA9      // Active-Low Reset
-#define	XBee_Reset_TR       TRISAbits.TRISA9
+#define XBee_DTR            LATAbits.LATA7      // Handshake Line
+#define XBee_DTR_TR         TRISAbits.TRISA7
+#define XBee_Reset          LATAbits.LATA9      // Active-Low Reset
+#define XBee_Reset_TR       TRISAbits.TRISA9
 
 // Magnetometer Pins
-#define	MagNet_DRDY         LATAbits.LATA0      // High = Reading Ready
-#define	MagNet_DRDY_TR      TRISAbits.TRISA0
+#define MagNet_DRDY         LATAbits.LATA0      // High = Reading Ready
+#define MagNet_DRDY_TR      TRISAbits.TRISA0
 
 // Barometer Pins
 #define SPI_BARO_CS         LATDbits.LATD1      // SPI Active-Low Chip Select
 #define SPI_BARO_CS_TR      TRISDbits.TRISD1
-#define	Barometer_SHDN      LATAbits.LATA1      // Active-Low Shutdown
-#define	Barometer_SHDN_TR   TRISAbits.TRISA1
+#define Barometer_SHDN      LATAbits.LATA1      // Active-Low Shutdown
+#define Barometer_SHDN_TR   TRISAbits.TRISA1
 
 // SRAM Pins
 #define SPI_SRAM_CS         LATDbits.LATD3      // SPI Active-Low Chip Select
 #define SPI_SRAM_CS_TR      TRISDbits.TRISD3
-#define	SRAM_WP             LATAbits.LATA2      // Active-Low Write-Protect
-#define	SRAM_WP_TR          TRISAbits.TRISA2
+#define SRAM_WP             LATAbits.LATA2      // Active-Low Write-Protect
+#define SRAM_WP_TR          TRISAbits.TRISA2
 
 // Humidity Sensor Pins
-#define	Humidity_IO         LATAbits.LATA10     // 1-Wire I/O Line
-#define	Humidity_IO_TR      TRISAbits.TRISA10
+#define Humidity_IO         LATAbits.LATA10     // 1-Wire I/O Line
+#define Humidity_IO_TR      TRISAbits.TRISA10
 
 // System Power Monitor ADC Pin
-#define	SysPowMonitor       LATBbits.LATB2      // ADC Line to Monitor Voltage-In
-#define	SysPowMonitor_TR    TRISBbits.TRISB2
+#define SysPowMonitor       LATBbits.LATB2      // ADC Line to Monitor Voltage-In
+#define SysPowMonitor_TR    TRISBbits.TRISB2
 
 // MicroSD Card Pins
 #define SPI_uSD_CS          LATDbits.LATD2      // SPI Active-Low Chip Select
@@ -85,49 +96,20 @@
 // Gyroscope Pins
 #define SPI_GYRO_CS         LATDbits.LATD5      // SPI Active-Low Chip Select
 #define SPI_GYRO_CS_TR      TRISDbits.TRISD5
-#define	Gyro_DRDY           LATDbits.LATD6      // High = Reading Ready
-#define	Gyro_DRDY_TR        TRISDbits.TRISD6
-#define	Gyro_INT1           LATDbits.LATD7      // Programmable Interrupt
-#define	Gyro_INT1_TR        TRISDbits.TRISD7
+#define Gyro_DRDY           LATDbits.LATD6      // High = Reading Ready
+#define Gyro_DRDY_TR        TRISDbits.TRISD6
+#define Gyro_INT1           LATDbits.LATD7      // Programmable Interrupt
+#define Gyro_INT1_TR        TRISDbits.TRISD7
 
 // Accelerometer Pins
-#define	Accel_INT1          LATDbits.LATD9      // Programmable Interrupt
-#define	Accel_INT1_TR       TRISDbits.TRISD9
-#define	Accel_INT2          LATDbits.LATD8      // Programmable Interrupt
-#define	Accel_INT2_TR       TRISDbits.TRISD8
+#define Accel_INT1          LATDbits.LATD9      // Programmable Interrupt
+#define Accel_INT1_TR       TRISDbits.TRISD9
+#define Accel_INT2          LATDbits.LATD8      // Programmable Interrupt
+#define Accel_INT2_TR       TRISDbits.TRISD8
 
 
 // -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -
 
-// Pin Direction Maps
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-// Function Prototypes
+// Setup Directions and Initial Values
 void initializeAllPins(void);

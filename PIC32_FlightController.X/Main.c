@@ -32,7 +32,6 @@
 
 
 
-
 // Main Application
 int main(int argc, char** argv) {
 
@@ -46,17 +45,28 @@ int main(int argc, char** argv) {
     // Initialize Communication Systems
     initializeUART();
 
-    // Temp Variables
-    UINT8   buf[1024];
-    UINT32  rx_size;
+    // Configure XBee
+    xbee_baud.size = 1;     strcpy(xbee_baud.data, "6");
+    xbee_channel.size = 2;  strcpy(xbee_channel.data, "15");
+    xbee_network.size = 4;  strcpy(xbee_network.data, "3421");
+    configureXBee(xbee_baud, xbee_channel, xbee_network);
 
+
+
+
+
+
+
+    
     // Loop Infinitely
     while(1) {
 
         // GPS Sentence -> XBee Transmitter
         //rx_size = read_GPS_Sentence(buf, 1024);
         putsXBee("Testing 1, 2, 3...\r", strlen("Testing 1, 2, 3...\r"));
-        //putsXBee(buf, rx_size);
+        
+
+        
     }
 
 
