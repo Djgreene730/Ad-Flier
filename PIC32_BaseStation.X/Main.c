@@ -51,7 +51,6 @@ int main(int argc, char** argv) {
 
     // Initialize Communication Systems
     initializeUART();
-    setupGyroscope();
 
     // Configure XBee
     xbee_baud.size = 1;     strcpy(xbee_baud.data, "6");
@@ -59,22 +58,31 @@ int main(int argc, char** argv) {
     xbee_network.size = 4;  strcpy(xbee_network.data, "3421");
     configureXBee(xbee_baud, xbee_channel, xbee_network);
 
-    
-
+    UINT8 buf[1024];
     // Loop Infinitely
     while(1) {
         
         // Send Current Position
-        /*
-        Delayms(1000);        
+        Delayms(100);        
         while (gps_nmea_position.ready == 0);
-        putsXBee(gps_nmea_position.data, gps_nmea_position.size);
+        putsBluetooth(gps_nmea_position.data, gps_nmea_position.size);
 
-        // Send Current Velocity
-        Delayms(1000);        
-        while (gps_nmea_velocity.ready == 0);
-        putsXBee(gps_nmea_velocity.data, gps_nmea_velocity.size);
-        
+        // Send Current Gyro Readings
+        while (gyroTempBuf.ready == 0);
+
+        float tempX = (short)gyroCurrent.X;
+        tempX = 2000 * (tempX / 65535);
+            
+        float tempY = (short)gyroCurrent.Y;
+        tempY = 2000 * (tempY / 65535);
+
+        float tempZ = (short)gyroCurrent.Z;
+        tempZ = 2000 * (tempZ / 65535);
+
+        sprintf(buf, "\t\t\t\t\t\t\t\tX: %3.5f, Y: %3.5f, Z: %3.5f\r\n", tempX, tempY, tempZ);
+        putsBluetooth(buf, strlen(buf));
+
+        /*
 
         // Send Gyroscope Reading to XBee
         Delayms(100);
@@ -86,12 +94,6 @@ int main(int argc, char** argv) {
         putsXBee(gyroReading, 1);
 
         */
-
-        // Gyroscope Output to XBee
-        updateGyroscopeReadings();
-        UINT8 buf[7] = {'G', gyroCurrent.XU, gyroCurrent.XL, gyroCurrent.YU, gyroCurrent.YL, gyroCurrent.ZU, gyroCurrent.ZL};
-        putsXBee(buf , 7);
-        Delayms(500);
     }
 
 

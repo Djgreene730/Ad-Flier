@@ -11,33 +11,22 @@
 #include <plib.h>
 
 // Last SPI Device Used
-SPI1_Devices LastSPI1Initialize = None;
+SPI1_Devices    LastSPI1Initialize = None;
 
 // GPS Configuration Global Variables
 Sentence    gpsTempBuf = {0, 0};
 Sentence    gps_nmea_position = {0, 0};
 Sentence    gps_nmea_velocity = {0, 0};
 
+// Gyroscope Readings
+Sentence            gyroTempBuf = {0, 0};
+GyroscopeReading    gyroCurrent;
+
 // XBee Configuration Global Variables
 Sentence    xbee_baud = {0, 0};
 Sentence    xbee_channel = {0, 0};
 Sentence    xbee_network = {0, 0};
 
-// Simple Delay Functions
-void Delayms(unsigned t) {
-    T1CON = 0x8020;     // enable TMR1, Tpb, 1:1
-    while (t--) {
-        //PR1   = 0xffff;           // set period register to max
-        TMR1 = 0;
-        while (TMR1 < 1250);
-    }
-}
-
-void Delayus(unsigned t) {
-    T1CON = 0x8010;     // enable TMR1, Tpb, 1:1
-    TMR1 = 0;
-    while (TMR1 < (10 * t));
-}
 
 // Initialize all Applicable UART Channels
 void initializeUART (void) {
@@ -48,6 +37,11 @@ void initializeUART (void) {
     UARTSetDataRate(UART1, PBUS_FREQ, UART1_FREQ);
     UARTSetLineControl(UART1, UART_DATA_SIZE_8_BITS|UART_PARITY_NONE|UART_STOP_BITS_1);
     UARTEnable(UART1, UART_PERIPHERAL | UART_ENABLE | UART_RX | UART_TX);
+
+    // Configure UART1 RX Interrupt
+    INTEnable(INT_SOURCE_UART_RX(UART1), INT_ENABLED);
+    INTSetVectorPriority(INT_VECTOR_UART(UART1), INT_PRIORITY_LEVEL_1);
+    INTSetVectorSubPriority(INT_VECTOR_UART(UART1), INT_SUB_PRIORITY_LEVEL_0);
 
     // Initialize UART2 - U3A - GPS (NMEA)
     UARTConfigure(UART2, UART_ENABLE_PINS_TX_RX_ONLY);
@@ -66,15 +60,36 @@ void initializeUART (void) {
     //UARTSetFifoMode(UART5, UART_INTERRUPT_ON_TX_NOT_FULL | UART_INTERRUPT_ON_RX_NOT_EMPTY);
     UARTSetDataRate(UART5, PBUS_FREQ, UART5_FREQ);
     UARTSetLineControl(UART5, UART_DATA_SIZE_8_BITS|UART_PARITY_NONE|UART_STOP_BITS_1);
-    UARTEnable(UART5, UART_PERIPHERAL | UART_ENABLE | UART_RX );
+    UARTEnable(UART5, UART_PERIPHERAL | UART_ENABLE | UART_RX | UART_TX );
     
     // Set Port Directions
     XBee_CTS_TR = 1;     // XBee CTS Direction Port, Input
     XBee_RTS_TR = 0;     // XBee RTS Direction Port, Output
     XBee_RTS = 0;        // XBee Request To Send
+
+    putsBluetooth("AT+BAUD7", 8);
 }
 
 // -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -
+
+// Interrupt Function for GPS on UART2
+void __ISR(_UART1_VECTOR, IPL2SOFT) IntUart1Handler(void) {
+  // Is this an RX interrupt?
+  if (INTGetFlag(INT_SOURCE_UART_RX(UART1)))
+    {
+      // Echo what we just received.
+      read_Gyro_Sentence();
+
+      // Clear the RX interrupt Flag
+      INTClearFlag(INT_SOURCE_UART_RX(UART1));
+    }
+
+  // We don't care about TX interrupt
+  if ( INTGetFlag(INT_SOURCE_UART_TX(UART1)) )
+    {
+      INTClearFlag(INT_SOURCE_UART_TX(UART1));
+    }
+}
 
 // Interrupt Function for GPS on UART2
 void __ISR(_UART2_VECTOR, IPL2SOFT) IntUart2Handler(void) {
@@ -95,38 +110,39 @@ void __ISR(_UART2_VECTOR, IPL2SOFT) IntUart2Handler(void) {
     }
 }
 
+// Keep track of GPS Sentence Position
+UINT8 currentGpsState = 0;
 
 // Get GPS Sentence from NMEA Port
-UINT8 currentGpsSentenceState = 0;
 UINT32 read_GPS_Sentence() {
-    while(gpsTempBuf.size < 150) {
+   
+    while(UARTReceivedDataIsAvailable(UART2)) {
         UINT8 character = 0;
 
         // Wait for GPS Line to be Free, then grab the character
-        while(!UARTReceivedDataIsAvailable(UART2));
         character = UARTGetDataByte(UART2);
 
         // Wait for GPS Code Prefix
-        if ((currentGpsSentenceState == 0) && (character == '$')) {
+        if (character == '$') {
             gpsTempBuf.size = 0;
-            currentGpsSentenceState = 1;
+            currentGpsState = 1;
         }
         
         // Record the Character if we're in the Sentence Stream
-        if (currentGpsSentenceState == 1) {
+        if (currentGpsState == 1) {
             gpsTempBuf.data[gpsTempBuf.size] = character;
             gpsTempBuf.size++;
 
             // Is this the last character?
             if (character == '\n') {
-                currentGpsSentenceState = 2;
+                currentGpsState = 2;
                 break;
             }
         }
     }
 
     //Copy new GPS string to Globals
-    if (currentGpsSentenceState == 2) {
+    if (currentGpsState == 2) {
         int i = 0;
         if (gpsTempBuf.data[3] == 'G') {
             // Hold any operations to Sentence
@@ -159,15 +175,41 @@ UINT32 read_GPS_Sentence() {
         else {
             // Error
         }
-        currentGpsSentenceState = 0;
+        currentGpsState = 0;
     }
     
     // Return the Size of the Sentence
     return gpsTempBuf.size;
 }
 
-// XBee Functions
+// XBee & Bluetooth Functions
 // -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -
+
+// Get String from Bluetooth
+UINT32 getBluetooth(char *buffer, UINT32 max_size) {
+    // Keep count of the characters
+    UINT32 num_char = 0;
+
+    while(num_char < max_size) {
+        UINT8 character;
+
+        // Wait for XBee Line to be Free, then grab the character
+        while(!UARTReceivedDataIsAvailable(UART5));
+        character = UARTGetDataByte(UART5);
+
+        // Break if this is the end character
+        if (character == '\r')
+            break;
+
+        // Record the Character if we're in the Sentence Stram
+        *buffer = character;
+        buffer++;
+        num_char++;
+    }
+
+    // Return the Size of the Sentence
+    return num_char;
+}
 
 // Get String from XBee
 UINT32 getXBee(char *buffer, UINT32 max_size) {
@@ -208,6 +250,21 @@ void putsXBee(const char *buffer, UINT32 size) {
     }
 
     while(!UARTTransmissionHasCompleted(UART1));
+}
+
+// Send a character string onto the Bluetooth
+void putsBluetooth(const char *buffer, UINT32 size) {
+
+    while(size) {
+        // Wait for Transmitter to be ready...
+        while(!UARTTransmitterIsReady(UART5));
+
+        UARTSendDataByte(UART5, *buffer);
+        buffer++;
+        size--;
+    }
+
+    while(!UARTTransmissionHasCompleted(UART5));
 }
 
 // Send a character string onto the XBee
@@ -313,107 +370,6 @@ UINT8 getXBeeConfig() {
 }
 
 
-// FPGA Parallel Functions
-// -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -
-
-void setFPGAParallelPins(UINT8 ByteIn) {
-    // Create Variable and Set Value
-    FPGADataPins tempOut;
-    tempOut.Byte = ByteIn;
-    
-    //Set Pins (Assume TRIS is Set)
-    FPGA_D0 = tempOut.D0;
-    FPGA_D1 = tempOut.D1;
-    FPGA_D2 = tempOut.D2;
-    FPGA_D3 = tempOut.D3;
-    FPGA_D4 = tempOut.D4;
-    FPGA_D5 = tempOut.D5;
-    FPGA_D6 = tempOut.D6;
-    FPGA_D7 = tempOut.D7;
-}
-
-UINT8 getFPGAParallelPins() {
-    // Create Variable and Set Value
-    FPGADataPins tempOut;
-
-    // Get Pins (Assume TRIS is Set)
-    tempOut.D0 = FPGA_D0;
-    tempOut.D1 = FPGA_D1;
-    tempOut.D2 = FPGA_D2;
-    tempOut.D3 = FPGA_D3;
-    tempOut.D4 = FPGA_D4;
-    tempOut.D5 = FPGA_D5;
-    tempOut.D6 = FPGA_D6;
-    tempOut.D7 = FPGA_D7;
-
-    // Return Data
-    return tempOut.Byte;
-}
-
-void sendFPGAData(UINT8 address, UINT8 data) {
-    // Set Port Direction as Output & Hold Low
-    TRISE = 0x00;
-    PORTE = 0x00;
-
-    // Send Out Address
-    setFPGAParallelPins(address);
-    FPGA_A_D = 1;
-    FPGA_R_W = 1;
-    FPGA_OK_OUT = 1;
-
-    // Wait for FPGA to Acknowledge then Lower
-    while (!FPGA_OK_IN) ;
-    FPGA_OK_OUT = 0;
-    while (FPGA_OK_IN) ;
-
-    // Send Out Data
-    setFPGAParallelPins(data);
-    FPGA_A_D = 0;
-    FPGA_R_W = 1;
-    FPGA_OK_OUT = 1;
-    
-    // Wait for FPGA to Acknowledge then Lower
-    while (!FPGA_OK_IN) ;
-    FPGA_OK_OUT = 0;
-    while (FPGA_OK_IN) ;
-}
-
-UINT8 getFPGAData(UINT8 address) {
-    // Set Port Direction as Output & Hold Low
-    TRISE = 0x00;
-    PORTE = 0x00;
-
-    // Send Out Address
-    setFPGAParallelPins(address);
-    FPGA_A_D = 1;
-    FPGA_R_W = 1;
-    FPGA_OK_OUT = 1;
-
-    // Wait for FPGA to Acknowledge then Lower
-    while (!FPGA_OK_IN) ;
-
-    //Change Port Direction to Input and ACK
-    TRISE = 0xFF;
-    FPGA_OK_OUT = 0;
-
-    // Wait for FPGA to Drop OK Signal
-    while (FPGA_OK_IN) ;
-
-    // Wait for FPGA to Return the Data, then Capture
-    while(!FPGA_OK_IN) ;
-    UINT tempData;
-    tempData = getFPGAParallelPins();
-    FPGA_OK_OUT = 1;
-
-    // Wait for FPGA to Acknowledge then Lower
-    while (!FPGA_OK_IN) ;
-    FPGA_OK_OUT = 0;
-    while (FPGA_OK_IN) ;
-
-    // Return the Result
-    return tempData;
-}
-
 // SPI Functions
 // -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -
 
@@ -436,22 +392,56 @@ void initiateSPI1(int CLKSPEED) {
     SpiChnOpen(1, config, (PBUS_FREQ / CLKSPEED));
 }
 
-// Initialize SPI Bus 2 to Desired Clock Speed
-void initiateSPI2(int CLKSPEED) {
-    // Set Initial COnfiguration
-    unsigned int config = ( SPI_CON_MSTEN | SPI_CON_MODE8 | SPI_SMP_ON | SPI_CKE_OFF | CLK_POL_ACTIVE_LOW | SPI_CON_ON );
 
-    // Setup SPI_2 Pins
-    PORTSetPinsDigitalOut(IOPORT_D, BIT_4);     // FPGA Select
-    
-    // Raise All Select Lines
-    SPI2_SelectNone;
 
-    // Disable then Enable SPI_2
-    SpiChnClose(2);
-    SpiChnOpen(2, config, (PBUS_FREQ / CLKSPEED));
+// Get Gyroscope Readings from XBee
+UINT8 currentGyroState = 0;
+void read_Gyro_Sentence() {
+    while(UARTReceivedDataIsAvailable(UART1)) {
+        UINT8 character = 0;
+
+        // Wait for GPS Line to be Free, then grab the character
+        character = UARTGetDataByte(UART1);
+
+        // Wait for GPS Code Prefix
+        if (character == 71) {
+            gyroTempBuf.size = 0;
+            currentGyroState = 1;
+        }
+
+        // Record the Character if we're in the Sentence Stream
+        if (currentGyroState == 1) {
+            gyroTempBuf.data[gyroTempBuf.size] = character;
+            gyroTempBuf.size++;
+
+            // Is this the last character?
+            if (gyroTempBuf.size == 7) {
+                currentGyroState = 2;
+                break;
+            }
+        }
+    }
+
+    //Copy new GPS string to Globals
+    if (currentGyroState == 2) {
+        gyroTempBuf.ready = 0;
+
+        // Copy X-Value
+        gyroCurrent.X = (gyroTempBuf.data[1] & 0xFF)<<8;
+        gyroCurrent.X |= (gyroTempBuf.data[2] & 0xFF);
+
+        // Copy Y-Value
+        gyroCurrent.Y = (gyroTempBuf.data[3] & 0xFF)<<8;
+        gyroCurrent.Y |= (gyroTempBuf.data[4] & 0xFF);
+
+        // Copy Z-Value
+        gyroCurrent.Z = (gyroTempBuf.data[5] & 0xFF)<<8;
+        gyroCurrent.Z |= (gyroTempBuf.data[6] & 0xFF);
+
+        gyroTempBuf.ready = 1;
+        currentGyroState = 0;
+
+
+
+    }
 }
-
-
-
-
