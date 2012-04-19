@@ -1,13 +1,13 @@
-Analysis & Synthesis Status : Successful - Wed Apr 18 22:23:22 2012
-Quartus II Version : 11.0 Build 157 04/27/2011 SJ Web Edition
+Analysis & Synthesis Status : Successful - Wed Apr 18 23:05:51 2012
+Quartus II 32-bit Version : 11.1 Build 216 11/23/2011 SP 1 SJ Web Edition
 Revision Name : BoardTest
-Top-level Entity Name : rangefinder
+Top-level Entity Name : BoardTest
 Family : Cyclone II
-Total logic elements : 587
-    Total combinational functions : 538
-    Dedicated logic registers : 75
-Total registers : 75
-Total pins : 11
+Total logic elements : 906
+    Total combinational functions : 774
+    Dedicated logic registers : 250
+Total registers : 250
+Total pins : 72
 Total virtual pins : 0
 Total memory bits : 0
 Embedded Multiplier 9-bit elements : 0

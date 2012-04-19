@@ -1,6 +1,6 @@
 Flow report for BoardTest
-Wed Apr 18 22:23:31 2012
-Quartus II Version 11.0 Build 157 04/27/2011 SJ Web Edition
+Wed Apr 18 23:06:27 2012
+Quartus II 32-bit Version 11.1 Build 216 11/23/2011 Service Pack 1 SJ Web Edition
 
 
 ---------------------
@@ -35,26 +35,26 @@ applicable agreement for further details.
 
 
 
-+-------------------------------------------------------------------------------+
-; Flow Summary                                                                  ;
-+------------------------------------+------------------------------------------+
-; Flow Status                        ; Successful - Wed Apr 18 22:23:31 2012    ;
-; Quartus II Version                 ; 11.0 Build 157 04/27/2011 SJ Web Edition ;
-; Revision Name                      ; BoardTest                                ;
-; Top-level Entity Name              ; rangefinder                              ;
-; Family                             ; Cyclone II                               ;
-; Device                             ; EP2C8T144C8                              ;
-; Timing Models                      ; Final                                    ;
-; Total logic elements               ; 562 / 8,256 ( 7 % )                      ;
-;     Total combinational functions  ; 538 / 8,256 ( 7 % )                      ;
-;     Dedicated logic registers      ; 75 / 8,256 ( 1 % )                       ;
-; Total registers                    ; 75                                       ;
-; Total pins                         ; 11 / 85 ( 13 % )                         ;
-; Total virtual pins                 ; 0                                        ;
-; Total memory bits                  ; 0 / 165,888 ( 0 % )                      ;
-; Embedded Multiplier 9-bit elements ; 0 / 36 ( 0 % )                           ;
-; Total PLLs                         ; 0 / 2 ( 0 % )                            ;
-+------------------------------------+------------------------------------------+
++------------------------------------------------------------------------------------+
+; Flow Summary                                                                       ;
++------------------------------------+-----------------------------------------------+
+; Flow Status                        ; Successful - Wed Apr 18 23:06:27 2012         ;
+; Quartus II 32-bit Version          ; 11.1 Build 216 11/23/2011 SP 1 SJ Web Edition ;
+; Revision Name                      ; BoardTest                                     ;
+; Top-level Entity Name              ; BoardTest                                     ;
+; Family                             ; Cyclone II                                    ;
+; Device                             ; EP2C8T144C8                                   ;
+; Timing Models                      ; Final                                         ;
+; Total logic elements               ; 852 / 8,256 ( 10 % )                          ;
+;     Total combinational functions  ; 774 / 8,256 ( 9 % )                           ;
+;     Dedicated logic registers      ; 250 / 8,256 ( 3 % )                           ;
+; Total registers                    ; 250                                           ;
+; Total pins                         ; 72 / 85 ( 85 % )                              ;
+; Total virtual pins                 ; 0                                             ;
+; Total memory bits                  ; 0 / 165,888 ( 0 % )                           ;
+; Embedded Multiplier 9-bit elements ; 0 / 36 ( 0 % )                                ;
+; Total PLLs                         ; 0 / 2 ( 0 % )                                 ;
++------------------------------------+-----------------------------------------------+
 
 
 +-----------------------------------------+
@@ -62,7 +62,7 @@ applicable agreement for further details.
 +-------------------+---------------------+
 ; Option            ; Setting             ;
 +-------------------+---------------------+
-; Start date & time ; 04/18/2012 22:23:17 ;
+; Start date & time ; 04/18/2012 23:05:36 ;
 ; Main task         ; Compilation         ;
 ; Revision Name     ; BoardTest           ;
 +-------------------+---------------------+
@@ -73,16 +73,15 @@ applicable agreement for further details.
 +-------------------------------------+-----------------------------------------------------------------------+---------------+-------------+----------------+
 ; Assignment Name                     ; Value                                                                 ; Default Value ; Entity Name ; Section Id     ;
 +-------------------------------------+-----------------------------------------------------------------------+---------------+-------------+----------------+
-; COMPILER_SIGNATURE_ID               ; 106400425559097.133480219702976                                       ; --            ; --          ; --             ;
+; COMPILER_SIGNATURE_ID               ; 141737435755.133480473502608                                          ; --            ; --          ; --             ;
 ; EDA_OUTPUT_DATA_FORMAT              ; Vhdl                                                                  ; --            ; --          ; eda_simulation ;
 ; EDA_SIMULATION_TOOL                 ; ModelSim-Altera (VHDL)                                                ; <None>        ; --          ; --             ;
 ; MAX_CORE_JUNCTION_TEMP              ; 85                                                                    ; --            ; --          ; --             ;
 ; MIN_CORE_JUNCTION_TEMP              ; 0                                                                     ; --            ; --          ; --             ;
 ; MISC_FILE                           ; C:/Users/David/Desktop/Ad-Flier/code_cyclone2/BoardTest/BoardTest.dpf ; --            ; --          ; --             ;
-; PARTITION_COLOR                     ; 16764057                                                              ; --            ; rangefinder ; Top            ;
-; PARTITION_FITTER_PRESERVATION_LEVEL ; PLACEMENT_AND_ROUTING                                                 ; --            ; rangefinder ; Top            ;
-; PARTITION_NETLIST_TYPE              ; SOURCE                                                                ; --            ; rangefinder ; Top            ;
-; TOP_LEVEL_ENTITY                    ; rangefinder                                                           ; BoardTest     ; --          ; --             ;
+; PARTITION_COLOR                     ; 16764057                                                              ; --            ; --          ; Top            ;
+; PARTITION_FITTER_PRESERVATION_LEVEL ; PLACEMENT_AND_ROUTING                                                 ; --            ; --          ; Top            ;
+; PARTITION_NETLIST_TYPE              ; SOURCE                                                                ; --            ; --          ; Top            ;
 +-------------------------------------+-----------------------------------------------------------------------+---------------+-------------+----------------+
 
 
@@ -91,12 +90,12 @@ applicable agreement for further details.
 +---------------------------+--------------+-------------------------+---------------------+------------------------------------+
 ; Module Name               ; Elapsed Time ; Average Processors Used ; Peak Virtual Memory ; Total CPU Time (on all processors) ;
 +---------------------------+--------------+-------------------------+---------------------+------------------------------------+
-; Analysis & Synthesis      ; 00:00:05     ; 1.0                     ; 311 MB              ; 00:00:05                           ;
-; Fitter                    ; 00:00:03     ; 1.0                     ; 319 MB              ; 00:00:03                           ;
-; Assembler                 ; 00:00:01     ; 1.0                     ; 259 MB              ; 00:00:01                           ;
-; TimeQuest Timing Analyzer ; 00:00:02     ; 1.0                     ; 252 MB              ; 00:00:02                           ;
-; EDA Netlist Writer        ; 00:00:01     ; 1.0                     ; 231 MB              ; 00:00:01                           ;
-; Total                     ; 00:00:12     ; --                      ; --                  ; 00:00:12                           ;
+; Analysis & Synthesis      ; 00:00:16     ; 1.0                     ; 335 MB              ; 00:00:15                           ;
+; Fitter                    ; 00:00:11     ; 1.0                     ; 342 MB              ; 00:00:10                           ;
+; Assembler                 ; 00:00:08     ; 1.0                     ; 282 MB              ; 00:00:03                           ;
+; TimeQuest Timing Analyzer ; 00:00:12     ; 1.0                     ; 276 MB              ; 00:00:06                           ;
+; EDA Netlist Writer        ; 00:00:03     ; 1.0                     ; 256 MB              ; 00:00:02                           ;
+; Total                     ; 00:00:50     ; --                      ; --                  ; 00:00:36                           ;
 +---------------------------+--------------+-------------------------+---------------------+------------------------------------+
 
 
@@ -105,11 +104,11 @@ applicable agreement for further details.
 +---------------------------+------------------+-----------+------------+----------------+
 ; Module Name               ; Machine Hostname ; OS Name   ; OS Version ; Processor type ;
 +---------------------------+------------------+-----------+------------+----------------+
-; Analysis & Synthesis      ; Salvatore-PC     ; Windows 7 ; 6.1        ; x86_64         ;
-; Fitter                    ; Salvatore-PC     ; Windows 7 ; 6.1        ; x86_64         ;
-; Assembler                 ; Salvatore-PC     ; Windows 7 ; 6.1        ; x86_64         ;
-; TimeQuest Timing Analyzer ; Salvatore-PC     ; Windows 7 ; 6.1        ; x86_64         ;
-; EDA Netlist Writer        ; Salvatore-PC     ; Windows 7 ; 6.1        ; x86_64         ;
+; Analysis & Synthesis      ; Greene-Laptop    ; Windows 7 ; 6.1        ; x86_64         ;
+; Fitter                    ; Greene-Laptop    ; Windows 7 ; 6.1        ; x86_64         ;
+; Assembler                 ; Greene-Laptop    ; Windows 7 ; 6.1        ; x86_64         ;
+; TimeQuest Timing Analyzer ; Greene-Laptop    ; Windows 7 ; 6.1        ; x86_64         ;
+; EDA Netlist Writer        ; Greene-Laptop    ; Windows 7 ; 6.1        ; x86_64         ;
 +---------------------------+------------------+-----------+------------+----------------+
 
 

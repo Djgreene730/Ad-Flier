@@ -28,7 +28,7 @@
  --                 of its bank.
  --					Bank 1:		3.3V
  --					Bank 2:		3.3V
- --					Bank 3:		3.3V
+ --					Bank 3:		2.5V
  --					Bank 4:		3.3V
  -- GND           : Dedicated ground pin. Dedicated GND pins MUST be connected to GND.
  --					It can also be used to report unused dedicated pins. The connection
@@ -59,20 +59,20 @@
  -- Pin directions (input, output or bidir) are based on device operating in user mode.
  ---------------------------------------------------------------------------------
 
-Quartus II Version 11.0 Build 157 04/27/2011 SJ Web Edition
+Quartus II 32-bit Version 11.1 Build 216 11/23/2011 Service Pack 1 SJ Web Edition
 CHIP  "BoardTest"  ASSIGNED TO AN: EP2C8T144C8
 
 Pin Name/Usage               : Location  : Dir.   : I/O Standard      : Voltage : I/O Bank  : User Assignment
 -------------------------------------------------------------------------------------------------------------
 ~ASDO~ / RESERVED_INPUT_WITH_WEAK_PULLUP : 1         : input  : 3.3-V LVTTL       :         : 1         : N              
 ~nCSO~ / RESERVED_INPUT_WITH_WEAK_PULLUP : 2         : input  : 3.3-V LVTTL       :         : 1         : N              
-RESERVED_INPUT               : 3         :        :                   :         : 1         :                
-RESERVED_INPUT               : 4         :        :                   :         : 1         :                
+Switch_1[3]                  : 3         : input  : 3.3-V LVTTL       :         : 1         : Y              
+Switch_1[2]                  : 4         : input  : 3.3-V LVTTL       :         : 1         : Y              
 VCCIO1                       : 5         : power  :                   : 3.3V    : 1         :                
 GND                          : 6         : gnd    :                   :         :           :                
-RESERVED_INPUT               : 7         :        :                   :         : 1         :                
-altitude[3]                  : 8         : output : 3.3-V LVTTL       :         : 1         : N              
-trigger                      : 9         : output : 3.3-V LVTTL       :         : 1         : N              
+Switch_1[1]                  : 7         : input  : 3.3-V LVTTL       :         : 1         : Y              
+Switch_1[0]                  : 8         : input  : 3.3-V LVTTL       :         : 1         : Y              
+Switch_2                     : 9         : input  : 3.3-V LVTTL       :         : 1         : Y              
 TDO                          : 10        : output :                   :         : 1         :                
 TMS                          : 11        : input  :                   :         : 1         :                
 TCK                          : 12        : input  :                   :         : 1         :                
@@ -81,21 +81,21 @@ DATA0                        : 14        : input  :                   :         
 DCLK                         : 15        :        :                   :         : 1         :                
 nCE                          : 16        :        :                   :         : 1         :                
 clk                          : 17        : input  : 3.3-V LVTTL       :         : 1         : Y              
-edge                         : 18        : input  : 3.3-V LVTTL       :         : 1         : N              
+GND+                         : 18        :        :                   :         : 1         :                
 GND                          : 19        : gnd    :                   :         :           :                
 nCONFIG                      : 20        :        :                   :         : 1         :                
-GND+                         : 21        :        :                   :         : 1         :                
+clk_DS1085Z_0                : 21        : input  : 3.3-V LVTTL       :         : 1         : Y              
 GND+                         : 22        :        :                   :         : 1         :                
 VCCIO1                       : 23        : power  :                   : 3.3V    : 1         :                
-altitude[1]                  : 24        : output : 3.3-V LVTTL       :         : 1         : N              
-altitude[5]                  : 25        : output : 3.3-V LVTTL       :         : 1         : N              
+Switch_3                     : 24        : input  : 3.3-V LVTTL       :         : 1         : Y              
+Switch_4                     : 25        : input  : 3.3-V LVTTL       :         : 1         : Y              
 VCCINT                       : 26        : power  :                   : 1.2V    :           :                
 GND                          : 27        : gnd    :                   :         :           :                
-altitude[7]                  : 28        : output : 3.3-V LVTTL       :         : 1         : N              
+TLED_Orange_1                : 28        : output : 3.3-V LVTTL       :         : 1         : Y              
 VCCIO1                       : 29        : power  :                   : 3.3V    : 1         :                
-RESERVED_INPUT               : 30        :        :                   :         : 1         :                
-RESERVED_INPUT               : 31        :        :                   :         : 1         :                
-RESERVED_INPUT               : 32        :        :                   :         : 1         :                
+TLED_Orange_2                : 30        : output : 3.3-V LVTTL       :         : 1         : Y              
+Ultra_T_Trigger              : 31        : output : 3.3-V LVTTL       :         : 1         : Y              
+Ultra_T_Edge                 : 32        : input  : 3.3-V LVTTL       :         : 1         : Y              
 GND                          : 33        : gnd    :                   :         :           :                
 GND_PLL1                     : 34        : gnd    :                   :         :           :                
 VCCD_PLL1                    : 35        : power  :                   : 1.2V    :           :                
@@ -103,70 +103,70 @@ GND_PLL1                     : 36        : gnd    :                   :         
 VCCA_PLL1                    : 37        : power  :                   : 1.2V    :           :                
 GNDA_PLL1                    : 38        : gnd    :                   :         :           :                
 GND                          : 39        : gnd    :                   :         :           :                
-RESERVED_INPUT               : 40        :        :                   :         : 4         :                
-RESERVED_INPUT               : 41        :        :                   :         : 4         :                
-RESERVED_INPUT               : 42        :        :                   :         : 4         :                
-RESERVED_INPUT               : 43        :        :                   :         : 4         :                
-RESERVED_INPUT               : 44        :        :                   :         : 4         :                
-RESERVED_INPUT               : 45        :        :                   :         : 4         :                
+FPGA_SPI_Clock               : 40        : output : 3.3-V LVTTL       :         : 4         : Y              
+FPGA_SPI_MISO                : 41        : input  : 3.3-V LVTTL       :         : 4         : Y              
+FPGA_SPI_MOSI                : 42        : output : 3.3-V LVTTL       :         : 4         : Y              
+FPGA_I2C_Clock               : 43        : output : 3.3-V LVTTL       :         : 4         : Y              
+FPGA_I2C_Data                : 44        : bidir  : 3.3-V LVTTL       :         : 4         : Y              
+Gyro_ChipSelect              : 45        : output : 3.3-V LVTTL       :         : 4         : Y              
 VCCIO4                       : 46        : power  :                   : 3.3V    : 4         :                
-RESERVED_INPUT               : 47        :        :                   :         : 4         :                
-RESERVED_INPUT               : 48        :        :                   :         : 4         :                
+Gyro_DataReady               : 47        : input  : 3.3-V LVTTL       :         : 4         : Y              
+Gyro_Interrupt               : 48        : input  : 3.3-V LVTTL       :         : 4         : Y              
 GND                          : 49        : gnd    :                   :         :           :                
 VCCINT                       : 50        : power  :                   : 1.2V    :           :                
-RESERVED_INPUT               : 51        :        :                   :         : 4         :                
-RESERVED_INPUT               : 52        :        :                   :         : 4         :                
-RESERVED_INPUT               : 53        :        :                   :         : 4         :                
+SRAM_ChipSelect              : 51        : output : 3.3-V LVTTL       :         : 4         : Y              
+SRAM_WriteProtect            : 52        : output : 3.3-V LVTTL       :         : 4         : Y              
+Accel_SelAddr0               : 53        : output : 3.3-V LVTTL       :         : 4         : Y              
 VCCIO4                       : 54        : power  :                   : 3.3V    : 4         :                
-RESERVED_INPUT               : 55        :        :                   :         : 4         :                
+Accel_Interrupt1             : 55        : input  : 3.3-V LVTTL       :         : 4         : Y              
 GND                          : 56        : gnd    :                   :         :           :                
-RESERVED_INPUT               : 57        :        :                   :         : 4         :                
+Accel_Interrupt2             : 57        : input  : 3.3-V LVTTL       :         : 4         : Y              
 RESERVED_INPUT               : 58        :        :                   :         : 4         :                
-RESERVED_INPUT               : 59        :        :                   :         : 4         :                
-RESERVED_INPUT               : 60        :        :                   :         : 4         :                
+Ultra_B_Trigger              : 59        : output : 3.3-V LVTTL       :         : 4         : Y              
+Ultra_B_Edge                 : 60        : input  : 3.3-V LVTTL       :         : 4         : Y              
 GND                          : 61        : gnd    :                   :         :           :                
 VCCINT                       : 62        : power  :                   : 1.2V    :           :                
-altitude[2]                  : 63        : output : 3.3-V LVTTL       :         : 4         : N              
-altitude[4]                  : 64        : output : 3.3-V LVTTL       :         : 4         : N              
-RESERVED_INPUT               : 65        :        :                   :         : 4         :                
+BLED_Orange[0]               : 63        : output : 3.3-V LVTTL       :         : 4         : Y              
+BLED_Orange[1]               : 64        : output : 3.3-V LVTTL       :         : 4         : Y              
+BLED_Orange[2]               : 65        : output : 3.3-V LVTTL       :         : 4         : Y              
 VCCIO4                       : 66        : power  :                   : 3.3V    : 4         :                
-RESERVED_INPUT               : 67        :        :                   :         : 4         :                
+BLED_Orange[3]               : 67        : output : 3.3-V LVTTL       :         : 4         : Y              
 GND                          : 68        : gnd    :                   :         :           :                
-RESERVED_INPUT               : 69        :        :                   :         : 4         :                
-RESERVED_INPUT               : 70        :        :                   :         : 4         :                
-RESERVED_INPUT               : 71        :        :                   :         : 4         :                
-RESERVED_INPUT               : 72        :        :                   :         : 4         :                
-RESERVED_INPUT               : 73        :        :                   :         : 3         :                
-RESERVED_INPUT               : 74        :        :                   :         : 3         :                
-RESERVED_INPUT               : 75        :        :                   :         : 3         :                
-~LVDS54p/nCEO~               : 76        : output : 3.3-V LVTTL       :         : 3         : N              
-VCCIO3                       : 77        : power  :                   : 3.3V    : 3         :                
+BLED_Blue[0]                 : 69        : output : 3.3-V LVTTL       :         : 4         : Y              
+BLED_Blue[1]                 : 70        : output : 3.3-V LVTTL       :         : 4         : Y              
+BLED_Blue[2]                 : 71        : output : 3.3-V LVTTL       :         : 4         : Y              
+BLED_Blue[3]                 : 72        : output : 3.3-V LVTTL       :         : 4         : Y              
+Camera_SCL                   : 73        : output : 2.5 V             :         : 3         : Y              
+Camera_SDA                   : 74        : bidir  : 2.5 V             :         : 3         : Y              
+Camera_RESET                 : 75        : output : 2.5 V             :         : 3         : Y              
+~LVDS54p/nCEO~               : 76        : output : 2.5 V             :         : 3         : N              
+VCCIO3                       : 77        : power  :                   : 2.5V    : 3         :                
 GND                          : 78        : gnd    :                   :         :           :                
-RESERVED_INPUT               : 79        :        :                   :         : 3         :                
+Camera_EXTCLK                : 79        : output : 2.5 V             :         : 3         : Y              
 GND                          : 80        : gnd    :                   :         :           :                
 VCCINT                       : 81        : power  :                   : 1.2V    :           :                
 nSTATUS                      : 82        :        :                   :         : 3         :                
 CONF_DONE                    : 83        :        :                   :         : 3         :                
 MSEL1                        : 84        :        :                   :         : 3         :                
 MSEL0                        : 85        :        :                   :         : 3         :                
-RESERVED_INPUT               : 86        :        :                   :         : 3         :                
-altitude[6]                  : 87        : output : 3.3-V LVTTL       :         : 3         : N              
+Camera_HD                    : 86        : input  : 2.5 V             :         : 3         : Y              
+Camera_VD                    : 87        : input  : 2.5 V             :         : 3         : Y              
 GND+                         : 88        :        :                   :         : 3         :                
 GND+                         : 89        :        :                   :         : 3         :                
 GND+                         : 90        :        :                   :         : 3         :                
-GND+                         : 91        :        :                   :         : 3         :                
-RESERVED_INPUT               : 92        :        :                   :         : 3         :                
-RESERVED_INPUT               : 93        :        :                   :         : 3         :                
-RESERVED_INPUT               : 94        :        :                   :         : 3         :                
-VCCIO3                       : 95        : power  :                   : 3.3V    : 3         :                
-RESERVED_INPUT               : 96        :        :                   :         : 3         :                
-RESERVED_INPUT               : 97        :        :                   :         : 3         :                
+clk_DS1085Z_1                : 91        : input  : 3.3-V LVTTL       :         : 3         : Y              
+Camera_DCLK                  : 92        : input  : 2.5 V             :         : 3         : Y              
+Camera_DOUT[0]               : 93        : input  : 2.5 V             :         : 3         : Y              
+Camera_DOUT[1]               : 94        : input  : 2.5 V             :         : 3         : Y              
+VCCIO3                       : 95        : power  :                   : 2.5V    : 3         :                
+Camera_DOUT[2]               : 96        : input  : 2.5 V             :         : 3         : Y              
+Camera_DOUT[3]               : 97        : input  : 2.5 V             :         : 3         : Y              
 GND                          : 98        : gnd    :                   :         :           :                
-RESERVED_INPUT               : 99        :        :                   :         : 3         :                
-RESERVED_INPUT               : 100       :        :                   :         : 3         :                
-RESERVED_INPUT               : 101       :        :                   :         : 3         :                
-VCCIO3                       : 102       : power  :                   : 3.3V    : 3         :                
-RESERVED_INPUT               : 103       :        :                   :         : 3         :                
+Camera_DOUT[4]               : 99        : input  : 2.5 V             :         : 3         : Y              
+Camera_DOUT[5]               : 100       : input  : 2.5 V             :         : 3         : Y              
+Camera_DOUT[6]               : 101       : input  : 2.5 V             :         : 3         : Y              
+VCCIO3                       : 102       : power  :                   : 2.5V    : 3         :                
+Camera_DOUT[7]               : 103       : input  : 2.5 V             :         : 3         : Y              
 RESERVED_INPUT               : 104       :        :                   :         : 3         :                
 GND                          : 105       : gnd    :                   :         :           :                
 GND_PLL2                     : 106       : gnd    :                   :         :           :                
@@ -175,36 +175,36 @@ GND_PLL2                     : 108       : gnd    :                   :         
 VCCA_PLL2                    : 109       : power  :                   : 1.2V    :           :                
 GNDA_PLL2                    : 110       : gnd    :                   :         :           :                
 GND                          : 111       : gnd    :                   :         :           :                
-RESERVED_INPUT               : 112       :        :                   :         : 2         :                
-RESERVED_INPUT               : 113       :        :                   :         : 2         :                
-RESERVED_INPUT               : 114       :        :                   :         : 2         :                
-RESERVED_INPUT               : 115       :        :                   :         : 2         :                
+PIC_PBUS_Data[0]             : 112       : bidir  : 3.3-V LVTTL       :         : 2         : Y              
+PIC_PBUS_Data[1]             : 113       : bidir  : 3.3-V LVTTL       :         : 2         : Y              
+PIC_PBUS_Data[2]             : 114       : bidir  : 3.3-V LVTTL       :         : 2         : Y              
+PIC_PBUS_Data[3]             : 115       : bidir  : 3.3-V LVTTL       :         : 2         : Y              
 VCCIO2                       : 116       : power  :                   : 3.3V    : 2         :                
 GND                          : 117       : gnd    :                   :         :           :                
-RESERVED_INPUT               : 118       :        :                   :         : 2         :                
-RESERVED_INPUT               : 119       :        :                   :         : 2         :                
-RESERVED_INPUT               : 120       :        :                   :         : 2         :                
-RESERVED_INPUT               : 121       :        :                   :         : 2         :                
-altitude[0]                  : 122       : output : 3.3-V LVTTL       :         : 2         : N              
+PIC_PBUS_Data[4]             : 118       : bidir  : 3.3-V LVTTL       :         : 2         : Y              
+PIC_PBUS_Data[5]             : 119       : bidir  : 3.3-V LVTTL       :         : 2         : Y              
+PIC_PBUS_Data[6]             : 120       : bidir  : 3.3-V LVTTL       :         : 2         : Y              
+PIC_PBUS_Data[7]             : 121       : bidir  : 3.3-V LVTTL       :         : 2         : Y              
+PIC_PBUS_A_D                 : 122       : input  : 3.3-V LVTTL       :         : 2         : Y              
 GND                          : 123       : gnd    :                   :         :           :                
 VCCINT                       : 124       : power  :                   : 1.2V    :           :                
-RESERVED_INPUT               : 125       :        :                   :         : 2         :                
-RESERVED_INPUT               : 126       :        :                   :         : 2         :                
+PIC_PBUS_R_W                 : 125       : input  : 3.3-V LVTTL       :         : 2         : Y              
+PIC_PBUS_OK_OUT              : 126       : output : 3.3-V LVTTL       :         : 2         : Y              
 VCCIO2                       : 127       : power  :                   : 3.3V    : 2         :                
 GND                          : 128       : gnd    :                   :         :           :                
-RESERVED_INPUT               : 129       :        :                   :         : 2         :                
+PIC_PBUS_OK_IN               : 129       : input  : 3.3-V LVTTL       :         : 2         : Y              
 GND                          : 130       : gnd    :                   :         :           :                
 VCCINT                       : 131       : power  :                   : 1.2V    :           :                
-RESERVED_INPUT               : 132       :        :                   :         : 2         :                
-RESERVED_INPUT               : 133       :        :                   :         : 2         :                
-RESERVED_INPUT               : 134       :        :                   :         : 2         :                
-RESERVED_INPUT               : 135       :        :                   :         : 2         :                
+PIC_SPI_SCLK                 : 132       : input  : 3.3-V LVTTL       :         : 2         : Y              
+PIC_SPI_MOSI                 : 133       : input  : 3.3-V LVTTL       :         : 2         : Y              
+PIC_SPI_MISO                 : 134       : output : 3.3-V LVTTL       :         : 2         : Y              
+PIC_SPI_Select               : 135       : input  : 3.3-V LVTTL       :         : 2         : Y              
 RESERVED_INPUT               : 136       :        :                   :         : 2         :                
 RESERVED_INPUT               : 137       :        :                   :         : 2         :                
 VCCIO2                       : 138       : power  :                   : 3.3V    : 2         :                
 RESERVED_INPUT               : 139       :        :                   :         : 2         :                
 GND                          : 140       : gnd    :                   :         :           :                
-RESERVED_INPUT               : 141       :        :                   :         : 2         :                
-RESERVED_INPUT               : 142       :        :                   :         : 2         :                
-RESERVED_INPUT               : 143       :        :                   :         : 2         :                
-RESERVED_INPUT               : 144       :        :                   :         : 2         :                
+Motor_North                  : 141       : output : 3.3-V LVTTL       :         : 2         : Y              
+Motor_East                   : 142       : output : 3.3-V LVTTL       :         : 2         : Y              
+Motor_South                  : 143       : output : 3.3-V LVTTL       :         : 2         : Y              
+Motor_West                   : 144       : output : 3.3-V LVTTL       :         : 2         : Y              

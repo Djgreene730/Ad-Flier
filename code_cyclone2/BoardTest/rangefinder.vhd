@@ -31,7 +31,9 @@ END component;
 
 signal LSB : std_logic := '0';
 signal edgebegin, edgeend, timevector, quotient, remain : std_logic_vector(23 downto 0) := "000000000000000000000000";
-constant denom : std_logic_vector(23 downto 0) := "000000000000010111001010";
+constant denom : std_logic_vector(23 downto 0) := "000000000000010111001001";
+
+
 signal count : std_logic_vector(23 downto 0) := "000000000000000000000000";
 begin
 
@@ -65,7 +67,7 @@ begin
 	--Getting Count of EdgeEnd
 		if (edge = '0' and edgeYet2 = '1') then
 			edgeend <= count;
-			edgeYet := '0';
+			edgeYet2 := '0';
 		elsif (edge = '1' and edgeYet2 = '0') then
 			edgeYet2 := '1';
 		end if;
@@ -74,7 +76,7 @@ begin
 end process;
 
 --Getting Time Between Receiving Edge and Edge End
-timevector <= edgebegin - edgeend;
+timevector <= edgeend - edgebegin;
 
 --LPM Divide to get Distance
 Div : Divider port map(denom, timevector, quotient, remain);
