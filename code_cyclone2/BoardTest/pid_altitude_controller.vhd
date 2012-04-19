@@ -63,10 +63,10 @@ D <= K_d * (error - (2*previous_error) + previous_error2);
 
 process(error, v, u_old, P, I, D)
 begin
-	if error > 90 then
+	if error > 128 then
 		v <= 255;
 	elsif error < 90 then
-		v <= -255;
+		v <= -128;
 	else
 		v <= (u_old + P + I + D); --Calculating new pwm with old pwm reference and PID (Velocity PID)
 	end if;

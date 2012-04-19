@@ -199,7 +199,7 @@ architecture STR of BoardTest is
 	signal pwm1, pwm2, pwm3, pwm4, count : std_logic_vector(7 downto 0) := "00000000";
 	signal RegXD, RegYD, RegZD, RegXM, RegYM, RegZM, RegAD, RegMisc : std_logic_vector(7 downto 0) := "00000000";
 	signal RegAM, RegAMc, RegTR, RegTRc : std_logic_vector(7 downto 0) := "00000000";
-	signal pwm_yaw, pwm_pitch, pwm_roll, pwm_altitude : std_logic_vector(8 downto 0) := "000000000";
+	signal pwm_yaw, pwm_pitch, pwm_roll, pwm_altitude, pwm_a : std_logic_vector(8 downto 0) := "000000000";
 	signal pwm_n, pwm_s, pwm_e, pwm_w : std_logic_vector(8 downto 0) := "000000000";
 
 	-- Temp Register for Ultrasonics
@@ -252,28 +252,51 @@ begin
 	SRAM_WriteProtect		<= '0';
 	Accel_SelAddr0			<= '0';	
 
-	process(pwm_pitch, pwm_roll, pwm_altitude) --Adding Components of PID for PWM
+	process(pwm_pitch, pwm_roll, pwm_altitude, pwm_a, RegTR) --Adding Components of PID for PWM
 	begin
 	
 		pwm_n <= "000000000";
 		pwm_s <= "000000000";
 		pwm_e <= "000000000";
 		pwm_w <= "000000000";
+		pwm_a <= "000000000";
+		
+		if RegTR < "00110010" then --Top Object Avoidance
+			pwm_a <= pwm_altitude - "000011010"; --10% Reduction
+		elsif RegTR > "00110010" or RegTR = "00110010" then
+			pwm_a <= pwm_altitude;
+		end if;
 		
 		if pwm_pitch(8) = '0' then
-			pwm_n <= pwm_altitude + ('0' & pwm_pitch(7 downto 0)); --North Motor Component
-			pwm_s <= pwm_altitude - ('0' & pwm_pitch(7 downto 0)); --South Motor Component
+			pwm_n <= pwm_a + ('0' & pwm_pitch(7 downto 0)); --North Motor Component
+			if pwm_altitude > pwm_pitch then
+				pwm_s <= pwm_a - ('0' & pwm_pitch(7 downto 0)); --South Motor Component
+			else
+				pwm_s <= '0' & pwm_pitch(7 downto 0);
+			end if;
 		elsif pwm_pitch(8) = '0' then
-			pwm_s <= pwm_altitude + ('0' & pwm_pitch(7 downto 0)); --South Motor Component
-			pwm_n <= pwm_altitude - ('0' & pwm_pitch(7 downto 0)); --North Motor Component
+			pwm_s <= pwm_a + ('0' & pwm_pitch(7 downto 0)); --South Motor Component
+			if pwm_altitude > pwm_pitch then
+				pwm_n <= pwm_a - ('0' & pwm_pitch(7 downto 0)); --North Motor Component
+			else
+				pwm_n <= '0' & pwm_pitch(7 downto 0);
+			end if;
 		end if;
 		
 		if pwm_roll(8) = '0' then
-			pwm_e <= pwm_altitude + ('0' & pwm_roll(7 downto 0)); --East Motor Component
-			pwm_w <= pwm_altitude - ('0' & pwm_roll(7 downto 0)); --West Motor Component
+			pwm_e <= pwm_a + ('0' & pwm_roll(7 downto 0)); --East Motor Component
+			if pwm_altitude > pwm_roll then
+				pwm_w <= pwm_a - ('0' & pwm_roll(7 downto 0)); --West Motor Component
+			else
+				pwm_w <= '0' & pwm_roll(7 downto 0);
+			end if;
 		elsif pwm_roll(8) = '0' then
-			pwm_e <= pwm_altitude + ('0' & pwm_roll(7 downto 0)); --West Motor Component
-			pwm_w <= pwm_altitude - ('0' & pwm_roll(7 downto 0)); --East Motor Component
+			pwm_e <= pwm_a + ('0' & pwm_roll(7 downto 0)); --West Motor Component
+			if pwm_altitude > pwm_roll then
+				pwm_e <= pwm_a - ('0' & pwm_roll(7 downto 0)); --East Motor Component
+			else
+				pwm_e <= '0' & pwm_roll(7 downto 0);
+			end if;
 		end if;
 		
 	end process;
