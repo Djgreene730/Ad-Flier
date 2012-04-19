@@ -59,10 +59,14 @@ void initializeUART (void) {
     UARTSetDataRate(UART2, PBUS_FREQ, UART2_FREQ);
     UARTEnable(UART2, UART_ENABLE_FLAGS(UART_PERIPHERAL | UART_RX));
 
+    /*
+
     // Configure UART2 RX Interrupt
     INTEnable(INT_SOURCE_UART_RX(UART2), INT_ENABLED);
     INTSetVectorPriority(INT_VECTOR_UART(UART2), INT_PRIORITY_LEVEL_2);
     INTSetVectorSubPriority(INT_VECTOR_UART(UART2), INT_SUB_PRIORITY_LEVEL_0);
+
+    */
 
     // Initialize UART5 - U3B - GPS (TSIP)
     UARTConfigure(UART5, UART_ENABLE_PINS_TX_RX_ONLY);
@@ -339,14 +343,14 @@ UINT8 getFPGAParallelPins() {
     FPGADataPins tempOut;
 
     // Get Pins (Assume TRIS is Set)
-    tempOut.D0 = FPGA_D0;
-    tempOut.D1 = FPGA_D1;
-    tempOut.D2 = FPGA_D2;
-    tempOut.D3 = FPGA_D3;
-    tempOut.D4 = FPGA_D4;
-    tempOut.D5 = FPGA_D5;
-    tempOut.D6 = FPGA_D6;
-    tempOut.D7 = FPGA_D7;
+    tempOut.D0 = PORTEbits.RE0;
+    tempOut.D1 = PORTEbits.RE1;
+    tempOut.D2 = PORTEbits.RE2;
+    tempOut.D3 = PORTEbits.RE3;
+    tempOut.D4 = PORTEbits.RE4;
+    tempOut.D5 = PORTEbits.RE5;
+    tempOut.D6 = PORTEbits.RE6;
+    tempOut.D7 = PORTEbits.RE7;
 
     // Return Data
     return tempOut.Byte;
@@ -360,24 +364,28 @@ void sendFPGAData(UINT8 address, UINT8 data) {
     // Send Out Address
     setFPGAParallelPins(address);
     FPGA_A_D = 1;
-    FPGA_R_W = 1;
+    FPGA_R_W = 0;
     FPGA_OK_OUT = 1;
 
-    // Wait for FPGA to Acknowledge then Lower
-    while (!FPGA_OK_IN) ;
+    // Wait for FPGA to Acknowledge High
+    while (FPGA_OK_IN == 0) ;
     FPGA_OK_OUT = 0;
-    while (FPGA_OK_IN) ;
+
+    // Wait for FPGA to Acknowledge Low
+    while (FPGA_OK_IN == 1) ;
 
     // Send Out Data
     setFPGAParallelPins(data);
     FPGA_A_D = 0;
-    FPGA_R_W = 1;
+    FPGA_R_W = 0;
     FPGA_OK_OUT = 1;
     
-    // Wait for FPGA to Acknowledge then Lower
-    while (!FPGA_OK_IN) ;
+    // Wait for FPGA to Acknowledge High
+    while (FPGA_OK_IN == 0) ;
     FPGA_OK_OUT = 0;
-    while (FPGA_OK_IN) ;
+    
+    // Wait for FPGA to Ackowledge Low
+    while (FPGA_OK_IN == 0) ;
 }
 
 UINT8 getFPGAData(UINT8 address) {
@@ -387,30 +395,23 @@ UINT8 getFPGAData(UINT8 address) {
 
     // Send Out Address
     setFPGAParallelPins(address);
-    FPGA_A_D = 1;
+    FPGA_A_D = 0;
     FPGA_R_W = 1;
     FPGA_OK_OUT = 1;
 
-    // Wait for FPGA to Acknowledge then Lower
-    while (!FPGA_OK_IN) ;
-
-    //Change Port Direction to Input and ACK
+    // Wait for FPGA to Acknowledge
+    while (FPGA_OK_IN == 0);
     TRISE = 0xFF;
     FPGA_OK_OUT = 0;
-
-    // Wait for FPGA to Drop OK Signal
-    while (FPGA_OK_IN) ;
+    while (FPGA_OK_IN == 1);
 
     // Wait for FPGA to Return the Data, then Capture
-    while(!FPGA_OK_IN) ;
+    while(FPGA_OK_IN == 0);
     UINT tempData;
     tempData = getFPGAParallelPins();
     FPGA_OK_OUT = 1;
-
-    // Wait for FPGA to Acknowledge then Lower
-    while (!FPGA_OK_IN) ;
+    while(FPGA_OK_IN == 1);
     FPGA_OK_OUT = 0;
-    while (FPGA_OK_IN) ;
 
     // Return the Result
     return tempData;
@@ -465,20 +466,19 @@ BOOL I2C_StartTransfer( BOOL restart ) {
     IdleI2C1();
 
     do {
-        // Wait for Line to Idle
-        while (!I2CBusIsIdle(I2C1));
-        
         // Either Start or Restart the Line
         if(restart) status = I2CRepeatStart(I2C1);
-        else status = I2CStart(I2C1);
+        // Wait for Line to Idle
+        else  {
+            while (!I2CBusIsIdle(I2C1));
+            status = I2CStart(I2C1);
+        }
     } while (status != I2C_SUCCESS);
     
     // Wait for the signal to complete
-    /*
     do {
         status = I2CGetStatus(I2C1);
     } while ( !(I2C_START & status) );
-    */
     return TRUE;
 }
 
@@ -491,7 +491,7 @@ BOOL I2C_TransmitOneByte( UINT8 data ) {
 
     // Transmit the byte
     status = I2CSendByte(I2C1, data);
-    if(status != I2C_SUCCESS) return FALSE;
+    if(status == I2C_MASTER_BUS_COLLISION) return FALSE;
 
     // Wait for the transmission to finish
     while(!I2CTransmissionHasCompleted(I2C1));
@@ -504,23 +504,21 @@ BOOL I2C_TransmitOneByte( UINT8 data ) {
 
 // Stops a transfer to/from the I2C Bus
 void I2C_StopTransfer( void ) {
-    I2C_STATUS  status;
-
-    // Send the Stop signal
-    I2CStop(I2C1);
-
     // Wait for the signal to complete
-    /*
+    I2C_STATUS  status;
     do {
+        // Send the Stop signal
+        //I2CClearStatus(I2C1, I2C_START);
+        //I2CClearStatus(I2C1, I2C_BYTE_ACKNOWLEDGED);
+        I2CStop(I2C1);
         status = I2CGetStatus(I2C1);
-    } while ( !(status & I2C_STOP) );
-    */
+    } while ( !(I2C_STOP & status) );
 }
 
 BOOL initializeI2C() {
     // Set the I2C baudrate
     I2CConfigure(I2C1, I2C_ENABLE_SLAVE_CLOCK_STRETCHING);
-    UINT32 actualClock = I2CSetFrequency(I2C1, SYS_FREQ/4, I2C_FREQ);
+    UINT32 actualClock = I2CSetFrequency(I2C1, 80000000, I2C_FREQ);
 
     //Check Error: I2C1 clock frequency error exceeds 10%
     if ( abs(actualClock - I2C_FREQ) > (I2C_FREQ / 10) ) {

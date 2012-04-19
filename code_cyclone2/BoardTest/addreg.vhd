@@ -12,7 +12,7 @@ entity addreg is
 	port (
 			clk : in std_logic;
 			data : in std_logic_vector(7 downto 0);
-			start : in std_logic;
+			reset : in std_logic;
 			regi_en : in std_logic;
 			rego_en : in std_logic;
 			reg_data : out std_logic_vector(7 downto 0);
@@ -26,9 +26,9 @@ signal tmp : std_logic_vector(7 downto 0) :="00000000";
 
 begin
 
-process (clk, data, start, rego_en)
+process (clk, data, reset, rego_en)
 begin
-	if (start = '1') then
+	if (reset = '1') then
 		tmp <= "00000000";
 	elsif (clk = '1' and clk'event) then
 		if regi_en = '1' then

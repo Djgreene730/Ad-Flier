@@ -9,6 +9,7 @@
 #include <stdlib.h>
 #include <p32xxxx.h>
 #include <plib.h>
+#include <math.h>
 #include "Ad-Flier_Pins.h"
 #include "Communications.h"
 #include "Gyroscope.h"
@@ -59,28 +60,68 @@ int main(int argc, char** argv) {
     configureXBee(xbee_baud, xbee_channel, xbee_network);
 
     UINT8 buf[1024];
+    float angleAccelX, angleAccelY;
+    float currentAngleX, lastAngleX;
+    float currentAngleY, lastAngleY;
+    float currentAngleZ, lastAngleZ;
+    BOOL firstRun = 0;
+
     // Loop Infinitely
     while(1) {
-        
-        // Send Current Position
-        //Delayms(100);
-        //while (gps_nmea_position.ready == 0);
-        //putsBluetooth(gps_nmea_position.data, gps_nmea_position.size);
+        /*
+        // Get Updated Accelerometer Readings
+        while (accelTempBuf.ready == 0);
 
-        // Send Current Gyro Readings
+        float tempAX = (short)accelCurrent.X;
+        tempAX = 4 * (tempAX / 256);
+            
+        float tempAY = (short)accelCurrent.Y;
+        tempAY = 4 * (tempAY / 256);
+
+        float tempAZ = (short)accelCurrent.Z;
+        tempAZ = 4 * (tempAZ / 256);
+
+
+        // Get Updated Gyroscope Readings
         while (gyroTempBuf.ready == 0);
 
-        float tempX = (short)gyroCurrent.X;
-        tempX = 2000 * (tempX / 65535);
+        float tempX = (short)gyroCurrent.Y;
+        tempX = -1000 * (tempX / 65536);
             
-        float tempY = (short)gyroCurrent.Y;
-        tempY = 2000 * (tempY / 65535);
+        float tempY = (short)gyroCurrent.X;
+        tempY = -1000 * (tempY / 65536);
 
         float tempZ = (short)gyroCurrent.Z;
-        tempZ = 2000 * (tempZ / 65535);
+        tempZ = 1000 * (tempZ / 65536);
 
-        sprintf(buf, "\t\t\t\t\t\t\t\tX: %3.5f, Y: %3.5f, Z: %3.5f\r\n", tempX, tempY, tempZ);
+
+        // Convert Accelerometer G's to Angles
+        angleAccelX = atanf(tempAX / sqrtf(powf(tempAY, 2) + powf(tempAZ, 2)));
+        angleAccelY = atanf(tempAY / sqrtf(powf(tempAX, 2) + powf(tempAZ, 2)));
+
+        // Initialize Angles
+        if (!firstRun) {
+            lastAngleX = angleAccelX;
+            lastAngleZ = angleAccelY;
+            lastAngleZ = 0;
+        }
+
+        // Process All Current Angles
+        currentAngleX = (0.98 * (lastAngleX + (tempX * 0.01))) + (0.02 * angleAccelX);
+        currentAngleY = (0.98 * (lastAngleY + (tempY * 0.01))) + (0.02 * angleAccelY);
+        currentAngleZ = lastAngleZ + (tempZ * 0.01);
+
+
+        // Output to Screen
+        sprintf(buf, "AX: %3.4f, AY: %3.4f, AZ: %3.4f\tGX: %3.4f, GY: %3.4f, GZ: %3.4f\tPX: %3.4f, PY: %3.4f, PZ: %3.4f\r\n", tempAX, tempAY, tempAZ, tempX, tempY, tempZ, currentAngleX, currentAngleY, currentAngleZ);
         putsBluetooth(buf, strlen(buf));
+
+        // Store Previous Values
+        lastAngleX = currentAngleX;
+        lastAngleY = currentAngleY;
+        lastAngleZ = currentAngleZ;
+        
+        Delayms(100);
 
         /*
 

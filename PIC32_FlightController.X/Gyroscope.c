@@ -13,7 +13,7 @@
 
 // Global Variables
 GyroscopeReading    gyroCurrent;
-GyroscopeReading    gyroCurrentComp;
+GyroscopeReading    gyroCurrentDegrees;
 
 UINT8 readGyroscope(GyroscopeAddress address) {
     // See if Gyroscope is Initialized
@@ -72,7 +72,7 @@ UINT8 setupGyroscope() {
         writeGyroscope(CTRL_REG3, 0x08);
 
         // CTRL_REG4
-        writeGyroscope(CTRL_REG4, 0x30);
+        writeGyroscope(CTRL_REG4, 0x00);
 
         // CTRL_REG5
         writeGyroscope(CTRL_REG5, 0x00);
@@ -99,13 +99,4 @@ void updateGyroscopeReadings (void) {
     gyroCurrent.ZU = readGyroscope(OUT_Z_H);
     gyroCurrent.ZL = readGyroscope(OUT_Z_L);
 
-    /*
-    // Copy X-Value
-    gyroCurrentComp.XU = (readGyroscope(OUT_X_H) & 0xFF);
-    gyroCurrentComp.XL = (readGyroscope(OUT_X_L) & 0xFF);
-
-    // Copy Y-Value
-    gyroCurrentComp.YU = (readGyroscope(OUT_Y_H) & 0xFF);
-    gyroCurrentComp.YL = (readGyroscope(OUT_Y_L) & 0xFF);
-    */
 }

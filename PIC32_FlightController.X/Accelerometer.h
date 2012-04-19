@@ -59,22 +59,20 @@ typedef enum {
 
 typedef union {
     struct {
-        unsigned XL:8;
         unsigned XU:8;
-        unsigned YL:8;
         unsigned YU:8;
-        unsigned ZL:8;
         unsigned ZU:8;
     };
     struct {
-        signed X:16;
-        signed Y:16;
-        signed Z:16;
+        signed X:8;
+        signed Y:8;
+        signed Z:8;
     };
 } AccelerometerReading;
 
 // Global Variables
 extern AccelerometerReading    accelCurrent;
+extern AccelerometerReading    accelCurrentDegrees;
 
 // Gyroscope Functions
 extern void     setupAccelerometer();

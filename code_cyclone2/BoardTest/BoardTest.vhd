@@ -34,7 +34,7 @@ entity BoardTest is
 		PIC_PBUS_A_D		:	in		std_logic;						-- High=Addr / Low=Data
 		PIC_PBUS_R_W		:	in		std_logic;						-- High=Read / Low=Write
 		PIC_PBUS_OK_IN		:	in		std_logic;						-- Data Bus GOOD from PIC
-		PIC_PBUS_OK_OUT		:	out		std_logic;						-- Data Bus GOOD to PIC
+		PIC_PBUS_OK_OUT	:	out		std_logic;					-- Data Bus GOOD to PIC
 		
 		-- PIC & FPGA SPI Bus
 		PIC_SPI_SCLK		:	in		std_logic;						-- PIC Controlled Serial Clock
@@ -87,11 +87,11 @@ end BoardTest;
 
 --Register Addresses
 --X Angle Desired  $00
---X Angle Desired  $01
+--X Angle Measured  $01
 --Y Angle Desired  $02
---Y Angle Desired  $03
+--Y Angle Measured  $03
 --Z Angle Desired  $04
---Z Angle Desired  $05
+--Z Angle Measured  $05
 --Altitude Desired $06
 --Misc.            $07
 
@@ -119,12 +119,12 @@ architecture STR of BoardTest is
 	component regmap is 
 	port (
 			clk : in std_logic;
-			start : in std_logic;
+			reset : in std_logic;
 			data : inout std_logic_vector(7 downto 0);
 			a_d : in std_logic;
          r_w : in std_logic;
-			ok_out : in std_logic;
-			ok_in : out std_logic;
+			ok_in : in std_logic;
+			ok_out : out std_logic;
 			reg0c, reg1c, reg2c, reg3c, reg4c, reg5c, reg6c, reg7c : out std_logic_vector(7 downto 0)
 			);
    end component;
@@ -142,7 +142,7 @@ architecture STR of BoardTest is
 		port (
 			clk : in std_logic;
 			data : in std_logic_vector(7 downto 0);
-			start : in std_logic;
+			reset : in std_logic;
 			regi_en : in std_logic;
 			rego_en : in std_logic;
 			reg_data : out std_logic_vector(7 downto 0);
@@ -203,17 +203,17 @@ begin
 	U_Ranger_Botom			:	rangefinder port map (clk, Ultra_B_Edge, Ultra_B_Trigger, Altitude);
 	
 	--Motor Instantiations
-	U_Motor_1              :  motor_pwm port map (clk, pwm1, Motor_North);
+	U_Motor_1              	:  motor_pwm port map (clk, pwm1, Motor_North);
 	U_Motor_2					:  motor_pwm port map (clk, pwm2, Motor_East);
 	U_Motor_3					:  motor_pwm port map (clk, pwm3, Motor_South);
 	U_Motor_4					:  motor_pwm port map (clk, pwm4, Motor_West);
 	
 	--Register Instantations
-	U_Registers             :  regmap    port map (clk, Switch_2, PIC_PBUS_Data, PIC_PBUS_A_D, PIC_PBUS_R_W,
+	U_Registers             :  regmap    port map (clk, Switch_1(3), PIC_PBUS_Data, PIC_PBUS_A_D, PIC_PBUS_R_W,
 															  PIC_PBUS_OK_IN, PIC_PBUS_OK_OUT, 
 															  RegXD, RegYD, RegZD, RegXM, RegYM, RegZM, RegAD, RegMisc);
-	U_RegAM                 : quadreg port map(clk, Altitude, Switch_2, '1', '1', RegAM, RegAMc);
-	U_RegTR                 : quadreg port map(clk, Top_Range, Switch_2, '1', '1', RegTR, RegTRc);
+	U_RegAM                 : quadreg port map(clk, Altitude, Switch_1(3), '1', '1', RegAM, RegAMc);
+	U_RegTR                 : quadreg port map(clk, Top_Range, Switch_1(3), '1', '1', RegTR, RegTRc);
 	
 	--PID Instations
 	U_Yaw                   : pid_yaw_controller port map (clk, RegZD, RegZM, pwm_yaw);

@@ -91,6 +91,19 @@ typedef union {
     };
 } GyroscopeReading;
 
+typedef union {
+    struct {
+        unsigned XU:8;
+        unsigned YU:8;
+        unsigned ZU:8;
+    };
+    struct {
+        signed X:8;
+        signed Y:8;
+        signed Z:8;
+    };
+} AccelerometerReading;
+
 // System Frequencies
 #define SYS_FREQ            (80000000L)
 #define PBUS_FREQ           80000000    // 40 MHz - Main Oscillator
@@ -132,7 +145,9 @@ extern Sentence xbee_network;
 
 // Gyroscope Variables
 extern Sentence            gyroTempBuf;
+extern Sentence            accelTempBuf;
 extern GyroscopeReading    gyroCurrent;
+extern AccelerometerReading accelCurrent;
 
 // Initialization Commands
 extern void initializeUART(void);

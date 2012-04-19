@@ -13,6 +13,7 @@
 #include "Communications.h"
 #include "Gyroscope.h"
 #include "Accelerometer.h"
+#include "Orientation.h"
 
 
 
@@ -34,7 +35,9 @@
 #pragma config ICESEL = ICS_PGx1    // ICE/ICD Comm Channel Select
 #pragma config DEBUG = ON          // Debugger Disabled for Starter Kit
 
-
+// Configure Timer 2 (Gyro Updater)
+#define TOGGLES_PER_SEC		50
+#define T2_TICK       		(SYS_FREQ/2/256/TOGGLES_PER_SEC)
 
 // Main Application
 int main(int argc, char** argv) {
@@ -46,14 +49,15 @@ int main(int argc, char** argv) {
     // Configure for multi-vectored mode & Enable Interrupts
     INTConfigureSystem(INT_SYSTEM_CONFIG_MULT_VECTOR);
     INTEnableInterrupts();
-
+    
     // Initialize System Pins
     initializeAllPins();
 
     // Initialize Communication Systems
     initializeUART();
     setupGyroscope();
-    //while (!I2C_IS_Initialized) initializeI2C();
+    while (!I2C_IS_Initialized) initializeI2C();
+    setupAccelerometer();
 
     // Configure XBee
     xbee_baud.size = 1;     strcpy(xbee_baud.data, "6");
@@ -61,9 +65,7 @@ int main(int argc, char** argv) {
     xbee_network.size = 4;  strcpy(xbee_network.data, "3421");
     configureXBee(xbee_baud, xbee_channel, xbee_network);
 
-
-    I2C1_SDA_PIN_TR     = 0;
-    I2C1_SCL_PIN_TR     = 0;
+    
 
     // Loop Infinitely
     while(1) {
@@ -88,23 +90,30 @@ int main(int argc, char** argv) {
         Delayms(100);
         gyroReading[0] = readGyroscope(OUT_TEMP);
         putsXBee(gyroReading, 1);
+         *
+         
+
 
         // Gyroscope Output to XBee
         updateGyroscopeReadings();
-        UINT8 buf[8] = {'G', gyroCurrent.XU, gyroCurrent.XL, gyroCurrent.YU, gyroCurrent.YL, gyroCurrent.ZU, gyroCurrent.ZL};
-        putsXBee(buf , 7);
-        Delayms(500);
+        UINT8 bufG[7] = {'G', gyroCurrent.XU, gyroCurrent.XL, gyroCurrent.YU, gyroCurrent.YL, gyroCurrent.ZU, gyroCurrent.ZL};
+        putsXBee(bufG , 7);
+        Delayms(250);
+
+        
 
         // Test Accelerometer Readings
-        buf[0] = readAccelerometer(ACCEL_WHO_AM_I);
-        putsXBee(buf , 1);
-        Delayms(500);
+        updateAccelerometerReadings();
+        UINT8 bufA[7] = {'A', accelCurrent.XU, accelCurrent.YU, accelCurrent.ZU};
+        putsXBee(bufA , 4);
+        Delayms(250);
+         *
+         */
 
-        */
+        updateSensors();
 
-        I2C1_SCL_PIN        = 0;
-        I2C1_SDA_PIN        = 0;
-        Delayms(1000);
+
+
 
 
     }

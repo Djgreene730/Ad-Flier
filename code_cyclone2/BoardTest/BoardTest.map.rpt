@@ -1,6 +1,6 @@
 Analysis & Synthesis report for BoardTest
-Thu Apr 19 05:03:47 2012
-Quartus II Version 11.0 Build 157 04/27/2011 SJ Web Edition
+Thu Apr 19 14:23:52 2012
+Quartus II 32-bit Version 11.1 Build 216 11/23/2011 Service Pack 1 SJ Web Edition
 
 
 ---------------------
@@ -15,19 +15,20 @@ Quartus II Version 11.0 Build 157 04/27/2011 SJ Web Edition
   7. Analysis & Synthesis Resource Utilization by Entity
   8. Analysis & Synthesis IP Cores Summary
   9. State Machine - |BoardTest|regmap:U_Registers|reg_controller:RegCont|state
- 10. Registers Removed During Synthesis
- 11. General Register Statistics
- 12. Multiplexer Restructuring Statistics (Restructuring Performed)
- 13. Parameter Settings for User Entity Instance: clk_div:U_1HzClkDivider
- 14. Parameter Settings for User Entity Instance: rangefinder:U_Ranger_Top|Divider:Div|lpm_divide:LPM_DIVIDE_component
- 15. Parameter Settings for User Entity Instance: rangefinder:U_Ranger_Botom|Divider:Div|lpm_divide:LPM_DIVIDE_component
- 16. Port Connectivity Checks: "pid_yaw_controller:U_Yaw"
- 17. Port Connectivity Checks: "quadreg:U_RegTR"
- 18. Port Connectivity Checks: "quadreg:U_RegAM"
- 19. Port Connectivity Checks: "regmap:U_Registers"
- 20. Port Connectivity Checks: "rangefinder:U_Ranger_Top|Divider:Div"
- 21. Elapsed Time Per Partition
- 22. Analysis & Synthesis Messages
+ 10. User-Specified and Inferred Latches
+ 11. Registers Removed During Synthesis
+ 12. General Register Statistics
+ 13. Multiplexer Restructuring Statistics (Restructuring Performed)
+ 14. Parameter Settings for User Entity Instance: clk_div:U_1HzClkDivider
+ 15. Parameter Settings for User Entity Instance: rangefinder:U_Ranger_Top|Divider:Div|lpm_divide:LPM_DIVIDE_component
+ 16. Parameter Settings for User Entity Instance: rangefinder:U_Ranger_Botom|Divider:Div|lpm_divide:LPM_DIVIDE_component
+ 17. Port Connectivity Checks: "pid_yaw_controller:U_Yaw"
+ 18. Port Connectivity Checks: "quadreg:U_RegTR"
+ 19. Port Connectivity Checks: "quadreg:U_RegAM"
+ 20. Port Connectivity Checks: "regmap:U_Registers"
+ 21. Port Connectivity Checks: "rangefinder:U_Ranger_Top|Divider:Div"
+ 22. Elapsed Time Per Partition
+ 23. Analysis & Synthesis Messages
 
 
 
@@ -50,24 +51,24 @@ applicable agreement for further details.
 
 
 
-+-------------------------------------------------------------------------------+
-; Analysis & Synthesis Summary                                                  ;
-+------------------------------------+------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Thu Apr 19 05:03:47 2012    ;
-; Quartus II Version                 ; 11.0 Build 157 04/27/2011 SJ Web Edition ;
-; Revision Name                      ; BoardTest                                ;
-; Top-level Entity Name              ; BoardTest                                ;
-; Family                             ; Cyclone II                               ;
-; Total logic elements               ; 2,112                                    ;
-;     Total combinational functions  ; 1,904                                    ;
-;     Dedicated logic registers      ; 407                                      ;
-; Total registers                    ; 407                                      ;
-; Total pins                         ; 72                                       ;
-; Total virtual pins                 ; 0                                        ;
-; Total memory bits                  ; 0                                        ;
-; Embedded Multiplier 9-bit elements ; 0                                        ;
-; Total PLLs                         ; 0                                        ;
-+------------------------------------+------------------------------------------+
++------------------------------------------------------------------------------------+
+; Analysis & Synthesis Summary                                                       ;
++------------------------------------+-----------------------------------------------+
+; Analysis & Synthesis Status        ; Successful - Thu Apr 19 14:23:52 2012         ;
+; Quartus II 32-bit Version          ; 11.1 Build 216 11/23/2011 SP 1 SJ Web Edition ;
+; Revision Name                      ; BoardTest                                     ;
+; Top-level Entity Name              ; BoardTest                                     ;
+; Family                             ; Cyclone II                                    ;
+; Total logic elements               ; 2,133                                         ;
+;     Total combinational functions  ; 1,925                                         ;
+;     Dedicated logic registers      ; 409                                           ;
+; Total registers                    ; 409                                           ;
+; Total pins                         ; 72                                            ;
+; Total virtual pins                 ; 0                                             ;
+; Total memory bits                  ; 0                                             ;
+; Embedded Multiplier 9-bit elements ; 0                                             ;
+; Total PLLs                         ; 0                                             ;
++------------------------------------+-----------------------------------------------+
 
 
 +----------------------------------------------------------------------------------------------------------------------+
@@ -95,6 +96,7 @@ applicable agreement for further details.
 ; Iteration limit for constant Verilog loops                                 ; 5000               ; 5000               ;
 ; Iteration limit for non-constant Verilog loops                             ; 250                ; 250                ;
 ; Add Pass-Through Logic to Inferred RAMs                                    ; On                 ; On                 ;
+; Infer RAMs from Raw Logic                                                  ; On                 ; On                 ;
 ; Parallel Synthesis                                                         ; On                 ; On                 ;
 ; DSP Block Balancing                                                        ; Auto               ; Auto               ;
 ; NOT Gate Push-Back                                                         ; On                 ; On                 ;
@@ -163,35 +165,35 @@ Parallel compilation was disabled, but you have multiple processors available. E
 +----------------------------+--------+
 
 
-+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Source Files Read                                                                                                                                      ;
-+----------------------------------+-----------------+------------------------------+-----------------------------------------------------------------------------------------+
-; File Name with User-Entered Path ; Used in Netlist ; File Type                    ; File Name with Absolute Path                                                            ;
-+----------------------------------+-----------------+------------------------------+-----------------------------------------------------------------------------------------+
-; Divider.vhd                      ; yes             ; User Wizard-Generated File   ; C:/Users/Salvatore/Desktop/Ad-Flier/code_cyclone2/BoardTest/Divider.vhd                 ;
-; clk_div.vhd                      ; yes             ; User VHDL File               ; C:/Users/Salvatore/Desktop/Ad-Flier/code_cyclone2/BoardTest/clk_div.vhd                 ;
-; BoardTest.vhd                    ; yes             ; User VHDL File               ; C:/Users/Salvatore/Desktop/Ad-Flier/code_cyclone2/BoardTest/BoardTest.vhd               ;
-; motor_pwm.vhd                    ; yes             ; User VHDL File               ; C:/Users/Salvatore/Desktop/Ad-Flier/code_cyclone2/BoardTest/motor_pwm.vhd               ;
-; reg_controller.vhd               ; yes             ; User VHDL File               ; C:/Users/Salvatore/Desktop/Ad-Flier/code_cyclone2/BoardTest/reg_controller.vhd          ;
-; quadreg.vhd                      ; yes             ; User VHDL File               ; C:/Users/Salvatore/Desktop/Ad-Flier/code_cyclone2/BoardTest/quadreg.vhd                 ;
-; outmux.vhd                       ; yes             ; User VHDL File               ; C:/Users/Salvatore/Desktop/Ad-Flier/code_cyclone2/BoardTest/outmux.vhd                  ;
-; regmap.vhd                       ; yes             ; User VHDL File               ; C:/Users/Salvatore/Desktop/Ad-Flier/code_cyclone2/BoardTest/regmap.vhd                  ;
-; addreg.vhd                       ; yes             ; User VHDL File               ; C:/Users/Salvatore/Desktop/Ad-Flier/code_cyclone2/BoardTest/addreg.vhd                  ;
-; rangefinder.vhd                  ; yes             ; User VHDL File               ; C:/Users/Salvatore/Desktop/Ad-Flier/code_cyclone2/BoardTest/rangefinder.vhd             ;
-; pid_yaw_controller.vhd           ; yes             ; User VHDL File               ; C:/Users/Salvatore/Desktop/Ad-Flier/code_cyclone2/BoardTest/pid_yaw_controller.vhd      ;
-; pid_pitch_controller.vhd         ; yes             ; User VHDL File               ; C:/Users/Salvatore/Desktop/Ad-Flier/code_cyclone2/BoardTest/pid_pitch_controller.vhd    ;
-; pid_roll_controller.vhd          ; yes             ; User VHDL File               ; C:/Users/Salvatore/Desktop/Ad-Flier/code_cyclone2/BoardTest/pid_roll_controller.vhd     ;
-; pid_altitude_controller.vhd      ; yes             ; User VHDL File               ; C:/Users/Salvatore/Desktop/Ad-Flier/code_cyclone2/BoardTest/pid_altitude_controller.vhd ;
-; lpm_divide.tdf                   ; yes             ; Megafunction                 ; c:/altera/11.0/quartus/libraries/megafunctions/lpm_divide.tdf                           ;
-; abs_divider.inc                  ; yes             ; Megafunction                 ; c:/altera/11.0/quartus/libraries/megafunctions/abs_divider.inc                          ;
-; sign_div_unsign.inc              ; yes             ; Megafunction                 ; c:/altera/11.0/quartus/libraries/megafunctions/sign_div_unsign.inc                      ;
-; aglobal110.inc                   ; yes             ; Megafunction                 ; c:/altera/11.0/quartus/libraries/megafunctions/aglobal110.inc                           ;
-; db/lpm_divide_gup.tdf            ; yes             ; Auto-Generated Megafunction  ; C:/Users/Salvatore/Desktop/Ad-Flier/code_cyclone2/BoardTest/db/lpm_divide_gup.tdf       ;
-; db/sign_div_unsign_bnh.tdf       ; yes             ; Auto-Generated Megafunction  ; C:/Users/Salvatore/Desktop/Ad-Flier/code_cyclone2/BoardTest/db/sign_div_unsign_bnh.tdf  ;
-; db/alt_u_div_o5f.tdf             ; yes             ; Auto-Generated Megafunction  ; C:/Users/Salvatore/Desktop/Ad-Flier/code_cyclone2/BoardTest/db/alt_u_div_o5f.tdf        ;
-; db/add_sub_lkc.tdf               ; yes             ; Auto-Generated Megafunction  ; C:/Users/Salvatore/Desktop/Ad-Flier/code_cyclone2/BoardTest/db/add_sub_lkc.tdf          ;
-; db/add_sub_mkc.tdf               ; yes             ; Auto-Generated Megafunction  ; C:/Users/Salvatore/Desktop/Ad-Flier/code_cyclone2/BoardTest/db/add_sub_mkc.tdf          ;
-+----------------------------------+-----------------+------------------------------+-----------------------------------------------------------------------------------------+
++----------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                                                         ;
++----------------------------------+-----------------+------------------------------+----------------------------------------------------------------------------+
+; File Name with User-Entered Path ; Used in Netlist ; File Type                    ; File Name with Absolute Path                                               ;
++----------------------------------+-----------------+------------------------------+----------------------------------------------------------------------------+
+; Divider.vhd                      ; yes             ; User Wizard-Generated File   ; C:/Users/David/Desktop/code_cyclone2/BoardTest/Divider.vhd                 ;
+; clk_div.vhd                      ; yes             ; User VHDL File               ; C:/Users/David/Desktop/code_cyclone2/BoardTest/clk_div.vhd                 ;
+; BoardTest.vhd                    ; yes             ; User VHDL File               ; C:/Users/David/Desktop/code_cyclone2/BoardTest/BoardTest.vhd               ;
+; motor_pwm.vhd                    ; yes             ; User VHDL File               ; C:/Users/David/Desktop/code_cyclone2/BoardTest/motor_pwm.vhd               ;
+; reg_controller.vhd               ; yes             ; User VHDL File               ; C:/Users/David/Desktop/code_cyclone2/BoardTest/reg_controller.vhd          ;
+; quadreg.vhd                      ; yes             ; User VHDL File               ; C:/Users/David/Desktop/code_cyclone2/BoardTest/quadreg.vhd                 ;
+; outmux.vhd                       ; yes             ; User VHDL File               ; C:/Users/David/Desktop/code_cyclone2/BoardTest/outmux.vhd                  ;
+; regmap.vhd                       ; yes             ; User VHDL File               ; C:/Users/David/Desktop/code_cyclone2/BoardTest/regmap.vhd                  ;
+; addreg.vhd                       ; yes             ; User VHDL File               ; C:/Users/David/Desktop/code_cyclone2/BoardTest/addreg.vhd                  ;
+; rangefinder.vhd                  ; yes             ; User VHDL File               ; C:/Users/David/Desktop/code_cyclone2/BoardTest/rangefinder.vhd             ;
+; pid_yaw_controller.vhd           ; yes             ; User VHDL File               ; C:/Users/David/Desktop/code_cyclone2/BoardTest/pid_yaw_controller.vhd      ;
+; pid_pitch_controller.vhd         ; yes             ; User VHDL File               ; C:/Users/David/Desktop/code_cyclone2/BoardTest/pid_pitch_controller.vhd    ;
+; pid_roll_controller.vhd          ; yes             ; User VHDL File               ; C:/Users/David/Desktop/code_cyclone2/BoardTest/pid_roll_controller.vhd     ;
+; pid_altitude_controller.vhd      ; yes             ; User VHDL File               ; C:/Users/David/Desktop/code_cyclone2/BoardTest/pid_altitude_controller.vhd ;
+; lpm_divide.tdf                   ; yes             ; Megafunction                 ; c:/altera/11.1sp1/quartus/libraries/megafunctions/lpm_divide.tdf           ;
+; abs_divider.inc                  ; yes             ; Megafunction                 ; c:/altera/11.1sp1/quartus/libraries/megafunctions/abs_divider.inc          ;
+; sign_div_unsign.inc              ; yes             ; Megafunction                 ; c:/altera/11.1sp1/quartus/libraries/megafunctions/sign_div_unsign.inc      ;
+; aglobal111.inc                   ; yes             ; Megafunction                 ; c:/altera/11.1sp1/quartus/libraries/megafunctions/aglobal111.inc           ;
+; db/lpm_divide_gup.tdf            ; yes             ; Auto-Generated Megafunction  ; C:/Users/David/Desktop/code_cyclone2/BoardTest/db/lpm_divide_gup.tdf       ;
+; db/sign_div_unsign_bnh.tdf       ; yes             ; Auto-Generated Megafunction  ; C:/Users/David/Desktop/code_cyclone2/BoardTest/db/sign_div_unsign_bnh.tdf  ;
+; db/alt_u_div_o5f.tdf             ; yes             ; Auto-Generated Megafunction  ; C:/Users/David/Desktop/code_cyclone2/BoardTest/db/alt_u_div_o5f.tdf        ;
+; db/add_sub_lkc.tdf               ; yes             ; Auto-Generated Megafunction  ; C:/Users/David/Desktop/code_cyclone2/BoardTest/db/add_sub_lkc.tdf          ;
+; db/add_sub_mkc.tdf               ; yes             ; Auto-Generated Megafunction  ; C:/Users/David/Desktop/code_cyclone2/BoardTest/db/add_sub_mkc.tdf          ;
++----------------------------------+-----------------+------------------------------+----------------------------------------------------------------------------+
 
 
 +-----------------------------------------------------+
@@ -199,27 +201,27 @@ Parallel compilation was disabled, but you have multiple processors available. E
 +---------------------------------------------+-------+
 ; Resource                                    ; Usage ;
 +---------------------------------------------+-------+
-; Estimated Total logic elements              ; 2,112 ;
+; Estimated Total logic elements              ; 2,133 ;
 ;                                             ;       ;
-; Total combinational functions               ; 1904  ;
+; Total combinational functions               ; 1925  ;
 ; Logic element usage by number of LUT inputs ;       ;
-;     -- 4 input functions                    ; 368   ;
-;     -- 3 input functions                    ; 850   ;
-;     -- <=2 input functions                  ; 686   ;
+;     -- 4 input functions                    ; 365   ;
+;     -- 3 input functions                    ; 865   ;
+;     -- <=2 input functions                  ; 695   ;
 ;                                             ;       ;
 ; Logic elements by mode                      ;       ;
-;     -- normal mode                          ; 1045  ;
+;     -- normal mode                          ; 1066  ;
 ;     -- arithmetic mode                      ; 859   ;
 ;                                             ;       ;
-; Total registers                             ; 407   ;
-;     -- Dedicated logic registers            ; 407   ;
+; Total registers                             ; 409   ;
+;     -- Dedicated logic registers            ; 409   ;
 ;     -- I/O registers                        ; 0     ;
 ;                                             ;       ;
 ; I/O pins                                    ; 72    ;
 ; Maximum fan-out node                        ; clk   ;
-; Maximum fan-out                             ; 405   ;
-; Total fan-out                               ; 6470  ;
-; Average fan-out                             ; 2.72  ;
+; Maximum fan-out                             ; 407   ;
+; Total fan-out                               ; 6527  ;
+; Average fan-out                             ; 2.71  ;
 +---------------------------------------------+-------+
 
 
@@ -228,14 +230,14 @@ Parallel compilation was disabled, but you have multiple processors available. E
 +----------------------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------+--------------+
 ; Compilation Hierarchy Node                   ; LC Combinationals ; LC Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name                                                                                                                                               ; Library Name ;
 +----------------------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------+--------------+
-; |BoardTest                                   ; 1904 (127)        ; 407 (10)     ; 0           ; 0            ; 0       ; 0         ; 72   ; 0            ; |BoardTest                                                                                                                                                        ;              ;
+; |BoardTest                                   ; 1925 (127)        ; 409 (10)     ; 0           ; 0            ; 0       ; 0         ; 72   ; 0            ; |BoardTest                                                                                                                                                        ;              ;
 ;    |clk_div:U_1HzClkDivider|                 ; 41 (41)           ; 24 (24)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |BoardTest|clk_div:U_1HzClkDivider                                                                                                                                ;              ;
 ;    |motor_pwm:U_Motor_1|                     ; 31 (31)           ; 21 (21)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |BoardTest|motor_pwm:U_Motor_1                                                                                                                                    ;              ;
 ;    |motor_pwm:U_Motor_2|                     ; 9 (9)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |BoardTest|motor_pwm:U_Motor_2                                                                                                                                    ;              ;
 ;    |motor_pwm:U_Motor_3|                     ; 9 (9)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |BoardTest|motor_pwm:U_Motor_3                                                                                                                                    ;              ;
 ;    |motor_pwm:U_Motor_4|                     ; 9 (9)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |BoardTest|motor_pwm:U_Motor_4                                                                                                                                    ;              ;
 ;    |pid_altitude_controller:U_Altitude|      ; 167 (167)         ; 45 (45)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |BoardTest|pid_altitude_controller:U_Altitude                                                                                                                     ;              ;
-;    |pid_pitch_controller:U_Pitch|            ; 169 (169)         ; 42 (42)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |BoardTest|pid_pitch_controller:U_Pitch                                                                                                                           ;              ;
+;    |pid_pitch_controller:U_Pitch|            ; 171 (171)         ; 42 (42)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |BoardTest|pid_pitch_controller:U_Pitch                                                                                                                           ;              ;
 ;    |pid_roll_controller:U_Roll|              ; 172 (172)         ; 42 (42)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |BoardTest|pid_roll_controller:U_Roll                                                                                                                             ;              ;
 ;    |quadreg:U_RegAM|                         ; 0 (0)             ; 8 (8)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |BoardTest|quadreg:U_RegAM                                                                                                                                        ;              ;
 ;    |quadreg:U_RegTR|                         ; 8 (8)             ; 8 (8)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |BoardTest|quadreg:U_RegTR                                                                                                                                        ;              ;
@@ -251,9 +253,9 @@ Parallel compilation was disabled, but you have multiple processors available. E
 ;             |lpm_divide_gup:auto_generated|  ; 480 (0)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |BoardTest|rangefinder:U_Ranger_Top|Divider:Div|lpm_divide:LPM_DIVIDE_component|lpm_divide_gup:auto_generated                                                     ;              ;
 ;                |sign_div_unsign_bnh:divider| ; 480 (0)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |BoardTest|rangefinder:U_Ranger_Top|Divider:Div|lpm_divide:LPM_DIVIDE_component|lpm_divide_gup:auto_generated|sign_div_unsign_bnh:divider                         ;              ;
 ;                   |alt_u_div_o5f:divider|    ; 480 (480)         ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |BoardTest|rangefinder:U_Ranger_Top|Divider:Div|lpm_divide:LPM_DIVIDE_component|lpm_divide_gup:auto_generated|sign_div_unsign_bnh:divider|alt_u_div_o5f:divider   ;              ;
-;    |regmap:U_Registers|                      ; 77 (0)            ; 80 (0)       ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |BoardTest|regmap:U_Registers                                                                                                                                     ;              ;
+;    |regmap:U_Registers|                      ; 96 (0)            ; 82 (0)       ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |BoardTest|regmap:U_Registers                                                                                                                                     ;              ;
 ;       |addreg:RegAdd|                        ; 0 (0)             ; 8 (8)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |BoardTest|regmap:U_Registers|addreg:RegAdd                                                                                                                       ;              ;
-;       |outmux:MuxOut|                        ; 54 (54)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |BoardTest|regmap:U_Registers|outmux:MuxOut                                                                                                                       ;              ;
+;       |outmux:MuxOut|                        ; 55 (55)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |BoardTest|regmap:U_Registers|outmux:MuxOut                                                                                                                       ;              ;
 ;       |quadreg:RegAD|                        ; 0 (0)             ; 8 (8)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |BoardTest|regmap:U_Registers|quadreg:RegAD                                                                                                                       ;              ;
 ;       |quadreg:RegMisc|                      ; 0 (0)             ; 8 (8)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |BoardTest|regmap:U_Registers|quadreg:RegMisc                                                                                                                     ;              ;
 ;       |quadreg:RegXD|                        ; 0 (0)             ; 8 (8)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |BoardTest|regmap:U_Registers|quadreg:RegXD                                                                                                                       ;              ;
@@ -262,36 +264,56 @@ Parallel compilation was disabled, but you have multiple processors available. E
 ;       |quadreg:RegYM|                        ; 0 (0)             ; 8 (8)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |BoardTest|regmap:U_Registers|quadreg:RegYM                                                                                                                       ;              ;
 ;       |quadreg:RegZD|                        ; 0 (0)             ; 8 (8)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |BoardTest|regmap:U_Registers|quadreg:RegZD                                                                                                                       ;              ;
 ;       |quadreg:RegZM|                        ; 0 (0)             ; 8 (8)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |BoardTest|regmap:U_Registers|quadreg:RegZM                                                                                                                       ;              ;
-;       |reg_controller:RegCont|               ; 23 (23)           ; 8 (8)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |BoardTest|regmap:U_Registers|reg_controller:RegCont                                                                                                              ;              ;
+;       |reg_controller:RegCont|               ; 41 (41)           ; 10 (10)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |BoardTest|regmap:U_Registers|reg_controller:RegCont                                                                                                              ;              ;
 +----------------------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
 
 
-+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis IP Cores Summary                                                                                                                                                       ;
-+--------+--------------+---------+--------------+--------------+---------------------------------------------------+-------------------------------------------------------------------------+
-; Vendor ; IP Core Name ; Version ; Release Date ; License Type ; Entity Instance                                   ; IP Include File                                                         ;
-+--------+--------------+---------+--------------+--------------+---------------------------------------------------+-------------------------------------------------------------------------+
-; Altera ; LPM_DIVIDE   ; N/A     ; N/A          ; N/A          ; |BoardTest|rangefinder:U_Ranger_Botom|Divider:Div ; C:/Users/Salvatore/Desktop/Ad-Flier/code_cyclone2/BoardTest/Divider.vhd ;
-; Altera ; LPM_DIVIDE   ; N/A     ; N/A          ; N/A          ; |BoardTest|rangefinder:U_Ranger_Top|Divider:Div   ; C:/Users/Salvatore/Desktop/Ad-Flier/code_cyclone2/BoardTest/Divider.vhd ;
-+--------+--------------+---------+--------------+--------------+---------------------------------------------------+-------------------------------------------------------------------------+
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis IP Cores Summary                                                                                                                                          ;
++--------+--------------+---------+--------------+--------------+---------------------------------------------------+------------------------------------------------------------+
+; Vendor ; IP Core Name ; Version ; Release Date ; License Type ; Entity Instance                                   ; IP Include File                                            ;
++--------+--------------+---------+--------------+--------------+---------------------------------------------------+------------------------------------------------------------+
+; Altera ; LPM_DIVIDE   ; N/A     ; N/A          ; N/A          ; |BoardTest|rangefinder:U_Ranger_Botom|Divider:Div ; C:/Users/David/Desktop/code_cyclone2/BoardTest/Divider.vhd ;
+; Altera ; LPM_DIVIDE   ; N/A     ; N/A          ; N/A          ; |BoardTest|rangefinder:U_Ranger_Top|Divider:Div   ; C:/Users/David/Desktop/code_cyclone2/BoardTest/Divider.vhd ;
++--------+--------------+---------+--------------+--------------+---------------------------------------------------+------------------------------------------------------------+
 
 
 Encoding Type:  One-Hot
-+---------------------------------------------------------------------------------------------------------------+
-; State Machine - |BoardTest|regmap:U_Registers|reg_controller:RegCont|state                                    ;
-+-------------+-----------+-----------+-----------+-----------+-----------+-----------+-----------+-------------+
-; Name        ; state.wd2 ; state.wd1 ; state.wa2 ; state.wa1 ; state.rd2 ; state.rd1 ; state.ra1 ; state.fetch ;
-+-------------+-----------+-----------+-----------+-----------+-----------+-----------+-----------+-------------+
-; state.fetch ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0           ;
-; state.ra1   ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 1         ; 1           ;
-; state.rd1   ; 0         ; 0         ; 0         ; 0         ; 0         ; 1         ; 0         ; 1           ;
-; state.rd2   ; 0         ; 0         ; 0         ; 0         ; 1         ; 0         ; 0         ; 1           ;
-; state.wa1   ; 0         ; 0         ; 0         ; 1         ; 0         ; 0         ; 0         ; 1           ;
-; state.wa2   ; 0         ; 0         ; 1         ; 0         ; 0         ; 0         ; 0         ; 1           ;
-; state.wd1   ; 0         ; 1         ; 0         ; 0         ; 0         ; 0         ; 0         ; 1           ;
-; state.wd2   ; 1         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 1           ;
-+-------------+-----------+-----------+-----------+-----------+-----------+-----------+-----------+-------------+
++---------------------------------------------------------------------------------------------------------------------------------------+
+; State Machine - |BoardTest|regmap:U_Registers|reg_controller:RegCont|state                                                            ;
++-------------+-----------+-----------+-----------+-----------+-----------+-----------+-----------+-----------+-----------+-------------+
+; Name        ; state.wd2 ; state.wd1 ; state.wa2 ; state.wa1 ; state.rd3 ; state.rd2 ; state.rd1 ; state.ra2 ; state.ra1 ; state.fetch ;
++-------------+-----------+-----------+-----------+-----------+-----------+-----------+-----------+-----------+-----------+-------------+
+; state.fetch ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0           ;
+; state.ra1   ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 1         ; 1           ;
+; state.ra2   ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 1         ; 0         ; 1           ;
+; state.rd1   ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 1         ; 0         ; 0         ; 1           ;
+; state.rd2   ; 0         ; 0         ; 0         ; 0         ; 0         ; 1         ; 0         ; 0         ; 0         ; 1           ;
+; state.rd3   ; 0         ; 0         ; 0         ; 0         ; 1         ; 0         ; 0         ; 0         ; 0         ; 1           ;
+; state.wa1   ; 0         ; 0         ; 0         ; 1         ; 0         ; 0         ; 0         ; 0         ; 0         ; 1           ;
+; state.wa2   ; 0         ; 0         ; 1         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 1           ;
+; state.wd1   ; 0         ; 1         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 1           ;
+; state.wd2   ; 1         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 1           ;
++-------------+-----------+-----------+-----------+-----------+-----------+-----------+-----------+-----------+-----------+-------------+
+
+
++------------------------------------------------------------------------------------------------------------------------------------------+
+; User-Specified and Inferred Latches                                                                                                      ;
++-----------------------------------------------------------+-----------------------------------------------------+------------------------+
+; Latch Name                                                ; Latch Enable Signal                                 ; Free of Timing Hazards ;
++-----------------------------------------------------------+-----------------------------------------------------+------------------------+
+; regmap:U_Registers|reg_controller:RegCont|localAddress[1] ; regmap:U_Registers|reg_controller:RegCont|Selector0 ; yes                    ;
+; regmap:U_Registers|reg_controller:RegCont|localAddress[0] ; regmap:U_Registers|reg_controller:RegCont|Selector0 ; yes                    ;
+; regmap:U_Registers|reg_controller:RegCont|localAddress[7] ; regmap:U_Registers|reg_controller:RegCont|Selector0 ; yes                    ;
+; regmap:U_Registers|reg_controller:RegCont|localAddress[6] ; regmap:U_Registers|reg_controller:RegCont|Selector0 ; yes                    ;
+; regmap:U_Registers|reg_controller:RegCont|localAddress[5] ; regmap:U_Registers|reg_controller:RegCont|Selector0 ; yes                    ;
+; regmap:U_Registers|reg_controller:RegCont|localAddress[4] ; regmap:U_Registers|reg_controller:RegCont|Selector0 ; yes                    ;
+; regmap:U_Registers|reg_controller:RegCont|localAddress[3] ; regmap:U_Registers|reg_controller:RegCont|Selector0 ; yes                    ;
+; regmap:U_Registers|reg_controller:RegCont|localAddress[2] ; regmap:U_Registers|reg_controller:RegCont|Selector0 ; yes                    ;
+; Number of user-specified and inferred latches = 8         ;                                                     ;                        ;
++-----------------------------------------------------------+-----------------------------------------------------+------------------------+
+Note: All latches listed above may not be present at the end of synthesis due to various synthesis optimizations.
 
 
 +------------------------------------------------------------------------------------------------------------------------------+
@@ -406,37 +428,38 @@ Encoding Type:  One-Hot
 +----------------------------------------------+-------+
 ; Statistic                                    ; Value ;
 +----------------------------------------------+-------+
-; Total registers                              ; 407   ;
+; Total registers                              ; 409   ;
 ; Number of registers using Synchronous Clear  ; 31    ;
 ; Number of registers using Synchronous Load   ; 1     ;
-; Number of registers using Asynchronous Clear ; 96    ;
+; Number of registers using Asynchronous Clear ; 98    ;
 ; Number of registers using Asynchronous Load  ; 0     ;
 ; Number of registers using Clock Enable       ; 179   ;
 ; Number of registers using Preset             ; 0     ;
 +----------------------------------------------+-------+
 
 
-+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Multiplexer Restructuring Statistics (Restructuring Performed)                                                                                                                           ;
-+--------------------+-----------+---------------+----------------------+------------------------+------------------------------------------------------------+----------------------------+
-; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered                                                 ; Example Multiplexer Output ;
-+--------------------+-----------+---------------+----------------------+------------------------+------------------------------------------------------------+----------------------------+
-; 3:1                ; 8 bits    ; 16 LEs        ; 16 LEs               ; 0 LEs                  ; |BoardTest|pid_altitude_controller:U_Altitude|pwm_input[1] ;                            ;
-; 3:1                ; 8 bits    ; 16 LEs        ; 16 LEs               ; 0 LEs                  ; |BoardTest|pwm_a[6]                                        ;                            ;
-; 3:1                ; 8 bits    ; 16 LEs        ; 16 LEs               ; 0 LEs                  ; |BoardTest|pid_pitch_controller:U_Pitch|pwm_input[2]       ;                            ;
-; 3:1                ; 8 bits    ; 16 LEs        ; 16 LEs               ; 0 LEs                  ; |BoardTest|pid_roll_controller:U_Roll|pwm_input[6]         ;                            ;
-; 3:1                ; 32 bits   ; 64 LEs        ; 64 LEs               ; 0 LEs                  ; |BoardTest|pid_altitude_controller:U_Altitude|v[28]        ;                            ;
-; 3:1                ; 32 bits   ; 64 LEs        ; 64 LEs               ; 0 LEs                  ; |BoardTest|pid_altitude_controller:U_Altitude|u[8]         ;                            ;
-; 3:1                ; 32 bits   ; 64 LEs        ; 64 LEs               ; 0 LEs                  ; |BoardTest|pid_pitch_controller:U_Pitch|v[31]              ;                            ;
-; 3:1                ; 32 bits   ; 64 LEs        ; 64 LEs               ; 0 LEs                  ; |BoardTest|pid_pitch_controller:U_Pitch|u[9]               ;                            ;
-; 3:1                ; 32 bits   ; 64 LEs        ; 64 LEs               ; 0 LEs                  ; |BoardTest|pid_roll_controller:U_Roll|v[1]                 ;                            ;
-; 3:1                ; 32 bits   ; 64 LEs        ; 64 LEs               ; 0 LEs                  ; |BoardTest|pid_roll_controller:U_Roll|u[15]                ;                            ;
-; 3:1                ; 8 bits    ; 16 LEs        ; 16 LEs               ; 0 LEs                  ; |BoardTest|pwm1[5]                                         ;                            ;
-; 3:1                ; 8 bits    ; 16 LEs        ; 16 LEs               ; 0 LEs                  ; |BoardTest|pwm2[2]                                         ;                            ;
-; 4:1                ; 8 bits    ; 16 LEs        ; 16 LEs               ; 0 LEs                  ; |BoardTest|pwm3[3]                                         ;                            ;
-; 4:1                ; 8 bits    ; 16 LEs        ; 16 LEs               ; 0 LEs                  ; |BoardTest|pwm4[7]                                         ;                            ;
-; 11:1               ; 8 bits    ; 56 LEs        ; 48 LEs               ; 8 LEs                  ; |BoardTest|regmap:U_Registers|outmux:MuxOut|tmp1[6]        ;                            ;
-+--------------------+-----------+---------------+----------------------+------------------------+------------------------------------------------------------+----------------------------+
++----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Multiplexer Restructuring Statistics (Restructuring Performed)                                                                                                                               ;
++--------------------+-----------+---------------+----------------------+------------------------+----------------------------------------------------------------+----------------------------+
+; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered                                                     ; Example Multiplexer Output ;
++--------------------+-----------+---------------+----------------------+------------------------+----------------------------------------------------------------+----------------------------+
+; 3:1                ; 2 bits    ; 4 LEs         ; 2 LEs                ; 2 LEs                  ; |BoardTest|regmap:U_Registers|reg_controller:RegCont|nextstate ;                            ;
+; 3:1                ; 8 bits    ; 16 LEs        ; 16 LEs               ; 0 LEs                  ; |BoardTest|pid_altitude_controller:U_Altitude|pwm_input[4]     ;                            ;
+; 3:1                ; 8 bits    ; 16 LEs        ; 16 LEs               ; 0 LEs                  ; |BoardTest|pwm_a[8]                                            ;                            ;
+; 3:1                ; 8 bits    ; 16 LEs        ; 16 LEs               ; 0 LEs                  ; |BoardTest|pid_pitch_controller:U_Pitch|pwm_input[0]           ;                            ;
+; 3:1                ; 8 bits    ; 16 LEs        ; 16 LEs               ; 0 LEs                  ; |BoardTest|pid_roll_controller:U_Roll|pwm_input[7]             ;                            ;
+; 3:1                ; 32 bits   ; 64 LEs        ; 64 LEs               ; 0 LEs                  ; |BoardTest|pid_altitude_controller:U_Altitude|v[15]            ;                            ;
+; 3:1                ; 32 bits   ; 64 LEs        ; 64 LEs               ; 0 LEs                  ; |BoardTest|pid_altitude_controller:U_Altitude|u[8]             ;                            ;
+; 3:1                ; 32 bits   ; 64 LEs        ; 64 LEs               ; 0 LEs                  ; |BoardTest|pid_pitch_controller:U_Pitch|v[1]                   ;                            ;
+; 3:1                ; 32 bits   ; 64 LEs        ; 64 LEs               ; 0 LEs                  ; |BoardTest|pid_pitch_controller:U_Pitch|u[16]                  ;                            ;
+; 3:1                ; 32 bits   ; 64 LEs        ; 64 LEs               ; 0 LEs                  ; |BoardTest|pid_roll_controller:U_Roll|v[28]                    ;                            ;
+; 3:1                ; 32 bits   ; 64 LEs        ; 64 LEs               ; 0 LEs                  ; |BoardTest|pid_roll_controller:U_Roll|u[2]                     ;                            ;
+; 3:1                ; 8 bits    ; 16 LEs        ; 16 LEs               ; 0 LEs                  ; |BoardTest|pwm1[5]                                             ;                            ;
+; 3:1                ; 8 bits    ; 16 LEs        ; 16 LEs               ; 0 LEs                  ; |BoardTest|pwm2[6]                                             ;                            ;
+; 4:1                ; 8 bits    ; 16 LEs        ; 16 LEs               ; 0 LEs                  ; |BoardTest|pwm3[0]                                             ;                            ;
+; 4:1                ; 8 bits    ; 16 LEs        ; 16 LEs               ; 0 LEs                  ; |BoardTest|pwm4[1]                                             ;                            ;
+; 11:1               ; 8 bits    ; 56 LEs        ; 48 LEs               ; 8 LEs                  ; |BoardTest|regmap:U_Registers|outmux:MuxOut|tmp1[7]            ;                            ;
++--------------------+-----------+---------------+----------------------+------------------------+----------------------------------------------------------------+----------------------------+
 
 
 +----------------------------------------------------------------------+
@@ -555,7 +578,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 +----------------+--------------+
 ; Partition Name ; Elapsed Time ;
 +----------------+--------------+
-; Top            ; 00:00:08     ;
+; Top            ; 00:00:22     ;
 +----------------+--------------+
 
 
@@ -563,95 +586,109 @@ Note: In order to hide this table in the UI and the text report file, please set
 ; Analysis & Synthesis Messages ;
 +-------------------------------+
 Info: *******************************************************************
-Info: Running Quartus II Analysis & Synthesis
-    Info: Version 11.0 Build 157 04/27/2011 SJ Web Edition
-    Info: Processing started: Thu Apr 19 05:03:36 2012
+Info: Running Quartus II 32-bit Analysis & Synthesis
+    Info: Version 11.1 Build 216 11/23/2011 Service Pack 1 SJ Web Edition
+    Info: Processing started: Thu Apr 19 14:23:22 2012
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off BoardTest -c BoardTest
-Warning: Parallel compilation is not licensed and has been disabled
-Info: Found 2 design units, including 1 entities, in source file divider.vhd
-    Info: Found design unit 1: divider-SYN
-    Info: Found entity 1: Divider
-Info: Found 2 design units, including 1 entities, in source file clk_div.vhd
-    Info: Found design unit 1: clk_div-BHV
-    Info: Found entity 1: clk_div
-Info: Found 2 design units, including 1 entities, in source file boardtest.vhd
-    Info: Found design unit 1: BoardTest-STR
-    Info: Found entity 1: BoardTest
-Info: Found 2 design units, including 1 entities, in source file motor_pwm.vhd
-    Info: Found design unit 1: motor_pwm-behavior
-    Info: Found entity 1: motor_pwm
-Info: Found 2 design units, including 1 entities, in source file reg_controller.vhd
-    Info: Found design unit 1: reg_controller-behavior
-    Info: Found entity 1: reg_controller
-Info: Found 2 design units, including 1 entities, in source file quadreg.vhd
-    Info: Found design unit 1: quadreg-behavior
-    Info: Found entity 1: quadreg
-Info: Found 2 design units, including 1 entities, in source file outmux.vhd
-    Info: Found design unit 1: outmux-behavior
-    Info: Found entity 1: outmux
-Info: Found 2 design units, including 1 entities, in source file regmap.vhd
-    Info: Found design unit 1: regmap-behavior
-    Info: Found entity 1: regmap
-Info: Found 2 design units, including 1 entities, in source file addreg.vhd
-    Info: Found design unit 1: addreg-behavior
-    Info: Found entity 1: addreg
-Info: Found 2 design units, including 1 entities, in source file rangefinder.vhd
-    Info: Found design unit 1: rangefinder-behavior
-    Info: Found entity 1: rangefinder
-Info: Found 2 design units, including 1 entities, in source file pid_yaw_controller.vhd
-    Info: Found design unit 1: pid_yaw_controller-behavior
-    Info: Found entity 1: pid_yaw_controller
-Info: Found 2 design units, including 1 entities, in source file pid_pitch_controller.vhd
-    Info: Found design unit 1: pid_pitch_controller-behavior
-    Info: Found entity 1: pid_pitch_controller
-Info: Found 2 design units, including 1 entities, in source file pid_roll_controller.vhd
-    Info: Found design unit 1: pid_roll_controller-behavior
-    Info: Found entity 1: pid_roll_controller
-Info: Found 2 design units, including 1 entities, in source file pid_altitude_controller.vhd
-    Info: Found design unit 1: pid_altitude_controller-behavior
-    Info: Found entity 1: pid_altitude_controller
-Info: Elaborating entity "BoardTest" for the top level hierarchy
+Warning (20028): Parallel compilation is not licensed and has been disabled
+Info (12021): Found 2 design units, including 1 entities, in source file divider.vhd
+    Info (12022): Found design unit 1: divider-SYN
+    Info (12023): Found entity 1: Divider
+Info (12021): Found 2 design units, including 1 entities, in source file clk_div.vhd
+    Info (12022): Found design unit 1: clk_div-BHV
+    Info (12023): Found entity 1: clk_div
+Info (12021): Found 2 design units, including 1 entities, in source file boardtest.vhd
+    Info (12022): Found design unit 1: BoardTest-STR
+    Info (12023): Found entity 1: BoardTest
+Info (12021): Found 2 design units, including 1 entities, in source file motor_pwm.vhd
+    Info (12022): Found design unit 1: motor_pwm-behavior
+    Info (12023): Found entity 1: motor_pwm
+Info (12021): Found 2 design units, including 1 entities, in source file reg_controller.vhd
+    Info (12022): Found design unit 1: reg_controller-behavior
+    Info (12023): Found entity 1: reg_controller
+Info (12021): Found 2 design units, including 1 entities, in source file quadreg.vhd
+    Info (12022): Found design unit 1: quadreg-behavior
+    Info (12023): Found entity 1: quadreg
+Info (12021): Found 2 design units, including 1 entities, in source file outmux.vhd
+    Info (12022): Found design unit 1: outmux-behavior
+    Info (12023): Found entity 1: outmux
+Info (12021): Found 2 design units, including 1 entities, in source file regmap.vhd
+    Info (12022): Found design unit 1: regmap-behavior
+    Info (12023): Found entity 1: regmap
+Info (12021): Found 2 design units, including 1 entities, in source file addreg.vhd
+    Info (12022): Found design unit 1: addreg-behavior
+    Info (12023): Found entity 1: addreg
+Info (12021): Found 2 design units, including 1 entities, in source file rangefinder.vhd
+    Info (12022): Found design unit 1: rangefinder-behavior
+    Info (12023): Found entity 1: rangefinder
+Info (12021): Found 2 design units, including 1 entities, in source file pid_yaw_controller.vhd
+    Info (12022): Found design unit 1: pid_yaw_controller-behavior
+    Info (12023): Found entity 1: pid_yaw_controller
+Info (12021): Found 2 design units, including 1 entities, in source file pid_pitch_controller.vhd
+    Info (12022): Found design unit 1: pid_pitch_controller-behavior
+    Info (12023): Found entity 1: pid_pitch_controller
+Info (12021): Found 2 design units, including 1 entities, in source file pid_roll_controller.vhd
+    Info (12022): Found design unit 1: pid_roll_controller-behavior
+    Info (12023): Found entity 1: pid_roll_controller
+Info (12021): Found 2 design units, including 1 entities, in source file pid_altitude_controller.vhd
+    Info (12022): Found design unit 1: pid_altitude_controller-behavior
+    Info (12023): Found entity 1: pid_altitude_controller
+Info (12127): Elaborating entity "BoardTest" for the top level hierarchy
 Warning (10036): Verilog HDL or VHDL warning at BoardTest.vhd(187): object "count" assigned a value but never read
 Warning (10036): Verilog HDL or VHDL warning at BoardTest.vhd(188): object "RegMisc" assigned a value but never read
 Warning (10036): Verilog HDL or VHDL warning at BoardTest.vhd(190): object "pwm_yaw" assigned a value but never read
-Info: Elaborating entity "clk_div" for hierarchy "clk_div:U_1HzClkDivider"
-Info: Elaborating entity "rangefinder" for hierarchy "rangefinder:U_Ranger_Top"
-Info: Elaborating entity "Divider" for hierarchy "rangefinder:U_Ranger_Top|Divider:Div"
-Info: Elaborating entity "lpm_divide" for hierarchy "rangefinder:U_Ranger_Top|Divider:Div|lpm_divide:LPM_DIVIDE_component"
-Info: Elaborated megafunction instantiation "rangefinder:U_Ranger_Top|Divider:Div|lpm_divide:LPM_DIVIDE_component"
-Info: Instantiated megafunction "rangefinder:U_Ranger_Top|Divider:Div|lpm_divide:LPM_DIVIDE_component" with the following parameter:
-    Info: Parameter "lpm_drepresentation" = "UNSIGNED"
-    Info: Parameter "lpm_hint" = "LPM_REMAINDERPOSITIVE=TRUE"
-    Info: Parameter "lpm_nrepresentation" = "UNSIGNED"
-    Info: Parameter "lpm_type" = "LPM_DIVIDE"
-    Info: Parameter "lpm_widthd" = "24"
-    Info: Parameter "lpm_widthn" = "24"
-Info: Found 1 design units, including 1 entities, in source file db/lpm_divide_gup.tdf
-    Info: Found entity 1: lpm_divide_gup
-Info: Elaborating entity "lpm_divide_gup" for hierarchy "rangefinder:U_Ranger_Top|Divider:Div|lpm_divide:LPM_DIVIDE_component|lpm_divide_gup:auto_generated"
-Info: Found 1 design units, including 1 entities, in source file db/sign_div_unsign_bnh.tdf
-    Info: Found entity 1: sign_div_unsign_bnh
-Info: Elaborating entity "sign_div_unsign_bnh" for hierarchy "rangefinder:U_Ranger_Top|Divider:Div|lpm_divide:LPM_DIVIDE_component|lpm_divide_gup:auto_generated|sign_div_unsign_bnh:divider"
-Info: Found 1 design units, including 1 entities, in source file db/alt_u_div_o5f.tdf
-    Info: Found entity 1: alt_u_div_o5f
-Info: Elaborating entity "alt_u_div_o5f" for hierarchy "rangefinder:U_Ranger_Top|Divider:Div|lpm_divide:LPM_DIVIDE_component|lpm_divide_gup:auto_generated|sign_div_unsign_bnh:divider|alt_u_div_o5f:divider"
-Info: Found 1 design units, including 1 entities, in source file db/add_sub_lkc.tdf
-    Info: Found entity 1: add_sub_lkc
-Info: Elaborating entity "add_sub_lkc" for hierarchy "rangefinder:U_Ranger_Top|Divider:Div|lpm_divide:LPM_DIVIDE_component|lpm_divide_gup:auto_generated|sign_div_unsign_bnh:divider|alt_u_div_o5f:divider|add_sub_lkc:add_sub_0"
-Info: Found 1 design units, including 1 entities, in source file db/add_sub_mkc.tdf
-    Info: Found entity 1: add_sub_mkc
-Info: Elaborating entity "add_sub_mkc" for hierarchy "rangefinder:U_Ranger_Top|Divider:Div|lpm_divide:LPM_DIVIDE_component|lpm_divide_gup:auto_generated|sign_div_unsign_bnh:divider|alt_u_div_o5f:divider|add_sub_mkc:add_sub_1"
-Info: Elaborating entity "motor_pwm" for hierarchy "motor_pwm:U_Motor_1"
-Info: Elaborating entity "regmap" for hierarchy "regmap:U_Registers"
-Info: Elaborating entity "reg_controller" for hierarchy "regmap:U_Registers|reg_controller:RegCont"
-Info: Elaborating entity "addreg" for hierarchy "regmap:U_Registers|addreg:RegAdd"
-Info: Elaborating entity "quadreg" for hierarchy "regmap:U_Registers|quadreg:RegXD"
-Info: Elaborating entity "outmux" for hierarchy "regmap:U_Registers|outmux:MuxOut"
-Info: Elaborating entity "pid_yaw_controller" for hierarchy "pid_yaw_controller:U_Yaw"
-Info: Elaborating entity "pid_pitch_controller" for hierarchy "pid_pitch_controller:U_Pitch"
-Info: Elaborating entity "pid_roll_controller" for hierarchy "pid_roll_controller:U_Roll"
-Info: Elaborating entity "pid_altitude_controller" for hierarchy "pid_altitude_controller:U_Altitude"
-Warning: Output pins are stuck at VCC or GND
+Info (12128): Elaborating entity "clk_div" for hierarchy "clk_div:U_1HzClkDivider"
+Info (12128): Elaborating entity "rangefinder" for hierarchy "rangefinder:U_Ranger_Top"
+Info (12128): Elaborating entity "Divider" for hierarchy "rangefinder:U_Ranger_Top|Divider:Div"
+Info (12128): Elaborating entity "lpm_divide" for hierarchy "rangefinder:U_Ranger_Top|Divider:Div|lpm_divide:LPM_DIVIDE_component"
+Info (12130): Elaborated megafunction instantiation "rangefinder:U_Ranger_Top|Divider:Div|lpm_divide:LPM_DIVIDE_component"
+Info (12133): Instantiated megafunction "rangefinder:U_Ranger_Top|Divider:Div|lpm_divide:LPM_DIVIDE_component" with the following parameter:
+    Info (12134): Parameter "lpm_drepresentation" = "UNSIGNED"
+    Info (12134): Parameter "lpm_hint" = "LPM_REMAINDERPOSITIVE=TRUE"
+    Info (12134): Parameter "lpm_nrepresentation" = "UNSIGNED"
+    Info (12134): Parameter "lpm_type" = "LPM_DIVIDE"
+    Info (12134): Parameter "lpm_widthd" = "24"
+    Info (12134): Parameter "lpm_widthn" = "24"
+Info (12021): Found 1 design units, including 1 entities, in source file db/lpm_divide_gup.tdf
+    Info (12023): Found entity 1: lpm_divide_gup
+Info (12128): Elaborating entity "lpm_divide_gup" for hierarchy "rangefinder:U_Ranger_Top|Divider:Div|lpm_divide:LPM_DIVIDE_component|lpm_divide_gup:auto_generated"
+Info (12021): Found 1 design units, including 1 entities, in source file db/sign_div_unsign_bnh.tdf
+    Info (12023): Found entity 1: sign_div_unsign_bnh
+Info (12128): Elaborating entity "sign_div_unsign_bnh" for hierarchy "rangefinder:U_Ranger_Top|Divider:Div|lpm_divide:LPM_DIVIDE_component|lpm_divide_gup:auto_generated|sign_div_unsign_bnh:divider"
+Info (12021): Found 1 design units, including 1 entities, in source file db/alt_u_div_o5f.tdf
+    Info (12023): Found entity 1: alt_u_div_o5f
+Info (12128): Elaborating entity "alt_u_div_o5f" for hierarchy "rangefinder:U_Ranger_Top|Divider:Div|lpm_divide:LPM_DIVIDE_component|lpm_divide_gup:auto_generated|sign_div_unsign_bnh:divider|alt_u_div_o5f:divider"
+Info (12021): Found 1 design units, including 1 entities, in source file db/add_sub_lkc.tdf
+    Info (12023): Found entity 1: add_sub_lkc
+Info (12128): Elaborating entity "add_sub_lkc" for hierarchy "rangefinder:U_Ranger_Top|Divider:Div|lpm_divide:LPM_DIVIDE_component|lpm_divide_gup:auto_generated|sign_div_unsign_bnh:divider|alt_u_div_o5f:divider|add_sub_lkc:add_sub_0"
+Info (12021): Found 1 design units, including 1 entities, in source file db/add_sub_mkc.tdf
+    Info (12023): Found entity 1: add_sub_mkc
+Info (12128): Elaborating entity "add_sub_mkc" for hierarchy "rangefinder:U_Ranger_Top|Divider:Div|lpm_divide:LPM_DIVIDE_component|lpm_divide_gup:auto_generated|sign_div_unsign_bnh:divider|alt_u_div_o5f:divider|add_sub_mkc:add_sub_1"
+Info (12128): Elaborating entity "motor_pwm" for hierarchy "motor_pwm:U_Motor_1"
+Info (12128): Elaborating entity "regmap" for hierarchy "regmap:U_Registers"
+Info (12128): Elaborating entity "reg_controller" for hierarchy "regmap:U_Registers|reg_controller:RegCont"
+Warning (10631): VHDL Process Statement warning at reg_controller.vhd(45): inferring latch(es) for signal or variable "localAddress", which holds its previous value in one or more paths through the process
+Info (10041): Inferred latch for "localAddress[0]" at reg_controller.vhd(45)
+Info (10041): Inferred latch for "localAddress[1]" at reg_controller.vhd(45)
+Info (10041): Inferred latch for "localAddress[2]" at reg_controller.vhd(45)
+Info (10041): Inferred latch for "localAddress[3]" at reg_controller.vhd(45)
+Info (10041): Inferred latch for "localAddress[4]" at reg_controller.vhd(45)
+Info (10041): Inferred latch for "localAddress[5]" at reg_controller.vhd(45)
+Info (10041): Inferred latch for "localAddress[6]" at reg_controller.vhd(45)
+Info (10041): Inferred latch for "localAddress[7]" at reg_controller.vhd(45)
+Info (12128): Elaborating entity "addreg" for hierarchy "regmap:U_Registers|addreg:RegAdd"
+Info (12128): Elaborating entity "quadreg" for hierarchy "regmap:U_Registers|quadreg:RegXD"
+Info (12128): Elaborating entity "outmux" for hierarchy "regmap:U_Registers|outmux:MuxOut"
+Info (12128): Elaborating entity "pid_yaw_controller" for hierarchy "pid_yaw_controller:U_Yaw"
+Info (12128): Elaborating entity "pid_pitch_controller" for hierarchy "pid_pitch_controller:U_Pitch"
+Info (12128): Elaborating entity "pid_roll_controller" for hierarchy "pid_roll_controller:U_Roll"
+Info (12128): Elaborating entity "pid_altitude_controller" for hierarchy "pid_altitude_controller:U_Altitude"
+Info (13005): Duplicate registers merged to single register
+Info (13005): Duplicate registers merged to single register
+Info (13005): Duplicate registers merged to single register
+Info (13005): Duplicate registers merged to single register
+Info (13005): Duplicate registers merged to single register
+Warning (13024): Output pins are stuck at VCC or GND
     Warning (13410): Pin "PIC_SPI_MISO" is stuck at GND
     Warning (13410): Pin "Camera_SCL" is stuck at GND
     Warning (13410): Pin "Camera_RESET" is stuck at GND
@@ -663,17 +700,17 @@ Warning: Output pins are stuck at VCC or GND
     Warning (13410): Pin "SRAM_ChipSelect" is stuck at VCC
     Warning (13410): Pin "SRAM_WriteProtect" is stuck at GND
     Warning (13410): Pin "Accel_SelAddr0" is stuck at GND
-Warning: Ignored assignments for entity "SPI_Slave" -- entity does not exist in design
-    Warning: Assignment for entity set_global_assignment -name LL_ROOT_REGION ON -entity SPI_Slave -section_id "Root Region" was ignored
-    Warning: Assignment for entity set_global_assignment -name LL_MEMBER_STATE LOCKED -entity SPI_Slave -section_id "Root Region" was ignored
-Info: Generating hard_block partition "hard_block:auto_generated_inst"
-Warning: Design contains 27 input pin(s) that do not drive logic
+Warning (20013): Ignored assignments for entity "SPI_Slave" -- entity does not exist in design
+    Warning (20014): Assignment for entity set_global_assignment -name LL_ROOT_REGION ON -entity SPI_Slave -section_id "Root Region" was ignored
+    Warning (20014): Assignment for entity set_global_assignment -name LL_MEMBER_STATE LOCKED -entity SPI_Slave -section_id "Root Region" was ignored
+Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
+Warning (21074): Design contains 27 input pin(s) that do not drive logic
     Warning (15610): No output dependent on input pin "clk_DS1085Z_0"
     Warning (15610): No output dependent on input pin "clk_DS1085Z_1"
     Warning (15610): No output dependent on input pin "Switch_1[0]"
     Warning (15610): No output dependent on input pin "Switch_1[1]"
     Warning (15610): No output dependent on input pin "Switch_1[2]"
-    Warning (15610): No output dependent on input pin "Switch_1[3]"
+    Warning (15610): No output dependent on input pin "Switch_2"
     Warning (15610): No output dependent on input pin "Switch_3"
     Warning (15610): No output dependent on input pin "Switch_4"
     Warning (15610): No output dependent on input pin "PIC_SPI_SCLK"
@@ -695,15 +732,15 @@ Warning: Design contains 27 input pin(s) that do not drive logic
     Warning (15610): No output dependent on input pin "Gyro_Interrupt"
     Warning (15610): No output dependent on input pin "Accel_Interrupt1"
     Warning (15610): No output dependent on input pin "Accel_Interrupt2"
-Info: Implemented 2266 device resources after synthesis - the final resource count might be different
-    Info: Implemented 34 input pins
-    Info: Implemented 28 output pins
-    Info: Implemented 10 bidirectional pins
-    Info: Implemented 2194 logic cells
-Info: Quartus II Analysis & Synthesis was successful. 0 errors, 47 warnings
-    Info: Peak virtual memory: 316 megabytes
-    Info: Processing ended: Thu Apr 19 05:03:47 2012
-    Info: Elapsed time: 00:00:11
-    Info: Total CPU time (on all processors): 00:00:11
+Info (21057): Implemented 2286 device resources after synthesis - the final resource count might be different
+    Info (21058): Implemented 34 input pins
+    Info (21059): Implemented 28 output pins
+    Info (21060): Implemented 10 bidirectional pins
+    Info (21061): Implemented 2214 logic cells
+Info: Quartus II 32-bit Analysis & Synthesis was successful. 0 errors, 48 warnings
+    Info: Peak virtual memory: 340 megabytes
+    Info: Processing ended: Thu Apr 19 14:23:53 2012
+    Info: Elapsed time: 00:00:31
+    Info: Total CPU time (on all processors): 00:00:29
 
 

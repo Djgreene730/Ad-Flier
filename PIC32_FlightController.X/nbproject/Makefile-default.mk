@@ -40,11 +40,11 @@ OBJECTDIR=build/${CND_CONF}/${IMAGE_TYPE}
 DISTDIR=dist/${CND_CONF}/${IMAGE_TYPE}
 
 # Object Files Quoted if spaced
-OBJECTFILES_QUOTED_IF_SPACED=${OBJECTDIR}/Communications.o ${OBJECTDIR}/Ad-Flier_Pins.o ${OBJECTDIR}/RTCC.o ${OBJECTDIR}/Gyroscope.o ${OBJECTDIR}/Main.o ${OBJECTDIR}/Accelerometer.o
-POSSIBLE_DEPFILES=${OBJECTDIR}/Communications.o.d ${OBJECTDIR}/Ad-Flier_Pins.o.d ${OBJECTDIR}/RTCC.o.d ${OBJECTDIR}/Gyroscope.o.d ${OBJECTDIR}/Main.o.d ${OBJECTDIR}/Accelerometer.o.d
+OBJECTFILES_QUOTED_IF_SPACED=${OBJECTDIR}/Communications.o ${OBJECTDIR}/Ad-Flier_Pins.o ${OBJECTDIR}/RTCC.o ${OBJECTDIR}/Gyroscope.o ${OBJECTDIR}/Accelerometer.o ${OBJECTDIR}/Main.o ${OBJECTDIR}/Orientation.o
+POSSIBLE_DEPFILES=${OBJECTDIR}/Communications.o.d ${OBJECTDIR}/Ad-Flier_Pins.o.d ${OBJECTDIR}/RTCC.o.d ${OBJECTDIR}/Gyroscope.o.d ${OBJECTDIR}/Accelerometer.o.d ${OBJECTDIR}/Main.o.d ${OBJECTDIR}/Orientation.o.d
 
 # Object Files
-OBJECTFILES=${OBJECTDIR}/Communications.o ${OBJECTDIR}/Ad-Flier_Pins.o ${OBJECTDIR}/RTCC.o ${OBJECTDIR}/Gyroscope.o ${OBJECTDIR}/Main.o ${OBJECTDIR}/Accelerometer.o
+OBJECTFILES=${OBJECTDIR}/Communications.o ${OBJECTDIR}/Ad-Flier_Pins.o ${OBJECTDIR}/RTCC.o ${OBJECTDIR}/Gyroscope.o ${OBJECTDIR}/Accelerometer.o ${OBJECTDIR}/Main.o ${OBJECTDIR}/Orientation.o
 
 
 CFLAGS=
@@ -115,15 +115,20 @@ ${OBJECTDIR}/Gyroscope.o: Gyroscope.c  nbproject/Makefile-${CND_CONF}.mk
 	@${RM} ${OBJECTDIR}/Gyroscope.o.d 
 	@${FIXDEPS} "${OBJECTDIR}/Gyroscope.o.d" $(SILENT) -c ${MP_CC} $(MP_EXTRA_CC_PRE) -g -D__DEBUG -D__MPLAB_DEBUGGER_PK3=1 -x c -c -mprocessor=$(MP_PROCESSOR_OPTION)  -MMD -MF "${OBJECTDIR}/Gyroscope.o.d" -o ${OBJECTDIR}/Gyroscope.o Gyroscope.c  
 	
+${OBJECTDIR}/Accelerometer.o: Accelerometer.c  nbproject/Makefile-${CND_CONF}.mk
+	@${MKDIR} ${OBJECTDIR} 
+	@${RM} ${OBJECTDIR}/Accelerometer.o.d 
+	@${FIXDEPS} "${OBJECTDIR}/Accelerometer.o.d" $(SILENT) -c ${MP_CC} $(MP_EXTRA_CC_PRE) -g -D__DEBUG -D__MPLAB_DEBUGGER_PK3=1 -x c -c -mprocessor=$(MP_PROCESSOR_OPTION)  -MMD -MF "${OBJECTDIR}/Accelerometer.o.d" -o ${OBJECTDIR}/Accelerometer.o Accelerometer.c  
+	
 ${OBJECTDIR}/Main.o: Main.c  nbproject/Makefile-${CND_CONF}.mk
 	@${MKDIR} ${OBJECTDIR} 
 	@${RM} ${OBJECTDIR}/Main.o.d 
 	@${FIXDEPS} "${OBJECTDIR}/Main.o.d" $(SILENT) -c ${MP_CC} $(MP_EXTRA_CC_PRE) -g -D__DEBUG -D__MPLAB_DEBUGGER_PK3=1 -x c -c -mprocessor=$(MP_PROCESSOR_OPTION)  -MMD -MF "${OBJECTDIR}/Main.o.d" -o ${OBJECTDIR}/Main.o Main.c  
 	
-${OBJECTDIR}/Accelerometer.o: Accelerometer.c  nbproject/Makefile-${CND_CONF}.mk
+${OBJECTDIR}/Orientation.o: Orientation.c  nbproject/Makefile-${CND_CONF}.mk
 	@${MKDIR} ${OBJECTDIR} 
-	@${RM} ${OBJECTDIR}/Accelerometer.o.d 
-	@${FIXDEPS} "${OBJECTDIR}/Accelerometer.o.d" $(SILENT) -c ${MP_CC} $(MP_EXTRA_CC_PRE) -g -D__DEBUG -D__MPLAB_DEBUGGER_PK3=1 -x c -c -mprocessor=$(MP_PROCESSOR_OPTION)  -MMD -MF "${OBJECTDIR}/Accelerometer.o.d" -o ${OBJECTDIR}/Accelerometer.o Accelerometer.c  
+	@${RM} ${OBJECTDIR}/Orientation.o.d 
+	@${FIXDEPS} "${OBJECTDIR}/Orientation.o.d" $(SILENT) -c ${MP_CC} $(MP_EXTRA_CC_PRE) -g -D__DEBUG -D__MPLAB_DEBUGGER_PK3=1 -x c -c -mprocessor=$(MP_PROCESSOR_OPTION)  -MMD -MF "${OBJECTDIR}/Orientation.o.d" -o ${OBJECTDIR}/Orientation.o Orientation.c  
 	
 else
 ${OBJECTDIR}/Communications.o: Communications.c  nbproject/Makefile-${CND_CONF}.mk
@@ -146,15 +151,20 @@ ${OBJECTDIR}/Gyroscope.o: Gyroscope.c  nbproject/Makefile-${CND_CONF}.mk
 	@${RM} ${OBJECTDIR}/Gyroscope.o.d 
 	@${FIXDEPS} "${OBJECTDIR}/Gyroscope.o.d" $(SILENT) -c ${MP_CC} $(MP_EXTRA_CC_PRE)  -g -x c -c -mprocessor=$(MP_PROCESSOR_OPTION)  -MMD -MF "${OBJECTDIR}/Gyroscope.o.d" -o ${OBJECTDIR}/Gyroscope.o Gyroscope.c  
 	
+${OBJECTDIR}/Accelerometer.o: Accelerometer.c  nbproject/Makefile-${CND_CONF}.mk
+	@${MKDIR} ${OBJECTDIR} 
+	@${RM} ${OBJECTDIR}/Accelerometer.o.d 
+	@${FIXDEPS} "${OBJECTDIR}/Accelerometer.o.d" $(SILENT) -c ${MP_CC} $(MP_EXTRA_CC_PRE)  -g -x c -c -mprocessor=$(MP_PROCESSOR_OPTION)  -MMD -MF "${OBJECTDIR}/Accelerometer.o.d" -o ${OBJECTDIR}/Accelerometer.o Accelerometer.c  
+	
 ${OBJECTDIR}/Main.o: Main.c  nbproject/Makefile-${CND_CONF}.mk
 	@${MKDIR} ${OBJECTDIR} 
 	@${RM} ${OBJECTDIR}/Main.o.d 
 	@${FIXDEPS} "${OBJECTDIR}/Main.o.d" $(SILENT) -c ${MP_CC} $(MP_EXTRA_CC_PRE)  -g -x c -c -mprocessor=$(MP_PROCESSOR_OPTION)  -MMD -MF "${OBJECTDIR}/Main.o.d" -o ${OBJECTDIR}/Main.o Main.c  
 	
-${OBJECTDIR}/Accelerometer.o: Accelerometer.c  nbproject/Makefile-${CND_CONF}.mk
+${OBJECTDIR}/Orientation.o: Orientation.c  nbproject/Makefile-${CND_CONF}.mk
 	@${MKDIR} ${OBJECTDIR} 
-	@${RM} ${OBJECTDIR}/Accelerometer.o.d 
-	@${FIXDEPS} "${OBJECTDIR}/Accelerometer.o.d" $(SILENT) -c ${MP_CC} $(MP_EXTRA_CC_PRE)  -g -x c -c -mprocessor=$(MP_PROCESSOR_OPTION)  -MMD -MF "${OBJECTDIR}/Accelerometer.o.d" -o ${OBJECTDIR}/Accelerometer.o Accelerometer.c  
+	@${RM} ${OBJECTDIR}/Orientation.o.d 
+	@${FIXDEPS} "${OBJECTDIR}/Orientation.o.d" $(SILENT) -c ${MP_CC} $(MP_EXTRA_CC_PRE)  -g -x c -c -mprocessor=$(MP_PROCESSOR_OPTION)  -MMD -MF "${OBJECTDIR}/Orientation.o.d" -o ${OBJECTDIR}/Orientation.o Orientation.c  
 	
 endif
 

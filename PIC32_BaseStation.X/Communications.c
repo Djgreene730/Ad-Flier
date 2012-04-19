@@ -20,7 +20,9 @@ Sentence    gps_nmea_velocity = {0, 0};
 
 // Gyroscope Readings
 Sentence            gyroTempBuf = {0, 0};
+Sentence            accelTempBuf = {0, 0};
 GyroscopeReading    gyroCurrent;
+AccelerometerReading    accelCurrent;
 
 // XBee Configuration Global Variables
 Sentence    xbee_baud = {0, 0};
@@ -71,6 +73,9 @@ void initializeUART (void) {
 }
 
 // -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -
+
+UINT8 output_character[1024];
+UINT32 char_size = 0;
 
 // Interrupt Function for GPS on UART2
 void __ISR(_UART1_VECTOR, IPL2SOFT) IntUart1Handler(void) {
@@ -404,9 +409,13 @@ void read_Gyro_Sentence() {
         character = UARTGetDataByte(UART1);
 
         // Wait for GPS Code Prefix
-        if (character == 71) {
+        if ((character == 71) && (currentGyroState != 1)) {
             gyroTempBuf.size = 0;
             currentGyroState = 1;
+        }
+        else if ((character == 65) && (currentGyroState != 1)) {
+            accelTempBuf.size = 0;
+            currentGyroState = 3;
         }
 
         // Record the Character if we're in the Sentence Stream
@@ -420,6 +429,17 @@ void read_Gyro_Sentence() {
                 break;
             }
         }
+        else if (currentGyroState == 3) {
+            accelTempBuf.data[accelTempBuf.size] = character;
+            accelTempBuf.size++;
+
+            // Is this the last character?
+            if (accelTempBuf.size == 4) {
+                currentGyroState = 4;
+                break;
+            }
+        }
+
     }
 
     //Copy new GPS string to Globals
@@ -440,8 +460,20 @@ void read_Gyro_Sentence() {
 
         gyroTempBuf.ready = 1;
         currentGyroState = 0;
+    }
+    else if (currentGyroState == 4) {
+        accelTempBuf.ready = 0;
 
+        // Copy X-Value
+        accelCurrent.X = (accelTempBuf.data[1] & 0xFF);
 
+        // Copy Y-Value
+        accelCurrent.Y = (accelTempBuf.data[2] & 0xFF);
 
+        // Copy Z-Value
+        accelCurrent.Z = (accelTempBuf.data[3] & 0xFF);
+
+        accelTempBuf.ready = 1;
+        currentGyroState = 0;
     }
 }
