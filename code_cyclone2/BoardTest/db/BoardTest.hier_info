@@ -1,158 +1,28 @@
-|BoardTest
-clk => clk_div:U_1HzClkDivider.clk_in
-clk => BLED_Orange[0]~reg0.CLK
-clk => BLED_Orange[1]~reg0.CLK
-clk => BLED_Orange[2]~reg0.CLK
-clk => BLED_Orange[3]~reg0.CLK
-clk => BLED_Blue[0]~reg0.CLK
-clk => BLED_Blue[1]~reg0.CLK
-clk => BLED_Blue[2]~reg0.CLK
-clk => BLED_Blue[3]~reg0.CLK
-clk => SPI_Slave:U_PICSPI_Slave.clk
-clk => rangefinder:U_Ranger_Top.clk
-clk => motor_pwm:Motor_1.clk
-clk => motor_pwm:Motor_2.clk
-clk => motor_pwm:Motor_3.clk
-clk => motor_pwm:Motor_4.clk
-clk => regmap:Registers.clk
-clk_DS1085Z_0 => ~NO_FANOUT~
-clk_DS1085Z_1 => ~NO_FANOUT~
-Switch_1[0] => pwm1[7].OUTPUTSELECT
-Switch_1[0] => pwm1[6].OUTPUTSELECT
-Switch_1[0] => pwm1[5].OUTPUTSELECT
-Switch_1[0] => pwm1[4].OUTPUTSELECT
-Switch_1[0] => pwm1[3].OUTPUTSELECT
-Switch_1[0] => pwm1[2].OUTPUTSELECT
-Switch_1[0] => pwm1[1].OUTPUTSELECT
-Switch_1[0] => pwm1[0].OUTPUTSELECT
-Switch_1[1] => pwm2[7].OUTPUTSELECT
-Switch_1[1] => pwm2[6].OUTPUTSELECT
-Switch_1[1] => pwm2[5].OUTPUTSELECT
-Switch_1[1] => pwm2[4].OUTPUTSELECT
-Switch_1[1] => pwm2[3].OUTPUTSELECT
-Switch_1[1] => pwm2[2].OUTPUTSELECT
-Switch_1[1] => pwm2[1].OUTPUTSELECT
-Switch_1[1] => pwm2[0].OUTPUTSELECT
-Switch_1[2] => pwm3[7].OUTPUTSELECT
-Switch_1[2] => pwm3[6].OUTPUTSELECT
-Switch_1[2] => pwm3[5].OUTPUTSELECT
-Switch_1[2] => pwm3[4].OUTPUTSELECT
-Switch_1[2] => pwm3[3].OUTPUTSELECT
-Switch_1[2] => pwm3[2].OUTPUTSELECT
-Switch_1[2] => pwm3[1].OUTPUTSELECT
-Switch_1[2] => pwm3[0].OUTPUTSELECT
-Switch_1[3] => pwm4[7].OUTPUTSELECT
-Switch_1[3] => pwm4[6].OUTPUTSELECT
-Switch_1[3] => pwm4[5].OUTPUTSELECT
-Switch_1[3] => pwm4[4].OUTPUTSELECT
-Switch_1[3] => pwm4[3].OUTPUTSELECT
-Switch_1[3] => pwm4[2].OUTPUTSELECT
-Switch_1[3] => pwm4[1].OUTPUTSELECT
-Switch_1[3] => pwm4[0].OUTPUTSELECT
-Switch_2 => regmap:Registers.start
-Switch_3 => ~NO_FANOUT~
-Switch_4 => ~NO_FANOUT~
-PIC_PBUS_Data[0] <> regmap:Registers.data[0]
-PIC_PBUS_Data[1] <> regmap:Registers.data[1]
-PIC_PBUS_Data[2] <> regmap:Registers.data[2]
-PIC_PBUS_Data[3] <> regmap:Registers.data[3]
-PIC_PBUS_Data[4] <> regmap:Registers.data[4]
-PIC_PBUS_Data[5] <> regmap:Registers.data[5]
-PIC_PBUS_Data[6] <> regmap:Registers.data[6]
-PIC_PBUS_Data[7] <> regmap:Registers.data[7]
-PIC_PBUS_A_D => regmap:Registers.a_d
-PIC_PBUS_R_W => regmap:Registers.r_w
-PIC_PBUS_OK_IN => regmap:Registers.ok_out
-PIC_SPI_SCLK => SPI_Slave:U_PICSPI_Slave.SCK
-PIC_SPI_MOSI => SPI_Slave:U_PICSPI_Slave.MOSI
-PIC_SPI_Select => SPI_Slave:U_PICSPI_Slave.SSEL
-Ultra_T_Edge => rangefinder:U_Ranger_Top.edge
-Ultra_B_Edge => ~NO_FANOUT~
-Camera_SDA <> Camera_SDA
-Camera_HD => ~NO_FANOUT~
-Camera_VD => ~NO_FANOUT~
-Camera_DCLK => ~NO_FANOUT~
-Camera_DOUT[0] => ~NO_FANOUT~
-Camera_DOUT[1] => ~NO_FANOUT~
-Camera_DOUT[2] => ~NO_FANOUT~
-Camera_DOUT[3] => ~NO_FANOUT~
-Camera_DOUT[4] => ~NO_FANOUT~
-Camera_DOUT[5] => ~NO_FANOUT~
-Camera_DOUT[6] => ~NO_FANOUT~
-Camera_DOUT[7] => ~NO_FANOUT~
-FPGA_SPI_MISO => ~NO_FANOUT~
-FPGA_I2C_Data <> FPGA_I2C_Data
-Gyro_DataReady => ~NO_FANOUT~
-Gyro_Interrupt => ~NO_FANOUT~
-Accel_Interrupt1 => ~NO_FANOUT~
-Accel_Interrupt2 => ~NO_FANOUT~
-
-
-|BoardTest|clk_div:U_1HzClkDivider
-clk_in => clk_out~reg0.CLK
-clk_in => cnt[0].CLK
-clk_in => cnt[1].CLK
-clk_in => cnt[2].CLK
-clk_in => cnt[3].CLK
-clk_in => cnt[4].CLK
-clk_in => cnt[5].CLK
-clk_in => cnt[6].CLK
-clk_in => cnt[7].CLK
-clk_in => cnt[8].CLK
-clk_in => cnt[9].CLK
-clk_in => cnt[10].CLK
-clk_in => cnt[11].CLK
-clk_in => cnt[12].CLK
-clk_in => cnt[13].CLK
-clk_in => cnt[14].CLK
-clk_in => cnt[15].CLK
-clk_in => cnt[16].CLK
-clk_in => cnt[17].CLK
-clk_in => cnt[18].CLK
-clk_in => cnt[19].CLK
-clk_in => cnt[20].CLK
-clk_in => cnt[21].CLK
-clk_in => cnt[22].CLK
-
-
-|BoardTest|SPI_Slave:U_PICSPI_Slave
-clk => MISO~reg0.CLK
-clk => byte_data_sent[0].CLK
-clk => byte_data_sent[1].CLK
-clk => byte_data_sent[2].CLK
-clk => byte_data_sent[3].CLK
-clk => byte_data_sent[4].CLK
-clk => byte_data_sent[5].CLK
-clk => byte_data_sent[6].CLK
-clk => byte_data_sent[7].CLK
-clk => byte_data_received[0].CLK
-clk => bitcnt[0].CLK
-clk => bitcnt[1].CLK
-clk => bitcnt[2].CLK
-clk => cnt[0].CLK
-clk => cnt[1].CLK
-clk => cnt[2].CLK
-clk => cnt[3].CLK
-clk => cnt[4].CLK
-clk => cnt[5].CLK
-clk => cnt[6].CLK
-clk => cnt[7].CLK
-clk => LED~reg0.CLK
-clk => byte_received.CLK
-clk => MOSIr[0].CLK
-clk => MOSIr[1].CLK
-clk => SSELr[0].CLK
-clk => SSELr[1].CLK
-clk => SSELr[2].CLK
-clk => SCKr[0].CLK
-clk => SCKr[1].CLK
-clk => SCKr[2].CLK
-SCK => SCKr[0].DATAIN
-MOSI => MOSIr[0].DATAIN
-SSEL => SSELr[0].DATAIN
-
-
-|BoardTest|rangefinder:U_Ranger_Top
+|rangefinder
+clk => edgeend[0].CLK
+clk => edgeend[1].CLK
+clk => edgeend[2].CLK
+clk => edgeend[3].CLK
+clk => edgeend[4].CLK
+clk => edgeend[5].CLK
+clk => edgeend[6].CLK
+clk => edgeend[7].CLK
+clk => edgeend[8].CLK
+clk => edgeend[9].CLK
+clk => edgeend[10].CLK
+clk => edgeend[11].CLK
+clk => edgeend[12].CLK
+clk => edgeend[13].CLK
+clk => edgeend[14].CLK
+clk => edgeend[15].CLK
+clk => edgeend[16].CLK
+clk => edgeend[17].CLK
+clk => edgeend[18].CLK
+clk => edgeend[19].CLK
+clk => edgeend[20].CLK
+clk => edgeend[21].CLK
+clk => edgeend[22].CLK
+clk => edgeend[23].CLK
 clk => edgebegin[0].CLK
 clk => edgebegin[1].CLK
 clk => edgebegin[2].CLK
@@ -202,12 +72,15 @@ clk => count[20].CLK
 clk => count[21].CLK
 clk => count[22].CLK
 clk => count[23].CLK
+clk => edgeYet2.CLK
 clk => edgeYet.CLK
 edge => process_0.IN1
 edge => process_0.IN1
+edge => process_0.IN1
+edge => process_0.IN1
 
 
-|BoardTest|rangefinder:U_Ranger_Top|Divider:Div
+|rangefinder|Divider:Div
 denom[0] => lpm_divide:LPM_DIVIDE_component.denom[0]
 denom[1] => lpm_divide:LPM_DIVIDE_component.denom[1]
 denom[2] => lpm_divide:LPM_DIVIDE_component.denom[2]
@@ -258,7 +131,7 @@ numer[22] => lpm_divide:LPM_DIVIDE_component.numer[22]
 numer[23] => lpm_divide:LPM_DIVIDE_component.numer[23]
 
 
-|BoardTest|rangefinder:U_Ranger_Top|Divider:Div|lpm_divide:LPM_DIVIDE_component
+|rangefinder|Divider:Div|lpm_divide:LPM_DIVIDE_component
 numer[0] => lpm_divide_gup:auto_generated.numer[0]
 numer[1] => lpm_divide_gup:auto_generated.numer[1]
 numer[2] => lpm_divide_gup:auto_generated.numer[2]
@@ -312,7 +185,7 @@ aclr => ~NO_FANOUT~
 clken => ~NO_FANOUT~
 
 
-|BoardTest|rangefinder:U_Ranger_Top|Divider:Div|lpm_divide:LPM_DIVIDE_component|lpm_divide_gup:auto_generated
+|rangefinder|Divider:Div|lpm_divide:LPM_DIVIDE_component|lpm_divide_gup:auto_generated
 denom[0] => sign_div_unsign_bnh:divider.denominator[0]
 denom[1] => sign_div_unsign_bnh:divider.denominator[1]
 denom[2] => sign_div_unsign_bnh:divider.denominator[2]
@@ -363,7 +236,7 @@ numer[22] => sign_div_unsign_bnh:divider.numerator[22]
 numer[23] => sign_div_unsign_bnh:divider.numerator[23]
 
 
-|BoardTest|rangefinder:U_Ranger_Top|Divider:Div|lpm_divide:LPM_DIVIDE_component|lpm_divide_gup:auto_generated|sign_div_unsign_bnh:divider
+|rangefinder|Divider:Div|lpm_divide:LPM_DIVIDE_component|lpm_divide_gup:auto_generated|sign_div_unsign_bnh:divider
 denominator[0] => alt_u_div_o5f:divider.denominator[0]
 denominator[1] => alt_u_div_o5f:divider.denominator[1]
 denominator[2] => alt_u_div_o5f:divider.denominator[2]
@@ -414,7 +287,7 @@ numerator[22] => alt_u_div_o5f:divider.numerator[22]
 numerator[23] => alt_u_div_o5f:divider.numerator[23]
 
 
-|BoardTest|rangefinder:U_Ranger_Top|Divider:Div|lpm_divide:LPM_DIVIDE_component|lpm_divide_gup:auto_generated|sign_div_unsign_bnh:divider|alt_u_div_o5f:divider
+|rangefinder|Divider:Div|lpm_divide:LPM_DIVIDE_component|lpm_divide_gup:auto_generated|sign_div_unsign_bnh:divider|alt_u_div_o5f:divider
 denominator[0] => add_sub_lkc:add_sub_0.datab[0]
 denominator[0] => add_sub_mkc:add_sub_1.datab[0]
 denominator[0] => op_11.IN8
@@ -1340,14 +1213,14 @@ numerator[23] => add_sub_lkc:add_sub_0.dataa[0]
 numerator[23] => StageOut[0].IN0
 
 
-|BoardTest|rangefinder:U_Ranger_Top|Divider:Div|lpm_divide:LPM_DIVIDE_component|lpm_divide_gup:auto_generated|sign_div_unsign_bnh:divider|alt_u_div_o5f:divider|add_sub_lkc:add_sub_0
+|rangefinder|Divider:Div|lpm_divide:LPM_DIVIDE_component|lpm_divide_gup:auto_generated|sign_div_unsign_bnh:divider|alt_u_div_o5f:divider|add_sub_lkc:add_sub_0
 dataa[0] => carry_eqn[0].IN0
 dataa[0] => _.IN0
 dataa[0] => sum_eqn[0].IN0
 datab[0] => datab_node[0].IN0
 
 
-|BoardTest|rangefinder:U_Ranger_Top|Divider:Div|lpm_divide:LPM_DIVIDE_component|lpm_divide_gup:auto_generated|sign_div_unsign_bnh:divider|alt_u_div_o5f:divider|add_sub_mkc:add_sub_1
+|rangefinder|Divider:Div|lpm_divide:LPM_DIVIDE_component|lpm_divide_gup:auto_generated|sign_div_unsign_bnh:divider|alt_u_div_o5f:divider|add_sub_mkc:add_sub_1
 dataa[0] => carry_eqn[0].IN0
 dataa[0] => _.IN0
 dataa[0] => sum_eqn[0].IN0
@@ -1356,682 +1229,5 @@ dataa[1] => _.IN0
 dataa[1] => sum_eqn[1].IN0
 datab[0] => datab_node[0].IN0
 datab[1] => datab_node[1].IN0
-
-
-|BoardTest|motor_pwm:Motor_1
-clk => pwm~reg0.CLK
-clk => pulsecount[0].CLK
-clk => pulsecount[1].CLK
-clk => pulsecount[2].CLK
-clk => pulsecount[3].CLK
-clk => pulsecount[4].CLK
-clk => pulsecount[5].CLK
-clk => pulsecount[6].CLK
-clk => pulsecount[7].CLK
-clk => pulsecount[8].CLK
-clk => pulsecount[9].CLK
-clk => pulsecount[10].CLK
-clk => pulsecount[11].CLK
-clk => clockcount[0].CLK
-clk => clockcount[1].CLK
-clk => clockcount[2].CLK
-clk => clockcount[3].CLK
-clk => clockcount[4].CLK
-clk => clockcount[5].CLK
-clk => clockcount[6].CLK
-clk => clocktick.CLK
-speed[0] => LessThan0.IN12
-speed[1] => LessThan0.IN11
-speed[2] => LessThan0.IN10
-speed[3] => LessThan0.IN9
-speed[4] => LessThan0.IN8
-speed[5] => LessThan0.IN7
-speed[6] => LessThan0.IN6
-speed[7] => LessThan0.IN5
-
-
-|BoardTest|motor_pwm:Motor_2
-clk => pwm~reg0.CLK
-clk => pulsecount[0].CLK
-clk => pulsecount[1].CLK
-clk => pulsecount[2].CLK
-clk => pulsecount[3].CLK
-clk => pulsecount[4].CLK
-clk => pulsecount[5].CLK
-clk => pulsecount[6].CLK
-clk => pulsecount[7].CLK
-clk => pulsecount[8].CLK
-clk => pulsecount[9].CLK
-clk => pulsecount[10].CLK
-clk => pulsecount[11].CLK
-clk => clockcount[0].CLK
-clk => clockcount[1].CLK
-clk => clockcount[2].CLK
-clk => clockcount[3].CLK
-clk => clockcount[4].CLK
-clk => clockcount[5].CLK
-clk => clockcount[6].CLK
-clk => clocktick.CLK
-speed[0] => LessThan0.IN12
-speed[1] => LessThan0.IN11
-speed[2] => LessThan0.IN10
-speed[3] => LessThan0.IN9
-speed[4] => LessThan0.IN8
-speed[5] => LessThan0.IN7
-speed[6] => LessThan0.IN6
-speed[7] => LessThan0.IN5
-
-
-|BoardTest|motor_pwm:Motor_3
-clk => pwm~reg0.CLK
-clk => pulsecount[0].CLK
-clk => pulsecount[1].CLK
-clk => pulsecount[2].CLK
-clk => pulsecount[3].CLK
-clk => pulsecount[4].CLK
-clk => pulsecount[5].CLK
-clk => pulsecount[6].CLK
-clk => pulsecount[7].CLK
-clk => pulsecount[8].CLK
-clk => pulsecount[9].CLK
-clk => pulsecount[10].CLK
-clk => pulsecount[11].CLK
-clk => clockcount[0].CLK
-clk => clockcount[1].CLK
-clk => clockcount[2].CLK
-clk => clockcount[3].CLK
-clk => clockcount[4].CLK
-clk => clockcount[5].CLK
-clk => clockcount[6].CLK
-clk => clocktick.CLK
-speed[0] => LessThan0.IN12
-speed[1] => LessThan0.IN11
-speed[2] => LessThan0.IN10
-speed[3] => LessThan0.IN9
-speed[4] => LessThan0.IN8
-speed[5] => LessThan0.IN7
-speed[6] => LessThan0.IN6
-speed[7] => LessThan0.IN5
-
-
-|BoardTest|motor_pwm:Motor_4
-clk => pwm~reg0.CLK
-clk => pulsecount[0].CLK
-clk => pulsecount[1].CLK
-clk => pulsecount[2].CLK
-clk => pulsecount[3].CLK
-clk => pulsecount[4].CLK
-clk => pulsecount[5].CLK
-clk => pulsecount[6].CLK
-clk => pulsecount[7].CLK
-clk => pulsecount[8].CLK
-clk => pulsecount[9].CLK
-clk => pulsecount[10].CLK
-clk => pulsecount[11].CLK
-clk => clockcount[0].CLK
-clk => clockcount[1].CLK
-clk => clockcount[2].CLK
-clk => clockcount[3].CLK
-clk => clockcount[4].CLK
-clk => clockcount[5].CLK
-clk => clockcount[6].CLK
-clk => clocktick.CLK
-speed[0] => LessThan0.IN12
-speed[1] => LessThan0.IN11
-speed[2] => LessThan0.IN10
-speed[3] => LessThan0.IN9
-speed[4] => LessThan0.IN8
-speed[5] => LessThan0.IN7
-speed[6] => LessThan0.IN6
-speed[7] => LessThan0.IN5
-
-
-|BoardTest|regmap:Registers
-clk => reg_controller:RegCont.clk
-clk => addreg:RegAdd.clk
-clk => quadreg:RegXD.clk
-clk => quadreg:RegYD.clk
-clk => quadreg:RegZD.clk
-clk => quadreg:RegXM.clk
-clk => quadreg:RegYM.clk
-clk => quadreg:RegZM.clk
-clk => quadreg:RegAD.clk
-clk => quadreg:RegAM.clk
-start => reg_controller:RegCont.start
-start => addreg:RegAdd.start
-start => quadreg:RegXD.start
-start => quadreg:RegYD.start
-start => quadreg:RegZD.start
-start => quadreg:RegXM.start
-start => quadreg:RegYM.start
-start => quadreg:RegZM.start
-start => quadreg:RegAD.start
-start => quadreg:RegAM.start
-data[0] <> data[0]
-data[1] <> data[1]
-data[2] <> data[2]
-data[3] <> data[3]
-data[4] <> data[4]
-data[5] <> data[5]
-data[6] <> data[6]
-data[7] <> data[7]
-a_d => reg_controller:RegCont.a_d
-r_w => reg_controller:RegCont.r_w
-ok_out => reg_controller:RegCont.ok_out
-
-
-|BoardTest|regmap:Registers|reg_controller:RegCont
-clk => state~1.DATAIN
-start => state~3.DATAIN
-address[0] => Equal0.IN15
-address[0] => Equal1.IN15
-address[0] => Equal2.IN15
-address[0] => Equal3.IN15
-address[0] => Equal4.IN15
-address[0] => Equal5.IN15
-address[0] => Equal6.IN15
-address[0] => Equal7.IN15
-address[1] => Equal0.IN14
-address[1] => Equal1.IN14
-address[1] => Equal2.IN14
-address[1] => Equal3.IN14
-address[1] => Equal4.IN14
-address[1] => Equal5.IN14
-address[1] => Equal6.IN14
-address[1] => Equal7.IN14
-address[2] => Equal0.IN13
-address[2] => Equal1.IN13
-address[2] => Equal2.IN13
-address[2] => Equal3.IN13
-address[2] => Equal4.IN13
-address[2] => Equal5.IN13
-address[2] => Equal6.IN13
-address[2] => Equal7.IN13
-address[3] => Equal0.IN12
-address[3] => Equal1.IN12
-address[3] => Equal2.IN12
-address[3] => Equal3.IN12
-address[3] => Equal4.IN12
-address[3] => Equal5.IN12
-address[3] => Equal6.IN12
-address[3] => Equal7.IN12
-address[4] => Equal0.IN11
-address[4] => Equal1.IN11
-address[4] => Equal2.IN11
-address[4] => Equal3.IN11
-address[4] => Equal4.IN11
-address[4] => Equal5.IN11
-address[4] => Equal6.IN11
-address[4] => Equal7.IN11
-address[5] => Equal0.IN10
-address[5] => Equal1.IN10
-address[5] => Equal2.IN10
-address[5] => Equal3.IN10
-address[5] => Equal4.IN10
-address[5] => Equal5.IN10
-address[5] => Equal6.IN10
-address[5] => Equal7.IN10
-address[6] => Equal0.IN9
-address[6] => Equal1.IN9
-address[6] => Equal2.IN9
-address[6] => Equal3.IN9
-address[6] => Equal4.IN9
-address[6] => Equal5.IN9
-address[6] => Equal6.IN9
-address[6] => Equal7.IN9
-address[7] => Equal0.IN8
-address[7] => Equal1.IN8
-address[7] => Equal2.IN8
-address[7] => Equal3.IN8
-address[7] => Equal4.IN8
-address[7] => Equal5.IN8
-address[7] => Equal6.IN8
-address[7] => Equal7.IN8
-a_d => nextstate.DATAB
-a_d => nextstate.DATAA
-a_d => add_rego_en.DATAA
-a_d => nextstate.DATAB
-r_w => nextstate.OUTPUTSELECT
-r_w => nextstate.OUTPUTSELECT
-r_w => nextstate.OUTPUTSELECT
-r_w => add_rego_en.OUTPUTSELECT
-ok_out => Selector0.IN4
-ok_out => nextstate.OUTPUTSELECT
-ok_out => nextstate.OUTPUTSELECT
-ok_out => nextstate.OUTPUTSELECT
-ok_out => add_rego_en.OUTPUTSELECT
-ok_out => Selector0.IN2
-ok_out => Selector1.IN1
-ok_out => Selector2.IN2
-
-
-|BoardTest|regmap:Registers|addreg:RegAdd
-clk => tmp[0].CLK
-clk => tmp[1].CLK
-clk => tmp[2].CLK
-clk => tmp[3].CLK
-clk => tmp[4].CLK
-clk => tmp[5].CLK
-clk => tmp[6].CLK
-clk => tmp[7].CLK
-data[0] => tmp[0].DATAIN
-data[1] => tmp[1].DATAIN
-data[2] => tmp[2].DATAIN
-data[3] => tmp[3].DATAIN
-data[4] => tmp[4].DATAIN
-data[5] => tmp[5].DATAIN
-data[6] => tmp[6].DATAIN
-data[7] => tmp[7].DATAIN
-start => tmp[0].ACLR
-start => tmp[1].ACLR
-start => tmp[2].ACLR
-start => tmp[3].ACLR
-start => tmp[4].ACLR
-start => tmp[5].ACLR
-start => tmp[6].ACLR
-start => tmp[7].ACLR
-regi_en => tmp[7].ENA
-regi_en => tmp[6].ENA
-regi_en => tmp[5].ENA
-regi_en => tmp[4].ENA
-regi_en => tmp[3].ENA
-regi_en => tmp[2].ENA
-regi_en => tmp[1].ENA
-regi_en => tmp[0].ENA
-rego_en => reg_data[0].OE
-rego_en => reg_data[1].OE
-rego_en => reg_data[2].OE
-rego_en => reg_data[3].OE
-rego_en => reg_data[4].OE
-rego_en => reg_data[5].OE
-rego_en => reg_data[6].OE
-rego_en => reg_data[7].OE
-
-
-|BoardTest|regmap:Registers|quadreg:RegXD
-clk => tmp[0].CLK
-clk => tmp[1].CLK
-clk => tmp[2].CLK
-clk => tmp[3].CLK
-clk => tmp[4].CLK
-clk => tmp[5].CLK
-clk => tmp[6].CLK
-clk => tmp[7].CLK
-data[0] => tmp[0].DATAIN
-data[1] => tmp[1].DATAIN
-data[2] => tmp[2].DATAIN
-data[3] => tmp[3].DATAIN
-data[4] => tmp[4].DATAIN
-data[5] => tmp[5].DATAIN
-data[6] => tmp[6].DATAIN
-data[7] => tmp[7].DATAIN
-start => tmp[0].ACLR
-start => tmp[1].ACLR
-start => tmp[2].ACLR
-start => tmp[3].ACLR
-start => tmp[4].ACLR
-start => tmp[5].ACLR
-start => tmp[6].ACLR
-start => tmp[7].ACLR
-regi_en => tmp[7].ENA
-regi_en => tmp[6].ENA
-regi_en => tmp[5].ENA
-regi_en => tmp[4].ENA
-regi_en => tmp[3].ENA
-regi_en => tmp[2].ENA
-regi_en => tmp[1].ENA
-regi_en => tmp[0].ENA
-rego_en => reg_data[0].OE
-rego_en => reg_data[1].OE
-rego_en => reg_data[2].OE
-rego_en => reg_data[3].OE
-rego_en => reg_data[4].OE
-rego_en => reg_data[5].OE
-rego_en => reg_data[6].OE
-rego_en => reg_data[7].OE
-
-
-|BoardTest|regmap:Registers|quadreg:RegYD
-clk => tmp[0].CLK
-clk => tmp[1].CLK
-clk => tmp[2].CLK
-clk => tmp[3].CLK
-clk => tmp[4].CLK
-clk => tmp[5].CLK
-clk => tmp[6].CLK
-clk => tmp[7].CLK
-data[0] => tmp[0].DATAIN
-data[1] => tmp[1].DATAIN
-data[2] => tmp[2].DATAIN
-data[3] => tmp[3].DATAIN
-data[4] => tmp[4].DATAIN
-data[5] => tmp[5].DATAIN
-data[6] => tmp[6].DATAIN
-data[7] => tmp[7].DATAIN
-start => tmp[0].ACLR
-start => tmp[1].ACLR
-start => tmp[2].ACLR
-start => tmp[3].ACLR
-start => tmp[4].ACLR
-start => tmp[5].ACLR
-start => tmp[6].ACLR
-start => tmp[7].ACLR
-regi_en => tmp[7].ENA
-regi_en => tmp[6].ENA
-regi_en => tmp[5].ENA
-regi_en => tmp[4].ENA
-regi_en => tmp[3].ENA
-regi_en => tmp[2].ENA
-regi_en => tmp[1].ENA
-regi_en => tmp[0].ENA
-rego_en => reg_data[0].OE
-rego_en => reg_data[1].OE
-rego_en => reg_data[2].OE
-rego_en => reg_data[3].OE
-rego_en => reg_data[4].OE
-rego_en => reg_data[5].OE
-rego_en => reg_data[6].OE
-rego_en => reg_data[7].OE
-
-
-|BoardTest|regmap:Registers|quadreg:RegZD
-clk => tmp[0].CLK
-clk => tmp[1].CLK
-clk => tmp[2].CLK
-clk => tmp[3].CLK
-clk => tmp[4].CLK
-clk => tmp[5].CLK
-clk => tmp[6].CLK
-clk => tmp[7].CLK
-data[0] => tmp[0].DATAIN
-data[1] => tmp[1].DATAIN
-data[2] => tmp[2].DATAIN
-data[3] => tmp[3].DATAIN
-data[4] => tmp[4].DATAIN
-data[5] => tmp[5].DATAIN
-data[6] => tmp[6].DATAIN
-data[7] => tmp[7].DATAIN
-start => tmp[0].ACLR
-start => tmp[1].ACLR
-start => tmp[2].ACLR
-start => tmp[3].ACLR
-start => tmp[4].ACLR
-start => tmp[5].ACLR
-start => tmp[6].ACLR
-start => tmp[7].ACLR
-regi_en => tmp[7].ENA
-regi_en => tmp[6].ENA
-regi_en => tmp[5].ENA
-regi_en => tmp[4].ENA
-regi_en => tmp[3].ENA
-regi_en => tmp[2].ENA
-regi_en => tmp[1].ENA
-regi_en => tmp[0].ENA
-rego_en => reg_data[0].OE
-rego_en => reg_data[1].OE
-rego_en => reg_data[2].OE
-rego_en => reg_data[3].OE
-rego_en => reg_data[4].OE
-rego_en => reg_data[5].OE
-rego_en => reg_data[6].OE
-rego_en => reg_data[7].OE
-
-
-|BoardTest|regmap:Registers|quadreg:RegXM
-clk => tmp[0].CLK
-clk => tmp[1].CLK
-clk => tmp[2].CLK
-clk => tmp[3].CLK
-clk => tmp[4].CLK
-clk => tmp[5].CLK
-clk => tmp[6].CLK
-clk => tmp[7].CLK
-data[0] => tmp[0].DATAIN
-data[1] => tmp[1].DATAIN
-data[2] => tmp[2].DATAIN
-data[3] => tmp[3].DATAIN
-data[4] => tmp[4].DATAIN
-data[5] => tmp[5].DATAIN
-data[6] => tmp[6].DATAIN
-data[7] => tmp[7].DATAIN
-start => tmp[0].ACLR
-start => tmp[1].ACLR
-start => tmp[2].ACLR
-start => tmp[3].ACLR
-start => tmp[4].ACLR
-start => tmp[5].ACLR
-start => tmp[6].ACLR
-start => tmp[7].ACLR
-regi_en => tmp[7].ENA
-regi_en => tmp[6].ENA
-regi_en => tmp[5].ENA
-regi_en => tmp[4].ENA
-regi_en => tmp[3].ENA
-regi_en => tmp[2].ENA
-regi_en => tmp[1].ENA
-regi_en => tmp[0].ENA
-rego_en => reg_data[0].OE
-rego_en => reg_data[1].OE
-rego_en => reg_data[2].OE
-rego_en => reg_data[3].OE
-rego_en => reg_data[4].OE
-rego_en => reg_data[5].OE
-rego_en => reg_data[6].OE
-rego_en => reg_data[7].OE
-
-
-|BoardTest|regmap:Registers|quadreg:RegYM
-clk => tmp[0].CLK
-clk => tmp[1].CLK
-clk => tmp[2].CLK
-clk => tmp[3].CLK
-clk => tmp[4].CLK
-clk => tmp[5].CLK
-clk => tmp[6].CLK
-clk => tmp[7].CLK
-data[0] => tmp[0].DATAIN
-data[1] => tmp[1].DATAIN
-data[2] => tmp[2].DATAIN
-data[3] => tmp[3].DATAIN
-data[4] => tmp[4].DATAIN
-data[5] => tmp[5].DATAIN
-data[6] => tmp[6].DATAIN
-data[7] => tmp[7].DATAIN
-start => tmp[0].ACLR
-start => tmp[1].ACLR
-start => tmp[2].ACLR
-start => tmp[3].ACLR
-start => tmp[4].ACLR
-start => tmp[5].ACLR
-start => tmp[6].ACLR
-start => tmp[7].ACLR
-regi_en => tmp[7].ENA
-regi_en => tmp[6].ENA
-regi_en => tmp[5].ENA
-regi_en => tmp[4].ENA
-regi_en => tmp[3].ENA
-regi_en => tmp[2].ENA
-regi_en => tmp[1].ENA
-regi_en => tmp[0].ENA
-rego_en => reg_data[0].OE
-rego_en => reg_data[1].OE
-rego_en => reg_data[2].OE
-rego_en => reg_data[3].OE
-rego_en => reg_data[4].OE
-rego_en => reg_data[5].OE
-rego_en => reg_data[6].OE
-rego_en => reg_data[7].OE
-
-
-|BoardTest|regmap:Registers|quadreg:RegZM
-clk => tmp[0].CLK
-clk => tmp[1].CLK
-clk => tmp[2].CLK
-clk => tmp[3].CLK
-clk => tmp[4].CLK
-clk => tmp[5].CLK
-clk => tmp[6].CLK
-clk => tmp[7].CLK
-data[0] => tmp[0].DATAIN
-data[1] => tmp[1].DATAIN
-data[2] => tmp[2].DATAIN
-data[3] => tmp[3].DATAIN
-data[4] => tmp[4].DATAIN
-data[5] => tmp[5].DATAIN
-data[6] => tmp[6].DATAIN
-data[7] => tmp[7].DATAIN
-start => tmp[0].ACLR
-start => tmp[1].ACLR
-start => tmp[2].ACLR
-start => tmp[3].ACLR
-start => tmp[4].ACLR
-start => tmp[5].ACLR
-start => tmp[6].ACLR
-start => tmp[7].ACLR
-regi_en => tmp[7].ENA
-regi_en => tmp[6].ENA
-regi_en => tmp[5].ENA
-regi_en => tmp[4].ENA
-regi_en => tmp[3].ENA
-regi_en => tmp[2].ENA
-regi_en => tmp[1].ENA
-regi_en => tmp[0].ENA
-rego_en => reg_data[0].OE
-rego_en => reg_data[1].OE
-rego_en => reg_data[2].OE
-rego_en => reg_data[3].OE
-rego_en => reg_data[4].OE
-rego_en => reg_data[5].OE
-rego_en => reg_data[6].OE
-rego_en => reg_data[7].OE
-
-
-|BoardTest|regmap:Registers|quadreg:RegAD
-clk => tmp[0].CLK
-clk => tmp[1].CLK
-clk => tmp[2].CLK
-clk => tmp[3].CLK
-clk => tmp[4].CLK
-clk => tmp[5].CLK
-clk => tmp[6].CLK
-clk => tmp[7].CLK
-data[0] => tmp[0].DATAIN
-data[1] => tmp[1].DATAIN
-data[2] => tmp[2].DATAIN
-data[3] => tmp[3].DATAIN
-data[4] => tmp[4].DATAIN
-data[5] => tmp[5].DATAIN
-data[6] => tmp[6].DATAIN
-data[7] => tmp[7].DATAIN
-start => tmp[0].ACLR
-start => tmp[1].ACLR
-start => tmp[2].ACLR
-start => tmp[3].ACLR
-start => tmp[4].ACLR
-start => tmp[5].ACLR
-start => tmp[6].ACLR
-start => tmp[7].ACLR
-regi_en => tmp[7].ENA
-regi_en => tmp[6].ENA
-regi_en => tmp[5].ENA
-regi_en => tmp[4].ENA
-regi_en => tmp[3].ENA
-regi_en => tmp[2].ENA
-regi_en => tmp[1].ENA
-regi_en => tmp[0].ENA
-rego_en => reg_data[0].OE
-rego_en => reg_data[1].OE
-rego_en => reg_data[2].OE
-rego_en => reg_data[3].OE
-rego_en => reg_data[4].OE
-rego_en => reg_data[5].OE
-rego_en => reg_data[6].OE
-rego_en => reg_data[7].OE
-
-
-|BoardTest|regmap:Registers|quadreg:RegAM
-clk => tmp[0].CLK
-clk => tmp[1].CLK
-clk => tmp[2].CLK
-clk => tmp[3].CLK
-clk => tmp[4].CLK
-clk => tmp[5].CLK
-clk => tmp[6].CLK
-clk => tmp[7].CLK
-data[0] => tmp[0].DATAIN
-data[1] => tmp[1].DATAIN
-data[2] => tmp[2].DATAIN
-data[3] => tmp[3].DATAIN
-data[4] => tmp[4].DATAIN
-data[5] => tmp[5].DATAIN
-data[6] => tmp[6].DATAIN
-data[7] => tmp[7].DATAIN
-start => tmp[0].ACLR
-start => tmp[1].ACLR
-start => tmp[2].ACLR
-start => tmp[3].ACLR
-start => tmp[4].ACLR
-start => tmp[5].ACLR
-start => tmp[6].ACLR
-start => tmp[7].ACLR
-regi_en => tmp[7].ENA
-regi_en => tmp[6].ENA
-regi_en => tmp[5].ENA
-regi_en => tmp[4].ENA
-regi_en => tmp[3].ENA
-regi_en => tmp[2].ENA
-regi_en => tmp[1].ENA
-regi_en => tmp[0].ENA
-rego_en => reg_data[0].OE
-rego_en => reg_data[1].OE
-rego_en => reg_data[2].OE
-rego_en => reg_data[3].OE
-rego_en => reg_data[4].OE
-rego_en => reg_data[5].OE
-rego_en => reg_data[6].OE
-rego_en => reg_data[7].OE
-
-
-|BoardTest|regmap:Registers|outmux:MuxOut
-data[0] => tmp1.DATAB
-data[1] => tmp1.DATAB
-data[2] => tmp1.DATAB
-data[3] => tmp1.DATAB
-data[4] => tmp1.DATAB
-data[5] => tmp1.DATAB
-data[6] => tmp1.DATAB
-data[7] => tmp1.DATAB
-address[0] => tmp1[0].DATAB
-address[1] => tmp1[1].DATAB
-address[2] => tmp1[2].DATAB
-address[3] => tmp1[3].DATAB
-address[4] => tmp1[4].DATAB
-address[5] => tmp1[5].DATAB
-address[6] => tmp1[6].DATAB
-address[7] => tmp1[7].DATAB
-outsel => tmp1.OUTPUTSELECT
-outsel => tmp1.OUTPUTSELECT
-outsel => tmp1.OUTPUTSELECT
-outsel => tmp1.OUTPUTSELECT
-outsel => tmp1.OUTPUTSELECT
-outsel => tmp1.OUTPUTSELECT
-outsel => tmp1.OUTPUTSELECT
-outsel => tmp1.OUTPUTSELECT
-outsel => tmp1[7].OUTPUTSELECT
-outsel => tmp1[6].OUTPUTSELECT
-outsel => tmp1[5].OUTPUTSELECT
-outsel => tmp1[4].OUTPUTSELECT
-outsel => tmp1[3].OUTPUTSELECT
-outsel => tmp1[2].OUTPUTSELECT
-outsel => tmp1[1].OUTPUTSELECT
-outsel => tmp1[0].OUTPUTSELECT
-tbo => tmp2[0].OE
-tbo => tmp2[1].OE
-tbo => tmp2[2].OE
-tbo => tmp2[3].OE
-tbo => tmp2[4].OE
-tbo => tmp2[5].OE
-tbo => tmp2[6].OE
-tbo => tmp2[7].OE
 
 

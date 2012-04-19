@@ -1,7 +1,7 @@
-Quartus II 32-bit
-Version 11.1 Build 216 11/23/2011 Service Pack 1 SJ Web Edition
+Quartus II
+Version 11.0 Build 157 04/27/2011 SJ Web Edition
 14
-1273
+1011
 OFF
 OFF
 OFF
@@ -10,8 +10,6 @@ ON
 ON
 FV_OFF
 Level2
-0
-0
 0
 0
 VRSM_ON
@@ -44,9 +42,6 @@ AUTO_RAM_RECOGNITION
 ON
 AUTO_ROM_RECOGNITION
 ON
-}
-# hierarchies {
-|
 }
 # macro_sequence
 
@@ -81,9 +76,6 @@ width
 PARAMETER_SIGNED_DEC
 USR
 }
-# hierarchies {
-clk_div:U_1HzClkDivider
-}
 # macro_sequence
 
 # end
@@ -111,8 +103,38 @@ ON
 AUTO_ROM_RECOGNITION
 ON
 }
-# hierarchies {
-SPI_Slave:U_PICSPI_Slave
+# macro_sequence
+
+# end
+# entity
+rangefinder
+# storage
+db|BoardTest.(3).cnf
+db|BoardTest.(3).cnf
+# logic_option {
+AUTO_RAM_RECOGNITION
+ON
+}
+# case_insensitive
+# source_file
+rangefinder.vhd
+6d6a35c07e5e0c5c314ac6eac8233dd
+5
+# internal_option {
+HDL_INITIAL_FANOUT_LIMIT
+OFF
+AUTO_RESOURCE_SHARING
+OFF
+AUTO_RAM_RECOGNITION
+ON
+AUTO_ROM_RECOGNITION
+ON
+}
+# user_parameter {
+ constraint(altitude)
+7 downto 0
+PARAMETER_STRING
+USR
 }
 # macro_sequence
 
@@ -160,7 +182,7 @@ PARAMETER_STRING
 USR
 }
 # hierarchies {
-rangefinder:U_Ranger_Top|Divider:Div
+Divider:Div
 }
 # macro_sequence
 
@@ -172,8 +194,8 @@ db|BoardTest.(5).cnf
 db|BoardTest.(5).cnf
 # case_insensitive
 # source_file
-lpm_divide.tdf
-6a8184c9b63557df2bce3e6eaf453fd
+|altera|11.0|quartus|libraries|megafunctions|lpm_divide.tdf
+a6a1532c618ee9e2a10145dc2dd8013
 7
 # user_parameter {
 LPM_WIDTHN
@@ -524,15 +546,14 @@ denom0
 3
 }
 # include_file {
-aglobal111.inc
-9cc1f9de5ad83fc94dd171c3f7986bd
-abs_divider.inc
-49e0557d5addd986524b344bed283d9
 sign_div_unsign.inc
 535d76a18080ee8f75d090fcce186e19
-}
-# hierarchies {
-rangefinder:U_Ranger_Top|Divider:Div|lpm_divide:LPM_DIVIDE_component
+lpm_divide.tdf
+a6a1532c618ee9e2a10145dc2dd8013
+aglobal110.inc
+f560f9a992734abc3e37886b3957a26a
+abs_divider.inc
+49e0557d5addd986524b344bed283d9
 }
 # macro_sequence
 
@@ -545,7 +566,7 @@ db|BoardTest.(6).cnf
 # case_insensitive
 # source_file
 db|lpm_divide_gup.tdf
-461f2424e84a782d8ce7bccfbf4ce476
+7d2c51155b877beb80e999c4a59e7e46
 7
 # used_port {
 remain9
@@ -838,7 +859,7 @@ denom0
 3
 }
 # hierarchies {
-rangefinder:U_Ranger_Top|Divider:Div|lpm_divide:LPM_DIVIDE_component|lpm_divide_gup:auto_generated
+Divider:Div|lpm_divide:LPM_DIVIDE_component|lpm_divide_gup:auto_generated
 }
 # macro_sequence
 
@@ -851,7 +872,7 @@ db|BoardTest.(7).cnf
 # case_insensitive
 # source_file
 db|sign_div_unsign_bnh.tdf
-2225efd1867facc377be2cb2cf9f3
+641681b98ee8a6582f065d14a10750
 7
 # used_port {
 remainder9
@@ -1144,7 +1165,7 @@ denominator0
 3
 }
 # hierarchies {
-rangefinder:U_Ranger_Top|Divider:Div|lpm_divide:LPM_DIVIDE_component|lpm_divide_gup:auto_generated|sign_div_unsign_bnh:divider
+Divider:Div|lpm_divide:LPM_DIVIDE_component|lpm_divide_gup:auto_generated|sign_div_unsign_bnh:divider
 }
 # macro_sequence
 
@@ -1157,7 +1178,7 @@ db|BoardTest.(8).cnf
 # case_insensitive
 # source_file
 db|alt_u_div_o5f.tdf
-9e227b4e369b4ad784de7f4a19fa0
+3074965af0de22c3e262f7205f603e2f
 7
 # used_port {
 remainder9
@@ -1450,7 +1471,7 @@ denominator0
 3
 }
 # hierarchies {
-rangefinder:U_Ranger_Top|Divider:Div|lpm_divide:LPM_DIVIDE_component|lpm_divide_gup:auto_generated|sign_div_unsign_bnh:divider|alt_u_div_o5f:divider
+Divider:Div|lpm_divide:LPM_DIVIDE_component|lpm_divide_gup:auto_generated|sign_div_unsign_bnh:divider|alt_u_div_o5f:divider
 }
 # macro_sequence
 
@@ -1463,7 +1484,7 @@ db|BoardTest.(9).cnf
 # case_insensitive
 # source_file
 db|add_sub_lkc.tdf
-47df8cff2d1a866ecc928c7a5cb2f
+b77de1b9dd22afb545ce4cc9b668942
 7
 # used_port {
 result0
@@ -1480,7 +1501,7 @@ cout
 3
 }
 # hierarchies {
-rangefinder:U_Ranger_Top|Divider:Div|lpm_divide:LPM_DIVIDE_component|lpm_divide_gup:auto_generated|sign_div_unsign_bnh:divider|alt_u_div_o5f:divider|add_sub_lkc:add_sub_0
+Divider:Div|lpm_divide:LPM_DIVIDE_component|lpm_divide_gup:auto_generated|sign_div_unsign_bnh:divider|alt_u_div_o5f:divider|add_sub_lkc:add_sub_0
 }
 # macro_sequence
 
@@ -1493,7 +1514,7 @@ db|BoardTest.(10).cnf
 # case_insensitive
 # source_file
 db|add_sub_mkc.tdf
-cca4f7c759d4735a80a9424e5cb8e
+426582f856debf20bcc4634b84c2ce
 7
 # used_port {
 result1
@@ -1519,7 +1540,7 @@ cout
 3
 }
 # hierarchies {
-rangefinder:U_Ranger_Top|Divider:Div|lpm_divide:LPM_DIVIDE_component|lpm_divide_gup:auto_generated|sign_div_unsign_bnh:divider|alt_u_div_o5f:divider|add_sub_mkc:add_sub_1
+Divider:Div|lpm_divide:LPM_DIVIDE_component|lpm_divide_gup:auto_generated|sign_div_unsign_bnh:divider|alt_u_div_o5f:divider|add_sub_mkc:add_sub_1
 }
 # macro_sequence
 
@@ -1536,7 +1557,7 @@ ON
 # case_insensitive
 # source_file
 motor_pwm.vhd
-56a2b9402d9d353029217f86aec7c4e
+8f6dd51255b3fa8c518a66afd89d91ab
 5
 # internal_option {
 HDL_INITIAL_FANOUT_LIMIT
@@ -1554,12 +1575,6 @@ ON
 PARAMETER_STRING
 USR
 }
-# hierarchies {
-motor_pwm:Motor_1
-motor_pwm:Motor_2
-motor_pwm:Motor_3
-motor_pwm:Motor_4
-}
 # macro_sequence
 
 # end
@@ -1575,7 +1590,7 @@ ON
 # case_insensitive
 # source_file
 regmap.vhd
-a9e8d754229df140744ec12759c6c4b
+d11a7c14d81736600fcb7ea5fa05c8f
 5
 # internal_option {
 HDL_INITIAL_FANOUT_LIMIT
@@ -1625,9 +1640,6 @@ USR
 PARAMETER_STRING
 USR
 }
-# hierarchies {
-regmap:Registers
-}
 # macro_sequence
 
 # end
@@ -1643,7 +1655,7 @@ ON
 # case_insensitive
 # source_file
 reg_controller.vhd
-ea0aad7b6eef0d7753a8e56719bf6ce
+408f1325b98b57f2e472a7c449acf6f
 5
 # internal_option {
 HDL_INITIAL_FANOUT_LIMIT
@@ -1661,9 +1673,6 @@ ON
 PARAMETER_STRING
 USR
 }
-# hierarchies {
-regmap:Registers|reg_controller:RegCont
-}
 # macro_sequence
 
 # end
@@ -1679,7 +1688,7 @@ ON
 # case_insensitive
 # source_file
 addreg.vhd
-94be1b5decac1f747e44014d68d4
+7b31d6e8a98aacd0a29e92c1f360c245
 5
 # internal_option {
 HDL_INITIAL_FANOUT_LIMIT
@@ -1704,9 +1713,6 @@ USR
 7 downto 0
 PARAMETER_STRING
 USR
-}
-# hierarchies {
-regmap:Registers|addreg:RegAdd
 }
 # macro_sequence
 
@@ -1723,7 +1729,7 @@ ON
 # case_insensitive
 # source_file
 quadreg.vhd
-4741e31fe53153d85a4c574722ebe59e
+20351d871631a1da935e543ba763d74
 5
 # internal_option {
 HDL_INITIAL_FANOUT_LIMIT
@@ -1749,16 +1755,6 @@ USR
 PARAMETER_STRING
 USR
 }
-# hierarchies {
-regmap:Registers|quadreg:RegXD
-regmap:Registers|quadreg:RegYD
-regmap:Registers|quadreg:RegZD
-regmap:Registers|quadreg:RegXM
-regmap:Registers|quadreg:RegYM
-regmap:Registers|quadreg:RegZM
-regmap:Registers|quadreg:RegAD
-regmap:Registers|quadreg:RegAM
-}
 # macro_sequence
 
 # end
@@ -1774,7 +1770,7 @@ ON
 # case_insensitive
 # source_file
 outmux.vhd
-4ed72fed6865bfd39dcce7d34c43c28
+b8872529cfd066fde5dc2666233822
 5
 # internal_option {
 HDL_INITIAL_FANOUT_LIMIT
@@ -1800,17 +1796,14 @@ USR
 PARAMETER_STRING
 USR
 }
-# hierarchies {
-regmap:Registers|outmux:MuxOut
-}
 # macro_sequence
 
 # end
 # entity
 rangefinder
 # storage
-db|BoardTest.(3).cnf
-db|BoardTest.(3).cnf
+db|BoardTest.(17).cnf
+db|BoardTest.(17).cnf
 # logic_option {
 AUTO_RAM_RECOGNITION
 ON
@@ -1818,7 +1811,7 @@ ON
 # case_insensitive
 # source_file
 rangefinder.vhd
-f34adc6a397168ef4bdf3fd763855c24
+6d6a35c07e5e0c5c314ac6eac8233dd
 5
 # internal_option {
 HDL_INITIAL_FANOUT_LIMIT
@@ -1830,14 +1823,382 @@ ON
 AUTO_ROM_RECOGNITION
 ON
 }
+# hierarchies {
+|
+}
+# macro_sequence
+
+# end
+# entity
+lpm_divide
+# storage
+db|BoardTest.(18).cnf
+db|BoardTest.(18).cnf
+# case_insensitive
+# source_file
+|altera|11.0|quartus|libraries|megafunctions|lpm_divide.tdf
+a6a1532c618ee9e2a10145dc2dd8013
+7
 # user_parameter {
- constraint(altitude)
-7 downto 0
-PARAMETER_STRING
+LPM_WIDTHN
+24
+PARAMETER_SIGNED_DEC
+USR
+LPM_WIDTHD
+24
+PARAMETER_SIGNED_DEC
+USR
+LPM_NREPRESENTATION
+UNSIGNED
+PARAMETER_UNKNOWN
+USR
+LPM_DREPRESENTATION
+UNSIGNED
+PARAMETER_UNKNOWN
+USR
+LPM_PIPELINE
+0
+PARAMETER_UNKNOWN
+DEF
+LPM_REMAINDERPOSITIVE
+TRUE
+PARAMETER_UNKNOWN
+USR
+MAXIMIZE_SPEED
+5
+PARAMETER_UNKNOWN
+DEF
+CBXI_PARAMETER
+lpm_divide_gup
+PARAMETER_UNKNOWN
+USR
+CARRY_CHAIN
+MANUAL
+PARAMETER_UNKNOWN
+USR
+OPTIMIZE_FOR_SPEED
+5
+PARAMETER_UNKNOWN
+USR
+AUTO_CARRY_CHAINS
+ON
+AUTO_CARRY
+USR
+IGNORE_CARRY_BUFFERS
+OFF
+IGNORE_CARRY
+USR
+AUTO_CASCADE_CHAINS
+ON
+AUTO_CASCADE
+USR
+IGNORE_CASCADE_BUFFERS
+OFF
+IGNORE_CASCADE
 USR
 }
+# used_port {
+remain9
+-1
+3
+remain8
+-1
+3
+remain7
+-1
+3
+remain6
+-1
+3
+remain5
+-1
+3
+remain4
+-1
+3
+remain3
+-1
+3
+remain23
+-1
+3
+remain22
+-1
+3
+remain21
+-1
+3
+remain20
+-1
+3
+remain2
+-1
+3
+remain19
+-1
+3
+remain18
+-1
+3
+remain17
+-1
+3
+remain16
+-1
+3
+remain15
+-1
+3
+remain14
+-1
+3
+remain13
+-1
+3
+remain12
+-1
+3
+remain11
+-1
+3
+remain10
+-1
+3
+remain1
+-1
+3
+remain0
+-1
+3
+quotient9
+-1
+3
+quotient8
+-1
+3
+quotient7
+-1
+3
+quotient6
+-1
+3
+quotient5
+-1
+3
+quotient4
+-1
+3
+quotient3
+-1
+3
+quotient23
+-1
+3
+quotient22
+-1
+3
+quotient21
+-1
+3
+quotient20
+-1
+3
+quotient2
+-1
+3
+quotient19
+-1
+3
+quotient18
+-1
+3
+quotient17
+-1
+3
+quotient16
+-1
+3
+quotient15
+-1
+3
+quotient14
+-1
+3
+quotient13
+-1
+3
+quotient12
+-1
+3
+quotient11
+-1
+3
+quotient10
+-1
+3
+quotient1
+-1
+3
+quotient0
+-1
+3
+numer9
+-1
+3
+numer8
+-1
+3
+numer7
+-1
+3
+numer6
+-1
+3
+numer5
+-1
+3
+numer4
+-1
+3
+numer3
+-1
+3
+numer23
+-1
+3
+numer22
+-1
+3
+numer21
+-1
+3
+numer20
+-1
+3
+numer2
+-1
+3
+numer19
+-1
+3
+numer18
+-1
+3
+numer17
+-1
+3
+numer16
+-1
+3
+numer15
+-1
+3
+numer14
+-1
+3
+numer13
+-1
+3
+numer12
+-1
+3
+numer11
+-1
+3
+numer10
+-1
+3
+numer1
+-1
+3
+numer0
+-1
+3
+denom9
+-1
+3
+denom8
+-1
+3
+denom7
+-1
+3
+denom6
+-1
+3
+denom5
+-1
+3
+denom4
+-1
+3
+denom3
+-1
+3
+denom23
+-1
+3
+denom22
+-1
+3
+denom21
+-1
+3
+denom20
+-1
+3
+denom2
+-1
+3
+denom19
+-1
+3
+denom18
+-1
+3
+denom17
+-1
+3
+denom16
+-1
+3
+denom15
+-1
+3
+denom14
+-1
+3
+denom13
+-1
+3
+denom12
+-1
+3
+denom11
+-1
+3
+denom10
+-1
+3
+denom1
+-1
+3
+denom0
+-1
+3
+}
+# include_file {
+abs_divider.inc
+49e0557d5addd986524b344bed283d9
+aglobal110.inc
+f560f9a992734abc3e37886b3957a26a
+sign_div_unsign.inc
+535d76a18080ee8f75d090fcce186e19
+lpm_divide.tdf
+a6a1532c618ee9e2a10145dc2dd8013
+}
 # hierarchies {
-rangefinder:U_Ranger_Top
+Divider:Div|lpm_divide:LPM_DIVIDE_component
 }
 # macro_sequence
 

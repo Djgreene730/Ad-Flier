@@ -1,6 +1,6 @@
 <?xml version="1.0" ?>
 <LOG_ROOT>
 	<PROJECT NAME="BoardTest">
-		<CBX_INST_ENTRY INSTANCE_NAME="|BoardTest|rangefinder:U_Ranger_Top|Divider:Div|lpm_divide:LPM_DIVIDE_component" CBX_FILE_NAME="lpm_divide_gup.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|rangefinder|Divider:Div|lpm_divide:LPM_DIVIDE_component" CBX_FILE_NAME="lpm_divide_gup.tdf"/>
 	</PROJECT>
 </LOG_ROOT>

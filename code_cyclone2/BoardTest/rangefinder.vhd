@@ -30,13 +30,13 @@ component Divider IS
 END component;
 
 signal LSB : std_logic := '0';
-signal edgebegin, timevector, quotient, remain : std_logic_vector(23 downto 0) := "000000000000000000000000";
-constant denom : std_logic_vector(23 downto 0) := "000000000001110011101000";
+signal edgebegin, edgeend, timevector, quotient, remain : std_logic_vector(23 downto 0) := "000000000000000000000000";
+constant denom : std_logic_vector(23 downto 0) := "000000000000010111001010";
 signal count : std_logic_vector(23 downto 0) := "000000000000000000000000";
 begin
 
 process(clk, edge, count)
-	variable edgeYet : std_logic := '0';
+	variable edgeYet, edgeYet2 : std_logic := '0';
 begin 
 
 	if (clk'event and clk = '1') then
@@ -54,19 +54,27 @@ begin
 			trigger <= '0';
 		end if;
 		
-	--Getting Count of Edge	
+	--Getting Count of EdgeBegin	
 		if (edge = '1' and edgeYet = '0') then
 			edgebegin <= count;
 			edgeYet := '1';
 		elsif (edge = '0' and edgeYet = '1') then
 			edgeYet := '0';
 		end if;
+	
+	--Getting Count of EdgeEnd
+		if (edge = '0' and edgeYet2 = '1') then
+			edgeend <= count;
+			edgeYet := '0';
+		elsif (edge = '1' and edgeYet2 = '0') then
+			edgeYet2 := '1';
+		end if;
 			
 	end if;
 end process;
 
---Getting Time Between Receiving Edge and Sending Trigger
-timevector <= edgebegin - "000000000000000100000000";
+--Getting Time Between Receiving Edge and Edge End
+timevector <= edgebegin - edgeend;
 
 --LPM Divide to get Distance
 Div : Divider port map(denom, timevector, quotient, remain);
