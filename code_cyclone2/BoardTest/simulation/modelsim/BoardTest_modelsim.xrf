@@ -9,6 +9,7 @@ source_file = 1, C:/Users/Salvatore/Desktop/Ad-Flier/code_cyclone2/BoardTest/qua
 source_file = 1, C:/Users/Salvatore/Desktop/Ad-Flier/code_cyclone2/BoardTest/outmux.vhd
 source_file = 1, C:/Users/Salvatore/Desktop/Ad-Flier/code_cyclone2/BoardTest/regmap.vhd
 source_file = 1, C:/Users/Salvatore/Desktop/Ad-Flier/code_cyclone2/BoardTest/addreg.vhd
+source_file = 1, C:/Users/Salvatore/Desktop/Ad-Flier/code_cyclone2/BoardTest/rangefinder.vhd
 source_file = 1, C:/Users/Salvatore/Desktop/Ad-Flier/code_cyclone2/BoardTest/db/BoardTest.cbx.xml
 source_file = 1, c:/altera/11.0/quartus/libraries/vhdl/ieee/prmtvs_b.vhd
 source_file = 1, c:/altera/11.0/quartus/libraries/vhdl/ieee/prmtvs_p.vhd

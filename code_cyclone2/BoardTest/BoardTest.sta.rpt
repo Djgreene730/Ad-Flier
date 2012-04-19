@@ -1,5 +1,5 @@
 TimeQuest Timing Analyzer report for BoardTest
-Sun Apr 15 19:26:23 2012
+Wed Apr 18 21:16:40 2012
 Quartus II Version 11.0 Build 157 04/27/2011 SJ Web Edition
 
 
@@ -1723,7 +1723,7 @@ No dedicated SERDES Receiver circuitry present in device or used in design
 Info: *******************************************************************
 Info: Running Quartus II TimeQuest Timing Analyzer
     Info: Version 11.0 Build 157 04/27/2011 SJ Web Edition
-    Info: Processing started: Sun Apr 15 19:26:21 2012
+    Info: Processing started: Wed Apr 18 21:16:38 2012
 Info: Command: quartus_sta BoardTest -c BoardTest
 Info: qsta_default_script.tcl version: #1
 Warning: Parallel compilation is not licensed and has been disabled
@@ -1819,7 +1819,7 @@ Info: Design is not fully constrained for setup requirements
 Info: Design is not fully constrained for hold requirements
 Info: Quartus II TimeQuest Timing Analyzer was successful. 0 errors, 5 warnings
     Info: Peak virtual memory: 246 megabytes
-    Info: Processing ended: Sun Apr 15 19:26:23 2012
+    Info: Processing ended: Wed Apr 18 21:16:40 2012
     Info: Elapsed time: 00:00:02
     Info: Total CPU time (on all processors): 00:00:02
 

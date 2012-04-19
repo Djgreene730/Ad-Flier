@@ -16,7 +16,7 @@
 -- PROGRAM "Quartus II"
 -- VERSION "Version 11.0 Build 157 04/27/2011 SJ Web Edition"
 
--- DATE "04/15/2012 19:26:24"
+-- DATE "04/18/2012 21:16:41"
 
 -- 
 -- Device: Altera EP2C8T144C8 Package TQFP144
