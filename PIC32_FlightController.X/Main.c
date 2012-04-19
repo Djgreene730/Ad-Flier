@@ -12,6 +12,7 @@
 #include "Ad-Flier_Pins.h"
 #include "Communications.h"
 #include "Gyroscope.h"
+#include "Accelerometer.h"
 
 
 
@@ -52,6 +53,7 @@ int main(int argc, char** argv) {
     // Initialize Communication Systems
     initializeUART();
     setupGyroscope();
+    while (!I2C_IS_Initialized) initializeI2C();
 
     // Configure XBee
     xbee_baud.size = 1;     strcpy(xbee_baud.data, "6");
@@ -59,7 +61,9 @@ int main(int argc, char** argv) {
     xbee_network.size = 4;  strcpy(xbee_network.data, "3421");
     configureXBee(xbee_baud, xbee_channel, xbee_network);
 
-    
+
+    I2C1_SDA_PIN_TR     = 0;
+    I2C1_SCL_PIN_TR     = 0;
 
     // Loop Infinitely
     while(1) {
@@ -85,15 +89,25 @@ int main(int argc, char** argv) {
         gyroReading[0] = readGyroscope(OUT_TEMP);
         putsXBee(gyroReading, 1);
 
-        */
-
         // Gyroscope Output to XBee
         updateGyroscopeReadings();
-        UINT8 buf[7] = {'G', gyroCurrent.XU, gyroCurrent.XL, gyroCurrent.YU, gyroCurrent.YL, gyroCurrent.ZU, gyroCurrent.ZL};
+        UINT8 buf[8] = {'G', gyroCurrent.XU, gyroCurrent.XL, gyroCurrent.YU, gyroCurrent.YL, gyroCurrent.ZU, gyroCurrent.ZL};
         putsXBee(buf , 7);
         Delayms(500);
-    }
 
+        // Test Accelerometer Readings
+        buf[0] = readAccelerometer(ACCEL_WHO_AM_I);
+        putsXBee(buf , 1);
+        Delayms(500);
+
+        */
+
+        I2C1_SCL_PIN        = 0;
+        I2C1_SDA_PIN        = 0;
+        Delayms(1000);
+
+
+    }
 
     return (EXIT_SUCCESS);
 }

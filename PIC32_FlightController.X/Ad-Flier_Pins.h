@@ -108,6 +108,12 @@
 #define Accel_INT2_TR       TRISDbits.TRISD8
 
 
+// I2C1 Pins
+#define	I2C1_SCL_PIN        LATAbits.LATA14
+#define	I2C1_SCL_PIN_TR     LATAbits.LATA14
+#define	I2C1_SDA_PIN        LATAbits.LATA15
+#define	I2C1_SDA_PIN_TR     LATAbits.LATA15
+
 // -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -
 
 

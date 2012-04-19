@@ -81,10 +81,12 @@ extern SPI1_Devices LastSPI1Initialize;
 #define SPI2_SelectNone     mPORTDSetBits(BIT_4);
 #define SPI2_SelectFPGA     initiateSPI2(SPI_FPGA_FREQ), mPORTDClearBits(BIT_4);
 
-// I2C Mode
-#define I2C_FREQ            400000      // 400 KHz Fast-Mode
+// I2C Mode & Addresses
+#define I2C_FREQ            100000      // 400 KHz Fast-Mode
 
 
+// I2C Global Variables
+extern BOOL I2C_IS_Initialized;
 
 // GPS Configuration Global Variables
 extern Sentence gps_nmea_position;
@@ -95,26 +97,34 @@ extern Sentence xbee_baud;
 extern Sentence xbee_channel;
 extern Sentence xbee_network;
 
+
+
 // Initialization Commands
-extern void Delayms(unsigned);
-extern void Delayus(unsigned);
-extern void initializeUART(void);
+extern void     Delayms(unsigned);
+extern void     Delayus(unsigned);
+extern void     initializeUART(void);
 
 // GPS Commands
-extern UINT32 read_GPS_Sentence();
+extern UINT32   read_GPS_Sentence();
 
 // XBee Commands
-extern UINT32 getXBee(char *, UINT32);
-extern void putsXBee(const char *, UINT32);
-extern UINT8 configureXBee(Sentence, Sentence, Sentence);
-extern UINT8 getXBeeConfig(void);
+extern UINT32   getXBee(char *, UINT32);
+extern void     putsXBee(const char *, UINT32);
+extern UINT8    configureXBee(Sentence, Sentence, Sentence);
+extern UINT8    getXBeeConfig(void);
 
 // FPGA Parallel Port Commands
-extern void setFPGAParallelPins(UINT8);
-extern UINT8 getFPGAParallelPins(void);
-extern void sendFPGAData(UINT8, UINT8);
-extern UINT8 getFPGAData(UINT8);
+extern void     setFPGAParallelPins(UINT8);
+extern UINT8    getFPGAParallelPins(void);
+extern void     sendFPGAData(UINT8, UINT8);
+extern UINT8    getFPGAData(UINT8);
 
 // SPI Functions
-extern void initiateSPI1(int CLKSPEED);
-extern void initiateSPI2(int CLKSPEED);
+extern void     initiateSPI1(int CLKSPEED);
+extern void     initiateSPI2(int CLKSPEED);
+
+// I2C Functions
+extern BOOL     I2C_StartTransfer(BOOL);
+extern BOOL     I2C_TransmitOneByte(UINT8);
+extern void     I2C_StopTransfer(void);
+extern BOOL     initializeI2C(void);

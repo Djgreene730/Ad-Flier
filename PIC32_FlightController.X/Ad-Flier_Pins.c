@@ -91,4 +91,9 @@ void initializeAllPins(void) {
     // Setup Accelerometer
     Accel_INT1_TR       = 1;    // Input
     Accel_INT2_TR       = 1;    // Input
+
+    // Setup I2C Lines
+    I2C1_SDA_PIN_TR     = 1;
+    I2C1_SCL_PIN_TR     = 0;
+    I2C1_SCL_PIN        = 0;
 }

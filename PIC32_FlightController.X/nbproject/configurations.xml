@@ -8,6 +8,7 @@
       <itemPath>Ad-Flier_Pins.h</itemPath>
       <itemPath>RTCC.h</itemPath>
       <itemPath>Gyroscope.h</itemPath>
+      <itemPath>Accelerometer.h</itemPath>
     </logicalFolder>
     <logicalFolder name="LibraryFiles"
                    displayName="Library Files"
@@ -28,6 +29,7 @@
       <itemPath>Ad-Flier_Pins.c</itemPath>
       <itemPath>RTCC.c</itemPath>
       <itemPath>Gyroscope.c</itemPath>
+      <itemPath>Accelerometer.c</itemPath>
     </logicalFolder>
     <logicalFolder name="ExternalFiles"
                    displayName="Important Files"

@@ -10,6 +10,9 @@
 #include "Ad-Flier_Pins.h"
 #include <plib.h>
 
+// Is I2C Initialized
+BOOL I2C_IS_Initialized = FALSE;
+
 // Last SPI Device Used
 SPI1_Devices LastSPI1Initialize = None;
 
@@ -99,11 +102,10 @@ void __ISR(_UART2_VECTOR, IPL2SOFT) IntUart2Handler(void) {
 // Get GPS Sentence from NMEA Port
 UINT8 currentGpsSentenceState = 0;
 UINT32 read_GPS_Sentence() {
-    while(gpsTempBuf.size < 150) {
+    while(UARTReceivedDataIsAvailable(UART2)) {
         UINT8 character = 0;
 
         // Wait for GPS Line to be Free, then grab the character
-        while(!UARTReceivedDataIsAvailable(UART2));
         character = UARTGetDataByte(UART2);
 
         // Wait for GPS Code Prefix
@@ -453,5 +455,81 @@ void initiateSPI2(int CLKSPEED) {
 }
 
 
+// I2C Functions
+// -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -
 
+
+// False=Start, Truen = Restart
+BOOL I2C_StartTransfer( BOOL restart ) {
+    I2C_STATUS  status;
+    IdleI2C1();
+
+    do {
+        // Wait for Line to Idle
+        while (!I2CBusIsIdle(I2C1));
+        
+        // Either Start or Restart the Line
+        if(restart) status = I2CRepeatStart(I2C1);
+        else status = I2CStart(I2C1);
+    } while (status != I2C_SUCCESS);
+    
+    // Wait for the signal to complete
+    /*
+    do {
+        status = I2CGetStatus(I2C1);
+    } while ( !(I2C_START & status) );
+    */
+    return TRUE;
+}
+
+// Send One Byte over I2C
+BOOL I2C_TransmitOneByte( UINT8 data ) {
+    I2C_STATUS  status;
+
+    // Wait for the transmitter to be ready
+    while(!I2CTransmitterIsReady(I2C1));
+
+    // Transmit the byte
+    status = I2CSendByte(I2C1, data);
+    if(status != I2C_SUCCESS) return FALSE;
+
+    // Wait for the transmission to finish
+    while(!I2CTransmissionHasCompleted(I2C1));
+
+    // Verify that the byte was acknowledged
+    if(!I2CByteWasAcknowledged(I2C1))  return FALSE;
+
+    return TRUE;
+}
+
+// Stops a transfer to/from the I2C Bus
+void I2C_StopTransfer( void ) {
+    I2C_STATUS  status;
+
+    // Send the Stop signal
+    I2CStop(I2C1);
+
+    // Wait for the signal to complete
+    /*
+    do {
+        status = I2CGetStatus(I2C1);
+    } while ( !(status & I2C_STOP) );
+    */
+}
+
+BOOL initializeI2C() {
+    // Set the I2C baudrate
+    I2CConfigure(I2C1, I2C_ENABLE_SLAVE_CLOCK_STRETCHING);
+    UINT32 actualClock = I2CSetFrequency(I2C1, SYS_FREQ/4, I2C_FREQ);
+
+    //Check Error: I2C1 clock frequency error exceeds 10%
+    if ( abs(actualClock - I2C_FREQ) > (I2C_FREQ / 10) ) {
+        return FALSE;
+    }
+
+    // Enable the I2C bus
+    I2CEnable(I2C1, TRUE);
+    I2C_IS_Initialized = TRUE;
+    return TRUE;
+}
 

@@ -63,9 +63,9 @@ int main(int argc, char** argv) {
     while(1) {
         
         // Send Current Position
-        Delayms(100);        
-        while (gps_nmea_position.ready == 0);
-        putsBluetooth(gps_nmea_position.data, gps_nmea_position.size);
+        //Delayms(100);
+        //while (gps_nmea_position.ready == 0);
+        //putsBluetooth(gps_nmea_position.data, gps_nmea_position.size);
 
         // Send Current Gyro Readings
         while (gyroTempBuf.ready == 0);
