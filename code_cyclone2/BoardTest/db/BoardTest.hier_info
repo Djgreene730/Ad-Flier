@@ -11,63 +11,39 @@ clk => BLED_Blue[3]~reg0.CLK
 clk => SPI_Slave:U_PICSPI_Slave.clk
 clk => rangefinder:U_Ranger_Top.clk
 clk => rangefinder:U_Ranger_Botom.clk
-clk => motor_pwm:Motor_1.clk
-clk => motor_pwm:Motor_2.clk
-clk => motor_pwm:Motor_3.clk
-clk => motor_pwm:Motor_4.clk
-clk => regmap:Registers.clk
+clk => motor_pwm:U_Motor_1.clk
+clk => motor_pwm:U_Motor_2.clk
+clk => motor_pwm:U_Motor_3.clk
+clk => motor_pwm:U_Motor_4.clk
+clk => regmap:U_Registers.clk
 clk => quadreg:U_RegAM.clk
 clk => quadreg:U_RegTR.clk
+clk => pid_yaw_controller:U_Yaw.clk
+clk => pid_pitch_controller:U_Pitch.clk
+clk => pid_roll_controller:U_Roll.clk
+clk => pid_altitude_controller:U_Altitude.clk
 clk_DS1085Z_0 => ~NO_FANOUT~
 clk_DS1085Z_1 => ~NO_FANOUT~
-Switch_1[0] => pwm1[7].OUTPUTSELECT
-Switch_1[0] => pwm1[6].OUTPUTSELECT
-Switch_1[0] => pwm1[5].OUTPUTSELECT
-Switch_1[0] => pwm1[4].OUTPUTSELECT
-Switch_1[0] => pwm1[3].OUTPUTSELECT
-Switch_1[0] => pwm1[2].OUTPUTSELECT
-Switch_1[0] => pwm1[1].OUTPUTSELECT
-Switch_1[0] => pwm1[0].OUTPUTSELECT
-Switch_1[1] => pwm2[7].OUTPUTSELECT
-Switch_1[1] => pwm2[6].OUTPUTSELECT
-Switch_1[1] => pwm2[5].OUTPUTSELECT
-Switch_1[1] => pwm2[4].OUTPUTSELECT
-Switch_1[1] => pwm2[3].OUTPUTSELECT
-Switch_1[1] => pwm2[2].OUTPUTSELECT
-Switch_1[1] => pwm2[1].OUTPUTSELECT
-Switch_1[1] => pwm2[0].OUTPUTSELECT
-Switch_1[2] => pwm3[7].OUTPUTSELECT
-Switch_1[2] => pwm3[6].OUTPUTSELECT
-Switch_1[2] => pwm3[5].OUTPUTSELECT
-Switch_1[2] => pwm3[4].OUTPUTSELECT
-Switch_1[2] => pwm3[3].OUTPUTSELECT
-Switch_1[2] => pwm3[2].OUTPUTSELECT
-Switch_1[2] => pwm3[1].OUTPUTSELECT
-Switch_1[2] => pwm3[0].OUTPUTSELECT
-Switch_1[3] => pwm4[7].OUTPUTSELECT
-Switch_1[3] => pwm4[6].OUTPUTSELECT
-Switch_1[3] => pwm4[5].OUTPUTSELECT
-Switch_1[3] => pwm4[4].OUTPUTSELECT
-Switch_1[3] => pwm4[3].OUTPUTSELECT
-Switch_1[3] => pwm4[2].OUTPUTSELECT
-Switch_1[3] => pwm4[1].OUTPUTSELECT
-Switch_1[3] => pwm4[0].OUTPUTSELECT
-Switch_2 => regmap:Registers.start
+Switch_1[0] => ~NO_FANOUT~
+Switch_1[1] => ~NO_FANOUT~
+Switch_1[2] => ~NO_FANOUT~
+Switch_1[3] => ~NO_FANOUT~
+Switch_2 => regmap:U_Registers.start
 Switch_2 => quadreg:U_RegAM.start
 Switch_2 => quadreg:U_RegTR.start
 Switch_3 => ~NO_FANOUT~
 Switch_4 => ~NO_FANOUT~
-PIC_PBUS_Data[0] <> regmap:Registers.data[0]
-PIC_PBUS_Data[1] <> regmap:Registers.data[1]
-PIC_PBUS_Data[2] <> regmap:Registers.data[2]
-PIC_PBUS_Data[3] <> regmap:Registers.data[3]
-PIC_PBUS_Data[4] <> regmap:Registers.data[4]
-PIC_PBUS_Data[5] <> regmap:Registers.data[5]
-PIC_PBUS_Data[6] <> regmap:Registers.data[6]
-PIC_PBUS_Data[7] <> regmap:Registers.data[7]
-PIC_PBUS_A_D => regmap:Registers.a_d
-PIC_PBUS_R_W => regmap:Registers.r_w
-PIC_PBUS_OK_IN => regmap:Registers.ok_out
+PIC_PBUS_Data[0] <> regmap:U_Registers.data[0]
+PIC_PBUS_Data[1] <> regmap:U_Registers.data[1]
+PIC_PBUS_Data[2] <> regmap:U_Registers.data[2]
+PIC_PBUS_Data[3] <> regmap:U_Registers.data[3]
+PIC_PBUS_Data[4] <> regmap:U_Registers.data[4]
+PIC_PBUS_Data[5] <> regmap:U_Registers.data[5]
+PIC_PBUS_Data[6] <> regmap:U_Registers.data[6]
+PIC_PBUS_Data[7] <> regmap:U_Registers.data[7]
+PIC_PBUS_A_D => regmap:U_Registers.a_d
+PIC_PBUS_R_W => regmap:U_Registers.r_w
+PIC_PBUS_OK_IN => regmap:U_Registers.ok_out
 PIC_SPI_SCLK => SPI_Slave:U_PICSPI_Slave.SCK
 PIC_SPI_MOSI => SPI_Slave:U_PICSPI_Slave.MOSI
 PIC_SPI_Select => SPI_Slave:U_PICSPI_Slave.SSEL
@@ -2623,7 +2599,7 @@ datab[0] => datab_node[0].IN0
 datab[1] => datab_node[1].IN0
 
 
-|BoardTest|motor_pwm:Motor_1
+|BoardTest|motor_pwm:U_Motor_1
 clk => pwm~reg0.CLK
 clk => pulsecount[0].CLK
 clk => pulsecount[1].CLK
@@ -2655,7 +2631,7 @@ speed[6] => LessThan0.IN6
 speed[7] => LessThan0.IN5
 
 
-|BoardTest|motor_pwm:Motor_2
+|BoardTest|motor_pwm:U_Motor_2
 clk => pwm~reg0.CLK
 clk => pulsecount[0].CLK
 clk => pulsecount[1].CLK
@@ -2687,7 +2663,7 @@ speed[6] => LessThan0.IN6
 speed[7] => LessThan0.IN5
 
 
-|BoardTest|motor_pwm:Motor_3
+|BoardTest|motor_pwm:U_Motor_3
 clk => pwm~reg0.CLK
 clk => pulsecount[0].CLK
 clk => pulsecount[1].CLK
@@ -2719,7 +2695,7 @@ speed[6] => LessThan0.IN6
 speed[7] => LessThan0.IN5
 
 
-|BoardTest|motor_pwm:Motor_4
+|BoardTest|motor_pwm:U_Motor_4
 clk => pwm~reg0.CLK
 clk => pulsecount[0].CLK
 clk => pulsecount[1].CLK
@@ -2751,7 +2727,7 @@ speed[6] => LessThan0.IN6
 speed[7] => LessThan0.IN5
 
 
-|BoardTest|regmap:Registers
+|BoardTest|regmap:U_Registers
 clk => reg_controller:RegCont.clk
 clk => addreg:RegAdd.clk
 clk => quadreg:RegXD.clk
@@ -2785,7 +2761,7 @@ r_w => reg_controller:RegCont.r_w
 ok_out => reg_controller:RegCont.ok_out
 
 
-|BoardTest|regmap:Registers|reg_controller:RegCont
+|BoardTest|regmap:U_Registers|reg_controller:RegCont
 clk => state~1.DATAIN
 start => state~3.DATAIN
 address[0] => Equal0.IN15
@@ -2870,7 +2846,7 @@ ok_out => Selector1.IN1
 ok_out => Selector2.IN2
 
 
-|BoardTest|regmap:Registers|addreg:RegAdd
+|BoardTest|regmap:U_Registers|addreg:RegAdd
 clk => tmp[0].CLK
 clk => tmp[1].CLK
 clk => tmp[2].CLK
@@ -2913,7 +2889,7 @@ rego_en => reg_data[6].OE
 rego_en => reg_data[7].OE
 
 
-|BoardTest|regmap:Registers|quadreg:RegXD
+|BoardTest|regmap:U_Registers|quadreg:RegXD
 clk => tmp[0].CLK
 clk => tmp[1].CLK
 clk => tmp[2].CLK
@@ -2956,7 +2932,7 @@ rego_en => reg_data[6].OE
 rego_en => reg_data[7].OE
 
 
-|BoardTest|regmap:Registers|quadreg:RegYD
+|BoardTest|regmap:U_Registers|quadreg:RegYD
 clk => tmp[0].CLK
 clk => tmp[1].CLK
 clk => tmp[2].CLK
@@ -2999,7 +2975,7 @@ rego_en => reg_data[6].OE
 rego_en => reg_data[7].OE
 
 
-|BoardTest|regmap:Registers|quadreg:RegZD
+|BoardTest|regmap:U_Registers|quadreg:RegZD
 clk => tmp[0].CLK
 clk => tmp[1].CLK
 clk => tmp[2].CLK
@@ -3042,7 +3018,7 @@ rego_en => reg_data[6].OE
 rego_en => reg_data[7].OE
 
 
-|BoardTest|regmap:Registers|quadreg:RegXM
+|BoardTest|regmap:U_Registers|quadreg:RegXM
 clk => tmp[0].CLK
 clk => tmp[1].CLK
 clk => tmp[2].CLK
@@ -3085,7 +3061,7 @@ rego_en => reg_data[6].OE
 rego_en => reg_data[7].OE
 
 
-|BoardTest|regmap:Registers|quadreg:RegYM
+|BoardTest|regmap:U_Registers|quadreg:RegYM
 clk => tmp[0].CLK
 clk => tmp[1].CLK
 clk => tmp[2].CLK
@@ -3128,7 +3104,7 @@ rego_en => reg_data[6].OE
 rego_en => reg_data[7].OE
 
 
-|BoardTest|regmap:Registers|quadreg:RegZM
+|BoardTest|regmap:U_Registers|quadreg:RegZM
 clk => tmp[0].CLK
 clk => tmp[1].CLK
 clk => tmp[2].CLK
@@ -3171,7 +3147,7 @@ rego_en => reg_data[6].OE
 rego_en => reg_data[7].OE
 
 
-|BoardTest|regmap:Registers|quadreg:RegAD
+|BoardTest|regmap:U_Registers|quadreg:RegAD
 clk => tmp[0].CLK
 clk => tmp[1].CLK
 clk => tmp[2].CLK
@@ -3214,7 +3190,7 @@ rego_en => reg_data[6].OE
 rego_en => reg_data[7].OE
 
 
-|BoardTest|regmap:Registers|quadreg:RegMisc
+|BoardTest|regmap:U_Registers|quadreg:RegMisc
 clk => tmp[0].CLK
 clk => tmp[1].CLK
 clk => tmp[2].CLK
@@ -3257,7 +3233,7 @@ rego_en => reg_data[6].OE
 rego_en => reg_data[7].OE
 
 
-|BoardTest|regmap:Registers|outmux:MuxOut
+|BoardTest|regmap:U_Registers|outmux:MuxOut
 data[0] => tmp1.DATAB
 data[1] => tmp1.DATAB
 data[2] => tmp1.DATAB
@@ -3384,5 +3360,465 @@ rego_en => reg_data[4].OE
 rego_en => reg_data[5].OE
 rego_en => reg_data[6].OE
 rego_en => reg_data[7].OE
+
+
+|BoardTest|pid_yaw_controller:U_Yaw
+clk => previous_error[0].CLK
+clk => previous_error[1].CLK
+clk => previous_error[2].CLK
+clk => previous_error[3].CLK
+clk => previous_error[4].CLK
+clk => previous_error[5].CLK
+clk => previous_error[6].CLK
+clk => previous_error[7].CLK
+clk => previous_error[8].CLK
+clk => previous_error[9].CLK
+clk => previous_error[10].CLK
+clk => previous_error[11].CLK
+clk => previous_error[12].CLK
+clk => previous_error[13].CLK
+clk => previous_error[14].CLK
+clk => previous_error[15].CLK
+clk => previous_error[16].CLK
+clk => previous_error[17].CLK
+clk => previous_error[18].CLK
+clk => previous_error[19].CLK
+clk => previous_error[20].CLK
+clk => previous_error[21].CLK
+clk => previous_error[22].CLK
+clk => previous_error[23].CLK
+clk => previous_error[24].CLK
+clk => previous_error[25].CLK
+clk => previous_error[26].CLK
+clk => previous_error[27].CLK
+clk => previous_error[28].CLK
+clk => previous_error[29].CLK
+clk => previous_error[30].CLK
+clk => previous_error[31].CLK
+clk => error[0].CLK
+clk => error[1].CLK
+clk => error[2].CLK
+clk => error[3].CLK
+clk => error[4].CLK
+clk => error[5].CLK
+clk => error[6].CLK
+clk => error[7].CLK
+clk => error[8].CLK
+clk => error[9].CLK
+clk => error[10].CLK
+clk => error[11].CLK
+clk => error[12].CLK
+clk => error[13].CLK
+clk => error[14].CLK
+clk => error[15].CLK
+clk => error[16].CLK
+clk => error[17].CLK
+clk => error[18].CLK
+clk => error[19].CLK
+clk => error[20].CLK
+clk => error[21].CLK
+clk => error[22].CLK
+clk => error[23].CLK
+clk => error[24].CLK
+clk => error[25].CLK
+clk => error[26].CLK
+clk => error[27].CLK
+clk => error[28].CLK
+clk => error[29].CLK
+clk => error[30].CLK
+clk => error[31].CLK
+clk => u_old[0].CLK
+clk => u_old[1].CLK
+clk => u_old[2].CLK
+clk => u_old[3].CLK
+clk => u_old[4].CLK
+clk => u_old[5].CLK
+clk => u_old[6].CLK
+clk => u_old[7].CLK
+clk => u_old[8].CLK
+clk => u_old[9].CLK
+clk => u_old[10].CLK
+clk => u_old[11].CLK
+clk => u_old[12].CLK
+clk => u_old[13].CLK
+clk => u_old[14].CLK
+clk => u_old[15].CLK
+clk => u_old[16].CLK
+clk => u_old[17].CLK
+clk => u_old[18].CLK
+clk => u_old[19].CLK
+clk => u_old[20].CLK
+clk => u_old[21].CLK
+clk => u_old[22].CLK
+clk => u_old[23].CLK
+clk => u_old[24].CLK
+clk => u_old[25].CLK
+clk => u_old[26].CLK
+clk => u_old[27].CLK
+clk => u_old[28].CLK
+clk => u_old[29].CLK
+clk => u_old[30].CLK
+clk => u_old[31].CLK
+set_point[0] => Add0.IN16
+set_point[1] => Add0.IN15
+set_point[2] => Add0.IN14
+set_point[3] => Add0.IN13
+set_point[4] => Add0.IN12
+set_point[5] => Add0.IN11
+set_point[6] => Add0.IN10
+set_point[7] => Add0.IN9
+measured_point[0] => Add0.IN8
+measured_point[1] => Add0.IN7
+measured_point[2] => Add0.IN6
+measured_point[3] => Add0.IN5
+measured_point[4] => Add0.IN4
+measured_point[5] => Add0.IN3
+measured_point[6] => Add0.IN2
+measured_point[7] => Add0.IN1
+
+
+|BoardTest|pid_pitch_controller:U_Pitch
+clk => previous_error[0].CLK
+clk => previous_error[1].CLK
+clk => previous_error[2].CLK
+clk => previous_error[3].CLK
+clk => previous_error[4].CLK
+clk => previous_error[5].CLK
+clk => previous_error[6].CLK
+clk => previous_error[7].CLK
+clk => previous_error[8].CLK
+clk => previous_error[9].CLK
+clk => previous_error[10].CLK
+clk => previous_error[11].CLK
+clk => previous_error[12].CLK
+clk => previous_error[13].CLK
+clk => previous_error[14].CLK
+clk => previous_error[15].CLK
+clk => previous_error[16].CLK
+clk => previous_error[17].CLK
+clk => previous_error[18].CLK
+clk => previous_error[19].CLK
+clk => previous_error[20].CLK
+clk => previous_error[21].CLK
+clk => previous_error[22].CLK
+clk => previous_error[23].CLK
+clk => previous_error[24].CLK
+clk => previous_error[25].CLK
+clk => previous_error[26].CLK
+clk => previous_error[27].CLK
+clk => previous_error[28].CLK
+clk => previous_error[29].CLK
+clk => previous_error[30].CLK
+clk => previous_error[31].CLK
+clk => error[0].CLK
+clk => error[1].CLK
+clk => error[2].CLK
+clk => error[3].CLK
+clk => error[4].CLK
+clk => error[5].CLK
+clk => error[6].CLK
+clk => error[7].CLK
+clk => error[8].CLK
+clk => error[9].CLK
+clk => error[10].CLK
+clk => error[11].CLK
+clk => error[12].CLK
+clk => error[13].CLK
+clk => error[14].CLK
+clk => error[15].CLK
+clk => error[16].CLK
+clk => error[17].CLK
+clk => error[18].CLK
+clk => error[19].CLK
+clk => error[20].CLK
+clk => error[21].CLK
+clk => error[22].CLK
+clk => error[23].CLK
+clk => error[24].CLK
+clk => error[25].CLK
+clk => error[26].CLK
+clk => error[27].CLK
+clk => error[28].CLK
+clk => error[29].CLK
+clk => error[30].CLK
+clk => error[31].CLK
+clk => u_old[0].CLK
+clk => u_old[1].CLK
+clk => u_old[2].CLK
+clk => u_old[3].CLK
+clk => u_old[4].CLK
+clk => u_old[5].CLK
+clk => u_old[6].CLK
+clk => u_old[7].CLK
+clk => u_old[8].CLK
+clk => u_old[9].CLK
+clk => u_old[10].CLK
+clk => u_old[11].CLK
+clk => u_old[12].CLK
+clk => u_old[13].CLK
+clk => u_old[14].CLK
+clk => u_old[15].CLK
+clk => u_old[16].CLK
+clk => u_old[17].CLK
+clk => u_old[18].CLK
+clk => u_old[19].CLK
+clk => u_old[20].CLK
+clk => u_old[21].CLK
+clk => u_old[22].CLK
+clk => u_old[23].CLK
+clk => u_old[24].CLK
+clk => u_old[25].CLK
+clk => u_old[26].CLK
+clk => u_old[27].CLK
+clk => u_old[28].CLK
+clk => u_old[29].CLK
+clk => u_old[30].CLK
+clk => u_old[31].CLK
+set_point[0] => Add0.IN16
+set_point[1] => Add0.IN15
+set_point[2] => Add0.IN14
+set_point[3] => Add0.IN13
+set_point[4] => Add0.IN12
+set_point[5] => Add0.IN11
+set_point[6] => Add0.IN10
+set_point[7] => Add0.IN9
+measured_point[0] => Add0.IN8
+measured_point[1] => Add0.IN7
+measured_point[2] => Add0.IN6
+measured_point[3] => Add0.IN5
+measured_point[4] => Add0.IN4
+measured_point[5] => Add0.IN3
+measured_point[6] => Add0.IN2
+measured_point[7] => Add0.IN1
+
+
+|BoardTest|pid_roll_controller:U_Roll
+clk => previous_error[0].CLK
+clk => previous_error[1].CLK
+clk => previous_error[2].CLK
+clk => previous_error[3].CLK
+clk => previous_error[4].CLK
+clk => previous_error[5].CLK
+clk => previous_error[6].CLK
+clk => previous_error[7].CLK
+clk => previous_error[8].CLK
+clk => previous_error[9].CLK
+clk => previous_error[10].CLK
+clk => previous_error[11].CLK
+clk => previous_error[12].CLK
+clk => previous_error[13].CLK
+clk => previous_error[14].CLK
+clk => previous_error[15].CLK
+clk => previous_error[16].CLK
+clk => previous_error[17].CLK
+clk => previous_error[18].CLK
+clk => previous_error[19].CLK
+clk => previous_error[20].CLK
+clk => previous_error[21].CLK
+clk => previous_error[22].CLK
+clk => previous_error[23].CLK
+clk => previous_error[24].CLK
+clk => previous_error[25].CLK
+clk => previous_error[26].CLK
+clk => previous_error[27].CLK
+clk => previous_error[28].CLK
+clk => previous_error[29].CLK
+clk => previous_error[30].CLK
+clk => previous_error[31].CLK
+clk => error[0].CLK
+clk => error[1].CLK
+clk => error[2].CLK
+clk => error[3].CLK
+clk => error[4].CLK
+clk => error[5].CLK
+clk => error[6].CLK
+clk => error[7].CLK
+clk => error[8].CLK
+clk => error[9].CLK
+clk => error[10].CLK
+clk => error[11].CLK
+clk => error[12].CLK
+clk => error[13].CLK
+clk => error[14].CLK
+clk => error[15].CLK
+clk => error[16].CLK
+clk => error[17].CLK
+clk => error[18].CLK
+clk => error[19].CLK
+clk => error[20].CLK
+clk => error[21].CLK
+clk => error[22].CLK
+clk => error[23].CLK
+clk => error[24].CLK
+clk => error[25].CLK
+clk => error[26].CLK
+clk => error[27].CLK
+clk => error[28].CLK
+clk => error[29].CLK
+clk => error[30].CLK
+clk => error[31].CLK
+clk => u_old[0].CLK
+clk => u_old[1].CLK
+clk => u_old[2].CLK
+clk => u_old[3].CLK
+clk => u_old[4].CLK
+clk => u_old[5].CLK
+clk => u_old[6].CLK
+clk => u_old[7].CLK
+clk => u_old[8].CLK
+clk => u_old[9].CLK
+clk => u_old[10].CLK
+clk => u_old[11].CLK
+clk => u_old[12].CLK
+clk => u_old[13].CLK
+clk => u_old[14].CLK
+clk => u_old[15].CLK
+clk => u_old[16].CLK
+clk => u_old[17].CLK
+clk => u_old[18].CLK
+clk => u_old[19].CLK
+clk => u_old[20].CLK
+clk => u_old[21].CLK
+clk => u_old[22].CLK
+clk => u_old[23].CLK
+clk => u_old[24].CLK
+clk => u_old[25].CLK
+clk => u_old[26].CLK
+clk => u_old[27].CLK
+clk => u_old[28].CLK
+clk => u_old[29].CLK
+clk => u_old[30].CLK
+clk => u_old[31].CLK
+set_point[0] => Add0.IN16
+set_point[1] => Add0.IN15
+set_point[2] => Add0.IN14
+set_point[3] => Add0.IN13
+set_point[4] => Add0.IN12
+set_point[5] => Add0.IN11
+set_point[6] => Add0.IN10
+set_point[7] => Add0.IN9
+measured_point[0] => Add0.IN8
+measured_point[1] => Add0.IN7
+measured_point[2] => Add0.IN6
+measured_point[3] => Add0.IN5
+measured_point[4] => Add0.IN4
+measured_point[5] => Add0.IN3
+measured_point[6] => Add0.IN2
+measured_point[7] => Add0.IN1
+
+
+|BoardTest|pid_altitude_controller:U_Altitude
+clk => previous_error[0].CLK
+clk => previous_error[1].CLK
+clk => previous_error[2].CLK
+clk => previous_error[3].CLK
+clk => previous_error[4].CLK
+clk => previous_error[5].CLK
+clk => previous_error[6].CLK
+clk => previous_error[7].CLK
+clk => previous_error[8].CLK
+clk => previous_error[9].CLK
+clk => previous_error[10].CLK
+clk => previous_error[11].CLK
+clk => previous_error[12].CLK
+clk => previous_error[13].CLK
+clk => previous_error[14].CLK
+clk => previous_error[15].CLK
+clk => previous_error[16].CLK
+clk => previous_error[17].CLK
+clk => previous_error[18].CLK
+clk => previous_error[19].CLK
+clk => previous_error[20].CLK
+clk => previous_error[21].CLK
+clk => previous_error[22].CLK
+clk => previous_error[23].CLK
+clk => previous_error[24].CLK
+clk => previous_error[25].CLK
+clk => previous_error[26].CLK
+clk => previous_error[27].CLK
+clk => previous_error[28].CLK
+clk => previous_error[29].CLK
+clk => previous_error[30].CLK
+clk => previous_error[31].CLK
+clk => error[0].CLK
+clk => error[1].CLK
+clk => error[2].CLK
+clk => error[3].CLK
+clk => error[4].CLK
+clk => error[5].CLK
+clk => error[6].CLK
+clk => error[7].CLK
+clk => error[8].CLK
+clk => error[9].CLK
+clk => error[10].CLK
+clk => error[11].CLK
+clk => error[12].CLK
+clk => error[13].CLK
+clk => error[14].CLK
+clk => error[15].CLK
+clk => error[16].CLK
+clk => error[17].CLK
+clk => error[18].CLK
+clk => error[19].CLK
+clk => error[20].CLK
+clk => error[21].CLK
+clk => error[22].CLK
+clk => error[23].CLK
+clk => error[24].CLK
+clk => error[25].CLK
+clk => error[26].CLK
+clk => error[27].CLK
+clk => error[28].CLK
+clk => error[29].CLK
+clk => error[30].CLK
+clk => error[31].CLK
+clk => u_old[0].CLK
+clk => u_old[1].CLK
+clk => u_old[2].CLK
+clk => u_old[3].CLK
+clk => u_old[4].CLK
+clk => u_old[5].CLK
+clk => u_old[6].CLK
+clk => u_old[7].CLK
+clk => u_old[8].CLK
+clk => u_old[9].CLK
+clk => u_old[10].CLK
+clk => u_old[11].CLK
+clk => u_old[12].CLK
+clk => u_old[13].CLK
+clk => u_old[14].CLK
+clk => u_old[15].CLK
+clk => u_old[16].CLK
+clk => u_old[17].CLK
+clk => u_old[18].CLK
+clk => u_old[19].CLK
+clk => u_old[20].CLK
+clk => u_old[21].CLK
+clk => u_old[22].CLK
+clk => u_old[23].CLK
+clk => u_old[24].CLK
+clk => u_old[25].CLK
+clk => u_old[26].CLK
+clk => u_old[27].CLK
+clk => u_old[28].CLK
+clk => u_old[29].CLK
+clk => u_old[30].CLK
+clk => u_old[31].CLK
+set_point[0] => Add0.IN16
+set_point[1] => Add0.IN15
+set_point[2] => Add0.IN14
+set_point[3] => Add0.IN13
+set_point[4] => Add0.IN12
+set_point[5] => Add0.IN11
+set_point[6] => Add0.IN10
+set_point[7] => Add0.IN9
+measured_point[0] => Add0.IN8
+measured_point[1] => Add0.IN7
+measured_point[2] => Add0.IN6
+measured_point[3] => Add0.IN5
+measured_point[4] => Add0.IN4
+measured_point[5] => Add0.IN3
+measured_point[6] => Add0.IN2
+measured_point[7] => Add0.IN1
 
 

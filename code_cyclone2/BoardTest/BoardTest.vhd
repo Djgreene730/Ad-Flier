@@ -160,11 +160,44 @@ architecture STR of BoardTest is
 			);
 	end component;
 	
+	component pid_yaw_controller is 
+		port (
+			clk : in std_logic;
+			set_point, measured_point : in std_logic_vector(7 downto 0);
+			pwm_input : out std_logic_vector(8 downto 0)
+		   );
+	end component;
+
+	component pid_pitch_controller is 
+		port (
+			clk : in std_logic;
+			set_point, measured_point : in std_logic_vector(7 downto 0);
+			pwm_input : out std_logic_vector(8 downto 0)
+		   );
+	end component;
+
+	component pid_roll_controller is 
+		port (
+			clk : in std_logic;
+			set_point, measured_point : in std_logic_vector(7 downto 0);
+			pwm_input : out std_logic_vector(8 downto 0)
+		   );
+	end component;
+
+	component pid_altitude_controller is 
+		port (
+			clk : in std_logic;
+			set_point, measured_point : in std_logic_vector(7 downto 0);
+			pwm_input : out std_logic_vector(8 downto 0)
+		   );
+	end component;
+	
 	-- Signals
 	signal clk_1Hz			:	std_logic := '0';
 	signal pwm1, pwm2, pwm3, pwm4, count : std_logic_vector(7 downto 0) := "00000000";
 	signal RegXD, RegYD, RegZD, RegXM, RegYM, RegZM, RegAD, RegMisc : std_logic_vector(7 downto 0) := "00000000";
 	signal RegAM, RegAMc, RegTR, RegTRc : std_logic_vector(7 downto 0) := "00000000";
+	signal pwm_yaw, pwm_pitch, pwm_roll, pwm_altitude : std_logic_vector(8 downto 0) := "000000000";
 
 	-- Temp Register for Ultrasonics
 	signal Top_Range, Altitude : std_logic_vector(7 downto 0) := (others => '0');
@@ -174,17 +207,30 @@ begin
 	-- Instantiations:
 	U_1HzClkDivider		:	clk_div generic map (6293750) port map (clk, clk_1Hz);
 	U_PICSPI_Slave			:	SPI_Slave port map (clk, PIC_SPI_SCLK, PIC_SPI_MOSI, PIC_SPI_MISO, PIC_SPI_Select, TLED_Orange_2);
+	
+	--Range Finder Instantiations
 	U_Ranger_Top			:	rangefinder port map (clk, Ultra_T_Edge, Ultra_T_Trigger, Top_Range);
 	U_Ranger_Botom			:	rangefinder port map (clk, Ultra_B_Edge, Ultra_B_Trigger, Altitude);
-	Motor_1              :  motor_pwm port map (clk, pwm1, Motor_North);
-	Motor_2					:  motor_pwm port map (clk, pwm2, Motor_East);
-	Motor_3					:  motor_pwm port map (clk, pwm3, Motor_South);
-	Motor_4					:  motor_pwm port map (clk, pwm4, Motor_West);
-	Registers            :  regmap    port map (clk, Switch_2, PIC_PBUS_Data, PIC_PBUS_A_D, PIC_PBUS_R_W,
+	
+	--Motor Instantiations
+	U_Motor_1              :  motor_pwm port map (clk, pwm1, Motor_North);
+	U_Motor_2					:  motor_pwm port map (clk, pwm2, Motor_East);
+	U_Motor_3					:  motor_pwm port map (clk, pwm3, Motor_South);
+	U_Motor_4					:  motor_pwm port map (clk, pwm4, Motor_West);
+	
+	--Register Instantations
+	U_Registers             :  regmap    port map (clk, Switch_2, PIC_PBUS_Data, PIC_PBUS_A_D, PIC_PBUS_R_W,
 															  PIC_PBUS_OK_IN, PIC_PBUS_OK_OUT, 
 															  RegXD, RegYD, RegZD, RegXM, RegYM, RegZM, RegAD, RegMisc);
-	U_RegAM                : quadreg port map(clk, Altitude, Switch_2, '1', '1', RegAM, RegAMc);
-	U_RegTR                : quadreg port map(clk, Top_Range, Switch_2, '1', '1', RegTR, RegTRc);
+	U_RegAM                 : quadreg port map(clk, Altitude, Switch_2, '1', '1', RegAM, RegAMc);
+	U_RegTR                 : quadreg port map(clk, Top_Range, Switch_2, '1', '1', RegTR, RegTRc);
+	
+	--PID Instations
+	U_Yaw                   : pid_yaw_controller port map (clk, RegZD, RegZM, pwm_yaw);
+	U_Pitch                 : pid_pitch_controller port map (clk, RegYD, RegYM, pwm_pitch);
+	U_Roll                  : pid_roll_controller port map (clk, RegXD, RegXM, pwm_roll);
+	U_Altitude              : pid_altitude_controller port map (clk, RegAD, RegAM, pwm_altitude);
+
 	
 	-- Setup: Bi-Directional Ports to High Impedance
 --	PIC_PBUS_Data			<= (others => 'Z');
@@ -203,12 +249,11 @@ begin
 	SRAM_WriteProtect		<= '0';
 	Accel_SelAddr0			<= '0';	 
 	
-	
 	-- Test 1:
 	-- A.) Toggle TLED_Orange_1 every clk_1Hz Pulse	
 	process (clk_1Hz)
 		variable current_State	:	std_logic := '0';
-		variable counter				:	std_logic_vector(7 downto 0) := (others => '0');
+		variable counter		   :	std_logic_vector(7 downto 0) := (others => '0');
 	begin
 		if (clk_1Hz'event and clk_1Hz = '1') then
 			current_State := not current_State;
@@ -231,11 +276,9 @@ begin
 	
 	--Test 3:
 	--A.) Run Motors
-
-	
-	pwm1 <= count when Switch_1(0) = '1' else "00001000";
-	pwm2 <= count when Switch_1(1) = '1' else "00001000";
-	pwm3 <= count when Switch_1(2) = '1' else "00001000";
-	pwm4 <= count when Switch_1(3) = '1' else "00001000";
+	--	pwm1 <= count when Switch_1(0) = '1' else "00001000";
+	--	pwm2 <= count when Switch_1(1) = '1' else "00001000";
+	--	pwm3 <= count when Switch_1(2) = '1' else "00001000";
+	--	pwm4 <= count when Switch_1(3) = '1' else "00001000";
 		
 end STR; 

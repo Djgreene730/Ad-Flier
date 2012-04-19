@@ -146,13 +146,16 @@ set_instance_assignment -name IO_STANDARD "2.5 V" -to Camera_VD
 set_global_assignment -name VHDL_FILE motor_pwm.vhd
 set_global_assignment -name STRATIX_CONFIGURATION_DEVICE EPCS16
 set_global_assignment -name RESERVE_ALL_UNUSED_PINS_NO_OUTPUT_GND "AS INPUT TRI-STATED"
-set_global_assignment -name VHDL_FILE pid_controller.vhd
 set_global_assignment -name VHDL_FILE reg_controller.vhd
 set_global_assignment -name VHDL_FILE quadreg.vhd
 set_global_assignment -name VHDL_FILE outmux.vhd
 set_global_assignment -name VHDL_FILE regmap.vhd
 set_global_assignment -name VHDL_FILE addreg.vhd
 set_global_assignment -name VHDL_FILE rangefinder.vhd
+set_global_assignment -name VHDL_FILE pid_yaw_controller.vhd
+set_global_assignment -name VHDL_FILE pid_pitch_controller.vhd
+set_global_assignment -name VHDL_FILE pid_roll_controller.vhd
+set_global_assignment -name VHDL_FILE pid_altitude_controller.vhd
 set_global_assignment -name LL_ROOT_REGION ON -section_id "Root Region"
 set_global_assignment -name LL_MEMBER_STATE LOCKED -section_id "Root Region"
 set_global_assignment -name PARTITION_NETLIST_TYPE SOURCE -section_id Top

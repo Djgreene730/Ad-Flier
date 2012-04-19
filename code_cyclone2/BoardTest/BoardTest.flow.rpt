@@ -1,5 +1,5 @@
 Flow report for BoardTest
-Wed Apr 18 23:37:36 2012
+Thu Apr 19 02:08:56 2012
 Quartus II Version 11.0 Build 157 04/27/2011 SJ Web Edition
 
 
@@ -38,17 +38,17 @@ applicable agreement for further details.
 +-------------------------------------------------------------------------------+
 ; Flow Summary                                                                  ;
 +------------------------------------+------------------------------------------+
-; Flow Status                        ; Successful - Wed Apr 18 23:37:36 2012    ;
+; Flow Status                        ; Successful - Thu Apr 19 02:08:56 2012    ;
 ; Quartus II Version                 ; 11.0 Build 157 04/27/2011 SJ Web Edition ;
 ; Revision Name                      ; BoardTest                                ;
 ; Top-level Entity Name              ; BoardTest                                ;
 ; Family                             ; Cyclone II                               ;
 ; Device                             ; EP2C8T144C8                              ;
 ; Timing Models                      ; Final                                    ;
-; Total logic elements               ; 853 / 8,256 ( 10 % )                     ;
-;     Total combinational functions  ; 774 / 8,256 ( 9 % )                      ;
-;     Dedicated logic registers      ; 251 / 8,256 ( 3 % )                      ;
-; Total registers                    ; 251                                      ;
+; Total logic elements               ; 781 / 8,256 ( 9 % )                      ;
+;     Total combinational functions  ; 699 / 8,256 ( 8 % )                      ;
+;     Dedicated logic registers      ; 244 / 8,256 ( 3 % )                      ;
+; Total registers                    ; 244                                      ;
 ; Total pins                         ; 72 / 85 ( 85 % )                         ;
 ; Total virtual pins                 ; 0                                        ;
 ; Total memory bits                  ; 0 / 165,888 ( 0 % )                      ;
@@ -62,7 +62,7 @@ applicable agreement for further details.
 +-------------------+---------------------+
 ; Option            ; Setting             ;
 +-------------------+---------------------+
-; Start date & time ; 04/18/2012 23:37:18 ;
+; Start date & time ; 04/19/2012 02:08:39 ;
 ; Main task         ; Compilation         ;
 ; Revision Name     ; BoardTest           ;
 +-------------------+---------------------+
@@ -73,7 +73,7 @@ applicable agreement for further details.
 +-------------------------------------+-----------------------------------------------------------------------+---------------+-------------+----------------+
 ; Assignment Name                     ; Value                                                                 ; Default Value ; Entity Name ; Section Id     ;
 +-------------------------------------+-----------------------------------------------------------------------+---------------+-------------+----------------+
-; COMPILER_SIGNATURE_ID               ; 106400425559097.133480663805556                                       ; --            ; --          ; --             ;
+; COMPILER_SIGNATURE_ID               ; 106400425559097.133481571905320                                       ; --            ; --          ; --             ;
 ; EDA_OUTPUT_DATA_FORMAT              ; Vhdl                                                                  ; --            ; --          ; eda_simulation ;
 ; EDA_SIMULATION_TOOL                 ; ModelSim-Altera (VHDL)                                                ; <None>        ; --          ; --             ;
 ; MAX_CORE_JUNCTION_TEMP              ; 85                                                                    ; --            ; --          ; --             ;
@@ -90,12 +90,12 @@ applicable agreement for further details.
 +---------------------------+--------------+-------------------------+---------------------+------------------------------------+
 ; Module Name               ; Elapsed Time ; Average Processors Used ; Peak Virtual Memory ; Total CPU Time (on all processors) ;
 +---------------------------+--------------+-------------------------+---------------------+------------------------------------+
-; Analysis & Synthesis      ; 00:00:07     ; 1.0                     ; 312 MB              ; 00:00:07                           ;
-; Fitter                    ; 00:00:04     ; 1.0                     ; 322 MB              ; 00:00:04                           ;
-; Assembler                 ; 00:00:01     ; 1.0                     ; 260 MB              ; 00:00:01                           ;
-; TimeQuest Timing Analyzer ; 00:00:03     ; 1.0                     ; 258 MB              ; 00:00:03                           ;
-; EDA Netlist Writer        ; 00:00:01     ; 1.0                     ; 235 MB              ; 00:00:01                           ;
-; Total                     ; 00:00:16     ; --                      ; --                  ; 00:00:16                           ;
+; Analysis & Synthesis      ; 00:00:06     ; 1.0                     ; 314 MB              ; 00:00:06                           ;
+; Fitter                    ; 00:00:05     ; 1.0                     ; 321 MB              ; 00:00:04                           ;
+; Assembler                 ; 00:00:02     ; 1.0                     ; 260 MB              ; 00:00:01                           ;
+; TimeQuest Timing Analyzer ; 00:00:04     ; 1.0                     ; 255 MB              ; 00:00:03                           ;
+; EDA Netlist Writer        ; 00:00:00     ; 1.0                     ; 234 MB              ; 00:00:01                           ;
+; Total                     ; 00:00:17     ; --                      ; --                  ; 00:00:15                           ;
 +---------------------------+--------------+-------------------------+---------------------+------------------------------------+
 
 
