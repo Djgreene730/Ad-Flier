@@ -1,0 +1,7 @@
+Info: Saving your IP search path in C:\Users\David\.altera.quartus\ip\11.1sp1\ip_search_path\user_components.ipx
+Info: Using factories: CuspFactory, ImportFactory, DSPBuilderFactory, JarFactory, QvarFactory, TclModuleFactory, MegaVariationFactory, BeanElementFactory, LegacyFactory, DDRLegacyFactory, PresetFactory, EmbeddedSwTclDriverFactory, QsysFactory
+Progress: (0) searching C:/Users/David/GitHub/Ad-Flier/code_cyclone2/BoardTest/11.1sp1 (command line switch)
+Info: C:/Users/David/GitHub/Ad-Flier/code_cyclone2/BoardTest/11.1sp1 matched 1 files in 0.00 seconds
+Info: Found 0 components
+Apr 14, 2012 6:08:47 PM com.altera.utilities.Launcher launch
+INFO: Launching:C:/altera/11.1sp1/quartus//bin/../sopc_builder/bin/qsys-edit.exe --system-info=DEVICE_FAMILY=Cyclone II --project-dir=C:/Users/David/GitHub/Ad-Flier/code_cyclone2/BoardTest/
