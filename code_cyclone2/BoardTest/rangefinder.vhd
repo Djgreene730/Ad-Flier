@@ -32,35 +32,37 @@ END component;
 signal LSB : std_logic := '0';
 signal edgebegin, timevector, quotient, remain : std_logic_vector(23 downto 0) := "000000000000000000000000";
 constant denom : std_logic_vector(23 downto 0) := "000000000001110011101000";
-
+signal count : std_logic_vector(23 downto 0) := "000000000000000000000000";
 begin
 
-process(clk, edge)
-
-variable count : std_logic_vector(23 downto 0) := "000000000000000000000000";
-
+process(clk, edge, count)
+	variable edgeYet : std_logic := '0';
 begin 
 
-if clk'event and clk = '1' then
---Getting Range to Update Trigger every 62 ms
-	if count < "000110000000000000000000" then
-		count := count + '1';
-	else
-		count := "000000000000000000000000";
+	if (clk'event and clk = '1') then
+	--Getting Range to Update Trigger every 62 ms
+		if count < "000110000000000000000000" then
+			count <= count + '1';
+		else
+			count <= "000000000000000000000000";
+		end if;
+		
+	--Sending 10 us Trigger
+		if count < "000000000000000100000000" then --256
+			trigger <= '1';
+		else 
+			trigger <= '0';
+		end if;
+		
+	--Getting Count of Edge	
+		if (edge = '1' and edgeYet = '0') then
+			edgebegin <= count;
+			edgeYet := '1';
+		elsif (edge = '0' and edgeYet = '1') then
+			edgeYet := '0';
+		end if;
+			
 	end if;
-	
---Sending 10 us Trigger
-	if count < "000000000000000100000000" then --256
-		trigger <= '1';
-	else 
-		trigger <= '0';
-	end if;
-	
---Getting Count of Edge	
-	if (edge = '1' and edge'event) then
-		edgebegin <= count;
-	end if;
-end if;
 end process;
 
 --Getting Time Between Receiving Edge and Sending Trigger

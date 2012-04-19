@@ -80,7 +80,7 @@ entity BoardTest is
 		Accel_Interrupt1	:	in		std_logic;						-- Accelerometer Programmable Interrupt 1
 		Accel_Interrupt2	:	in		std_logic;						-- Accelerometer Programmable Interrupt 2
 		Accel_SelAddr0		:	out		std_logic						-- Accelerometer I2C Device Address (0:0x1C, 1:0x1D)
-	); 
+	); 	
 end BoardTest;
 
 architecture STR of BoardTest is
@@ -129,20 +129,33 @@ architecture STR of BoardTest is
 			);
    end component;
 	
+	component rangefinder is 
+		port (
+				clk : in std_logic;
+				edge : in std_logic;
+				trigger : out std_logic;
+				altitude : out std_logic_vector(7 downto 0)
+				);
+	end component;
+	
 	-- Signals
 	signal clk_1Hz			:	std_logic := '0';
-	signal pwm1, pwm2, pwm3, pwm5, count : std_logic_vector(7 downto 0) := "00000000";
+	signal pwm1, pwm2, pwm3, pwm4, count : std_logic_vector(7 downto 0) := "00000000";
 	signal RegXD, RegYD, RegZD, RegXM, RegYM, RegZM, RegAD, RegAM : std_logic_vector(7 downto 0) := "00000000";
+	
+	-- Temp Register for Ultrasonics
+	signal tempAltitude : std_logic_vector(7 downto 0) := (others => '0');
 
 begin
 
 	-- Instantiations:
-	U_1HzClkDivider			:	clk_div generic map (6293750) port map (clk, clk_1Hz);
+	U_1HzClkDivider		:	clk_div generic map (6293750) port map (clk, clk_1Hz);
 	U_PICSPI_Slave			:	SPI_Slave port map (clk, PIC_SPI_SCLK, PIC_SPI_MOSI, PIC_SPI_MISO, PIC_SPI_Select, TLED_Orange_2);
+	U_Ranger_Top			:	rangefinder port map (clk, Ultra_T_Edge, Ultra_T_Trigger, tempAltitude);
 	Motor_1              :  motor_pwm port map (clk, pwm1, Motor_North);
 	Motor_2					:  motor_pwm port map (clk, pwm2, Motor_East);
 	Motor_3					:  motor_pwm port map (clk, pwm3, Motor_South);
-	Motor_5					:  motor_pwm port map (clk, pwm5, Motor_West);
+	Motor_4					:  motor_pwm port map (clk, pwm4, Motor_West);
 	Registers            :  regmap    port map (clk, Switch_2, PIC_PBUS_Data, PIC_PBUS_A_D, PIC_PBUS_R_W,
 															  PIC_PBUS_OK_IN, PIC_PBUS_OK_OUT, 
 															  RegXD, RegYD, RegZD, RegXM, RegYM, RegZM, RegAD, RegAM);
@@ -154,7 +167,6 @@ begin
 	
 	-- Setup: Define Initial Condition for Ports (Remove as Used!)
 --	PIC_PBUS_OK_OUT			<= '0';
-	Ultra_T_Trigger			<= '0';
 	Ultra_B_Trigger			<= '0';
 	Camera_SCL				<= '0';
 	Camera_RESET			<= '0';
@@ -185,11 +197,11 @@ begin
 	-- Test 2:
 	-- A.) Tie PICBUS_BUS to All Bottom LEDs
 	-- B.) Check every clk clock pulse
-	process (clk, PIC_PBUS_Data)
+	process (clk, tempAltitude)
 	begin
 		if (clk'event and clk = '1') then
-			BLED_Blue	<= PIC_PBUS_Data(7 downto 4);
-			BLED_Orange	<= PIC_PBUS_Data(3 downto 0);
+			BLED_Blue	<= tempAltitude(7 downto 4);
+			BLED_Orange	<= tempAltitude(3 downto 0);
 		end if;
 	end process;
 	
@@ -200,6 +212,6 @@ begin
 	pwm1 <= count when Switch_1(0) = '1' else "00001000";
 	pwm2 <= count when Switch_1(1) = '1' else "00001000";
 	pwm3 <= count when Switch_1(2) = '1' else "00001000";
-	pwm5 <= count when Switch_1(3) = '1' else "00001000";
+	pwm4 <= count when Switch_1(3) = '1' else "00001000";
 		
 end STR; 

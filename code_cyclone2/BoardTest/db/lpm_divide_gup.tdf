@@ -1,4 +1,4 @@
---lpm_divide DEVICE_FAMILY="Cyclone II" LPM_DREPRESENTATION="SIGNED" LPM_NREPRESENTATION="SIGNED" LPM_REMAINDERPOSITIVE="FALSE" LPM_WIDTHD=32 LPM_WIDTHN=32 OPTIMIZE_FOR_SPEED=5 denom numer quotient CARRY_CHAIN="MANUAL" CARRY_CHAIN_LENGTH=48 IGNORE_CARRY_BUFFERS="OFF"
+--lpm_divide DEVICE_FAMILY="Cyclone II" LPM_DREPRESENTATION="UNSIGNED" LPM_NREPRESENTATION="UNSIGNED" LPM_REMAINDERPOSITIVE="TRUE" LPM_WIDTHD=24 LPM_WIDTHN=24 OPTIMIZE_FOR_SPEED=5 denom numer quotient remain CARRY_CHAIN="MANUAL" CARRY_CHAIN_LENGTH=48 IGNORE_CARRY_BUFFERS="OFF"
 --VERSION_BEGIN 11.1SP1 cbx_cycloneii 2011:11:23:21:09:51:SJ cbx_lpm_abs 2011:11:23:21:09:51:SJ cbx_lpm_add_sub 2011:11:23:21:09:51:SJ cbx_lpm_divide 2011:11:23:21:09:51:SJ cbx_mgl 2011:11:23:21:11:22:SJ cbx_stratix 2011:11:23:21:09:51:SJ cbx_stratixii 2011:11:23:21:09:51:SJ cbx_util_mgl 2011:11:23:21:09:51:SJ  VERSION_END
 
 
@@ -17,20 +17,20 @@
 --  applicable agreement for further details.
 
 
-FUNCTION abs_divider_4dg (denominator[31..0], numerator[31..0])
-RETURNS ( quotient[31..0], remainder[31..0]);
+FUNCTION sign_div_unsign_bnh (denominator[23..0], numerator[23..0])
+RETURNS ( quotient[23..0], remainder[23..0]);
 
---synthesis_resources = lut 683 
-SUBDESIGN lpm_divide_nto
+--synthesis_resources = lut 319 
+SUBDESIGN lpm_divide_gup
 ( 
-	denom[31..0]	:	input;
-	numer[31..0]	:	input;
-	quotient[31..0]	:	output;
-	remain[31..0]	:	output;
+	denom[23..0]	:	input;
+	numer[23..0]	:	input;
+	quotient[23..0]	:	output;
+	remain[23..0]	:	output;
 ) 
 VARIABLE 
-	divider : abs_divider_4dg;
-	numer_tmp[31..0]	: WIRE;
+	divider : sign_div_unsign_bnh;
+	numer_tmp[23..0]	: WIRE;
 
 BEGIN 
 	divider.denominator[] = denom[];
