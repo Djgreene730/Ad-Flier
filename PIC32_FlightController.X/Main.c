@@ -53,7 +53,7 @@ int main(int argc, char** argv) {
     // Initialize Communication Systems
     initializeUART();
     setupGyroscope();
-    while (!I2C_IS_Initialized) initializeI2C();
+    //while (!I2C_IS_Initialized) initializeI2C();
 
     // Configure XBee
     xbee_baud.size = 1;     strcpy(xbee_baud.data, "6");
