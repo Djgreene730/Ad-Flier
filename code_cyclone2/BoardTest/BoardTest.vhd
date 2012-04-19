@@ -4,8 +4,10 @@
 --	Author:		David Greene
 --	=	=	=	=	=	=	=	=	=	=	=	=	=	=	=
 
-library ieee;
-use ieee.std_logic_1164.all;
+LIBRARY IEEE;
+use IEEE.STD_LOGIC_1164.ALL;
+use IEEE.STD_LOGIC_ARITH.ALL;
+use IEEE.NUMERIC_STD.ALL;
 use IEEE.STD_LOGIC_UNSIGNED.ALL;
 
 entity BoardTest is
@@ -198,6 +200,7 @@ architecture STR of BoardTest is
 	signal RegXD, RegYD, RegZD, RegXM, RegYM, RegZM, RegAD, RegMisc : std_logic_vector(7 downto 0) := "00000000";
 	signal RegAM, RegAMc, RegTR, RegTRc : std_logic_vector(7 downto 0) := "00000000";
 	signal pwm_yaw, pwm_pitch, pwm_roll, pwm_altitude : std_logic_vector(8 downto 0) := "000000000";
+	signal pwm_n, pwm_s, pwm_e, pwm_w : std_logic_vector(8 downto 0) := "000000000";
 
 	-- Temp Register for Ultrasonics
 	signal Top_Range, Altitude : std_logic_vector(7 downto 0) := (others => '0');
@@ -244,11 +247,64 @@ begin
 	FPGA_SPI_Clock			<= '0';
 	FPGA_SPI_MOSI			<= '0';
 	FPGA_I2C_Clock			<= '0';
-	Gyro_ChipSelect			<= '1';
-	SRAM_ChipSelect			<= '1';
+	Gyro_ChipSelect		<= '1';
+	SRAM_ChipSelect		<= '1';
 	SRAM_WriteProtect		<= '0';
-	Accel_SelAddr0			<= '0';	 
+	Accel_SelAddr0			<= '0';	
+
+	process(pwm_pitch, pwm_roll, pwm_altitude) --Adding Components of PID for PWM
+	begin
 	
+		pwm_n <= "000000000";
+		pwm_s <= "000000000";
+		pwm_e <= "000000000";
+		pwm_w <= "000000000";
+		
+		if pwm_pitch(8) = '0' then
+			pwm_n <= pwm_altitude + ('0' & pwm_pitch(7 downto 0)); --North Motor Component
+			pwm_s <= pwm_altitude - ('0' & pwm_pitch(7 downto 0)); --South Motor Component
+		elsif pwm_pitch(8) = '0' then
+			pwm_s <= pwm_altitude + ('0' & pwm_pitch(7 downto 0)); --South Motor Component
+			pwm_n <= pwm_altitude - ('0' & pwm_pitch(7 downto 0)); --North Motor Component
+		end if;
+		
+		if pwm_roll(8) = '0' then
+			pwm_e <= pwm_altitude + ('0' & pwm_roll(7 downto 0)); --East Motor Component
+			pwm_w <= pwm_altitude - ('0' & pwm_roll(7 downto 0)); --West Motor Component
+		elsif pwm_roll(8) = '0' then
+			pwm_e <= pwm_altitude + ('0' & pwm_roll(7 downto 0)); --West Motor Component
+			pwm_w <= pwm_altitude - ('0' & pwm_roll(7 downto 0)); --East Motor Component
+		end if;
+		
+	end process;
+	
+	process(pwm_n, pwm_s, pwm_e, pwm_w)
+	begin
+		if pwm_n(8) = '1' then
+			pwm1 <= "11111111";
+		else
+			pwm1 <= pwm_n(7 downto 0);
+		end if;
+
+		if pwm_e(8) = '1' then
+			pwm2 <= "11111111";
+		else
+			pwm2 <= pwm_e(7 downto 0);
+		end if;
+		
+		if pwm_s(8) = '1' then
+			pwm3 <= "11111111";
+		else
+			pwm3 <= pwm_s(7 downto 0);
+		end if;
+		
+		if pwm_w(8) = '1' then
+			pwm4 <= "11111111";
+		else
+			pwm4 <= pwm_w(7 downto 0);
+		end if;
+	end process;
+		
 	-- Test 1:
 	-- A.) Toggle TLED_Orange_1 every clk_1Hz Pulse	
 	process (clk_1Hz)
@@ -262,7 +318,7 @@ begin
 			count <= counter;
 		end if;
 	end process;
-
+	
 	-- Test 2:
 	-- A.) Tie PICBUS_BUS to All Bottom LEDs
 	-- B.) Check every clk clock pulse

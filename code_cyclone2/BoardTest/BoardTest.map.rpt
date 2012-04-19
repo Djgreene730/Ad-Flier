@@ -1,5 +1,5 @@
 Analysis & Synthesis report for BoardTest
-Thu Apr 19 02:08:45 2012
+Thu Apr 19 03:29:44 2012
 Quartus II Version 11.0 Build 157 04/27/2011 SJ Web Edition
 
 
@@ -21,20 +21,13 @@ Quartus II Version 11.0 Build 157 04/27/2011 SJ Web Edition
  13. Parameter Settings for User Entity Instance: clk_div:U_1HzClkDivider
  14. Parameter Settings for User Entity Instance: rangefinder:U_Ranger_Top|Divider:Div|lpm_divide:LPM_DIVIDE_component
  15. Parameter Settings for User Entity Instance: rangefinder:U_Ranger_Botom|Divider:Div|lpm_divide:LPM_DIVIDE_component
- 16. Port Connectivity Checks: "pid_altitude_controller:U_Altitude"
- 17. Port Connectivity Checks: "pid_roll_controller:U_Roll"
- 18. Port Connectivity Checks: "pid_pitch_controller:U_Pitch"
- 19. Port Connectivity Checks: "pid_yaw_controller:U_Yaw"
- 20. Port Connectivity Checks: "quadreg:U_RegTR"
- 21. Port Connectivity Checks: "quadreg:U_RegAM"
- 22. Port Connectivity Checks: "regmap:U_Registers"
- 23. Port Connectivity Checks: "motor_pwm:U_Motor_4"
- 24. Port Connectivity Checks: "motor_pwm:U_Motor_3"
- 25. Port Connectivity Checks: "motor_pwm:U_Motor_2"
- 26. Port Connectivity Checks: "motor_pwm:U_Motor_1"
- 27. Port Connectivity Checks: "rangefinder:U_Ranger_Top|Divider:Div"
- 28. Elapsed Time Per Partition
- 29. Analysis & Synthesis Messages
+ 16. Port Connectivity Checks: "pid_yaw_controller:U_Yaw"
+ 17. Port Connectivity Checks: "quadreg:U_RegTR"
+ 18. Port Connectivity Checks: "quadreg:U_RegAM"
+ 19. Port Connectivity Checks: "regmap:U_Registers"
+ 20. Port Connectivity Checks: "rangefinder:U_Ranger_Top|Divider:Div"
+ 21. Elapsed Time Per Partition
+ 22. Analysis & Synthesis Messages
 
 
 
@@ -60,15 +53,15 @@ applicable agreement for further details.
 +-------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                  ;
 +------------------------------------+------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Thu Apr 19 02:08:44 2012    ;
+; Analysis & Synthesis Status        ; Successful - Thu Apr 19 03:29:44 2012    ;
 ; Quartus II Version                 ; 11.0 Build 157 04/27/2011 SJ Web Edition ;
 ; Revision Name                      ; BoardTest                                ;
 ; Top-level Entity Name              ; BoardTest                                ;
 ; Family                             ; Cyclone II                               ;
-; Total logic elements               ; 835                                      ;
-;     Total combinational functions  ; 699                                      ;
-;     Dedicated logic registers      ; 244                                      ;
-; Total registers                    ; 244                                      ;
+; Total logic elements               ; 1,531                                    ;
+;     Total combinational functions  ; 1,363                                    ;
+;     Dedicated logic registers      ; 384                                      ;
+; Total registers                    ; 384                                      ;
 ; Total pins                         ; 72                                       ;
 ; Total virtual pins                 ; 0                                        ;
 ; Total memory bits                  ; 0                                        ;
@@ -207,27 +200,27 @@ Parallel compilation was disabled, but you have multiple processors available. E
 +---------------------------------------------+-------+
 ; Resource                                    ; Usage ;
 +---------------------------------------------+-------+
-; Estimated Total logic elements              ; 835   ;
+; Estimated Total logic elements              ; 1,531 ;
 ;                                             ;       ;
-; Total combinational functions               ; 699   ;
+; Total combinational functions               ; 1363  ;
 ; Logic element usage by number of LUT inputs ;       ;
-;     -- 4 input functions                    ; 86    ;
-;     -- 3 input functions                    ; 266   ;
-;     -- <=2 input functions                  ; 347   ;
+;     -- 4 input functions                    ; 341   ;
+;     -- 3 input functions                    ; 603   ;
+;     -- <=2 input functions                  ; 419   ;
 ;                                             ;       ;
 ; Logic elements by mode                      ;       ;
-;     -- normal mode                          ; 357   ;
-;     -- arithmetic mode                      ; 342   ;
+;     -- normal mode                          ; 799   ;
+;     -- arithmetic mode                      ; 564   ;
 ;                                             ;       ;
-; Total registers                             ; 244   ;
-;     -- Dedicated logic registers            ; 244   ;
+; Total registers                             ; 384   ;
+;     -- Dedicated logic registers            ; 384   ;
 ;     -- I/O registers                        ; 0     ;
 ;                                             ;       ;
 ; I/O pins                                    ; 72    ;
 ; Maximum fan-out node                        ; clk   ;
-; Maximum fan-out                             ; 242   ;
-; Total fan-out                               ; 2578  ;
-; Average fan-out                             ; 2.54  ;
+; Maximum fan-out                             ; 382   ;
+; Total fan-out                               ; 5032  ;
+; Average fan-out                             ; 2.77  ;
 +---------------------------------------------+-------+
 
 
@@ -236,23 +229,27 @@ Parallel compilation was disabled, but you have multiple processors available. E
 +----------------------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------+--------------+
 ; Compilation Hierarchy Node                   ; LC Combinationals ; LC Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name                                                                                                                                               ; Library Name ;
 +----------------------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------+--------------+
-; |BoardTest                                   ; 699 (10)          ; 244 (10)     ; 0           ; 0            ; 0       ; 0         ; 72   ; 0            ; |BoardTest                                                                                                                                                        ;              ;
+; |BoardTest                                   ; 1363 (70)         ; 384 (10)     ; 0           ; 0            ; 0       ; 0         ; 72   ; 0            ; |BoardTest                                                                                                                                                        ;              ;
 ;    |SPI_Slave:U_PICSPI_Slave|                ; 28 (28)           ; 31 (31)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |BoardTest|SPI_Slave:U_PICSPI_Slave                                                                                                                               ;              ;
 ;    |clk_div:U_1HzClkDivider|                 ; 41 (41)           ; 24 (24)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |BoardTest|clk_div:U_1HzClkDivider                                                                                                                                ;              ;
-;    |motor_pwm:U_Motor_1|                     ; 22 (22)           ; 21 (21)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |BoardTest|motor_pwm:U_Motor_1                                                                                                                                    ;              ;
-;    |motor_pwm:U_Motor_2|                     ; 0 (0)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |BoardTest|motor_pwm:U_Motor_2                                                                                                                                    ;              ;
-;    |motor_pwm:U_Motor_3|                     ; 0 (0)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |BoardTest|motor_pwm:U_Motor_3                                                                                                                                    ;              ;
-;    |motor_pwm:U_Motor_4|                     ; 0 (0)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |BoardTest|motor_pwm:U_Motor_4                                                                                                                                    ;              ;
-;    |rangefinder:U_Ranger_Botom|              ; 549 (69)          ; 74 (74)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |BoardTest|rangefinder:U_Ranger_Botom                                                                                                                             ;              ;
+;    |motor_pwm:U_Motor_1|                     ; 31 (31)           ; 21 (21)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |BoardTest|motor_pwm:U_Motor_1                                                                                                                                    ;              ;
+;    |motor_pwm:U_Motor_2|                     ; 9 (9)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |BoardTest|motor_pwm:U_Motor_2                                                                                                                                    ;              ;
+;    |motor_pwm:U_Motor_3|                     ; 9 (9)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |BoardTest|motor_pwm:U_Motor_3                                                                                                                                    ;              ;
+;    |motor_pwm:U_Motor_4|                     ; 9 (9)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |BoardTest|motor_pwm:U_Motor_4                                                                                                                                    ;              ;
+;    |pid_altitude_controller:U_Altitude|      ; 176 (176)         ; 44 (44)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |BoardTest|pid_altitude_controller:U_Altitude                                                                                                                     ;              ;
+;    |pid_pitch_controller:U_Pitch|            ; 175 (175)         ; 44 (44)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |BoardTest|pid_pitch_controller:U_Pitch                                                                                                                           ;              ;
+;    |pid_roll_controller:U_Roll|              ; 176 (176)         ; 44 (44)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |BoardTest|pid_roll_controller:U_Roll                                                                                                                             ;              ;
+;    |quadreg:U_RegAM|                         ; 0 (0)             ; 8 (8)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |BoardTest|quadreg:U_RegAM                                                                                                                                        ;              ;
+;    |rangefinder:U_Ranger_Botom|              ; 557 (77)          ; 74 (74)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |BoardTest|rangefinder:U_Ranger_Botom                                                                                                                             ;              ;
 ;       |Divider:Div|                          ; 480 (0)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |BoardTest|rangefinder:U_Ranger_Botom|Divider:Div                                                                                                                 ;              ;
 ;          |lpm_divide:LPM_DIVIDE_component|   ; 480 (0)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |BoardTest|rangefinder:U_Ranger_Botom|Divider:Div|lpm_divide:LPM_DIVIDE_component                                                                                 ;              ;
 ;             |lpm_divide_gup:auto_generated|  ; 480 (0)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |BoardTest|rangefinder:U_Ranger_Botom|Divider:Div|lpm_divide:LPM_DIVIDE_component|lpm_divide_gup:auto_generated                                                   ;              ;
 ;                |sign_div_unsign_bnh:divider| ; 480 (0)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |BoardTest|rangefinder:U_Ranger_Botom|Divider:Div|lpm_divide:LPM_DIVIDE_component|lpm_divide_gup:auto_generated|sign_div_unsign_bnh:divider                       ;              ;
 ;                   |alt_u_div_o5f:divider|    ; 480 (480)         ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |BoardTest|rangefinder:U_Ranger_Botom|Divider:Div|lpm_divide:LPM_DIVIDE_component|lpm_divide_gup:auto_generated|sign_div_unsign_bnh:divider|alt_u_div_o5f:divider ;              ;
 ;    |rangefinder:U_Ranger_Top|                ; 5 (5)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |BoardTest|rangefinder:U_Ranger_Top                                                                                                                               ;              ;
-;    |regmap:U_Registers|                      ; 44 (16)           ; 80 (0)       ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |BoardTest|regmap:U_Registers                                                                                                                                     ;              ;
+;    |regmap:U_Registers|                      ; 77 (0)            ; 80 (0)       ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |BoardTest|regmap:U_Registers                                                                                                                                     ;              ;
 ;       |addreg:RegAdd|                        ; 0 (0)             ; 8 (8)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |BoardTest|regmap:U_Registers|addreg:RegAdd                                                                                                                       ;              ;
-;       |outmux:MuxOut|                        ; 8 (8)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |BoardTest|regmap:U_Registers|outmux:MuxOut                                                                                                                       ;              ;
+;       |outmux:MuxOut|                        ; 54 (54)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |BoardTest|regmap:U_Registers|outmux:MuxOut                                                                                                                       ;              ;
 ;       |quadreg:RegAD|                        ; 0 (0)             ; 8 (8)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |BoardTest|regmap:U_Registers|quadreg:RegAD                                                                                                                       ;              ;
 ;       |quadreg:RegMisc|                      ; 0 (0)             ; 8 (8)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |BoardTest|regmap:U_Registers|quadreg:RegMisc                                                                                                                     ;              ;
 ;       |quadreg:RegXD|                        ; 0 (0)             ; 8 (8)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |BoardTest|regmap:U_Registers|quadreg:RegXD                                                                                                                       ;              ;
@@ -261,7 +258,7 @@ Parallel compilation was disabled, but you have multiple processors available. E
 ;       |quadreg:RegYM|                        ; 0 (0)             ; 8 (8)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |BoardTest|regmap:U_Registers|quadreg:RegYM                                                                                                                       ;              ;
 ;       |quadreg:RegZD|                        ; 0 (0)             ; 8 (8)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |BoardTest|regmap:U_Registers|quadreg:RegZD                                                                                                                       ;              ;
 ;       |quadreg:RegZM|                        ; 0 (0)             ; 8 (8)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |BoardTest|regmap:U_Registers|quadreg:RegZM                                                                                                                       ;              ;
-;       |reg_controller:RegCont|               ; 20 (20)           ; 8 (8)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |BoardTest|regmap:U_Registers|reg_controller:RegCont                                                                                                              ;              ;
+;       |reg_controller:RegCont|               ; 23 (23)           ; 8 (8)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |BoardTest|regmap:U_Registers|reg_controller:RegCont                                                                                                              ;              ;
 +----------------------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
 
@@ -293,98 +290,110 @@ Encoding Type:  One-Hot
 +-------------+-----------+-----------+-----------+-----------+-----------+-----------+-----------+-------------+
 
 
-+-------------------------------------------------------------------------------------------+
-; Registers Removed During Synthesis                                                        ;
-+----------------------------------------+--------------------------------------------------+
-; Register name                          ; Reason for Removal                               ;
-+----------------------------------------+--------------------------------------------------+
-; motor_pwm:U_Motor_2|pulsecount[0]      ; Merged with motor_pwm:U_Motor_1|pulsecount[0]    ;
-; motor_pwm:U_Motor_3|pulsecount[0]      ; Merged with motor_pwm:U_Motor_1|pulsecount[0]    ;
-; motor_pwm:U_Motor_4|pulsecount[0]      ; Merged with motor_pwm:U_Motor_1|pulsecount[0]    ;
-; motor_pwm:U_Motor_2|clockcount[0]      ; Merged with motor_pwm:U_Motor_1|clockcount[0]    ;
-; motor_pwm:U_Motor_3|clockcount[0]      ; Merged with motor_pwm:U_Motor_1|clockcount[0]    ;
-; motor_pwm:U_Motor_4|clockcount[0]      ; Merged with motor_pwm:U_Motor_1|clockcount[0]    ;
-; motor_pwm:U_Motor_2|pulsecount[1]      ; Merged with motor_pwm:U_Motor_1|pulsecount[1]    ;
-; motor_pwm:U_Motor_3|pulsecount[1]      ; Merged with motor_pwm:U_Motor_1|pulsecount[1]    ;
-; motor_pwm:U_Motor_4|pulsecount[1]      ; Merged with motor_pwm:U_Motor_1|pulsecount[1]    ;
-; motor_pwm:U_Motor_2|pulsecount[2]      ; Merged with motor_pwm:U_Motor_1|pulsecount[2]    ;
-; motor_pwm:U_Motor_3|pulsecount[2]      ; Merged with motor_pwm:U_Motor_1|pulsecount[2]    ;
-; motor_pwm:U_Motor_4|pulsecount[2]      ; Merged with motor_pwm:U_Motor_1|pulsecount[2]    ;
-; motor_pwm:U_Motor_2|pulsecount[3]      ; Merged with motor_pwm:U_Motor_1|pulsecount[3]    ;
-; motor_pwm:U_Motor_3|pulsecount[3]      ; Merged with motor_pwm:U_Motor_1|pulsecount[3]    ;
-; motor_pwm:U_Motor_4|pulsecount[3]      ; Merged with motor_pwm:U_Motor_1|pulsecount[3]    ;
-; motor_pwm:U_Motor_2|pulsecount[4]      ; Merged with motor_pwm:U_Motor_1|pulsecount[4]    ;
-; motor_pwm:U_Motor_3|pulsecount[4]      ; Merged with motor_pwm:U_Motor_1|pulsecount[4]    ;
-; motor_pwm:U_Motor_4|pulsecount[4]      ; Merged with motor_pwm:U_Motor_1|pulsecount[4]    ;
-; motor_pwm:U_Motor_2|pulsecount[5]      ; Merged with motor_pwm:U_Motor_1|pulsecount[5]    ;
-; motor_pwm:U_Motor_3|pulsecount[5]      ; Merged with motor_pwm:U_Motor_1|pulsecount[5]    ;
-; motor_pwm:U_Motor_4|pulsecount[5]      ; Merged with motor_pwm:U_Motor_1|pulsecount[5]    ;
-; motor_pwm:U_Motor_2|pulsecount[6]      ; Merged with motor_pwm:U_Motor_1|pulsecount[6]    ;
-; motor_pwm:U_Motor_3|pulsecount[6]      ; Merged with motor_pwm:U_Motor_1|pulsecount[6]    ;
-; motor_pwm:U_Motor_4|pulsecount[6]      ; Merged with motor_pwm:U_Motor_1|pulsecount[6]    ;
-; motor_pwm:U_Motor_2|pulsecount[7]      ; Merged with motor_pwm:U_Motor_1|pulsecount[7]    ;
-; motor_pwm:U_Motor_3|pulsecount[7]      ; Merged with motor_pwm:U_Motor_1|pulsecount[7]    ;
-; motor_pwm:U_Motor_4|pulsecount[7]      ; Merged with motor_pwm:U_Motor_1|pulsecount[7]    ;
-; motor_pwm:U_Motor_2|pulsecount[8]      ; Merged with motor_pwm:U_Motor_1|pulsecount[8]    ;
-; motor_pwm:U_Motor_3|pulsecount[8]      ; Merged with motor_pwm:U_Motor_1|pulsecount[8]    ;
-; motor_pwm:U_Motor_4|pulsecount[8]      ; Merged with motor_pwm:U_Motor_1|pulsecount[8]    ;
-; motor_pwm:U_Motor_2|pulsecount[9]      ; Merged with motor_pwm:U_Motor_1|pulsecount[9]    ;
-; motor_pwm:U_Motor_3|pulsecount[9]      ; Merged with motor_pwm:U_Motor_1|pulsecount[9]    ;
-; motor_pwm:U_Motor_4|pulsecount[9]      ; Merged with motor_pwm:U_Motor_1|pulsecount[9]    ;
-; motor_pwm:U_Motor_2|pulsecount[10]     ; Merged with motor_pwm:U_Motor_1|pulsecount[10]   ;
-; motor_pwm:U_Motor_3|pulsecount[10]     ; Merged with motor_pwm:U_Motor_1|pulsecount[10]   ;
-; motor_pwm:U_Motor_4|pulsecount[10]     ; Merged with motor_pwm:U_Motor_1|pulsecount[10]   ;
-; motor_pwm:U_Motor_2|pulsecount[11]     ; Merged with motor_pwm:U_Motor_1|pulsecount[11]   ;
-; motor_pwm:U_Motor_3|pulsecount[11]     ; Merged with motor_pwm:U_Motor_1|pulsecount[11]   ;
-; motor_pwm:U_Motor_4|pulsecount[11]     ; Merged with motor_pwm:U_Motor_1|pulsecount[11]   ;
-; motor_pwm:U_Motor_2|clockcount[1]      ; Merged with motor_pwm:U_Motor_1|clockcount[1]    ;
-; motor_pwm:U_Motor_3|clockcount[1]      ; Merged with motor_pwm:U_Motor_1|clockcount[1]    ;
-; motor_pwm:U_Motor_4|clockcount[1]      ; Merged with motor_pwm:U_Motor_1|clockcount[1]    ;
-; motor_pwm:U_Motor_2|clockcount[2]      ; Merged with motor_pwm:U_Motor_1|clockcount[2]    ;
-; motor_pwm:U_Motor_3|clockcount[2]      ; Merged with motor_pwm:U_Motor_1|clockcount[2]    ;
-; motor_pwm:U_Motor_4|clockcount[2]      ; Merged with motor_pwm:U_Motor_1|clockcount[2]    ;
-; motor_pwm:U_Motor_2|clockcount[3]      ; Merged with motor_pwm:U_Motor_1|clockcount[3]    ;
-; motor_pwm:U_Motor_3|clockcount[3]      ; Merged with motor_pwm:U_Motor_1|clockcount[3]    ;
-; motor_pwm:U_Motor_4|clockcount[3]      ; Merged with motor_pwm:U_Motor_1|clockcount[3]    ;
-; motor_pwm:U_Motor_2|clockcount[4]      ; Merged with motor_pwm:U_Motor_1|clockcount[4]    ;
-; motor_pwm:U_Motor_3|clockcount[4]      ; Merged with motor_pwm:U_Motor_1|clockcount[4]    ;
-; motor_pwm:U_Motor_4|clockcount[4]      ; Merged with motor_pwm:U_Motor_1|clockcount[4]    ;
-; motor_pwm:U_Motor_2|clockcount[5]      ; Merged with motor_pwm:U_Motor_1|clockcount[5]    ;
-; motor_pwm:U_Motor_3|clockcount[5]      ; Merged with motor_pwm:U_Motor_1|clockcount[5]    ;
-; motor_pwm:U_Motor_4|clockcount[5]      ; Merged with motor_pwm:U_Motor_1|clockcount[5]    ;
-; motor_pwm:U_Motor_2|clockcount[6]      ; Merged with motor_pwm:U_Motor_1|clockcount[6]    ;
-; motor_pwm:U_Motor_3|clockcount[6]      ; Merged with motor_pwm:U_Motor_1|clockcount[6]    ;
-; motor_pwm:U_Motor_4|clockcount[6]      ; Merged with motor_pwm:U_Motor_1|clockcount[6]    ;
-; motor_pwm:U_Motor_2|clocktick          ; Merged with motor_pwm:U_Motor_1|clocktick        ;
-; motor_pwm:U_Motor_3|clocktick          ; Merged with motor_pwm:U_Motor_1|clocktick        ;
-; motor_pwm:U_Motor_4|clocktick          ; Merged with motor_pwm:U_Motor_1|clocktick        ;
-; rangefinder:U_Ranger_Top|count[0]      ; Merged with rangefinder:U_Ranger_Botom|count[0]  ;
-; rangefinder:U_Ranger_Top|count[1]      ; Merged with rangefinder:U_Ranger_Botom|count[1]  ;
-; rangefinder:U_Ranger_Top|count[2]      ; Merged with rangefinder:U_Ranger_Botom|count[2]  ;
-; rangefinder:U_Ranger_Top|count[3]      ; Merged with rangefinder:U_Ranger_Botom|count[3]  ;
-; rangefinder:U_Ranger_Top|count[4]      ; Merged with rangefinder:U_Ranger_Botom|count[4]  ;
-; rangefinder:U_Ranger_Top|count[5]      ; Merged with rangefinder:U_Ranger_Botom|count[5]  ;
-; rangefinder:U_Ranger_Top|count[6]      ; Merged with rangefinder:U_Ranger_Botom|count[6]  ;
-; rangefinder:U_Ranger_Top|count[7]      ; Merged with rangefinder:U_Ranger_Botom|count[7]  ;
-; rangefinder:U_Ranger_Top|count[8]      ; Merged with rangefinder:U_Ranger_Botom|count[8]  ;
-; rangefinder:U_Ranger_Top|count[9]      ; Merged with rangefinder:U_Ranger_Botom|count[9]  ;
-; rangefinder:U_Ranger_Top|count[10]     ; Merged with rangefinder:U_Ranger_Botom|count[10] ;
-; rangefinder:U_Ranger_Top|count[11]     ; Merged with rangefinder:U_Ranger_Botom|count[11] ;
-; rangefinder:U_Ranger_Top|count[12]     ; Merged with rangefinder:U_Ranger_Botom|count[12] ;
-; rangefinder:U_Ranger_Top|count[13]     ; Merged with rangefinder:U_Ranger_Botom|count[13] ;
-; rangefinder:U_Ranger_Top|count[14]     ; Merged with rangefinder:U_Ranger_Botom|count[14] ;
-; rangefinder:U_Ranger_Top|count[15]     ; Merged with rangefinder:U_Ranger_Botom|count[15] ;
-; rangefinder:U_Ranger_Top|count[16]     ; Merged with rangefinder:U_Ranger_Botom|count[16] ;
-; rangefinder:U_Ranger_Top|count[17]     ; Merged with rangefinder:U_Ranger_Botom|count[17] ;
-; rangefinder:U_Ranger_Top|count[18]     ; Merged with rangefinder:U_Ranger_Botom|count[18] ;
-; rangefinder:U_Ranger_Top|count[19]     ; Merged with rangefinder:U_Ranger_Botom|count[19] ;
-; rangefinder:U_Ranger_Top|count[20]     ; Merged with rangefinder:U_Ranger_Botom|count[20] ;
-; rangefinder:U_Ranger_Top|count[21]     ; Merged with rangefinder:U_Ranger_Botom|count[21] ;
-; rangefinder:U_Ranger_Top|count[22]     ; Merged with rangefinder:U_Ranger_Botom|count[22] ;
-; rangefinder:U_Ranger_Top|count[23]     ; Merged with rangefinder:U_Ranger_Botom|count[23] ;
-; rangefinder:U_Ranger_Botom|edgeYet     ; Merged with rangefinder:U_Ranger_Botom|edgeYet2  ;
-; Total Number of Removed Registers = 85 ;                                                  ;
-+----------------------------------------+--------------------------------------------------+
++------------------------------------------------------------------------------------------------------------------------------+
+; Registers Removed During Synthesis                                                                                           ;
++----------------------------------------------------------+-------------------------------------------------------------------+
+; Register name                                            ; Reason for Removal                                                ;
++----------------------------------------------------------+-------------------------------------------------------------------+
+; pid_altitude_controller:U_Altitude|error[8..30]          ; Merged with pid_altitude_controller:U_Altitude|error[31]          ;
+; pid_altitude_controller:U_Altitude|previous_error[8..30] ; Merged with pid_altitude_controller:U_Altitude|previous_error[31] ;
+; pid_roll_controller:U_Roll|error[8..30]                  ; Merged with pid_roll_controller:U_Roll|error[31]                  ;
+; pid_roll_controller:U_Roll|previous_error[8..30]         ; Merged with pid_roll_controller:U_Roll|previous_error[31]         ;
+; pid_pitch_controller:U_Pitch|error[8..30]                ; Merged with pid_pitch_controller:U_Pitch|error[31]                ;
+; pid_pitch_controller:U_Pitch|previous_error[8..30]       ; Merged with pid_pitch_controller:U_Pitch|previous_error[31]       ;
+; motor_pwm:U_Motor_2|pulsecount[0]                        ; Merged with motor_pwm:U_Motor_1|pulsecount[0]                     ;
+; motor_pwm:U_Motor_3|pulsecount[0]                        ; Merged with motor_pwm:U_Motor_1|pulsecount[0]                     ;
+; motor_pwm:U_Motor_4|pulsecount[0]                        ; Merged with motor_pwm:U_Motor_1|pulsecount[0]                     ;
+; motor_pwm:U_Motor_2|clockcount[0]                        ; Merged with motor_pwm:U_Motor_1|clockcount[0]                     ;
+; motor_pwm:U_Motor_3|clockcount[0]                        ; Merged with motor_pwm:U_Motor_1|clockcount[0]                     ;
+; motor_pwm:U_Motor_4|clockcount[0]                        ; Merged with motor_pwm:U_Motor_1|clockcount[0]                     ;
+; motor_pwm:U_Motor_2|pulsecount[1]                        ; Merged with motor_pwm:U_Motor_1|pulsecount[1]                     ;
+; motor_pwm:U_Motor_3|pulsecount[1]                        ; Merged with motor_pwm:U_Motor_1|pulsecount[1]                     ;
+; motor_pwm:U_Motor_4|pulsecount[1]                        ; Merged with motor_pwm:U_Motor_1|pulsecount[1]                     ;
+; motor_pwm:U_Motor_2|pulsecount[2]                        ; Merged with motor_pwm:U_Motor_1|pulsecount[2]                     ;
+; motor_pwm:U_Motor_3|pulsecount[2]                        ; Merged with motor_pwm:U_Motor_1|pulsecount[2]                     ;
+; motor_pwm:U_Motor_4|pulsecount[2]                        ; Merged with motor_pwm:U_Motor_1|pulsecount[2]                     ;
+; motor_pwm:U_Motor_2|pulsecount[3]                        ; Merged with motor_pwm:U_Motor_1|pulsecount[3]                     ;
+; motor_pwm:U_Motor_3|pulsecount[3]                        ; Merged with motor_pwm:U_Motor_1|pulsecount[3]                     ;
+; motor_pwm:U_Motor_4|pulsecount[3]                        ; Merged with motor_pwm:U_Motor_1|pulsecount[3]                     ;
+; motor_pwm:U_Motor_2|pulsecount[4]                        ; Merged with motor_pwm:U_Motor_1|pulsecount[4]                     ;
+; motor_pwm:U_Motor_3|pulsecount[4]                        ; Merged with motor_pwm:U_Motor_1|pulsecount[4]                     ;
+; motor_pwm:U_Motor_4|pulsecount[4]                        ; Merged with motor_pwm:U_Motor_1|pulsecount[4]                     ;
+; motor_pwm:U_Motor_2|pulsecount[5]                        ; Merged with motor_pwm:U_Motor_1|pulsecount[5]                     ;
+; motor_pwm:U_Motor_3|pulsecount[5]                        ; Merged with motor_pwm:U_Motor_1|pulsecount[5]                     ;
+; motor_pwm:U_Motor_4|pulsecount[5]                        ; Merged with motor_pwm:U_Motor_1|pulsecount[5]                     ;
+; motor_pwm:U_Motor_2|pulsecount[6]                        ; Merged with motor_pwm:U_Motor_1|pulsecount[6]                     ;
+; motor_pwm:U_Motor_3|pulsecount[6]                        ; Merged with motor_pwm:U_Motor_1|pulsecount[6]                     ;
+; motor_pwm:U_Motor_4|pulsecount[6]                        ; Merged with motor_pwm:U_Motor_1|pulsecount[6]                     ;
+; motor_pwm:U_Motor_2|pulsecount[7]                        ; Merged with motor_pwm:U_Motor_1|pulsecount[7]                     ;
+; motor_pwm:U_Motor_3|pulsecount[7]                        ; Merged with motor_pwm:U_Motor_1|pulsecount[7]                     ;
+; motor_pwm:U_Motor_4|pulsecount[7]                        ; Merged with motor_pwm:U_Motor_1|pulsecount[7]                     ;
+; motor_pwm:U_Motor_2|pulsecount[8]                        ; Merged with motor_pwm:U_Motor_1|pulsecount[8]                     ;
+; motor_pwm:U_Motor_3|pulsecount[8]                        ; Merged with motor_pwm:U_Motor_1|pulsecount[8]                     ;
+; motor_pwm:U_Motor_4|pulsecount[8]                        ; Merged with motor_pwm:U_Motor_1|pulsecount[8]                     ;
+; motor_pwm:U_Motor_2|pulsecount[9]                        ; Merged with motor_pwm:U_Motor_1|pulsecount[9]                     ;
+; motor_pwm:U_Motor_3|pulsecount[9]                        ; Merged with motor_pwm:U_Motor_1|pulsecount[9]                     ;
+; motor_pwm:U_Motor_4|pulsecount[9]                        ; Merged with motor_pwm:U_Motor_1|pulsecount[9]                     ;
+; motor_pwm:U_Motor_2|pulsecount[10]                       ; Merged with motor_pwm:U_Motor_1|pulsecount[10]                    ;
+; motor_pwm:U_Motor_3|pulsecount[10]                       ; Merged with motor_pwm:U_Motor_1|pulsecount[10]                    ;
+; motor_pwm:U_Motor_4|pulsecount[10]                       ; Merged with motor_pwm:U_Motor_1|pulsecount[10]                    ;
+; motor_pwm:U_Motor_2|pulsecount[11]                       ; Merged with motor_pwm:U_Motor_1|pulsecount[11]                    ;
+; motor_pwm:U_Motor_3|pulsecount[11]                       ; Merged with motor_pwm:U_Motor_1|pulsecount[11]                    ;
+; motor_pwm:U_Motor_4|pulsecount[11]                       ; Merged with motor_pwm:U_Motor_1|pulsecount[11]                    ;
+; motor_pwm:U_Motor_2|clockcount[1]                        ; Merged with motor_pwm:U_Motor_1|clockcount[1]                     ;
+; motor_pwm:U_Motor_3|clockcount[1]                        ; Merged with motor_pwm:U_Motor_1|clockcount[1]                     ;
+; motor_pwm:U_Motor_4|clockcount[1]                        ; Merged with motor_pwm:U_Motor_1|clockcount[1]                     ;
+; motor_pwm:U_Motor_2|clockcount[2]                        ; Merged with motor_pwm:U_Motor_1|clockcount[2]                     ;
+; motor_pwm:U_Motor_3|clockcount[2]                        ; Merged with motor_pwm:U_Motor_1|clockcount[2]                     ;
+; motor_pwm:U_Motor_4|clockcount[2]                        ; Merged with motor_pwm:U_Motor_1|clockcount[2]                     ;
+; motor_pwm:U_Motor_2|clockcount[3]                        ; Merged with motor_pwm:U_Motor_1|clockcount[3]                     ;
+; motor_pwm:U_Motor_3|clockcount[3]                        ; Merged with motor_pwm:U_Motor_1|clockcount[3]                     ;
+; motor_pwm:U_Motor_4|clockcount[3]                        ; Merged with motor_pwm:U_Motor_1|clockcount[3]                     ;
+; motor_pwm:U_Motor_2|clockcount[4]                        ; Merged with motor_pwm:U_Motor_1|clockcount[4]                     ;
+; motor_pwm:U_Motor_3|clockcount[4]                        ; Merged with motor_pwm:U_Motor_1|clockcount[4]                     ;
+; motor_pwm:U_Motor_4|clockcount[4]                        ; Merged with motor_pwm:U_Motor_1|clockcount[4]                     ;
+; motor_pwm:U_Motor_2|clockcount[5]                        ; Merged with motor_pwm:U_Motor_1|clockcount[5]                     ;
+; motor_pwm:U_Motor_3|clockcount[5]                        ; Merged with motor_pwm:U_Motor_1|clockcount[5]                     ;
+; motor_pwm:U_Motor_4|clockcount[5]                        ; Merged with motor_pwm:U_Motor_1|clockcount[5]                     ;
+; motor_pwm:U_Motor_2|clockcount[6]                        ; Merged with motor_pwm:U_Motor_1|clockcount[6]                     ;
+; motor_pwm:U_Motor_3|clockcount[6]                        ; Merged with motor_pwm:U_Motor_1|clockcount[6]                     ;
+; motor_pwm:U_Motor_4|clockcount[6]                        ; Merged with motor_pwm:U_Motor_1|clockcount[6]                     ;
+; motor_pwm:U_Motor_2|clocktick                            ; Merged with motor_pwm:U_Motor_1|clocktick                         ;
+; motor_pwm:U_Motor_3|clocktick                            ; Merged with motor_pwm:U_Motor_1|clocktick                         ;
+; motor_pwm:U_Motor_4|clocktick                            ; Merged with motor_pwm:U_Motor_1|clocktick                         ;
+; rangefinder:U_Ranger_Top|count[0]                        ; Merged with rangefinder:U_Ranger_Botom|count[0]                   ;
+; rangefinder:U_Ranger_Top|count[1]                        ; Merged with rangefinder:U_Ranger_Botom|count[1]                   ;
+; rangefinder:U_Ranger_Top|count[2]                        ; Merged with rangefinder:U_Ranger_Botom|count[2]                   ;
+; rangefinder:U_Ranger_Top|count[3]                        ; Merged with rangefinder:U_Ranger_Botom|count[3]                   ;
+; rangefinder:U_Ranger_Top|count[4]                        ; Merged with rangefinder:U_Ranger_Botom|count[4]                   ;
+; rangefinder:U_Ranger_Top|count[5]                        ; Merged with rangefinder:U_Ranger_Botom|count[5]                   ;
+; rangefinder:U_Ranger_Top|count[6]                        ; Merged with rangefinder:U_Ranger_Botom|count[6]                   ;
+; rangefinder:U_Ranger_Top|count[7]                        ; Merged with rangefinder:U_Ranger_Botom|count[7]                   ;
+; rangefinder:U_Ranger_Top|count[8]                        ; Merged with rangefinder:U_Ranger_Botom|count[8]                   ;
+; rangefinder:U_Ranger_Top|count[9]                        ; Merged with rangefinder:U_Ranger_Botom|count[9]                   ;
+; rangefinder:U_Ranger_Top|count[10]                       ; Merged with rangefinder:U_Ranger_Botom|count[10]                  ;
+; rangefinder:U_Ranger_Top|count[11]                       ; Merged with rangefinder:U_Ranger_Botom|count[11]                  ;
+; rangefinder:U_Ranger_Top|count[12]                       ; Merged with rangefinder:U_Ranger_Botom|count[12]                  ;
+; rangefinder:U_Ranger_Top|count[13]                       ; Merged with rangefinder:U_Ranger_Botom|count[13]                  ;
+; rangefinder:U_Ranger_Top|count[14]                       ; Merged with rangefinder:U_Ranger_Botom|count[14]                  ;
+; rangefinder:U_Ranger_Top|count[15]                       ; Merged with rangefinder:U_Ranger_Botom|count[15]                  ;
+; rangefinder:U_Ranger_Top|count[16]                       ; Merged with rangefinder:U_Ranger_Botom|count[16]                  ;
+; rangefinder:U_Ranger_Top|count[17]                       ; Merged with rangefinder:U_Ranger_Botom|count[17]                  ;
+; rangefinder:U_Ranger_Top|count[18]                       ; Merged with rangefinder:U_Ranger_Botom|count[18]                  ;
+; rangefinder:U_Ranger_Top|count[19]                       ; Merged with rangefinder:U_Ranger_Botom|count[19]                  ;
+; rangefinder:U_Ranger_Top|count[20]                       ; Merged with rangefinder:U_Ranger_Botom|count[20]                  ;
+; rangefinder:U_Ranger_Top|count[21]                       ; Merged with rangefinder:U_Ranger_Botom|count[21]                  ;
+; rangefinder:U_Ranger_Top|count[22]                       ; Merged with rangefinder:U_Ranger_Botom|count[22]                  ;
+; rangefinder:U_Ranger_Top|count[23]                       ; Merged with rangefinder:U_Ranger_Botom|count[23]                  ;
+; pid_pitch_controller:U_Pitch|u_old[29,30]                ; Merged with pid_pitch_controller:U_Pitch|u_old[31]                ;
+; pid_altitude_controller:U_Altitude|u_old[29,30]          ; Merged with pid_altitude_controller:U_Altitude|u_old[31]          ;
+; pid_roll_controller:U_Roll|u_old[29,30]                  ; Merged with pid_roll_controller:U_Roll|u_old[31]                  ;
+; rangefinder:U_Ranger_Botom|edgeYet                       ; Merged with rangefinder:U_Ranger_Botom|edgeYet2                   ;
+; pid_pitch_controller:U_Pitch|u_old[8..11]                ; Merged with pid_pitch_controller:U_Pitch|u_old[31]                ;
+; pid_altitude_controller:U_Altitude|u_old[8..11]          ; Merged with pid_altitude_controller:U_Altitude|u_old[31]          ;
+; pid_roll_controller:U_Roll|u_old[8..11]                  ; Merged with pid_roll_controller:U_Roll|u_old[31]                  ;
+; Total Number of Removed Registers = 241                  ;                                                                   ;
++----------------------------------------------------------+-------------------------------------------------------------------+
 
 
 +------------------------------------------------------+
@@ -392,24 +401,37 @@ Encoding Type:  One-Hot
 +----------------------------------------------+-------+
 ; Statistic                                    ; Value ;
 +----------------------------------------------+-------+
-; Total registers                              ; 244   ;
+; Total registers                              ; 384   ;
 ; Number of registers using Synchronous Clear  ; 31    ;
 ; Number of registers using Synchronous Load   ; 0     ;
-; Number of registers using Asynchronous Clear ; 80    ;
+; Number of registers using Asynchronous Clear ; 88    ;
 ; Number of registers using Asynchronous Load  ; 0     ;
 ; Number of registers using Clock Enable       ; 145   ;
 ; Number of registers using Preset             ; 0     ;
 +----------------------------------------------+-------+
 
 
-+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Multiplexer Restructuring Statistics (Restructuring Performed)                                                                                                                                   ;
-+--------------------+-----------+---------------+----------------------+------------------------+--------------------------------------------------------------------+----------------------------+
-; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered                                                         ; Example Multiplexer Output ;
-+--------------------+-----------+---------------+----------------------+------------------------+--------------------------------------------------------------------+----------------------------+
-; 4:1                ; 7 bits    ; 14 LEs        ; 14 LEs               ; 0 LEs                  ; |BoardTest|SPI_Slave:U_PICSPI_Slave|byte_data_sent[5]              ;                            ;
-; 4:1                ; 2 bits    ; 4 LEs         ; 2 LEs                ; 2 LEs                  ; |BoardTest|regmap:U_Registers|reg_controller:RegCont|nextstate.wd1 ;                            ;
-+--------------------+-----------+---------------+----------------------+------------------------+--------------------------------------------------------------------+----------------------------+
++------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Multiplexer Restructuring Statistics (Restructuring Performed)                                                                                                                           ;
++--------------------+-----------+---------------+----------------------+------------------------+------------------------------------------------------------+----------------------------+
+; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered                                                 ; Example Multiplexer Output ;
++--------------------+-----------+---------------+----------------------+------------------------+------------------------------------------------------------+----------------------------+
+; 4:1                ; 7 bits    ; 14 LEs        ; 14 LEs               ; 0 LEs                  ; |BoardTest|SPI_Slave:U_PICSPI_Slave|byte_data_sent[6]      ;                            ;
+; 3:1                ; 8 bits    ; 16 LEs        ; 16 LEs               ; 0 LEs                  ; |BoardTest|pid_pitch_controller:U_Pitch|pwm_input[5]       ;                            ;
+; 3:1                ; 8 bits    ; 16 LEs        ; 16 LEs               ; 0 LEs                  ; |BoardTest|pid_altitude_controller:U_Altitude|pwm_input[6] ;                            ;
+; 3:1                ; 8 bits    ; 16 LEs        ; 16 LEs               ; 0 LEs                  ; |BoardTest|pid_roll_controller:U_Roll|pwm_input[2]         ;                            ;
+; 3:1                ; 32 bits   ; 64 LEs        ; 64 LEs               ; 0 LEs                  ; |BoardTest|pid_pitch_controller:U_Pitch|v[3]               ;                            ;
+; 3:1                ; 32 bits   ; 64 LEs        ; 64 LEs               ; 0 LEs                  ; |BoardTest|pid_pitch_controller:U_Pitch|u[20]              ;                            ;
+; 3:1                ; 32 bits   ; 64 LEs        ; 64 LEs               ; 0 LEs                  ; |BoardTest|pid_altitude_controller:U_Altitude|v[17]        ;                            ;
+; 3:1                ; 32 bits   ; 64 LEs        ; 64 LEs               ; 0 LEs                  ; |BoardTest|pid_altitude_controller:U_Altitude|u[20]        ;                            ;
+; 3:1                ; 32 bits   ; 64 LEs        ; 64 LEs               ; 0 LEs                  ; |BoardTest|pid_roll_controller:U_Roll|v[2]                 ;                            ;
+; 3:1                ; 32 bits   ; 64 LEs        ; 64 LEs               ; 0 LEs                  ; |BoardTest|pid_roll_controller:U_Roll|u[16]                ;                            ;
+; 3:1                ; 8 bits    ; 16 LEs        ; 16 LEs               ; 0 LEs                  ; |BoardTest|pwm1[4]                                         ;                            ;
+; 3:1                ; 8 bits    ; 16 LEs        ; 16 LEs               ; 0 LEs                  ; |BoardTest|pwm3[5]                                         ;                            ;
+; 3:1                ; 8 bits    ; 16 LEs        ; 16 LEs               ; 0 LEs                  ; |BoardTest|pwm2[4]                                         ;                            ;
+; 3:1                ; 8 bits    ; 16 LEs        ; 16 LEs               ; 0 LEs                  ; |BoardTest|pwm4[7]                                         ;                            ;
+; 11:1               ; 8 bits    ; 56 LEs        ; 48 LEs               ; 8 LEs                  ; |BoardTest|regmap:U_Registers|outmux:MuxOut|tmp1[7]        ;                            ;
++--------------------+-----------+---------------+----------------------+------------------------+------------------------------------------------------------+----------------------------+
 
 
 +----------------------------------------------------------------------+
@@ -469,33 +491,6 @@ Note: In order to hide this table in the UI and the text report file, please set
 
 
 +---------------------------------------------------------------------------------------------------------------------+
-; Port Connectivity Checks: "pid_altitude_controller:U_Altitude"                                                      ;
-+-----------+--------+----------+-------------------------------------------------------------------------------------+
-; Port      ; Type   ; Severity ; Details                                                                             ;
-+-----------+--------+----------+-------------------------------------------------------------------------------------+
-; pwm_input ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
-+-----------+--------+----------+-------------------------------------------------------------------------------------+
-
-
-+---------------------------------------------------------------------------------------------------------------------+
-; Port Connectivity Checks: "pid_roll_controller:U_Roll"                                                              ;
-+-----------+--------+----------+-------------------------------------------------------------------------------------+
-; Port      ; Type   ; Severity ; Details                                                                             ;
-+-----------+--------+----------+-------------------------------------------------------------------------------------+
-; pwm_input ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
-+-----------+--------+----------+-------------------------------------------------------------------------------------+
-
-
-+---------------------------------------------------------------------------------------------------------------------+
-; Port Connectivity Checks: "pid_pitch_controller:U_Pitch"                                                            ;
-+-----------+--------+----------+-------------------------------------------------------------------------------------+
-; Port      ; Type   ; Severity ; Details                                                                             ;
-+-----------+--------+----------+-------------------------------------------------------------------------------------+
-; pwm_input ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
-+-----------+--------+----------+-------------------------------------------------------------------------------------+
-
-
-+---------------------------------------------------------------------------------------------------------------------+
 ; Port Connectivity Checks: "pid_yaw_controller:U_Yaw"                                                                ;
 +-----------+--------+----------+-------------------------------------------------------------------------------------+
 ; Port      ; Type   ; Severity ; Details                                                                             ;
@@ -536,42 +531,6 @@ Note: In order to hide this table in the UI and the text report file, please set
 +-------+--------+----------+-------------------------------------------------------------------------------------+
 
 
-+-------------------------------------------------+
-; Port Connectivity Checks: "motor_pwm:U_Motor_4" ;
-+-------+-------+----------+----------------------+
-; Port  ; Type  ; Severity ; Details              ;
-+-------+-------+----------+----------------------+
-; speed ; Input ; Info     ; Stuck at GND         ;
-+-------+-------+----------+----------------------+
-
-
-+-------------------------------------------------+
-; Port Connectivity Checks: "motor_pwm:U_Motor_3" ;
-+-------+-------+----------+----------------------+
-; Port  ; Type  ; Severity ; Details              ;
-+-------+-------+----------+----------------------+
-; speed ; Input ; Info     ; Stuck at GND         ;
-+-------+-------+----------+----------------------+
-
-
-+-------------------------------------------------+
-; Port Connectivity Checks: "motor_pwm:U_Motor_2" ;
-+-------+-------+----------+----------------------+
-; Port  ; Type  ; Severity ; Details              ;
-+-------+-------+----------+----------------------+
-; speed ; Input ; Info     ; Stuck at GND         ;
-+-------+-------+----------+----------------------+
-
-
-+-------------------------------------------------+
-; Port Connectivity Checks: "motor_pwm:U_Motor_1" ;
-+-------+-------+----------+----------------------+
-; Port  ; Type  ; Severity ; Details              ;
-+-------+-------+----------+----------------------+
-; speed ; Input ; Info     ; Stuck at GND         ;
-+-------+-------+----------+----------------------+
-
-
 +---------------------------------------------------------------------------------------------------------------------------+
 ; Port Connectivity Checks: "rangefinder:U_Ranger_Top|Divider:Div"                                                          ;
 +-----------------+--------+----------+-------------------------------------------------------------------------------------+
@@ -594,7 +553,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 +----------------+--------------+
 ; Partition Name ; Elapsed Time ;
 +----------------+--------------+
-; Top            ; 00:00:04     ;
+; Top            ; 00:00:07     ;
 +----------------+--------------+
 
 
@@ -604,7 +563,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 Info: *******************************************************************
 Info: Running Quartus II Analysis & Synthesis
     Info: Version 11.0 Build 157 04/27/2011 SJ Web Edition
-    Info: Processing started: Thu Apr 19 02:08:38 2012
+    Info: Processing started: Thu Apr 19 03:29:35 2012
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off BoardTest -c BoardTest
 Warning: Parallel compilation is not licensed and has been disabled
 Info: Found 2 design units, including 1 entities, in source file clk_div.vhd
@@ -650,19 +609,12 @@ Info: Found 2 design units, including 1 entities, in source file pid_altitude_co
     Info: Found design unit 1: pid_altitude_controller-behavior
     Info: Found entity 1: pid_altitude_controller
 Info: Elaborating entity "BoardTest" for the top level hierarchy
-Warning (10540): VHDL Signal Declaration warning at BoardTest.vhd(197): used explicit default value for signal "pwm1" because signal was never assigned a value
-Warning (10540): VHDL Signal Declaration warning at BoardTest.vhd(197): used explicit default value for signal "pwm2" because signal was never assigned a value
-Warning (10540): VHDL Signal Declaration warning at BoardTest.vhd(197): used explicit default value for signal "pwm3" because signal was never assigned a value
-Warning (10540): VHDL Signal Declaration warning at BoardTest.vhd(197): used explicit default value for signal "pwm4" because signal was never assigned a value
-Warning (10036): Verilog HDL or VHDL warning at BoardTest.vhd(197): object "count" assigned a value but never read
-Warning (10036): Verilog HDL or VHDL warning at BoardTest.vhd(198): object "RegMisc" assigned a value but never read
-Warning (10036): Verilog HDL or VHDL warning at BoardTest.vhd(199): object "RegAMc" assigned a value but never read
-Warning (10036): Verilog HDL or VHDL warning at BoardTest.vhd(199): object "RegTR" assigned a value but never read
-Warning (10036): Verilog HDL or VHDL warning at BoardTest.vhd(199): object "RegTRc" assigned a value but never read
-Warning (10036): Verilog HDL or VHDL warning at BoardTest.vhd(200): object "pwm_yaw" assigned a value but never read
-Warning (10036): Verilog HDL or VHDL warning at BoardTest.vhd(200): object "pwm_pitch" assigned a value but never read
-Warning (10036): Verilog HDL or VHDL warning at BoardTest.vhd(200): object "pwm_roll" assigned a value but never read
-Warning (10036): Verilog HDL or VHDL warning at BoardTest.vhd(200): object "pwm_altitude" assigned a value but never read
+Warning (10036): Verilog HDL or VHDL warning at BoardTest.vhd(199): object "count" assigned a value but never read
+Warning (10036): Verilog HDL or VHDL warning at BoardTest.vhd(200): object "RegMisc" assigned a value but never read
+Warning (10036): Verilog HDL or VHDL warning at BoardTest.vhd(201): object "RegAMc" assigned a value but never read
+Warning (10036): Verilog HDL or VHDL warning at BoardTest.vhd(201): object "RegTR" assigned a value but never read
+Warning (10036): Verilog HDL or VHDL warning at BoardTest.vhd(201): object "RegTRc" assigned a value but never read
+Warning (10036): Verilog HDL or VHDL warning at BoardTest.vhd(202): object "pwm_yaw" assigned a value but never read
 Info: Elaborating entity "clk_div" for hierarchy "clk_div:U_1HzClkDivider"
 Info: Elaborating entity "SPI_Slave" for hierarchy "SPI_Slave:U_PICSPI_Slave"
 Warning (10036): Verilog HDL or VHDL warning at SPI_Slave.vhd(30): object "SSEL_endmessage" assigned a value but never read
@@ -705,79 +657,6 @@ Info: Elaborating entity "pid_yaw_controller" for hierarchy "pid_yaw_controller:
 Info: Elaborating entity "pid_pitch_controller" for hierarchy "pid_pitch_controller:U_Pitch"
 Info: Elaborating entity "pid_roll_controller" for hierarchy "pid_roll_controller:U_Roll"
 Info: Elaborating entity "pid_altitude_controller" for hierarchy "pid_altitude_controller:U_Altitude"
-Warning: Tri-state node(s) do not directly drive top-level pin(s)
-    Warning: Converted tri-state buffer "regmap:U_Registers|quadreg:RegMisc|reg_data[0]" feeding internal logic into a wire
-    Warning: Converted tri-state buffer "regmap:U_Registers|quadreg:RegMisc|reg_data[1]" feeding internal logic into a wire
-    Warning: Converted tri-state buffer "regmap:U_Registers|quadreg:RegMisc|reg_data[2]" feeding internal logic into a wire
-    Warning: Converted tri-state buffer "regmap:U_Registers|quadreg:RegMisc|reg_data[3]" feeding internal logic into a wire
-    Warning: Converted tri-state buffer "regmap:U_Registers|quadreg:RegMisc|reg_data[4]" feeding internal logic into a wire
-    Warning: Converted tri-state buffer "regmap:U_Registers|quadreg:RegMisc|reg_data[5]" feeding internal logic into a wire
-    Warning: Converted tri-state buffer "regmap:U_Registers|quadreg:RegMisc|reg_data[6]" feeding internal logic into a wire
-    Warning: Converted tri-state buffer "regmap:U_Registers|quadreg:RegMisc|reg_data[7]" feeding internal logic into a wire
-    Warning: Converted tri-state buffer "regmap:U_Registers|quadreg:RegAD|reg_data[0]" feeding internal logic into a wire
-    Warning: Converted tri-state buffer "regmap:U_Registers|quadreg:RegAD|reg_data[1]" feeding internal logic into a wire
-    Warning: Converted tri-state buffer "regmap:U_Registers|quadreg:RegAD|reg_data[2]" feeding internal logic into a wire
-    Warning: Converted tri-state buffer "regmap:U_Registers|quadreg:RegAD|reg_data[3]" feeding internal logic into a wire
-    Warning: Converted tri-state buffer "regmap:U_Registers|quadreg:RegAD|reg_data[4]" feeding internal logic into a wire
-    Warning: Converted tri-state buffer "regmap:U_Registers|quadreg:RegAD|reg_data[5]" feeding internal logic into a wire
-    Warning: Converted tri-state buffer "regmap:U_Registers|quadreg:RegAD|reg_data[6]" feeding internal logic into a wire
-    Warning: Converted tri-state buffer "regmap:U_Registers|quadreg:RegAD|reg_data[7]" feeding internal logic into a wire
-    Warning: Converted tri-state buffer "regmap:U_Registers|quadreg:RegZM|reg_data[0]" feeding internal logic into a wire
-    Warning: Converted tri-state buffer "regmap:U_Registers|quadreg:RegZM|reg_data[1]" feeding internal logic into a wire
-    Warning: Converted tri-state buffer "regmap:U_Registers|quadreg:RegZM|reg_data[2]" feeding internal logic into a wire
-    Warning: Converted tri-state buffer "regmap:U_Registers|quadreg:RegZM|reg_data[3]" feeding internal logic into a wire
-    Warning: Converted tri-state buffer "regmap:U_Registers|quadreg:RegZM|reg_data[4]" feeding internal logic into a wire
-    Warning: Converted tri-state buffer "regmap:U_Registers|quadreg:RegZM|reg_data[5]" feeding internal logic into a wire
-    Warning: Converted tri-state buffer "regmap:U_Registers|quadreg:RegZM|reg_data[6]" feeding internal logic into a wire
-    Warning: Converted tri-state buffer "regmap:U_Registers|quadreg:RegZM|reg_data[7]" feeding internal logic into a wire
-    Warning: Converted tri-state buffer "regmap:U_Registers|quadreg:RegYM|reg_data[0]" feeding internal logic into a wire
-    Warning: Converted tri-state buffer "regmap:U_Registers|quadreg:RegYM|reg_data[1]" feeding internal logic into a wire
-    Warning: Converted tri-state buffer "regmap:U_Registers|quadreg:RegYM|reg_data[2]" feeding internal logic into a wire
-    Warning: Converted tri-state buffer "regmap:U_Registers|quadreg:RegYM|reg_data[3]" feeding internal logic into a wire
-    Warning: Converted tri-state buffer "regmap:U_Registers|quadreg:RegYM|reg_data[4]" feeding internal logic into a wire
-    Warning: Converted tri-state buffer "regmap:U_Registers|quadreg:RegYM|reg_data[5]" feeding internal logic into a wire
-    Warning: Converted tri-state buffer "regmap:U_Registers|quadreg:RegYM|reg_data[6]" feeding internal logic into a wire
-    Warning: Converted tri-state buffer "regmap:U_Registers|quadreg:RegYM|reg_data[7]" feeding internal logic into a wire
-    Warning: Converted tri-state buffer "regmap:U_Registers|quadreg:RegXM|reg_data[0]" feeding internal logic into a wire
-    Warning: Converted tri-state buffer "regmap:U_Registers|quadreg:RegXM|reg_data[1]" feeding internal logic into a wire
-    Warning: Converted tri-state buffer "regmap:U_Registers|quadreg:RegXM|reg_data[2]" feeding internal logic into a wire
-    Warning: Converted tri-state buffer "regmap:U_Registers|quadreg:RegXM|reg_data[3]" feeding internal logic into a wire
-    Warning: Converted tri-state buffer "regmap:U_Registers|quadreg:RegXM|reg_data[4]" feeding internal logic into a wire
-    Warning: Converted tri-state buffer "regmap:U_Registers|quadreg:RegXM|reg_data[5]" feeding internal logic into a wire
-    Warning: Converted tri-state buffer "regmap:U_Registers|quadreg:RegXM|reg_data[6]" feeding internal logic into a wire
-    Warning: Converted tri-state buffer "regmap:U_Registers|quadreg:RegXM|reg_data[7]" feeding internal logic into a wire
-    Warning: Converted tri-state buffer "regmap:U_Registers|quadreg:RegZD|reg_data[0]" feeding internal logic into a wire
-    Warning: Converted tri-state buffer "regmap:U_Registers|quadreg:RegZD|reg_data[1]" feeding internal logic into a wire
-    Warning: Converted tri-state buffer "regmap:U_Registers|quadreg:RegZD|reg_data[2]" feeding internal logic into a wire
-    Warning: Converted tri-state buffer "regmap:U_Registers|quadreg:RegZD|reg_data[3]" feeding internal logic into a wire
-    Warning: Converted tri-state buffer "regmap:U_Registers|quadreg:RegZD|reg_data[4]" feeding internal logic into a wire
-    Warning: Converted tri-state buffer "regmap:U_Registers|quadreg:RegZD|reg_data[5]" feeding internal logic into a wire
-    Warning: Converted tri-state buffer "regmap:U_Registers|quadreg:RegZD|reg_data[6]" feeding internal logic into a wire
-    Warning: Converted tri-state buffer "regmap:U_Registers|quadreg:RegZD|reg_data[7]" feeding internal logic into a wire
-    Warning: Converted tri-state buffer "regmap:U_Registers|quadreg:RegYD|reg_data[0]" feeding internal logic into a wire
-    Warning: Converted tri-state buffer "regmap:U_Registers|quadreg:RegYD|reg_data[1]" feeding internal logic into a wire
-    Warning: Converted tri-state buffer "regmap:U_Registers|quadreg:RegYD|reg_data[2]" feeding internal logic into a wire
-    Warning: Converted tri-state buffer "regmap:U_Registers|quadreg:RegYD|reg_data[3]" feeding internal logic into a wire
-    Warning: Converted tri-state buffer "regmap:U_Registers|quadreg:RegYD|reg_data[4]" feeding internal logic into a wire
-    Warning: Converted tri-state buffer "regmap:U_Registers|quadreg:RegYD|reg_data[5]" feeding internal logic into a wire
-    Warning: Converted tri-state buffer "regmap:U_Registers|quadreg:RegYD|reg_data[6]" feeding internal logic into a wire
-    Warning: Converted tri-state buffer "regmap:U_Registers|quadreg:RegYD|reg_data[7]" feeding internal logic into a wire
-    Warning: Converted tri-state buffer "regmap:U_Registers|quadreg:RegXD|reg_data[0]" feeding internal logic into a wire
-    Warning: Converted tri-state buffer "regmap:U_Registers|quadreg:RegXD|reg_data[1]" feeding internal logic into a wire
-    Warning: Converted tri-state buffer "regmap:U_Registers|quadreg:RegXD|reg_data[2]" feeding internal logic into a wire
-    Warning: Converted tri-state buffer "regmap:U_Registers|quadreg:RegXD|reg_data[3]" feeding internal logic into a wire
-    Warning: Converted tri-state buffer "regmap:U_Registers|quadreg:RegXD|reg_data[4]" feeding internal logic into a wire
-    Warning: Converted tri-state buffer "regmap:U_Registers|quadreg:RegXD|reg_data[5]" feeding internal logic into a wire
-    Warning: Converted tri-state buffer "regmap:U_Registers|quadreg:RegXD|reg_data[6]" feeding internal logic into a wire
-    Warning: Converted tri-state buffer "regmap:U_Registers|quadreg:RegXD|reg_data[7]" feeding internal logic into a wire
-    Warning: Converted tri-state buffer "regmap:U_Registers|addreg:RegAdd|reg_data[0]" feeding internal logic into a wire
-    Warning: Converted tri-state buffer "regmap:U_Registers|addreg:RegAdd|reg_data[1]" feeding internal logic into a wire
-    Warning: Converted tri-state buffer "regmap:U_Registers|addreg:RegAdd|reg_data[2]" feeding internal logic into a wire
-    Warning: Converted tri-state buffer "regmap:U_Registers|addreg:RegAdd|reg_data[3]" feeding internal logic into a wire
-    Warning: Converted tri-state buffer "regmap:U_Registers|addreg:RegAdd|reg_data[4]" feeding internal logic into a wire
-    Warning: Converted tri-state buffer "regmap:U_Registers|addreg:RegAdd|reg_data[5]" feeding internal logic into a wire
-    Warning: Converted tri-state buffer "regmap:U_Registers|addreg:RegAdd|reg_data[6]" feeding internal logic into a wire
-    Warning: Converted tri-state buffer "regmap:U_Registers|addreg:RegAdd|reg_data[7]" feeding internal logic into a wire
 Warning: Output pins are stuck at VCC or GND
     Warning (13410): Pin "Camera_SCL" is stuck at GND
     Warning (13410): Pin "Camera_RESET" is stuck at GND
@@ -816,15 +695,15 @@ Warning: Design contains 25 input pin(s) that do not drive logic
     Warning (15610): No output dependent on input pin "Gyro_Interrupt"
     Warning (15610): No output dependent on input pin "Accel_Interrupt1"
     Warning (15610): No output dependent on input pin "Accel_Interrupt2"
-Info: Implemented 909 device resources after synthesis - the final resource count might be different
+Info: Implemented 1687 device resources after synthesis - the final resource count might be different
     Info: Implemented 34 input pins
     Info: Implemented 28 output pins
     Info: Implemented 10 bidirectional pins
-    Info: Implemented 837 logic cells
-Info: Quartus II Analysis & Synthesis was successful. 0 errors, 126 warnings
+    Info: Implemented 1615 logic cells
+Info: Quartus II Analysis & Synthesis was successful. 0 errors, 46 warnings
     Info: Peak virtual memory: 314 megabytes
-    Info: Processing ended: Thu Apr 19 02:08:45 2012
-    Info: Elapsed time: 00:00:07
-    Info: Total CPU time (on all processors): 00:00:06
+    Info: Processing ended: Thu Apr 19 03:29:44 2012
+    Info: Elapsed time: 00:00:09
+    Info: Total CPU time (on all processors): 00:00:09
 
 

@@ -42,7 +42,7 @@ begin
 	if rego_en = '1' then
 		reg_data <= tmp;
 	else
-		reg_data <= "ZZZZZZZZ";
+		reg_data <= "00000000";
 	end if;
 end process;
 

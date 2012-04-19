@@ -81,7 +81,7 @@ signal 	add_rego_en, add_reg_en : std_logic := '0';
 signal	regi00, regi01, regi02, regi03, regi04, regi05, regi06, regi07 : std_logic := '0';
 signal	rego00, rego01, rego02, rego03, rego04, rego05, rego06, rego07 : std_logic := '0';
 signal	tbo, outsel : std_logic := '0';
-signal   databus : std_logic_vector(7 downto 0) := "ZZZZZZZZ";
+signal   databus : std_logic_vector(7 downto 0) := "00000000";
 signal 	address, addressc, reg0, reg1, reg2, reg3, reg4, reg5, reg6, reg7 : std_logic_vector(7 downto 0) :="ZZZZZZZZ";
  
 begin
@@ -108,7 +108,26 @@ RegMisc : quadreg port map(clk, data, start, regi07, rego07, reg7, reg7c);
 
 --Output MUX
 MuxOut : outmux port map(databus, address, outsel, tbo, data);
-
-databus <= reg0 or reg1 or reg2 or reg3 or reg4 or reg5 or reg6 or reg7;
- 
+				
+process(rego00, rego01, rego02, rego03, rego04, rego05, rego06, rego07, reg0, reg1, reg2, reg3, reg4, reg5, reg6, reg7)
+begin
+	databus <= "00000000";
+	if (rego00 = '1') then
+		databus <= reg0;
+	elsif (rego01 = '1') then
+		databus <= reg1;
+ 	elsif (rego02 = '1') then
+		databus <= reg2;
+	elsif (rego03 = '1') then
+		databus <= reg3;
+	elsif (rego04 = '1') then
+		databus <= reg4;
+	elsif (rego05 = '1') then
+		databus <= reg5;
+	elsif (rego06 = '1') then
+		databus <= reg6;
+	elsif (rego07 = '1') then
+		databus <= reg7;
+	end if;
+end process;
 end behavior;

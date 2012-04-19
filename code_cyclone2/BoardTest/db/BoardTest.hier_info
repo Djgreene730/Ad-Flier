@@ -2879,14 +2879,14 @@ regi_en => tmp[3].ENA
 regi_en => tmp[2].ENA
 regi_en => tmp[1].ENA
 regi_en => tmp[0].ENA
-rego_en => reg_data[0].OE
-rego_en => reg_data[1].OE
-rego_en => reg_data[2].OE
-rego_en => reg_data[3].OE
-rego_en => reg_data[4].OE
-rego_en => reg_data[5].OE
-rego_en => reg_data[6].OE
-rego_en => reg_data[7].OE
+rego_en => reg_data.OUTPUTSELECT
+rego_en => reg_data.OUTPUTSELECT
+rego_en => reg_data.OUTPUTSELECT
+rego_en => reg_data.OUTPUTSELECT
+rego_en => reg_data.OUTPUTSELECT
+rego_en => reg_data.OUTPUTSELECT
+rego_en => reg_data.OUTPUTSELECT
+rego_en => reg_data.OUTPUTSELECT
 
 
 |BoardTest|regmap:U_Registers|quadreg:RegXD
@@ -2922,14 +2922,14 @@ regi_en => tmp[3].ENA
 regi_en => tmp[2].ENA
 regi_en => tmp[1].ENA
 regi_en => tmp[0].ENA
-rego_en => reg_data[0].OE
-rego_en => reg_data[1].OE
-rego_en => reg_data[2].OE
-rego_en => reg_data[3].OE
-rego_en => reg_data[4].OE
-rego_en => reg_data[5].OE
-rego_en => reg_data[6].OE
-rego_en => reg_data[7].OE
+rego_en => reg_data.OUTPUTSELECT
+rego_en => reg_data.OUTPUTSELECT
+rego_en => reg_data.OUTPUTSELECT
+rego_en => reg_data.OUTPUTSELECT
+rego_en => reg_data.OUTPUTSELECT
+rego_en => reg_data.OUTPUTSELECT
+rego_en => reg_data.OUTPUTSELECT
+rego_en => reg_data.OUTPUTSELECT
 
 
 |BoardTest|regmap:U_Registers|quadreg:RegYD
@@ -2965,14 +2965,14 @@ regi_en => tmp[3].ENA
 regi_en => tmp[2].ENA
 regi_en => tmp[1].ENA
 regi_en => tmp[0].ENA
-rego_en => reg_data[0].OE
-rego_en => reg_data[1].OE
-rego_en => reg_data[2].OE
-rego_en => reg_data[3].OE
-rego_en => reg_data[4].OE
-rego_en => reg_data[5].OE
-rego_en => reg_data[6].OE
-rego_en => reg_data[7].OE
+rego_en => reg_data.OUTPUTSELECT
+rego_en => reg_data.OUTPUTSELECT
+rego_en => reg_data.OUTPUTSELECT
+rego_en => reg_data.OUTPUTSELECT
+rego_en => reg_data.OUTPUTSELECT
+rego_en => reg_data.OUTPUTSELECT
+rego_en => reg_data.OUTPUTSELECT
+rego_en => reg_data.OUTPUTSELECT
 
 
 |BoardTest|regmap:U_Registers|quadreg:RegZD
@@ -3008,14 +3008,14 @@ regi_en => tmp[3].ENA
 regi_en => tmp[2].ENA
 regi_en => tmp[1].ENA
 regi_en => tmp[0].ENA
-rego_en => reg_data[0].OE
-rego_en => reg_data[1].OE
-rego_en => reg_data[2].OE
-rego_en => reg_data[3].OE
-rego_en => reg_data[4].OE
-rego_en => reg_data[5].OE
-rego_en => reg_data[6].OE
-rego_en => reg_data[7].OE
+rego_en => reg_data.OUTPUTSELECT
+rego_en => reg_data.OUTPUTSELECT
+rego_en => reg_data.OUTPUTSELECT
+rego_en => reg_data.OUTPUTSELECT
+rego_en => reg_data.OUTPUTSELECT
+rego_en => reg_data.OUTPUTSELECT
+rego_en => reg_data.OUTPUTSELECT
+rego_en => reg_data.OUTPUTSELECT
 
 
 |BoardTest|regmap:U_Registers|quadreg:RegXM
@@ -3051,14 +3051,14 @@ regi_en => tmp[3].ENA
 regi_en => tmp[2].ENA
 regi_en => tmp[1].ENA
 regi_en => tmp[0].ENA
-rego_en => reg_data[0].OE
-rego_en => reg_data[1].OE
-rego_en => reg_data[2].OE
-rego_en => reg_data[3].OE
-rego_en => reg_data[4].OE
-rego_en => reg_data[5].OE
-rego_en => reg_data[6].OE
-rego_en => reg_data[7].OE
+rego_en => reg_data.OUTPUTSELECT
+rego_en => reg_data.OUTPUTSELECT
+rego_en => reg_data.OUTPUTSELECT
+rego_en => reg_data.OUTPUTSELECT
+rego_en => reg_data.OUTPUTSELECT
+rego_en => reg_data.OUTPUTSELECT
+rego_en => reg_data.OUTPUTSELECT
+rego_en => reg_data.OUTPUTSELECT
 
 
 |BoardTest|regmap:U_Registers|quadreg:RegYM
@@ -3094,14 +3094,14 @@ regi_en => tmp[3].ENA
 regi_en => tmp[2].ENA
 regi_en => tmp[1].ENA
 regi_en => tmp[0].ENA
-rego_en => reg_data[0].OE
-rego_en => reg_data[1].OE
-rego_en => reg_data[2].OE
-rego_en => reg_data[3].OE
-rego_en => reg_data[4].OE
-rego_en => reg_data[5].OE
-rego_en => reg_data[6].OE
-rego_en => reg_data[7].OE
+rego_en => reg_data.OUTPUTSELECT
+rego_en => reg_data.OUTPUTSELECT
+rego_en => reg_data.OUTPUTSELECT
+rego_en => reg_data.OUTPUTSELECT
+rego_en => reg_data.OUTPUTSELECT
+rego_en => reg_data.OUTPUTSELECT
+rego_en => reg_data.OUTPUTSELECT
+rego_en => reg_data.OUTPUTSELECT
 
 
 |BoardTest|regmap:U_Registers|quadreg:RegZM
@@ -3137,14 +3137,14 @@ regi_en => tmp[3].ENA
 regi_en => tmp[2].ENA
 regi_en => tmp[1].ENA
 regi_en => tmp[0].ENA
-rego_en => reg_data[0].OE
-rego_en => reg_data[1].OE
-rego_en => reg_data[2].OE
-rego_en => reg_data[3].OE
-rego_en => reg_data[4].OE
-rego_en => reg_data[5].OE
-rego_en => reg_data[6].OE
-rego_en => reg_data[7].OE
+rego_en => reg_data.OUTPUTSELECT
+rego_en => reg_data.OUTPUTSELECT
+rego_en => reg_data.OUTPUTSELECT
+rego_en => reg_data.OUTPUTSELECT
+rego_en => reg_data.OUTPUTSELECT
+rego_en => reg_data.OUTPUTSELECT
+rego_en => reg_data.OUTPUTSELECT
+rego_en => reg_data.OUTPUTSELECT
 
 
 |BoardTest|regmap:U_Registers|quadreg:RegAD
@@ -3180,14 +3180,14 @@ regi_en => tmp[3].ENA
 regi_en => tmp[2].ENA
 regi_en => tmp[1].ENA
 regi_en => tmp[0].ENA
-rego_en => reg_data[0].OE
-rego_en => reg_data[1].OE
-rego_en => reg_data[2].OE
-rego_en => reg_data[3].OE
-rego_en => reg_data[4].OE
-rego_en => reg_data[5].OE
-rego_en => reg_data[6].OE
-rego_en => reg_data[7].OE
+rego_en => reg_data.OUTPUTSELECT
+rego_en => reg_data.OUTPUTSELECT
+rego_en => reg_data.OUTPUTSELECT
+rego_en => reg_data.OUTPUTSELECT
+rego_en => reg_data.OUTPUTSELECT
+rego_en => reg_data.OUTPUTSELECT
+rego_en => reg_data.OUTPUTSELECT
+rego_en => reg_data.OUTPUTSELECT
 
 
 |BoardTest|regmap:U_Registers|quadreg:RegMisc
@@ -3223,14 +3223,14 @@ regi_en => tmp[3].ENA
 regi_en => tmp[2].ENA
 regi_en => tmp[1].ENA
 regi_en => tmp[0].ENA
-rego_en => reg_data[0].OE
-rego_en => reg_data[1].OE
-rego_en => reg_data[2].OE
-rego_en => reg_data[3].OE
-rego_en => reg_data[4].OE
-rego_en => reg_data[5].OE
-rego_en => reg_data[6].OE
-rego_en => reg_data[7].OE
+rego_en => reg_data.OUTPUTSELECT
+rego_en => reg_data.OUTPUTSELECT
+rego_en => reg_data.OUTPUTSELECT
+rego_en => reg_data.OUTPUTSELECT
+rego_en => reg_data.OUTPUTSELECT
+rego_en => reg_data.OUTPUTSELECT
+rego_en => reg_data.OUTPUTSELECT
+rego_en => reg_data.OUTPUTSELECT
 
 
 |BoardTest|regmap:U_Registers|outmux:MuxOut
@@ -3309,14 +3309,14 @@ regi_en => tmp[3].ENA
 regi_en => tmp[2].ENA
 regi_en => tmp[1].ENA
 regi_en => tmp[0].ENA
-rego_en => reg_data[0].OE
-rego_en => reg_data[1].OE
-rego_en => reg_data[2].OE
-rego_en => reg_data[3].OE
-rego_en => reg_data[4].OE
-rego_en => reg_data[5].OE
-rego_en => reg_data[6].OE
-rego_en => reg_data[7].OE
+rego_en => reg_data.OUTPUTSELECT
+rego_en => reg_data.OUTPUTSELECT
+rego_en => reg_data.OUTPUTSELECT
+rego_en => reg_data.OUTPUTSELECT
+rego_en => reg_data.OUTPUTSELECT
+rego_en => reg_data.OUTPUTSELECT
+rego_en => reg_data.OUTPUTSELECT
+rego_en => reg_data.OUTPUTSELECT
 
 
 |BoardTest|quadreg:U_RegTR
@@ -3352,14 +3352,14 @@ regi_en => tmp[3].ENA
 regi_en => tmp[2].ENA
 regi_en => tmp[1].ENA
 regi_en => tmp[0].ENA
-rego_en => reg_data[0].OE
-rego_en => reg_data[1].OE
-rego_en => reg_data[2].OE
-rego_en => reg_data[3].OE
-rego_en => reg_data[4].OE
-rego_en => reg_data[5].OE
-rego_en => reg_data[6].OE
-rego_en => reg_data[7].OE
+rego_en => reg_data.OUTPUTSELECT
+rego_en => reg_data.OUTPUTSELECT
+rego_en => reg_data.OUTPUTSELECT
+rego_en => reg_data.OUTPUTSELECT
+rego_en => reg_data.OUTPUTSELECT
+rego_en => reg_data.OUTPUTSELECT
+rego_en => reg_data.OUTPUTSELECT
+rego_en => reg_data.OUTPUTSELECT
 
 
 |BoardTest|pid_yaw_controller:U_Yaw
