@@ -8,7 +8,6 @@ clk => BLED_Blue[0]~reg0.CLK
 clk => BLED_Blue[1]~reg0.CLK
 clk => BLED_Blue[2]~reg0.CLK
 clk => BLED_Blue[3]~reg0.CLK
-clk => SPI_Slave:U_PICSPI_Slave.clk
 clk => rangefinder:U_Ranger_Top.clk
 clk => rangefinder:U_Ranger_Botom.clk
 clk => motor_pwm:U_Motor_1.clk
@@ -44,9 +43,9 @@ PIC_PBUS_Data[7] <> regmap:U_Registers.data[7]
 PIC_PBUS_A_D => regmap:U_Registers.a_d
 PIC_PBUS_R_W => regmap:U_Registers.r_w
 PIC_PBUS_OK_IN => regmap:U_Registers.ok_out
-PIC_SPI_SCLK => SPI_Slave:U_PICSPI_Slave.SCK
-PIC_SPI_MOSI => SPI_Slave:U_PICSPI_Slave.MOSI
-PIC_SPI_Select => SPI_Slave:U_PICSPI_Slave.SSEL
+PIC_SPI_SCLK => ~NO_FANOUT~
+PIC_SPI_MOSI => ~NO_FANOUT~
+PIC_SPI_Select => ~NO_FANOUT~
 Ultra_T_Edge => rangefinder:U_Ranger_Top.edge
 Ultra_B_Edge => rangefinder:U_Ranger_Botom.edge
 Camera_SDA <> Camera_SDA
@@ -94,43 +93,6 @@ clk_in => cnt[19].CLK
 clk_in => cnt[20].CLK
 clk_in => cnt[21].CLK
 clk_in => cnt[22].CLK
-
-
-|BoardTest|SPI_Slave:U_PICSPI_Slave
-clk => MISO~reg0.CLK
-clk => byte_data_sent[0].CLK
-clk => byte_data_sent[1].CLK
-clk => byte_data_sent[2].CLK
-clk => byte_data_sent[3].CLK
-clk => byte_data_sent[4].CLK
-clk => byte_data_sent[5].CLK
-clk => byte_data_sent[6].CLK
-clk => byte_data_sent[7].CLK
-clk => byte_data_received[0].CLK
-clk => bitcnt[0].CLK
-clk => bitcnt[1].CLK
-clk => bitcnt[2].CLK
-clk => cnt[0].CLK
-clk => cnt[1].CLK
-clk => cnt[2].CLK
-clk => cnt[3].CLK
-clk => cnt[4].CLK
-clk => cnt[5].CLK
-clk => cnt[6].CLK
-clk => cnt[7].CLK
-clk => LED~reg0.CLK
-clk => byte_received.CLK
-clk => MOSIr[0].CLK
-clk => MOSIr[1].CLK
-clk => SSELr[0].CLK
-clk => SSELr[1].CLK
-clk => SSELr[2].CLK
-clk => SCKr[0].CLK
-clk => SCKr[1].CLK
-clk => SCKr[2].CLK
-SCK => SCKr[0].DATAIN
-MOSI => MOSIr[0].DATAIN
-SSEL => SSELr[0].DATAIN
 
 
 |BoardTest|rangefinder:U_Ranger_Top

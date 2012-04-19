@@ -151,7 +151,6 @@ set_global_assignment -name QIP_FILE Divider.qip
 set_global_assignment -name VHDL_FILE Divider.vhd
 set_global_assignment -name VHDL_FILE clk_div.vhd
 set_global_assignment -name VHDL_FILE BoardTest.vhd
-set_global_assignment -name VHDL_FILE SPI_Slave.vhd
 set_global_assignment -name VHDL_FILE motor_pwm.vhd
 set_global_assignment -name VHDL_FILE reg_controller.vhd
 set_global_assignment -name VHDL_FILE quadreg.vhd

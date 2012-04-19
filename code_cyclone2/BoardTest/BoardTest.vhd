@@ -108,18 +108,6 @@ architecture STR of BoardTest is
 		);
 	end component;
 	
-	-- Serial Peripheral Interface Slave Front-End
-	component  SPI_Slave is
-		port( 
-			clk		:	in		std_logic;
-			SCK		:	in		std_logic;
-			MOSI	:	in		std_logic;
-			MISO	:	out		std_logic;
-			SSEL	:	in		std_logic;
-			LED		:	out		std_logic
-		);
-	end component;
-	
 	component motor_pwm is 
 	port (
 			clk : in std_logic;
@@ -209,7 +197,6 @@ begin
 
 	-- Instantiations:
 	U_1HzClkDivider		:	clk_div generic map (6293750) port map (clk, clk_1Hz);
-	U_PICSPI_Slave			:	SPI_Slave port map (clk, PIC_SPI_SCLK, PIC_SPI_MOSI, PIC_SPI_MISO, PIC_SPI_Select, TLED_Orange_2);
 	
 	--Range Finder Instantiations
 	U_Ranger_Top			:	rangefinder port map (clk, Ultra_T_Edge, Ultra_T_Trigger, Top_Range);
@@ -250,7 +237,9 @@ begin
 	Gyro_ChipSelect		<= '1';
 	SRAM_ChipSelect		<= '1';
 	SRAM_WriteProtect		<= '0';
-	Accel_SelAddr0			<= '0';	
+	Accel_SelAddr0			<= '0';
+	PIC_SPI_MISO		   <= '0';
+	
 
 	process(pwm_pitch, pwm_roll, pwm_altitude, pwm_a, RegTR) --Adding Components of PID for PWM
 	begin
@@ -330,15 +319,20 @@ begin
 		
 	-- Test 1:
 	-- A.) Toggle TLED_Orange_1 every clk_1Hz Pulse	
-	process (clk_1Hz)
+	process (clk_1Hz, RegTRc, RegAMc)
 		variable current_State	:	std_logic := '0';
 		variable counter		   :	std_logic_vector(7 downto 0) := (others => '0');
 	begin
+		TLED_Orange_2 <= '0';
 		if (clk_1Hz'event and clk_1Hz = '1') then
 			current_State := not current_State;
 			TLED_Orange_1 <= current_State;
 			counter := counter + 1;
 			count <= counter;
+		end if;
+		
+		if RegTRc = RegAMc then
+			TLED_Orange_2 <= '1';
 		end if;
 	end process;
 	
