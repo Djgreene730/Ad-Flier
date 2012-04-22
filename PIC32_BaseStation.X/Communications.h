@@ -61,6 +61,42 @@ typedef struct {
 
 typedef union {
     struct {
+        unsigned B0:8;
+        unsigned B1:8;
+        unsigned B2:8;
+        unsigned B3:8;
+    } bytes;
+    unsigned UValue:32;
+    signed   SValue:32;
+    float    Value;
+} DFloat;
+
+typedef union {
+    struct {
+        unsigned RSV:16;
+        unsigned SL:8;
+        unsigned SU:8;
+        unsigned ML:8;
+        unsigned MU:8;
+        unsigned HL:8;
+        unsigned HU:8;
+    } timeBytes;
+    unsigned long long  UValue;
+    signed long long    SValue;
+    double              Value;
+} DLONG;
+
+typedef union {
+    struct {
+        DFloat  X;
+        DFloat  Y;
+        DFloat  Z;
+        UINT8   T;
+    };
+} AngleReading;
+
+typedef union {
+    struct {
         unsigned D0:1;
         unsigned D1:1;
         unsigned D2:1;
@@ -83,26 +119,109 @@ typedef union {
         unsigned YU:8;
         unsigned ZL:8;
         unsigned ZU:8;
+        unsigned TU:8;
     };
     struct {
         signed X:16;
         signed Y:16;
         signed Z:16;
-    };
+        signed Temp:8;
+    } Signed;
+    struct {
+        unsigned X:16;
+        unsigned Y:16;
+        unsigned Z:16;
+        unsigned Temp:8;
+    } Unsigned;
 } GyroscopeReading;
 
 typedef union {
     struct {
+        unsigned XL:8;
         unsigned XU:8;
+        unsigned YL:8;
         unsigned YU:8;
+        unsigned ZL:8;
         unsigned ZU:8;
     };
     struct {
-        signed X:8;
-        signed Y:8;
-        signed Z:8;
-    };
+        unsigned X:16;
+        unsigned Y:16;
+        unsigned Z:16;
+    } Unsigned;
+    struct {
+        signed X:16;
+        signed Y:16;
+        signed Z:16;
+    } Signed;
 } AccelerometerReading;
+
+typedef union {
+    struct {
+        unsigned XL:8;
+        unsigned XU:8;
+        unsigned YL:8;
+        unsigned YU:8;
+        unsigned ZL:8;
+        unsigned ZU:8;
+    };
+    struct {
+        unsigned X:16;
+        unsigned Y:16;
+        unsigned Z:16;
+    };
+} MagnetometerReading;
+
+typedef union {
+    struct {
+        unsigned PL:8;
+        unsigned PU:8;
+        unsigned TL:8;
+        unsigned TU:8;
+    };
+    struct {
+        unsigned P:16;
+        unsigned T:16;
+    };
+} BarometerReading;
+
+typedef union {
+    struct {
+        unsigned HL:8;
+        unsigned HU:8;
+        unsigned TL:8;
+        unsigned TU:8;
+    };
+    struct {
+        unsigned H:16;
+        unsigned T:16;
+    };
+} HumidityReading;
+
+typedef union {
+    struct {
+        unsigned VL:8;
+        unsigned VU:8;
+    };
+    struct {
+        unsigned V:16;
+    };
+} VoltageReading;
+
+typedef union {
+    struct {
+        Sentence time;
+        Sentence Latitude;
+        Sentence Longitude;
+        unsigned char Fix;
+        unsigned char NumSatellites;
+        Sentence HorizontalDilution;
+        Sentence Altitude;
+        Sentence HeightOfGeoid;
+    };
+} GPSReading;
+
+
 
 // System Frequencies
 #define SYS_FREQ            (80000000L)
@@ -111,7 +230,7 @@ typedef union {
 // UART Frequencies
 #define UART1_FREQ          57600       // 57.6 kbps - XBee
 #define UART2_FREQ          4800        //  4.8 kbps - GPS NMEA
-#define UART5_FREQ          9600        //  9.6 kbps - Bluetooth
+#define UART5_FREQ          57600        //  9.6 kbps - Bluetooth
 
 // SPI Frequencies
 #define SPI_uSD_FREQ        25000000    // 25 MHz Max
@@ -137,17 +256,33 @@ extern SPI1_Devices LastSPI1Initialize;
 // GPS Configuration Global Variables
 extern Sentence gps_nmea_position;
 extern Sentence gps_nmea_velocity;
+extern BOOL     gpsTimeUpdated;
 
 // XBee Configuration Global Variables
 extern Sentence xbee_baud;
 extern Sentence xbee_channel;
 extern Sentence xbee_network;
 
-// Gyroscope Variables
-extern Sentence            gyroTempBuf;
-extern Sentence            accelTempBuf;
-extern GyroscopeReading    gyroCurrent;
+// XBee Sentence Variables
+extern Sentence             gyroTempBuf;
+extern Sentence             accelTempBuf;
+extern Sentence             compassTempBuf;
+extern Sentence             barometerTempBuf;
+extern Sentence             humidityTempBuf;
+extern Sentence             voltageTempBuf;
+extern Sentence             angleTempBuf;
+extern Sentence             timeTempBuf;
+extern Sentence             gpsTempBuf;
+
+extern GyroscopeReading     gyroCurrent;
 extern AccelerometerReading accelCurrent;
+extern MagnetometerReading  compassCurrent;
+extern BarometerReading     barometerCurrent;
+extern HumidityReading      humidityCurrent;
+extern VoltageReading       voltageCurrent;
+extern AngleReading         angleCurrent;
+extern rtccTime             timeFCBCurrent;
+extern GPSReading           gpsBaseCurrent;
 
 // Initialization Commands
 extern void initializeUART(void);
@@ -160,6 +295,7 @@ extern UINT32 getXBee(char *, UINT32);
 extern void putsXBee(const char *, UINT32);
 extern UINT8 configureXBee(Sentence, Sentence, Sentence);
 extern UINT8 getXBeeConfig(void);
+extern void read_XBee_Sentence(void);
 
 // SPI Functions
 extern void initiateSPI1(int CLKSPEED);
@@ -169,18 +305,3 @@ extern UINT8 readGyroscope(GyroscopeAddress);
 // Bluetooth Functions
 extern UINT32 getBluetooth(char *, UINT32);
 extern void putsBluetooth(const char *, UINT32);
-
-// Gyroscope Functions
-extern void read_Gyro_Sentence(void);
-
-
-// SRAM Functions
-extern unsigned char SRAMReadStatusReg(void);
-extern char SRAMWriteStatusReg(unsigned char WriteVal);
-extern void SRAMCommand(unsigned char AddLB, unsigned char AddHB, unsigned char RWCmd);
-extern char SRAMWriteByte(unsigned char AddLB,unsigned char AddHB,unsigned char Data);
-extern unsigned char SRAMReadByte(unsigned char AddLB,unsigned char AddHB);
-extern unsigned char SRAMWritePage(unsigned char AddLB,unsigned char AddHB, unsigned char *WriteData);
-extern unsigned char SRAMReadPage(unsigned char AddLB,unsigned char AddHB,unsigned char *ReadData);
-extern char SRAMWriteSeq(unsigned char AddLB,unsigned char AddHB, unsigned char *WriteData,unsigned int WriteCnt);
-extern char SRAMReadSeq(unsigned char AddLB,unsigned char AddHB,unsigned char *ReadData,unsigned int ReadCnt);

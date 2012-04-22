@@ -49,12 +49,20 @@ typedef union {
         unsigned YU:8;
         unsigned ZL:8;
         unsigned ZU:8;
+        unsigned TU:8;
     };
     struct {
         signed X:16;
         signed Y:16;
         signed Z:16;
-    };
+        signed Temp:8;
+    } Signed;
+    struct {
+        unsigned X:16;
+        unsigned Y:16;
+        unsigned Z:16;
+        unsigned Temp:8;
+    } Unsigned;
 } GyroscopeReading;
 
 // Global Variables

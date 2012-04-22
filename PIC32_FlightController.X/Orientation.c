@@ -11,16 +11,14 @@
 #include <math.h>
 #include <float.h>
 
-#define SEND_TO_XBEE   FALSE
-#define SEND_TO_FPGA   TRUE
+#define SEND_TO_XBEE   TRUE
+#define SEND_TO_FPGA   FALSE
 
 
 BOOL firstRun = 0;
 float angleAccelX, angleAccelY;
 
-float currentAngleX, lastAngleX;
-float currentAngleY, lastAngleY;
-float currentAngleZ, lastAngleZ;
+AngleReading currentAngle, lastAngle;
 
 
 void startTimeCounter() {
@@ -45,25 +43,25 @@ void updateSensors() {
 
 
     // Convert Gyroscope to G's
-    float tempX = (short)(gyroCurrent.Y & 0xFFFF);
-    tempX = -1000 * (tempX / 65536);
+    float tempX = gyroCurrent.Signed.X;
+    tempX = 1000 * (tempX / 65536);
 
-    float tempY = (short)(gyroCurrent.X & 0xFFFF);
-    tempY = -1000 * (tempY / 65536);
+    float tempY = gyroCurrent.Signed.Y;
+    tempY = 1000 * (tempY / 65536);
 
-    float tempZ = (short)(gyroCurrent.Z & 0xFFFF);
+    float tempZ = gyroCurrent.Signed.Z;
     tempZ = 1000 * (tempZ / 65536);
 
+
     // Perform Accelerometer Calculations
-    float tempAX = (INT8)(accelCurrent.X & 0xFF);
-    tempAX = 4 * (tempAX / 256);
+    float tempAX = accelCurrent.Signed.X;
+    tempAX = (4 * (tempAX / 1024));// + 0.0000001;
 
-    float tempAY = (INT8)(accelCurrent.Y & 0xFF);
-    tempAY = 4 * (tempAY / 256);
+    float tempAY = accelCurrent.Signed.Y;
+    tempAY = (4 * (tempAY / 1024));// + 0.0000001;
 
-    float tempAZ = (INT8)(accelCurrent.Z & 0xFF);
-    tempAZ = 4 * (tempAZ / 256);
-
+    float tempAZ = accelCurrent.Signed.Z;
+    tempAZ = (4 * (tempAZ / 1024));// + 0.0000001;
 
     // Convert Accelerometer G's to Angles
     angleAccelX = atanf(tempAX / sqrtf(powf(tempAY, 2) + powf(tempAZ, 2)));
@@ -71,44 +69,79 @@ void updateSensors() {
 
     // Initialize Angles
     if (!firstRun) {
-        lastAngleX = angleAccelX;
-        lastAngleZ = angleAccelY;
-        lastAngleZ = 0;
+        lastAngle.X.Value = angleAccelX;
+        lastAngle.Y.Value = angleAccelY;
+        lastAngle.Z.Value = 0;
     }
 
     // Process All Current Angles
-    currentAngleX = (0.98 * (lastAngleX + (tempX * 0.01))) + (0.02 * angleAccelX);
-    currentAngleY = (0.98 * (lastAngleY + (tempY * 0.01))) + (0.02 * angleAccelY);
-    currentAngleZ = lastAngleZ + (tempZ * 0.01);
+    currentAngle.X.Value = (0.98 * (lastAngle.X.Value + (tempX * 0.01))) + (0.02 * angleAccelX);
+    currentAngle.Y.Value = (0.98 * (lastAngle.Y.Value + (tempY * 0.01))) + (0.02 * angleAccelY);
+    currentAngle.Z.Value = lastAngle.Z.Value + (tempZ * 0.01);
 
-    // Capture Update Time
-    int totalTime = stopTimeCounter();
 
     // Output to Screen
-    if (SEND_TO_XBEE) {
+    if (SEND_TO_XBEE == TRUE) {
         UINT8 buf[1024];
-        sprintf(buf, "AX: %3.4f, AY: %3.4f, AZ: %3.4f\tGX: %3.4f, GY: %3.4f, GZ: %3.4f\tPX: %3.4f, PY: %3.4f, PZ: %3.4f\tT: %d\r\n", tempAX, tempAY, tempAZ, tempX, tempY, tempZ, currentAngleX, currentAngleY, currentAngleZ, totalTime);
-        putsXBee(buf, strlen(buf));
+
+
+        // Format Gyroscope Data
+        buf[0] = 'Y';
+        buf[1] = gyroCurrent.XU;
+        buf[2] = gyroCurrent.XL;
+        buf[3] = gyroCurrent.YU;
+        buf[4] = gyroCurrent.YL;
+        buf[5] = gyroCurrent.ZU;
+        buf[6] = gyroCurrent.ZL;
+        buf[7] = gyroCurrent.TU;
+
+        // Format Accelerometer Data
+        buf[8] = 'A';
+        buf[9] = accelCurrent.XU;
+        buf[10] = accelCurrent.XL;
+        buf[11] = accelCurrent.YU;
+        buf[12] = accelCurrent.YL;
+        buf[13] = accelCurrent.ZU;
+        buf[14] = accelCurrent.ZL;
+        
+        // Format Current Angle Data
+        buf[15] =  'C';
+        buf[16] =  currentAngle.X.bytes.B3;
+        buf[17] = currentAngle.X.bytes.B2;
+        buf[18] = currentAngle.X.bytes.B1;
+        buf[19] = currentAngle.X.bytes.B0;
+        buf[20] = currentAngle.Y.bytes.B3;
+        buf[21] = currentAngle.Y.bytes.B2;
+        buf[22] = currentAngle.Y.bytes.B1;
+        buf[23] = currentAngle.Y.bytes.B0;
+        buf[24] = currentAngle.Z.bytes.B3;
+        buf[25] = currentAngle.Z.bytes.B2;
+        buf[26] = currentAngle.Z.bytes.B1;
+        buf[27] = currentAngle.Z.bytes.B0;
+        buf[28] = stopTimeCounter();
+
+        // Transmit Sensor Data
+        putsXBee(buf, 29);
     }
 
-    if (SEND_TO_FPGA) {
+    if (SEND_TO_FPGA == TRUE) {
         //X Angle Desired  $00
         sendFPGAData(0x00, 0x00);
 
         //X Angle Measured  $01
-        sendFPGAData(0x01, (UINT8)currentAngleX);
+        sendFPGAData(0x01, (UINT8)currentAngle.X.UValue);
 
         //Y Angle Desired  $02
         sendFPGAData(0x02, 0x00);
 
         //Y Angle Measured  $03
-        sendFPGAData(0x03, (UINT8)currentAngleY);
+        sendFPGAData(0x03, (UINT8)currentAngle.Y.UValue);
 
         //Z Angle Desired  $04
         sendFPGAData(0x04, 0x00);
 
         //Z Angle Measured  $05
-        sendFPGAData(0x05, (UINT8)currentAngleZ);
+        sendFPGAData(0x05, (UINT8)currentAngle.Y.UValue);
 
         //Altitude Desired $06 (30)
         sendFPGAData(0x06, 0x1E);
@@ -117,7 +150,7 @@ void updateSensors() {
     // Dump Angles to FPGA
 
     // Store Previous Values
-    lastAngleX = currentAngleX;
-    lastAngleY = currentAngleY;
-    lastAngleZ = currentAngleZ;
+    lastAngle.X.UValue = currentAngle.X.UValue;
+    lastAngle.Y.UValue = currentAngle.Y.UValue;
+    lastAngle.Z.UValue = currentAngle.Z.UValue;
 }

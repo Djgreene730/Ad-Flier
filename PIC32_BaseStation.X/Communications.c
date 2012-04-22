@@ -10,24 +10,53 @@
 #include "Ad-Flier_Pins.h"
 #include <plib.h>
 
+#define ReadSize_Gyroscope      8
+#define ReadSize_Accelerometer  7
+#define ReadSize_Compass        7
+#define ReadSize_Barometer      5
+#define ReadSize_Humidity       5
+#define ReadSize_Voltage        3
+#define ReadSize_GPS            1
+#define ReadSize_Angles         14
+#define ReadSize_Time           5
+
 // Last SPI Device Used
-SPI1_Devices    LastSPI1Initialize = None;
+SPI1_Devices        LastSPI1Initialize = None;
 
 // GPS Configuration Global Variables
-Sentence    gpsTempBuf = {0, 0};
-Sentence    gps_nmea_position = {0, 0};
-Sentence    gps_nmea_velocity = {0, 0};
+Sentence            gpsTempBuf = {0, 0};
+Sentence            gps_nmea_position = {0, 0};
+Sentence            gps_nmea_velocity = {0, 0};
 
-// Gyroscope Readings
-Sentence            gyroTempBuf = {0, 0};
-Sentence            accelTempBuf = {0, 0};
-GyroscopeReading    gyroCurrent;
-AccelerometerReading    accelCurrent;
+// Sensor Readings
+Sentence             gyroTempBuf = {0, 0};
+Sentence             accelTempBuf = {0, 0};
+Sentence             compassTempBuf = {0, 0};
+Sentence             barometerTempBuf = {0, 0};
+Sentence             humidityTempBuf = {0, 0};
+Sentence             voltageTempBuf = {0, 0};
+Sentence             angleTempBuf = {0, 0};
+Sentence             gpsFCBTempBuf = {0, 0};
+Sentence             timeTempBuf = {0, 0};
+
+GyroscopeReading     gyroCurrent;
+AccelerometerReading accelCurrent;
+MagnetometerReading  compassCurrent;
+BarometerReading     barometerCurrent;
+HumidityReading      humidityCurrent;
+VoltageReading       voltageCurrent;
+AngleReading         angleCurrent;
+rtccTime             timeFCBCurrent;
+GPSReading           gpsBaseCurrent;
+
 
 // XBee Configuration Global Variables
-Sentence    xbee_baud = {0, 0};
-Sentence    xbee_channel = {0, 0};
-Sentence    xbee_network = {0, 0};
+Sentence            xbee_baud = {0, 0};
+Sentence            xbee_channel = {0, 0};
+Sentence            xbee_network = {0, 0};
+
+// Has the RTCC Time Been Synced with GPS?
+BOOL gpsTimeUpdated = FALSE;
 
 
 // Initialize all Applicable UART Channels
@@ -45,19 +74,21 @@ void initializeUART (void) {
     INTSetVectorPriority(INT_VECTOR_UART(UART1), INT_PRIORITY_LEVEL_1);
     INTSetVectorSubPriority(INT_VECTOR_UART(UART1), INT_SUB_PRIORITY_LEVEL_0);
 
+
     // Initialize UART2 - U3A - GPS (NMEA)
     UARTConfigure(UART2, UART_ENABLE_PINS_TX_RX_ONLY);
     UARTSetFifoMode(UART2, UART_INTERRUPT_ON_TX_NOT_FULL | UART_INTERRUPT_ON_RX_NOT_EMPTY);
     UARTSetLineControl(UART2, UART_DATA_SIZE_8_BITS | UART_PARITY_NONE | UART_STOP_BITS_1);
     UARTSetDataRate(UART2, PBUS_FREQ, UART2_FREQ);
-    UARTEnable(UART2, UART_ENABLE_FLAGS(UART_PERIPHERAL | UART_RX));
+    UARTEnable(UART2, UART_PERIPHERAL | UART_ENABLE | UART_RX | UART_TX);
 
     // Configure UART2 RX Interrupt
     INTEnable(INT_SOURCE_UART_RX(UART2), INT_ENABLED);
     INTSetVectorPriority(INT_VECTOR_UART(UART2), INT_PRIORITY_LEVEL_2);
     INTSetVectorSubPriority(INT_VECTOR_UART(UART2), INT_SUB_PRIORITY_LEVEL_0);
 
-    // Initialize UART5 - U3B - GPS (TSIP)
+
+    // Initialize UART5 - U3B - Bluetooth
     UARTConfigure(UART5, UART_ENABLE_PINS_TX_RX_ONLY);
     //UARTSetFifoMode(UART5, UART_INTERRUPT_ON_TX_NOT_FULL | UART_INTERRUPT_ON_RX_NOT_EMPTY);
     UARTSetDataRate(UART5, PBUS_FREQ, UART5_FREQ);
@@ -80,18 +111,16 @@ UINT32 char_size = 0;
 // Interrupt Function for GPS on UART2
 void __ISR(_UART1_VECTOR, IPL2SOFT) IntUart1Handler(void) {
   // Is this an RX interrupt?
-  if (INTGetFlag(INT_SOURCE_UART_RX(UART1)))
-    {
+  if (INTGetFlag(INT_SOURCE_UART_RX(UART1))) {
       // Echo what we just received.
-      read_Gyro_Sentence();
+      read_XBee_Sentence();
 
       // Clear the RX interrupt Flag
       INTClearFlag(INT_SOURCE_UART_RX(UART1));
     }
 
   // We don't care about TX interrupt
-  if ( INTGetFlag(INT_SOURCE_UART_TX(UART1)) )
-    {
+  if ( INTGetFlag(INT_SOURCE_UART_TX(UART1)) )  {
       INTClearFlag(INT_SOURCE_UART_TX(UART1));
     }
 }
@@ -99,8 +128,8 @@ void __ISR(_UART1_VECTOR, IPL2SOFT) IntUart1Handler(void) {
 // Interrupt Function for GPS on UART2
 void __ISR(_UART2_VECTOR, IPL2SOFT) IntUart2Handler(void) {
   // Is this an RX interrupt?
-  if (INTGetFlag(INT_SOURCE_UART_RX(UART2)))
-    {
+  if (INTGetFlag(INT_SOURCE_UART_RX(UART2))) {
+
       // Echo what we just received.
       read_GPS_Sentence();
 
@@ -109,19 +138,16 @@ void __ISR(_UART2_VECTOR, IPL2SOFT) IntUart2Handler(void) {
     }
 
   // We don't care about TX interrupt
-  if ( INTGetFlag(INT_SOURCE_UART_TX(UART2)) )
-    {
+  if ( INTGetFlag(INT_SOURCE_UART_TX(UART2)) ) {
       INTClearFlag(INT_SOURCE_UART_TX(UART2));
     }
 }
 
 // Keep track of GPS Sentence Position
 UINT8 currentGpsState = 0;
-
 // Get GPS Sentence from NMEA Port
 UINT32 read_GPS_Sentence() {
-   
-    while(UARTReceivedDataIsAvailable(UART2)) {
+    if (UARTReceivedDataIsAvailable(UART2)) {
         UINT8 character = 0;
 
         // Wait for GPS Line to be Free, then grab the character
@@ -132,7 +158,7 @@ UINT32 read_GPS_Sentence() {
             gpsTempBuf.size = 0;
             currentGpsState = 1;
         }
-        
+
         // Record the Character if we're in the Sentence Stream
         if (currentGpsState == 1) {
             gpsTempBuf.data[gpsTempBuf.size] = character;
@@ -140,49 +166,12 @@ UINT32 read_GPS_Sentence() {
 
             // Is this the last character?
             if (character == '\n') {
-                currentGpsState = 2;
-                break;
+                gpsTempBuf.ready = 1;
+                currentGpsState = 0;
             }
         }
     }
 
-    //Copy new GPS string to Globals
-    if (currentGpsState == 2) {
-        int i = 0;
-        if (gpsTempBuf.data[3] == 'G') {
-            // Hold any operations to Sentence
-            gps_nmea_position.ready = 0;
-
-            // Copy GPS TempBuf to Sentence
-            for (i = 0; i < gpsTempBuf.size; i++) {
-                gps_nmea_position.data[i] = gpsTempBuf.data[i];
-            }
-            gps_nmea_position.size = gpsTempBuf.size;
-
-            // Sentence is ready to go!
-            gps_nmea_position.ready = 1;
-            //putsXBee(gps_nmea_position.data, gps_nmea_position.size);
-        }
-        else if (gpsTempBuf.data[3] == 'V') {
-            // Hold any operations to Sentence
-            gps_nmea_velocity.ready = 0;
-
-            // Copy GPS TempBuf to Sentence
-            for (i = 0; i < gpsTempBuf.size; i++) {
-                gps_nmea_velocity.data[i] = gpsTempBuf.data[i];
-            }
-            gps_nmea_velocity.size = gpsTempBuf.size;
-
-            // Sentence is ready to go!
-            gps_nmea_velocity.ready = 1;
-            //putsXBee(gps_nmea_velocity.data, gps_nmea_velocity.size);
-        }
-        else {
-            // Error
-        }
-        currentGpsState = 0;
-    }
-    
     // Return the Size of the Sentence
     return gpsTempBuf.size;
 }
@@ -224,7 +213,7 @@ UINT32 getXBee(char *buffer, UINT32 max_size) {
     while(num_char < max_size) {
         UINT8 character;
 
-        // Wait for XBee Line to be Free, then grab the character
+        // Wait for character to come...
         while(!UARTReceivedDataIsAvailable(UART1));
         character = UARTGetDataByte(UART1);
 
@@ -252,9 +241,9 @@ void putsXBee(const char *buffer, UINT32 size) {
         UARTSendDataByte(UART1, *buffer);
         buffer++;
         size--;
-    }
 
-    while(!UARTTransmissionHasCompleted(UART1));
+        while(!UARTTransmissionHasCompleted(UART1));
+    }    
 }
 
 // Send a character string onto the Bluetooth
@@ -267,9 +256,9 @@ void putsBluetooth(const char *buffer, UINT32 size) {
         UARTSendDataByte(UART5, *buffer);
         buffer++;
         size--;
-    }
 
-    while(!UARTTransmissionHasCompleted(UART5));
+        while(!UARTTransmissionHasCompleted(UART5));
+    }    
 }
 
 // Send a character string onto the XBee
@@ -289,7 +278,7 @@ UINT8 configureXBee(Sentence baudRate, Sentence channelID, Sentence networkID) {
 
     // Channel ID: 0B   - 1A
     // Network ID: 0000 - FFFF
-
+    INTDisableInterrupts();
     UINT8   buf[100];
     UINT32  rx_size;
 
@@ -326,19 +315,33 @@ UINT8 configureXBee(Sentence baudRate, Sentence channelID, Sentence networkID) {
                     putsXBee("ATCN\r", strlen("ATCN\r"));
                     rx_size = getXBee(buf, 100);
                 }
-                else return 0;
+                else {
+                    INTEnableInterrupts();
+                    return 0;
+                }
             }
-            else return 0;
+            else {
+                INTEnableInterrupts();
+                return 0;
+            }
         }
-        else return 0;
+        else {
+            INTEnableInterrupts();
+            return 0;
+        }
     }
-    else return 0;
+    else {
+        INTEnableInterrupts();        
+        return 0;
+    }
 
     // Configuration Successful
+    INTEnableInterrupts();
     return 1;
 }
 
 UINT8 getXBeeConfig() {
+    INTDisableInterrupts();
     UINT8   buf[20];
     UINT32  rx_size;
 
@@ -367,10 +370,12 @@ UINT8 getXBeeConfig() {
 
     // Failed to Enter Config Mode
     else {
+        INTEnableInterrupts();
         return 0;
     }
 
     // All Good, time to go home...
+    INTEnableInterrupts();
     return 1;
 }
 
@@ -399,81 +404,289 @@ void initiateSPI1(int CLKSPEED) {
 
 
 
-// Get Gyroscope Readings from XBee
-UINT8 currentGyroState = 0;
-void read_Gyro_Sentence() {
+// Get Sensor Readings from XBee
+UINT8 currentReadState  =   0;
+void read_XBee_Sentence() {
+    
+    // While data is in the RX Buffer...
     while(UARTReceivedDataIsAvailable(UART1)) {
-        UINT8 character = 0;
 
-        // Wait for GPS Line to be Free, then grab the character
+        // Grab Character...
+        UINT8 character = 0;
         character = UARTGetDataByte(UART1);
 
-        // Wait for GPS Code Prefix
-        if ((character == 71) && (currentGyroState != 1)) {
-            gyroTempBuf.size = 0;
-            currentGyroState = 1;
-        }
-        else if ((character == 65) && (currentGyroState != 1)) {
-            accelTempBuf.size = 0;
-            currentGyroState = 3;
-        }
-
-        // Record the Character if we're in the Sentence Stream
-        if (currentGyroState == 1) {
-            gyroTempBuf.data[gyroTempBuf.size] = character;
-            gyroTempBuf.size++;
-
-            // Is this the last character?
-            if (gyroTempBuf.size == 7) {
-                currentGyroState = 2;
-                break;
+        // Determine the message type...
+        if (currentReadState == 0) {
+            switch(character){
+                case 'Y':
+                    // Gyroscope Reading
+                    gyroTempBuf.size = 0;
+                    currentReadState = 'Y';
+                    break;
+                case 'A':
+                    // Accelerometer Reading
+                    accelTempBuf.size = 0;
+                    currentReadState = 'A';
+                    break;
+                case 'M':
+                    // Magnetometer Reading
+                    compassTempBuf.size = 0;
+                    currentReadState = 'M';
+                    break;
+                case 'P':
+                    // Barometer Reading
+                    barometerTempBuf.size = 0;
+                    currentReadState = 'P';
+                    break;
+                case 'H':
+                    // Humidity Reading
+                    humidityTempBuf.size = 0;
+                    currentReadState = 'H';
+                    break;
+                case 'W':
+                    // Power Source Reading
+                    voltageTempBuf.size = 0;
+                    currentReadState = 'W';
+                    break;
+                case 'G':
+                    // Flight Control Board GPS Reading
+                    gpsFCBTempBuf.size = 0;
+                    currentReadState = 'G';
+                    break;
+                case 'C':
+                    // Current Angles Reading
+                    angleTempBuf.size = 0;
+                    currentReadState = 'C';
+                    break;
+                case 'T':
+                    // Flight Control Board Time Reading
+                    timeTempBuf.size = 0;
+                    currentReadState = 'T';
+                default:
+                    // Error
+                    currentReadState = 0;
+                    break;
             }
         }
-        else if (currentGyroState == 3) {
-            accelTempBuf.data[accelTempBuf.size] = character;
-            accelTempBuf.size++;
 
-            // Is this the last character?
-            if (accelTempBuf.size == 4) {
-                currentGyroState = 4;
+        // Store the character
+        switch(currentReadState){
+            case 'Y':
+                // Gyroscope Reading
+                gyroTempBuf.data[gyroTempBuf.size] = character;
+                gyroTempBuf.size++;
+
+                // Is Reading Full?
+                if (gyroTempBuf.size >= ReadSize_Gyroscope) {
+                    // Mark Gyroscope Register as Busy
+                    gyroTempBuf.ready = 0;
+
+                    // Copy X-Value
+                    gyroCurrent.XU = gyroTempBuf.data[1];
+                    gyroCurrent.XL = gyroTempBuf.data[2];
+
+                    // Copy Y-Value
+                    gyroCurrent.YU = gyroTempBuf.data[3];
+                    gyroCurrent.YL = gyroTempBuf.data[4];
+
+                    // Copy Z-Value
+                    gyroCurrent.ZU = gyroTempBuf.data[5];
+                    gyroCurrent.ZL = gyroTempBuf.data[6];
+
+                    // Copy Temperature
+                    gyroCurrent.TU = gyroTempBuf.data[7];
+
+                    // Mark Gyroscope Register as Ready and Restart
+                    gyroTempBuf.ready = 1;
+                    currentReadState = 0;
+                }
                 break;
-            }
+            case 'A':
+                // Accelerometer Reading
+                accelTempBuf.data[accelTempBuf.size] = character;
+                accelTempBuf.size++;
+
+                // Is Reading Full?
+                if (accelTempBuf.size >= ReadSize_Accelerometer) {
+                    // Mark Register as Busy
+                    accelTempBuf.ready = 0;
+
+                    // Copy X-Value
+                    accelCurrent.XU = accelTempBuf.data[1];
+                    accelCurrent.XL = accelTempBuf.data[2];
+
+                    // Copy Y-Value
+                    accelCurrent.YU = accelTempBuf.data[3];
+                    accelCurrent.YL = accelTempBuf.data[4];
+
+                    // Copy Z-Value
+                    accelCurrent.ZU = accelTempBuf.data[5];
+                    accelCurrent.ZL = accelTempBuf.data[6];
+
+                    // Mark Register as Ready and Restart
+                    accelTempBuf.ready = 1;
+                    currentReadState = 0;
+                }
+                break;
+            case 'M':
+                // Magnetometer Reading
+                compassTempBuf.data[compassTempBuf.size] = character;
+                compassTempBuf.size++;
+
+                // Is Reading Full?
+                if (compassTempBuf.size >= ReadSize_Compass) {
+                    // Mark Register as Busy
+                    compassTempBuf.ready = 0;
+
+                    // Copy X-Value
+                    compassCurrent.XU = compassTempBuf.data[1];
+                    compassCurrent.XL = compassTempBuf.data[2];
+
+                    // Copy Y-Value
+                    compassCurrent.YU = compassTempBuf.data[3];
+                    compassCurrent.YL = compassTempBuf.data[4];
+
+                    // Copy Z-Value
+                    compassCurrent.ZU = compassTempBuf.data[5];
+                    compassCurrent.ZL = compassTempBuf.data[6];
+
+                    // Mark Register as Ready and Restart
+                    compassTempBuf.ready = 1;
+                    currentReadState = 0;
+                }
+                break;
+            case 'P':
+                // Barometer Reading
+                barometerTempBuf.data[barometerTempBuf.size] = character;
+                barometerTempBuf.size++;
+
+                // Is Reading Full?
+                if (barometerTempBuf.size >= ReadSize_Barometer) {
+                    // Mark Register as Busy
+                    barometerTempBuf.ready = 0;
+
+                    // Copy Pressure
+                    barometerCurrent.PU = barometerTempBuf.data[1];
+                    barometerCurrent.PL = barometerTempBuf.data[2];
+
+                    // Copy Temperature
+                    barometerCurrent.TU = barometerTempBuf.data[3];
+                    barometerCurrent.TL = barometerTempBuf.data[4];
+
+                    // Mark Register as Ready and Restart
+                    barometerTempBuf.ready = 1;
+                    currentReadState = 0;
+                }
+                break;
+            case 'H':
+                // Humidity Reading
+                humidityTempBuf.data[humidityTempBuf.size] = character;
+                humidityTempBuf.size++;
+
+                // Is Reading Full?
+                if (humidityTempBuf.size >= ReadSize_Humidity) {
+                    // Mark Register as Busy
+                    humidityTempBuf.ready = 0;
+
+                    // Copy Pressure
+                    humidityCurrent.HU = humidityTempBuf.data[1];
+                    humidityCurrent.HL = humidityTempBuf.data[2];
+
+                    // Copy Temperature
+                    humidityCurrent.TU = humidityTempBuf.data[3];
+                    humidityCurrent.TL = humidityTempBuf.data[4];
+
+                    // Mark Register as Ready and Restart
+                    humidityTempBuf.ready = 1;
+                    currentReadState = 0;
+                }
+                break;
+            case 'W':
+                // Power Source Reading
+                voltageTempBuf.data[voltageTempBuf.size] = character;
+                voltageTempBuf.size++;
+
+                // Is Reading Full?
+                if (voltageTempBuf.size >= ReadSize_Voltage) {
+                    // Mark Register as Busy
+                    voltageTempBuf.ready = 0;
+
+                    // Copy Pressure
+                    voltageCurrent.VU = voltageTempBuf.data[1];
+                    voltageCurrent.VL = voltageTempBuf.data[2];
+
+                    // Mark Register as Ready and Restart
+                    voltageTempBuf.ready = 1;
+                    currentReadState = 0;
+                }
+                break;
+            case 'G':
+                // Flight Control Board GPS Reading
+                gpsFCBTempBuf.data[gpsFCBTempBuf.size] = character;
+                gpsFCBTempBuf.size++;
+
+                // Is Reading Full?
+                if (gpsFCBTempBuf.size >= ReadSize_GPS) {
+                    currentReadState = 0;
+                }
+                break;
+            case 'T':
+                // Flight Control Boad Time Reading
+                timeTempBuf.data[timeTempBuf.size] = character;
+                timeTempBuf.size ++;
+
+                // Is Reading Full?
+                if (timeTempBuf.size >= ReadSize_Time) {
+                    // Copy Time Byte's
+                    timeFCBCurrent.b[3] = timeTempBuf.data[1];
+                    timeFCBCurrent.b[2] = timeTempBuf.data[2];
+                    timeFCBCurrent.b[1] = timeTempBuf.data[3];
+                    timeFCBCurrent.b[0] = timeTempBuf.data[4];
+
+                    // Mark Register as Ready
+                    currentReadState = 0;
+                }
+
+            case 'C':
+                // Current Angles Reading
+                angleTempBuf.data[angleTempBuf.size] = character;
+                angleTempBuf.size++;
+
+                // Is Reading Full?
+                if (angleTempBuf.size >= ReadSize_Angles) {
+                    // Mark Register as Busy
+                    angleTempBuf.ready = 0;
+
+                    // Copy X-Value
+                    angleCurrent.X.bytes.B3 = angleTempBuf.data[1];
+                    angleCurrent.X.bytes.B2 = angleTempBuf.data[2];
+                    angleCurrent.X.bytes.B1 = angleTempBuf.data[3];
+                    angleCurrent.X.bytes.B0 = angleTempBuf.data[4];
+
+                    // Copy Y-Value
+                    angleCurrent.Y.bytes.B3 = angleTempBuf.data[5];
+                    angleCurrent.Y.bytes.B2 = angleTempBuf.data[6];
+                    angleCurrent.Y.bytes.B1 = angleTempBuf.data[7];
+                    angleCurrent.Y.bytes.B0 = angleTempBuf.data[8];
+
+                    // Copy Z-Value
+                    angleCurrent.Z.bytes.B3 = angleTempBuf.data[9];
+                    angleCurrent.Z.bytes.B2 = angleTempBuf.data[10];
+                    angleCurrent.Z.bytes.B1 = angleTempBuf.data[11];
+                    angleCurrent.Z.bytes.B0 = angleTempBuf.data[12];
+
+                    // Update Conversion Time
+                    angleCurrent.T = angleTempBuf.data[13];
+
+                    // Mark Register as Ready and Restart
+                    angleTempBuf.ready = 1;
+                    currentReadState = 0;
+                }
+                break;
+            default:
+                // Error
+                currentReadState = 0;
+                break;
         }
-
-    }
-
-    //Copy new GPS string to Globals
-    if (currentGyroState == 2) {
-        gyroTempBuf.ready = 0;
-
-        // Copy X-Value
-        gyroCurrent.X = (gyroTempBuf.data[1] & 0xFF)<<8;
-        gyroCurrent.X |= (gyroTempBuf.data[2] & 0xFF);
-
-        // Copy Y-Value
-        gyroCurrent.Y = (gyroTempBuf.data[3] & 0xFF)<<8;
-        gyroCurrent.Y |= (gyroTempBuf.data[4] & 0xFF);
-
-        // Copy Z-Value
-        gyroCurrent.Z = (gyroTempBuf.data[5] & 0xFF)<<8;
-        gyroCurrent.Z |= (gyroTempBuf.data[6] & 0xFF);
-
-        gyroTempBuf.ready = 1;
-        currentGyroState = 0;
-    }
-    else if (currentGyroState == 4) {
-        accelTempBuf.ready = 0;
-
-        // Copy X-Value
-        accelCurrent.X = (accelTempBuf.data[1] & 0xFF);
-
-        // Copy Y-Value
-        accelCurrent.Y = (accelTempBuf.data[2] & 0xFF);
-
-        // Copy Z-Value
-        accelCurrent.Z = (accelTempBuf.data[3] & 0xFF);
-
-        accelTempBuf.ready = 1;
-        currentGyroState = 0;
     }
 }

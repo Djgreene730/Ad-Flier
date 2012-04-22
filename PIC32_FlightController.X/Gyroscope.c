@@ -99,4 +99,6 @@ void updateGyroscopeReadings (void) {
     gyroCurrent.ZU = readGyroscope(OUT_Z_H);
     gyroCurrent.ZL = readGyroscope(OUT_Z_L);
 
+    // Get Temperature
+    gyroCurrent.TU = readGyroscope(OUT_TEMP);
 }

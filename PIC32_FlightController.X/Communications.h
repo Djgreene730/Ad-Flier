@@ -21,6 +21,35 @@ typedef enum {
     SRAM        =   4
 } SPI1_Devices;
 
+typedef union {
+    struct {
+        unsigned B0:8;
+        unsigned B1:8;
+        unsigned B2:8;
+        unsigned B3:8;
+    } bytes;
+    struct {
+        unsigned RSV:16;
+        unsigned SL:8;
+        unsigned SU:8;
+        unsigned ML:8;
+        unsigned MU:8;
+        unsigned HL:8;
+        unsigned HU:8;
+    } timeBytes;
+    unsigned UValue:32;
+    signed   SValue:32;
+    float    Value;
+} DFloat;
+
+typedef union {
+    struct {
+        DFloat  X;
+        DFloat  Y;
+        DFloat  Z;
+        UINT8   T;
+    };
+} AngleReading;
 
 // Structures
 typedef struct {

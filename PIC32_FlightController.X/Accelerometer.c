@@ -20,15 +20,21 @@ UINT8 Addr_Accel_WR = 0x3A;
 UINT8 Addr_Accel_RD = 0x3B;
 
 // Setup Accelerometer Configuration
-void     setupAccelerometer() {
+void setupAccelerometer() {
     // Configure Register 1
-    writeAccelerometer(ACCEL_CTRL_REG1, 0x03);
+    writeAccelerometer(ACCEL_CTRL_REG1, 0x1D); //100Hz, LowNoise, Full-Read
+
+    // Configure Register 2
+    writeAccelerometer(ACCEL_CTRL_REG2, 0x12); //HighResolution, No Sleep
+
+    // Configure Register 3
+    writeAccelerometer(ACCEL_CTRL_REG3, 0x00); //Default Int's
 
     // Configure Register 4
-    writeAccelerometer(ACCEL_CTRL_REG4, 0x01);
+    writeAccelerometer(ACCEL_CTRL_REG4, 0x01); //Interrupt on DRDY
 
     // Configure Register 5
-    writeAccelerometer(ACCEL_CTRL_REG5, 0x01);
+    writeAccelerometer(ACCEL_CTRL_REG5, 0x01); //Interrupt on Pin1
 }
 
 // Read Register on Accelerometer
@@ -109,11 +115,16 @@ void     updateAccelerometerReadings (void) {
 
     // Copy X-Value
     accelCurrent.XU = readAccelerometer(ACCEL_OUT_X_MSB);
+    accelCurrent.XL = readAccelerometer(ACCEL_OUT_X_LSB);
+    accelCurrent.Unsigned.X = accelCurrent.Unsigned.X >> 6;
 
     // Copy Y-Value
     accelCurrent.YU = readAccelerometer(ACCEL_OUT_Y_MSB);
+    accelCurrent.YL = readAccelerometer(ACCEL_OUT_Y_LSB);
+    accelCurrent.Unsigned.Y = accelCurrent.Unsigned.Y >> 6;
 
     // Copy Z-Value
     accelCurrent.ZU = readAccelerometer(ACCEL_OUT_Z_MSB);
-
+    accelCurrent.ZL = readAccelerometer(ACCEL_OUT_Z_LSB);
+    accelCurrent.Unsigned.Z = accelCurrent.Unsigned.Z >> 6;
 }

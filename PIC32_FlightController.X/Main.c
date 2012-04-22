@@ -45,11 +45,7 @@ int main(int argc, char** argv) {
     // Setup Main System
     SYSTEMConfigPerformance(80000000L);
     DDPCONbits.JTAGEN = 0;
-
-    // Configure for multi-vectored mode & Enable Interrupts
-    INTConfigureSystem(INT_SYSTEM_CONFIG_MULT_VECTOR);
-    INTEnableInterrupts();
-    
+   
     // Initialize System Pins
     initializeAllPins();
 
@@ -65,7 +61,9 @@ int main(int argc, char** argv) {
     xbee_network.size = 4;  strcpy(xbee_network.data, "3421");
     configureXBee(xbee_baud, xbee_channel, xbee_network);
 
-    
+    // Configure for multi-vectored mode & Enable Interrupts
+    INTConfigureSystem(INT_SYSTEM_CONFIG_MULT_VECTOR);
+    INTEnableInterrupts();
 
     // Loop Infinitely
     while(1) {
@@ -111,6 +109,8 @@ int main(int argc, char** argv) {
          */
 
         updateSensors();
+
+        Delayms(100);
 
 
 
