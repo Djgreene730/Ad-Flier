@@ -1,7 +1,7 @@
 --	=	=	=	=	=	=	=	=	=	=	=	=	=	=	=
 --	Title:		Ad-Flier BoardTest Top Level
 --	Project:	The Ad-Flier, Spring 2012
---	Author:		David Greene
+--	Authors:		David Greene, Salvatore D'Acunto
 --	=	=	=	=	=	=	=	=	=	=	=	=	=	=	=
 
 LIBRARY IEEE;
@@ -19,7 +19,7 @@ entity BoardTest is
 		
 		-- Board Switches & Lights
 		Switch_1			:	in		std_logic_vector(3 downto 0);	-- DIP Switch Bank
-		Switch_2			:	in		std_logic;						-- Push-Buttom 1
+		Switch_2			:	in		std_logic;						-- Push-Button 1
 		Switch_3			:	in		std_logic;						-- Push-Button 2
 		Switch_4			:	in		std_logic;						-- Push-Button 3
 		TLED_Orange_1		:	out		std_logic;						-- Top Board Indicator 1
@@ -184,9 +184,9 @@ architecture STR of BoardTest is
 	
 	-- Signals
 	signal clk_1Hz			:	std_logic := '0';
-	signal pwm1, pwm2, pwm3, pwm4, count : std_logic_vector(7 downto 0) := "00000000";
+	signal pwm1, pwm2, pwm3, pwm4, count, countpwm : std_logic_vector(7 downto 0) := "00000000";
 	signal RegXD, RegYD, RegZD, RegXM, RegYM, RegZM, RegAD, RegMisc : std_logic_vector(7 downto 0) := "00000000";
-	signal RegAM, RegAMc, RegTR, RegTRc : std_logic_vector(7 downto 0) := "00000000";
+	signal RegAM, RegAMc, RegTR, RegTRc, RegAMA : std_logic_vector(7 downto 0) := "00000000";
 	signal pwm_yaw, pwm_pitch, pwm_roll, pwm_altitude, pwm_a : std_logic_vector(8 downto 0) := "000000000";
 	signal pwm_n, pwm_s, pwm_e, pwm_w : std_logic_vector(8 downto 0) := "000000000";
 
@@ -195,6 +195,9 @@ architecture STR of BoardTest is
 
 begin
 
+   -- Altitude Adjustment
+	RegAMA <= RegAMc - 2;
+	
 	-- Instantiations:
 	U_1HzClkDivider		:	clk_div generic map (6293750) port map (clk, clk_1Hz);
 	
@@ -209,17 +212,17 @@ begin
 	U_Motor_4					:  motor_pwm port map (clk, pwm4, Motor_West);
 	
 	--Register Instantations
-	U_Registers             :  regmap    port map (clk, Switch_1(3), PIC_PBUS_Data, PIC_PBUS_A_D, PIC_PBUS_R_W,
+	U_Registers             :  regmap    port map (clk, Switch_2, PIC_PBUS_Data, PIC_PBUS_A_D, PIC_PBUS_R_W,
 															  PIC_PBUS_OK_IN, PIC_PBUS_OK_OUT, 
 															  RegXD, RegYD, RegZD, RegXM, RegYM, RegZM, RegAD, RegMisc);
-	U_RegAM                 : quadreg port map(clk, Altitude, Switch_1(3), '1', '1', RegAM, RegAMc);
-	U_RegTR                 : quadreg port map(clk, Top_Range, Switch_1(3), '1', '1', RegTR, RegTRc);
+	U_RegAM                 : quadreg port map(clk, Altitude, Switch_2, '1', '1', RegAM, RegAMc);
+	U_RegTR                 : quadreg port map(clk, Top_Range, Switch_2, '1', '1', RegTR, RegTRc);
 	
 	--PID Instations
 	U_Yaw                   : pid_yaw_controller port map (clk, RegZD, RegZM, pwm_yaw);
 	U_Pitch                 : pid_pitch_controller port map (clk, RegYD, RegYM, pwm_pitch);
 	U_Roll                  : pid_roll_controller port map (clk, RegXD, RegXM, pwm_roll);
-	U_Altitude              : pid_altitude_controller port map (clk, RegAD, RegAM, pwm_altitude);
+	U_Altitude              : pid_altitude_controller port map (clk, RegAD, RegAMA, pwm_altitude);
 
 	
 	-- Setup: Bi-Directional Ports to High Impedance
@@ -289,39 +292,39 @@ begin
 		end if;
 		
 	end process;
-	
-	process(pwm_n, pwm_s, pwm_e, pwm_w)
-	begin
-		if pwm_n(8) = '1' then
-			pwm1 <= "11111111";
-		else
-			pwm1 <= pwm_n(7 downto 0);
-		end if;
-
-		if pwm_e(8) = '1' then
-			pwm2 <= "11111111";
-		else
-			pwm2 <= pwm_e(7 downto 0);
-		end if;
-		
-		if pwm_s(8) = '1' then
-			pwm3 <= "11111111";
-		else
-			pwm3 <= pwm_s(7 downto 0);
-		end if;
-		
-		if pwm_w(8) = '1' then
-			pwm4 <= "11111111";
-		else
-			pwm4 <= pwm_w(7 downto 0);
-		end if;
-	end process;
+--	
+--	process(pwm_n, pwm_s, pwm_e, pwm_w)
+--	begin
+--		if pwm_n(8) = '1' then
+--			pwm1 <= "11111111";
+--		else
+--			pwm1 <= pwm_n(7 downto 0);
+--		end if;
+--
+--		if pwm_e(8) = '1' then
+--			pwm2 <= "11111111";
+--		else
+--			pwm2 <= pwm_e(7 downto 0);
+--		end if;
+--		
+--		if pwm_s(8) = '1' then
+--			pwm3 <= "11111111";
+--		else
+--			pwm3 <= pwm_s(7 downto 0);
+--		end if;
+--		
+--		if pwm_w(8) = '1' then
+--			pwm4 <= "11111111";
+--		else
+--			pwm4 <= pwm_w(7 downto 0);
+--		end if;
+--	end process;
 		
 	-- Test 1:
-	-- A.) Toggle TLED_Orange_1 every clk_1Hz Pulse	
-	process (clk_1Hz, RegTRc, RegAMc)
+	-- A.) Set TLED_Orange_1 on reset	
+	process (clk_1Hz, RegTRc, RegAMc, count)
 		variable current_State	:	std_logic := '0';
-		variable counter		   :	std_logic_vector(7 downto 0) := (others => '0');
+		variable counter, counterp		   :	std_logic_vector(7 downto 0) := (others => '0');
 	begin
 		TLED_Orange_2 <= '0';
 		if (clk_1Hz'event and clk_1Hz = '1') then
@@ -329,29 +332,38 @@ begin
 			TLED_Orange_1 <= current_State;
 			counter := counter + 1;
 			count <= counter;
+			
+			if (countpwm < "00010000") then
+				counterp := counterp + 1;
+				countpwm <= counter;
+			else
+				countpwm <= "00000000";
+				counterp := "00000000";
+			end if;
 		end if;
 		
 		if RegTRc = RegAMc then
 			TLED_Orange_2 <= '1';
 		end if;
+		
 	end process;
 	
 	-- Test 2:
 	-- A.) Tie PICBUS_BUS to All Bottom LEDs
 	-- B.) Check every clk clock pulse
-	process (clk, Altitude)
+	process (clk, RegAMA)
 	begin
 		if (clk'event and clk = '1') then
-			BLED_Blue	<= Altitude(7 downto 4);
-			BLED_Orange	<= Altitude(3 downto 0);
+			BLED_Blue	<= RegAMA(7 downto 4);
+			BLED_Orange	<= RegAMA(3 downto 0);
 		end if;
 	end process;
 	
 	--Test 3:
 	--A.) Run Motors
-	--	pwm1 <= count when Switch_1(0) = '1' else "00001000";
-	--	pwm2 <= count when Switch_1(1) = '1' else "00001000";
-	--	pwm3 <= count when Switch_1(2) = '1' else "00001000";
-	--	pwm4 <= count when Switch_1(3) = '1' else "00001000";
+		pwm1 <= (Top_Range + "00010110")  when Switch_1(0) = '1' else (others => '0');
+      pwm2 <= (Top_Range + "00011110")  when Switch_1(1) = '1' else (others => '0');
+		pwm3 <= (Top_Range + "00011100")  when Switch_1(2) = '1' else (others => '0');
+		pwm4 <= (Top_Range + "00011100")  when Switch_1(3) = '1' else (others => '0');
 		
 end STR; 
