@@ -39,7 +39,7 @@ entity BoardTest is
 		-- PIC & FPGA SPI Bus
 		PIC_SPI_SCLK		:	in		std_logic;						-- PIC Controlled Serial Clock
 		PIC_SPI_MOSI		:	in		std_logic;						-- Serial Input from PIC
-		PIC_SPI_MISO		:	out		std_logic;						-- Serial Output to PIC
+		PIC_SPI_MISO		:	out	std_logic;						-- Serial Output to PIC
 		PIC_SPI_Select		:	in		std_logic;						-- Active-High Select Line
 		
 		-- Ultrasonic Modules (Top & Bottom)
@@ -125,7 +125,8 @@ architecture STR of BoardTest is
          r_w : in std_logic;
 			ok_in : in std_logic;
 			ok_out : out std_logic;
-			reg0c, reg1c, reg2c, reg3c, reg4c, reg5c, reg6c, reg7c : out std_logic_vector(7 downto 0)
+			reg0c, reg1c, reg2c, reg3c, reg4c, reg5c, reg6c, reg7c : out std_logic_vector(7 downto 0);
+			fetch_state : in std_logic
 			);
    end component;
 	
@@ -214,7 +215,7 @@ begin
 	--Register Instantations
 	U_Registers             :  regmap    port map (clk, Switch_2, PIC_PBUS_Data, PIC_PBUS_A_D, PIC_PBUS_R_W,
 															  PIC_PBUS_OK_IN, PIC_PBUS_OK_OUT, 
-															  RegXD, RegYD, RegZD, RegXM, RegYM, RegZM, RegAD, RegMisc);
+															  RegXD, RegYD, RegZD, RegXM, RegYM, RegZM, RegAD, RegMisc, PIC_SPI_Select);
 	U_RegAM                 : quadreg port map(clk, Altitude, Switch_2, '1', '1', RegAM, RegAMc);
 	U_RegTR                 : quadreg port map(clk, Top_Range, Switch_2, '1', '1', RegTR, RegTRc);
 	

@@ -1,5 +1,5 @@
 Assembler report for BoardTest
-Thu Apr 19 14:24:24 2012
+Sun Apr 22 23:33:43 2012
 Quartus II 32-bit Version 11.1 Build 216 11/23/2011 Service Pack 1 SJ Web Edition
 
 
@@ -10,8 +10,8 @@ Quartus II 32-bit Version 11.1 Build 216 11/23/2011 Service Pack 1 SJ Web Editio
   2. Assembler Summary
   3. Assembler Settings
   4. Assembler Generated Files
-  5. Assembler Device Options: C:/Users/David/Desktop/code_cyclone2/BoardTest/BoardTest.sof
-  6. Assembler Device Options: C:/Users/David/Desktop/code_cyclone2/BoardTest/BoardTest.pof
+  5. Assembler Device Options: C:/Users/David/Desktop/BoardTest/BoardTest.sof
+  6. Assembler Device Options: C:/Users/David/Desktop/BoardTest/BoardTest.pof
   7. Assembler Messages
 
 
@@ -38,7 +38,7 @@ applicable agreement for further details.
 +---------------------------------------------------------------+
 ; Assembler Summary                                             ;
 +-----------------------+---------------------------------------+
-; Assembler Status      ; Successful - Thu Apr 19 14:24:24 2012 ;
+; Assembler Status      ; Successful - Sun Apr 22 23:33:43 2012 ;
 ; Revision Name         ; BoardTest                             ;
 ; Top-level Entity Name ; BoardTest                             ;
 ; Family                ; Cyclone II                            ;
@@ -78,37 +78,37 @@ applicable agreement for further details.
 +-----------------------------------------------------------------------------+----------+---------------+
 
 
-+--------------------------------------------------------------+
-; Assembler Generated Files                                    ;
-+--------------------------------------------------------------+
-; File Name                                                    ;
-+--------------------------------------------------------------+
-; C:/Users/David/Desktop/code_cyclone2/BoardTest/BoardTest.sof ;
-; C:/Users/David/Desktop/code_cyclone2/BoardTest/BoardTest.pof ;
-+--------------------------------------------------------------+
++------------------------------------------------+
+; Assembler Generated Files                      ;
++------------------------------------------------+
+; File Name                                      ;
++------------------------------------------------+
+; C:/Users/David/Desktop/BoardTest/BoardTest.sof ;
+; C:/Users/David/Desktop/BoardTest/BoardTest.pof ;
++------------------------------------------------+
 
 
-+----------------------------------------------------------------------------------------+
-; Assembler Device Options: C:/Users/David/Desktop/code_cyclone2/BoardTest/BoardTest.sof ;
-+----------------+-----------------------------------------------------------------------+
-; Option         ; Setting                                                               ;
-+----------------+-----------------------------------------------------------------------+
-; Device         ; EP2C8T144C8                                                           ;
-; JTAG usercode  ; 0xFFFFFFFF                                                            ;
-; Checksum       ; 0x001FDDF0                                                            ;
-+----------------+-----------------------------------------------------------------------+
++--------------------------------------------------------------------------+
+; Assembler Device Options: C:/Users/David/Desktop/BoardTest/BoardTest.sof ;
++----------------+---------------------------------------------------------+
+; Option         ; Setting                                                 ;
++----------------+---------------------------------------------------------+
+; Device         ; EP2C8T144C8                                             ;
+; JTAG usercode  ; 0xFFFFFFFF                                              ;
+; Checksum       ; 0x001919C1                                              ;
++----------------+---------------------------------------------------------+
 
 
-+----------------------------------------------------------------------------------------+
-; Assembler Device Options: C:/Users/David/Desktop/code_cyclone2/BoardTest/BoardTest.pof ;
-+--------------------+-------------------------------------------------------------------+
-; Option             ; Setting                                                           ;
-+--------------------+-------------------------------------------------------------------+
-; Device             ; EPCS16                                                            ;
-; JTAG usercode      ; 0x00000000                                                        ;
-; Checksum           ; 0x1EB91381                                                        ;
-; Compression Ratio  ; 2                                                                 ;
-+--------------------+-------------------------------------------------------------------+
++--------------------------------------------------------------------------+
+; Assembler Device Options: C:/Users/David/Desktop/BoardTest/BoardTest.pof ;
++--------------------+-----------------------------------------------------+
+; Option             ; Setting                                             ;
++--------------------+-----------------------------------------------------+
+; Device             ; EPCS16                                              ;
+; JTAG usercode      ; 0x00000000                                          ;
+; Checksum           ; 0x1EC4890A                                          ;
+; Compression Ratio  ; 2                                                   ;
++--------------------+-----------------------------------------------------+
 
 
 +--------------------+
@@ -117,14 +117,14 @@ applicable agreement for further details.
 Info: *******************************************************************
 Info: Running Quartus II 32-bit Assembler
     Info: Version 11.1 Build 216 11/23/2011 Service Pack 1 SJ Web Edition
-    Info: Processing started: Thu Apr 19 14:24:18 2012
+    Info: Processing started: Sun Apr 22 23:33:39 2012
 Info: Command: quartus_asm --read_settings_files=off --write_settings_files=off BoardTest -c BoardTest
 Info (115031): Writing out detailed assembly data for power analysis
 Info (115030): Assembler is generating device programming files
 Info: Quartus II 32-bit Assembler was successful. 0 errors, 0 warnings
-    Info: Peak virtual memory: 284 megabytes
-    Info: Processing ended: Thu Apr 19 14:24:24 2012
-    Info: Elapsed time: 00:00:06
+    Info: Peak virtual memory: 287 megabytes
+    Info: Processing ended: Sun Apr 22 23:33:44 2012
+    Info: Elapsed time: 00:00:05
     Info: Total CPU time (on all processors): 00:00:03
 
 

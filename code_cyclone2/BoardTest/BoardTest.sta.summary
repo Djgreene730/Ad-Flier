@@ -3,24 +3,16 @@ TimeQuest Timing Analyzer Summary
 ------------------------------------------------------------
 
 Type  : Slow Model Setup 'clk'
-Slack : -77.954
-TNS   : -4163.091
+Slack : -81.327
+TNS   : -2128.677
 
 Type  : Slow Model Setup 'clk_div:U_1HzClkDivider|clk_out'
-Slack : 0.005
+Slack : 0.001
 TNS   : 0.000
-
-Type  : Slow Model Setup 'PIC_PBUS_OK_IN'
-Slack : 2.311
-TNS   : 0.000
-
-Type  : Slow Model Hold 'PIC_PBUS_OK_IN'
-Slack : -2.621
-TNS   : -20.857
 
 Type  : Slow Model Hold 'clk'
-Slack : -0.337
-TNS   : -0.402
+Slack : 0.499
+TNS   : 0.000
 
 Type  : Slow Model Hold 'clk_div:U_1HzClkDivider|clk_out'
 Slack : 0.499
@@ -28,35 +20,23 @@ TNS   : 0.000
 
 Type  : Slow Model Minimum Pulse Width 'clk'
 Slack : -1.941
-TNS   : -605.929
-
-Type  : Slow Model Minimum Pulse Width 'PIC_PBUS_OK_IN'
-Slack : -1.777
-TNS   : -1.777
+TNS   : -413.009
 
 Type  : Slow Model Minimum Pulse Width 'clk_div:U_1HzClkDivider|clk_out'
 Slack : -0.742
 TNS   : -2.968
 
 Type  : Fast Model Setup 'clk'
-Slack : -25.016
-TNS   : -1121.640
+Slack : -26.146
+TNS   : -552.176
 
 Type  : Fast Model Setup 'clk_div:U_1HzClkDivider|clk_out'
-Slack : 0.624
+Slack : 0.622
 TNS   : 0.000
-
-Type  : Fast Model Setup 'PIC_PBUS_OK_IN'
-Slack : 1.061
-TNS   : 0.000
-
-Type  : Fast Model Hold 'PIC_PBUS_OK_IN'
-Slack : -0.442
-TNS   : -3.476
 
 Type  : Fast Model Hold 'clk'
-Slack : -0.411
-TNS   : -2.839
+Slack : 0.215
+TNS   : 0.000
 
 Type  : Fast Model Hold 'clk_div:U_1HzClkDivider|clk_out'
 Slack : 0.215
@@ -64,11 +44,7 @@ TNS   : 0.000
 
 Type  : Fast Model Minimum Pulse Width 'clk'
 Slack : -1.380
-TNS   : -408.380
-
-Type  : Fast Model Minimum Pulse Width 'PIC_PBUS_OK_IN'
-Slack : -1.222
-TNS   : -1.222
+TNS   : -278.380
 
 Type  : Fast Model Minimum Pulse Width 'clk_div:U_1HzClkDivider|clk_out'
 Slack : -0.500

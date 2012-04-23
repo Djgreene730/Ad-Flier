@@ -11,6 +11,27 @@
 #include "Communications.h"
 #include "Accelerometer.h"
 
+// Accelerometer Settings
+
+#define accelUpdateRate     3
+/*  ADC Update Rate
+ *      0 : 800.00 Hz
+ *      1 : 400.00 Hz
+ *      2 : 200.00 Hz
+ *      3 : 100.00 Hz
+ *      4 :  50.00 Hz
+ *      5 :  12.50 Hz
+ *      6 :   6.25 Hz
+ *      7 :   1.56 Hz
+ */
+
+#define accelScale          2
+/*  Accelerometer Scale
+ *      2  : +/- 2g
+ *      4  : +/- 4g
+ *      8  : +/- 8g
+ */
+
 // Global Variables
 AccelerometerReading    accelCurrent;
 AccelerometerReading    accelCurrentDegrees;
@@ -21,8 +42,11 @@ UINT8 Addr_Accel_RD = 0x3B;
 
 // Setup Accelerometer Configuration
 void setupAccelerometer() {
+    // Configure XYZ_DATA_CFG Register
+    writeAccelerometer(ACCEL_XYZ_DATA_CFG, 0x00); //2g, HPF Disabled
+
     // Configure Register 1
-    writeAccelerometer(ACCEL_CTRL_REG1, 0x1D); //100Hz, LowNoise, Full-Read
+    writeAccelerometer(ACCEL_CTRL_REG1, (0x05 | (accelUpdateRate << 3))); //100Hz, LowNoise, Full-Read
 
     // Configure Register 2
     writeAccelerometer(ACCEL_CTRL_REG2, 0x12); //HighResolution, No Sleep
@@ -116,15 +140,17 @@ void     updateAccelerometerReadings (void) {
     // Copy X-Value
     accelCurrent.XU = readAccelerometer(ACCEL_OUT_X_MSB);
     accelCurrent.XL = readAccelerometer(ACCEL_OUT_X_LSB);
-    accelCurrent.Unsigned.X = accelCurrent.Unsigned.X >> 6;
+    accelCurrent.Signed.X >>= 4;
 
     // Copy Y-Value
     accelCurrent.YU = readAccelerometer(ACCEL_OUT_Y_MSB);
     accelCurrent.YL = readAccelerometer(ACCEL_OUT_Y_LSB);
-    accelCurrent.Unsigned.Y = accelCurrent.Unsigned.Y >> 6;
+    accelCurrent.Signed.Y >>= 4;
 
     // Copy Z-Value
     accelCurrent.ZU = readAccelerometer(ACCEL_OUT_Z_MSB);
     accelCurrent.ZL = readAccelerometer(ACCEL_OUT_Z_LSB);
-    accelCurrent.Unsigned.Z = accelCurrent.Unsigned.Z >> 6;
+    accelCurrent.Signed.Z >>= 4;
+   
+
 }

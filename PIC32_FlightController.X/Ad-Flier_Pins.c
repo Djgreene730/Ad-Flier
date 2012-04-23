@@ -60,7 +60,6 @@ void initializeAllPins(void) {
 
     // Setup FPGA - SPI
     SPI_FPGA_CS_TR      = 0;    // Output
-
     SPI_FPGA_CS         = 0;    // Low - Not Selected
 
     // Setup FPGA - Parallel Port

@@ -66,7 +66,7 @@ int main(int argc, char** argv) {
         //while(!RtccGetSync());
 
         // Update Termina Every 300mS
-        Delayms(300);
+        Delayms(200);
 
 
 
@@ -152,35 +152,45 @@ int main(int argc, char** argv) {
         UINT8       buf[1024];
         rtccTime    tempTime;
 
-        // Get Current Time
-        tempTime.l=RtccGetTime();
+        // Perform Gyroscope Calculations
+        float tempX = (float) gyroCurrent.Signed.X;
+        tempX = 500 * (tempX / (1 << 15));
+        //tempX = 500 * (tempX / 32768);
 
-        float tempX = 0, tempY = 0, tempZ = 0;
-        tempX = gyroCurrent.Signed.X;
-        tempX = 1000 * (tempX / 65536);
+        float tempY = (float) gyroCurrent.Signed.Y;
+        tempY = 500 * (tempY / (1 << 15));
+        //tempY = 500 * (tempY / 32768);
 
-        tempY = gyroCurrent.Signed.Y;
-        tempY = 1000 * (tempY / 65536);
-
-        tempZ = gyroCurrent.Signed.Z;
-        tempZ = 1000 * (tempZ / 65536);
+        float tempZ = (float) gyroCurrent.Signed.Z;
+        tempZ = 500 * (tempZ / (1 << 15));
+        //tempZ = 500 * (tempZ / 32768);
         
         // Perform Accelerometer Calculations
-        float tempAX = accelCurrent.Signed.X;
-        tempAX = (4 * (tempAX / 256)) + 0.0000001;
+        float tempAX = (float) accelCurrent.Signed.X;
+        tempAX = (2 * (tempAX / (1 << 11))) + 0.0000001;
+        //tempAX = (2 * (tempAX / 2048));// + 0.0000001;
 
-        float tempAY = accelCurrent.Signed.Y;
-        tempAY = (4 * (tempAY / 256)) + 0.0000001;
+        float tempAY = (float) accelCurrent.Signed.Y;
+        tempAY = (2 * (tempAY / (1 << 11))) + 0.0000001;
+        //tempAY = (2 * (tempAY / 2048));// + 0.0000001;
 
-        float tempAZ = accelCurrent.Signed.Z;
-        tempAZ = (4 * (tempAZ / 256)) + 0.0000001;
+        float tempAZ = (float) accelCurrent.Signed.Z;
+        tempAZ = (2 * (tempAZ / (1 << 11))) + 0.0000001;
+        //tempAZ = (2 * (tempAZ / 2048));// + 0.0000001;
+
+        // Convert Accelerometer G's to Angles
+        float angleAccelX = 57.2957795 * atanf(tempAX / sqrtf(powf(tempAY, 2) + powf(tempAZ, 2)));
+        float angleAccelY = 57.2957795 * atanf(tempAY / sqrtf(powf(tempAX, 2) + powf(tempAZ, 2)));
 
         // Match Current Angle with Calculated
-        sprintf(buf, "-- (%+08.3f, %+08.3f, %+08.3f) (%+08.3f, %+08.3f, %+08.3f) (%+08.3f, %+08.3f, %+08.3f) %02dmS %02dC \r\n", tempX, tempAX, angleCurrent.X.Value, tempY, tempAY, angleCurrent.Y.Value, tempZ, tempAZ, angleCurrent.Z.Value, angleCurrent.T, gyroCurrent.TU);
+        sprintf(buf, "-- (%+07.2f, %+07.2f, %+07.2f, %+07.2f) (%+07.2f, %+07.2f, %+07.2f, %+07.2f) (%+07.2f, %+07.2f, %+07.2f) %02dmS %02dC \r\n", tempX, tempAX, angleAccelX, angleCurrent.X.Value, tempY, tempAY, angleAccelY, angleCurrent.Y.Value, tempZ, tempAZ, angleCurrent.Z.Value, angleCurrent.T, gyroCurrent.TU);
 
 
         // Working, Shows Gyroscope Calculated Angles!
         //sprintf(buf, "Gyro: %+08.3f, %+08.3f, %+08.3f\r\n", tempX, tempY, tempZ);
+
+        // Get Current Time
+        //tempTime.l=RtccGetTime();
 
         // Format String
         //sprintf(buf, "Gyro: %07f, %07f, %07f | Acl: %07.3f, %07.3f, %07.3f | Ang: %03.3f, %03.3f, %03.3f | UT: %02d mS | BST: %02x:%02x:%02x | FCT: %02x:%02x:%02x\r\n", tempX, tempY, tempZ, accelCurrent.X, accelCurrent.Y, accelCurrent.Z, angleCurrent.X.Value, angleCurrent.Y.Value, angleCurrent.Z.Value, angleCurrent.T, tempTime.hour, tempTime.min, tempTime.sec, timeFCBCurrent.hour, timeFCBCurrent.min, timeFCBCurrent.sec);

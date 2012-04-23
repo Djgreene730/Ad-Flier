@@ -111,11 +111,6 @@ int main(int argc, char** argv) {
         updateSensors();
 
         Delayms(100);
-
-
-
-
-
     }
 
     return (EXIT_SUCCESS);

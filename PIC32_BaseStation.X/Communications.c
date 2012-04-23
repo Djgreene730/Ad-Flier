@@ -511,17 +511,25 @@ void read_XBee_Sentence() {
                     // Mark Register as Busy
                     accelTempBuf.ready = 0;
 
+                    // Clear Old Values
+                    accelCurrent.Unsigned.X = 0;
+                    accelCurrent.Unsigned.Y = 0;
+                    accelCurrent.Unsigned.Z = 0;
+
                     // Copy X-Value
                     accelCurrent.XU = accelTempBuf.data[1];
                     accelCurrent.XL = accelTempBuf.data[2];
+                    int tempusX = accelCurrent.Unsigned.X;
 
                     // Copy Y-Value
                     accelCurrent.YU = accelTempBuf.data[3];
                     accelCurrent.YL = accelTempBuf.data[4];
+                    int tempusY = accelCurrent.Unsigned.Y;
 
                     // Copy Z-Value
                     accelCurrent.ZU = accelTempBuf.data[5];
                     accelCurrent.ZL = accelTempBuf.data[6];
+                    int tempusZ = accelCurrent.Unsigned.Z;
 
                     // Mark Register as Ready and Restart
                     accelTempBuf.ready = 1;

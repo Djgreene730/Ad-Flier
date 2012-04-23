@@ -17,7 +17,8 @@ entity regmap is
          r_w : in std_logic;
 			ok_in : in std_logic;
 			ok_out : out std_logic;
-			reg0c, reg1c, reg2c, reg3c, reg4c, reg5c, reg6c, reg7c : out std_logic_vector(7 downto 0)
+			reg0c, reg1c, reg2c, reg3c, reg4c, reg5c, reg6c, reg7c : out std_logic_vector(7 downto 0);
+			fetch_state : in std_logic
 			);
 end regmap;
 
@@ -77,6 +78,7 @@ component outmux is
 			);
 end component;
 
+signal	reg_controller_reset : std_logic := '0';
 signal 	add_rego_en, add_reg_en : std_logic := '0';
 signal	regi00, regi01, regi02, regi03, regi04, regi05, regi06, regi07 : std_logic := '0';
 signal	rego00, rego01, rego02, rego03, rego04, rego05, rego06, rego07 : std_logic := '0';
@@ -88,7 +90,7 @@ begin
 
 --Instantiations
 --Controller
-RegCont : reg_controller port map(clk, reset, addressc, a_d, r_w, ok_in, ok_out, add_rego_en, add_reg_en,
+RegCont : reg_controller port map(clk, reg_controller_reset, addressc, a_d, r_w, ok_in, ok_out, add_rego_en, add_reg_en,
 											 regi00, regi01, regi02, regi03, regi04, regi05, regi06, regi07,
 											 rego00, rego01, rego02, rego03, rego04, rego05, rego06, rego07,
 											 tbo, outsel);
@@ -108,6 +110,9 @@ RegMisc : quadreg port map(clk, data, reset, regi07, rego07, reg7, reg7c);
 
 --Output MUX
 MuxOut : outmux port map(databus, address, outsel, tbo, data);
+
+-- Reg Controller Reset based on FPGA Reset and Microcontroller Reset
+reg_controller_reset <= (reset or fetch_state);
 				
 process(rego00, rego01, rego02, rego03, rego04, rego05, rego06, rego07, reg0, reg1, reg2, reg3, reg4, reg5, reg6, reg7)
 begin

@@ -4,7 +4,7 @@ JedecChain;
 	DefaultMfr(6E);
 
 	P ActionCode(Cfg)
-		Device PartName(EPCS16) Path("C:/Users/David/Desktop/code_cyclone2/BoardTest/") File("BoardTest.pof") MfrSpec(OpMask(3) Child_OpMask(1 3));
+		Device PartName(EPCS16) Path("C:/Users/David/Desktop/BoardTest/") File("BoardTest.pof") MfrSpec(OpMask(3) Child_OpMask(1 3));
 
 ChainEnd;
 

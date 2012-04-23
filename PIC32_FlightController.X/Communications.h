@@ -111,7 +111,7 @@ extern SPI1_Devices LastSPI1Initialize;
 #define SPI2_SelectFPGA     initiateSPI2(SPI_FPGA_FREQ), mPORTDClearBits(BIT_4);
 
 // I2C Mode & Addresses
-#define I2C_FREQ            100000      // 400 KHz Fast-Mode
+#define I2C_FREQ            400000      // 400 KHz Fast-Mode
 
 
 // I2C Global Variables
