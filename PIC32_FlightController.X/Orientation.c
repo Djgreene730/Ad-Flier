@@ -13,29 +13,30 @@
 
 #define SEND_TO_XBEE   TRUE
 #define SEND_TO_FPGA   TRUE
+#define degrees_per_radian  (180 / M_PI)
 
 
 BOOL firstRun = 0;
-
 AngleReading currentAngle, lastAngle;
 
-
+// Timer Functions - Start Timer 2
 void startTimeCounter() {
-    T2CON = 0x8020;     // enable TMR1, Tpb, 1:1
+    T2CON = 0x8020;     // enable TMR1, Tpb, 1:8
     TMR2 = 0;
 }
 
+// Timer Functions - Return Ellapse Time in MilliSeconds
 int stopTimeCounter() {
     return (TMR2 / 1250);
 }
 
-
+int totalTime = 10;
 float angleAccelX, angleAccelY;
 float tempGX, tempGY, tempGZ;
 float tempAX, tempAY, tempAZ;
 void updateSensors() {
-    
-    // Start the Clock
+
+    // Start Timer
     startTimeCounter();
 
     // Grab Latest Readings
@@ -63,8 +64,8 @@ void updateSensors() {
     tempAZ = 2 * (tempAZ / (1 << 11));
 
     // Convert Accelerometer G's to Angles
-    angleAccelX = 57.2957795 * atanf(tempAX / sqrtf(powf(tempAY, 2) + powf(tempAZ, 2)));
-    angleAccelY = 57.2957795 * atanf(tempAY / sqrtf(powf(tempAX, 2) + powf(tempAZ, 2)));
+    angleAccelX = degrees_per_radian * atanf(tempAX / sqrtf(powf(tempAY, 2) + powf(tempAZ, 2)));
+    angleAccelY = degrees_per_radian * atanf(tempAY / sqrtf(powf(tempAX, 2) + powf(tempAZ, 2)));
     
     // Initialize Angles
     if (!firstRun) {
@@ -73,13 +74,11 @@ void updateSensors() {
         lastAngle.Z.Value = 0;
     }
 
-    int totalTime = stopTimeCounter();
-    float totalTimeD = totalTime / 1000;
-
+    totalTime = stopTimeCounter();
 
     // Process All Current Angles
-    currentAngle.X.Value = (0.98 * (lastAngle.X.Value + (tempGX * totalTimeD))) + (0.02 * angleAccelX);
-    currentAngle.Y.Value = (0.98 * (lastAngle.Y.Value + (tempGY * totalTimeD))) + (0.02 * angleAccelY);
+    currentAngle.X.Value = (0.98 * (lastAngle.X.Value + (tempGX * (totalTime / 1000)))) + (0.02 * angleAccelX);
+    currentAngle.Y.Value = (0.98 * (lastAngle.Y.Value + (tempGY * (totalTime / 1000)))) + (0.02 * angleAccelY);
     currentAngle.Z.Value = lastAngle.Z.Value + (tempGZ * 0.01);
 
 
@@ -127,8 +126,9 @@ void updateSensors() {
         putsXBee(buf, 29);
     }
 
+    // Dump Angles to FPGA
     if (SEND_TO_FPGA == TRUE) {
-        //X Angle Desired  $00
+        //X Angle Desired, $00
         sendFPGAData(0x00, 0x7F);
 
         //X Angle Measured  $01
@@ -146,11 +146,9 @@ void updateSensors() {
         //Z Angle Measured  $05
         sendFPGAData(0x05, (UINT8)currentAngle.Y.UValue + 0x80);
 
-        //Altitude Desired $06 (5 cm)
-        sendFPGAData(0x06, 0x7F);
+        //Altitude Desired $06 (0 cm)  // For Testing
+        sendFPGAData(0x06, 0x00);
     }
-
-    // Dump Angles to FPGA
 
     // Store Previous Values
     lastAngle.X.UValue = currentAngle.X.UValue;

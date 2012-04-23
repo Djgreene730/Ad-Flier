@@ -190,7 +190,6 @@ architecture STR of BoardTest is
 	signal RegAM, RegAMc, RegTR, RegTRc, RegAMA : std_logic_vector(7 downto 0) := "00000000";
 	signal pwm_yaw, pwm_pitch, pwm_roll, pwm_altitude, pwm_a : std_logic_vector(8 downto 0) := "000000000";
 	signal pwm_n, pwm_s, pwm_e, pwm_w : std_logic_vector(8 downto 0) := "000000000";
-	signal pwm11, pwm22, pwm33, pwm44 : std_logic_vector(7 downto 0) := "00000000";
 
 	-- Temp Register for Ultrasonics
 	signal Top_Range, Altitude : std_logic_vector(7 downto 0) := (others => '0');
@@ -198,7 +197,7 @@ architecture STR of BoardTest is
 begin
 
    -- Altitude Adjustment
-	RegAMA <= RegAMc - 4;
+	RegAMA <= RegAMc - 2;
 	
 	-- Instantiations:
 	U_1HzClkDivider		:	clk_div generic map (6293750) port map (clk, clk_1Hz);
@@ -294,33 +293,33 @@ begin
 		end if;
 		
 	end process;
-	
-	process(pwm_n, pwm_s, pwm_e, pwm_w)
-	begin
-		if pwm_n(8) = '1' then
-			pwm11 <= "11111111";
-		else
-			pwm11 <= pwm_n(7 downto 0);
-		end if;
-
-		if pwm_e(8) = '1' then
-			pwm22 <= "11111111";
-		else
-			pwm22 <= pwm_e(7 downto 0);
-		end if;
-		
-		if pwm_s(8) = '1' then
-			pwm33 <= "11111111";
-		else
-			pwm33 <= pwm_s(7 downto 0);
-		end if;
-		
-		if pwm_w(8) = '1' then
-			pwm44 <= "11111111";
-		else
-			pwm44 <= pwm_w(7 downto 0);
-		end if;
-	end process;
+--	
+--	process(pwm_n, pwm_s, pwm_e, pwm_w)
+--	begin
+--		if pwm_n(8) = '1' then
+--			pwm1 <= "11111111";
+--		else
+--			pwm1 <= pwm_n(7 downto 0);
+--		end if;
+--
+--		if pwm_e(8) = '1' then
+--			pwm2 <= "11111111";
+--		else
+--			pwm2 <= pwm_e(7 downto 0);
+--		end if;
+--		
+--		if pwm_s(8) = '1' then
+--			pwm3 <= "11111111";
+--		else
+--			pwm3 <= pwm_s(7 downto 0);
+--		end if;
+--		
+--		if pwm_w(8) = '1' then
+--			pwm4 <= "11111111";
+--		else
+--			pwm4 <= pwm_w(7 downto 0);
+--		end if;
+--	end process;
 		
 	-- Test 1:
 	-- A.) Set TLED_Orange_1 on reset	
@@ -363,9 +362,9 @@ begin
 	
 	--Test 3:
 	--A.) Run Motors
-		pwm1 <= (pwm11 + "00010110")  when Switch_1(0) = '1' else (others => '0');
-      pwm2 <= (pwm22 + "00011110")  when Switch_1(1) = '1' else (others => '0');
-		pwm3 <= (pwm33 + "00011100")  when Switch_1(2) = '1' else (others => '0');
-		pwm4 <= (pwm44 + "00011100")  when Switch_1(3) = '1' else (others => '0');
+		pwm1 <= (Top_Range + "00010110")  when Switch_1(0) = '1' else (others => '0');
+      pwm2 <= (Top_Range + "00011110")  when Switch_1(1) = '1' else (others => '0');
+		pwm3 <= (Top_Range + "00011100")  when Switch_1(2) = '1' else (others => '0');
+		pwm4 <= (Top_Range + "00011100")  when Switch_1(3) = '1' else (others => '0');
 		
 end STR; 

@@ -35,9 +35,8 @@
 #pragma config ICESEL = ICS_PGx1    // ICE/ICD Comm Channel Select
 #pragma config DEBUG = ON          // Debugger Disabled for Starter Kit
 
-// Configure Timer 2 (Gyro Updater)
-#define TOGGLES_PER_SEC		50
-#define T2_TICK       		(SYS_FREQ/2/256/TOGGLES_PER_SEC)
+int ellapsedTime = 10;
+
 
 // Main Application
 int main(int argc, char** argv) {
@@ -108,9 +107,12 @@ int main(int argc, char** argv) {
          *
          */
 
+        
         updateSensors();
-
         Delayms(100);
+
+        
+
     }
 
     return (EXIT_SUCCESS);

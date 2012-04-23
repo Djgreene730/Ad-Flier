@@ -13,4 +13,4 @@
 
 
 // Global Functions
-extern void updateSensors(void);
+extern void updateSensors();
