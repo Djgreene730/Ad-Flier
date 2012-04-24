@@ -1,0 +1,1740 @@
+TimeQuest Timing Analyzer report for BoardTest
+Mon Apr 23 23:15:28 2012
+Quartus II 32-bit Version 11.1 Build 216 11/23/2011 Service Pack 1 SJ Web Edition
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. TimeQuest Timing Analyzer Summary
+  3. Parallel Compilation
+  4. Clocks
+  5. Slow Model Fmax Summary
+  6. Slow Model Setup Summary
+  7. Slow Model Hold Summary
+  8. Slow Model Recovery Summary
+  9. Slow Model Removal Summary
+ 10. Slow Model Minimum Pulse Width Summary
+ 11. Slow Model Setup: 'clk'
+ 12. Slow Model Setup: 'clk_div:U_1HzClkDivider|clk_out'
+ 13. Slow Model Hold: 'clk'
+ 14. Slow Model Hold: 'clk_div:U_1HzClkDivider|clk_out'
+ 15. Slow Model Minimum Pulse Width: 'clk'
+ 16. Slow Model Minimum Pulse Width: 'clk_div:U_1HzClkDivider|clk_out'
+ 17. Setup Times
+ 18. Hold Times
+ 19. Clock to Output Times
+ 20. Minimum Clock to Output Times
+ 21. Propagation Delay
+ 22. Minimum Propagation Delay
+ 23. Output Enable Times
+ 24. Minimum Output Enable Times
+ 25. Output Disable Times
+ 26. Minimum Output Disable Times
+ 27. Fast Model Setup Summary
+ 28. Fast Model Hold Summary
+ 29. Fast Model Recovery Summary
+ 30. Fast Model Removal Summary
+ 31. Fast Model Minimum Pulse Width Summary
+ 32. Fast Model Setup: 'clk'
+ 33. Fast Model Setup: 'clk_div:U_1HzClkDivider|clk_out'
+ 34. Fast Model Hold: 'clk'
+ 35. Fast Model Hold: 'clk_div:U_1HzClkDivider|clk_out'
+ 36. Fast Model Minimum Pulse Width: 'clk'
+ 37. Fast Model Minimum Pulse Width: 'clk_div:U_1HzClkDivider|clk_out'
+ 38. Setup Times
+ 39. Hold Times
+ 40. Clock to Output Times
+ 41. Minimum Clock to Output Times
+ 42. Propagation Delay
+ 43. Minimum Propagation Delay
+ 44. Output Enable Times
+ 45. Minimum Output Enable Times
+ 46. Output Disable Times
+ 47. Minimum Output Disable Times
+ 48. Multicorner Timing Analysis Summary
+ 49. Setup Times
+ 50. Hold Times
+ 51. Clock to Output Times
+ 52. Minimum Clock to Output Times
+ 53. Progagation Delay
+ 54. Minimum Progagation Delay
+ 55. Setup Transfers
+ 56. Hold Transfers
+ 57. Report TCCS
+ 58. Report RSKM
+ 59. Unconstrained Paths
+ 60. TimeQuest Timing Analyzer Messages
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 1991-2011 Altera Corporation
+Your use of Altera Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Altera Program License 
+Subscription Agreement, Altera MegaCore Function License 
+Agreement, or other applicable license agreement, including, 
+without limitation, that your use is for the sole purpose of 
+programming logic devices manufactured by Altera and sold by 
+Altera or its authorized distributors.  Please refer to the 
+applicable agreement for further details.
+
+
+
++--------------------------------------------------------------------------------------+
+; TimeQuest Timing Analyzer Summary                                                    ;
++--------------------+-----------------------------------------------------------------+
+; Quartus II Version ; Version 11.1 Build 216 11/23/2011 Service Pack 1 SJ Web Edition ;
+; Revision Name      ; BoardTest                                                       ;
+; Device Family      ; Cyclone II                                                      ;
+; Device Name        ; EP2C8T144C8                                                     ;
+; Timing Models      ; Final                                                           ;
+; Delay Model        ; Combined                                                        ;
+; Rise/Fall Delays   ; Unavailable                                                     ;
++--------------------+-----------------------------------------------------------------+
+
+
+Parallel compilation was disabled, but you have multiple processors available. Enable parallel compilation to reduce compilation time.
++-------------------------------------+
+; Parallel Compilation                ;
++----------------------------+--------+
+; Processors                 ; Number ;
++----------------------------+--------+
+; Number detected on machine ; 2      ;
+; Maximum allowed            ; 1      ;
++----------------------------+--------+
+
+
++----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Clocks                                                                                                                                                                                                                           ;
++---------------------------------+------+--------+------------+-------+-------+------------+-----------+-------------+-------+--------+-----------+------------+----------+--------+--------+-------------------------------------+
+; Clock Name                      ; Type ; Period ; Frequency  ; Rise  ; Fall  ; Duty Cycle ; Divide by ; Multiply by ; Phase ; Offset ; Edge List ; Edge Shift ; Inverted ; Master ; Source ; Targets                             ;
++---------------------------------+------+--------+------------+-------+-------+------------+-----------+-------------+-------+--------+-----------+------------+----------+--------+--------+-------------------------------------+
+; clk                             ; Base ; 1.000  ; 1000.0 MHz ; 0.000 ; 0.500 ;            ;           ;             ;       ;        ;           ;            ;          ;        ;        ; { clk }                             ;
+; clk_div:U_1HzClkDivider|clk_out ; Base ; 1.000  ; 1000.0 MHz ; 0.000 ; 0.500 ;            ;           ;             ;       ;        ;           ;            ;          ;        ;        ; { clk_div:U_1HzClkDivider|clk_out } ;
++---------------------------------+------+--------+------------+-------+-------+------------+-----------+-------------+-------+--------+-----------+------------+----------+--------+--------+-------------------------------------+
+
+
++------------------------------------------------------------------------------------------------------------------------+
+; Slow Model Fmax Summary                                                                                                ;
++------------+-----------------+---------------------------------+-------------------------------------------------------+
+; Fmax       ; Restricted Fmax ; Clock Name                      ; Note                                                  ;
++------------+-----------------+---------------------------------+-------------------------------------------------------+
+; 12.15 MHz  ; 12.15 MHz       ; clk                             ;                                                       ;
+; 1001.0 MHz ; 402.58 MHz      ; clk_div:U_1HzClkDivider|clk_out ; limit due to high minimum pulse width violation (tch) ;
++------------+-----------------+---------------------------------+-------------------------------------------------------+
+This panel reports FMAX for every clock in the design, regardless of the user-specified clock periods.  FMAX is only computed for paths where the source and destination registers or ports are driven by the same clock.  Paths of different clocks, including generated clocks, are ignored.  For paths between a clock and its inversion, FMAX is computed as if the rising and falling edges are scaled along with FMAX, such that the duty cycle (in terms of a percentage) is maintained. Altera recommends that you always use clock constraints and other slack reports for sign-off analysis.
+
+
++-----------------------------------------------------------+
+; Slow Model Setup Summary                                  ;
++---------------------------------+---------+---------------+
+; Clock                           ; Slack   ; End Point TNS ;
++---------------------------------+---------+---------------+
+; clk                             ; -81.327 ; -2128.677     ;
+; clk_div:U_1HzClkDivider|clk_out ; 0.001   ; 0.000         ;
++---------------------------------+---------+---------------+
+
+
++---------------------------------------------------------+
+; Slow Model Hold Summary                                 ;
++---------------------------------+-------+---------------+
+; Clock                           ; Slack ; End Point TNS ;
++---------------------------------+-------+---------------+
+; clk                             ; 0.499 ; 0.000         ;
+; clk_div:U_1HzClkDivider|clk_out ; 0.499 ; 0.000         ;
++---------------------------------+-------+---------------+
+
+
+-------------------------------
+; Slow Model Recovery Summary ;
+-------------------------------
+No paths to report.
+
+
+------------------------------
+; Slow Model Removal Summary ;
+------------------------------
+No paths to report.
+
+
++----------------------------------------------------------+
+; Slow Model Minimum Pulse Width Summary                   ;
++---------------------------------+--------+---------------+
+; Clock                           ; Slack  ; End Point TNS ;
++---------------------------------+--------+---------------+
+; clk                             ; -1.941 ; -413.009      ;
+; clk_div:U_1HzClkDivider|clk_out ; -0.742 ; -2.968        ;
++---------------------------------+--------+---------------+
+
+
++--------------------------------------------------------------------------------------------------------------------------------------------------+
+; Slow Model Setup: 'clk'                                                                                                                          ;
++---------+----------------------------------------+-------------------------+--------------+-------------+--------------+------------+------------+
+; Slack   ; From Node                              ; To Node                 ; Launch Clock ; Latch Clock ; Relationship ; Clock Skew ; Data Delay ;
++---------+----------------------------------------+-------------------------+--------------+-------------+--------------+------------+------------+
+; -81.327 ; rangefinder:U_Ranger_Top|edgebegin[0]  ; motor_pwm:U_Motor_2|pwm ; clk          ; clk         ; 1.000        ; -0.029     ; 82.338     ;
+; -80.821 ; rangefinder:U_Ranger_Top|edgebegin[1]  ; motor_pwm:U_Motor_2|pwm ; clk          ; clk         ; 1.000        ; -0.006     ; 81.855     ;
+; -80.734 ; rangefinder:U_Ranger_Top|edgebegin[2]  ; motor_pwm:U_Motor_2|pwm ; clk          ; clk         ; 1.000        ; -0.006     ; 81.768     ;
+; -80.708 ; rangefinder:U_Ranger_Top|edgebegin[3]  ; motor_pwm:U_Motor_2|pwm ; clk          ; clk         ; 1.000        ; -0.006     ; 81.742     ;
+; -80.603 ; rangefinder:U_Ranger_Top|edgeend[0]    ; motor_pwm:U_Motor_2|pwm ; clk          ; clk         ; 1.000        ; -0.006     ; 81.637     ;
+; -80.567 ; rangefinder:U_Ranger_Top|edgeend[1]    ; motor_pwm:U_Motor_2|pwm ; clk          ; clk         ; 1.000        ; -0.006     ; 81.601     ;
+; -80.500 ; rangefinder:U_Ranger_Top|edgebegin[9]  ; motor_pwm:U_Motor_2|pwm ; clk          ; clk         ; 1.000        ; -0.019     ; 81.521     ;
+; -80.481 ; rangefinder:U_Ranger_Top|edgeend[2]    ; motor_pwm:U_Motor_2|pwm ; clk          ; clk         ; 1.000        ; -0.006     ; 81.515     ;
+; -80.472 ; rangefinder:U_Ranger_Top|edgebegin[0]  ; motor_pwm:U_Motor_3|pwm ; clk          ; clk         ; 1.000        ; -0.029     ; 81.483     ;
+; -80.450 ; rangefinder:U_Ranger_Top|edgebegin[4]  ; motor_pwm:U_Motor_2|pwm ; clk          ; clk         ; 1.000        ; -0.006     ; 81.484     ;
+; -80.375 ; rangefinder:U_Ranger_Top|edgebegin[11] ; motor_pwm:U_Motor_2|pwm ; clk          ; clk         ; 1.000        ; -0.019     ; 81.396     ;
+; -80.351 ; rangefinder:U_Ranger_Top|edgeend[3]    ; motor_pwm:U_Motor_2|pwm ; clk          ; clk         ; 1.000        ; -0.006     ; 81.385     ;
+; -80.343 ; rangefinder:U_Ranger_Top|edgebegin[10] ; motor_pwm:U_Motor_2|pwm ; clk          ; clk         ; 1.000        ; -0.019     ; 81.364     ;
+; -80.339 ; rangefinder:U_Ranger_Top|edgebegin[0]  ; motor_pwm:U_Motor_1|pwm ; clk          ; clk         ; 1.000        ; -0.029     ; 81.350     ;
+; -80.337 ; rangefinder:U_Ranger_Top|edgebegin[5]  ; motor_pwm:U_Motor_2|pwm ; clk          ; clk         ; 1.000        ; -0.006     ; 81.371     ;
+; -80.286 ; rangefinder:U_Ranger_Top|edgebegin[6]  ; motor_pwm:U_Motor_2|pwm ; clk          ; clk         ; 1.000        ; -0.006     ; 81.320     ;
+; -80.250 ; rangefinder:U_Ranger_Top|edgebegin[7]  ; motor_pwm:U_Motor_2|pwm ; clk          ; clk         ; 1.000        ; -0.006     ; 81.284     ;
+; -80.209 ; rangefinder:U_Ranger_Top|edgeend[4]    ; motor_pwm:U_Motor_2|pwm ; clk          ; clk         ; 1.000        ; -0.006     ; 81.243     ;
+; -80.138 ; rangefinder:U_Ranger_Top|edgebegin[0]  ; motor_pwm:U_Motor_4|pwm ; clk          ; clk         ; 1.000        ; -0.029     ; 81.149     ;
+; -80.101 ; rangefinder:U_Ranger_Top|edgebegin[8]  ; motor_pwm:U_Motor_2|pwm ; clk          ; clk         ; 1.000        ; -0.006     ; 81.135     ;
+; -80.069 ; rangefinder:U_Ranger_Top|edgeend[5]    ; motor_pwm:U_Motor_2|pwm ; clk          ; clk         ; 1.000        ; -0.006     ; 81.103     ;
+; -80.037 ; rangefinder:U_Ranger_Top|edgeend[6]    ; motor_pwm:U_Motor_2|pwm ; clk          ; clk         ; 1.000        ; -0.006     ; 81.071     ;
+; -79.966 ; rangefinder:U_Ranger_Top|edgebegin[1]  ; motor_pwm:U_Motor_3|pwm ; clk          ; clk         ; 1.000        ; -0.006     ; 81.000     ;
+; -79.897 ; rangefinder:U_Ranger_Top|edgeend[7]    ; motor_pwm:U_Motor_2|pwm ; clk          ; clk         ; 1.000        ; -0.006     ; 80.931     ;
+; -79.879 ; rangefinder:U_Ranger_Top|edgebegin[2]  ; motor_pwm:U_Motor_3|pwm ; clk          ; clk         ; 1.000        ; -0.006     ; 80.913     ;
+; -79.866 ; rangefinder:U_Ranger_Top|edgeend[8]    ; motor_pwm:U_Motor_2|pwm ; clk          ; clk         ; 1.000        ; -0.006     ; 80.900     ;
+; -79.853 ; rangefinder:U_Ranger_Top|edgebegin[3]  ; motor_pwm:U_Motor_3|pwm ; clk          ; clk         ; 1.000        ; -0.006     ; 80.887     ;
+; -79.833 ; rangefinder:U_Ranger_Top|edgebegin[1]  ; motor_pwm:U_Motor_1|pwm ; clk          ; clk         ; 1.000        ; -0.006     ; 80.867     ;
+; -79.748 ; rangefinder:U_Ranger_Top|edgeend[0]    ; motor_pwm:U_Motor_3|pwm ; clk          ; clk         ; 1.000        ; -0.006     ; 80.782     ;
+; -79.746 ; rangefinder:U_Ranger_Top|edgebegin[2]  ; motor_pwm:U_Motor_1|pwm ; clk          ; clk         ; 1.000        ; -0.006     ; 80.780     ;
+; -79.744 ; rangefinder:U_Ranger_Top|edgebegin[12] ; motor_pwm:U_Motor_2|pwm ; clk          ; clk         ; 1.000        ; -0.019     ; 80.765     ;
+; -79.730 ; rangefinder:U_Ranger_Top|edgeend[9]    ; motor_pwm:U_Motor_2|pwm ; clk          ; clk         ; 1.000        ; -0.006     ; 80.764     ;
+; -79.720 ; rangefinder:U_Ranger_Top|edgebegin[3]  ; motor_pwm:U_Motor_1|pwm ; clk          ; clk         ; 1.000        ; -0.006     ; 80.754     ;
+; -79.712 ; rangefinder:U_Ranger_Top|edgeend[1]    ; motor_pwm:U_Motor_3|pwm ; clk          ; clk         ; 1.000        ; -0.006     ; 80.746     ;
+; -79.668 ; rangefinder:U_Ranger_Top|edgebegin[13] ; motor_pwm:U_Motor_2|pwm ; clk          ; clk         ; 1.000        ; -0.019     ; 80.689     ;
+; -79.645 ; rangefinder:U_Ranger_Top|edgebegin[9]  ; motor_pwm:U_Motor_3|pwm ; clk          ; clk         ; 1.000        ; -0.019     ; 80.666     ;
+; -79.644 ; rangefinder:U_Ranger_Top|edgeend[10]   ; motor_pwm:U_Motor_2|pwm ; clk          ; clk         ; 1.000        ; -0.006     ; 80.678     ;
+; -79.632 ; rangefinder:U_Ranger_Top|edgebegin[1]  ; motor_pwm:U_Motor_4|pwm ; clk          ; clk         ; 1.000        ; -0.006     ; 80.666     ;
+; -79.626 ; rangefinder:U_Ranger_Top|edgeend[2]    ; motor_pwm:U_Motor_3|pwm ; clk          ; clk         ; 1.000        ; -0.006     ; 80.660     ;
+; -79.615 ; rangefinder:U_Ranger_Top|edgeend[0]    ; motor_pwm:U_Motor_1|pwm ; clk          ; clk         ; 1.000        ; -0.006     ; 80.649     ;
+; -79.595 ; rangefinder:U_Ranger_Top|edgebegin[4]  ; motor_pwm:U_Motor_3|pwm ; clk          ; clk         ; 1.000        ; -0.006     ; 80.629     ;
+; -79.579 ; rangefinder:U_Ranger_Top|edgeend[1]    ; motor_pwm:U_Motor_1|pwm ; clk          ; clk         ; 1.000        ; -0.006     ; 80.613     ;
+; -79.578 ; rangefinder:U_Ranger_Top|edgeend[11]   ; motor_pwm:U_Motor_2|pwm ; clk          ; clk         ; 1.000        ; -0.006     ; 80.612     ;
+; -79.559 ; rangefinder:U_Ranger_Top|edgebegin[14] ; motor_pwm:U_Motor_2|pwm ; clk          ; clk         ; 1.000        ; -0.019     ; 80.580     ;
+; -79.545 ; rangefinder:U_Ranger_Top|edgebegin[2]  ; motor_pwm:U_Motor_4|pwm ; clk          ; clk         ; 1.000        ; -0.006     ; 80.579     ;
+; -79.520 ; rangefinder:U_Ranger_Top|edgebegin[11] ; motor_pwm:U_Motor_3|pwm ; clk          ; clk         ; 1.000        ; -0.019     ; 80.541     ;
+; -79.519 ; rangefinder:U_Ranger_Top|edgebegin[3]  ; motor_pwm:U_Motor_4|pwm ; clk          ; clk         ; 1.000        ; -0.006     ; 80.553     ;
+; -79.512 ; rangefinder:U_Ranger_Top|edgebegin[9]  ; motor_pwm:U_Motor_1|pwm ; clk          ; clk         ; 1.000        ; -0.019     ; 80.533     ;
+; -79.496 ; rangefinder:U_Ranger_Top|edgeend[3]    ; motor_pwm:U_Motor_3|pwm ; clk          ; clk         ; 1.000        ; -0.006     ; 80.530     ;
+; -79.493 ; rangefinder:U_Ranger_Top|edgeend[2]    ; motor_pwm:U_Motor_1|pwm ; clk          ; clk         ; 1.000        ; -0.006     ; 80.527     ;
+; -79.488 ; rangefinder:U_Ranger_Top|edgebegin[10] ; motor_pwm:U_Motor_3|pwm ; clk          ; clk         ; 1.000        ; -0.019     ; 80.509     ;
+; -79.482 ; rangefinder:U_Ranger_Top|edgebegin[5]  ; motor_pwm:U_Motor_3|pwm ; clk          ; clk         ; 1.000        ; -0.006     ; 80.516     ;
+; -79.462 ; rangefinder:U_Ranger_Top|edgebegin[4]  ; motor_pwm:U_Motor_1|pwm ; clk          ; clk         ; 1.000        ; -0.006     ; 80.496     ;
+; -79.431 ; rangefinder:U_Ranger_Top|edgebegin[6]  ; motor_pwm:U_Motor_3|pwm ; clk          ; clk         ; 1.000        ; -0.006     ; 80.465     ;
+; -79.417 ; rangefinder:U_Ranger_Top|edgebegin[15] ; motor_pwm:U_Motor_2|pwm ; clk          ; clk         ; 1.000        ; -0.019     ; 80.438     ;
+; -79.414 ; rangefinder:U_Ranger_Top|edgeend[0]    ; motor_pwm:U_Motor_4|pwm ; clk          ; clk         ; 1.000        ; -0.006     ; 80.448     ;
+; -79.396 ; rangefinder:U_Ranger_Top|edgeend[12]   ; motor_pwm:U_Motor_2|pwm ; clk          ; clk         ; 1.000        ; -0.020     ; 80.416     ;
+; -79.395 ; rangefinder:U_Ranger_Top|edgebegin[7]  ; motor_pwm:U_Motor_3|pwm ; clk          ; clk         ; 1.000        ; -0.006     ; 80.429     ;
+; -79.387 ; rangefinder:U_Ranger_Top|edgebegin[11] ; motor_pwm:U_Motor_1|pwm ; clk          ; clk         ; 1.000        ; -0.019     ; 80.408     ;
+; -79.386 ; rangefinder:U_Ranger_Top|edgebegin[16] ; motor_pwm:U_Motor_2|pwm ; clk          ; clk         ; 1.000        ; -0.019     ; 80.407     ;
+; -79.378 ; rangefinder:U_Ranger_Top|edgeend[1]    ; motor_pwm:U_Motor_4|pwm ; clk          ; clk         ; 1.000        ; -0.006     ; 80.412     ;
+; -79.363 ; rangefinder:U_Ranger_Top|edgeend[3]    ; motor_pwm:U_Motor_1|pwm ; clk          ; clk         ; 1.000        ; -0.006     ; 80.397     ;
+; -79.355 ; rangefinder:U_Ranger_Top|edgebegin[10] ; motor_pwm:U_Motor_1|pwm ; clk          ; clk         ; 1.000        ; -0.019     ; 80.376     ;
+; -79.354 ; rangefinder:U_Ranger_Top|edgeend[4]    ; motor_pwm:U_Motor_3|pwm ; clk          ; clk         ; 1.000        ; -0.006     ; 80.388     ;
+; -79.349 ; rangefinder:U_Ranger_Top|edgebegin[5]  ; motor_pwm:U_Motor_1|pwm ; clk          ; clk         ; 1.000        ; -0.006     ; 80.383     ;
+; -79.311 ; rangefinder:U_Ranger_Top|edgebegin[9]  ; motor_pwm:U_Motor_4|pwm ; clk          ; clk         ; 1.000        ; -0.019     ; 80.332     ;
+; -79.309 ; rangefinder:U_Ranger_Top|edgeend[13]   ; motor_pwm:U_Motor_2|pwm ; clk          ; clk         ; 1.000        ; -0.020     ; 80.329     ;
+; -79.298 ; rangefinder:U_Ranger_Top|edgebegin[6]  ; motor_pwm:U_Motor_1|pwm ; clk          ; clk         ; 1.000        ; -0.006     ; 80.332     ;
+; -79.292 ; rangefinder:U_Ranger_Top|edgeend[2]    ; motor_pwm:U_Motor_4|pwm ; clk          ; clk         ; 1.000        ; -0.006     ; 80.326     ;
+; -79.262 ; rangefinder:U_Ranger_Top|edgebegin[7]  ; motor_pwm:U_Motor_1|pwm ; clk          ; clk         ; 1.000        ; -0.006     ; 80.296     ;
+; -79.261 ; rangefinder:U_Ranger_Top|edgebegin[4]  ; motor_pwm:U_Motor_4|pwm ; clk          ; clk         ; 1.000        ; -0.006     ; 80.295     ;
+; -79.246 ; rangefinder:U_Ranger_Top|edgebegin[8]  ; motor_pwm:U_Motor_3|pwm ; clk          ; clk         ; 1.000        ; -0.006     ; 80.280     ;
+; -79.245 ; rangefinder:U_Ranger_Top|edgebegin[17] ; motor_pwm:U_Motor_2|pwm ; clk          ; clk         ; 1.000        ; -0.019     ; 80.266     ;
+; -79.221 ; rangefinder:U_Ranger_Top|edgeend[4]    ; motor_pwm:U_Motor_1|pwm ; clk          ; clk         ; 1.000        ; -0.006     ; 80.255     ;
+; -79.214 ; rangefinder:U_Ranger_Top|edgeend[5]    ; motor_pwm:U_Motor_3|pwm ; clk          ; clk         ; 1.000        ; -0.006     ; 80.248     ;
+; -79.201 ; rangefinder:U_Ranger_Top|edgeend[14]   ; motor_pwm:U_Motor_2|pwm ; clk          ; clk         ; 1.000        ; -0.020     ; 80.221     ;
+; -79.186 ; rangefinder:U_Ranger_Top|edgebegin[11] ; motor_pwm:U_Motor_4|pwm ; clk          ; clk         ; 1.000        ; -0.019     ; 80.207     ;
+; -79.182 ; rangefinder:U_Ranger_Top|edgeend[6]    ; motor_pwm:U_Motor_3|pwm ; clk          ; clk         ; 1.000        ; -0.006     ; 80.216     ;
+; -79.165 ; rangefinder:U_Ranger_Top|edgeend[15]   ; motor_pwm:U_Motor_2|pwm ; clk          ; clk         ; 1.000        ; -0.020     ; 80.185     ;
+; -79.162 ; rangefinder:U_Ranger_Top|edgeend[3]    ; motor_pwm:U_Motor_4|pwm ; clk          ; clk         ; 1.000        ; -0.006     ; 80.196     ;
+; -79.160 ; rangefinder:U_Ranger_Top|edgebegin[18] ; motor_pwm:U_Motor_2|pwm ; clk          ; clk         ; 1.000        ; -0.019     ; 80.181     ;
+; -79.154 ; rangefinder:U_Ranger_Top|edgebegin[10] ; motor_pwm:U_Motor_4|pwm ; clk          ; clk         ; 1.000        ; -0.019     ; 80.175     ;
+; -79.148 ; rangefinder:U_Ranger_Top|edgebegin[5]  ; motor_pwm:U_Motor_4|pwm ; clk          ; clk         ; 1.000        ; -0.006     ; 80.182     ;
+; -79.113 ; rangefinder:U_Ranger_Top|edgebegin[8]  ; motor_pwm:U_Motor_1|pwm ; clk          ; clk         ; 1.000        ; -0.006     ; 80.147     ;
+; -79.097 ; rangefinder:U_Ranger_Top|edgebegin[6]  ; motor_pwm:U_Motor_4|pwm ; clk          ; clk         ; 1.000        ; -0.006     ; 80.131     ;
+; -79.081 ; rangefinder:U_Ranger_Top|edgeend[5]    ; motor_pwm:U_Motor_1|pwm ; clk          ; clk         ; 1.000        ; -0.006     ; 80.115     ;
+; -79.061 ; rangefinder:U_Ranger_Top|edgebegin[7]  ; motor_pwm:U_Motor_4|pwm ; clk          ; clk         ; 1.000        ; -0.006     ; 80.095     ;
+; -79.049 ; rangefinder:U_Ranger_Top|edgeend[6]    ; motor_pwm:U_Motor_1|pwm ; clk          ; clk         ; 1.000        ; -0.006     ; 80.083     ;
+; -79.042 ; rangefinder:U_Ranger_Top|edgebegin[19] ; motor_pwm:U_Motor_2|pwm ; clk          ; clk         ; 1.000        ; -0.019     ; 80.063     ;
+; -79.042 ; rangefinder:U_Ranger_Top|edgeend[7]    ; motor_pwm:U_Motor_3|pwm ; clk          ; clk         ; 1.000        ; -0.006     ; 80.076     ;
+; -79.030 ; rangefinder:U_Ranger_Top|edgeend[16]   ; motor_pwm:U_Motor_2|pwm ; clk          ; clk         ; 1.000        ; -0.020     ; 80.050     ;
+; -79.020 ; rangefinder:U_Ranger_Top|edgeend[4]    ; motor_pwm:U_Motor_4|pwm ; clk          ; clk         ; 1.000        ; -0.006     ; 80.054     ;
+; -79.011 ; rangefinder:U_Ranger_Top|edgeend[8]    ; motor_pwm:U_Motor_3|pwm ; clk          ; clk         ; 1.000        ; -0.006     ; 80.045     ;
+; -78.994 ; rangefinder:U_Ranger_Top|edgeend[17]   ; motor_pwm:U_Motor_2|pwm ; clk          ; clk         ; 1.000        ; -0.020     ; 80.014     ;
+; -78.912 ; rangefinder:U_Ranger_Top|edgebegin[8]  ; motor_pwm:U_Motor_4|pwm ; clk          ; clk         ; 1.000        ; -0.006     ; 79.946     ;
+; -78.909 ; rangefinder:U_Ranger_Top|edgeend[7]    ; motor_pwm:U_Motor_1|pwm ; clk          ; clk         ; 1.000        ; -0.006     ; 79.943     ;
+; -78.908 ; rangefinder:U_Ranger_Top|edgeend[18]   ; motor_pwm:U_Motor_2|pwm ; clk          ; clk         ; 1.000        ; -0.020     ; 79.928     ;
+; -78.896 ; rangefinder:U_Ranger_Top|edgebegin[20] ; motor_pwm:U_Motor_2|pwm ; clk          ; clk         ; 1.000        ; -0.019     ; 79.917     ;
+; -78.889 ; rangefinder:U_Ranger_Top|edgebegin[12] ; motor_pwm:U_Motor_3|pwm ; clk          ; clk         ; 1.000        ; -0.019     ; 79.910     ;
+; -78.880 ; rangefinder:U_Ranger_Top|edgeend[5]    ; motor_pwm:U_Motor_4|pwm ; clk          ; clk         ; 1.000        ; -0.006     ; 79.914     ;
++---------+----------------------------------------+-------------------------+--------------+-------------+--------------+------------+------------+
+
+
++---------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Slow Model Setup: 'clk_div:U_1HzClkDivider|clk_out'                                                                                                     ;
++-------+---------------+--------------------+---------------------------------+---------------------------------+--------------+------------+------------+
+; Slack ; From Node     ; To Node            ; Launch Clock                    ; Latch Clock                     ; Relationship ; Clock Skew ; Data Delay ;
++-------+---------------+--------------------+---------------------------------+---------------------------------+--------------+------------+------------+
+; 0.001 ; current_State ; TLED_Orange_1~reg0 ; clk_div:U_1HzClkDivider|clk_out ; clk_div:U_1HzClkDivider|clk_out ; 1.000        ; 0.000      ; 1.039      ;
+; 0.235 ; current_State ; current_State      ; clk_div:U_1HzClkDivider|clk_out ; clk_div:U_1HzClkDivider|clk_out ; 1.000        ; 0.000      ; 0.805      ;
++-------+---------------+--------------------+---------------------------------+---------------------------------+--------------+------------+------------+
+
+
++---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Slow Model Hold: 'clk'                                                                                                                                                                      ;
++-------+-------------------------------------------------------+-------------------------------------------------------+--------------+-------------+--------------+------------+------------+
+; Slack ; From Node                                             ; To Node                                               ; Launch Clock ; Latch Clock ; Relationship ; Clock Skew ; Data Delay ;
++-------+-------------------------------------------------------+-------------------------------------------------------+--------------+-------------+--------------+------------+------------+
+; 0.499 ; motor_pwm:U_Motor_1|pulsecount[0]                     ; motor_pwm:U_Motor_1|pulsecount[0]                     ; clk          ; clk         ; 0.000        ; 0.000      ; 0.805      ;
+; 0.499 ; regmap:U_Registers|reg_controller:RegCont|state.rd2   ; regmap:U_Registers|reg_controller:RegCont|state.rd2   ; clk          ; clk         ; 0.000        ; 0.000      ; 0.805      ;
+; 0.499 ; regmap:U_Registers|reg_controller:RegCont|state.rd1   ; regmap:U_Registers|reg_controller:RegCont|state.rd1   ; clk          ; clk         ; 0.000        ; 0.000      ; 0.805      ;
+; 0.499 ; regmap:U_Registers|reg_controller:RegCont|state.ra2   ; regmap:U_Registers|reg_controller:RegCont|state.ra2   ; clk          ; clk         ; 0.000        ; 0.000      ; 0.805      ;
+; 0.499 ; regmap:U_Registers|reg_controller:RegCont|state.wa2   ; regmap:U_Registers|reg_controller:RegCont|state.wa2   ; clk          ; clk         ; 0.000        ; 0.000      ; 0.805      ;
+; 0.499 ; regmap:U_Registers|reg_controller:RegCont|state.wd2   ; regmap:U_Registers|reg_controller:RegCont|state.wd2   ; clk          ; clk         ; 0.000        ; 0.000      ; 0.805      ;
+; 0.499 ; regmap:U_Registers|reg_controller:RegCont|state.ra1   ; regmap:U_Registers|reg_controller:RegCont|state.ra1   ; clk          ; clk         ; 0.000        ; 0.000      ; 0.805      ;
+; 0.752 ; regmap:U_Registers|reg_controller:RegCont|state.rd1   ; regmap:U_Registers|reg_controller:RegCont|state.rd2   ; clk          ; clk         ; 0.000        ; 0.000      ; 1.058      ;
+; 0.757 ; regmap:U_Registers|reg_controller:RegCont|state.wa1   ; regmap:U_Registers|reg_controller:RegCont|state.wa2   ; clk          ; clk         ; 0.000        ; 0.000      ; 1.063      ;
+; 0.759 ; quadreg:U_RegAM|tmp[7]                                ; BLED_Blue[3]~reg0                                     ; clk          ; clk         ; 0.000        ; 0.000      ; 1.065      ;
+; 0.762 ; rangefinder:U_Ranger_Botom|count[23]                  ; rangefinder:U_Ranger_Botom|count[23]                  ; clk          ; clk         ; 0.000        ; 0.000      ; 1.068      ;
+; 0.779 ; regmap:U_Registers|reg_controller:RegCont|state.rd2   ; regmap:U_Registers|reg_controller:RegCont|state.fetch ; clk          ; clk         ; 0.000        ; 0.000      ; 1.085      ;
+; 0.962 ; regmap:U_Registers|reg_controller:RegCont|state.ra2   ; regmap:U_Registers|reg_controller:RegCont|state.fetch ; clk          ; clk         ; 0.000        ; 0.000      ; 1.268      ;
+; 1.061 ; regmap:U_Registers|reg_controller:RegCont|state.fetch ; regmap:U_Registers|reg_controller:RegCont|state.wa1   ; clk          ; clk         ; 0.000        ; 0.000      ; 1.367      ;
+; 1.103 ; regmap:U_Registers|reg_controller:RegCont|state.fetch ; regmap:U_Registers|reg_controller:RegCont|state.wd1   ; clk          ; clk         ; 0.000        ; 0.000      ; 1.409      ;
+; 1.150 ; quadreg:U_RegAM|tmp[6]                                ; BLED_Blue[2]~reg0                                     ; clk          ; clk         ; 0.000        ; 0.000      ; 1.456      ;
+; 1.166 ; regmap:U_Registers|reg_controller:RegCont|state.ra1   ; regmap:U_Registers|reg_controller:RegCont|state.ra2   ; clk          ; clk         ; 0.000        ; 0.000      ; 1.472      ;
+; 1.172 ; motor_pwm:U_Motor_1|pulsecount[8]                     ; motor_pwm:U_Motor_1|pulsecount[8]                     ; clk          ; clk         ; 0.000        ; 0.000      ; 1.478      ;
+; 1.172 ; motor_pwm:U_Motor_1|pulsecount[10]                    ; motor_pwm:U_Motor_1|pulsecount[10]                    ; clk          ; clk         ; 0.000        ; 0.000      ; 1.478      ;
+; 1.175 ; rangefinder:U_Ranger_Botom|count[12]                  ; rangefinder:U_Ranger_Botom|count[12]                  ; clk          ; clk         ; 0.000        ; 0.000      ; 1.481      ;
+; 1.176 ; rangefinder:U_Ranger_Botom|count[5]                   ; rangefinder:U_Ranger_Botom|count[5]                   ; clk          ; clk         ; 0.000        ; 0.000      ; 1.482      ;
+; 1.176 ; quadreg:U_RegAM|tmp[3]                                ; BLED_Orange[3]~reg0                                   ; clk          ; clk         ; 0.000        ; 0.000      ; 1.482      ;
+; 1.177 ; rangefinder:U_Ranger_Botom|count[3]                   ; rangefinder:U_Ranger_Botom|count[3]                   ; clk          ; clk         ; 0.000        ; 0.000      ; 1.483      ;
+; 1.177 ; rangefinder:U_Ranger_Botom|count[7]                   ; rangefinder:U_Ranger_Botom|count[7]                   ; clk          ; clk         ; 0.000        ; 0.000      ; 1.483      ;
+; 1.177 ; motor_pwm:U_Motor_1|clockcount[5]                     ; motor_pwm:U_Motor_1|clockcount[5]                     ; clk          ; clk         ; 0.000        ; 0.000      ; 1.483      ;
+; 1.177 ; motor_pwm:U_Motor_1|clockcount[0]                     ; motor_pwm:U_Motor_1|clockcount[0]                     ; clk          ; clk         ; 0.000        ; 0.000      ; 1.483      ;
+; 1.177 ; motor_pwm:U_Motor_1|clockcount[2]                     ; motor_pwm:U_Motor_1|clockcount[2]                     ; clk          ; clk         ; 0.000        ; 0.000      ; 1.483      ;
+; 1.177 ; motor_pwm:U_Motor_1|pulsecount[6]                     ; motor_pwm:U_Motor_1|pulsecount[6]                     ; clk          ; clk         ; 0.000        ; 0.000      ; 1.483      ;
+; 1.177 ; motor_pwm:U_Motor_1|pulsecount[3]                     ; motor_pwm:U_Motor_1|pulsecount[3]                     ; clk          ; clk         ; 0.000        ; 0.000      ; 1.483      ;
+; 1.177 ; motor_pwm:U_Motor_1|pulsecount[1]                     ; motor_pwm:U_Motor_1|pulsecount[1]                     ; clk          ; clk         ; 0.000        ; 0.000      ; 1.483      ;
+; 1.177 ; clk_div:U_1HzClkDivider|cnt[20]                       ; clk_div:U_1HzClkDivider|cnt[20]                       ; clk          ; clk         ; 0.000        ; 0.000      ; 1.483      ;
+; 1.177 ; clk_div:U_1HzClkDivider|cnt[18]                       ; clk_div:U_1HzClkDivider|cnt[18]                       ; clk          ; clk         ; 0.000        ; 0.000      ; 1.483      ;
+; 1.178 ; rangefinder:U_Ranger_Botom|count[0]                   ; rangefinder:U_Ranger_Botom|count[0]                   ; clk          ; clk         ; 0.000        ; 0.000      ; 1.484      ;
+; 1.180 ; clk_div:U_1HzClkDivider|cnt[12]                       ; clk_div:U_1HzClkDivider|cnt[12]                       ; clk          ; clk         ; 0.000        ; 0.000      ; 1.486      ;
+; 1.181 ; clk_div:U_1HzClkDivider|cnt[15]                       ; clk_div:U_1HzClkDivider|cnt[15]                       ; clk          ; clk         ; 0.000        ; 0.000      ; 1.487      ;
+; 1.181 ; clk_div:U_1HzClkDivider|cnt[13]                       ; clk_div:U_1HzClkDivider|cnt[13]                       ; clk          ; clk         ; 0.000        ; 0.000      ; 1.487      ;
+; 1.182 ; quadreg:U_RegAM|tmp[5]                                ; BLED_Blue[1]~reg0                                     ; clk          ; clk         ; 0.000        ; 0.000      ; 1.488      ;
+; 1.182 ; clk_div:U_1HzClkDivider|cnt[8]                        ; clk_div:U_1HzClkDivider|cnt[8]                        ; clk          ; clk         ; 0.000        ; 0.000      ; 1.488      ;
+; 1.183 ; clk_div:U_1HzClkDivider|cnt[9]                        ; clk_div:U_1HzClkDivider|cnt[9]                        ; clk          ; clk         ; 0.000        ; 0.000      ; 1.489      ;
+; 1.184 ; rangefinder:U_Ranger_Botom|count[13]                  ; rangefinder:U_Ranger_Botom|count[13]                  ; clk          ; clk         ; 0.000        ; 0.000      ; 1.490      ;
+; 1.186 ; rangefinder:U_Ranger_Botom|count[9]                   ; rangefinder:U_Ranger_Botom|count[9]                   ; clk          ; clk         ; 0.000        ; 0.000      ; 1.492      ;
+; 1.186 ; clk_div:U_1HzClkDivider|cnt[10]                       ; clk_div:U_1HzClkDivider|cnt[10]                       ; clk          ; clk         ; 0.000        ; 0.000      ; 1.492      ;
+; 1.190 ; rangefinder:U_Ranger_Botom|count[11]                  ; rangefinder:U_Ranger_Botom|count[11]                  ; clk          ; clk         ; 0.000        ; 0.000      ; 1.496      ;
+; 1.191 ; rangefinder:U_Ranger_Botom|count[10]                  ; rangefinder:U_Ranger_Botom|count[10]                  ; clk          ; clk         ; 0.000        ; 0.000      ; 1.497      ;
+; 1.193 ; quadreg:U_RegAM|tmp[4]                                ; BLED_Blue[0]~reg0                                     ; clk          ; clk         ; 0.000        ; 0.000      ; 1.499      ;
+; 1.198 ; rangefinder:U_Ranger_Botom|count[14]                  ; rangefinder:U_Ranger_Botom|count[14]                  ; clk          ; clk         ; 0.000        ; 0.000      ; 1.504      ;
+; 1.198 ; quadreg:U_RegAM|tmp[2]                                ; BLED_Orange[2]~reg0                                   ; clk          ; clk         ; 0.000        ; 0.000      ; 1.504      ;
+; 1.204 ; rangefinder:U_Ranger_Botom|count[19]                  ; rangefinder:U_Ranger_Botom|count[19]                  ; clk          ; clk         ; 0.000        ; 0.000      ; 1.510      ;
+; 1.208 ; rangefinder:U_Ranger_Botom|count[16]                  ; rangefinder:U_Ranger_Botom|count[16]                  ; clk          ; clk         ; 0.000        ; 0.000      ; 1.514      ;
+; 1.215 ; clk_div:U_1HzClkDivider|cnt[3]                        ; clk_div:U_1HzClkDivider|cnt[3]                        ; clk          ; clk         ; 0.000        ; 0.000      ; 1.521      ;
+; 1.216 ; motor_pwm:U_Motor_1|clockcount[6]                     ; motor_pwm:U_Motor_1|clockcount[6]                     ; clk          ; clk         ; 0.000        ; 0.000      ; 1.522      ;
+; 1.225 ; motor_pwm:U_Motor_1|pulsecount[9]                     ; motor_pwm:U_Motor_1|pulsecount[9]                     ; clk          ; clk         ; 0.000        ; 0.000      ; 1.531      ;
+; 1.225 ; motor_pwm:U_Motor_1|pulsecount[7]                     ; motor_pwm:U_Motor_1|pulsecount[7]                     ; clk          ; clk         ; 0.000        ; 0.000      ; 1.531      ;
+; 1.225 ; motor_pwm:U_Motor_1|clockcount[1]                     ; motor_pwm:U_Motor_1|clockcount[1]                     ; clk          ; clk         ; 0.000        ; 0.000      ; 1.531      ;
+; 1.225 ; motor_pwm:U_Motor_1|pulsecount[2]                     ; motor_pwm:U_Motor_1|pulsecount[2]                     ; clk          ; clk         ; 0.000        ; 0.000      ; 1.531      ;
+; 1.226 ; rangefinder:U_Ranger_Botom|count[1]                   ; rangefinder:U_Ranger_Botom|count[1]                   ; clk          ; clk         ; 0.000        ; 0.000      ; 1.532      ;
+; 1.226 ; rangefinder:U_Ranger_Botom|count[2]                   ; rangefinder:U_Ranger_Botom|count[2]                   ; clk          ; clk         ; 0.000        ; 0.000      ; 1.532      ;
+; 1.226 ; motor_pwm:U_Motor_1|clockcount[4]                     ; motor_pwm:U_Motor_1|clockcount[4]                     ; clk          ; clk         ; 0.000        ; 0.000      ; 1.532      ;
+; 1.226 ; motor_pwm:U_Motor_1|clockcount[3]                     ; motor_pwm:U_Motor_1|clockcount[3]                     ; clk          ; clk         ; 0.000        ; 0.000      ; 1.532      ;
+; 1.226 ; motor_pwm:U_Motor_1|pulsecount[5]                     ; motor_pwm:U_Motor_1|pulsecount[5]                     ; clk          ; clk         ; 0.000        ; 0.000      ; 1.532      ;
+; 1.226 ; motor_pwm:U_Motor_1|pulsecount[4]                     ; motor_pwm:U_Motor_1|pulsecount[4]                     ; clk          ; clk         ; 0.000        ; 0.000      ; 1.532      ;
+; 1.229 ; rangefinder:U_Ranger_Botom|count[4]                   ; rangefinder:U_Ranger_Botom|count[4]                   ; clk          ; clk         ; 0.000        ; 0.000      ; 1.535      ;
+; 1.229 ; clk_div:U_1HzClkDivider|cnt[19]                       ; clk_div:U_1HzClkDivider|cnt[19]                       ; clk          ; clk         ; 0.000        ; 0.000      ; 1.535      ;
+; 1.230 ; rangefinder:U_Ranger_Botom|count[6]                   ; rangefinder:U_Ranger_Botom|count[6]                   ; clk          ; clk         ; 0.000        ; 0.000      ; 1.536      ;
+; 1.230 ; motor_pwm:U_Motor_1|pulsecount[11]                    ; motor_pwm:U_Motor_1|pulsecount[11]                    ; clk          ; clk         ; 0.000        ; 0.000      ; 1.536      ;
+; 1.230 ; clk_div:U_1HzClkDivider|cnt[17]                       ; clk_div:U_1HzClkDivider|cnt[17]                       ; clk          ; clk         ; 0.000        ; 0.000      ; 1.536      ;
+; 1.230 ; regmap:U_Registers|reg_controller:RegCont|state.wd1   ; regmap:U_Registers|reg_controller:RegCont|state.wd2   ; clk          ; clk         ; 0.000        ; 0.000      ; 1.536      ;
+; 1.231 ; clk_div:U_1HzClkDivider|cnt[16]                       ; clk_div:U_1HzClkDivider|cnt[16]                       ; clk          ; clk         ; 0.000        ; 0.000      ; 1.537      ;
+; 1.232 ; rangefinder:U_Ranger_Botom|count[20]                  ; rangefinder:U_Ranger_Botom|count[20]                  ; clk          ; clk         ; 0.000        ; 0.000      ; 1.538      ;
+; 1.233 ; rangefinder:U_Ranger_Botom|count[8]                   ; rangefinder:U_Ranger_Botom|count[8]                   ; clk          ; clk         ; 0.000        ; 0.000      ; 1.539      ;
+; 1.234 ; clk_div:U_1HzClkDivider|cnt[14]                       ; clk_div:U_1HzClkDivider|cnt[14]                       ; clk          ; clk         ; 0.000        ; 0.000      ; 1.540      ;
+; 1.242 ; rangefinder:U_Ranger_Botom|count[22]                  ; rangefinder:U_Ranger_Botom|count[22]                  ; clk          ; clk         ; 0.000        ; 0.000      ; 1.548      ;
+; 1.242 ; rangefinder:U_Ranger_Botom|count[15]                  ; rangefinder:U_Ranger_Botom|count[15]                  ; clk          ; clk         ; 0.000        ; 0.000      ; 1.548      ;
+; 1.243 ; rangefinder:U_Ranger_Botom|count[18]                  ; rangefinder:U_Ranger_Botom|count[18]                  ; clk          ; clk         ; 0.000        ; 0.000      ; 1.549      ;
+; 1.243 ; rangefinder:U_Ranger_Botom|count[17]                  ; rangefinder:U_Ranger_Botom|count[17]                  ; clk          ; clk         ; 0.000        ; 0.000      ; 1.549      ;
+; 1.249 ; motor_pwm:U_Motor_1|clocktick                         ; motor_pwm:U_Motor_1|pulsecount[9]                     ; clk          ; clk         ; 0.000        ; 0.000      ; 1.555      ;
+; 1.249 ; motor_pwm:U_Motor_1|clocktick                         ; motor_pwm:U_Motor_1|pulsecount[8]                     ; clk          ; clk         ; 0.000        ; 0.000      ; 1.555      ;
+; 1.249 ; motor_pwm:U_Motor_1|clocktick                         ; motor_pwm:U_Motor_1|pulsecount[7]                     ; clk          ; clk         ; 0.000        ; 0.000      ; 1.555      ;
+; 1.249 ; motor_pwm:U_Motor_1|clocktick                         ; motor_pwm:U_Motor_1|pulsecount[6]                     ; clk          ; clk         ; 0.000        ; 0.000      ; 1.555      ;
+; 1.249 ; motor_pwm:U_Motor_1|clocktick                         ; motor_pwm:U_Motor_1|pulsecount[5]                     ; clk          ; clk         ; 0.000        ; 0.000      ; 1.555      ;
+; 1.249 ; motor_pwm:U_Motor_1|clocktick                         ; motor_pwm:U_Motor_1|pulsecount[4]                     ; clk          ; clk         ; 0.000        ; 0.000      ; 1.555      ;
+; 1.249 ; motor_pwm:U_Motor_1|clocktick                         ; motor_pwm:U_Motor_1|pulsecount[3]                     ; clk          ; clk         ; 0.000        ; 0.000      ; 1.555      ;
+; 1.249 ; motor_pwm:U_Motor_1|clocktick                         ; motor_pwm:U_Motor_1|pulsecount[2]                     ; clk          ; clk         ; 0.000        ; 0.000      ; 1.555      ;
+; 1.249 ; motor_pwm:U_Motor_1|clocktick                         ; motor_pwm:U_Motor_1|pulsecount[1]                     ; clk          ; clk         ; 0.000        ; 0.000      ; 1.555      ;
+; 1.249 ; motor_pwm:U_Motor_1|clocktick                         ; motor_pwm:U_Motor_1|pulsecount[10]                    ; clk          ; clk         ; 0.000        ; 0.000      ; 1.555      ;
+; 1.249 ; motor_pwm:U_Motor_1|clocktick                         ; motor_pwm:U_Motor_1|pulsecount[11]                    ; clk          ; clk         ; 0.000        ; 0.000      ; 1.555      ;
+; 1.264 ; rangefinder:U_Ranger_Botom|count[0]                   ; rangefinder:U_Ranger_Botom|edgebegin[0]               ; clk          ; clk         ; 0.000        ; -0.001     ; 1.569      ;
+; 1.266 ; rangefinder:U_Ranger_Botom|count[0]                   ; rangefinder:U_Ranger_Top|edgebegin[0]                 ; clk          ; clk         ; 0.000        ; -0.001     ; 1.571      ;
+; 1.335 ; rangefinder:U_Ranger_Botom|count[10]                  ; rangefinder:U_Ranger_Botom|trigger                    ; clk          ; clk         ; 0.000        ; 0.000      ; 1.641      ;
+; 1.339 ; clk_div:U_1HzClkDivider|cnt[22]                       ; clk_div:U_1HzClkDivider|cnt[22]                       ; clk          ; clk         ; 0.000        ; 0.000      ; 1.645      ;
+; 1.354 ; motor_pwm:U_Motor_1|clocktick                         ; motor_pwm:U_Motor_1|clockcount[5]                     ; clk          ; clk         ; 0.000        ; -0.001     ; 1.659      ;
+; 1.354 ; motor_pwm:U_Motor_1|clocktick                         ; motor_pwm:U_Motor_1|clockcount[6]                     ; clk          ; clk         ; 0.000        ; -0.001     ; 1.659      ;
+; 1.354 ; motor_pwm:U_Motor_1|clocktick                         ; motor_pwm:U_Motor_1|clockcount[4]                     ; clk          ; clk         ; 0.000        ; -0.001     ; 1.659      ;
+; 1.354 ; motor_pwm:U_Motor_1|clocktick                         ; motor_pwm:U_Motor_1|clockcount[3]                     ; clk          ; clk         ; 0.000        ; -0.001     ; 1.659      ;
+; 1.354 ; motor_pwm:U_Motor_1|clocktick                         ; motor_pwm:U_Motor_1|clockcount[1]                     ; clk          ; clk         ; 0.000        ; -0.001     ; 1.659      ;
+; 1.354 ; motor_pwm:U_Motor_1|clocktick                         ; motor_pwm:U_Motor_1|clockcount[0]                     ; clk          ; clk         ; 0.000        ; -0.001     ; 1.659      ;
+; 1.354 ; motor_pwm:U_Motor_1|clocktick                         ; motor_pwm:U_Motor_1|clockcount[2]                     ; clk          ; clk         ; 0.000        ; -0.001     ; 1.659      ;
+; 1.387 ; motor_pwm:U_Motor_1|clockcount[5]                     ; motor_pwm:U_Motor_1|clocktick                         ; clk          ; clk         ; 0.000        ; 0.001      ; 1.694      ;
+; 1.419 ; motor_pwm:U_Motor_1|clockcount[6]                     ; motor_pwm:U_Motor_1|clocktick                         ; clk          ; clk         ; 0.000        ; 0.001      ; 1.726      ;
+; 1.523 ; clk_div:U_1HzClkDivider|cnt[16]                       ; clk_div:U_1HzClkDivider|cnt[22]                       ; clk          ; clk         ; 0.000        ; 0.000      ; 1.829      ;
++-------+-------------------------------------------------------+-------------------------------------------------------+--------------+-------------+--------------+------------+------------+
+
+
++---------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Slow Model Hold: 'clk_div:U_1HzClkDivider|clk_out'                                                                                                      ;
++-------+---------------+--------------------+---------------------------------+---------------------------------+--------------+------------+------------+
+; Slack ; From Node     ; To Node            ; Launch Clock                    ; Latch Clock                     ; Relationship ; Clock Skew ; Data Delay ;
++-------+---------------+--------------------+---------------------------------+---------------------------------+--------------+------------+------------+
+; 0.499 ; current_State ; current_State      ; clk_div:U_1HzClkDivider|clk_out ; clk_div:U_1HzClkDivider|clk_out ; 0.000        ; 0.000      ; 0.805      ;
+; 0.733 ; current_State ; TLED_Orange_1~reg0 ; clk_div:U_1HzClkDivider|clk_out ; clk_div:U_1HzClkDivider|clk_out ; 0.000        ; 0.000      ; 1.039      ;
++-------+---------------+--------------------+---------------------------------+---------------------------------+--------------+------------+------------+
+
+
++---------------------------------------------------------------------------------------------------------------------+
+; Slow Model Minimum Pulse Width: 'clk'                                                                               ;
++--------+--------------+----------------+------------------+-------+------------+------------------------------------+
+; Slack  ; Actual Width ; Required Width ; Type             ; Clock ; Clock Edge ; Target                             ;
++--------+--------------+----------------+------------------+-------+------------+------------------------------------+
+; -1.941 ; 1.000        ; 2.941          ; Port Rate        ; clk   ; Rise       ; clk                                ;
+; -0.742 ; 0.500        ; 1.242          ; High Pulse Width ; clk   ; Rise       ; BLED_Blue[0]~reg0                  ;
+; -0.742 ; 0.500        ; 1.242          ; Low Pulse Width  ; clk   ; Rise       ; BLED_Blue[0]~reg0                  ;
+; -0.742 ; 0.500        ; 1.242          ; High Pulse Width ; clk   ; Rise       ; BLED_Blue[1]~reg0                  ;
+; -0.742 ; 0.500        ; 1.242          ; Low Pulse Width  ; clk   ; Rise       ; BLED_Blue[1]~reg0                  ;
+; -0.742 ; 0.500        ; 1.242          ; High Pulse Width ; clk   ; Rise       ; BLED_Blue[2]~reg0                  ;
+; -0.742 ; 0.500        ; 1.242          ; Low Pulse Width  ; clk   ; Rise       ; BLED_Blue[2]~reg0                  ;
+; -0.742 ; 0.500        ; 1.242          ; High Pulse Width ; clk   ; Rise       ; BLED_Blue[3]~reg0                  ;
+; -0.742 ; 0.500        ; 1.242          ; Low Pulse Width  ; clk   ; Rise       ; BLED_Blue[3]~reg0                  ;
+; -0.742 ; 0.500        ; 1.242          ; High Pulse Width ; clk   ; Rise       ; BLED_Orange[0]~reg0                ;
+; -0.742 ; 0.500        ; 1.242          ; Low Pulse Width  ; clk   ; Rise       ; BLED_Orange[0]~reg0                ;
+; -0.742 ; 0.500        ; 1.242          ; High Pulse Width ; clk   ; Rise       ; BLED_Orange[1]~reg0                ;
+; -0.742 ; 0.500        ; 1.242          ; Low Pulse Width  ; clk   ; Rise       ; BLED_Orange[1]~reg0                ;
+; -0.742 ; 0.500        ; 1.242          ; High Pulse Width ; clk   ; Rise       ; BLED_Orange[2]~reg0                ;
+; -0.742 ; 0.500        ; 1.242          ; Low Pulse Width  ; clk   ; Rise       ; BLED_Orange[2]~reg0                ;
+; -0.742 ; 0.500        ; 1.242          ; High Pulse Width ; clk   ; Rise       ; BLED_Orange[3]~reg0                ;
+; -0.742 ; 0.500        ; 1.242          ; Low Pulse Width  ; clk   ; Rise       ; BLED_Orange[3]~reg0                ;
+; -0.742 ; 0.500        ; 1.242          ; High Pulse Width ; clk   ; Rise       ; clk_div:U_1HzClkDivider|clk_out    ;
+; -0.742 ; 0.500        ; 1.242          ; Low Pulse Width  ; clk   ; Rise       ; clk_div:U_1HzClkDivider|clk_out    ;
+; -0.742 ; 0.500        ; 1.242          ; High Pulse Width ; clk   ; Rise       ; clk_div:U_1HzClkDivider|cnt[0]     ;
+; -0.742 ; 0.500        ; 1.242          ; Low Pulse Width  ; clk   ; Rise       ; clk_div:U_1HzClkDivider|cnt[0]     ;
+; -0.742 ; 0.500        ; 1.242          ; High Pulse Width ; clk   ; Rise       ; clk_div:U_1HzClkDivider|cnt[10]    ;
+; -0.742 ; 0.500        ; 1.242          ; Low Pulse Width  ; clk   ; Rise       ; clk_div:U_1HzClkDivider|cnt[10]    ;
+; -0.742 ; 0.500        ; 1.242          ; High Pulse Width ; clk   ; Rise       ; clk_div:U_1HzClkDivider|cnt[11]    ;
+; -0.742 ; 0.500        ; 1.242          ; Low Pulse Width  ; clk   ; Rise       ; clk_div:U_1HzClkDivider|cnt[11]    ;
+; -0.742 ; 0.500        ; 1.242          ; High Pulse Width ; clk   ; Rise       ; clk_div:U_1HzClkDivider|cnt[12]    ;
+; -0.742 ; 0.500        ; 1.242          ; Low Pulse Width  ; clk   ; Rise       ; clk_div:U_1HzClkDivider|cnt[12]    ;
+; -0.742 ; 0.500        ; 1.242          ; High Pulse Width ; clk   ; Rise       ; clk_div:U_1HzClkDivider|cnt[13]    ;
+; -0.742 ; 0.500        ; 1.242          ; Low Pulse Width  ; clk   ; Rise       ; clk_div:U_1HzClkDivider|cnt[13]    ;
+; -0.742 ; 0.500        ; 1.242          ; High Pulse Width ; clk   ; Rise       ; clk_div:U_1HzClkDivider|cnt[14]    ;
+; -0.742 ; 0.500        ; 1.242          ; Low Pulse Width  ; clk   ; Rise       ; clk_div:U_1HzClkDivider|cnt[14]    ;
+; -0.742 ; 0.500        ; 1.242          ; High Pulse Width ; clk   ; Rise       ; clk_div:U_1HzClkDivider|cnt[15]    ;
+; -0.742 ; 0.500        ; 1.242          ; Low Pulse Width  ; clk   ; Rise       ; clk_div:U_1HzClkDivider|cnt[15]    ;
+; -0.742 ; 0.500        ; 1.242          ; High Pulse Width ; clk   ; Rise       ; clk_div:U_1HzClkDivider|cnt[16]    ;
+; -0.742 ; 0.500        ; 1.242          ; Low Pulse Width  ; clk   ; Rise       ; clk_div:U_1HzClkDivider|cnt[16]    ;
+; -0.742 ; 0.500        ; 1.242          ; High Pulse Width ; clk   ; Rise       ; clk_div:U_1HzClkDivider|cnt[17]    ;
+; -0.742 ; 0.500        ; 1.242          ; Low Pulse Width  ; clk   ; Rise       ; clk_div:U_1HzClkDivider|cnt[17]    ;
+; -0.742 ; 0.500        ; 1.242          ; High Pulse Width ; clk   ; Rise       ; clk_div:U_1HzClkDivider|cnt[18]    ;
+; -0.742 ; 0.500        ; 1.242          ; Low Pulse Width  ; clk   ; Rise       ; clk_div:U_1HzClkDivider|cnt[18]    ;
+; -0.742 ; 0.500        ; 1.242          ; High Pulse Width ; clk   ; Rise       ; clk_div:U_1HzClkDivider|cnt[19]    ;
+; -0.742 ; 0.500        ; 1.242          ; Low Pulse Width  ; clk   ; Rise       ; clk_div:U_1HzClkDivider|cnt[19]    ;
+; -0.742 ; 0.500        ; 1.242          ; High Pulse Width ; clk   ; Rise       ; clk_div:U_1HzClkDivider|cnt[1]     ;
+; -0.742 ; 0.500        ; 1.242          ; Low Pulse Width  ; clk   ; Rise       ; clk_div:U_1HzClkDivider|cnt[1]     ;
+; -0.742 ; 0.500        ; 1.242          ; High Pulse Width ; clk   ; Rise       ; clk_div:U_1HzClkDivider|cnt[20]    ;
+; -0.742 ; 0.500        ; 1.242          ; Low Pulse Width  ; clk   ; Rise       ; clk_div:U_1HzClkDivider|cnt[20]    ;
+; -0.742 ; 0.500        ; 1.242          ; High Pulse Width ; clk   ; Rise       ; clk_div:U_1HzClkDivider|cnt[21]    ;
+; -0.742 ; 0.500        ; 1.242          ; Low Pulse Width  ; clk   ; Rise       ; clk_div:U_1HzClkDivider|cnt[21]    ;
+; -0.742 ; 0.500        ; 1.242          ; High Pulse Width ; clk   ; Rise       ; clk_div:U_1HzClkDivider|cnt[22]    ;
+; -0.742 ; 0.500        ; 1.242          ; Low Pulse Width  ; clk   ; Rise       ; clk_div:U_1HzClkDivider|cnt[22]    ;
+; -0.742 ; 0.500        ; 1.242          ; High Pulse Width ; clk   ; Rise       ; clk_div:U_1HzClkDivider|cnt[2]     ;
+; -0.742 ; 0.500        ; 1.242          ; Low Pulse Width  ; clk   ; Rise       ; clk_div:U_1HzClkDivider|cnt[2]     ;
+; -0.742 ; 0.500        ; 1.242          ; High Pulse Width ; clk   ; Rise       ; clk_div:U_1HzClkDivider|cnt[3]     ;
+; -0.742 ; 0.500        ; 1.242          ; Low Pulse Width  ; clk   ; Rise       ; clk_div:U_1HzClkDivider|cnt[3]     ;
+; -0.742 ; 0.500        ; 1.242          ; High Pulse Width ; clk   ; Rise       ; clk_div:U_1HzClkDivider|cnt[4]     ;
+; -0.742 ; 0.500        ; 1.242          ; Low Pulse Width  ; clk   ; Rise       ; clk_div:U_1HzClkDivider|cnt[4]     ;
+; -0.742 ; 0.500        ; 1.242          ; High Pulse Width ; clk   ; Rise       ; clk_div:U_1HzClkDivider|cnt[5]     ;
+; -0.742 ; 0.500        ; 1.242          ; Low Pulse Width  ; clk   ; Rise       ; clk_div:U_1HzClkDivider|cnt[5]     ;
+; -0.742 ; 0.500        ; 1.242          ; High Pulse Width ; clk   ; Rise       ; clk_div:U_1HzClkDivider|cnt[6]     ;
+; -0.742 ; 0.500        ; 1.242          ; Low Pulse Width  ; clk   ; Rise       ; clk_div:U_1HzClkDivider|cnt[6]     ;
+; -0.742 ; 0.500        ; 1.242          ; High Pulse Width ; clk   ; Rise       ; clk_div:U_1HzClkDivider|cnt[7]     ;
+; -0.742 ; 0.500        ; 1.242          ; Low Pulse Width  ; clk   ; Rise       ; clk_div:U_1HzClkDivider|cnt[7]     ;
+; -0.742 ; 0.500        ; 1.242          ; High Pulse Width ; clk   ; Rise       ; clk_div:U_1HzClkDivider|cnt[8]     ;
+; -0.742 ; 0.500        ; 1.242          ; Low Pulse Width  ; clk   ; Rise       ; clk_div:U_1HzClkDivider|cnt[8]     ;
+; -0.742 ; 0.500        ; 1.242          ; High Pulse Width ; clk   ; Rise       ; clk_div:U_1HzClkDivider|cnt[9]     ;
+; -0.742 ; 0.500        ; 1.242          ; Low Pulse Width  ; clk   ; Rise       ; clk_div:U_1HzClkDivider|cnt[9]     ;
+; -0.742 ; 0.500        ; 1.242          ; High Pulse Width ; clk   ; Rise       ; motor_pwm:U_Motor_1|clockcount[0]  ;
+; -0.742 ; 0.500        ; 1.242          ; Low Pulse Width  ; clk   ; Rise       ; motor_pwm:U_Motor_1|clockcount[0]  ;
+; -0.742 ; 0.500        ; 1.242          ; High Pulse Width ; clk   ; Rise       ; motor_pwm:U_Motor_1|clockcount[1]  ;
+; -0.742 ; 0.500        ; 1.242          ; Low Pulse Width  ; clk   ; Rise       ; motor_pwm:U_Motor_1|clockcount[1]  ;
+; -0.742 ; 0.500        ; 1.242          ; High Pulse Width ; clk   ; Rise       ; motor_pwm:U_Motor_1|clockcount[2]  ;
+; -0.742 ; 0.500        ; 1.242          ; Low Pulse Width  ; clk   ; Rise       ; motor_pwm:U_Motor_1|clockcount[2]  ;
+; -0.742 ; 0.500        ; 1.242          ; High Pulse Width ; clk   ; Rise       ; motor_pwm:U_Motor_1|clockcount[3]  ;
+; -0.742 ; 0.500        ; 1.242          ; Low Pulse Width  ; clk   ; Rise       ; motor_pwm:U_Motor_1|clockcount[3]  ;
+; -0.742 ; 0.500        ; 1.242          ; High Pulse Width ; clk   ; Rise       ; motor_pwm:U_Motor_1|clockcount[4]  ;
+; -0.742 ; 0.500        ; 1.242          ; Low Pulse Width  ; clk   ; Rise       ; motor_pwm:U_Motor_1|clockcount[4]  ;
+; -0.742 ; 0.500        ; 1.242          ; High Pulse Width ; clk   ; Rise       ; motor_pwm:U_Motor_1|clockcount[5]  ;
+; -0.742 ; 0.500        ; 1.242          ; Low Pulse Width  ; clk   ; Rise       ; motor_pwm:U_Motor_1|clockcount[5]  ;
+; -0.742 ; 0.500        ; 1.242          ; High Pulse Width ; clk   ; Rise       ; motor_pwm:U_Motor_1|clockcount[6]  ;
+; -0.742 ; 0.500        ; 1.242          ; Low Pulse Width  ; clk   ; Rise       ; motor_pwm:U_Motor_1|clockcount[6]  ;
+; -0.742 ; 0.500        ; 1.242          ; High Pulse Width ; clk   ; Rise       ; motor_pwm:U_Motor_1|clocktick      ;
+; -0.742 ; 0.500        ; 1.242          ; Low Pulse Width  ; clk   ; Rise       ; motor_pwm:U_Motor_1|clocktick      ;
+; -0.742 ; 0.500        ; 1.242          ; High Pulse Width ; clk   ; Rise       ; motor_pwm:U_Motor_1|pulsecount[0]  ;
+; -0.742 ; 0.500        ; 1.242          ; Low Pulse Width  ; clk   ; Rise       ; motor_pwm:U_Motor_1|pulsecount[0]  ;
+; -0.742 ; 0.500        ; 1.242          ; High Pulse Width ; clk   ; Rise       ; motor_pwm:U_Motor_1|pulsecount[10] ;
+; -0.742 ; 0.500        ; 1.242          ; Low Pulse Width  ; clk   ; Rise       ; motor_pwm:U_Motor_1|pulsecount[10] ;
+; -0.742 ; 0.500        ; 1.242          ; High Pulse Width ; clk   ; Rise       ; motor_pwm:U_Motor_1|pulsecount[11] ;
+; -0.742 ; 0.500        ; 1.242          ; Low Pulse Width  ; clk   ; Rise       ; motor_pwm:U_Motor_1|pulsecount[11] ;
+; -0.742 ; 0.500        ; 1.242          ; High Pulse Width ; clk   ; Rise       ; motor_pwm:U_Motor_1|pulsecount[1]  ;
+; -0.742 ; 0.500        ; 1.242          ; Low Pulse Width  ; clk   ; Rise       ; motor_pwm:U_Motor_1|pulsecount[1]  ;
+; -0.742 ; 0.500        ; 1.242          ; High Pulse Width ; clk   ; Rise       ; motor_pwm:U_Motor_1|pulsecount[2]  ;
+; -0.742 ; 0.500        ; 1.242          ; Low Pulse Width  ; clk   ; Rise       ; motor_pwm:U_Motor_1|pulsecount[2]  ;
+; -0.742 ; 0.500        ; 1.242          ; High Pulse Width ; clk   ; Rise       ; motor_pwm:U_Motor_1|pulsecount[3]  ;
+; -0.742 ; 0.500        ; 1.242          ; Low Pulse Width  ; clk   ; Rise       ; motor_pwm:U_Motor_1|pulsecount[3]  ;
+; -0.742 ; 0.500        ; 1.242          ; High Pulse Width ; clk   ; Rise       ; motor_pwm:U_Motor_1|pulsecount[4]  ;
+; -0.742 ; 0.500        ; 1.242          ; Low Pulse Width  ; clk   ; Rise       ; motor_pwm:U_Motor_1|pulsecount[4]  ;
+; -0.742 ; 0.500        ; 1.242          ; High Pulse Width ; clk   ; Rise       ; motor_pwm:U_Motor_1|pulsecount[5]  ;
+; -0.742 ; 0.500        ; 1.242          ; Low Pulse Width  ; clk   ; Rise       ; motor_pwm:U_Motor_1|pulsecount[5]  ;
+; -0.742 ; 0.500        ; 1.242          ; High Pulse Width ; clk   ; Rise       ; motor_pwm:U_Motor_1|pulsecount[6]  ;
+; -0.742 ; 0.500        ; 1.242          ; Low Pulse Width  ; clk   ; Rise       ; motor_pwm:U_Motor_1|pulsecount[6]  ;
+; -0.742 ; 0.500        ; 1.242          ; High Pulse Width ; clk   ; Rise       ; motor_pwm:U_Motor_1|pulsecount[7]  ;
++--------+--------------+----------------+------------------+-------+------------+------------------------------------+
+
+
++-----------------------------------------------------------------------------------------------------------------------------------------------------+
+; Slow Model Minimum Pulse Width: 'clk_div:U_1HzClkDivider|clk_out'                                                                                   ;
++--------+--------------+----------------+------------------+---------------------------------+------------+------------------------------------------+
+; Slack  ; Actual Width ; Required Width ; Type             ; Clock                           ; Clock Edge ; Target                                   ;
++--------+--------------+----------------+------------------+---------------------------------+------------+------------------------------------------+
+; -0.742 ; 0.500        ; 1.242          ; High Pulse Width ; clk_div:U_1HzClkDivider|clk_out ; Rise       ; TLED_Orange_1~reg0                       ;
+; -0.742 ; 0.500        ; 1.242          ; Low Pulse Width  ; clk_div:U_1HzClkDivider|clk_out ; Rise       ; TLED_Orange_1~reg0                       ;
+; -0.742 ; 0.500        ; 1.242          ; High Pulse Width ; clk_div:U_1HzClkDivider|clk_out ; Rise       ; current_State                            ;
+; -0.742 ; 0.500        ; 1.242          ; Low Pulse Width  ; clk_div:U_1HzClkDivider|clk_out ; Rise       ; current_State                            ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; clk_div:U_1HzClkDivider|clk_out ; Rise       ; TLED_Orange_1~reg0|clk                   ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; clk_div:U_1HzClkDivider|clk_out ; Rise       ; TLED_Orange_1~reg0|clk                   ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; clk_div:U_1HzClkDivider|clk_out ; Rise       ; U_1HzClkDivider|clk_out|regout           ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; clk_div:U_1HzClkDivider|clk_out ; Rise       ; U_1HzClkDivider|clk_out|regout           ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; clk_div:U_1HzClkDivider|clk_out ; Rise       ; U_1HzClkDivider|clk_out~clkctrl|inclk[0] ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; clk_div:U_1HzClkDivider|clk_out ; Rise       ; U_1HzClkDivider|clk_out~clkctrl|inclk[0] ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; clk_div:U_1HzClkDivider|clk_out ; Rise       ; U_1HzClkDivider|clk_out~clkctrl|outclk   ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; clk_div:U_1HzClkDivider|clk_out ; Rise       ; U_1HzClkDivider|clk_out~clkctrl|outclk   ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; clk_div:U_1HzClkDivider|clk_out ; Rise       ; current_State|clk                        ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; clk_div:U_1HzClkDivider|clk_out ; Rise       ; current_State|clk                        ;
++--------+--------------+----------------+------------------+---------------------------------+------------+------------------------------------------+
+
+
++---------------------------------------------------------------------------------+
+; Setup Times                                                                     ;
++-------------------+------------+--------+--------+------------+-----------------+
+; Data Port         ; Clock Port ; Rise   ; Fall   ; Clock Edge ; Clock Reference ;
++-------------------+------------+--------+--------+------------+-----------------+
+; PIC_PBUS_A_D      ; clk        ; 4.138  ; 4.138  ; Rise       ; clk             ;
+; PIC_PBUS_Data[*]  ; clk        ; 5.794  ; 5.794  ; Rise       ; clk             ;
+;  PIC_PBUS_Data[0] ; clk        ; 5.404  ; 5.404  ; Rise       ; clk             ;
+;  PIC_PBUS_Data[1] ; clk        ; 5.385  ; 5.385  ; Rise       ; clk             ;
+;  PIC_PBUS_Data[2] ; clk        ; 5.467  ; 5.467  ; Rise       ; clk             ;
+;  PIC_PBUS_Data[3] ; clk        ; 5.794  ; 5.794  ; Rise       ; clk             ;
+;  PIC_PBUS_Data[4] ; clk        ; 5.138  ; 5.138  ; Rise       ; clk             ;
+;  PIC_PBUS_Data[5] ; clk        ; 5.790  ; 5.790  ; Rise       ; clk             ;
+;  PIC_PBUS_Data[6] ; clk        ; 5.058  ; 5.058  ; Rise       ; clk             ;
+;  PIC_PBUS_Data[7] ; clk        ; 5.457  ; 5.457  ; Rise       ; clk             ;
+; PIC_PBUS_OK_IN    ; clk        ; 6.599  ; 6.599  ; Rise       ; clk             ;
+; PIC_PBUS_R_W      ; clk        ; 6.263  ; 6.263  ; Rise       ; clk             ;
+; Switch_1[*]       ; clk        ; 10.619 ; 10.619 ; Rise       ; clk             ;
+;  Switch_1[0]      ; clk        ; 8.674  ; 8.674  ; Rise       ; clk             ;
+;  Switch_1[1]      ; clk        ; 10.619 ; 10.619 ; Rise       ; clk             ;
+;  Switch_1[2]      ; clk        ; 10.521 ; 10.521 ; Rise       ; clk             ;
+;  Switch_1[3]      ; clk        ; 9.976  ; 9.976  ; Rise       ; clk             ;
+; Ultra_B_Edge      ; clk        ; 7.996  ; 7.996  ; Rise       ; clk             ;
+; Ultra_T_Edge      ; clk        ; 9.183  ; 9.183  ; Rise       ; clk             ;
++-------------------+------------+--------+--------+------------+-----------------+
+
+
++---------------------------------------------------------------------------------+
+; Hold Times                                                                      ;
++-------------------+------------+--------+--------+------------+-----------------+
+; Data Port         ; Clock Port ; Rise   ; Fall   ; Clock Edge ; Clock Reference ;
++-------------------+------------+--------+--------+------------+-----------------+
+; PIC_PBUS_A_D      ; clk        ; -3.865 ; -3.865 ; Rise       ; clk             ;
+; PIC_PBUS_Data[*]  ; clk        ; -4.238 ; -4.238 ; Rise       ; clk             ;
+;  PIC_PBUS_Data[0] ; clk        ; -4.941 ; -4.941 ; Rise       ; clk             ;
+;  PIC_PBUS_Data[1] ; clk        ; -4.784 ; -4.784 ; Rise       ; clk             ;
+;  PIC_PBUS_Data[2] ; clk        ; -4.767 ; -4.767 ; Rise       ; clk             ;
+;  PIC_PBUS_Data[3] ; clk        ; -4.598 ; -4.598 ; Rise       ; clk             ;
+;  PIC_PBUS_Data[4] ; clk        ; -4.263 ; -4.263 ; Rise       ; clk             ;
+;  PIC_PBUS_Data[5] ; clk        ; -4.594 ; -4.594 ; Rise       ; clk             ;
+;  PIC_PBUS_Data[6] ; clk        ; -4.269 ; -4.269 ; Rise       ; clk             ;
+;  PIC_PBUS_Data[7] ; clk        ; -4.238 ; -4.238 ; Rise       ; clk             ;
+; PIC_PBUS_OK_IN    ; clk        ; -5.018 ; -5.018 ; Rise       ; clk             ;
+; PIC_PBUS_R_W      ; clk        ; -4.729 ; -4.729 ; Rise       ; clk             ;
+; Switch_1[*]       ; clk        ; -6.899 ; -6.899 ; Rise       ; clk             ;
+;  Switch_1[0]      ; clk        ; -6.899 ; -6.899 ; Rise       ; clk             ;
+;  Switch_1[1]      ; clk        ; -7.897 ; -7.897 ; Rise       ; clk             ;
+;  Switch_1[2]      ; clk        ; -9.083 ; -9.083 ; Rise       ; clk             ;
+;  Switch_1[3]      ; clk        ; -9.007 ; -9.007 ; Rise       ; clk             ;
+; Ultra_B_Edge      ; clk        ; -5.214 ; -5.214 ; Rise       ; clk             ;
+; Ultra_T_Edge      ; clk        ; -5.562 ; -5.562 ; Rise       ; clk             ;
++-------------------+------------+--------+--------+------------+-----------------+
+
+
++----------------------------------------------------------------------------------------------------------------------+
+; Clock to Output Times                                                                                                ;
++-------------------+---------------------------------+--------+--------+------------+---------------------------------+
+; Data Port         ; Clock Port                      ; Rise   ; Fall   ; Clock Edge ; Clock Reference                 ;
++-------------------+---------------------------------+--------+--------+------------+---------------------------------+
+; BLED_Blue[*]      ; clk                             ; 9.015  ; 9.015  ; Rise       ; clk                             ;
+;  BLED_Blue[0]     ; clk                             ; 8.802  ; 8.802  ; Rise       ; clk                             ;
+;  BLED_Blue[1]     ; clk                             ; 8.925  ; 8.925  ; Rise       ; clk                             ;
+;  BLED_Blue[2]     ; clk                             ; 8.943  ; 8.943  ; Rise       ; clk                             ;
+;  BLED_Blue[3]     ; clk                             ; 9.015  ; 9.015  ; Rise       ; clk                             ;
+; BLED_Orange[*]    ; clk                             ; 8.953  ; 8.953  ; Rise       ; clk                             ;
+;  BLED_Orange[0]   ; clk                             ; 8.109  ; 8.109  ; Rise       ; clk                             ;
+;  BLED_Orange[1]   ; clk                             ; 8.117  ; 8.117  ; Rise       ; clk                             ;
+;  BLED_Orange[2]   ; clk                             ; 8.953  ; 8.953  ; Rise       ; clk                             ;
+;  BLED_Orange[3]   ; clk                             ; 8.911  ; 8.911  ; Rise       ; clk                             ;
+; Motor_East        ; clk                             ; 10.116 ; 10.116 ; Rise       ; clk                             ;
+; Motor_North       ; clk                             ; 9.534  ; 9.534  ; Rise       ; clk                             ;
+; Motor_South       ; clk                             ; 9.927  ; 9.927  ; Rise       ; clk                             ;
+; Motor_West        ; clk                             ; 9.938  ; 9.938  ; Rise       ; clk                             ;
+; PIC_PBUS_Data[*]  ; clk                             ; 23.797 ; 23.797 ; Rise       ; clk                             ;
+;  PIC_PBUS_Data[0] ; clk                             ; 21.552 ; 21.552 ; Rise       ; clk                             ;
+;  PIC_PBUS_Data[1] ; clk                             ; 21.504 ; 21.504 ; Rise       ; clk                             ;
+;  PIC_PBUS_Data[2] ; clk                             ; 19.310 ; 19.310 ; Rise       ; clk                             ;
+;  PIC_PBUS_Data[3] ; clk                             ; 21.846 ; 21.846 ; Rise       ; clk                             ;
+;  PIC_PBUS_Data[4] ; clk                             ; 20.543 ; 20.543 ; Rise       ; clk                             ;
+;  PIC_PBUS_Data[5] ; clk                             ; 21.785 ; 21.785 ; Rise       ; clk                             ;
+;  PIC_PBUS_Data[6] ; clk                             ; 20.899 ; 20.899 ; Rise       ; clk                             ;
+;  PIC_PBUS_Data[7] ; clk                             ; 23.797 ; 23.797 ; Rise       ; clk                             ;
+; PIC_PBUS_OK_OUT   ; clk                             ; 9.969  ; 9.969  ; Rise       ; clk                             ;
+; TLED_Orange_2     ; clk                             ; 13.504 ; 13.504 ; Rise       ; clk                             ;
+; Ultra_B_Trigger   ; clk                             ; 8.568  ; 8.568  ; Rise       ; clk                             ;
+; Ultra_T_Trigger   ; clk                             ; 9.755  ; 9.755  ; Rise       ; clk                             ;
+; TLED_Orange_1     ; clk_div:U_1HzClkDivider|clk_out ; 8.117  ; 8.117  ; Rise       ; clk_div:U_1HzClkDivider|clk_out ;
++-------------------+---------------------------------+--------+--------+------------+---------------------------------+
+
+
++----------------------------------------------------------------------------------------------------------------------+
+; Minimum Clock to Output Times                                                                                        ;
++-------------------+---------------------------------+--------+--------+------------+---------------------------------+
+; Data Port         ; Clock Port                      ; Rise   ; Fall   ; Clock Edge ; Clock Reference                 ;
++-------------------+---------------------------------+--------+--------+------------+---------------------------------+
+; BLED_Blue[*]      ; clk                             ; 8.802  ; 8.802  ; Rise       ; clk                             ;
+;  BLED_Blue[0]     ; clk                             ; 8.802  ; 8.802  ; Rise       ; clk                             ;
+;  BLED_Blue[1]     ; clk                             ; 8.925  ; 8.925  ; Rise       ; clk                             ;
+;  BLED_Blue[2]     ; clk                             ; 8.943  ; 8.943  ; Rise       ; clk                             ;
+;  BLED_Blue[3]     ; clk                             ; 9.015  ; 9.015  ; Rise       ; clk                             ;
+; BLED_Orange[*]    ; clk                             ; 8.109  ; 8.109  ; Rise       ; clk                             ;
+;  BLED_Orange[0]   ; clk                             ; 8.109  ; 8.109  ; Rise       ; clk                             ;
+;  BLED_Orange[1]   ; clk                             ; 8.117  ; 8.117  ; Rise       ; clk                             ;
+;  BLED_Orange[2]   ; clk                             ; 8.953  ; 8.953  ; Rise       ; clk                             ;
+;  BLED_Orange[3]   ; clk                             ; 8.911  ; 8.911  ; Rise       ; clk                             ;
+; Motor_East        ; clk                             ; 10.116 ; 10.116 ; Rise       ; clk                             ;
+; Motor_North       ; clk                             ; 9.534  ; 9.534  ; Rise       ; clk                             ;
+; Motor_South       ; clk                             ; 9.927  ; 9.927  ; Rise       ; clk                             ;
+; Motor_West        ; clk                             ; 9.938  ; 9.938  ; Rise       ; clk                             ;
+; PIC_PBUS_Data[*]  ; clk                             ; 8.323  ; 8.323  ; Rise       ; clk                             ;
+;  PIC_PBUS_Data[0] ; clk                             ; 9.225  ; 9.225  ; Rise       ; clk                             ;
+;  PIC_PBUS_Data[1] ; clk                             ; 9.175  ; 9.175  ; Rise       ; clk                             ;
+;  PIC_PBUS_Data[2] ; clk                             ; 9.307  ; 9.307  ; Rise       ; clk                             ;
+;  PIC_PBUS_Data[3] ; clk                             ; 9.297  ; 9.297  ; Rise       ; clk                             ;
+;  PIC_PBUS_Data[4] ; clk                             ; 8.323  ; 8.323  ; Rise       ; clk                             ;
+;  PIC_PBUS_Data[5] ; clk                             ; 8.331  ; 8.331  ; Rise       ; clk                             ;
+;  PIC_PBUS_Data[6] ; clk                             ; 8.327  ; 8.327  ; Rise       ; clk                             ;
+;  PIC_PBUS_Data[7] ; clk                             ; 8.339  ; 8.339  ; Rise       ; clk                             ;
+; PIC_PBUS_OK_OUT   ; clk                             ; 8.697  ; 8.697  ; Rise       ; clk                             ;
+; TLED_Orange_2     ; clk                             ; 11.305 ; 11.305 ; Rise       ; clk                             ;
+; Ultra_B_Trigger   ; clk                             ; 8.568  ; 8.568  ; Rise       ; clk                             ;
+; Ultra_T_Trigger   ; clk                             ; 9.755  ; 9.755  ; Rise       ; clk                             ;
+; TLED_Orange_1     ; clk_div:U_1HzClkDivider|clk_out ; 8.117  ; 8.117  ; Rise       ; clk_div:U_1HzClkDivider|clk_out ;
++-------------------+---------------------------------+--------+--------+------------+---------------------------------+
+
+
++-----------------------------------------------------------------------+
+; Propagation Delay                                                     ;
++----------------+------------------+--------+--------+--------+--------+
+; Input Port     ; Output Port      ; RR     ; RF     ; FR     ; FF     ;
++----------------+------------------+--------+--------+--------+--------+
+; PIC_PBUS_OK_IN ; PIC_PBUS_Data[0] ; 13.449 ; 13.449 ; 13.449 ; 13.449 ;
+; PIC_PBUS_OK_IN ; PIC_PBUS_Data[1] ; 13.459 ; 13.459 ; 13.459 ; 13.459 ;
+; PIC_PBUS_OK_IN ; PIC_PBUS_Data[2] ; 13.152 ; 13.152 ; 13.152 ; 13.152 ;
+; PIC_PBUS_OK_IN ; PIC_PBUS_Data[3] ; 13.152 ; 13.152 ; 13.152 ; 13.152 ;
+; PIC_PBUS_OK_IN ; PIC_PBUS_Data[4] ; 13.134 ; 13.134 ; 13.134 ; 13.134 ;
+; PIC_PBUS_OK_IN ; PIC_PBUS_Data[5] ; 13.144 ; 13.144 ; 13.144 ; 13.144 ;
+; PIC_PBUS_OK_IN ; PIC_PBUS_Data[6] ; 13.144 ; 13.144 ; 13.144 ; 13.144 ;
+; PIC_PBUS_OK_IN ; PIC_PBUS_Data[7] ; 13.144 ; 13.144 ; 13.144 ; 13.144 ;
+; PIC_PBUS_OK_IN ; PIC_PBUS_OK_OUT  ; 14.282 ; 14.282 ; 14.282 ; 14.282 ;
++----------------+------------------+--------+--------+--------+--------+
+
+
++-----------------------------------------------------------------------+
+; Minimum Propagation Delay                                             ;
++----------------+------------------+--------+--------+--------+--------+
+; Input Port     ; Output Port      ; RR     ; RF     ; FR     ; FF     ;
++----------------+------------------+--------+--------+--------+--------+
+; PIC_PBUS_OK_IN ; PIC_PBUS_Data[0] ; 13.449 ; 13.449 ; 13.449 ; 13.449 ;
+; PIC_PBUS_OK_IN ; PIC_PBUS_Data[1] ; 13.459 ; 13.459 ; 13.459 ; 13.459 ;
+; PIC_PBUS_OK_IN ; PIC_PBUS_Data[2] ; 13.152 ; 13.152 ; 13.152 ; 13.152 ;
+; PIC_PBUS_OK_IN ; PIC_PBUS_Data[3] ; 13.152 ; 13.152 ; 13.152 ; 13.152 ;
+; PIC_PBUS_OK_IN ; PIC_PBUS_Data[4] ; 13.134 ; 13.134 ; 13.134 ; 13.134 ;
+; PIC_PBUS_OK_IN ; PIC_PBUS_Data[5] ; 13.144 ; 13.144 ; 13.144 ; 13.144 ;
+; PIC_PBUS_OK_IN ; PIC_PBUS_Data[6] ; 13.144 ; 13.144 ; 13.144 ; 13.144 ;
+; PIC_PBUS_OK_IN ; PIC_PBUS_Data[7] ; 13.144 ; 13.144 ; 13.144 ; 13.144 ;
+; PIC_PBUS_OK_IN ; PIC_PBUS_OK_OUT  ; 14.282 ; 14.282 ; 14.282 ; 14.282 ;
++----------------+------------------+--------+--------+--------+--------+
+
+
++------------------------------------------------------------------------------+
+; Output Enable Times                                                          ;
++-------------------+------------+-------+------+------------+-----------------+
+; Data Port         ; Clock Port ; Rise  ; Fall ; Clock Edge ; Clock Reference ;
++-------------------+------------+-------+------+------------+-----------------+
+; PIC_PBUS_Data[*]  ; clk        ; 8.713 ;      ; Rise       ; clk             ;
+;  PIC_PBUS_Data[0] ; clk        ; 9.028 ;      ; Rise       ; clk             ;
+;  PIC_PBUS_Data[1] ; clk        ; 9.038 ;      ; Rise       ; clk             ;
+;  PIC_PBUS_Data[2] ; clk        ; 8.731 ;      ; Rise       ; clk             ;
+;  PIC_PBUS_Data[3] ; clk        ; 8.731 ;      ; Rise       ; clk             ;
+;  PIC_PBUS_Data[4] ; clk        ; 8.713 ;      ; Rise       ; clk             ;
+;  PIC_PBUS_Data[5] ; clk        ; 8.723 ;      ; Rise       ; clk             ;
+;  PIC_PBUS_Data[6] ; clk        ; 8.723 ;      ; Rise       ; clk             ;
+;  PIC_PBUS_Data[7] ; clk        ; 8.723 ;      ; Rise       ; clk             ;
++-------------------+------------+-------+------+------------+-----------------+
+
+
++------------------------------------------------------------------------------+
+; Minimum Output Enable Times                                                  ;
++-------------------+------------+-------+------+------------+-----------------+
+; Data Port         ; Clock Port ; Rise  ; Fall ; Clock Edge ; Clock Reference ;
++-------------------+------------+-------+------+------------+-----------------+
+; PIC_PBUS_Data[*]  ; clk        ; 8.532 ;      ; Rise       ; clk             ;
+;  PIC_PBUS_Data[0] ; clk        ; 8.847 ;      ; Rise       ; clk             ;
+;  PIC_PBUS_Data[1] ; clk        ; 8.857 ;      ; Rise       ; clk             ;
+;  PIC_PBUS_Data[2] ; clk        ; 8.550 ;      ; Rise       ; clk             ;
+;  PIC_PBUS_Data[3] ; clk        ; 8.550 ;      ; Rise       ; clk             ;
+;  PIC_PBUS_Data[4] ; clk        ; 8.532 ;      ; Rise       ; clk             ;
+;  PIC_PBUS_Data[5] ; clk        ; 8.542 ;      ; Rise       ; clk             ;
+;  PIC_PBUS_Data[6] ; clk        ; 8.542 ;      ; Rise       ; clk             ;
+;  PIC_PBUS_Data[7] ; clk        ; 8.542 ;      ; Rise       ; clk             ;
++-------------------+------------+-------+------+------------+-----------------+
+
+
++---------------------------------------------------------------------------------------+
+; Output Disable Times                                                                  ;
++-------------------+------------+-----------+-----------+------------+-----------------+
+; Data Port         ; Clock Port ; 0 to Hi-Z ; 1 to Hi-Z ; Clock Edge ; Clock Reference ;
++-------------------+------------+-----------+-----------+------------+-----------------+
+; PIC_PBUS_Data[*]  ; clk        ; 8.713     ;           ; Rise       ; clk             ;
+;  PIC_PBUS_Data[0] ; clk        ; 9.028     ;           ; Rise       ; clk             ;
+;  PIC_PBUS_Data[1] ; clk        ; 9.038     ;           ; Rise       ; clk             ;
+;  PIC_PBUS_Data[2] ; clk        ; 8.731     ;           ; Rise       ; clk             ;
+;  PIC_PBUS_Data[3] ; clk        ; 8.731     ;           ; Rise       ; clk             ;
+;  PIC_PBUS_Data[4] ; clk        ; 8.713     ;           ; Rise       ; clk             ;
+;  PIC_PBUS_Data[5] ; clk        ; 8.723     ;           ; Rise       ; clk             ;
+;  PIC_PBUS_Data[6] ; clk        ; 8.723     ;           ; Rise       ; clk             ;
+;  PIC_PBUS_Data[7] ; clk        ; 8.723     ;           ; Rise       ; clk             ;
++-------------------+------------+-----------+-----------+------------+-----------------+
+
+
++---------------------------------------------------------------------------------------+
+; Minimum Output Disable Times                                                          ;
++-------------------+------------+-----------+-----------+------------+-----------------+
+; Data Port         ; Clock Port ; 0 to Hi-Z ; 1 to Hi-Z ; Clock Edge ; Clock Reference ;
++-------------------+------------+-----------+-----------+------------+-----------------+
+; PIC_PBUS_Data[*]  ; clk        ; 8.532     ;           ; Rise       ; clk             ;
+;  PIC_PBUS_Data[0] ; clk        ; 8.847     ;           ; Rise       ; clk             ;
+;  PIC_PBUS_Data[1] ; clk        ; 8.857     ;           ; Rise       ; clk             ;
+;  PIC_PBUS_Data[2] ; clk        ; 8.550     ;           ; Rise       ; clk             ;
+;  PIC_PBUS_Data[3] ; clk        ; 8.550     ;           ; Rise       ; clk             ;
+;  PIC_PBUS_Data[4] ; clk        ; 8.532     ;           ; Rise       ; clk             ;
+;  PIC_PBUS_Data[5] ; clk        ; 8.542     ;           ; Rise       ; clk             ;
+;  PIC_PBUS_Data[6] ; clk        ; 8.542     ;           ; Rise       ; clk             ;
+;  PIC_PBUS_Data[7] ; clk        ; 8.542     ;           ; Rise       ; clk             ;
++-------------------+------------+-----------+-----------+------------+-----------------+
+
+
++-----------------------------------------------------------+
+; Fast Model Setup Summary                                  ;
++---------------------------------+---------+---------------+
+; Clock                           ; Slack   ; End Point TNS ;
++---------------------------------+---------+---------------+
+; clk                             ; -26.146 ; -552.176      ;
+; clk_div:U_1HzClkDivider|clk_out ; 0.622   ; 0.000         ;
++---------------------------------+---------+---------------+
+
+
++---------------------------------------------------------+
+; Fast Model Hold Summary                                 ;
++---------------------------------+-------+---------------+
+; Clock                           ; Slack ; End Point TNS ;
++---------------------------------+-------+---------------+
+; clk                             ; 0.215 ; 0.000         ;
+; clk_div:U_1HzClkDivider|clk_out ; 0.215 ; 0.000         ;
++---------------------------------+-------+---------------+
+
+
+-------------------------------
+; Fast Model Recovery Summary ;
+-------------------------------
+No paths to report.
+
+
+------------------------------
+; Fast Model Removal Summary ;
+------------------------------
+No paths to report.
+
+
++----------------------------------------------------------+
+; Fast Model Minimum Pulse Width Summary                   ;
++---------------------------------+--------+---------------+
+; Clock                           ; Slack  ; End Point TNS ;
++---------------------------------+--------+---------------+
+; clk                             ; -1.380 ; -278.380      ;
+; clk_div:U_1HzClkDivider|clk_out ; -0.500 ; -2.000        ;
++---------------------------------+--------+---------------+
+
+
++--------------------------------------------------------------------------------------------------------------------------------------------------+
+; Fast Model Setup: 'clk'                                                                                                                          ;
++---------+----------------------------------------+-------------------------+--------------+-------------+--------------+------------+------------+
+; Slack   ; From Node                              ; To Node                 ; Launch Clock ; Latch Clock ; Relationship ; Clock Skew ; Data Delay ;
++---------+----------------------------------------+-------------------------+--------------+-------------+--------------+------------+------------+
+; -26.146 ; rangefinder:U_Ranger_Top|edgebegin[0]  ; motor_pwm:U_Motor_2|pwm ; clk          ; clk         ; 1.000        ; -0.030     ; 27.148     ;
+; -25.977 ; rangefinder:U_Ranger_Top|edgebegin[1]  ; motor_pwm:U_Motor_2|pwm ; clk          ; clk         ; 1.000        ; -0.009     ; 27.000     ;
+; -25.941 ; rangefinder:U_Ranger_Top|edgebegin[2]  ; motor_pwm:U_Motor_2|pwm ; clk          ; clk         ; 1.000        ; -0.009     ; 26.964     ;
+; -25.928 ; rangefinder:U_Ranger_Top|edgeend[0]    ; motor_pwm:U_Motor_2|pwm ; clk          ; clk         ; 1.000        ; -0.009     ; 26.951     ;
+; -25.914 ; rangefinder:U_Ranger_Top|edgebegin[3]  ; motor_pwm:U_Motor_2|pwm ; clk          ; clk         ; 1.000        ; -0.009     ; 26.937     ;
+; -25.906 ; rangefinder:U_Ranger_Top|edgeend[1]    ; motor_pwm:U_Motor_2|pwm ; clk          ; clk         ; 1.000        ; -0.009     ; 26.929     ;
+; -25.878 ; rangefinder:U_Ranger_Top|edgebegin[0]  ; motor_pwm:U_Motor_1|pwm ; clk          ; clk         ; 1.000        ; -0.030     ; 26.880     ;
+; -25.871 ; rangefinder:U_Ranger_Top|edgeend[2]    ; motor_pwm:U_Motor_2|pwm ; clk          ; clk         ; 1.000        ; -0.009     ; 26.894     ;
+; -25.842 ; rangefinder:U_Ranger_Top|edgebegin[0]  ; motor_pwm:U_Motor_3|pwm ; clk          ; clk         ; 1.000        ; -0.030     ; 26.844     ;
+; -25.819 ; rangefinder:U_Ranger_Top|edgeend[3]    ; motor_pwm:U_Motor_2|pwm ; clk          ; clk         ; 1.000        ; -0.009     ; 26.842     ;
+; -25.808 ; rangefinder:U_Ranger_Top|edgebegin[4]  ; motor_pwm:U_Motor_2|pwm ; clk          ; clk         ; 1.000        ; -0.009     ; 26.831     ;
+; -25.790 ; rangefinder:U_Ranger_Top|edgebegin[9]  ; motor_pwm:U_Motor_2|pwm ; clk          ; clk         ; 1.000        ; -0.015     ; 26.807     ;
+; -25.780 ; rangefinder:U_Ranger_Top|edgebegin[5]  ; motor_pwm:U_Motor_2|pwm ; clk          ; clk         ; 1.000        ; -0.009     ; 26.803     ;
+; -25.750 ; rangefinder:U_Ranger_Top|edgebegin[10] ; motor_pwm:U_Motor_2|pwm ; clk          ; clk         ; 1.000        ; -0.015     ; 26.767     ;
+; -25.746 ; rangefinder:U_Ranger_Top|edgebegin[0]  ; motor_pwm:U_Motor_4|pwm ; clk          ; clk         ; 1.000        ; -0.030     ; 26.748     ;
+; -25.744 ; rangefinder:U_Ranger_Top|edgeend[4]    ; motor_pwm:U_Motor_2|pwm ; clk          ; clk         ; 1.000        ; -0.009     ; 26.767     ;
+; -25.742 ; rangefinder:U_Ranger_Top|edgebegin[6]  ; motor_pwm:U_Motor_2|pwm ; clk          ; clk         ; 1.000        ; -0.009     ; 26.765     ;
+; -25.728 ; rangefinder:U_Ranger_Top|edgebegin[11] ; motor_pwm:U_Motor_2|pwm ; clk          ; clk         ; 1.000        ; -0.015     ; 26.745     ;
+; -25.722 ; rangefinder:U_Ranger_Top|edgebegin[7]  ; motor_pwm:U_Motor_2|pwm ; clk          ; clk         ; 1.000        ; -0.009     ; 26.745     ;
+; -25.709 ; rangefinder:U_Ranger_Top|edgebegin[1]  ; motor_pwm:U_Motor_1|pwm ; clk          ; clk         ; 1.000        ; -0.009     ; 26.732     ;
+; -25.694 ; rangefinder:U_Ranger_Top|edgeend[5]    ; motor_pwm:U_Motor_2|pwm ; clk          ; clk         ; 1.000        ; -0.009     ; 26.717     ;
+; -25.674 ; rangefinder:U_Ranger_Top|edgeend[6]    ; motor_pwm:U_Motor_2|pwm ; clk          ; clk         ; 1.000        ; -0.009     ; 26.697     ;
+; -25.673 ; rangefinder:U_Ranger_Top|edgebegin[2]  ; motor_pwm:U_Motor_1|pwm ; clk          ; clk         ; 1.000        ; -0.009     ; 26.696     ;
+; -25.673 ; rangefinder:U_Ranger_Top|edgebegin[1]  ; motor_pwm:U_Motor_3|pwm ; clk          ; clk         ; 1.000        ; -0.009     ; 26.696     ;
+; -25.666 ; rangefinder:U_Ranger_Top|edgebegin[8]  ; motor_pwm:U_Motor_2|pwm ; clk          ; clk         ; 1.000        ; -0.009     ; 26.689     ;
+; -25.660 ; rangefinder:U_Ranger_Top|edgeend[0]    ; motor_pwm:U_Motor_1|pwm ; clk          ; clk         ; 1.000        ; -0.009     ; 26.683     ;
+; -25.646 ; rangefinder:U_Ranger_Top|edgebegin[3]  ; motor_pwm:U_Motor_1|pwm ; clk          ; clk         ; 1.000        ; -0.009     ; 26.669     ;
+; -25.638 ; rangefinder:U_Ranger_Top|edgeend[1]    ; motor_pwm:U_Motor_1|pwm ; clk          ; clk         ; 1.000        ; -0.009     ; 26.661     ;
+; -25.637 ; rangefinder:U_Ranger_Top|edgebegin[2]  ; motor_pwm:U_Motor_3|pwm ; clk          ; clk         ; 1.000        ; -0.009     ; 26.660     ;
+; -25.624 ; rangefinder:U_Ranger_Top|edgeend[7]    ; motor_pwm:U_Motor_2|pwm ; clk          ; clk         ; 1.000        ; -0.009     ; 26.647     ;
+; -25.624 ; rangefinder:U_Ranger_Top|edgeend[0]    ; motor_pwm:U_Motor_3|pwm ; clk          ; clk         ; 1.000        ; -0.009     ; 26.647     ;
+; -25.610 ; rangefinder:U_Ranger_Top|edgebegin[3]  ; motor_pwm:U_Motor_3|pwm ; clk          ; clk         ; 1.000        ; -0.009     ; 26.633     ;
+; -25.605 ; rangefinder:U_Ranger_Top|edgeend[8]    ; motor_pwm:U_Motor_2|pwm ; clk          ; clk         ; 1.000        ; -0.009     ; 26.628     ;
+; -25.603 ; rangefinder:U_Ranger_Top|edgeend[2]    ; motor_pwm:U_Motor_1|pwm ; clk          ; clk         ; 1.000        ; -0.009     ; 26.626     ;
+; -25.602 ; rangefinder:U_Ranger_Top|edgeend[1]    ; motor_pwm:U_Motor_3|pwm ; clk          ; clk         ; 1.000        ; -0.009     ; 26.625     ;
+; -25.577 ; rangefinder:U_Ranger_Top|edgebegin[1]  ; motor_pwm:U_Motor_4|pwm ; clk          ; clk         ; 1.000        ; -0.009     ; 26.600     ;
+; -25.567 ; rangefinder:U_Ranger_Top|edgeend[2]    ; motor_pwm:U_Motor_3|pwm ; clk          ; clk         ; 1.000        ; -0.009     ; 26.590     ;
+; -25.557 ; rangefinder:U_Ranger_Top|edgeend[9]    ; motor_pwm:U_Motor_2|pwm ; clk          ; clk         ; 1.000        ; -0.009     ; 26.580     ;
+; -25.551 ; rangefinder:U_Ranger_Top|edgeend[3]    ; motor_pwm:U_Motor_1|pwm ; clk          ; clk         ; 1.000        ; -0.009     ; 26.574     ;
+; -25.541 ; rangefinder:U_Ranger_Top|edgebegin[2]  ; motor_pwm:U_Motor_4|pwm ; clk          ; clk         ; 1.000        ; -0.009     ; 26.564     ;
+; -25.540 ; rangefinder:U_Ranger_Top|edgebegin[4]  ; motor_pwm:U_Motor_1|pwm ; clk          ; clk         ; 1.000        ; -0.009     ; 26.563     ;
+; -25.528 ; rangefinder:U_Ranger_Top|edgeend[0]    ; motor_pwm:U_Motor_4|pwm ; clk          ; clk         ; 1.000        ; -0.009     ; 26.551     ;
+; -25.522 ; rangefinder:U_Ranger_Top|edgeend[10]   ; motor_pwm:U_Motor_2|pwm ; clk          ; clk         ; 1.000        ; -0.009     ; 26.545     ;
+; -25.522 ; rangefinder:U_Ranger_Top|edgebegin[9]  ; motor_pwm:U_Motor_1|pwm ; clk          ; clk         ; 1.000        ; -0.015     ; 26.539     ;
+; -25.515 ; rangefinder:U_Ranger_Top|edgeend[3]    ; motor_pwm:U_Motor_3|pwm ; clk          ; clk         ; 1.000        ; -0.009     ; 26.538     ;
+; -25.514 ; rangefinder:U_Ranger_Top|edgebegin[3]  ; motor_pwm:U_Motor_4|pwm ; clk          ; clk         ; 1.000        ; -0.009     ; 26.537     ;
+; -25.512 ; rangefinder:U_Ranger_Top|edgebegin[5]  ; motor_pwm:U_Motor_1|pwm ; clk          ; clk         ; 1.000        ; -0.009     ; 26.535     ;
+; -25.506 ; rangefinder:U_Ranger_Top|edgeend[1]    ; motor_pwm:U_Motor_4|pwm ; clk          ; clk         ; 1.000        ; -0.009     ; 26.529     ;
+; -25.504 ; rangefinder:U_Ranger_Top|edgebegin[4]  ; motor_pwm:U_Motor_3|pwm ; clk          ; clk         ; 1.000        ; -0.009     ; 26.527     ;
+; -25.499 ; rangefinder:U_Ranger_Top|edgebegin[12] ; motor_pwm:U_Motor_2|pwm ; clk          ; clk         ; 1.000        ; -0.015     ; 26.516     ;
+; -25.486 ; rangefinder:U_Ranger_Top|edgebegin[9]  ; motor_pwm:U_Motor_3|pwm ; clk          ; clk         ; 1.000        ; -0.015     ; 26.503     ;
+; -25.482 ; rangefinder:U_Ranger_Top|edgeend[11]   ; motor_pwm:U_Motor_2|pwm ; clk          ; clk         ; 1.000        ; -0.009     ; 26.505     ;
+; -25.482 ; rangefinder:U_Ranger_Top|edgebegin[10] ; motor_pwm:U_Motor_1|pwm ; clk          ; clk         ; 1.000        ; -0.015     ; 26.499     ;
+; -25.476 ; rangefinder:U_Ranger_Top|edgeend[4]    ; motor_pwm:U_Motor_1|pwm ; clk          ; clk         ; 1.000        ; -0.009     ; 26.499     ;
+; -25.476 ; rangefinder:U_Ranger_Top|edgebegin[5]  ; motor_pwm:U_Motor_3|pwm ; clk          ; clk         ; 1.000        ; -0.009     ; 26.499     ;
+; -25.474 ; rangefinder:U_Ranger_Top|edgebegin[6]  ; motor_pwm:U_Motor_1|pwm ; clk          ; clk         ; 1.000        ; -0.009     ; 26.497     ;
+; -25.471 ; rangefinder:U_Ranger_Top|edgeend[2]    ; motor_pwm:U_Motor_4|pwm ; clk          ; clk         ; 1.000        ; -0.009     ; 26.494     ;
+; -25.468 ; rangefinder:U_Ranger_Top|edgebegin[13] ; motor_pwm:U_Motor_2|pwm ; clk          ; clk         ; 1.000        ; -0.015     ; 26.485     ;
+; -25.460 ; rangefinder:U_Ranger_Top|edgebegin[11] ; motor_pwm:U_Motor_1|pwm ; clk          ; clk         ; 1.000        ; -0.015     ; 26.477     ;
+; -25.454 ; rangefinder:U_Ranger_Top|edgebegin[7]  ; motor_pwm:U_Motor_1|pwm ; clk          ; clk         ; 1.000        ; -0.009     ; 26.477     ;
+; -25.446 ; rangefinder:U_Ranger_Top|edgebegin[10] ; motor_pwm:U_Motor_3|pwm ; clk          ; clk         ; 1.000        ; -0.015     ; 26.463     ;
+; -25.440 ; rangefinder:U_Ranger_Top|edgeend[4]    ; motor_pwm:U_Motor_3|pwm ; clk          ; clk         ; 1.000        ; -0.009     ; 26.463     ;
+; -25.438 ; rangefinder:U_Ranger_Top|edgebegin[6]  ; motor_pwm:U_Motor_3|pwm ; clk          ; clk         ; 1.000        ; -0.009     ; 26.461     ;
+; -25.432 ; rangefinder:U_Ranger_Top|edgebegin[14] ; motor_pwm:U_Motor_2|pwm ; clk          ; clk         ; 1.000        ; -0.015     ; 26.449     ;
+; -25.426 ; rangefinder:U_Ranger_Top|edgeend[5]    ; motor_pwm:U_Motor_1|pwm ; clk          ; clk         ; 1.000        ; -0.009     ; 26.449     ;
+; -25.424 ; rangefinder:U_Ranger_Top|edgebegin[11] ; motor_pwm:U_Motor_3|pwm ; clk          ; clk         ; 1.000        ; -0.015     ; 26.441     ;
+; -25.419 ; rangefinder:U_Ranger_Top|edgeend[3]    ; motor_pwm:U_Motor_4|pwm ; clk          ; clk         ; 1.000        ; -0.009     ; 26.442     ;
+; -25.418 ; rangefinder:U_Ranger_Top|edgebegin[7]  ; motor_pwm:U_Motor_3|pwm ; clk          ; clk         ; 1.000        ; -0.009     ; 26.441     ;
+; -25.408 ; rangefinder:U_Ranger_Top|edgebegin[4]  ; motor_pwm:U_Motor_4|pwm ; clk          ; clk         ; 1.000        ; -0.009     ; 26.431     ;
+; -25.406 ; rangefinder:U_Ranger_Top|edgeend[6]    ; motor_pwm:U_Motor_1|pwm ; clk          ; clk         ; 1.000        ; -0.009     ; 26.429     ;
+; -25.404 ; rangefinder:U_Ranger_Top|edgeend[12]   ; motor_pwm:U_Motor_2|pwm ; clk          ; clk         ; 1.000        ; -0.015     ; 26.421     ;
+; -25.398 ; rangefinder:U_Ranger_Top|edgebegin[8]  ; motor_pwm:U_Motor_1|pwm ; clk          ; clk         ; 1.000        ; -0.009     ; 26.421     ;
+; -25.390 ; rangefinder:U_Ranger_Top|edgeend[5]    ; motor_pwm:U_Motor_3|pwm ; clk          ; clk         ; 1.000        ; -0.009     ; 26.413     ;
+; -25.390 ; rangefinder:U_Ranger_Top|edgebegin[9]  ; motor_pwm:U_Motor_4|pwm ; clk          ; clk         ; 1.000        ; -0.015     ; 26.407     ;
+; -25.382 ; rangefinder:U_Ranger_Top|edgebegin[15] ; motor_pwm:U_Motor_2|pwm ; clk          ; clk         ; 1.000        ; -0.015     ; 26.399     ;
+; -25.380 ; rangefinder:U_Ranger_Top|edgebegin[5]  ; motor_pwm:U_Motor_4|pwm ; clk          ; clk         ; 1.000        ; -0.009     ; 26.403     ;
+; -25.370 ; rangefinder:U_Ranger_Top|edgeend[6]    ; motor_pwm:U_Motor_3|pwm ; clk          ; clk         ; 1.000        ; -0.009     ; 26.393     ;
+; -25.369 ; rangefinder:U_Ranger_Top|edgeend[13]   ; motor_pwm:U_Motor_2|pwm ; clk          ; clk         ; 1.000        ; -0.015     ; 26.386     ;
+; -25.364 ; rangefinder:U_Ranger_Top|edgebegin[16] ; motor_pwm:U_Motor_2|pwm ; clk          ; clk         ; 1.000        ; -0.015     ; 26.381     ;
+; -25.362 ; rangefinder:U_Ranger_Top|edgebegin[8]  ; motor_pwm:U_Motor_3|pwm ; clk          ; clk         ; 1.000        ; -0.009     ; 26.385     ;
+; -25.356 ; rangefinder:U_Ranger_Top|edgeend[7]    ; motor_pwm:U_Motor_1|pwm ; clk          ; clk         ; 1.000        ; -0.009     ; 26.379     ;
+; -25.350 ; rangefinder:U_Ranger_Top|edgebegin[10] ; motor_pwm:U_Motor_4|pwm ; clk          ; clk         ; 1.000        ; -0.015     ; 26.367     ;
+; -25.344 ; rangefinder:U_Ranger_Top|edgeend[4]    ; motor_pwm:U_Motor_4|pwm ; clk          ; clk         ; 1.000        ; -0.009     ; 26.367     ;
+; -25.342 ; rangefinder:U_Ranger_Top|edgebegin[6]  ; motor_pwm:U_Motor_4|pwm ; clk          ; clk         ; 1.000        ; -0.009     ; 26.365     ;
+; -25.337 ; rangefinder:U_Ranger_Top|edgeend[8]    ; motor_pwm:U_Motor_1|pwm ; clk          ; clk         ; 1.000        ; -0.009     ; 26.360     ;
+; -25.334 ; rangefinder:U_Ranger_Top|edgeend[14]   ; motor_pwm:U_Motor_2|pwm ; clk          ; clk         ; 1.000        ; -0.015     ; 26.351     ;
+; -25.328 ; rangefinder:U_Ranger_Top|edgebegin[11] ; motor_pwm:U_Motor_4|pwm ; clk          ; clk         ; 1.000        ; -0.015     ; 26.345     ;
+; -25.322 ; rangefinder:U_Ranger_Top|edgebegin[7]  ; motor_pwm:U_Motor_4|pwm ; clk          ; clk         ; 1.000        ; -0.009     ; 26.345     ;
+; -25.320 ; rangefinder:U_Ranger_Top|edgeend[7]    ; motor_pwm:U_Motor_3|pwm ; clk          ; clk         ; 1.000        ; -0.009     ; 26.343     ;
+; -25.313 ; rangefinder:U_Ranger_Top|edgebegin[17] ; motor_pwm:U_Motor_2|pwm ; clk          ; clk         ; 1.000        ; -0.015     ; 26.330     ;
+; -25.312 ; rangefinder:U_Ranger_Top|edgeend[15]   ; motor_pwm:U_Motor_2|pwm ; clk          ; clk         ; 1.000        ; -0.015     ; 26.329     ;
+; -25.301 ; rangefinder:U_Ranger_Top|edgeend[8]    ; motor_pwm:U_Motor_3|pwm ; clk          ; clk         ; 1.000        ; -0.009     ; 26.324     ;
+; -25.294 ; rangefinder:U_Ranger_Top|edgeend[5]    ; motor_pwm:U_Motor_4|pwm ; clk          ; clk         ; 1.000        ; -0.009     ; 26.317     ;
+; -25.289 ; rangefinder:U_Ranger_Top|edgeend[9]    ; motor_pwm:U_Motor_1|pwm ; clk          ; clk         ; 1.000        ; -0.009     ; 26.312     ;
+; -25.278 ; rangefinder:U_Ranger_Top|edgebegin[18] ; motor_pwm:U_Motor_2|pwm ; clk          ; clk         ; 1.000        ; -0.015     ; 26.295     ;
+; -25.274 ; rangefinder:U_Ranger_Top|edgeend[6]    ; motor_pwm:U_Motor_4|pwm ; clk          ; clk         ; 1.000        ; -0.009     ; 26.297     ;
+; -25.266 ; rangefinder:U_Ranger_Top|edgebegin[8]  ; motor_pwm:U_Motor_4|pwm ; clk          ; clk         ; 1.000        ; -0.009     ; 26.289     ;
+; -25.265 ; rangefinder:U_Ranger_Top|edgeend[16]   ; motor_pwm:U_Motor_2|pwm ; clk          ; clk         ; 1.000        ; -0.015     ; 26.282     ;
+; -25.254 ; rangefinder:U_Ranger_Top|edgeend[10]   ; motor_pwm:U_Motor_1|pwm ; clk          ; clk         ; 1.000        ; -0.009     ; 26.277     ;
+; -25.253 ; rangefinder:U_Ranger_Top|edgeend[9]    ; motor_pwm:U_Motor_3|pwm ; clk          ; clk         ; 1.000        ; -0.009     ; 26.276     ;
++---------+----------------------------------------+-------------------------+--------------+-------------+--------------+------------+------------+
+
+
++---------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Fast Model Setup: 'clk_div:U_1HzClkDivider|clk_out'                                                                                                     ;
++-------+---------------+--------------------+---------------------------------+---------------------------------+--------------+------------+------------+
+; Slack ; From Node     ; To Node            ; Launch Clock                    ; Latch Clock                     ; Relationship ; Clock Skew ; Data Delay ;
++-------+---------------+--------------------+---------------------------------+---------------------------------+--------------+------------+------------+
+; 0.622 ; current_State ; TLED_Orange_1~reg0 ; clk_div:U_1HzClkDivider|clk_out ; clk_div:U_1HzClkDivider|clk_out ; 1.000        ; 0.000      ; 0.410      ;
+; 0.665 ; current_State ; current_State      ; clk_div:U_1HzClkDivider|clk_out ; clk_div:U_1HzClkDivider|clk_out ; 1.000        ; 0.000      ; 0.367      ;
++-------+---------------+--------------------+---------------------------------+---------------------------------+--------------+------------+------------+
+
+
++---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Fast Model Hold: 'clk'                                                                                                                                                                      ;
++-------+-------------------------------------------------------+-------------------------------------------------------+--------------+-------------+--------------+------------+------------+
+; Slack ; From Node                                             ; To Node                                               ; Launch Clock ; Latch Clock ; Relationship ; Clock Skew ; Data Delay ;
++-------+-------------------------------------------------------+-------------------------------------------------------+--------------+-------------+--------------+------------+------------+
+; 0.215 ; motor_pwm:U_Motor_1|pulsecount[0]                     ; motor_pwm:U_Motor_1|pulsecount[0]                     ; clk          ; clk         ; 0.000        ; 0.000      ; 0.367      ;
+; 0.215 ; regmap:U_Registers|reg_controller:RegCont|state.rd2   ; regmap:U_Registers|reg_controller:RegCont|state.rd2   ; clk          ; clk         ; 0.000        ; 0.000      ; 0.367      ;
+; 0.215 ; regmap:U_Registers|reg_controller:RegCont|state.rd1   ; regmap:U_Registers|reg_controller:RegCont|state.rd1   ; clk          ; clk         ; 0.000        ; 0.000      ; 0.367      ;
+; 0.215 ; regmap:U_Registers|reg_controller:RegCont|state.ra2   ; regmap:U_Registers|reg_controller:RegCont|state.ra2   ; clk          ; clk         ; 0.000        ; 0.000      ; 0.367      ;
+; 0.215 ; regmap:U_Registers|reg_controller:RegCont|state.wa2   ; regmap:U_Registers|reg_controller:RegCont|state.wa2   ; clk          ; clk         ; 0.000        ; 0.000      ; 0.367      ;
+; 0.215 ; regmap:U_Registers|reg_controller:RegCont|state.wd2   ; regmap:U_Registers|reg_controller:RegCont|state.wd2   ; clk          ; clk         ; 0.000        ; 0.000      ; 0.367      ;
+; 0.215 ; regmap:U_Registers|reg_controller:RegCont|state.ra1   ; regmap:U_Registers|reg_controller:RegCont|state.ra1   ; clk          ; clk         ; 0.000        ; 0.000      ; 0.367      ;
+; 0.243 ; regmap:U_Registers|reg_controller:RegCont|state.rd1   ; regmap:U_Registers|reg_controller:RegCont|state.rd2   ; clk          ; clk         ; 0.000        ; 0.000      ; 0.395      ;
+; 0.244 ; regmap:U_Registers|reg_controller:RegCont|state.wa1   ; regmap:U_Registers|reg_controller:RegCont|state.wa2   ; clk          ; clk         ; 0.000        ; 0.000      ; 0.396      ;
+; 0.246 ; quadreg:U_RegAM|tmp[7]                                ; BLED_Blue[3]~reg0                                     ; clk          ; clk         ; 0.000        ; 0.000      ; 0.398      ;
+; 0.247 ; rangefinder:U_Ranger_Botom|count[23]                  ; rangefinder:U_Ranger_Botom|count[23]                  ; clk          ; clk         ; 0.000        ; 0.000      ; 0.399      ;
+; 0.256 ; regmap:U_Registers|reg_controller:RegCont|state.rd2   ; regmap:U_Registers|reg_controller:RegCont|state.fetch ; clk          ; clk         ; 0.000        ; 0.000      ; 0.408      ;
+; 0.314 ; regmap:U_Registers|reg_controller:RegCont|state.ra2   ; regmap:U_Registers|reg_controller:RegCont|state.fetch ; clk          ; clk         ; 0.000        ; 0.000      ; 0.466      ;
+; 0.358 ; rangefinder:U_Ranger_Botom|count[12]                  ; rangefinder:U_Ranger_Botom|count[12]                  ; clk          ; clk         ; 0.000        ; 0.000      ; 0.510      ;
+; 0.358 ; motor_pwm:U_Motor_1|pulsecount[8]                     ; motor_pwm:U_Motor_1|pulsecount[8]                     ; clk          ; clk         ; 0.000        ; 0.000      ; 0.510      ;
+; 0.358 ; motor_pwm:U_Motor_1|pulsecount[10]                    ; motor_pwm:U_Motor_1|pulsecount[10]                    ; clk          ; clk         ; 0.000        ; 0.000      ; 0.510      ;
+; 0.360 ; rangefinder:U_Ranger_Botom|count[5]                   ; rangefinder:U_Ranger_Botom|count[5]                   ; clk          ; clk         ; 0.000        ; 0.000      ; 0.512      ;
+; 0.360 ; rangefinder:U_Ranger_Botom|count[7]                   ; rangefinder:U_Ranger_Botom|count[7]                   ; clk          ; clk         ; 0.000        ; 0.000      ; 0.512      ;
+; 0.360 ; motor_pwm:U_Motor_1|clockcount[0]                     ; motor_pwm:U_Motor_1|clockcount[0]                     ; clk          ; clk         ; 0.000        ; 0.000      ; 0.512      ;
+; 0.361 ; rangefinder:U_Ranger_Botom|count[0]                   ; rangefinder:U_Ranger_Botom|count[0]                   ; clk          ; clk         ; 0.000        ; 0.000      ; 0.513      ;
+; 0.361 ; rangefinder:U_Ranger_Botom|count[3]                   ; rangefinder:U_Ranger_Botom|count[3]                   ; clk          ; clk         ; 0.000        ; 0.000      ; 0.513      ;
+; 0.361 ; quadreg:U_RegAM|tmp[3]                                ; BLED_Orange[3]~reg0                                   ; clk          ; clk         ; 0.000        ; 0.000      ; 0.513      ;
+; 0.361 ; motor_pwm:U_Motor_1|clockcount[5]                     ; motor_pwm:U_Motor_1|clockcount[5]                     ; clk          ; clk         ; 0.000        ; 0.000      ; 0.513      ;
+; 0.361 ; motor_pwm:U_Motor_1|clockcount[2]                     ; motor_pwm:U_Motor_1|clockcount[2]                     ; clk          ; clk         ; 0.000        ; 0.000      ; 0.513      ;
+; 0.361 ; motor_pwm:U_Motor_1|pulsecount[6]                     ; motor_pwm:U_Motor_1|pulsecount[6]                     ; clk          ; clk         ; 0.000        ; 0.000      ; 0.513      ;
+; 0.361 ; motor_pwm:U_Motor_1|pulsecount[3]                     ; motor_pwm:U_Motor_1|pulsecount[3]                     ; clk          ; clk         ; 0.000        ; 0.000      ; 0.513      ;
+; 0.361 ; clk_div:U_1HzClkDivider|cnt[12]                       ; clk_div:U_1HzClkDivider|cnt[12]                       ; clk          ; clk         ; 0.000        ; 0.000      ; 0.513      ;
+; 0.362 ; clk_div:U_1HzClkDivider|cnt[20]                       ; clk_div:U_1HzClkDivider|cnt[20]                       ; clk          ; clk         ; 0.000        ; 0.000      ; 0.514      ;
+; 0.362 ; regmap:U_Registers|reg_controller:RegCont|state.ra1   ; regmap:U_Registers|reg_controller:RegCont|state.ra2   ; clk          ; clk         ; 0.000        ; 0.000      ; 0.514      ;
+; 0.363 ; rangefinder:U_Ranger_Botom|count[13]                  ; rangefinder:U_Ranger_Botom|count[13]                  ; clk          ; clk         ; 0.000        ; 0.000      ; 0.515      ;
+; 0.363 ; motor_pwm:U_Motor_1|pulsecount[1]                     ; motor_pwm:U_Motor_1|pulsecount[1]                     ; clk          ; clk         ; 0.000        ; 0.000      ; 0.515      ;
+; 0.363 ; clk_div:U_1HzClkDivider|cnt[18]                       ; clk_div:U_1HzClkDivider|cnt[18]                       ; clk          ; clk         ; 0.000        ; 0.000      ; 0.515      ;
+; 0.363 ; clk_div:U_1HzClkDivider|cnt[15]                       ; clk_div:U_1HzClkDivider|cnt[15]                       ; clk          ; clk         ; 0.000        ; 0.000      ; 0.515      ;
+; 0.363 ; clk_div:U_1HzClkDivider|cnt[13]                       ; clk_div:U_1HzClkDivider|cnt[13]                       ; clk          ; clk         ; 0.000        ; 0.000      ; 0.515      ;
+; 0.364 ; quadreg:U_RegAM|tmp[6]                                ; BLED_Blue[2]~reg0                                     ; clk          ; clk         ; 0.000        ; 0.000      ; 0.516      ;
+; 0.365 ; rangefinder:U_Ranger_Botom|count[9]                   ; rangefinder:U_Ranger_Botom|count[9]                   ; clk          ; clk         ; 0.000        ; 0.000      ; 0.517      ;
+; 0.365 ; quadreg:U_RegAM|tmp[5]                                ; BLED_Blue[1]~reg0                                     ; clk          ; clk         ; 0.000        ; 0.000      ; 0.517      ;
+; 0.365 ; clk_div:U_1HzClkDivider|cnt[10]                       ; clk_div:U_1HzClkDivider|cnt[10]                       ; clk          ; clk         ; 0.000        ; 0.000      ; 0.517      ;
+; 0.365 ; clk_div:U_1HzClkDivider|cnt[8]                        ; clk_div:U_1HzClkDivider|cnt[8]                        ; clk          ; clk         ; 0.000        ; 0.000      ; 0.517      ;
+; 0.365 ; clk_div:U_1HzClkDivider|cnt[9]                        ; clk_div:U_1HzClkDivider|cnt[9]                        ; clk          ; clk         ; 0.000        ; 0.000      ; 0.517      ;
+; 0.366 ; motor_pwm:U_Motor_1|clockcount[6]                     ; motor_pwm:U_Motor_1|clockcount[6]                     ; clk          ; clk         ; 0.000        ; 0.000      ; 0.518      ;
+; 0.367 ; rangefinder:U_Ranger_Botom|count[10]                  ; rangefinder:U_Ranger_Botom|count[10]                  ; clk          ; clk         ; 0.000        ; 0.000      ; 0.519      ;
+; 0.367 ; rangefinder:U_Ranger_Botom|count[11]                  ; rangefinder:U_Ranger_Botom|count[11]                  ; clk          ; clk         ; 0.000        ; 0.000      ; 0.519      ;
+; 0.367 ; clk_div:U_1HzClkDivider|cnt[3]                        ; clk_div:U_1HzClkDivider|cnt[3]                        ; clk          ; clk         ; 0.000        ; 0.000      ; 0.519      ;
+; 0.371 ; rangefinder:U_Ranger_Botom|count[1]                   ; rangefinder:U_Ranger_Botom|count[1]                   ; clk          ; clk         ; 0.000        ; 0.000      ; 0.523      ;
+; 0.371 ; rangefinder:U_Ranger_Botom|count[14]                  ; rangefinder:U_Ranger_Botom|count[14]                  ; clk          ; clk         ; 0.000        ; 0.000      ; 0.523      ;
+; 0.371 ; motor_pwm:U_Motor_1|pulsecount[9]                     ; motor_pwm:U_Motor_1|pulsecount[9]                     ; clk          ; clk         ; 0.000        ; 0.000      ; 0.523      ;
+; 0.371 ; motor_pwm:U_Motor_1|pulsecount[7]                     ; motor_pwm:U_Motor_1|pulsecount[7]                     ; clk          ; clk         ; 0.000        ; 0.000      ; 0.523      ;
+; 0.371 ; motor_pwm:U_Motor_1|clockcount[1]                     ; motor_pwm:U_Motor_1|clockcount[1]                     ; clk          ; clk         ; 0.000        ; 0.000      ; 0.523      ;
+; 0.371 ; motor_pwm:U_Motor_1|pulsecount[2]                     ; motor_pwm:U_Motor_1|pulsecount[2]                     ; clk          ; clk         ; 0.000        ; 0.000      ; 0.523      ;
+; 0.371 ; regmap:U_Registers|reg_controller:RegCont|state.fetch ; regmap:U_Registers|reg_controller:RegCont|state.wa1   ; clk          ; clk         ; 0.000        ; 0.000      ; 0.523      ;
+; 0.372 ; rangefinder:U_Ranger_Botom|count[2]                   ; rangefinder:U_Ranger_Botom|count[2]                   ; clk          ; clk         ; 0.000        ; 0.000      ; 0.524      ;
+; 0.372 ; motor_pwm:U_Motor_1|clockcount[4]                     ; motor_pwm:U_Motor_1|clockcount[4]                     ; clk          ; clk         ; 0.000        ; 0.000      ; 0.524      ;
+; 0.372 ; motor_pwm:U_Motor_1|clockcount[3]                     ; motor_pwm:U_Motor_1|clockcount[3]                     ; clk          ; clk         ; 0.000        ; 0.000      ; 0.524      ;
+; 0.372 ; motor_pwm:U_Motor_1|pulsecount[5]                     ; motor_pwm:U_Motor_1|pulsecount[5]                     ; clk          ; clk         ; 0.000        ; 0.000      ; 0.524      ;
+; 0.372 ; motor_pwm:U_Motor_1|pulsecount[4]                     ; motor_pwm:U_Motor_1|pulsecount[4]                     ; clk          ; clk         ; 0.000        ; 0.000      ; 0.524      ;
+; 0.372 ; motor_pwm:U_Motor_1|pulsecount[11]                    ; motor_pwm:U_Motor_1|pulsecount[11]                    ; clk          ; clk         ; 0.000        ; 0.000      ; 0.524      ;
+; 0.372 ; regmap:U_Registers|reg_controller:RegCont|state.wd1   ; regmap:U_Registers|reg_controller:RegCont|state.wd2   ; clk          ; clk         ; 0.000        ; 0.000      ; 0.524      ;
+; 0.373 ; rangefinder:U_Ranger_Botom|count[4]                   ; rangefinder:U_Ranger_Botom|count[4]                   ; clk          ; clk         ; 0.000        ; 0.000      ; 0.525      ;
+; 0.373 ; regmap:U_Registers|reg_controller:RegCont|state.fetch ; regmap:U_Registers|reg_controller:RegCont|state.wd1   ; clk          ; clk         ; 0.000        ; 0.000      ; 0.525      ;
+; 0.374 ; rangefinder:U_Ranger_Botom|count[6]                   ; rangefinder:U_Ranger_Botom|count[6]                   ; clk          ; clk         ; 0.000        ; 0.000      ; 0.526      ;
+; 0.374 ; rangefinder:U_Ranger_Botom|count[16]                  ; rangefinder:U_Ranger_Botom|count[16]                  ; clk          ; clk         ; 0.000        ; 0.000      ; 0.526      ;
+; 0.375 ; rangefinder:U_Ranger_Botom|count[20]                  ; rangefinder:U_Ranger_Botom|count[20]                  ; clk          ; clk         ; 0.000        ; 0.000      ; 0.527      ;
+; 0.375 ; rangefinder:U_Ranger_Botom|count[19]                  ; rangefinder:U_Ranger_Botom|count[19]                  ; clk          ; clk         ; 0.000        ; 0.000      ; 0.527      ;
+; 0.375 ; quadreg:U_RegAM|tmp[4]                                ; BLED_Blue[0]~reg0                                     ; clk          ; clk         ; 0.000        ; 0.000      ; 0.527      ;
+; 0.375 ; clk_div:U_1HzClkDivider|cnt[14]                       ; clk_div:U_1HzClkDivider|cnt[14]                       ; clk          ; clk         ; 0.000        ; 0.000      ; 0.527      ;
+; 0.376 ; rangefinder:U_Ranger_Botom|count[8]                   ; rangefinder:U_Ranger_Botom|count[8]                   ; clk          ; clk         ; 0.000        ; 0.000      ; 0.528      ;
+; 0.376 ; quadreg:U_RegAM|tmp[2]                                ; BLED_Orange[2]~reg0                                   ; clk          ; clk         ; 0.000        ; 0.000      ; 0.528      ;
+; 0.376 ; clk_div:U_1HzClkDivider|cnt[17]                       ; clk_div:U_1HzClkDivider|cnt[17]                       ; clk          ; clk         ; 0.000        ; 0.000      ; 0.528      ;
+; 0.376 ; clk_div:U_1HzClkDivider|cnt[19]                       ; clk_div:U_1HzClkDivider|cnt[19]                       ; clk          ; clk         ; 0.000        ; 0.000      ; 0.528      ;
+; 0.376 ; clk_div:U_1HzClkDivider|cnt[16]                       ; clk_div:U_1HzClkDivider|cnt[16]                       ; clk          ; clk         ; 0.000        ; 0.000      ; 0.528      ;
+; 0.379 ; rangefinder:U_Ranger_Botom|count[22]                  ; rangefinder:U_Ranger_Botom|count[22]                  ; clk          ; clk         ; 0.000        ; 0.000      ; 0.531      ;
+; 0.379 ; rangefinder:U_Ranger_Botom|count[15]                  ; rangefinder:U_Ranger_Botom|count[15]                  ; clk          ; clk         ; 0.000        ; 0.000      ; 0.531      ;
+; 0.380 ; rangefinder:U_Ranger_Botom|count[18]                  ; rangefinder:U_Ranger_Botom|count[18]                  ; clk          ; clk         ; 0.000        ; 0.000      ; 0.532      ;
+; 0.380 ; rangefinder:U_Ranger_Botom|count[17]                  ; rangefinder:U_Ranger_Botom|count[17]                  ; clk          ; clk         ; 0.000        ; 0.000      ; 0.532      ;
+; 0.417 ; clk_div:U_1HzClkDivider|cnt[22]                       ; clk_div:U_1HzClkDivider|cnt[22]                       ; clk          ; clk         ; 0.000        ; 0.000      ; 0.569      ;
+; 0.417 ; rangefinder:U_Ranger_Botom|count[10]                  ; rangefinder:U_Ranger_Botom|trigger                    ; clk          ; clk         ; 0.000        ; 0.000      ; 0.569      ;
+; 0.441 ; rangefinder:U_Ranger_Botom|count[0]                   ; rangefinder:U_Ranger_Botom|edgebegin[0]               ; clk          ; clk         ; 0.000        ; 0.000      ; 0.593      ;
+; 0.441 ; motor_pwm:U_Motor_1|clockcount[6]                     ; motor_pwm:U_Motor_1|clocktick                         ; clk          ; clk         ; 0.000        ; 0.002      ; 0.595      ;
+; 0.443 ; motor_pwm:U_Motor_1|clockcount[5]                     ; motor_pwm:U_Motor_1|clocktick                         ; clk          ; clk         ; 0.000        ; 0.002      ; 0.597      ;
+; 0.444 ; rangefinder:U_Ranger_Botom|count[0]                   ; rangefinder:U_Ranger_Top|edgebegin[0]                 ; clk          ; clk         ; 0.000        ; 0.000      ; 0.596      ;
+; 0.475 ; clk_div:U_1HzClkDivider|cnt[16]                       ; clk_div:U_1HzClkDivider|cnt[22]                       ; clk          ; clk         ; 0.000        ; 0.000      ; 0.627      ;
+; 0.476 ; rangefinder:U_Ranger_Botom|count[21]                  ; rangefinder:U_Ranger_Botom|count[21]                  ; clk          ; clk         ; 0.000        ; 0.000      ; 0.628      ;
+; 0.485 ; motor_pwm:U_Motor_1|clockcount[2]                     ; motor_pwm:U_Motor_1|clocktick                         ; clk          ; clk         ; 0.000        ; 0.002      ; 0.639      ;
+; 0.496 ; rangefinder:U_Ranger_Botom|count[12]                  ; rangefinder:U_Ranger_Botom|count[13]                  ; clk          ; clk         ; 0.000        ; 0.000      ; 0.648      ;
+; 0.496 ; motor_pwm:U_Motor_1|pulsecount[8]                     ; motor_pwm:U_Motor_1|pulsecount[9]                     ; clk          ; clk         ; 0.000        ; 0.000      ; 0.648      ;
+; 0.496 ; motor_pwm:U_Motor_1|pulsecount[10]                    ; motor_pwm:U_Motor_1|pulsecount[11]                    ; clk          ; clk         ; 0.000        ; 0.000      ; 0.648      ;
+; 0.498 ; motor_pwm:U_Motor_1|clockcount[0]                     ; motor_pwm:U_Motor_1|clockcount[1]                     ; clk          ; clk         ; 0.000        ; 0.000      ; 0.650      ;
+; 0.498 ; motor_pwm:U_Motor_1|pulsecount[1]                     ; motor_pwm:U_Motor_1|pulsecount[2]                     ; clk          ; clk         ; 0.000        ; 0.000      ; 0.650      ;
+; 0.498 ; rangefinder:U_Ranger_Botom|count[5]                   ; rangefinder:U_Ranger_Botom|count[6]                   ; clk          ; clk         ; 0.000        ; 0.000      ; 0.650      ;
+; 0.498 ; rangefinder:U_Ranger_Botom|count[7]                   ; rangefinder:U_Ranger_Botom|count[8]                   ; clk          ; clk         ; 0.000        ; 0.000      ; 0.650      ;
+; 0.499 ; clk_div:U_1HzClkDivider|cnt[12]                       ; clk_div:U_1HzClkDivider|cnt[13]                       ; clk          ; clk         ; 0.000        ; 0.000      ; 0.651      ;
+; 0.499 ; rangefinder:U_Ranger_Botom|count[0]                   ; rangefinder:U_Ranger_Botom|count[1]                   ; clk          ; clk         ; 0.000        ; 0.000      ; 0.651      ;
+; 0.499 ; motor_pwm:U_Motor_1|clockcount[2]                     ; motor_pwm:U_Motor_1|clockcount[3]                     ; clk          ; clk         ; 0.000        ; 0.000      ; 0.651      ;
+; 0.499 ; motor_pwm:U_Motor_1|pulsecount[3]                     ; motor_pwm:U_Motor_1|pulsecount[4]                     ; clk          ; clk         ; 0.000        ; 0.000      ; 0.651      ;
+; 0.499 ; quadreg:U_RegAM|tmp[3]                                ; BLED_Blue[0]~reg0                                     ; clk          ; clk         ; 0.000        ; 0.000      ; 0.651      ;
+; 0.500 ; quadreg:U_RegAM|tmp[1]                                ; BLED_Orange[2]~reg0                                   ; clk          ; clk         ; 0.000        ; 0.000      ; 0.652      ;
+; 0.501 ; rangefinder:U_Ranger_Botom|count[13]                  ; rangefinder:U_Ranger_Botom|count[14]                  ; clk          ; clk         ; 0.000        ; 0.000      ; 0.653      ;
+; 0.501 ; clk_div:U_1HzClkDivider|cnt[13]                       ; clk_div:U_1HzClkDivider|cnt[14]                       ; clk          ; clk         ; 0.000        ; 0.000      ; 0.653      ;
+; 0.501 ; clk_div:U_1HzClkDivider|cnt[15]                       ; clk_div:U_1HzClkDivider|cnt[16]                       ; clk          ; clk         ; 0.000        ; 0.000      ; 0.653      ;
++-------+-------------------------------------------------------+-------------------------------------------------------+--------------+-------------+--------------+------------+------------+
+
+
++---------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Fast Model Hold: 'clk_div:U_1HzClkDivider|clk_out'                                                                                                      ;
++-------+---------------+--------------------+---------------------------------+---------------------------------+--------------+------------+------------+
+; Slack ; From Node     ; To Node            ; Launch Clock                    ; Latch Clock                     ; Relationship ; Clock Skew ; Data Delay ;
++-------+---------------+--------------------+---------------------------------+---------------------------------+--------------+------------+------------+
+; 0.215 ; current_State ; current_State      ; clk_div:U_1HzClkDivider|clk_out ; clk_div:U_1HzClkDivider|clk_out ; 0.000        ; 0.000      ; 0.367      ;
+; 0.258 ; current_State ; TLED_Orange_1~reg0 ; clk_div:U_1HzClkDivider|clk_out ; clk_div:U_1HzClkDivider|clk_out ; 0.000        ; 0.000      ; 0.410      ;
++-------+---------------+--------------------+---------------------------------+---------------------------------+--------------+------------+------------+
+
+
++---------------------------------------------------------------------------------------------------------------------+
+; Fast Model Minimum Pulse Width: 'clk'                                                                               ;
++--------+--------------+----------------+------------------+-------+------------+------------------------------------+
+; Slack  ; Actual Width ; Required Width ; Type             ; Clock ; Clock Edge ; Target                             ;
++--------+--------------+----------------+------------------+-------+------------+------------------------------------+
+; -1.380 ; 1.000        ; 2.380          ; Port Rate        ; clk   ; Rise       ; clk                                ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; clk   ; Rise       ; BLED_Blue[0]~reg0                  ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; clk   ; Rise       ; BLED_Blue[0]~reg0                  ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; clk   ; Rise       ; BLED_Blue[1]~reg0                  ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; clk   ; Rise       ; BLED_Blue[1]~reg0                  ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; clk   ; Rise       ; BLED_Blue[2]~reg0                  ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; clk   ; Rise       ; BLED_Blue[2]~reg0                  ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; clk   ; Rise       ; BLED_Blue[3]~reg0                  ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; clk   ; Rise       ; BLED_Blue[3]~reg0                  ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; clk   ; Rise       ; BLED_Orange[0]~reg0                ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; clk   ; Rise       ; BLED_Orange[0]~reg0                ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; clk   ; Rise       ; BLED_Orange[1]~reg0                ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; clk   ; Rise       ; BLED_Orange[1]~reg0                ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; clk   ; Rise       ; BLED_Orange[2]~reg0                ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; clk   ; Rise       ; BLED_Orange[2]~reg0                ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; clk   ; Rise       ; BLED_Orange[3]~reg0                ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; clk   ; Rise       ; BLED_Orange[3]~reg0                ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; clk   ; Rise       ; clk_div:U_1HzClkDivider|clk_out    ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; clk   ; Rise       ; clk_div:U_1HzClkDivider|clk_out    ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; clk   ; Rise       ; clk_div:U_1HzClkDivider|cnt[0]     ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; clk   ; Rise       ; clk_div:U_1HzClkDivider|cnt[0]     ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; clk   ; Rise       ; clk_div:U_1HzClkDivider|cnt[10]    ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; clk   ; Rise       ; clk_div:U_1HzClkDivider|cnt[10]    ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; clk   ; Rise       ; clk_div:U_1HzClkDivider|cnt[11]    ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; clk   ; Rise       ; clk_div:U_1HzClkDivider|cnt[11]    ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; clk   ; Rise       ; clk_div:U_1HzClkDivider|cnt[12]    ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; clk   ; Rise       ; clk_div:U_1HzClkDivider|cnt[12]    ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; clk   ; Rise       ; clk_div:U_1HzClkDivider|cnt[13]    ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; clk   ; Rise       ; clk_div:U_1HzClkDivider|cnt[13]    ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; clk   ; Rise       ; clk_div:U_1HzClkDivider|cnt[14]    ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; clk   ; Rise       ; clk_div:U_1HzClkDivider|cnt[14]    ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; clk   ; Rise       ; clk_div:U_1HzClkDivider|cnt[15]    ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; clk   ; Rise       ; clk_div:U_1HzClkDivider|cnt[15]    ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; clk   ; Rise       ; clk_div:U_1HzClkDivider|cnt[16]    ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; clk   ; Rise       ; clk_div:U_1HzClkDivider|cnt[16]    ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; clk   ; Rise       ; clk_div:U_1HzClkDivider|cnt[17]    ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; clk   ; Rise       ; clk_div:U_1HzClkDivider|cnt[17]    ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; clk   ; Rise       ; clk_div:U_1HzClkDivider|cnt[18]    ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; clk   ; Rise       ; clk_div:U_1HzClkDivider|cnt[18]    ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; clk   ; Rise       ; clk_div:U_1HzClkDivider|cnt[19]    ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; clk   ; Rise       ; clk_div:U_1HzClkDivider|cnt[19]    ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; clk   ; Rise       ; clk_div:U_1HzClkDivider|cnt[1]     ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; clk   ; Rise       ; clk_div:U_1HzClkDivider|cnt[1]     ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; clk   ; Rise       ; clk_div:U_1HzClkDivider|cnt[20]    ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; clk   ; Rise       ; clk_div:U_1HzClkDivider|cnt[20]    ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; clk   ; Rise       ; clk_div:U_1HzClkDivider|cnt[21]    ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; clk   ; Rise       ; clk_div:U_1HzClkDivider|cnt[21]    ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; clk   ; Rise       ; clk_div:U_1HzClkDivider|cnt[22]    ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; clk   ; Rise       ; clk_div:U_1HzClkDivider|cnt[22]    ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; clk   ; Rise       ; clk_div:U_1HzClkDivider|cnt[2]     ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; clk   ; Rise       ; clk_div:U_1HzClkDivider|cnt[2]     ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; clk   ; Rise       ; clk_div:U_1HzClkDivider|cnt[3]     ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; clk   ; Rise       ; clk_div:U_1HzClkDivider|cnt[3]     ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; clk   ; Rise       ; clk_div:U_1HzClkDivider|cnt[4]     ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; clk   ; Rise       ; clk_div:U_1HzClkDivider|cnt[4]     ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; clk   ; Rise       ; clk_div:U_1HzClkDivider|cnt[5]     ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; clk   ; Rise       ; clk_div:U_1HzClkDivider|cnt[5]     ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; clk   ; Rise       ; clk_div:U_1HzClkDivider|cnt[6]     ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; clk   ; Rise       ; clk_div:U_1HzClkDivider|cnt[6]     ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; clk   ; Rise       ; clk_div:U_1HzClkDivider|cnt[7]     ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; clk   ; Rise       ; clk_div:U_1HzClkDivider|cnt[7]     ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; clk   ; Rise       ; clk_div:U_1HzClkDivider|cnt[8]     ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; clk   ; Rise       ; clk_div:U_1HzClkDivider|cnt[8]     ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; clk   ; Rise       ; clk_div:U_1HzClkDivider|cnt[9]     ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; clk   ; Rise       ; clk_div:U_1HzClkDivider|cnt[9]     ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; clk   ; Rise       ; motor_pwm:U_Motor_1|clockcount[0]  ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; clk   ; Rise       ; motor_pwm:U_Motor_1|clockcount[0]  ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; clk   ; Rise       ; motor_pwm:U_Motor_1|clockcount[1]  ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; clk   ; Rise       ; motor_pwm:U_Motor_1|clockcount[1]  ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; clk   ; Rise       ; motor_pwm:U_Motor_1|clockcount[2]  ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; clk   ; Rise       ; motor_pwm:U_Motor_1|clockcount[2]  ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; clk   ; Rise       ; motor_pwm:U_Motor_1|clockcount[3]  ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; clk   ; Rise       ; motor_pwm:U_Motor_1|clockcount[3]  ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; clk   ; Rise       ; motor_pwm:U_Motor_1|clockcount[4]  ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; clk   ; Rise       ; motor_pwm:U_Motor_1|clockcount[4]  ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; clk   ; Rise       ; motor_pwm:U_Motor_1|clockcount[5]  ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; clk   ; Rise       ; motor_pwm:U_Motor_1|clockcount[5]  ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; clk   ; Rise       ; motor_pwm:U_Motor_1|clockcount[6]  ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; clk   ; Rise       ; motor_pwm:U_Motor_1|clockcount[6]  ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; clk   ; Rise       ; motor_pwm:U_Motor_1|clocktick      ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; clk   ; Rise       ; motor_pwm:U_Motor_1|clocktick      ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; clk   ; Rise       ; motor_pwm:U_Motor_1|pulsecount[0]  ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; clk   ; Rise       ; motor_pwm:U_Motor_1|pulsecount[0]  ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; clk   ; Rise       ; motor_pwm:U_Motor_1|pulsecount[10] ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; clk   ; Rise       ; motor_pwm:U_Motor_1|pulsecount[10] ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; clk   ; Rise       ; motor_pwm:U_Motor_1|pulsecount[11] ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; clk   ; Rise       ; motor_pwm:U_Motor_1|pulsecount[11] ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; clk   ; Rise       ; motor_pwm:U_Motor_1|pulsecount[1]  ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; clk   ; Rise       ; motor_pwm:U_Motor_1|pulsecount[1]  ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; clk   ; Rise       ; motor_pwm:U_Motor_1|pulsecount[2]  ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; clk   ; Rise       ; motor_pwm:U_Motor_1|pulsecount[2]  ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; clk   ; Rise       ; motor_pwm:U_Motor_1|pulsecount[3]  ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; clk   ; Rise       ; motor_pwm:U_Motor_1|pulsecount[3]  ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; clk   ; Rise       ; motor_pwm:U_Motor_1|pulsecount[4]  ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; clk   ; Rise       ; motor_pwm:U_Motor_1|pulsecount[4]  ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; clk   ; Rise       ; motor_pwm:U_Motor_1|pulsecount[5]  ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; clk   ; Rise       ; motor_pwm:U_Motor_1|pulsecount[5]  ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; clk   ; Rise       ; motor_pwm:U_Motor_1|pulsecount[6]  ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; clk   ; Rise       ; motor_pwm:U_Motor_1|pulsecount[6]  ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; clk   ; Rise       ; motor_pwm:U_Motor_1|pulsecount[7]  ;
++--------+--------------+----------------+------------------+-------+------------+------------------------------------+
+
+
++-----------------------------------------------------------------------------------------------------------------------------------------------------+
+; Fast Model Minimum Pulse Width: 'clk_div:U_1HzClkDivider|clk_out'                                                                                   ;
++--------+--------------+----------------+------------------+---------------------------------+------------+------------------------------------------+
+; Slack  ; Actual Width ; Required Width ; Type             ; Clock                           ; Clock Edge ; Target                                   ;
++--------+--------------+----------------+------------------+---------------------------------+------------+------------------------------------------+
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; clk_div:U_1HzClkDivider|clk_out ; Rise       ; TLED_Orange_1~reg0                       ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; clk_div:U_1HzClkDivider|clk_out ; Rise       ; TLED_Orange_1~reg0                       ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; clk_div:U_1HzClkDivider|clk_out ; Rise       ; current_State                            ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; clk_div:U_1HzClkDivider|clk_out ; Rise       ; current_State                            ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; clk_div:U_1HzClkDivider|clk_out ; Rise       ; TLED_Orange_1~reg0|clk                   ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; clk_div:U_1HzClkDivider|clk_out ; Rise       ; TLED_Orange_1~reg0|clk                   ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; clk_div:U_1HzClkDivider|clk_out ; Rise       ; U_1HzClkDivider|clk_out|regout           ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; clk_div:U_1HzClkDivider|clk_out ; Rise       ; U_1HzClkDivider|clk_out|regout           ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; clk_div:U_1HzClkDivider|clk_out ; Rise       ; U_1HzClkDivider|clk_out~clkctrl|inclk[0] ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; clk_div:U_1HzClkDivider|clk_out ; Rise       ; U_1HzClkDivider|clk_out~clkctrl|inclk[0] ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; clk_div:U_1HzClkDivider|clk_out ; Rise       ; U_1HzClkDivider|clk_out~clkctrl|outclk   ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; clk_div:U_1HzClkDivider|clk_out ; Rise       ; U_1HzClkDivider|clk_out~clkctrl|outclk   ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; clk_div:U_1HzClkDivider|clk_out ; Rise       ; current_State|clk                        ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; clk_div:U_1HzClkDivider|clk_out ; Rise       ; current_State|clk                        ;
++--------+--------------+----------------+------------------+---------------------------------+------------+------------------------------------------+
+
+
++-------------------------------------------------------------------------------+
+; Setup Times                                                                   ;
++-------------------+------------+-------+-------+------------+-----------------+
+; Data Port         ; Clock Port ; Rise  ; Fall  ; Clock Edge ; Clock Reference ;
++-------------------+------------+-------+-------+------------+-----------------+
+; PIC_PBUS_A_D      ; clk        ; 1.903 ; 1.903 ; Rise       ; clk             ;
+; PIC_PBUS_Data[*]  ; clk        ; 2.456 ; 2.456 ; Rise       ; clk             ;
+;  PIC_PBUS_Data[0] ; clk        ; 2.393 ; 2.393 ; Rise       ; clk             ;
+;  PIC_PBUS_Data[1] ; clk        ; 2.362 ; 2.362 ; Rise       ; clk             ;
+;  PIC_PBUS_Data[2] ; clk        ; 2.373 ; 2.373 ; Rise       ; clk             ;
+;  PIC_PBUS_Data[3] ; clk        ; 2.456 ; 2.456 ; Rise       ; clk             ;
+;  PIC_PBUS_Data[4] ; clk        ; 2.271 ; 2.271 ; Rise       ; clk             ;
+;  PIC_PBUS_Data[5] ; clk        ; 2.451 ; 2.451 ; Rise       ; clk             ;
+;  PIC_PBUS_Data[6] ; clk        ; 2.236 ; 2.236 ; Rise       ; clk             ;
+;  PIC_PBUS_Data[7] ; clk        ; 2.365 ; 2.365 ; Rise       ; clk             ;
+; PIC_PBUS_OK_IN    ; clk        ; 2.701 ; 2.701 ; Rise       ; clk             ;
+; PIC_PBUS_R_W      ; clk        ; 2.518 ; 2.518 ; Rise       ; clk             ;
+; Switch_1[*]       ; clk        ; 4.088 ; 4.088 ; Rise       ; clk             ;
+;  Switch_1[0]      ; clk        ; 3.493 ; 3.493 ; Rise       ; clk             ;
+;  Switch_1[1]      ; clk        ; 4.020 ; 4.020 ; Rise       ; clk             ;
+;  Switch_1[2]      ; clk        ; 4.088 ; 4.088 ; Rise       ; clk             ;
+;  Switch_1[3]      ; clk        ; 3.872 ; 3.872 ; Rise       ; clk             ;
+; Ultra_B_Edge      ; clk        ; 3.366 ; 3.366 ; Rise       ; clk             ;
+; Ultra_T_Edge      ; clk        ; 3.761 ; 3.761 ; Rise       ; clk             ;
++-------------------+------------+-------+-------+------------+-----------------+
+
+
++---------------------------------------------------------------------------------+
+; Hold Times                                                                      ;
++-------------------+------------+--------+--------+------------+-----------------+
+; Data Port         ; Clock Port ; Rise   ; Fall   ; Clock Edge ; Clock Reference ;
++-------------------+------------+--------+--------+------------+-----------------+
+; PIC_PBUS_A_D      ; clk        ; -1.780 ; -1.780 ; Rise       ; clk             ;
+; PIC_PBUS_Data[*]  ; clk        ; -1.902 ; -1.902 ; Rise       ; clk             ;
+;  PIC_PBUS_Data[0] ; clk        ; -2.173 ; -2.173 ; Rise       ; clk             ;
+;  PIC_PBUS_Data[1] ; clk        ; -2.117 ; -2.117 ; Rise       ; clk             ;
+;  PIC_PBUS_Data[2] ; clk        ; -2.104 ; -2.104 ; Rise       ; clk             ;
+;  PIC_PBUS_Data[3] ; clk        ; -2.007 ; -2.007 ; Rise       ; clk             ;
+;  PIC_PBUS_Data[4] ; clk        ; -1.913 ; -1.913 ; Rise       ; clk             ;
+;  PIC_PBUS_Data[5] ; clk        ; -2.015 ; -2.015 ; Rise       ; clk             ;
+;  PIC_PBUS_Data[6] ; clk        ; -1.963 ; -1.963 ; Rise       ; clk             ;
+;  PIC_PBUS_Data[7] ; clk        ; -1.902 ; -1.902 ; Rise       ; clk             ;
+; PIC_PBUS_OK_IN    ; clk        ; -2.144 ; -2.144 ; Rise       ; clk             ;
+; PIC_PBUS_R_W      ; clk        ; -2.027 ; -2.027 ; Rise       ; clk             ;
+; Switch_1[*]       ; clk        ; -2.876 ; -2.876 ; Rise       ; clk             ;
+;  Switch_1[0]      ; clk        ; -2.876 ; -2.876 ; Rise       ; clk             ;
+;  Switch_1[1]      ; clk        ; -3.133 ; -3.133 ; Rise       ; clk             ;
+;  Switch_1[2]      ; clk        ; -3.541 ; -3.541 ; Rise       ; clk             ;
+;  Switch_1[3]      ; clk        ; -3.467 ; -3.467 ; Rise       ; clk             ;
+; Ultra_B_Edge      ; clk        ; -2.381 ; -2.381 ; Rise       ; clk             ;
+; Ultra_T_Edge      ; clk        ; -2.497 ; -2.497 ; Rise       ; clk             ;
++-------------------+------------+--------+--------+------------+-----------------+
+
+
++--------------------------------------------------------------------------------------------------------------------+
+; Clock to Output Times                                                                                              ;
++-------------------+---------------------------------+-------+-------+------------+---------------------------------+
+; Data Port         ; Clock Port                      ; Rise  ; Fall  ; Clock Edge ; Clock Reference                 ;
++-------------------+---------------------------------+-------+-------+------------+---------------------------------+
+; BLED_Blue[*]      ; clk                             ; 4.070 ; 4.070 ; Rise       ; clk                             ;
+;  BLED_Blue[0]     ; clk                             ; 3.975 ; 3.975 ; Rise       ; clk                             ;
+;  BLED_Blue[1]     ; clk                             ; 4.013 ; 4.013 ; Rise       ; clk                             ;
+;  BLED_Blue[2]     ; clk                             ; 4.030 ; 4.030 ; Rise       ; clk                             ;
+;  BLED_Blue[3]     ; clk                             ; 4.070 ; 4.070 ; Rise       ; clk                             ;
+; BLED_Orange[*]    ; clk                             ; 4.031 ; 4.031 ; Rise       ; clk                             ;
+;  BLED_Orange[0]   ; clk                             ; 3.729 ; 3.729 ; Rise       ; clk                             ;
+;  BLED_Orange[1]   ; clk                             ; 3.732 ; 3.732 ; Rise       ; clk                             ;
+;  BLED_Orange[2]   ; clk                             ; 4.031 ; 4.031 ; Rise       ; clk                             ;
+;  BLED_Orange[3]   ; clk                             ; 4.000 ; 4.000 ; Rise       ; clk                             ;
+; Motor_East        ; clk                             ; 4.375 ; 4.375 ; Rise       ; clk                             ;
+; Motor_North       ; clk                             ; 4.146 ; 4.146 ; Rise       ; clk                             ;
+; Motor_South       ; clk                             ; 4.278 ; 4.278 ; Rise       ; clk                             ;
+; Motor_West        ; clk                             ; 4.279 ; 4.279 ; Rise       ; clk                             ;
+; PIC_PBUS_Data[*]  ; clk                             ; 8.323 ; 8.323 ; Rise       ; clk                             ;
+;  PIC_PBUS_Data[0] ; clk                             ; 7.664 ; 7.664 ; Rise       ; clk                             ;
+;  PIC_PBUS_Data[1] ; clk                             ; 7.703 ; 7.703 ; Rise       ; clk                             ;
+;  PIC_PBUS_Data[2] ; clk                             ; 7.036 ; 7.036 ; Rise       ; clk                             ;
+;  PIC_PBUS_Data[3] ; clk                             ; 7.741 ; 7.741 ; Rise       ; clk                             ;
+;  PIC_PBUS_Data[4] ; clk                             ; 7.408 ; 7.408 ; Rise       ; clk                             ;
+;  PIC_PBUS_Data[5] ; clk                             ; 7.721 ; 7.721 ; Rise       ; clk                             ;
+;  PIC_PBUS_Data[6] ; clk                             ; 7.488 ; 7.488 ; Rise       ; clk                             ;
+;  PIC_PBUS_Data[7] ; clk                             ; 8.323 ; 8.323 ; Rise       ; clk                             ;
+; PIC_PBUS_OK_OUT   ; clk                             ; 4.233 ; 4.233 ; Rise       ; clk                             ;
+; TLED_Orange_2     ; clk                             ; 5.399 ; 5.399 ; Rise       ; clk                             ;
+; Ultra_B_Trigger   ; clk                             ; 3.898 ; 3.898 ; Rise       ; clk                             ;
+; Ultra_T_Trigger   ; clk                             ; 4.261 ; 4.261 ; Rise       ; clk                             ;
+; TLED_Orange_1     ; clk_div:U_1HzClkDivider|clk_out ; 3.559 ; 3.559 ; Rise       ; clk_div:U_1HzClkDivider|clk_out ;
++-------------------+---------------------------------+-------+-------+------------+---------------------------------+
+
+
++--------------------------------------------------------------------------------------------------------------------+
+; Minimum Clock to Output Times                                                                                      ;
++-------------------+---------------------------------+-------+-------+------------+---------------------------------+
+; Data Port         ; Clock Port                      ; Rise  ; Fall  ; Clock Edge ; Clock Reference                 ;
++-------------------+---------------------------------+-------+-------+------------+---------------------------------+
+; BLED_Blue[*]      ; clk                             ; 3.975 ; 3.975 ; Rise       ; clk                             ;
+;  BLED_Blue[0]     ; clk                             ; 3.975 ; 3.975 ; Rise       ; clk                             ;
+;  BLED_Blue[1]     ; clk                             ; 4.013 ; 4.013 ; Rise       ; clk                             ;
+;  BLED_Blue[2]     ; clk                             ; 4.030 ; 4.030 ; Rise       ; clk                             ;
+;  BLED_Blue[3]     ; clk                             ; 4.070 ; 4.070 ; Rise       ; clk                             ;
+; BLED_Orange[*]    ; clk                             ; 3.729 ; 3.729 ; Rise       ; clk                             ;
+;  BLED_Orange[0]   ; clk                             ; 3.729 ; 3.729 ; Rise       ; clk                             ;
+;  BLED_Orange[1]   ; clk                             ; 3.732 ; 3.732 ; Rise       ; clk                             ;
+;  BLED_Orange[2]   ; clk                             ; 4.031 ; 4.031 ; Rise       ; clk                             ;
+;  BLED_Orange[3]   ; clk                             ; 4.000 ; 4.000 ; Rise       ; clk                             ;
+; Motor_East        ; clk                             ; 4.375 ; 4.375 ; Rise       ; clk                             ;
+; Motor_North       ; clk                             ; 4.146 ; 4.146 ; Rise       ; clk                             ;
+; Motor_South       ; clk                             ; 4.278 ; 4.278 ; Rise       ; clk                             ;
+; Motor_West        ; clk                             ; 4.279 ; 4.279 ; Rise       ; clk                             ;
+; PIC_PBUS_Data[*]  ; clk                             ; 3.809 ; 3.809 ; Rise       ; clk                             ;
+;  PIC_PBUS_Data[0] ; clk                             ; 4.031 ; 4.031 ; Rise       ; clk                             ;
+;  PIC_PBUS_Data[1] ; clk                             ; 4.048 ; 4.048 ; Rise       ; clk                             ;
+;  PIC_PBUS_Data[2] ; clk                             ; 4.046 ; 4.046 ; Rise       ; clk                             ;
+;  PIC_PBUS_Data[3] ; clk                             ; 4.043 ; 4.043 ; Rise       ; clk                             ;
+;  PIC_PBUS_Data[4] ; clk                             ; 3.809 ; 3.809 ; Rise       ; clk                             ;
+;  PIC_PBUS_Data[5] ; clk                             ; 3.817 ; 3.817 ; Rise       ; clk                             ;
+;  PIC_PBUS_Data[6] ; clk                             ; 3.814 ; 3.814 ; Rise       ; clk                             ;
+;  PIC_PBUS_Data[7] ; clk                             ; 3.820 ; 3.820 ; Rise       ; clk                             ;
+; PIC_PBUS_OK_OUT   ; clk                             ; 3.894 ; 3.894 ; Rise       ; clk                             ;
+; TLED_Orange_2     ; clk                             ; 4.671 ; 4.671 ; Rise       ; clk                             ;
+; Ultra_B_Trigger   ; clk                             ; 3.898 ; 3.898 ; Rise       ; clk                             ;
+; Ultra_T_Trigger   ; clk                             ; 4.261 ; 4.261 ; Rise       ; clk                             ;
+; TLED_Orange_1     ; clk_div:U_1HzClkDivider|clk_out ; 3.559 ; 3.559 ; Rise       ; clk_div:U_1HzClkDivider|clk_out ;
++-------------------+---------------------------------+-------+-------+------------+---------------------------------+
+
+
++-------------------------------------------------------------------+
+; Propagation Delay                                                 ;
++----------------+------------------+-------+-------+-------+-------+
+; Input Port     ; Output Port      ; RR    ; RF    ; FR    ; FF    ;
++----------------+------------------+-------+-------+-------+-------+
+; PIC_PBUS_OK_IN ; PIC_PBUS_Data[0] ; 5.931 ; 5.931 ; 5.931 ; 5.931 ;
+; PIC_PBUS_OK_IN ; PIC_PBUS_Data[1] ; 5.941 ; 5.941 ; 5.941 ; 5.941 ;
+; PIC_PBUS_OK_IN ; PIC_PBUS_Data[2] ; 5.854 ; 5.854 ; 5.854 ; 5.854 ;
+; PIC_PBUS_OK_IN ; PIC_PBUS_Data[3] ; 5.854 ; 5.854 ; 5.854 ; 5.854 ;
+; PIC_PBUS_OK_IN ; PIC_PBUS_Data[4] ; 5.835 ; 5.835 ; 5.835 ; 5.835 ;
+; PIC_PBUS_OK_IN ; PIC_PBUS_Data[5] ; 5.845 ; 5.845 ; 5.845 ; 5.845 ;
+; PIC_PBUS_OK_IN ; PIC_PBUS_Data[6] ; 5.845 ; 5.845 ; 5.845 ; 5.845 ;
+; PIC_PBUS_OK_IN ; PIC_PBUS_Data[7] ; 5.845 ; 5.845 ; 5.845 ; 5.845 ;
+; PIC_PBUS_OK_IN ; PIC_PBUS_OK_OUT  ; 6.143 ; 6.143 ; 6.143 ; 6.143 ;
++----------------+------------------+-------+-------+-------+-------+
+
+
++-------------------------------------------------------------------+
+; Minimum Propagation Delay                                         ;
++----------------+------------------+-------+-------+-------+-------+
+; Input Port     ; Output Port      ; RR    ; RF    ; FR    ; FF    ;
++----------------+------------------+-------+-------+-------+-------+
+; PIC_PBUS_OK_IN ; PIC_PBUS_Data[0] ; 5.931 ; 5.931 ; 5.931 ; 5.931 ;
+; PIC_PBUS_OK_IN ; PIC_PBUS_Data[1] ; 5.941 ; 5.941 ; 5.941 ; 5.941 ;
+; PIC_PBUS_OK_IN ; PIC_PBUS_Data[2] ; 5.854 ; 5.854 ; 5.854 ; 5.854 ;
+; PIC_PBUS_OK_IN ; PIC_PBUS_Data[3] ; 5.854 ; 5.854 ; 5.854 ; 5.854 ;
+; PIC_PBUS_OK_IN ; PIC_PBUS_Data[4] ; 5.835 ; 5.835 ; 5.835 ; 5.835 ;
+; PIC_PBUS_OK_IN ; PIC_PBUS_Data[5] ; 5.845 ; 5.845 ; 5.845 ; 5.845 ;
+; PIC_PBUS_OK_IN ; PIC_PBUS_Data[6] ; 5.845 ; 5.845 ; 5.845 ; 5.845 ;
+; PIC_PBUS_OK_IN ; PIC_PBUS_Data[7] ; 5.845 ; 5.845 ; 5.845 ; 5.845 ;
+; PIC_PBUS_OK_IN ; PIC_PBUS_OK_OUT  ; 6.143 ; 6.143 ; 6.143 ; 6.143 ;
++----------------+------------------+-------+-------+-------+-------+
+
+
++------------------------------------------------------------------------------+
+; Output Enable Times                                                          ;
++-------------------+------------+-------+------+------------+-----------------+
+; Data Port         ; Clock Port ; Rise  ; Fall ; Clock Edge ; Clock Reference ;
++-------------------+------------+-------+------+------------+-----------------+
+; PIC_PBUS_Data[*]  ; clk        ; 3.872 ;      ; Rise       ; clk             ;
+;  PIC_PBUS_Data[0] ; clk        ; 3.968 ;      ; Rise       ; clk             ;
+;  PIC_PBUS_Data[1] ; clk        ; 3.978 ;      ; Rise       ; clk             ;
+;  PIC_PBUS_Data[2] ; clk        ; 3.891 ;      ; Rise       ; clk             ;
+;  PIC_PBUS_Data[3] ; clk        ; 3.891 ;      ; Rise       ; clk             ;
+;  PIC_PBUS_Data[4] ; clk        ; 3.872 ;      ; Rise       ; clk             ;
+;  PIC_PBUS_Data[5] ; clk        ; 3.882 ;      ; Rise       ; clk             ;
+;  PIC_PBUS_Data[6] ; clk        ; 3.882 ;      ; Rise       ; clk             ;
+;  PIC_PBUS_Data[7] ; clk        ; 3.882 ;      ; Rise       ; clk             ;
++-------------------+------------+-------+------+------------+-----------------+
+
+
++------------------------------------------------------------------------------+
+; Minimum Output Enable Times                                                  ;
++-------------------+------------+-------+------+------------+-----------------+
+; Data Port         ; Clock Port ; Rise  ; Fall ; Clock Edge ; Clock Reference ;
++-------------------+------------+-------+------+------------+-----------------+
+; PIC_PBUS_Data[*]  ; clk        ; 3.817 ;      ; Rise       ; clk             ;
+;  PIC_PBUS_Data[0] ; clk        ; 3.913 ;      ; Rise       ; clk             ;
+;  PIC_PBUS_Data[1] ; clk        ; 3.923 ;      ; Rise       ; clk             ;
+;  PIC_PBUS_Data[2] ; clk        ; 3.836 ;      ; Rise       ; clk             ;
+;  PIC_PBUS_Data[3] ; clk        ; 3.836 ;      ; Rise       ; clk             ;
+;  PIC_PBUS_Data[4] ; clk        ; 3.817 ;      ; Rise       ; clk             ;
+;  PIC_PBUS_Data[5] ; clk        ; 3.827 ;      ; Rise       ; clk             ;
+;  PIC_PBUS_Data[6] ; clk        ; 3.827 ;      ; Rise       ; clk             ;
+;  PIC_PBUS_Data[7] ; clk        ; 3.827 ;      ; Rise       ; clk             ;
++-------------------+------------+-------+------+------------+-----------------+
+
+
++---------------------------------------------------------------------------------------+
+; Output Disable Times                                                                  ;
++-------------------+------------+-----------+-----------+------------+-----------------+
+; Data Port         ; Clock Port ; 0 to Hi-Z ; 1 to Hi-Z ; Clock Edge ; Clock Reference ;
++-------------------+------------+-----------+-----------+------------+-----------------+
+; PIC_PBUS_Data[*]  ; clk        ; 3.872     ;           ; Rise       ; clk             ;
+;  PIC_PBUS_Data[0] ; clk        ; 3.968     ;           ; Rise       ; clk             ;
+;  PIC_PBUS_Data[1] ; clk        ; 3.978     ;           ; Rise       ; clk             ;
+;  PIC_PBUS_Data[2] ; clk        ; 3.891     ;           ; Rise       ; clk             ;
+;  PIC_PBUS_Data[3] ; clk        ; 3.891     ;           ; Rise       ; clk             ;
+;  PIC_PBUS_Data[4] ; clk        ; 3.872     ;           ; Rise       ; clk             ;
+;  PIC_PBUS_Data[5] ; clk        ; 3.882     ;           ; Rise       ; clk             ;
+;  PIC_PBUS_Data[6] ; clk        ; 3.882     ;           ; Rise       ; clk             ;
+;  PIC_PBUS_Data[7] ; clk        ; 3.882     ;           ; Rise       ; clk             ;
++-------------------+------------+-----------+-----------+------------+-----------------+
+
+
++---------------------------------------------------------------------------------------+
+; Minimum Output Disable Times                                                          ;
++-------------------+------------+-----------+-----------+------------+-----------------+
+; Data Port         ; Clock Port ; 0 to Hi-Z ; 1 to Hi-Z ; Clock Edge ; Clock Reference ;
++-------------------+------------+-----------+-----------+------------+-----------------+
+; PIC_PBUS_Data[*]  ; clk        ; 3.817     ;           ; Rise       ; clk             ;
+;  PIC_PBUS_Data[0] ; clk        ; 3.913     ;           ; Rise       ; clk             ;
+;  PIC_PBUS_Data[1] ; clk        ; 3.923     ;           ; Rise       ; clk             ;
+;  PIC_PBUS_Data[2] ; clk        ; 3.836     ;           ; Rise       ; clk             ;
+;  PIC_PBUS_Data[3] ; clk        ; 3.836     ;           ; Rise       ; clk             ;
+;  PIC_PBUS_Data[4] ; clk        ; 3.817     ;           ; Rise       ; clk             ;
+;  PIC_PBUS_Data[5] ; clk        ; 3.827     ;           ; Rise       ; clk             ;
+;  PIC_PBUS_Data[6] ; clk        ; 3.827     ;           ; Rise       ; clk             ;
+;  PIC_PBUS_Data[7] ; clk        ; 3.827     ;           ; Rise       ; clk             ;
++-------------------+------------+-----------+-----------+------------+-----------------+
+
+
++-------------------------------------------------------------------------------------------------+
+; Multicorner Timing Analysis Summary                                                             ;
++----------------------------------+-----------+-------+----------+---------+---------------------+
+; Clock                            ; Setup     ; Hold  ; Recovery ; Removal ; Minimum Pulse Width ;
++----------------------------------+-----------+-------+----------+---------+---------------------+
+; Worst-case Slack                 ; -81.327   ; 0.215 ; N/A      ; N/A     ; -1.941              ;
+;  clk                             ; -81.327   ; 0.215 ; N/A      ; N/A     ; -1.941              ;
+;  clk_div:U_1HzClkDivider|clk_out ; 0.001     ; 0.215 ; N/A      ; N/A     ; -0.742              ;
+; Design-wide TNS                  ; -2128.677 ; 0.0   ; 0.0      ; 0.0     ; -415.977            ;
+;  clk                             ; -2128.677 ; 0.000 ; N/A      ; N/A     ; -413.009            ;
+;  clk_div:U_1HzClkDivider|clk_out ; 0.000     ; 0.000 ; N/A      ; N/A     ; -2.968              ;
++----------------------------------+-----------+-------+----------+---------+---------------------+
+
+
++---------------------------------------------------------------------------------+
+; Setup Times                                                                     ;
++-------------------+------------+--------+--------+------------+-----------------+
+; Data Port         ; Clock Port ; Rise   ; Fall   ; Clock Edge ; Clock Reference ;
++-------------------+------------+--------+--------+------------+-----------------+
+; PIC_PBUS_A_D      ; clk        ; 4.138  ; 4.138  ; Rise       ; clk             ;
+; PIC_PBUS_Data[*]  ; clk        ; 5.794  ; 5.794  ; Rise       ; clk             ;
+;  PIC_PBUS_Data[0] ; clk        ; 5.404  ; 5.404  ; Rise       ; clk             ;
+;  PIC_PBUS_Data[1] ; clk        ; 5.385  ; 5.385  ; Rise       ; clk             ;
+;  PIC_PBUS_Data[2] ; clk        ; 5.467  ; 5.467  ; Rise       ; clk             ;
+;  PIC_PBUS_Data[3] ; clk        ; 5.794  ; 5.794  ; Rise       ; clk             ;
+;  PIC_PBUS_Data[4] ; clk        ; 5.138  ; 5.138  ; Rise       ; clk             ;
+;  PIC_PBUS_Data[5] ; clk        ; 5.790  ; 5.790  ; Rise       ; clk             ;
+;  PIC_PBUS_Data[6] ; clk        ; 5.058  ; 5.058  ; Rise       ; clk             ;
+;  PIC_PBUS_Data[7] ; clk        ; 5.457  ; 5.457  ; Rise       ; clk             ;
+; PIC_PBUS_OK_IN    ; clk        ; 6.599  ; 6.599  ; Rise       ; clk             ;
+; PIC_PBUS_R_W      ; clk        ; 6.263  ; 6.263  ; Rise       ; clk             ;
+; Switch_1[*]       ; clk        ; 10.619 ; 10.619 ; Rise       ; clk             ;
+;  Switch_1[0]      ; clk        ; 8.674  ; 8.674  ; Rise       ; clk             ;
+;  Switch_1[1]      ; clk        ; 10.619 ; 10.619 ; Rise       ; clk             ;
+;  Switch_1[2]      ; clk        ; 10.521 ; 10.521 ; Rise       ; clk             ;
+;  Switch_1[3]      ; clk        ; 9.976  ; 9.976  ; Rise       ; clk             ;
+; Ultra_B_Edge      ; clk        ; 7.996  ; 7.996  ; Rise       ; clk             ;
+; Ultra_T_Edge      ; clk        ; 9.183  ; 9.183  ; Rise       ; clk             ;
++-------------------+------------+--------+--------+------------+-----------------+
+
+
++---------------------------------------------------------------------------------+
+; Hold Times                                                                      ;
++-------------------+------------+--------+--------+------------+-----------------+
+; Data Port         ; Clock Port ; Rise   ; Fall   ; Clock Edge ; Clock Reference ;
++-------------------+------------+--------+--------+------------+-----------------+
+; PIC_PBUS_A_D      ; clk        ; -1.780 ; -1.780 ; Rise       ; clk             ;
+; PIC_PBUS_Data[*]  ; clk        ; -1.902 ; -1.902 ; Rise       ; clk             ;
+;  PIC_PBUS_Data[0] ; clk        ; -2.173 ; -2.173 ; Rise       ; clk             ;
+;  PIC_PBUS_Data[1] ; clk        ; -2.117 ; -2.117 ; Rise       ; clk             ;
+;  PIC_PBUS_Data[2] ; clk        ; -2.104 ; -2.104 ; Rise       ; clk             ;
+;  PIC_PBUS_Data[3] ; clk        ; -2.007 ; -2.007 ; Rise       ; clk             ;
+;  PIC_PBUS_Data[4] ; clk        ; -1.913 ; -1.913 ; Rise       ; clk             ;
+;  PIC_PBUS_Data[5] ; clk        ; -2.015 ; -2.015 ; Rise       ; clk             ;
+;  PIC_PBUS_Data[6] ; clk        ; -1.963 ; -1.963 ; Rise       ; clk             ;
+;  PIC_PBUS_Data[7] ; clk        ; -1.902 ; -1.902 ; Rise       ; clk             ;
+; PIC_PBUS_OK_IN    ; clk        ; -2.144 ; -2.144 ; Rise       ; clk             ;
+; PIC_PBUS_R_W      ; clk        ; -2.027 ; -2.027 ; Rise       ; clk             ;
+; Switch_1[*]       ; clk        ; -2.876 ; -2.876 ; Rise       ; clk             ;
+;  Switch_1[0]      ; clk        ; -2.876 ; -2.876 ; Rise       ; clk             ;
+;  Switch_1[1]      ; clk        ; -3.133 ; -3.133 ; Rise       ; clk             ;
+;  Switch_1[2]      ; clk        ; -3.541 ; -3.541 ; Rise       ; clk             ;
+;  Switch_1[3]      ; clk        ; -3.467 ; -3.467 ; Rise       ; clk             ;
+; Ultra_B_Edge      ; clk        ; -2.381 ; -2.381 ; Rise       ; clk             ;
+; Ultra_T_Edge      ; clk        ; -2.497 ; -2.497 ; Rise       ; clk             ;
++-------------------+------------+--------+--------+------------+-----------------+
+
+
++----------------------------------------------------------------------------------------------------------------------+
+; Clock to Output Times                                                                                                ;
++-------------------+---------------------------------+--------+--------+------------+---------------------------------+
+; Data Port         ; Clock Port                      ; Rise   ; Fall   ; Clock Edge ; Clock Reference                 ;
++-------------------+---------------------------------+--------+--------+------------+---------------------------------+
+; BLED_Blue[*]      ; clk                             ; 9.015  ; 9.015  ; Rise       ; clk                             ;
+;  BLED_Blue[0]     ; clk                             ; 8.802  ; 8.802  ; Rise       ; clk                             ;
+;  BLED_Blue[1]     ; clk                             ; 8.925  ; 8.925  ; Rise       ; clk                             ;
+;  BLED_Blue[2]     ; clk                             ; 8.943  ; 8.943  ; Rise       ; clk                             ;
+;  BLED_Blue[3]     ; clk                             ; 9.015  ; 9.015  ; Rise       ; clk                             ;
+; BLED_Orange[*]    ; clk                             ; 8.953  ; 8.953  ; Rise       ; clk                             ;
+;  BLED_Orange[0]   ; clk                             ; 8.109  ; 8.109  ; Rise       ; clk                             ;
+;  BLED_Orange[1]   ; clk                             ; 8.117  ; 8.117  ; Rise       ; clk                             ;
+;  BLED_Orange[2]   ; clk                             ; 8.953  ; 8.953  ; Rise       ; clk                             ;
+;  BLED_Orange[3]   ; clk                             ; 8.911  ; 8.911  ; Rise       ; clk                             ;
+; Motor_East        ; clk                             ; 10.116 ; 10.116 ; Rise       ; clk                             ;
+; Motor_North       ; clk                             ; 9.534  ; 9.534  ; Rise       ; clk                             ;
+; Motor_South       ; clk                             ; 9.927  ; 9.927  ; Rise       ; clk                             ;
+; Motor_West        ; clk                             ; 9.938  ; 9.938  ; Rise       ; clk                             ;
+; PIC_PBUS_Data[*]  ; clk                             ; 23.797 ; 23.797 ; Rise       ; clk                             ;
+;  PIC_PBUS_Data[0] ; clk                             ; 21.552 ; 21.552 ; Rise       ; clk                             ;
+;  PIC_PBUS_Data[1] ; clk                             ; 21.504 ; 21.504 ; Rise       ; clk                             ;
+;  PIC_PBUS_Data[2] ; clk                             ; 19.310 ; 19.310 ; Rise       ; clk                             ;
+;  PIC_PBUS_Data[3] ; clk                             ; 21.846 ; 21.846 ; Rise       ; clk                             ;
+;  PIC_PBUS_Data[4] ; clk                             ; 20.543 ; 20.543 ; Rise       ; clk                             ;
+;  PIC_PBUS_Data[5] ; clk                             ; 21.785 ; 21.785 ; Rise       ; clk                             ;
+;  PIC_PBUS_Data[6] ; clk                             ; 20.899 ; 20.899 ; Rise       ; clk                             ;
+;  PIC_PBUS_Data[7] ; clk                             ; 23.797 ; 23.797 ; Rise       ; clk                             ;
+; PIC_PBUS_OK_OUT   ; clk                             ; 9.969  ; 9.969  ; Rise       ; clk                             ;
+; TLED_Orange_2     ; clk                             ; 13.504 ; 13.504 ; Rise       ; clk                             ;
+; Ultra_B_Trigger   ; clk                             ; 8.568  ; 8.568  ; Rise       ; clk                             ;
+; Ultra_T_Trigger   ; clk                             ; 9.755  ; 9.755  ; Rise       ; clk                             ;
+; TLED_Orange_1     ; clk_div:U_1HzClkDivider|clk_out ; 8.117  ; 8.117  ; Rise       ; clk_div:U_1HzClkDivider|clk_out ;
++-------------------+---------------------------------+--------+--------+------------+---------------------------------+
+
+
++--------------------------------------------------------------------------------------------------------------------+
+; Minimum Clock to Output Times                                                                                      ;
++-------------------+---------------------------------+-------+-------+------------+---------------------------------+
+; Data Port         ; Clock Port                      ; Rise  ; Fall  ; Clock Edge ; Clock Reference                 ;
++-------------------+---------------------------------+-------+-------+------------+---------------------------------+
+; BLED_Blue[*]      ; clk                             ; 3.975 ; 3.975 ; Rise       ; clk                             ;
+;  BLED_Blue[0]     ; clk                             ; 3.975 ; 3.975 ; Rise       ; clk                             ;
+;  BLED_Blue[1]     ; clk                             ; 4.013 ; 4.013 ; Rise       ; clk                             ;
+;  BLED_Blue[2]     ; clk                             ; 4.030 ; 4.030 ; Rise       ; clk                             ;
+;  BLED_Blue[3]     ; clk                             ; 4.070 ; 4.070 ; Rise       ; clk                             ;
+; BLED_Orange[*]    ; clk                             ; 3.729 ; 3.729 ; Rise       ; clk                             ;
+;  BLED_Orange[0]   ; clk                             ; 3.729 ; 3.729 ; Rise       ; clk                             ;
+;  BLED_Orange[1]   ; clk                             ; 3.732 ; 3.732 ; Rise       ; clk                             ;
+;  BLED_Orange[2]   ; clk                             ; 4.031 ; 4.031 ; Rise       ; clk                             ;
+;  BLED_Orange[3]   ; clk                             ; 4.000 ; 4.000 ; Rise       ; clk                             ;
+; Motor_East        ; clk                             ; 4.375 ; 4.375 ; Rise       ; clk                             ;
+; Motor_North       ; clk                             ; 4.146 ; 4.146 ; Rise       ; clk                             ;
+; Motor_South       ; clk                             ; 4.278 ; 4.278 ; Rise       ; clk                             ;
+; Motor_West        ; clk                             ; 4.279 ; 4.279 ; Rise       ; clk                             ;
+; PIC_PBUS_Data[*]  ; clk                             ; 3.809 ; 3.809 ; Rise       ; clk                             ;
+;  PIC_PBUS_Data[0] ; clk                             ; 4.031 ; 4.031 ; Rise       ; clk                             ;
+;  PIC_PBUS_Data[1] ; clk                             ; 4.048 ; 4.048 ; Rise       ; clk                             ;
+;  PIC_PBUS_Data[2] ; clk                             ; 4.046 ; 4.046 ; Rise       ; clk                             ;
+;  PIC_PBUS_Data[3] ; clk                             ; 4.043 ; 4.043 ; Rise       ; clk                             ;
+;  PIC_PBUS_Data[4] ; clk                             ; 3.809 ; 3.809 ; Rise       ; clk                             ;
+;  PIC_PBUS_Data[5] ; clk                             ; 3.817 ; 3.817 ; Rise       ; clk                             ;
+;  PIC_PBUS_Data[6] ; clk                             ; 3.814 ; 3.814 ; Rise       ; clk                             ;
+;  PIC_PBUS_Data[7] ; clk                             ; 3.820 ; 3.820 ; Rise       ; clk                             ;
+; PIC_PBUS_OK_OUT   ; clk                             ; 3.894 ; 3.894 ; Rise       ; clk                             ;
+; TLED_Orange_2     ; clk                             ; 4.671 ; 4.671 ; Rise       ; clk                             ;
+; Ultra_B_Trigger   ; clk                             ; 3.898 ; 3.898 ; Rise       ; clk                             ;
+; Ultra_T_Trigger   ; clk                             ; 4.261 ; 4.261 ; Rise       ; clk                             ;
+; TLED_Orange_1     ; clk_div:U_1HzClkDivider|clk_out ; 3.559 ; 3.559 ; Rise       ; clk_div:U_1HzClkDivider|clk_out ;
++-------------------+---------------------------------+-------+-------+------------+---------------------------------+
+
+
++-----------------------------------------------------------------------+
+; Progagation Delay                                                     ;
++----------------+------------------+--------+--------+--------+--------+
+; Input Port     ; Output Port      ; RR     ; RF     ; FR     ; FF     ;
++----------------+------------------+--------+--------+--------+--------+
+; PIC_PBUS_OK_IN ; PIC_PBUS_Data[0] ; 13.449 ; 13.449 ; 13.449 ; 13.449 ;
+; PIC_PBUS_OK_IN ; PIC_PBUS_Data[1] ; 13.459 ; 13.459 ; 13.459 ; 13.459 ;
+; PIC_PBUS_OK_IN ; PIC_PBUS_Data[2] ; 13.152 ; 13.152 ; 13.152 ; 13.152 ;
+; PIC_PBUS_OK_IN ; PIC_PBUS_Data[3] ; 13.152 ; 13.152 ; 13.152 ; 13.152 ;
+; PIC_PBUS_OK_IN ; PIC_PBUS_Data[4] ; 13.134 ; 13.134 ; 13.134 ; 13.134 ;
+; PIC_PBUS_OK_IN ; PIC_PBUS_Data[5] ; 13.144 ; 13.144 ; 13.144 ; 13.144 ;
+; PIC_PBUS_OK_IN ; PIC_PBUS_Data[6] ; 13.144 ; 13.144 ; 13.144 ; 13.144 ;
+; PIC_PBUS_OK_IN ; PIC_PBUS_Data[7] ; 13.144 ; 13.144 ; 13.144 ; 13.144 ;
+; PIC_PBUS_OK_IN ; PIC_PBUS_OK_OUT  ; 14.282 ; 14.282 ; 14.282 ; 14.282 ;
++----------------+------------------+--------+--------+--------+--------+
+
+
++-------------------------------------------------------------------+
+; Minimum Progagation Delay                                         ;
++----------------+------------------+-------+-------+-------+-------+
+; Input Port     ; Output Port      ; RR    ; RF    ; FR    ; FF    ;
++----------------+------------------+-------+-------+-------+-------+
+; PIC_PBUS_OK_IN ; PIC_PBUS_Data[0] ; 5.931 ; 5.931 ; 5.931 ; 5.931 ;
+; PIC_PBUS_OK_IN ; PIC_PBUS_Data[1] ; 5.941 ; 5.941 ; 5.941 ; 5.941 ;
+; PIC_PBUS_OK_IN ; PIC_PBUS_Data[2] ; 5.854 ; 5.854 ; 5.854 ; 5.854 ;
+; PIC_PBUS_OK_IN ; PIC_PBUS_Data[3] ; 5.854 ; 5.854 ; 5.854 ; 5.854 ;
+; PIC_PBUS_OK_IN ; PIC_PBUS_Data[4] ; 5.835 ; 5.835 ; 5.835 ; 5.835 ;
+; PIC_PBUS_OK_IN ; PIC_PBUS_Data[5] ; 5.845 ; 5.845 ; 5.845 ; 5.845 ;
+; PIC_PBUS_OK_IN ; PIC_PBUS_Data[6] ; 5.845 ; 5.845 ; 5.845 ; 5.845 ;
+; PIC_PBUS_OK_IN ; PIC_PBUS_Data[7] ; 5.845 ; 5.845 ; 5.845 ; 5.845 ;
+; PIC_PBUS_OK_IN ; PIC_PBUS_OK_OUT  ; 6.143 ; 6.143 ; 6.143 ; 6.143 ;
++----------------+------------------+-------+-------+-------+-------+
+
+
++-------------------------------------------------------------------------------------------------------------------+
+; Setup Transfers                                                                                                   ;
++---------------------------------+---------------------------------+--------------+----------+----------+----------+
+; From Clock                      ; To Clock                        ; RR Paths     ; FR Paths ; RF Paths ; FF Paths ;
++---------------------------------+---------------------------------+--------------+----------+----------+----------+
+; clk                             ; clk                             ; > 2147483647 ; 0        ; 0        ; 0        ;
+; clk_div:U_1HzClkDivider|clk_out ; clk_div:U_1HzClkDivider|clk_out ; 2            ; 0        ; 0        ; 0        ;
++---------------------------------+---------------------------------+--------------+----------+----------+----------+
+Entries labeled "false path" only account for clock-to-clock false paths and not path-based false paths. As a result, actual path counts may be lower than reported.
+
+
++-------------------------------------------------------------------------------------------------------------------+
+; Hold Transfers                                                                                                    ;
++---------------------------------+---------------------------------+--------------+----------+----------+----------+
+; From Clock                      ; To Clock                        ; RR Paths     ; FR Paths ; RF Paths ; FF Paths ;
++---------------------------------+---------------------------------+--------------+----------+----------+----------+
+; clk                             ; clk                             ; > 2147483647 ; 0        ; 0        ; 0        ;
+; clk_div:U_1HzClkDivider|clk_out ; clk_div:U_1HzClkDivider|clk_out ; 2            ; 0        ; 0        ; 0        ;
++---------------------------------+---------------------------------+--------------+----------+----------+----------+
+Entries labeled "false path" only account for clock-to-clock false paths and not path-based false paths. As a result, actual path counts may be lower than reported.
+
+
+---------------
+; Report TCCS ;
+---------------
+No dedicated SERDES Transmitter circuitry present in device or used in design
+
+
+---------------
+; Report RSKM ;
+---------------
+No dedicated SERDES Receiver circuitry present in device or used in design
+
+
++------------------------------------------------+
+; Unconstrained Paths                            ;
++---------------------------------+-------+------+
+; Property                        ; Setup ; Hold ;
++---------------------------------+-------+------+
+; Illegal Clocks                  ; 0     ; 0    ;
+; Unconstrained Clocks            ; 0     ; 0    ;
+; Unconstrained Input Ports       ; 19    ; 19   ;
+; Unconstrained Input Port Paths  ; 306   ; 306  ;
+; Unconstrained Output Ports      ; 25    ; 25   ;
+; Unconstrained Output Port Paths ; 189   ; 189  ;
++---------------------------------+-------+------+
+
+
++------------------------------------+
+; TimeQuest Timing Analyzer Messages ;
++------------------------------------+
+Info: *******************************************************************
+Info: Running Quartus II 32-bit TimeQuest Timing Analyzer
+    Info: Version 11.1 Build 216 11/23/2011 Service Pack 1 SJ Web Edition
+    Info: Processing started: Mon Apr 23 23:15:16 2012
+Info: Command: quartus_sta BoardTest -c BoardTest
+Info: qsta_default_script.tcl version: #1
+Warning (20013): Ignored assignments for entity "SPI_Slave" -- entity does not exist in design
+    Warning (20014): Assignment for entity set_global_assignment -name LL_ROOT_REGION ON -entity SPI_Slave -section_id "Root Region" was ignored
+    Warning (20014): Assignment for entity set_global_assignment -name LL_MEMBER_STATE LOCKED -entity SPI_Slave -section_id "Root Region" was ignored
+Warning (20028): Parallel compilation is not licensed and has been disabled
+Info (21077): Low junction temperature is 0 degrees C
+Info (21077): High junction temperature is 85 degrees C
+Critical Warning (332012): Synopsys Design Constraints File file not found: 'BoardTest.sdc'. A Synopsys Design Constraints File is required by the TimeQuest Timing Analyzer to get proper timing constraints. Without it, the Compiler will not properly optimize the design.
+Info (332142): No user constrained base clocks found in the design. Calling "derive_clocks -period 1.0"
+Info (332105): Deriving Clocks
+    Info (332105): create_clock -period 1.000 -name clk clk
+    Info (332105): create_clock -period 1.000 -name clk_div:U_1HzClkDivider|clk_out clk_div:U_1HzClkDivider|clk_out
+Info: Found TIMEQUEST_REPORT_SCRIPT_INCLUDE_DEFAULT_ANALYSIS = ON
+Info: Analyzing Slow Model
+Critical Warning (332148): Timing requirements not met
+Info (332146): Worst-case setup slack is -81.327
+    Info (332119):     Slack End Point TNS Clock 
+    Info (332119): ========= ============= =====================
+    Info (332119):   -81.327     -2128.677 clk 
+    Info (332119):     0.001         0.000 clk_div:U_1HzClkDivider|clk_out 
+Info (332146): Worst-case hold slack is 0.499
+    Info (332119):     Slack End Point TNS Clock 
+    Info (332119): ========= ============= =====================
+    Info (332119):     0.499         0.000 clk 
+    Info (332119):     0.499         0.000 clk_div:U_1HzClkDivider|clk_out 
+Info (332140): No Recovery paths to report
+Info (332140): No Removal paths to report
+Info (332146): Worst-case minimum pulse width slack is -1.941
+    Info (332119):     Slack End Point TNS Clock 
+    Info (332119): ========= ============= =====================
+    Info (332119):    -1.941      -413.009 clk 
+    Info (332119):    -0.742        -2.968 clk_div:U_1HzClkDivider|clk_out 
+Info (332001): The selected device family is not supported by the report_metastability command.
+Info: Analyzing Fast Model
+Info (306004): Started post-fitting delay annotation
+Warning (306006): Found 38 output pins without output pin load capacitance assignment
+    Info (306007): Pin "PIC_PBUS_Data[0]" has no specified output pin load capacitance -- assuming default load capacitance of 0 pF for timing analysis
+    Info (306007): Pin "PIC_PBUS_Data[1]" has no specified output pin load capacitance -- assuming default load capacitance of 0 pF for timing analysis
+    Info (306007): Pin "PIC_PBUS_Data[2]" has no specified output pin load capacitance -- assuming default load capacitance of 0 pF for timing analysis
+    Info (306007): Pin "PIC_PBUS_Data[3]" has no specified output pin load capacitance -- assuming default load capacitance of 0 pF for timing analysis
+    Info (306007): Pin "PIC_PBUS_Data[4]" has no specified output pin load capacitance -- assuming default load capacitance of 0 pF for timing analysis
+    Info (306007): Pin "PIC_PBUS_Data[5]" has no specified output pin load capacitance -- assuming default load capacitance of 0 pF for timing analysis
+    Info (306007): Pin "PIC_PBUS_Data[6]" has no specified output pin load capacitance -- assuming default load capacitance of 0 pF for timing analysis
+    Info (306007): Pin "PIC_PBUS_Data[7]" has no specified output pin load capacitance -- assuming default load capacitance of 0 pF for timing analysis
+    Info (306007): Pin "Camera_SDA" has no specified output pin load capacitance -- assuming default load capacitance of 0 pF for timing analysis
+    Info (306007): Pin "FPGA_I2C_Data" has no specified output pin load capacitance -- assuming default load capacitance of 0 pF for timing analysis
+    Info (306007): Pin "TLED_Orange_1" has no specified output pin load capacitance -- assuming default load capacitance of 0 pF for timing analysis
+    Info (306007): Pin "TLED_Orange_2" has no specified output pin load capacitance -- assuming default load capacitance of 0 pF for timing analysis
+    Info (306007): Pin "BLED_Blue[0]" has no specified output pin load capacitance -- assuming default load capacitance of 0 pF for timing analysis
+    Info (306007): Pin "BLED_Blue[1]" has no specified output pin load capacitance -- assuming default load capacitance of 0 pF for timing analysis
+    Info (306007): Pin "BLED_Blue[2]" has no specified output pin load capacitance -- assuming default load capacitance of 0 pF for timing analysis
+    Info (306007): Pin "BLED_Blue[3]" has no specified output pin load capacitance -- assuming default load capacitance of 0 pF for timing analysis
+    Info (306007): Pin "BLED_Orange[0]" has no specified output pin load capacitance -- assuming default load capacitance of 0 pF for timing analysis
+    Info (306007): Pin "BLED_Orange[1]" has no specified output pin load capacitance -- assuming default load capacitance of 0 pF for timing analysis
+    Info (306007): Pin "BLED_Orange[2]" has no specified output pin load capacitance -- assuming default load capacitance of 0 pF for timing analysis
+    Info (306007): Pin "BLED_Orange[3]" has no specified output pin load capacitance -- assuming default load capacitance of 0 pF for timing analysis
+    Info (306007): Pin "PIC_PBUS_OK_OUT" has no specified output pin load capacitance -- assuming default load capacitance of 0 pF for timing analysis
+    Info (306007): Pin "PIC_SPI_MISO" has no specified output pin load capacitance -- assuming default load capacitance of 0 pF for timing analysis
+    Info (306007): Pin "Ultra_T_Trigger" has no specified output pin load capacitance -- assuming default load capacitance of 0 pF for timing analysis
+    Info (306007): Pin "Ultra_B_Trigger" has no specified output pin load capacitance -- assuming default load capacitance of 0 pF for timing analysis
+    Info (306007): Pin "Motor_North" has no specified output pin load capacitance -- assuming default load capacitance of 0 pF for timing analysis
+    Info (306007): Pin "Motor_East" has no specified output pin load capacitance -- assuming default load capacitance of 0 pF for timing analysis
+    Info (306007): Pin "Motor_South" has no specified output pin load capacitance -- assuming default load capacitance of 0 pF for timing analysis
+    Info (306007): Pin "Motor_West" has no specified output pin load capacitance -- assuming default load capacitance of 0 pF for timing analysis
+    Info (306007): Pin "Camera_SCL" has no specified output pin load capacitance -- assuming default load capacitance of 0 pF for timing analysis
+    Info (306007): Pin "Camera_RESET" has no specified output pin load capacitance -- assuming default load capacitance of 0 pF for timing analysis
+    Info (306007): Pin "Camera_EXTCLK" has no specified output pin load capacitance -- assuming default load capacitance of 0 pF for timing analysis
+    Info (306007): Pin "FPGA_SPI_Clock" has no specified output pin load capacitance -- assuming default load capacitance of 0 pF for timing analysis
+    Info (306007): Pin "FPGA_SPI_MOSI" has no specified output pin load capacitance -- assuming default load capacitance of 0 pF for timing analysis
+    Info (306007): Pin "FPGA_I2C_Clock" has no specified output pin load capacitance -- assuming default load capacitance of 0 pF for timing analysis
+    Info (306007): Pin "Gyro_ChipSelect" has no specified output pin load capacitance -- assuming default load capacitance of 0 pF for timing analysis
+    Info (306007): Pin "SRAM_ChipSelect" has no specified output pin load capacitance -- assuming default load capacitance of 0 pF for timing analysis
+    Info (306007): Pin "SRAM_WriteProtect" has no specified output pin load capacitance -- assuming default load capacitance of 0 pF for timing analysis
+    Info (306007): Pin "Accel_SelAddr0" has no specified output pin load capacitance -- assuming default load capacitance of 0 pF for timing analysis
+Info (306005): Delay annotation completed successfully
+Critical Warning (332148): Timing requirements not met
+Info (332146): Worst-case setup slack is -26.146
+    Info (332119):     Slack End Point TNS Clock 
+    Info (332119): ========= ============= =====================
+    Info (332119):   -26.146      -552.176 clk 
+    Info (332119):     0.622         0.000 clk_div:U_1HzClkDivider|clk_out 
+Info (332146): Worst-case hold slack is 0.215
+    Info (332119):     Slack End Point TNS Clock 
+    Info (332119): ========= ============= =====================
+    Info (332119):     0.215         0.000 clk 
+    Info (332119):     0.215         0.000 clk_div:U_1HzClkDivider|clk_out 
+Info (332140): No Recovery paths to report
+Info (332140): No Removal paths to report
+Info (332146): Worst-case minimum pulse width slack is -1.380
+    Info (332119):     Slack End Point TNS Clock 
+    Info (332119): ========= ============= =====================
+    Info (332119):    -1.380      -278.380 clk 
+    Info (332119):    -0.500        -2.000 clk_div:U_1HzClkDivider|clk_out 
+Info (332001): The selected device family is not supported by the report_metastability command.
+Info (332102): Design is not fully constrained for setup requirements
+Info (332102): Design is not fully constrained for hold requirements
+Info: Quartus II 32-bit TimeQuest Timing Analyzer was successful. 0 errors, 8 warnings
+    Info: Peak virtual memory: 288 megabytes
+    Info: Processing ended: Mon Apr 23 23:15:28 2012
+    Info: Elapsed time: 00:00:12
+    Info: Total CPU time (on all processors): 00:00:08
+
+
