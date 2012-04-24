@@ -22,64 +22,58 @@ signal pwm : std_logic_vector(8 downto 0) := "000000000";
 signal Iset_point, Imeasured_point : integer range 0 to 255;
 signal error, previous_error, previous_error2 : integer := 0;
 
-signal u, u_old, v : integer := 0; --Creating integer signal for pwm
-signal P, I, D : integer := 0; --Creating P I and D terms
+signal u, u_old, v : integer := 0;                            --Creating integer signal for pwm
+signal P, I, D : integer := 0;                                --Creating P I and D terms
 
-constant T_s : integer := 1; --Fix values after determing sampling times
-constant T_i : integer := 1; --Creating values for sampling times
-constant T_d : integer := 1;
-
-constant K_p : integer := 1; --Fix values after determing sampling times and tuning
-constant K_i : integer := 0; --Creating values for PID
-constant K_d : integer := 0; -- Ki = (Kp*Ts)/Ti Kp = (Kp*Td)/Ti
+constant K_p : integer := 1;                                  --Fix values after tuning
+constant K_i : integer := 0;                                  --Creating values for PID
+constant K_d : integer := 0; 
 
 begin
 
-Iset_point <= conv_integer(set_point);  --Converting input vectors to integers
+Iset_point <= conv_integer(set_point);                        --Converting input vectors to integers
 Imeasured_point <= conv_integer(measured_point);
 
-process(clk, u) --Getting value for old pwm signal and errors
+process(clk, error, previous_error, previous_error2, P, I, D, u, u_old, v)                                               
 begin
 
-pwm <= "000000000";
+   pwm <= "000000000";                                        --Initializing PWM
 
-	if (clk'event and clk = '1') then
+	if (clk'event and clk = '1') then                          --Calculating Errors and Old Output
 		u_old <= u;
 		error <= Iset_point - Imeasured_point;
 		previous_error <= error;
 		previous_error2 <= previous_error;	
 	end if;
 	
-	if (u > 0 or u = 0) then 
-		pwm <= '0' & std_logic_vector(to_unsigned(u, 8));
-	elsif (u < 0) then
-		pwm <= '1' & std_logic_vector(to_unsigned(-u, 8));
-	end if;
-end process;
-
-P <= K_p * (error - previous_error); --Calculating PID
-I <= K_i * (error);
-D <= K_d * (error - (2*previous_error) + previous_error2);
-
-process(error, v, u_old, P, I, D)
-begin
-	if error > 128 then
-		v <= 255;
-	elsif error < -128  then
-		v <= -128;
+	P <= K_p * (error - previous_error);                        --Calculating PID
+	I <= K_i * (error);
+	D <= K_d * (error - (2*previous_error) + previous_error2);
+	
+	if error > 30 or error = 30 then                            --Error Exceeds 30 Degrees Negative
+		pwm <= "011001101";                                       --PWM at 80%
+	elsif error < -30 then                                      --Error Exceeds 30 Degrees Positive
+		pwm <= "111001101";                                   	 --PWM at 20%
 	else
-		v <= (u_old + P + I + D); --Calculating new pwm with old pwm reference and PID (Velocity PID)
+		if (u > 0  or u = 0) then                                --PID Output Positive (Increase Negative Axis)
+			pwm <= '1' & std_logic_vector(to_unsigned(u,8));           --PWM Set to U with 1 Sign Bit
+		elsif (u < 0) then	                                    --PID Output Negative (Increase Positive Axis)
+			pwm <= '0' & std_logic_vector(to_unsigned(-u,8));          --PID Set to Positive U with 0 Sign Bit
+		end if;
 	end if;
 	
-	if (v > 255) then
-		u <= 255;
-	elsif (v < 255) then
-		u <= -255;
-	else
-      u <= v;
+	v <= u_old + P + I + D;                                     --Calculating PID Output
+	
+	if v > 255 then                                             -- +V Exceeds 8 Bits
+		u <= 255;                                                  -- U Set to Max 255
+	elsif v < -255 then                                         -- -V Exceeds 8 bits
+		u <= -255;                                                 -- U Set to Min -255
+	else                                                        -- V Withing Range
+		u <= v;                                                    -- U Set to V
 	end if;
+
 end process;
 
-pwm_input <= pwm;
-	
+	pwm_input <= pwm;                                           -- Setting Output to Variable
+
 end behavior;

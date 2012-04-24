@@ -13,10 +13,10 @@
 -- applicable agreement for further details.
 
 -- VENDOR "Altera"
--- PROGRAM "Quartus II 32-bit"
--- VERSION "Version 11.1 Build 216 11/23/2011 Service Pack 1 SJ Web Edition"
+-- PROGRAM "Quartus II"
+-- VERSION "Version 11.0 Build 157 04/27/2011 SJ Web Edition"
 
--- DATE "04/23/2012 23:15:34"
+-- DATE "04/23/2012 23:30:13"
 
 -- 
 -- Device: Altera EP2C8T144C8 Package TQFP144
@@ -222,50 +222,56 @@ SIGNAL \clk~clkctrl_INCLK_bus\ : std_logic_vector(3 DOWNTO 0);
 SIGNAL \U_Ranger_Top|timevector[0]~0_combout\ : std_logic;
 SIGNAL \U_Ranger_Top|timevector[3]~6_combout\ : std_logic;
 SIGNAL \U_Ranger_Top|timevector[8]~16_combout\ : std_logic;
+SIGNAL \U_Ranger_Top|timevector[9]~18_combout\ : std_logic;
 SIGNAL \U_Ranger_Top|timevector[12]~24_combout\ : std_logic;
-SIGNAL \U_Ranger_Top|timevector[14]~28_combout\ : std_logic;
 SIGNAL \U_Ranger_Top|timevector[22]~45\ : std_logic;
 SIGNAL \U_Ranger_Top|timevector[23]~46_combout\ : std_logic;
 SIGNAL \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_1~4_combout\ : std_logic;
+SIGNAL \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_2~8_combout\ : std_logic;
 SIGNAL \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_3~2_combout\ : std_logic;
-SIGNAL \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_3~8_combout\ : std_logic;
+SIGNAL \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_3~4_combout\ : std_logic;
+SIGNAL \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_3~12_combout\ : std_logic;
 SIGNAL \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_3~16_combout\ : std_logic;
 SIGNAL \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_3~18_combout\ : std_logic;
+SIGNAL \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_3~20_combout\ : std_logic;
 SIGNAL \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_4~20_combout\ : std_logic;
 SIGNAL \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_5~0_combout\ : std_logic;
 SIGNAL \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_5~8_combout\ : std_logic;
 SIGNAL \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_5~14_combout\ : std_logic;
 SIGNAL \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_6~0_combout\ : std_logic;
+SIGNAL \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_6~2_combout\ : std_logic;
 SIGNAL \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_6~16_combout\ : std_logic;
 SIGNAL \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_7~2_combout\ : std_logic;
+SIGNAL \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_7~4_combout\ : std_logic;
 SIGNAL \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_7~20_combout\ : std_logic;
+SIGNAL \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_7~28_combout\ : std_logic;
 SIGNAL \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_7~30_combout\ : std_logic;
 SIGNAL \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_8~2_combout\ : std_logic;
 SIGNAL \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_8~12_combout\ : std_logic;
 SIGNAL \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_8~18_combout\ : std_logic;
 SIGNAL \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_8~20_combout\ : std_logic;
+SIGNAL \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_8~22_combout\ : std_logic;
 SIGNAL \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_8~30_combout\ : std_logic;
 SIGNAL \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_8~34_combout\ : std_logic;
 SIGNAL \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_9~2_combout\ : std_logic;
 SIGNAL \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_9~22_combout\ : std_logic;
-SIGNAL \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_9~32_combout\ : std_logic;
 SIGNAL \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_9~36_combout\ : std_logic;
 SIGNAL \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_10~0_combout\ : std_logic;
 SIGNAL \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_10~10_combout\ : std_logic;
-SIGNAL \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_10~34_combout\ : std_logic;
-SIGNAL \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_10~38_combout\ : std_logic;
 SIGNAL \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_12~22_combout\ : std_logic;
 SIGNAL \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_12~26_combout\ : std_logic;
-SIGNAL \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_12~32_combout\ : std_logic;
 SIGNAL \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_13~0_combout\ : std_logic;
 SIGNAL \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_13~12_combout\ : std_logic;
 SIGNAL \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_13~22_combout\ : std_logic;
+SIGNAL \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_13~30_combout\ : std_logic;
 SIGNAL \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_14~0_combout\ : std_logic;
 SIGNAL \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_14~14_combout\ : std_logic;
 SIGNAL \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_14~20_combout\ : std_logic;
 SIGNAL \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_14~24_combout\ : std_logic;
 SIGNAL \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_14~26_combout\ : std_logic;
 SIGNAL \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_14~28_combout\ : std_logic;
+SIGNAL \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_14~32_combout\ : std_logic;
+SIGNAL \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_14~38_combout\ : std_logic;
 SIGNAL \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_15~0_combout\ : std_logic;
 SIGNAL \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_15~2_combout\ : std_logic;
 SIGNAL \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_15~4_combout\ : std_logic;
@@ -286,23 +292,28 @@ SIGNAL \U_Ranger_Botom|timevector[9]~18_combout\ : std_logic;
 SIGNAL \U_Ranger_Botom|timevector[13]~26_combout\ : std_logic;
 SIGNAL \U_Ranger_Botom|timevector[16]~32_combout\ : std_logic;
 SIGNAL \U_Ranger_Botom|timevector[17]~34_combout\ : std_logic;
-SIGNAL \U_Ranger_Botom|timevector[18]~36_combout\ : std_logic;
 SIGNAL \U_Ranger_Botom|timevector[22]~44_combout\ : std_logic;
 SIGNAL \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_1~6_combout\ : std_logic;
 SIGNAL \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_1~20_combout\ : std_logic;
 SIGNAL \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_2~0_combout\ : std_logic;
 SIGNAL \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_2~4_combout\ : std_logic;
-SIGNAL \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_2~6_combout\ : std_logic;
+SIGNAL \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_2~8_combout\ : std_logic;
 SIGNAL \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_2~16_combout\ : std_logic;
+SIGNAL \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_3~10_combout\ : std_logic;
+SIGNAL \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_3~20_combout\ : std_logic;
 SIGNAL \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_3~24_combout\ : std_logic;
+SIGNAL \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_4~0_combout\ : std_logic;
+SIGNAL \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_4~4_combout\ : std_logic;
 SIGNAL \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_4~16_combout\ : std_logic;
 SIGNAL \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_4~22_combout\ : std_logic;
 SIGNAL \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_5~0_combout\ : std_logic;
+SIGNAL \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_5~2_combout\ : std_logic;
 SIGNAL \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_5~4_combout\ : std_logic;
+SIGNAL \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_5~8_combout\ : std_logic;
+SIGNAL \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_5~12_combout\ : std_logic;
 SIGNAL \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_5~16_combout\ : std_logic;
 SIGNAL \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_5~20_combout\ : std_logic;
 SIGNAL \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_5~24_combout\ : std_logic;
-SIGNAL \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_6~10_combout\ : std_logic;
 SIGNAL \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_6~12_combout\ : std_logic;
 SIGNAL \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_6~26_combout\ : std_logic;
 SIGNAL \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_6~30_combout\ : std_logic;
@@ -312,13 +323,16 @@ SIGNAL \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|o
 SIGNAL \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_7~12_combout\ : std_logic;
 SIGNAL \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_7~28_combout\ : std_logic;
 SIGNAL \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_8~0_combout\ : std_logic;
-SIGNAL \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_8~6_combout\ : std_logic;
 SIGNAL \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_8~8_combout\ : std_logic;
 SIGNAL \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_8~10_combout\ : std_logic;
 SIGNAL \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_8~12_combout\ : std_logic;
 SIGNAL \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_8~28_combout\ : std_logic;
+SIGNAL \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_9~6_combout\ : std_logic;
+SIGNAL \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_9~24_combout\ : std_logic;
 SIGNAL \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_9~26_combout\ : std_logic;
+SIGNAL \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_10~14_combout\ : std_logic;
 SIGNAL \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_10~16_combout\ : std_logic;
+SIGNAL \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_10~20_combout\ : std_logic;
 SIGNAL \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_12~0_combout\ : std_logic;
 SIGNAL \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_12~2_combout\ : std_logic;
 SIGNAL \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_12~4_combout\ : std_logic;
@@ -327,6 +341,7 @@ SIGNAL \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|o
 SIGNAL \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_12~12_combout\ : std_logic;
 SIGNAL \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_12~18_combout\ : std_logic;
 SIGNAL \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_12~20_combout\ : std_logic;
+SIGNAL \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_12~40_combout\ : std_logic;
 SIGNAL \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_13~0_combout\ : std_logic;
 SIGNAL \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_13~4_combout\ : std_logic;
 SIGNAL \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_13~10_combout\ : std_logic;
@@ -335,8 +350,8 @@ SIGNAL \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|o
 SIGNAL \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_13~20_combout\ : std_logic;
 SIGNAL \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_13~22_combout\ : std_logic;
 SIGNAL \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_13~34_combout\ : std_logic;
+SIGNAL \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_13~42_combout\ : std_logic;
 SIGNAL \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_14~2_combout\ : std_logic;
-SIGNAL \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_14~4_combout\ : std_logic;
 SIGNAL \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_14~12_combout\ : std_logic;
 SIGNAL \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_14~14_combout\ : std_logic;
 SIGNAL \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_14~16_combout\ : std_logic;
@@ -346,7 +361,6 @@ SIGNAL \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|o
 SIGNAL \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_14~32_combout\ : std_logic;
 SIGNAL \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_14~34_combout\ : std_logic;
 SIGNAL \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_14~36_combout\ : std_logic;
-SIGNAL \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_14~38_combout\ : std_logic;
 SIGNAL \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_15~0_combout\ : std_logic;
 SIGNAL \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_15~2_combout\ : std_logic;
 SIGNAL \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_15~4_combout\ : std_logic;
@@ -378,36 +392,43 @@ SIGNAL \Add2~2_combout\ : std_logic;
 SIGNAL \Add2~6_combout\ : std_logic;
 SIGNAL \U_Motor_1|pulsecount[5]~19_combout\ : std_logic;
 SIGNAL \U_Motor_1|pulsecount[8]~26\ : std_logic;
-SIGNAL \U_Motor_1|pulsecount[9]~27_combout\ : std_logic;
 SIGNAL \U_Motor_1|pulsecount[9]~28\ : std_logic;
-SIGNAL \U_Motor_1|pulsecount[10]~29_combout\ : std_logic;
+SIGNAL \U_Motor_1|pulsecount[9]~27_combout\ : std_logic;
 SIGNAL \U_Motor_1|pulsecount[10]~30\ : std_logic;
+SIGNAL \U_Motor_1|pulsecount[10]~29_combout\ : std_logic;
 SIGNAL \U_Motor_1|pulsecount[11]~31_combout\ : std_logic;
 SIGNAL \U_1HzClkDivider|Add0~6_combout\ : std_logic;
-SIGNAL \U_1HzClkDivider|Add0~14_combout\ : std_logic;
 SIGNAL \U_1HzClkDivider|Add0~28_combout\ : std_logic;
 SIGNAL \U_1HzClkDivider|Add0~34_combout\ : std_logic;
 SIGNAL \U_Motor_1|clockcount[3]~13_combout\ : std_logic;
 SIGNAL \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[242]~8_combout\ : std_logic;
+SIGNAL \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[298]~25_combout\ : std_logic;
 SIGNAL \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[297]~26_combout\ : std_logic;
 SIGNAL \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[296]~27_combout\ : std_logic;
+SIGNAL \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[294]~29_combout\ : std_logic;
 SIGNAL \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[322]~39_combout\ : std_logic;
+SIGNAL \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[336]~64_combout\ : std_logic;
 SIGNAL \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[368]~72_combout\ : std_logic;
+SIGNAL \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[361]~79_combout\ : std_logic;
 SIGNAL \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[360]~80_combout\ : std_logic;
 SIGNAL \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[399]~82_combout\ : std_logic;
+SIGNAL \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[398]~83_combout\ : std_logic;
+SIGNAL \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[394]~87_combout\ : std_logic;
+SIGNAL \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[386]~95_combout\ : std_logic;
 SIGNAL \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[385]~96_combout\ : std_logic;
 SIGNAL \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[425]~98_combout\ : std_logic;
+SIGNAL \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[423]~100_combout\ : std_logic;
+SIGNAL \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[419]~104_combout\ : std_logic;
 SIGNAL \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[417]~106_combout\ : std_logic;
 SIGNAL \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[409]~114_combout\ : std_logic;
 SIGNAL \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[450]~116_combout\ : std_logic;
-SIGNAL \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[448]~118_combout\ : std_logic;
-SIGNAL \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[475]~135_combout\ : std_logic;
-SIGNAL \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[473]~137_combout\ : std_logic;
 SIGNAL \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[456]~154_combout\ : std_logic;
-SIGNAL \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[496]~159_combout\ : std_logic;
 SIGNAL \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[493]~162_combout\ : std_logic;
+SIGNAL \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[519]~182_combout\ : std_logic;
 SIGNAL \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[510]~191_combout\ : std_logic;
 SIGNAL \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[504]~197_combout\ : std_logic;
+SIGNAL \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[547]~201_combout\ : std_logic;
+SIGNAL \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[544]~204_combout\ : std_logic;
 SIGNAL \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[541]~207_combout\ : std_logic;
 SIGNAL \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[540]~208_combout\ : std_logic;
 SIGNAL \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[538]~210_combout\ : std_logic;
@@ -424,18 +445,22 @@ SIGNAL \U_Ranger_Top|LessThan2~7_combout\ : std_logic;
 SIGNAL \U_Ranger_Top|LessThan2~8_combout\ : std_logic;
 SIGNAL \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[250]~0_combout\ : std_logic;
 SIGNAL \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[243]~7_combout\ : std_logic;
-SIGNAL \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[267]~19_combout\ : std_logic;
+SIGNAL \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[268]~18_combout\ : std_logic;
 SIGNAL \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[264]~22_combout\ : std_logic;
 SIGNAL \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[300]~23_combout\ : std_logic;
+SIGNAL \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[298]~25_combout\ : std_logic;
+SIGNAL \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[293]~30_combout\ : std_logic;
 SIGNAL \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[323]~38_combout\ : std_logic;
+SIGNAL \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[312]~49_combout\ : std_logic;
 SIGNAL \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[348]~52_combout\ : std_logic;
 SIGNAL \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[346]~54_combout\ : std_logic;
 SIGNAL \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[344]~56_combout\ : std_logic;
+SIGNAL \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[340]~60_combout\ : std_logic;
+SIGNAL \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[337]~63_combout\ : std_logic;
 SIGNAL \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[336]~64_combout\ : std_logic;
 SIGNAL \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[375]~65_combout\ : std_logic;
 SIGNAL \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[373]~67_combout\ : std_logic;
 SIGNAL \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[366]~74_combout\ : std_logic;
-SIGNAL \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[365]~75_combout\ : std_logic;
 SIGNAL \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[398]~83_combout\ : std_logic;
 SIGNAL \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[390]~91_combout\ : std_logic;
 SIGNAL \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[389]~92_combout\ : std_logic;
@@ -443,13 +468,16 @@ SIGNAL \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|S
 SIGNAL \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[414]~109_combout\ : std_logic;
 SIGNAL \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[413]~110_combout\ : std_logic;
 SIGNAL \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[412]~111_combout\ : std_logic;
-SIGNAL \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[411]~112_combout\ : std_logic;
+SIGNAL \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[444]~122_combout\ : std_logic;
+SIGNAL \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[466]~144_combout\ : std_logic;
 SIGNAL \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[464]~146_combout\ : std_logic;
+SIGNAL \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[500]~155_combout\ : std_logic;
 SIGNAL \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[490]~165_combout\ : std_logic;
 SIGNAL \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[489]~166_combout\ : std_logic;
 SIGNAL \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[484]~171_combout\ : std_logic;
 SIGNAL \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[482]~173_combout\ : std_logic;
 SIGNAL \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[481]~174_combout\ : std_logic;
+SIGNAL \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[525]~176_combout\ : std_logic;
 SIGNAL \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[521]~180_combout\ : std_logic;
 SIGNAL \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[515]~186_combout\ : std_logic;
 SIGNAL \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[514]~187_combout\ : std_logic;
@@ -468,7 +496,6 @@ SIGNAL \U_Ranger_Botom|LessThan2~2_combout\ : std_logic;
 SIGNAL \U_Ranger_Botom|LessThan2~3_combout\ : std_logic;
 SIGNAL \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[540]~210_combout\ : std_logic;
 SIGNAL \U_Ranger_Botom|LessThan2~4_combout\ : std_logic;
-SIGNAL \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[547]~215_combout\ : std_logic;
 SIGNAL \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[546]~216_combout\ : std_logic;
 SIGNAL \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[545]~217_combout\ : std_logic;
 SIGNAL \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[544]~218_combout\ : std_logic;
@@ -508,7 +535,7 @@ SIGNAL \U_Registers|MuxOut|tmp1[0]~8_combout\ : std_logic;
 SIGNAL \U_Registers|MuxOut|tmp1[0]~9_combout\ : std_logic;
 SIGNAL \U_Registers|MuxOut|tmp1[1]~12_combout\ : std_logic;
 SIGNAL \U_Registers|MuxOut|tmp1[2]~18_combout\ : std_logic;
-SIGNAL \U_Registers|MuxOut|tmp1[2]~19_combout\ : std_logic;
+SIGNAL \U_Registers|MuxOut|tmp1[2]~20_combout\ : std_logic;
 SIGNAL \U_Registers|MuxOut|tmp1[3]~24_combout\ : std_logic;
 SIGNAL \U_Registers|MuxOut|tmp1[3]~25_combout\ : std_logic;
 SIGNAL \U_Registers|MuxOut|tmp1[3]~26_combout\ : std_logic;
@@ -529,16 +556,13 @@ SIGNAL \U_Registers|MuxOut|tmp1[7]~48_combout\ : std_logic;
 SIGNAL \U_Registers|MuxOut|tmp1[7]~49_combout\ : std_logic;
 SIGNAL \U_Registers|MuxOut|tmp1[7]~50_combout\ : std_logic;
 SIGNAL \U_Registers|MuxOut|tmp1[7]~51_combout\ : std_logic;
-SIGNAL \U_1HzClkDivider|cnt~4_combout\ : std_logic;
 SIGNAL \U_Registers|RegCont|regi05~0_combout\ : std_logic;
 SIGNAL \U_Registers|RegCont|regi04~0_combout\ : std_logic;
 SIGNAL \U_Ranger_Botom|edgebegin[21]~feeder_combout\ : std_logic;
 SIGNAL \U_Ranger_Botom|edgebegin[9]~feeder_combout\ : std_logic;
-SIGNAL \U_Ranger_Botom|edgebegin[10]~feeder_combout\ : std_logic;
 SIGNAL \U_Ranger_Top|edgebegin[10]~feeder_combout\ : std_logic;
 SIGNAL \U_Ranger_Top|edgebegin[12]~feeder_combout\ : std_logic;
 SIGNAL \U_Ranger_Botom|edgebegin[12]~feeder_combout\ : std_logic;
-SIGNAL \U_Ranger_Botom|edgebegin[14]~feeder_combout\ : std_logic;
 SIGNAL \U_Ranger_Top|edgebegin[14]~feeder_combout\ : std_logic;
 SIGNAL \U_Ranger_Botom|edgebegin[16]~feeder_combout\ : std_logic;
 SIGNAL \U_Ranger_Top|edgebegin[16]~feeder_combout\ : std_logic;
@@ -601,11 +625,12 @@ SIGNAL \U_Registers|MuxOut|tmp1[5]~6_combout\ : std_logic;
 SIGNAL \U_Registers|MuxOut|tmp1[1]~14_combout\ : std_logic;
 SIGNAL \U_Registers|RegCont|Equal3~0_combout\ : std_logic;
 SIGNAL \U_Registers|RegCont|regi01~0_combout\ : std_logic;
+SIGNAL \U_Registers|RegXM|tmp[1]~feeder_combout\ : std_logic;
 SIGNAL \U_Registers|RegCont|regi03~0_combout\ : std_logic;
 SIGNAL \U_Registers|MuxOut|tmp1[1]~15_combout\ : std_logic;
 SIGNAL \U_Registers|MuxOut|tmp1[1]~16_combout\ : std_logic;
 SIGNAL \U_Registers|MuxOut|tmp1[1]~17_combout\ : std_logic;
-SIGNAL \U_Registers|MuxOut|tmp1[2]~20_combout\ : std_logic;
+SIGNAL \U_Registers|MuxOut|tmp1[2]~19_combout\ : std_logic;
 SIGNAL \U_Registers|MuxOut|tmp1[2]~21_combout\ : std_logic;
 SIGNAL \U_Registers|MuxOut|tmp1[2]~22_combout\ : std_logic;
 SIGNAL \U_Registers|MuxOut|tmp1[2]~23_combout\ : std_logic;
@@ -647,13 +672,15 @@ SIGNAL \U_1HzClkDivider|cnt~7_combout\ : std_logic;
 SIGNAL \U_1HzClkDivider|Add0~9\ : std_logic;
 SIGNAL \U_1HzClkDivider|Add0~10_combout\ : std_logic;
 SIGNAL \U_1HzClkDivider|cnt~6_combout\ : std_logic;
-SIGNAL \U_1HzClkDivider|Equal0~0_combout\ : std_logic;
-SIGNAL \U_1HzClkDivider|Equal0~1_combout\ : std_logic;
-SIGNAL \U_1HzClkDivider|Equal0~4_combout\ : std_logic;
 SIGNAL \U_1HzClkDivider|Add0~11\ : std_logic;
 SIGNAL \U_1HzClkDivider|Add0~12_combout\ : std_logic;
 SIGNAL \U_1HzClkDivider|cnt~5_combout\ : std_logic;
+SIGNAL \U_1HzClkDivider|Equal0~0_combout\ : std_logic;
+SIGNAL \U_1HzClkDivider|Equal0~1_combout\ : std_logic;
+SIGNAL \U_1HzClkDivider|Equal0~4_combout\ : std_logic;
 SIGNAL \U_1HzClkDivider|Add0~13\ : std_logic;
+SIGNAL \U_1HzClkDivider|Add0~14_combout\ : std_logic;
+SIGNAL \U_1HzClkDivider|cnt~4_combout\ : std_logic;
 SIGNAL \U_1HzClkDivider|Add0~15\ : std_logic;
 SIGNAL \U_1HzClkDivider|Add0~16_combout\ : std_logic;
 SIGNAL \U_1HzClkDivider|Add0~17\ : std_logic;
@@ -682,8 +709,6 @@ SIGNAL \current_State~0_combout\ : std_logic;
 SIGNAL \current_State~regout\ : std_logic;
 SIGNAL \TLED_Orange_1~0_combout\ : std_logic;
 SIGNAL \TLED_Orange_1~reg0_regout\ : std_logic;
-SIGNAL \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_1~1\ : std_logic;
-SIGNAL \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_1~2_combout\ : std_logic;
 SIGNAL \U_Ranger_Botom|count[0]~24_combout\ : std_logic;
 SIGNAL \U_Ranger_Botom|LessThan0~0_combout\ : std_logic;
 SIGNAL \U_Ranger_Botom|count[22]~69\ : std_logic;
@@ -723,6 +748,7 @@ SIGNAL \U_Ranger_Botom|count[19]~63\ : std_logic;
 SIGNAL \U_Ranger_Botom|count[20]~65\ : std_logic;
 SIGNAL \U_Ranger_Botom|count[21]~67\ : std_logic;
 SIGNAL \U_Ranger_Botom|count[22]~68_combout\ : std_logic;
+SIGNAL \U_Ranger_Top|edgebegin[22]~feeder_combout\ : std_logic;
 SIGNAL \Ultra_T_Edge~combout\ : std_logic;
 SIGNAL \U_Ranger_Top|edgeYet2~regout\ : std_logic;
 SIGNAL \U_Ranger_Top|process_0~0_combout\ : std_logic;
@@ -732,6 +758,7 @@ SIGNAL \U_Ranger_Botom|count[20]~64_combout\ : std_logic;
 SIGNAL \U_Ranger_Top|edgebegin[20]~feeder_combout\ : std_logic;
 SIGNAL \U_Ranger_Botom|count[18]~60_combout\ : std_logic;
 SIGNAL \U_Ranger_Botom|count[17]~58_combout\ : std_logic;
+SIGNAL \U_Ranger_Top|edgebegin[17]~feeder_combout\ : std_logic;
 SIGNAL \U_Ranger_Botom|count[15]~54_combout\ : std_logic;
 SIGNAL \U_Ranger_Top|edgebegin[15]~feeder_combout\ : std_logic;
 SIGNAL \U_Ranger_Botom|count[8]~40_combout\ : std_logic;
@@ -767,6 +794,8 @@ SIGNAL \U_Ranger_Top|timevector[20]~40_combout\ : std_logic;
 SIGNAL \U_Ranger_Top|timevector[17]~34_combout\ : std_logic;
 SIGNAL \U_Ranger_Top|timevector[16]~32_combout\ : std_logic;
 SIGNAL \U_Ranger_Top|timevector[15]~30_combout\ : std_logic;
+SIGNAL \U_Ranger_Top|timevector[14]~28_combout\ : std_logic;
+SIGNAL \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_1~1\ : std_logic;
 SIGNAL \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_1~3\ : std_logic;
 SIGNAL \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_1~5\ : std_logic;
 SIGNAL \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_1~7\ : std_logic;
@@ -778,14 +807,6 @@ SIGNAL \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_
 SIGNAL \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_1~19\ : std_logic;
 SIGNAL \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_1~21\ : std_logic;
 SIGNAL \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_1~22_combout\ : std_logic;
-SIGNAL \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[241]~9_combout\ : std_logic;
-SIGNAL \U_Ranger_Top|timevector[13]~26_combout\ : std_logic;
-SIGNAL \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_1~0_combout\ : std_logic;
-SIGNAL \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[240]~10_combout\ : std_logic;
-SIGNAL \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_2~1\ : std_logic;
-SIGNAL \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_2~3\ : std_logic;
-SIGNAL \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_2~5\ : std_logic;
-SIGNAL \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_2~6_combout\ : std_logic;
 SIGNAL \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_1~20_combout\ : std_logic;
 SIGNAL \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[250]~0_combout\ : std_logic;
 SIGNAL \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_1~16_combout\ : std_logic;
@@ -799,6 +820,14 @@ SIGNAL \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_
 SIGNAL \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[244]~6_combout\ : std_logic;
 SIGNAL \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_1~6_combout\ : std_logic;
 SIGNAL \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[243]~7_combout\ : std_logic;
+SIGNAL \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_1~2_combout\ : std_logic;
+SIGNAL \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[241]~9_combout\ : std_logic;
+SIGNAL \U_Ranger_Top|timevector[13]~26_combout\ : std_logic;
+SIGNAL \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_1~0_combout\ : std_logic;
+SIGNAL \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[240]~10_combout\ : std_logic;
+SIGNAL \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_2~1\ : std_logic;
+SIGNAL \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_2~3\ : std_logic;
+SIGNAL \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_2~5\ : std_logic;
 SIGNAL \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_2~7\ : std_logic;
 SIGNAL \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_2~9\ : std_logic;
 SIGNAL \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_2~11\ : std_logic;
@@ -809,7 +838,6 @@ SIGNAL \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_
 SIGNAL \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_2~21\ : std_logic;
 SIGNAL \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_2~23\ : std_logic;
 SIGNAL \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_2~24_combout\ : std_logic;
-SIGNAL \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[267]~19_combout\ : std_logic;
 SIGNAL \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_2~22_combout\ : std_logic;
 SIGNAL \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[275]~11_combout\ : std_logic;
 SIGNAL \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_2~18_combout\ : std_logic;
@@ -825,14 +853,13 @@ SIGNAL \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_
 SIGNAL \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[270]~16_combout\ : std_logic;
 SIGNAL \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_2~10_combout\ : std_logic;
 SIGNAL \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[269]~17_combout\ : std_logic;
-SIGNAL \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_2~8_combout\ : std_logic;
 SIGNAL \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[268]~18_combout\ : std_logic;
+SIGNAL \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_2~6_combout\ : std_logic;
+SIGNAL \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[267]~19_combout\ : std_logic;
 SIGNAL \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_2~4_combout\ : std_logic;
 SIGNAL \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[266]~20_combout\ : std_logic;
 SIGNAL \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_2~2_combout\ : std_logic;
 SIGNAL \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[265]~21_combout\ : std_logic;
-SIGNAL \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_2~0_combout\ : std_logic;
-SIGNAL \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[264]~22_combout\ : std_logic;
 SIGNAL \U_Ranger_Top|timevector[11]~22_combout\ : std_logic;
 SIGNAL \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_3~1\ : std_logic;
 SIGNAL \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_3~3\ : std_logic;
@@ -846,10 +873,9 @@ SIGNAL \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_
 SIGNAL \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_3~19\ : std_logic;
 SIGNAL \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_3~21\ : std_logic;
 SIGNAL \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_3~23\ : std_logic;
+SIGNAL \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_3~24_combout\ : std_logic;
 SIGNAL \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_3~25\ : std_logic;
 SIGNAL \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_3~26_combout\ : std_logic;
-SIGNAL \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[292]~31_combout\ : std_logic;
-SIGNAL \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_3~24_combout\ : std_logic;
 SIGNAL \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[300]~23_combout\ : std_logic;
 SIGNAL \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_1~18_combout\ : std_logic;
 SIGNAL \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[249]~1_combout\ : std_logic;
@@ -857,21 +883,21 @@ SIGNAL \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_
 SIGNAL \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[274]~12_combout\ : std_logic;
 SIGNAL \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_3~22_combout\ : std_logic;
 SIGNAL \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[299]~24_combout\ : std_logic;
-SIGNAL \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_3~20_combout\ : std_logic;
-SIGNAL \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[298]~25_combout\ : std_logic;
 SIGNAL \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_3~14_combout\ : std_logic;
 SIGNAL \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[295]~28_combout\ : std_logic;
-SIGNAL \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_3~12_combout\ : std_logic;
-SIGNAL \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[294]~29_combout\ : std_logic;
 SIGNAL \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_3~10_combout\ : std_logic;
 SIGNAL \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[293]~30_combout\ : std_logic;
+SIGNAL \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_3~8_combout\ : std_logic;
+SIGNAL \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[292]~31_combout\ : std_logic;
 SIGNAL \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_3~6_combout\ : std_logic;
 SIGNAL \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[291]~32_combout\ : std_logic;
-SIGNAL \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_3~4_combout\ : std_logic;
 SIGNAL \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[290]~33_combout\ : std_logic;
+SIGNAL \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_2~0_combout\ : std_logic;
+SIGNAL \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[264]~22_combout\ : std_logic;
 SIGNAL \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[289]~34_combout\ : std_logic;
 SIGNAL \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_3~0_combout\ : std_logic;
 SIGNAL \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[288]~35_combout\ : std_logic;
+SIGNAL \U_Ranger_Top|timevector[10]~20_combout\ : std_logic;
 SIGNAL \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_4~1\ : std_logic;
 SIGNAL \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_4~3\ : std_logic;
 SIGNAL \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_4~5\ : std_logic;
@@ -887,12 +913,8 @@ SIGNAL \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_
 SIGNAL \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_4~25\ : std_logic;
 SIGNAL \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_4~27\ : std_logic;
 SIGNAL \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_4~28_combout\ : std_logic;
-SIGNAL \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_4~10_combout\ : std_logic;
-SIGNAL \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[317]~44_combout\ : std_logic;
 SIGNAL \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_4~26_combout\ : std_logic;
 SIGNAL \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[325]~36_combout\ : std_logic;
-SIGNAL \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_4~22_combout\ : std_logic;
-SIGNAL \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[323]~38_combout\ : std_logic;
 SIGNAL \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_4~18_combout\ : std_logic;
 SIGNAL \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[321]~40_combout\ : std_logic;
 SIGNAL \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_4~16_combout\ : std_logic;
@@ -905,7 +927,6 @@ SIGNAL \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_
 SIGNAL \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[314]~47_combout\ : std_logic;
 SIGNAL \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_4~2_combout\ : std_logic;
 SIGNAL \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[313]~48_combout\ : std_logic;
-SIGNAL \U_Ranger_Top|timevector[10]~20_combout\ : std_logic;
 SIGNAL \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_4~0_combout\ : std_logic;
 SIGNAL \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[312]~49_combout\ : std_logic;
 SIGNAL \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_5~1\ : std_logic;
@@ -924,6 +945,27 @@ SIGNAL \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_
 SIGNAL \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_5~27\ : std_logic;
 SIGNAL \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_5~29\ : std_logic;
 SIGNAL \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_5~30_combout\ : std_logic;
+SIGNAL \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_5~28_combout\ : std_logic;
+SIGNAL \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[350]~50_combout\ : std_logic;
+SIGNAL \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_4~24_combout\ : std_logic;
+SIGNAL \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[324]~37_combout\ : std_logic;
+SIGNAL \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_5~26_combout\ : std_logic;
+SIGNAL \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[349]~51_combout\ : std_logic;
+SIGNAL \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_4~22_combout\ : std_logic;
+SIGNAL \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[323]~38_combout\ : std_logic;
+SIGNAL \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_5~24_combout\ : std_logic;
+SIGNAL \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[348]~52_combout\ : std_logic;
+SIGNAL \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_5~22_combout\ : std_logic;
+SIGNAL \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[347]~53_combout\ : std_logic;
+SIGNAL \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_5~20_combout\ : std_logic;
+SIGNAL \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[346]~54_combout\ : std_logic;
+SIGNAL \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_5~18_combout\ : std_logic;
+SIGNAL \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[345]~55_combout\ : std_logic;
+SIGNAL \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_4~12_combout\ : std_logic;
+SIGNAL \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[318]~43_combout\ : std_logic;
+SIGNAL \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[343]~57_combout\ : std_logic;
+SIGNAL \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_4~10_combout\ : std_logic;
+SIGNAL \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[317]~44_combout\ : std_logic;
 SIGNAL \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_5~12_combout\ : std_logic;
 SIGNAL \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[342]~58_combout\ : std_logic;
 SIGNAL \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[340]~60_combout\ : std_logic;
@@ -940,24 +982,6 @@ SIGNAL \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_
 SIGNAL \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_6~9\ : std_logic;
 SIGNAL \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_6~11\ : std_logic;
 SIGNAL \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_6~13\ : std_logic;
-SIGNAL \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_6~14_combout\ : std_logic;
-SIGNAL \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_5~28_combout\ : std_logic;
-SIGNAL \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[350]~50_combout\ : std_logic;
-SIGNAL \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_4~24_combout\ : std_logic;
-SIGNAL \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[324]~37_combout\ : std_logic;
-SIGNAL \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_5~26_combout\ : std_logic;
-SIGNAL \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[349]~51_combout\ : std_logic;
-SIGNAL \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_5~24_combout\ : std_logic;
-SIGNAL \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[348]~52_combout\ : std_logic;
-SIGNAL \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_5~22_combout\ : std_logic;
-SIGNAL \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[347]~53_combout\ : std_logic;
-SIGNAL \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_5~20_combout\ : std_logic;
-SIGNAL \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[346]~54_combout\ : std_logic;
-SIGNAL \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_5~18_combout\ : std_logic;
-SIGNAL \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[345]~55_combout\ : std_logic;
-SIGNAL \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_4~12_combout\ : std_logic;
-SIGNAL \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[318]~43_combout\ : std_logic;
-SIGNAL \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[343]~57_combout\ : std_logic;
 SIGNAL \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_6~15\ : std_logic;
 SIGNAL \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_6~17\ : std_logic;
 SIGNAL \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_6~19\ : std_logic;
@@ -966,8 +990,25 @@ SIGNAL \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_
 SIGNAL \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_6~25\ : std_logic;
 SIGNAL \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_6~27\ : std_logic;
 SIGNAL \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_6~29\ : std_logic;
+SIGNAL \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_6~30_combout\ : std_logic;
 SIGNAL \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_6~31\ : std_logic;
 SIGNAL \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_6~32_combout\ : std_logic;
+SIGNAL \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[375]~65_combout\ : std_logic;
+SIGNAL \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_6~28_combout\ : std_logic;
+SIGNAL \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[374]~66_combout\ : std_logic;
+SIGNAL \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_6~26_combout\ : std_logic;
+SIGNAL \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[373]~67_combout\ : std_logic;
+SIGNAL \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_6~24_combout\ : std_logic;
+SIGNAL \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[372]~68_combout\ : std_logic;
+SIGNAL \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_6~22_combout\ : std_logic;
+SIGNAL \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[371]~69_combout\ : std_logic;
+SIGNAL \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_5~16_combout\ : std_logic;
+SIGNAL \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_4~14_combout\ : std_logic;
+SIGNAL \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[319]~42_combout\ : std_logic;
+SIGNAL \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[344]~56_combout\ : std_logic;
+SIGNAL \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_6~18_combout\ : std_logic;
+SIGNAL \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[369]~71_combout\ : std_logic;
+SIGNAL \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_6~14_combout\ : std_logic;
 SIGNAL \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[367]~73_combout\ : std_logic;
 SIGNAL \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_5~10_combout\ : std_logic;
 SIGNAL \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[341]~59_combout\ : std_logic;
@@ -988,23 +1029,6 @@ SIGNAL \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_
 SIGNAL \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_7~13\ : std_logic;
 SIGNAL \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_7~15\ : std_logic;
 SIGNAL \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_7~17\ : std_logic;
-SIGNAL \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_7~18_combout\ : std_logic;
-SIGNAL \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_6~30_combout\ : std_logic;
-SIGNAL \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[375]~65_combout\ : std_logic;
-SIGNAL \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_6~28_combout\ : std_logic;
-SIGNAL \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[374]~66_combout\ : std_logic;
-SIGNAL \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_6~26_combout\ : std_logic;
-SIGNAL \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[373]~67_combout\ : std_logic;
-SIGNAL \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_6~24_combout\ : std_logic;
-SIGNAL \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[372]~68_combout\ : std_logic;
-SIGNAL \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_6~22_combout\ : std_logic;
-SIGNAL \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[371]~69_combout\ : std_logic;
-SIGNAL \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_5~16_combout\ : std_logic;
-SIGNAL \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_4~14_combout\ : std_logic;
-SIGNAL \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[319]~42_combout\ : std_logic;
-SIGNAL \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[344]~56_combout\ : std_logic;
-SIGNAL \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_6~18_combout\ : std_logic;
-SIGNAL \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[369]~71_combout\ : std_logic;
 SIGNAL \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_7~19\ : std_logic;
 SIGNAL \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_7~21\ : std_logic;
 SIGNAL \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_7~23\ : std_logic;
@@ -1012,10 +1036,9 @@ SIGNAL \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_
 SIGNAL \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_7~27\ : std_logic;
 SIGNAL \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_7~29\ : std_logic;
 SIGNAL \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_7~31\ : std_logic;
+SIGNAL \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_7~32_combout\ : std_logic;
 SIGNAL \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_7~33\ : std_logic;
 SIGNAL \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_7~34_combout\ : std_logic;
-SIGNAL \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[393]~88_combout\ : std_logic;
-SIGNAL \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_7~32_combout\ : std_logic;
 SIGNAL \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[400]~81_combout\ : std_logic;
 SIGNAL \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_7~26_combout\ : std_logic;
 SIGNAL \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[397]~84_combout\ : std_logic;
@@ -1023,6 +1046,8 @@ SIGNAL \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_
 SIGNAL \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[370]~70_combout\ : std_logic;
 SIGNAL \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_7~22_combout\ : std_logic;
 SIGNAL \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[395]~86_combout\ : std_logic;
+SIGNAL \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_7~18_combout\ : std_logic;
+SIGNAL \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[393]~88_combout\ : std_logic;
 SIGNAL \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_7~16_combout\ : std_logic;
 SIGNAL \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[392]~89_combout\ : std_logic;
 SIGNAL \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_7~14_combout\ : std_logic;
@@ -1056,6 +1081,14 @@ SIGNAL \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_
 SIGNAL \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_8~33\ : std_logic;
 SIGNAL \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_8~35\ : std_logic;
 SIGNAL \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_8~36_combout\ : std_logic;
+SIGNAL \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_8~28_combout\ : std_logic;
+SIGNAL \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[422]~101_combout\ : std_logic;
+SIGNAL \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_7~24_combout\ : std_logic;
+SIGNAL \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[396]~85_combout\ : std_logic;
+SIGNAL \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_8~26_combout\ : std_logic;
+SIGNAL \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[421]~102_combout\ : std_logic;
+SIGNAL \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_8~24_combout\ : std_logic;
+SIGNAL \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[420]~103_combout\ : std_logic;
 SIGNAL \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[418]~105_combout\ : std_logic;
 SIGNAL \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_8~16_combout\ : std_logic;
 SIGNAL \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[416]~107_combout\ : std_logic;
@@ -1085,29 +1118,17 @@ SIGNAL \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_
 SIGNAL \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_9~19\ : std_logic;
 SIGNAL \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_9~21\ : std_logic;
 SIGNAL \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_9~23\ : std_logic;
-SIGNAL \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_9~24_combout\ : std_logic;
-SIGNAL \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[394]~87_combout\ : std_logic;
-SIGNAL \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_8~22_combout\ : std_logic;
-SIGNAL \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[419]~104_combout\ : std_logic;
-SIGNAL \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_7~28_combout\ : std_logic;
-SIGNAL \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[398]~83_combout\ : std_logic;
-SIGNAL \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[423]~100_combout\ : std_logic;
-SIGNAL \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_8~28_combout\ : std_logic;
-SIGNAL \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[422]~101_combout\ : std_logic;
-SIGNAL \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_7~24_combout\ : std_logic;
-SIGNAL \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[396]~85_combout\ : std_logic;
-SIGNAL \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_8~26_combout\ : std_logic;
-SIGNAL \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[421]~102_combout\ : std_logic;
-SIGNAL \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_8~24_combout\ : std_logic;
-SIGNAL \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[420]~103_combout\ : std_logic;
 SIGNAL \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_9~25\ : std_logic;
 SIGNAL \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_9~27\ : std_logic;
 SIGNAL \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_9~29\ : std_logic;
+SIGNAL \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_9~30_combout\ : std_logic;
 SIGNAL \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_9~31\ : std_logic;
 SIGNAL \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_9~33\ : std_logic;
 SIGNAL \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_9~35\ : std_logic;
 SIGNAL \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_9~37\ : std_logic;
 SIGNAL \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_9~38_combout\ : std_logic;
+SIGNAL \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[447]~119_combout\ : std_logic;
+SIGNAL \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_9~24_combout\ : std_logic;
 SIGNAL \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[444]~122_combout\ : std_logic;
 SIGNAL \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[443]~123_combout\ : std_logic;
 SIGNAL \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_9~18_combout\ : std_logic;
@@ -1120,12 +1141,6 @@ SIGNAL \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_
 SIGNAL \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[438]~128_combout\ : std_logic;
 SIGNAL \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_9~10_combout\ : std_logic;
 SIGNAL \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[437]~129_combout\ : std_logic;
-SIGNAL \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_7~4_combout\ : std_logic;
-SIGNAL \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_6~2_combout\ : std_logic;
-SIGNAL \U_Ranger_Top|timevector[9]~18_combout\ : std_logic;
-SIGNAL \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[336]~64_combout\ : std_logic;
-SIGNAL \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[361]~79_combout\ : std_logic;
-SIGNAL \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[386]~95_combout\ : std_logic;
 SIGNAL \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_8~6_combout\ : std_logic;
 SIGNAL \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[411]~112_combout\ : std_logic;
 SIGNAL \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_9~8_combout\ : std_logic;
@@ -1150,21 +1165,23 @@ SIGNAL \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_
 SIGNAL \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_10~25\ : std_logic;
 SIGNAL \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_10~27\ : std_logic;
 SIGNAL \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_10~29\ : std_logic;
-SIGNAL \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_10~30_combout\ : std_logic;
-SIGNAL \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_9~28_combout\ : std_logic;
-SIGNAL \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[446]~120_combout\ : std_logic;
+SIGNAL \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_10~31\ : std_logic;
+SIGNAL \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_10~33\ : std_logic;
+SIGNAL \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_10~34_combout\ : std_logic;
+SIGNAL \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_9~32_combout\ : std_logic;
+SIGNAL \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[448]~118_combout\ : std_logic;
 SIGNAL \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_8~32_combout\ : std_logic;
 SIGNAL \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[424]~99_combout\ : std_logic;
 SIGNAL \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_9~34_combout\ : std_logic;
 SIGNAL \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[449]~117_combout\ : std_logic;
-SIGNAL \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_9~30_combout\ : std_logic;
-SIGNAL \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[447]~119_combout\ : std_logic;
-SIGNAL \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_10~31\ : std_logic;
-SIGNAL \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_10~33\ : std_logic;
 SIGNAL \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_10~35\ : std_logic;
 SIGNAL \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_10~37\ : std_logic;
 SIGNAL \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_10~39\ : std_logic;
 SIGNAL \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_10~40_combout\ : std_logic;
+SIGNAL \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[473]~137_combout\ : std_logic;
+SIGNAL \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_10~30_combout\ : std_logic;
+SIGNAL \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_9~28_combout\ : std_logic;
+SIGNAL \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[446]~120_combout\ : std_logic;
 SIGNAL \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[471]~139_combout\ : std_logic;
 SIGNAL \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_9~26_combout\ : std_logic;
 SIGNAL \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[445]~121_combout\ : std_logic;
@@ -1213,6 +1230,8 @@ SIGNAL \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_
 SIGNAL \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_12~33\ : std_logic;
 SIGNAL \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_12~35\ : std_logic;
 SIGNAL \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_12~36_combout\ : std_logic;
+SIGNAL \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_10~38_combout\ : std_logic;
+SIGNAL \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[475]~135_combout\ : std_logic;
 SIGNAL \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_10~36_combout\ : std_logic;
 SIGNAL \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[474]~136_combout\ : std_logic;
 SIGNAL \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_12~37\ : std_logic;
@@ -1224,10 +1243,8 @@ SIGNAL \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_
 SIGNAL \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[500]~155_combout\ : std_logic;
 SIGNAL \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_12~38_combout\ : std_logic;
 SIGNAL \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[499]~156_combout\ : std_logic;
-SIGNAL \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_10~32_combout\ : std_logic;
-SIGNAL \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[472]~138_combout\ : std_logic;
-SIGNAL \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_12~34_combout\ : std_logic;
-SIGNAL \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[497]~158_combout\ : std_logic;
+SIGNAL \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_12~32_combout\ : std_logic;
+SIGNAL \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[496]~159_combout\ : std_logic;
 SIGNAL \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_12~30_combout\ : std_logic;
 SIGNAL \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[495]~160_combout\ : std_logic;
 SIGNAL \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_12~28_combout\ : std_logic;
@@ -1289,6 +1306,10 @@ SIGNAL \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_
 SIGNAL \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_13~44_combout\ : std_logic;
 SIGNAL \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_13~38_combout\ : std_logic;
 SIGNAL \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[523]~178_combout\ : std_logic;
+SIGNAL \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_10~32_combout\ : std_logic;
+SIGNAL \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[472]~138_combout\ : std_logic;
+SIGNAL \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_12~34_combout\ : std_logic;
+SIGNAL \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[497]~158_combout\ : std_logic;
 SIGNAL \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_13~36_combout\ : std_logic;
 SIGNAL \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[522]~179_combout\ : std_logic;
 SIGNAL \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_13~34_combout\ : std_logic;
@@ -1345,8 +1366,6 @@ SIGNAL \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_
 SIGNAL \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_14~45\ : std_logic;
 SIGNAL \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_14~46_combout\ : std_logic;
 SIGNAL \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[548]~200_combout\ : std_logic;
-SIGNAL \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_14~38_combout\ : std_logic;
-SIGNAL \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[547]~201_combout\ : std_logic;
 SIGNAL \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_14~36_combout\ : std_logic;
 SIGNAL \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[546]~202_combout\ : std_logic;
 SIGNAL \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_14~34_combout\ : std_logic;
@@ -1410,10 +1429,6 @@ SIGNAL \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|Sta
 SIGNAL \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_14~42_combout\ : std_logic;
 SIGNAL \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[549]~199_combout\ : std_logic;
 SIGNAL \U_Ranger_Top|LessThan2~9_combout\ : std_logic;
-SIGNAL \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_13~30_combout\ : std_logic;
-SIGNAL \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[519]~182_combout\ : std_logic;
-SIGNAL \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_14~32_combout\ : std_logic;
-SIGNAL \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[544]~204_combout\ : std_logic;
 SIGNAL \U_Ranger_Top|LessThan2~10_combout\ : std_logic;
 SIGNAL \U_Ranger_Top|LessThan2~11_combout\ : std_logic;
 SIGNAL \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_15~44_combout\ : std_logic;
@@ -1438,6 +1453,7 @@ SIGNAL \Ultra_B_Edge~combout\ : std_logic;
 SIGNAL \U_Ranger_Botom|edgeYet2~regout\ : std_logic;
 SIGNAL \U_Ranger_Botom|process_0~0_combout\ : std_logic;
 SIGNAL \U_Ranger_Botom|process_0~1_combout\ : std_logic;
+SIGNAL \U_Ranger_Botom|edgebegin[22]~feeder_combout\ : std_logic;
 SIGNAL \U_Ranger_Botom|edgebegin[18]~feeder_combout\ : std_logic;
 SIGNAL \U_Ranger_Botom|edgebegin[15]~feeder_combout\ : std_logic;
 SIGNAL \U_Ranger_Botom|edgebegin[13]~feeder_combout\ : std_logic;
@@ -1485,11 +1501,10 @@ SIGNAL \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|o
 SIGNAL \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[249]~1_combout\ : std_logic;
 SIGNAL \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_1~16_combout\ : std_logic;
 SIGNAL \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[248]~2_combout\ : std_logic;
-SIGNAL \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_1~14_combout\ : std_logic;
-SIGNAL \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[247]~3_combout\ : std_logic;
 SIGNAL \U_Ranger_Botom|timevector[19]~38_combout\ : std_logic;
 SIGNAL \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_1~12_combout\ : std_logic;
 SIGNAL \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[246]~4_combout\ : std_logic;
+SIGNAL \U_Ranger_Botom|timevector[18]~36_combout\ : std_logic;
 SIGNAL \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_1~10_combout\ : std_logic;
 SIGNAL \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[245]~5_combout\ : std_logic;
 SIGNAL \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_1~4_combout\ : std_logic;
@@ -1514,6 +1529,8 @@ SIGNAL \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|o
 SIGNAL \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[274]~12_combout\ : std_logic;
 SIGNAL \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_2~18_combout\ : std_logic;
 SIGNAL \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[273]~13_combout\ : std_logic;
+SIGNAL \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_1~14_combout\ : std_logic;
+SIGNAL \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[247]~3_combout\ : std_logic;
 SIGNAL \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[272]~14_combout\ : std_logic;
 SIGNAL \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_2~14_combout\ : std_logic;
 SIGNAL \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[271]~15_combout\ : std_logic;
@@ -1541,28 +1558,22 @@ SIGNAL \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|o
 SIGNAL \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_3~25\ : std_logic;
 SIGNAL \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_3~26_combout\ : std_logic;
 SIGNAL \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[299]~24_combout\ : std_logic;
-SIGNAL \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_3~20_combout\ : std_logic;
-SIGNAL \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[298]~25_combout\ : std_logic;
 SIGNAL \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_3~18_combout\ : std_logic;
 SIGNAL \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[297]~26_combout\ : std_logic;
+SIGNAL \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_3~16_combout\ : std_logic;
+SIGNAL \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[296]~27_combout\ : std_logic;
 SIGNAL \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_2~12_combout\ : std_logic;
 SIGNAL \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[270]~16_combout\ : std_logic;
 SIGNAL \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_3~14_combout\ : std_logic;
 SIGNAL \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[295]~28_combout\ : std_logic;
-SIGNAL \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_2~10_combout\ : std_logic;
-SIGNAL \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_1~8_combout\ : std_logic;
-SIGNAL \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[244]~6_combout\ : std_logic;
-SIGNAL \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[269]~17_combout\ : std_logic;
-SIGNAL \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_3~12_combout\ : std_logic;
-SIGNAL \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[294]~29_combout\ : std_logic;
-SIGNAL \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_2~8_combout\ : std_logic;
-SIGNAL \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[268]~18_combout\ : std_logic;
-SIGNAL \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_3~10_combout\ : std_logic;
-SIGNAL \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[293]~30_combout\ : std_logic;
+SIGNAL \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_2~6_combout\ : std_logic;
+SIGNAL \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[267]~19_combout\ : std_logic;
 SIGNAL \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_3~8_combout\ : std_logic;
 SIGNAL \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[292]~31_combout\ : std_logic;
 SIGNAL \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_3~6_combout\ : std_logic;
 SIGNAL \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[291]~32_combout\ : std_logic;
+SIGNAL \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_3~4_combout\ : std_logic;
+SIGNAL \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[290]~33_combout\ : std_logic;
 SIGNAL \U_Ranger_Botom|timevector[10]~20_combout\ : std_logic;
 SIGNAL \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_4~1\ : std_logic;
 SIGNAL \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_4~3\ : std_logic;
@@ -1583,24 +1594,27 @@ SIGNAL \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|o
 SIGNAL \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[324]~37_combout\ : std_logic;
 SIGNAL \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_4~20_combout\ : std_logic;
 SIGNAL \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[322]~39_combout\ : std_logic;
-SIGNAL \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_3~16_combout\ : std_logic;
-SIGNAL \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[296]~27_combout\ : std_logic;
 SIGNAL \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_4~18_combout\ : std_logic;
 SIGNAL \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[321]~40_combout\ : std_logic;
 SIGNAL \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[320]~41_combout\ : std_logic;
+SIGNAL \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_2~10_combout\ : std_logic;
+SIGNAL \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_1~8_combout\ : std_logic;
+SIGNAL \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[244]~6_combout\ : std_logic;
+SIGNAL \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[269]~17_combout\ : std_logic;
+SIGNAL \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_3~12_combout\ : std_logic;
+SIGNAL \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[294]~29_combout\ : std_logic;
 SIGNAL \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_4~14_combout\ : std_logic;
 SIGNAL \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[319]~42_combout\ : std_logic;
+SIGNAL \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_4~12_combout\ : std_logic;
+SIGNAL \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[318]~43_combout\ : std_logic;
 SIGNAL \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_4~10_combout\ : std_logic;
 SIGNAL \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[317]~44_combout\ : std_logic;
 SIGNAL \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_4~8_combout\ : std_logic;
 SIGNAL \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[316]~45_combout\ : std_logic;
 SIGNAL \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_4~6_combout\ : std_logic;
-SIGNAL \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_3~4_combout\ : std_logic;
-SIGNAL \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[290]~33_combout\ : std_logic;
 SIGNAL \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[315]~46_combout\ : std_logic;
 SIGNAL \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_3~2_combout\ : std_logic;
 SIGNAL \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[289]~34_combout\ : std_logic;
-SIGNAL \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_4~4_combout\ : std_logic;
 SIGNAL \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[314]~47_combout\ : std_logic;
 SIGNAL \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_3~0_combout\ : std_logic;
 SIGNAL \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[288]~35_combout\ : std_logic;
@@ -1630,22 +1644,13 @@ SIGNAL \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|o
 SIGNAL \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[350]~50_combout\ : std_logic;
 SIGNAL \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_5~18_combout\ : std_logic;
 SIGNAL \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[345]~55_combout\ : std_logic;
-SIGNAL \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_4~12_combout\ : std_logic;
-SIGNAL \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[318]~43_combout\ : std_logic;
 SIGNAL \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_5~14_combout\ : std_logic;
 SIGNAL \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[343]~57_combout\ : std_logic;
-SIGNAL \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_5~12_combout\ : std_logic;
 SIGNAL \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[342]~58_combout\ : std_logic;
 SIGNAL \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_5~10_combout\ : std_logic;
 SIGNAL \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[341]~59_combout\ : std_logic;
-SIGNAL \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_5~8_combout\ : std_logic;
-SIGNAL \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[340]~60_combout\ : std_logic;
 SIGNAL \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_5~6_combout\ : std_logic;
 SIGNAL \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[339]~61_combout\ : std_logic;
-SIGNAL \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_5~2_combout\ : std_logic;
-SIGNAL \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_4~0_combout\ : std_logic;
-SIGNAL \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[312]~49_combout\ : std_logic;
-SIGNAL \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[337]~63_combout\ : std_logic;
 SIGNAL \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_6~1\ : std_logic;
 SIGNAL \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_6~3\ : std_logic;
 SIGNAL \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_6~5\ : std_logic;
@@ -1675,6 +1680,8 @@ SIGNAL \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|o
 SIGNAL \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[370]~70_combout\ : std_logic;
 SIGNAL \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_6~18_combout\ : std_logic;
 SIGNAL \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[369]~71_combout\ : std_logic;
+SIGNAL \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_6~10_combout\ : std_logic;
+SIGNAL \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[365]~75_combout\ : std_logic;
 SIGNAL \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_6~8_combout\ : std_logic;
 SIGNAL \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[364]~76_combout\ : std_logic;
 SIGNAL \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[338]~62_combout\ : std_logic;
@@ -1710,6 +1717,8 @@ SIGNAL \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|o
 SIGNAL \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[397]~84_combout\ : std_logic;
 SIGNAL \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_7~24_combout\ : std_logic;
 SIGNAL \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[396]~85_combout\ : std_logic;
+SIGNAL \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_7~22_combout\ : std_logic;
+SIGNAL \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[395]~86_combout\ : std_logic;
 SIGNAL \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_7~20_combout\ : std_logic;
 SIGNAL \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[394]~87_combout\ : std_logic;
 SIGNAL \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_7~16_combout\ : std_logic;
@@ -1754,8 +1763,6 @@ SIGNAL \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|o
 SIGNAL \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[423]~100_combout\ : std_logic;
 SIGNAL \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_8~26_combout\ : std_logic;
 SIGNAL \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[421]~102_combout\ : std_logic;
-SIGNAL \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_7~22_combout\ : std_logic;
-SIGNAL \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[395]~86_combout\ : std_logic;
 SIGNAL \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_8~24_combout\ : std_logic;
 SIGNAL \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[420]~103_combout\ : std_logic;
 SIGNAL \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_8~22_combout\ : std_logic;
@@ -1770,6 +1777,8 @@ SIGNAL \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|o
 SIGNAL \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[416]~107_combout\ : std_logic;
 SIGNAL \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_8~14_combout\ : std_logic;
 SIGNAL \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[415]~108_combout\ : std_logic;
+SIGNAL \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_8~6_combout\ : std_logic;
+SIGNAL \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[411]~112_combout\ : std_logic;
 SIGNAL \U_Ranger_Botom|timevector[6]~12_combout\ : std_logic;
 SIGNAL \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[408]~115_combout\ : std_logic;
 SIGNAL \U_Ranger_Botom|timevector[5]~10_combout\ : std_logic;
@@ -1790,10 +1799,10 @@ SIGNAL \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|o
 SIGNAL \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_9~29\ : std_logic;
 SIGNAL \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_9~31\ : std_logic;
 SIGNAL \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_9~33\ : std_logic;
+SIGNAL \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_9~34_combout\ : std_logic;
 SIGNAL \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_9~35\ : std_logic;
 SIGNAL \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_9~37\ : std_logic;
 SIGNAL \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_9~38_combout\ : std_logic;
-SIGNAL \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_9~34_combout\ : std_logic;
 SIGNAL \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[449]~117_combout\ : std_logic;
 SIGNAL \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_8~34_combout\ : std_logic;
 SIGNAL \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[425]~98_combout\ : std_logic;
@@ -1802,14 +1811,14 @@ SIGNAL \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|S
 SIGNAL \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_9~32_combout\ : std_logic;
 SIGNAL \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[448]~118_combout\ : std_logic;
 SIGNAL \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[445]~121_combout\ : std_logic;
-SIGNAL \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_9~24_combout\ : std_logic;
-SIGNAL \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[444]~122_combout\ : std_logic;
 SIGNAL \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_9~22_combout\ : std_logic;
 SIGNAL \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[443]~123_combout\ : std_logic;
 SIGNAL \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_9~20_combout\ : std_logic;
 SIGNAL \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_8~18_combout\ : std_logic;
 SIGNAL \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[417]~106_combout\ : std_logic;
 SIGNAL \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[442]~124_combout\ : std_logic;
+SIGNAL \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_9~18_combout\ : std_logic;
+SIGNAL \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[441]~125_combout\ : std_logic;
 SIGNAL \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_9~16_combout\ : std_logic;
 SIGNAL \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[440]~126_combout\ : std_logic;
 SIGNAL \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_9~14_combout\ : std_logic;
@@ -1818,7 +1827,6 @@ SIGNAL \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|o
 SIGNAL \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[437]~129_combout\ : std_logic;
 SIGNAL \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_8~4_combout\ : std_logic;
 SIGNAL \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[410]~113_combout\ : std_logic;
-SIGNAL \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_9~6_combout\ : std_logic;
 SIGNAL \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[435]~131_combout\ : std_logic;
 SIGNAL \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_8~2_combout\ : std_logic;
 SIGNAL \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[409]~114_combout\ : std_logic;
@@ -1860,15 +1868,10 @@ SIGNAL \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|o
 SIGNAL \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[469]~141_combout\ : std_logic;
 SIGNAL \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_10~24_combout\ : std_logic;
 SIGNAL \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[468]~142_combout\ : std_logic;
-SIGNAL \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_9~18_combout\ : std_logic;
-SIGNAL \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[441]~125_combout\ : std_logic;
-SIGNAL \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_10~20_combout\ : std_logic;
-SIGNAL \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[466]~144_combout\ : std_logic;
 SIGNAL \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_10~18_combout\ : std_logic;
 SIGNAL \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[465]~145_combout\ : std_logic;
 SIGNAL \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_9~12_combout\ : std_logic;
 SIGNAL \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[438]~128_combout\ : std_logic;
-SIGNAL \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_10~14_combout\ : std_logic;
 SIGNAL \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[463]~147_combout\ : std_logic;
 SIGNAL \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_9~8_combout\ : std_logic;
 SIGNAL \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[436]~130_combout\ : std_logic;
@@ -1935,9 +1938,9 @@ SIGNAL \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|o
 SIGNAL \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[491]~164_combout\ : std_logic;
 SIGNAL \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_12~16_combout\ : std_logic;
 SIGNAL \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[488]~167_combout\ : std_logic;
+SIGNAL \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_12~14_combout\ : std_logic;
 SIGNAL \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_10~12_combout\ : std_logic;
 SIGNAL \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[462]~148_combout\ : std_logic;
-SIGNAL \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_12~14_combout\ : std_logic;
 SIGNAL \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[487]~168_combout\ : std_logic;
 SIGNAL \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_10~8_combout\ : std_logic;
 SIGNAL \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[460]~150_combout\ : std_logic;
@@ -1966,13 +1969,11 @@ SIGNAL \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|o
 SIGNAL \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_13~37\ : std_logic;
 SIGNAL \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_13~39\ : std_logic;
 SIGNAL \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_13~40_combout\ : std_logic;
-SIGNAL \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_12~40_combout\ : std_logic;
-SIGNAL \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[500]~155_combout\ : std_logic;
+SIGNAL \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[524]~177_combout\ : std_logic;
+SIGNAL \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_13~36_combout\ : std_logic;
 SIGNAL \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_13~41\ : std_logic;
 SIGNAL \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_13~43\ : std_logic;
 SIGNAL \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_13~44_combout\ : std_logic;
-SIGNAL \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[524]~177_combout\ : std_logic;
-SIGNAL \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_13~36_combout\ : std_logic;
 SIGNAL \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[522]~179_combout\ : std_logic;
 SIGNAL \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_13~32_combout\ : std_logic;
 SIGNAL \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[520]~181_combout\ : std_logic;
@@ -2024,8 +2025,6 @@ SIGNAL \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|o
 SIGNAL \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_14~43\ : std_logic;
 SIGNAL \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_14~45\ : std_logic;
 SIGNAL \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_14~46_combout\ : std_logic;
-SIGNAL \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_13~42_combout\ : std_logic;
-SIGNAL \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[525]~176_combout\ : std_logic;
 SIGNAL \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_14~44_combout\ : std_logic;
 SIGNAL \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[550]~220_combout\ : std_logic;
 SIGNAL \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_14~42_combout\ : std_logic;
@@ -2034,6 +2033,8 @@ SIGNAL \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|o
 SIGNAL \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[523]~178_combout\ : std_logic;
 SIGNAL \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_14~40_combout\ : std_logic;
 SIGNAL \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[548]~214_combout\ : std_logic;
+SIGNAL \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_14~38_combout\ : std_logic;
+SIGNAL \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[547]~215_combout\ : std_logic;
 SIGNAL \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[543]~213_combout\ : std_logic;
 SIGNAL \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_14~28_combout\ : std_logic;
 SIGNAL \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[542]~212_combout\ : std_logic;
@@ -2049,6 +2050,7 @@ SIGNAL \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|o
 SIGNAL \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[532]~205_combout\ : std_logic;
 SIGNAL \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_14~6_combout\ : std_logic;
 SIGNAL \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[531]~206_combout\ : std_logic;
+SIGNAL \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_14~4_combout\ : std_logic;
 SIGNAL \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[530]~207_combout\ : std_logic;
 SIGNAL \U_Ranger_Botom|timevector[1]~2_combout\ : std_logic;
 SIGNAL \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_14~0_combout\ : std_logic;
@@ -2261,26 +2263,26 @@ SIGNAL \U_Motor_4|LessThan0~13_cout\ : std_logic;
 SIGNAL \U_Motor_4|LessThan0~14_combout\ : std_logic;
 SIGNAL \U_Motor_4|LessThan0~16_combout\ : std_logic;
 SIGNAL \U_Motor_4|pwm~regout\ : std_logic;
+SIGNAL \U_Ranger_Top|edgeend\ : std_logic_vector(23 DOWNTO 0);
+SIGNAL \U_RegTR|tmp\ : std_logic_vector(7 DOWNTO 0);
+SIGNAL \U_Registers|RegMisc|tmp\ : std_logic_vector(7 DOWNTO 0);
+SIGNAL \U_Registers|RegZM|tmp\ : std_logic_vector(7 DOWNTO 0);
+SIGNAL \U_Registers|RegXM|tmp\ : std_logic_vector(7 DOWNTO 0);
+SIGNAL \U_Registers|RegYD|tmp\ : std_logic_vector(7 DOWNTO 0);
+SIGNAL \U_Ranger_Botom|edgeend\ : std_logic_vector(23 DOWNTO 0);
+SIGNAL \U_Ranger_Botom|count\ : std_logic_vector(23 DOWNTO 0);
+SIGNAL \U_Ranger_Botom|edgebegin\ : std_logic_vector(23 DOWNTO 0);
 SIGNAL \Switch_1~combout\ : std_logic_vector(3 DOWNTO 0);
 SIGNAL \U_Registers|RegXD|tmp\ : std_logic_vector(7 DOWNTO 0);
 SIGNAL \U_Registers|RegAdd|tmp\ : std_logic_vector(7 DOWNTO 0);
 SIGNAL \U_Motor_1|clockcount\ : std_logic_vector(6 DOWNTO 0);
 SIGNAL \U_Motor_1|pulsecount\ : std_logic_vector(11 DOWNTO 0);
 SIGNAL \U_Ranger_Top|edgebegin\ : std_logic_vector(23 DOWNTO 0);
-SIGNAL \U_Ranger_Top|edgeend\ : std_logic_vector(23 DOWNTO 0);
 SIGNAL \U_1HzClkDivider|cnt\ : std_logic_vector(22 DOWNTO 0);
-SIGNAL \U_RegTR|tmp\ : std_logic_vector(7 DOWNTO 0);
 SIGNAL \U_RegAM|tmp\ : std_logic_vector(7 DOWNTO 0);
-SIGNAL \U_Registers|RegMisc|tmp\ : std_logic_vector(7 DOWNTO 0);
 SIGNAL \U_Registers|RegAD|tmp\ : std_logic_vector(7 DOWNTO 0);
-SIGNAL \U_Registers|RegZM|tmp\ : std_logic_vector(7 DOWNTO 0);
 SIGNAL \U_Registers|RegYM|tmp\ : std_logic_vector(7 DOWNTO 0);
-SIGNAL \U_Registers|RegXM|tmp\ : std_logic_vector(7 DOWNTO 0);
 SIGNAL \U_Registers|RegZD|tmp\ : std_logic_vector(7 DOWNTO 0);
-SIGNAL \U_Registers|RegYD|tmp\ : std_logic_vector(7 DOWNTO 0);
-SIGNAL \U_Ranger_Botom|edgeend\ : std_logic_vector(23 DOWNTO 0);
-SIGNAL \U_Ranger_Botom|count\ : std_logic_vector(23 DOWNTO 0);
-SIGNAL \U_Ranger_Botom|edgebegin\ : std_logic_vector(23 DOWNTO 0);
 
 BEGIN
 
@@ -2397,6 +2399,26 @@ PORT MAP (
 	combout => \U_Ranger_Top|timevector[8]~16_combout\,
 	cout => \U_Ranger_Top|timevector[8]~17\);
 
+-- Location: LCCOMB_X14_Y10_N26
+\U_Ranger_Top|timevector[9]~18\ : cycloneii_lcell_comb
+-- Equation(s):
+-- \U_Ranger_Top|timevector[9]~18_combout\ = (\U_Ranger_Top|edgebegin\(9) & ((\U_Ranger_Top|edgeend\(9) & (!\U_Ranger_Top|timevector[8]~17\)) # (!\U_Ranger_Top|edgeend\(9) & ((\U_Ranger_Top|timevector[8]~17\) # (GND))))) # (!\U_Ranger_Top|edgebegin\(9) & 
+-- ((\U_Ranger_Top|edgeend\(9) & (\U_Ranger_Top|timevector[8]~17\ & VCC)) # (!\U_Ranger_Top|edgeend\(9) & (!\U_Ranger_Top|timevector[8]~17\))))
+-- \U_Ranger_Top|timevector[9]~19\ = CARRY((\U_Ranger_Top|edgebegin\(9) & ((!\U_Ranger_Top|timevector[8]~17\) # (!\U_Ranger_Top|edgeend\(9)))) # (!\U_Ranger_Top|edgebegin\(9) & (!\U_Ranger_Top|edgeend\(9) & !\U_Ranger_Top|timevector[8]~17\)))
+
+-- pragma translate_off
+GENERIC MAP (
+	lut_mask => "0110100100101011",
+	sum_lutc_input => "cin")
+-- pragma translate_on
+PORT MAP (
+	dataa => \U_Ranger_Top|edgebegin\(9),
+	datab => \U_Ranger_Top|edgeend\(9),
+	datad => VCC,
+	cin => \U_Ranger_Top|timevector[8]~17\,
+	combout => \U_Ranger_Top|timevector[9]~18_combout\,
+	cout => \U_Ranger_Top|timevector[9]~19\);
+
 -- Location: LCCOMB_X14_Y9_N0
 \U_Ranger_Top|timevector[12]~24\ : cycloneii_lcell_comb
 -- Equation(s):
@@ -2415,25 +2437,6 @@ PORT MAP (
 	cin => \U_Ranger_Top|timevector[11]~23\,
 	combout => \U_Ranger_Top|timevector[12]~24_combout\,
 	cout => \U_Ranger_Top|timevector[12]~25\);
-
--- Location: LCCOMB_X14_Y9_N4
-\U_Ranger_Top|timevector[14]~28\ : cycloneii_lcell_comb
--- Equation(s):
--- \U_Ranger_Top|timevector[14]~28_combout\ = ((\U_Ranger_Top|edgebegin\(14) $ (\U_Ranger_Top|edgeend\(14) $ (\U_Ranger_Top|timevector[13]~27\)))) # (GND)
--- \U_Ranger_Top|timevector[14]~29\ = CARRY((\U_Ranger_Top|edgebegin\(14) & (\U_Ranger_Top|edgeend\(14) & !\U_Ranger_Top|timevector[13]~27\)) # (!\U_Ranger_Top|edgebegin\(14) & ((\U_Ranger_Top|edgeend\(14)) # (!\U_Ranger_Top|timevector[13]~27\))))
-
--- pragma translate_off
-GENERIC MAP (
-	lut_mask => "1001011001001101",
-	sum_lutc_input => "cin")
--- pragma translate_on
-PORT MAP (
-	dataa => \U_Ranger_Top|edgebegin\(14),
-	datab => \U_Ranger_Top|edgeend\(14),
-	datad => VCC,
-	cin => \U_Ranger_Top|timevector[13]~27\,
-	combout => \U_Ranger_Top|timevector[14]~28_combout\,
-	cout => \U_Ranger_Top|timevector[14]~29\);
 
 -- Location: LCCOMB_X14_Y9_N20
 \U_Ranger_Top|timevector[22]~44\ : cycloneii_lcell_comb
@@ -2489,6 +2492,27 @@ PORT MAP (
 	combout => \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_1~4_combout\,
 	cout => \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_1~5\);
 
+-- Location: LCCOMB_X14_Y6_N10
+\U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_2~8\ : cycloneii_lcell_comb
+-- Equation(s):
+-- \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_2~8_combout\ = (\U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[243]~7_combout\ & ((GND) # 
+-- (!\U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_2~7\))) # (!\U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[243]~7_combout\ & 
+-- (\U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_2~7\ $ (GND)))
+-- \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_2~9\ = CARRY((\U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[243]~7_combout\) # 
+-- (!\U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_2~7\))
+
+-- pragma translate_off
+GENERIC MAP (
+	lut_mask => "0011110011001111",
+	sum_lutc_input => "cin")
+-- pragma translate_on
+PORT MAP (
+	datab => \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[243]~7_combout\,
+	datad => VCC,
+	cin => \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_2~7\,
+	combout => \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_2~8_combout\,
+	cout => \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_2~9\);
+
 -- Location: LCCOMB_X12_Y6_N6
 \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_3~2\ : cycloneii_lcell_comb
 -- Equation(s):
@@ -2500,24 +2524,24 @@ PORT MAP (
 
 -- pragma translate_off
 GENERIC MAP (
-	lut_mask => "1100001100000011",
+	lut_mask => "1010010100000101",
 	sum_lutc_input => "cin")
 -- pragma translate_on
 PORT MAP (
-	datab => \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[264]~22_combout\,
+	dataa => \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[264]~22_combout\,
 	datad => VCC,
 	cin => \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_3~1\,
 	combout => \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_3~2_combout\,
 	cout => \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_3~3\);
 
--- Location: LCCOMB_X12_Y6_N12
-\U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_3~8\ : cycloneii_lcell_comb
+-- Location: LCCOMB_X12_Y6_N8
+\U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_3~4\ : cycloneii_lcell_comb
 -- Equation(s):
--- \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_3~8_combout\ = (\U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[267]~19_combout\ & ((GND) # 
--- (!\U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_3~7\))) # (!\U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[267]~19_combout\ & 
--- (\U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_3~7\ $ (GND)))
--- \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_3~9\ = CARRY((\U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[267]~19_combout\) # 
--- (!\U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_3~7\))
+-- \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_3~4_combout\ = (\U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[265]~21_combout\ & ((GND) # 
+-- (!\U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_3~3\))) # (!\U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[265]~21_combout\ & 
+-- (\U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_3~3\ $ (GND)))
+-- \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_3~5\ = CARRY((\U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[265]~21_combout\) # 
+-- (!\U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_3~3\))
 
 -- pragma translate_off
 GENERIC MAP (
@@ -2525,11 +2549,32 @@ GENERIC MAP (
 	sum_lutc_input => "cin")
 -- pragma translate_on
 PORT MAP (
-	datab => \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[267]~19_combout\,
+	datab => \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[265]~21_combout\,
 	datad => VCC,
-	cin => \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_3~7\,
-	combout => \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_3~8_combout\,
-	cout => \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_3~9\);
+	cin => \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_3~3\,
+	combout => \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_3~4_combout\,
+	cout => \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_3~5\);
+
+-- Location: LCCOMB_X12_Y6_N16
+\U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_3~12\ : cycloneii_lcell_comb
+-- Equation(s):
+-- \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_3~12_combout\ = (\U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[269]~17_combout\ & 
+-- (\U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_3~11\ $ (GND))) # (!\U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[269]~17_combout\ & 
+-- (!\U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_3~11\ & VCC))
+-- \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_3~13\ = CARRY((\U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[269]~17_combout\ & 
+-- !\U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_3~11\))
+
+-- pragma translate_off
+GENERIC MAP (
+	lut_mask => "1100001100001100",
+	sum_lutc_input => "cin")
+-- pragma translate_on
+PORT MAP (
+	datab => \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[269]~17_combout\,
+	datad => VCC,
+	cin => \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_3~11\,
+	combout => \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_3~12_combout\,
+	cout => \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_3~13\);
 
 -- Location: LCCOMB_X12_Y6_N20
 \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_3~16\ : cycloneii_lcell_comb
@@ -2572,6 +2617,27 @@ PORT MAP (
 	cin => \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_3~17\,
 	combout => \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_3~18_combout\,
 	cout => \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_3~19\);
+
+-- Location: LCCOMB_X12_Y6_N24
+\U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_3~20\ : cycloneii_lcell_comb
+-- Equation(s):
+-- \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_3~20_combout\ = (\U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[273]~13_combout\ & 
+-- (\U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_3~19\ $ (GND))) # (!\U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[273]~13_combout\ & 
+-- (!\U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_3~19\ & VCC))
+-- \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_3~21\ = CARRY((\U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[273]~13_combout\ & 
+-- !\U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_3~19\))
+
+-- pragma translate_off
+GENERIC MAP (
+	lut_mask => "1100001100001100",
+	sum_lutc_input => "cin")
+-- pragma translate_on
+PORT MAP (
+	datab => \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[273]~13_combout\,
+	datad => VCC,
+	cin => \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_3~19\,
+	combout => \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_3~20_combout\,
+	cout => \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_3~21\);
 
 -- Location: LCCOMB_X12_Y5_N22
 \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_4~20\ : cycloneii_lcell_comb
@@ -2670,6 +2736,27 @@ PORT MAP (
 	combout => \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_6~0_combout\,
 	cout => \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_6~1\);
 
+-- Location: LCCOMB_X12_Y8_N18
+\U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_6~2\ : cycloneii_lcell_comb
+-- Equation(s):
+-- \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_6~2_combout\ = (\U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[336]~64_combout\ & 
+-- (\U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_6~1\ & VCC)) # (!\U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[336]~64_combout\ & 
+-- (!\U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_6~1\))
+-- \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_6~3\ = CARRY((!\U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[336]~64_combout\ & 
+-- !\U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_6~1\))
+
+-- pragma translate_off
+GENERIC MAP (
+	lut_mask => "1010010100000101",
+	sum_lutc_input => "cin")
+-- pragma translate_on
+PORT MAP (
+	dataa => \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[336]~64_combout\,
+	datad => VCC,
+	cin => \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_6~1\,
+	combout => \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_6~2_combout\,
+	cout => \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_6~3\);
+
 -- Location: LCCOMB_X12_Y7_N0
 \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_6~16\ : cycloneii_lcell_comb
 -- Equation(s):
@@ -2712,6 +2799,27 @@ PORT MAP (
 	combout => \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_7~2_combout\,
 	cout => \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_7~3\);
 
+-- Location: LCCOMB_X13_Y8_N18
+\U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_7~4\ : cycloneii_lcell_comb
+-- Equation(s):
+-- \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_7~4_combout\ = (\U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[361]~79_combout\ & ((GND) # 
+-- (!\U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_7~3\))) # (!\U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[361]~79_combout\ & 
+-- (\U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_7~3\ $ (GND)))
+-- \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_7~5\ = CARRY((\U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[361]~79_combout\) # 
+-- (!\U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_7~3\))
+
+-- pragma translate_off
+GENERIC MAP (
+	lut_mask => "0101101010101111",
+	sum_lutc_input => "cin")
+-- pragma translate_on
+PORT MAP (
+	dataa => \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[361]~79_combout\,
+	datad => VCC,
+	cin => \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_7~3\,
+	combout => \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_7~4_combout\,
+	cout => \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_7~5\);
+
 -- Location: LCCOMB_X13_Y7_N2
 \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_7~20\ : cycloneii_lcell_comb
 -- Equation(s):
@@ -2732,6 +2840,27 @@ PORT MAP (
 	cin => \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_7~19\,
 	combout => \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_7~20_combout\,
 	cout => \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_7~21\);
+
+-- Location: LCCOMB_X13_Y7_N10
+\U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_7~28\ : cycloneii_lcell_comb
+-- Equation(s):
+-- \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_7~28_combout\ = (\U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[373]~67_combout\ & ((GND) # 
+-- (!\U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_7~27\))) # (!\U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[373]~67_combout\ & 
+-- (\U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_7~27\ $ (GND)))
+-- \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_7~29\ = CARRY((\U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[373]~67_combout\) # 
+-- (!\U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_7~27\))
+
+-- pragma translate_off
+GENERIC MAP (
+	lut_mask => "0011110011001111",
+	sum_lutc_input => "cin")
+-- pragma translate_on
+PORT MAP (
+	datab => \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[373]~67_combout\,
+	datad => VCC,
+	cin => \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_7~27\,
+	combout => \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_7~28_combout\,
+	cout => \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_7~29\);
 
 -- Location: LCCOMB_X13_Y7_N12
 \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_7~30\ : cycloneii_lcell_comb
@@ -2838,6 +2967,27 @@ PORT MAP (
 	combout => \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_8~20_combout\,
 	cout => \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_8~21\);
 
+-- Location: LCCOMB_X14_Y7_N4
+\U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_8~22\ : cycloneii_lcell_comb
+-- Equation(s):
+-- \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_8~22_combout\ = (\U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[394]~87_combout\ & 
+-- (\U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_8~21\ & VCC)) # (!\U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[394]~87_combout\ & 
+-- (!\U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_8~21\))
+-- \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_8~23\ = CARRY((!\U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[394]~87_combout\ & 
+-- !\U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_8~21\))
+
+-- pragma translate_off
+GENERIC MAP (
+	lut_mask => "1010010100000101",
+	sum_lutc_input => "cin")
+-- pragma translate_on
+PORT MAP (
+	dataa => \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[394]~87_combout\,
+	datad => VCC,
+	cin => \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_8~21\,
+	combout => \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_8~22_combout\,
+	cout => \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_8~23\);
+
 -- Location: LCCOMB_X14_Y7_N12
 \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_8~30\ : cycloneii_lcell_comb
 -- Equation(s):
@@ -2922,27 +3072,6 @@ PORT MAP (
 	combout => \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_9~22_combout\,
 	cout => \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_9~23\);
 
--- Location: LCCOMB_X15_Y9_N12
-\U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_9~32\ : cycloneii_lcell_comb
--- Equation(s):
--- \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_9~32_combout\ = (\U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[423]~100_combout\ & ((GND) # 
--- (!\U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_9~31\))) # (!\U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[423]~100_combout\ & 
--- (\U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_9~31\ $ (GND)))
--- \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_9~33\ = CARRY((\U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[423]~100_combout\) # 
--- (!\U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_9~31\))
-
--- pragma translate_off
-GENERIC MAP (
-	lut_mask => "0011110011001111",
-	sum_lutc_input => "cin")
--- pragma translate_on
-PORT MAP (
-	datab => \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[423]~100_combout\,
-	datad => VCC,
-	cin => \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_9~31\,
-	combout => \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_9~32_combout\,
-	cout => \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_9~33\);
-
 -- Location: LCCOMB_X15_Y9_N16
 \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_9~36\ : cycloneii_lcell_comb
 -- Equation(s):
@@ -3002,48 +3131,6 @@ PORT MAP (
 	combout => \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_10~10_combout\,
 	cout => \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_10~11\);
 
--- Location: LCCOMB_X16_Y9_N14
-\U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_10~34\ : cycloneii_lcell_comb
--- Equation(s):
--- \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_10~34_combout\ = (\U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[448]~118_combout\ & 
--- (\U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_10~33\ & VCC)) # (!\U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[448]~118_combout\ & 
--- (!\U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_10~33\))
--- \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_10~35\ = CARRY((!\U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[448]~118_combout\ & 
--- !\U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_10~33\))
-
--- pragma translate_off
-GENERIC MAP (
-	lut_mask => "1010010100000101",
-	sum_lutc_input => "cin")
--- pragma translate_on
-PORT MAP (
-	dataa => \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[448]~118_combout\,
-	datad => VCC,
-	cin => \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_10~33\,
-	combout => \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_10~34_combout\,
-	cout => \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_10~35\);
-
--- Location: LCCOMB_X16_Y9_N18
-\U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_10~38\ : cycloneii_lcell_comb
--- Equation(s):
--- \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_10~38_combout\ = (\U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[450]~116_combout\ & 
--- (\U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_10~37\ & VCC)) # (!\U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[450]~116_combout\ & 
--- (!\U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_10~37\))
--- \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_10~39\ = CARRY((!\U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[450]~116_combout\ & 
--- !\U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_10~37\))
-
--- pragma translate_off
-GENERIC MAP (
-	lut_mask => "1010010100000101",
-	sum_lutc_input => "cin")
--- pragma translate_on
-PORT MAP (
-	dataa => \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[450]~116_combout\,
-	datad => VCC,
-	cin => \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_10~37\,
-	combout => \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_10~38_combout\,
-	cout => \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_10~39\);
-
 -- Location: LCCOMB_X16_Y7_N0
 \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_12~22\ : cycloneii_lcell_comb
 -- Equation(s):
@@ -3085,27 +3172,6 @@ PORT MAP (
 	cin => \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_12~25\,
 	combout => \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_12~26_combout\,
 	cout => \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_12~27\);
-
--- Location: LCCOMB_X16_Y7_N10
-\U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_12~32\ : cycloneii_lcell_comb
--- Equation(s):
--- \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_12~32_combout\ = (\U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[471]~139_combout\ & ((GND) # 
--- (!\U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_12~31\))) # (!\U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[471]~139_combout\ & 
--- (\U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_12~31\ $ (GND)))
--- \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_12~33\ = CARRY((\U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[471]~139_combout\) # 
--- (!\U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_12~31\))
-
--- pragma translate_off
-GENERIC MAP (
-	lut_mask => "0011110011001111",
-	sum_lutc_input => "cin")
--- pragma translate_on
-PORT MAP (
-	datab => \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[471]~139_combout\,
-	datad => VCC,
-	cin => \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_12~31\,
-	combout => \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_12~32_combout\,
-	cout => \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_12~33\);
 
 -- Location: LCCOMB_X17_Y8_N10
 \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_13~0\ : cycloneii_lcell_comb
@@ -3165,6 +3231,27 @@ PORT MAP (
 	cin => \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_13~21\,
 	combout => \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_13~22_combout\,
 	cout => \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_13~23\);
+
+-- Location: LCCOMB_X17_Y7_N8
+\U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_13~30\ : cycloneii_lcell_comb
+-- Equation(s):
+-- \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_13~30_combout\ = (\U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[494]~161_combout\ & 
+-- (\U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_13~29\ & VCC)) # (!\U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[494]~161_combout\ & 
+-- (!\U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_13~29\))
+-- \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_13~31\ = CARRY((!\U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[494]~161_combout\ & 
+-- !\U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_13~29\))
+
+-- pragma translate_off
+GENERIC MAP (
+	lut_mask => "1100001100000011",
+	sum_lutc_input => "cin")
+-- pragma translate_on
+PORT MAP (
+	datab => \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[494]~161_combout\,
+	datad => VCC,
+	cin => \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_13~29\,
+	combout => \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_13~30_combout\,
+	cout => \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_13~31\);
 
 -- Location: LCCOMB_X19_Y8_N8
 \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_14~0\ : cycloneii_lcell_comb
@@ -3287,6 +3374,48 @@ PORT MAP (
 	cin => \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_14~27\,
 	combout => \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_14~28_combout\,
 	cout => \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_14~29\);
+
+-- Location: LCCOMB_X19_Y7_N8
+\U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_14~32\ : cycloneii_lcell_comb
+-- Equation(s):
+-- \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_14~32_combout\ = (\U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[519]~182_combout\ & ((GND) # 
+-- (!\U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_14~31\))) # (!\U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[519]~182_combout\ & 
+-- (\U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_14~31\ $ (GND)))
+-- \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_14~33\ = CARRY((\U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[519]~182_combout\) # 
+-- (!\U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_14~31\))
+
+-- pragma translate_off
+GENERIC MAP (
+	lut_mask => "0101101010101111",
+	sum_lutc_input => "cin")
+-- pragma translate_on
+PORT MAP (
+	dataa => \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[519]~182_combout\,
+	datad => VCC,
+	cin => \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_14~31\,
+	combout => \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_14~32_combout\,
+	cout => \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_14~33\);
+
+-- Location: LCCOMB_X19_Y7_N14
+\U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_14~38\ : cycloneii_lcell_comb
+-- Equation(s):
+-- \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_14~38_combout\ = (\U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[522]~179_combout\ & 
+-- (\U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_14~37\ & VCC)) # (!\U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[522]~179_combout\ & 
+-- (!\U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_14~37\))
+-- \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_14~39\ = CARRY((!\U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[522]~179_combout\ & 
+-- !\U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_14~37\))
+
+-- pragma translate_off
+GENERIC MAP (
+	lut_mask => "1100001100000011",
+	sum_lutc_input => "cin")
+-- pragma translate_on
+PORT MAP (
+	datab => \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[522]~179_combout\,
+	datad => VCC,
+	cin => \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_14~37\,
+	combout => \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_14~38_combout\,
+	cout => \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_14~39\);
 
 -- Location: LCCOMB_X19_Y11_N8
 \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_15~0\ : cycloneii_lcell_comb
@@ -3702,26 +3831,6 @@ PORT MAP (
 	combout => \U_Ranger_Botom|timevector[17]~34_combout\,
 	cout => \U_Ranger_Botom|timevector[17]~35\);
 
--- Location: LCCOMB_X12_Y11_N12
-\U_Ranger_Botom|timevector[18]~36\ : cycloneii_lcell_comb
--- Equation(s):
--- \U_Ranger_Botom|timevector[18]~36_combout\ = ((\U_Ranger_Botom|edgeend\(18) $ (\U_Ranger_Botom|edgebegin\(18) $ (\U_Ranger_Botom|timevector[17]~35\)))) # (GND)
--- \U_Ranger_Botom|timevector[18]~37\ = CARRY((\U_Ranger_Botom|edgeend\(18) & ((!\U_Ranger_Botom|timevector[17]~35\) # (!\U_Ranger_Botom|edgebegin\(18)))) # (!\U_Ranger_Botom|edgeend\(18) & (!\U_Ranger_Botom|edgebegin\(18) & 
--- !\U_Ranger_Botom|timevector[17]~35\)))
-
--- pragma translate_off
-GENERIC MAP (
-	lut_mask => "1001011000101011",
-	sum_lutc_input => "cin")
--- pragma translate_on
-PORT MAP (
-	dataa => \U_Ranger_Botom|edgeend\(18),
-	datab => \U_Ranger_Botom|edgebegin\(18),
-	datad => VCC,
-	cin => \U_Ranger_Botom|timevector[17]~35\,
-	combout => \U_Ranger_Botom|timevector[18]~36_combout\,
-	cout => \U_Ranger_Botom|timevector[18]~37\);
-
 -- Location: LCCOMB_X12_Y11_N20
 \U_Ranger_Botom|timevector[22]~44\ : cycloneii_lcell_comb
 -- Equation(s):
@@ -3818,26 +3927,26 @@ PORT MAP (
 	combout => \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_2~4_combout\,
 	cout => \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_2~5\);
 
--- Location: LCCOMB_X15_Y11_N12
-\U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_2~6\ : cycloneii_lcell_comb
+-- Location: LCCOMB_X15_Y11_N14
+\U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_2~8\ : cycloneii_lcell_comb
 -- Equation(s):
--- \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_2~6_combout\ = (\U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[242]~8_combout\ & 
--- (!\U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_2~5\)) # (!\U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[242]~8_combout\ & 
--- ((\U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_2~5\) # (GND)))
--- \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_2~7\ = CARRY((!\U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_2~5\) # 
--- (!\U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[242]~8_combout\))
+-- \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_2~8_combout\ = (\U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[243]~7_combout\ & ((GND) # 
+-- (!\U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_2~7\))) # (!\U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[243]~7_combout\ & 
+-- (\U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_2~7\ $ (GND)))
+-- \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_2~9\ = CARRY((\U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[243]~7_combout\) # 
+-- (!\U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_2~7\))
 
 -- pragma translate_off
 GENERIC MAP (
-	lut_mask => "0011110000111111",
+	lut_mask => "0101101010101111",
 	sum_lutc_input => "cin")
 -- pragma translate_on
 PORT MAP (
-	datab => \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[242]~8_combout\,
+	dataa => \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[243]~7_combout\,
 	datad => VCC,
-	cin => \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_2~5\,
-	combout => \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_2~6_combout\,
-	cout => \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_2~7\);
+	cin => \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_2~7\,
+	combout => \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_2~8_combout\,
+	cout => \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_2~9\);
 
 -- Location: LCCOMB_X15_Y11_N22
 \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_2~16\ : cycloneii_lcell_comb
@@ -3850,15 +3959,57 @@ PORT MAP (
 
 -- pragma translate_off
 GENERIC MAP (
-	lut_mask => "1100001100001100",
+	lut_mask => "1010010100001010",
 	sum_lutc_input => "cin")
 -- pragma translate_on
 PORT MAP (
-	datab => \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[247]~3_combout\,
+	dataa => \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[247]~3_combout\,
 	datad => VCC,
 	cin => \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_2~15\,
 	combout => \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_2~16_combout\,
 	cout => \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_2~17\);
+
+-- Location: LCCOMB_X15_Y13_N14
+\U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_3~10\ : cycloneii_lcell_comb
+-- Equation(s):
+-- \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_3~10_combout\ = (\U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[268]~18_combout\ & 
+-- (\U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_3~9\ & VCC)) # (!\U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[268]~18_combout\ & 
+-- (!\U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_3~9\))
+-- \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_3~11\ = CARRY((!\U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[268]~18_combout\ & 
+-- !\U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_3~9\))
+
+-- pragma translate_off
+GENERIC MAP (
+	lut_mask => "1010010100000101",
+	sum_lutc_input => "cin")
+-- pragma translate_on
+PORT MAP (
+	dataa => \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[268]~18_combout\,
+	datad => VCC,
+	cin => \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_3~9\,
+	combout => \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_3~10_combout\,
+	cout => \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_3~11\);
+
+-- Location: LCCOMB_X15_Y13_N24
+\U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_3~20\ : cycloneii_lcell_comb
+-- Equation(s):
+-- \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_3~20_combout\ = (\U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[273]~13_combout\ & 
+-- (\U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_3~19\ $ (GND))) # (!\U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[273]~13_combout\ & 
+-- (!\U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_3~19\ & VCC))
+-- \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_3~21\ = CARRY((\U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[273]~13_combout\ & 
+-- !\U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_3~19\))
+
+-- pragma translate_off
+GENERIC MAP (
+	lut_mask => "1100001100001100",
+	sum_lutc_input => "cin")
+-- pragma translate_on
+PORT MAP (
+	datab => \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[273]~13_combout\,
+	datad => VCC,
+	cin => \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_3~19\,
+	combout => \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_3~20_combout\,
+	cout => \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_3~21\);
 
 -- Location: LCCOMB_X15_Y13_N28
 \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_3~24\ : cycloneii_lcell_comb
@@ -3880,6 +4031,44 @@ PORT MAP (
 	cin => \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_3~23\,
 	combout => \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_3~24_combout\,
 	cout => \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_3~25\);
+
+-- Location: LCCOMB_X15_Y12_N0
+\U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_4~0\ : cycloneii_lcell_comb
+-- Equation(s):
+-- \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_4~0_combout\ = \U_Ranger_Botom|timevector[10]~20_combout\ $ (VCC)
+-- \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_4~1\ = CARRY(\U_Ranger_Botom|timevector[10]~20_combout\)
+
+-- pragma translate_off
+GENERIC MAP (
+	lut_mask => "0011001111001100",
+	sum_lutc_input => "datac")
+-- pragma translate_on
+PORT MAP (
+	datab => \U_Ranger_Botom|timevector[10]~20_combout\,
+	datad => VCC,
+	combout => \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_4~0_combout\,
+	cout => \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_4~1\);
+
+-- Location: LCCOMB_X15_Y12_N4
+\U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_4~4\ : cycloneii_lcell_comb
+-- Equation(s):
+-- \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_4~4_combout\ = (\U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[289]~34_combout\ & ((GND) # 
+-- (!\U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_4~3\))) # (!\U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[289]~34_combout\ & 
+-- (\U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_4~3\ $ (GND)))
+-- \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_4~5\ = CARRY((\U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[289]~34_combout\) # 
+-- (!\U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_4~3\))
+
+-- pragma translate_off
+GENERIC MAP (
+	lut_mask => "0101101010101111",
+	sum_lutc_input => "cin")
+-- pragma translate_on
+PORT MAP (
+	dataa => \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[289]~34_combout\,
+	datad => VCC,
+	cin => \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_4~3\,
+	combout => \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_4~4_combout\,
+	cout => \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_4~5\);
 
 -- Location: LCCOMB_X15_Y12_N16
 \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_4~16\ : cycloneii_lcell_comb
@@ -3913,11 +4102,11 @@ PORT MAP (
 
 -- pragma translate_off
 GENERIC MAP (
-	lut_mask => "1100001100000011",
+	lut_mask => "1010010100000101",
 	sum_lutc_input => "cin")
 -- pragma translate_on
 PORT MAP (
-	datab => \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[298]~25_combout\,
+	dataa => \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[298]~25_combout\,
 	datad => VCC,
 	cin => \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_4~21\,
 	combout => \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_4~22_combout\,
@@ -3940,6 +4129,27 @@ PORT MAP (
 	combout => \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_5~0_combout\,
 	cout => \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_5~1\);
 
+-- Location: LCCOMB_X13_Y13_N2
+\U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_5~2\ : cycloneii_lcell_comb
+-- Equation(s):
+-- \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_5~2_combout\ = (\U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[312]~49_combout\ & 
+-- (\U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_5~1\ & VCC)) # (!\U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[312]~49_combout\ & 
+-- (!\U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_5~1\))
+-- \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_5~3\ = CARRY((!\U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[312]~49_combout\ & 
+-- !\U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_5~1\))
+
+-- pragma translate_off
+GENERIC MAP (
+	lut_mask => "1010010100000101",
+	sum_lutc_input => "cin")
+-- pragma translate_on
+PORT MAP (
+	dataa => \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[312]~49_combout\,
+	datad => VCC,
+	cin => \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_5~1\,
+	combout => \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_5~2_combout\,
+	cout => \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_5~3\);
+
 -- Location: LCCOMB_X13_Y13_N4
 \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_5~4\ : cycloneii_lcell_comb
 -- Equation(s):
@@ -3960,6 +4170,48 @@ PORT MAP (
 	cin => \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_5~3\,
 	combout => \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_5~4_combout\,
 	cout => \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_5~5\);
+
+-- Location: LCCOMB_X13_Y13_N8
+\U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_5~8\ : cycloneii_lcell_comb
+-- Equation(s):
+-- \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_5~8_combout\ = (\U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[315]~46_combout\ & ((GND) # 
+-- (!\U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_5~7\))) # (!\U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[315]~46_combout\ & 
+-- (\U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_5~7\ $ (GND)))
+-- \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_5~9\ = CARRY((\U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[315]~46_combout\) # 
+-- (!\U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_5~7\))
+
+-- pragma translate_off
+GENERIC MAP (
+	lut_mask => "0011110011001111",
+	sum_lutc_input => "cin")
+-- pragma translate_on
+PORT MAP (
+	datab => \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[315]~46_combout\,
+	datad => VCC,
+	cin => \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_5~7\,
+	combout => \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_5~8_combout\,
+	cout => \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_5~9\);
+
+-- Location: LCCOMB_X13_Y13_N12
+\U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_5~12\ : cycloneii_lcell_comb
+-- Equation(s):
+-- \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_5~12_combout\ = (\U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[317]~44_combout\ & 
+-- (\U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_5~11\ $ (GND))) # (!\U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[317]~44_combout\ & 
+-- (!\U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_5~11\ & VCC))
+-- \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_5~13\ = CARRY((\U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[317]~44_combout\ & 
+-- !\U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_5~11\))
+
+-- pragma translate_off
+GENERIC MAP (
+	lut_mask => "1100001100001100",
+	sum_lutc_input => "cin")
+-- pragma translate_on
+PORT MAP (
+	datab => \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[317]~44_combout\,
+	datad => VCC,
+	cin => \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_5~11\,
+	combout => \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_5~12_combout\,
+	cout => \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_5~13\);
 
 -- Location: LCCOMB_X13_Y13_N16
 \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_5~16\ : cycloneii_lcell_comb
@@ -4023,27 +4275,6 @@ PORT MAP (
 	cin => \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_5~23\,
 	combout => \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_5~24_combout\,
 	cout => \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_5~25\);
-
--- Location: LCCOMB_X13_Y15_N26
-\U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_6~10\ : cycloneii_lcell_comb
--- Equation(s):
--- \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_6~10_combout\ = (\U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[340]~60_combout\ & 
--- (\U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_6~9\ & VCC)) # (!\U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[340]~60_combout\ & 
--- (!\U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_6~9\))
--- \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_6~11\ = CARRY((!\U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[340]~60_combout\ & 
--- !\U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_6~9\))
-
--- pragma translate_off
-GENERIC MAP (
-	lut_mask => "1100001100000011",
-	sum_lutc_input => "cin")
--- pragma translate_on
-PORT MAP (
-	datab => \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[340]~60_combout\,
-	datad => VCC,
-	cin => \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_6~9\,
-	combout => \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_6~10_combout\,
-	cout => \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_6~11\);
 
 -- Location: LCCOMB_X13_Y15_N28
 \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_6~12\ : cycloneii_lcell_comb
@@ -4178,11 +4409,11 @@ PORT MAP (
 
 -- pragma translate_off
 GENERIC MAP (
-	lut_mask => "1010010100001010",
+	lut_mask => "1100001100001100",
 	sum_lutc_input => "cin")
 -- pragma translate_on
 PORT MAP (
-	dataa => \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[365]~75_combout\,
+	datab => \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[365]~75_combout\,
 	datad => VCC,
 	cin => \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_7~11\,
 	combout => \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_7~12_combout\,
@@ -4225,27 +4456,6 @@ PORT MAP (
 	datad => VCC,
 	combout => \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_8~0_combout\,
 	cout => \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_8~1\);
-
--- Location: LCCOMB_X15_Y15_N20
-\U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_8~6\ : cycloneii_lcell_comb
--- Equation(s):
--- \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_8~6_combout\ = (\U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[386]~95_combout\ & 
--- (!\U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_8~5\)) # (!\U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[386]~95_combout\ & 
--- ((\U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_8~5\) # (GND)))
--- \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_8~7\ = CARRY((!\U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_8~5\) # 
--- (!\U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[386]~95_combout\))
-
--- pragma translate_off
-GENERIC MAP (
-	lut_mask => "0011110000111111",
-	sum_lutc_input => "cin")
--- pragma translate_on
-PORT MAP (
-	datab => \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[386]~95_combout\,
-	datad => VCC,
-	cin => \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_8~5\,
-	combout => \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_8~6_combout\,
-	cout => \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_8~7\);
 
 -- Location: LCCOMB_X15_Y15_N22
 \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_8~8\ : cycloneii_lcell_comb
@@ -4331,6 +4541,48 @@ PORT MAP (
 	combout => \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_8~28_combout\,
 	cout => \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_8~29\);
 
+-- Location: LCCOMB_X16_Y15_N18
+\U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_9~6\ : cycloneii_lcell_comb
+-- Equation(s):
+-- \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_9~6_combout\ = (\U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[410]~113_combout\ & 
+-- (!\U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_9~5\)) # (!\U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[410]~113_combout\ & 
+-- ((\U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_9~5\) # (GND)))
+-- \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_9~7\ = CARRY((!\U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_9~5\) # 
+-- (!\U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[410]~113_combout\))
+
+-- pragma translate_off
+GENERIC MAP (
+	lut_mask => "0101101001011111",
+	sum_lutc_input => "cin")
+-- pragma translate_on
+PORT MAP (
+	dataa => \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[410]~113_combout\,
+	datad => VCC,
+	cin => \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_9~5\,
+	combout => \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_9~6_combout\,
+	cout => \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_9~7\);
+
+-- Location: LCCOMB_X16_Y14_N4
+\U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_9~24\ : cycloneii_lcell_comb
+-- Equation(s):
+-- \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_9~24_combout\ = (\U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[419]~104_combout\ & ((GND) # 
+-- (!\U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_9~23\))) # (!\U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[419]~104_combout\ & 
+-- (\U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_9~23\ $ (GND)))
+-- \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_9~25\ = CARRY((\U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[419]~104_combout\) # 
+-- (!\U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_9~23\))
+
+-- pragma translate_off
+GENERIC MAP (
+	lut_mask => "0011110011001111",
+	sum_lutc_input => "cin")
+-- pragma translate_on
+PORT MAP (
+	datab => \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[419]~104_combout\,
+	datad => VCC,
+	cin => \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_9~23\,
+	combout => \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_9~24_combout\,
+	cout => \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_9~25\);
+
 -- Location: LCCOMB_X16_Y14_N6
 \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_9~26\ : cycloneii_lcell_comb
 -- Equation(s):
@@ -4352,6 +4604,27 @@ PORT MAP (
 	combout => \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_9~26_combout\,
 	cout => \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_9~27\);
 
+-- Location: LCCOMB_X17_Y15_N26
+\U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_10~14\ : cycloneii_lcell_comb
+-- Equation(s):
+-- \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_10~14_combout\ = (\U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[438]~128_combout\ & 
+-- (!\U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_10~13\)) # (!\U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[438]~128_combout\ & 
+-- ((\U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_10~13\) # (GND)))
+-- \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_10~15\ = CARRY((!\U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_10~13\) # 
+-- (!\U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[438]~128_combout\))
+
+-- pragma translate_off
+GENERIC MAP (
+	lut_mask => "0101101001011111",
+	sum_lutc_input => "cin")
+-- pragma translate_on
+PORT MAP (
+	dataa => \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[438]~128_combout\,
+	datad => VCC,
+	cin => \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_10~13\,
+	combout => \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_10~14_combout\,
+	cout => \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_10~15\);
+
 -- Location: LCCOMB_X17_Y15_N28
 \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_10~16\ : cycloneii_lcell_comb
 -- Equation(s):
@@ -4372,6 +4645,27 @@ PORT MAP (
 	cin => \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_10~15\,
 	combout => \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_10~16_combout\,
 	cout => \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_10~17\);
+
+-- Location: LCCOMB_X17_Y14_N0
+\U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_10~20\ : cycloneii_lcell_comb
+-- Equation(s):
+-- \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_10~20_combout\ = (\U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[441]~125_combout\ & 
+-- (\U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_10~19\ $ (GND))) # (!\U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[441]~125_combout\ & 
+-- (!\U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_10~19\ & VCC))
+-- \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_10~21\ = CARRY((\U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[441]~125_combout\ & 
+-- !\U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_10~19\))
+
+-- pragma translate_off
+GENERIC MAP (
+	lut_mask => "1100001100001100",
+	sum_lutc_input => "cin")
+-- pragma translate_on
+PORT MAP (
+	datab => \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[441]~125_combout\,
+	datad => VCC,
+	cin => \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_10~19\,
+	combout => \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_10~20_combout\,
+	cout => \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_10~21\);
 
 -- Location: LCCOMB_X17_Y13_N10
 \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_12~0\ : cycloneii_lcell_comb
@@ -4537,6 +4831,27 @@ PORT MAP (
 	combout => \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_12~20_combout\,
 	cout => \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_12~21\);
 
+-- Location: LCCOMB_X17_Y12_N18
+\U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_12~40\ : cycloneii_lcell_comb
+-- Equation(s):
+-- \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_12~40_combout\ = (\U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[475]~135_combout\ & ((GND) # 
+-- (!\U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_12~39\))) # (!\U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[475]~135_combout\ & 
+-- (\U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_12~39\ $ (GND)))
+-- \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_12~41\ = CARRY((\U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[475]~135_combout\) # 
+-- (!\U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_12~39\))
+
+-- pragma translate_off
+GENERIC MAP (
+	lut_mask => "0011110011001111",
+	sum_lutc_input => "cin")
+-- pragma translate_on
+PORT MAP (
+	datab => \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[475]~135_combout\,
+	datad => VCC,
+	cin => \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_12~39\,
+	combout => \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_12~40_combout\,
+	cout => \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_12~41\);
+
 -- Location: LCCOMB_X18_Y13_N10
 \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_13~0\ : cycloneii_lcell_comb
 -- Equation(s):
@@ -4701,6 +5016,27 @@ PORT MAP (
 	combout => \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_13~34_combout\,
 	cout => \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_13~35\);
 
+-- Location: LCCOMB_X18_Y12_N20
+\U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_13~42\ : cycloneii_lcell_comb
+-- Equation(s):
+-- \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_13~42_combout\ = (\U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[500]~155_combout\ & 
+-- (\U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_13~41\ & VCC)) # (!\U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[500]~155_combout\ & 
+-- (!\U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_13~41\))
+-- \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_13~43\ = CARRY((!\U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[500]~155_combout\ & 
+-- !\U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_13~41\))
+
+-- pragma translate_off
+GENERIC MAP (
+	lut_mask => "1010010100000101",
+	sum_lutc_input => "cin")
+-- pragma translate_on
+PORT MAP (
+	dataa => \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[500]~155_combout\,
+	datad => VCC,
+	cin => \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_13~41\,
+	combout => \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_13~42_combout\,
+	cout => \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_13~43\);
+
 -- Location: LCCOMB_X19_Y13_N10
 \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_14~2\ : cycloneii_lcell_comb
 -- Equation(s):
@@ -4721,27 +5057,6 @@ PORT MAP (
 	cin => \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_14~1\,
 	combout => \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_14~2_combout\,
 	cout => \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_14~3\);
-
--- Location: LCCOMB_X19_Y13_N12
-\U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_14~4\ : cycloneii_lcell_comb
--- Equation(s):
--- \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_14~4_combout\ = (\U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[505]~196_combout\ & ((GND) # 
--- (!\U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_14~3\))) # (!\U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[505]~196_combout\ & 
--- (\U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_14~3\ $ (GND)))
--- \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_14~5\ = CARRY((\U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[505]~196_combout\) # 
--- (!\U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_14~3\))
-
--- pragma translate_off
-GENERIC MAP (
-	lut_mask => "0011110011001111",
-	sum_lutc_input => "cin")
--- pragma translate_on
-PORT MAP (
-	datab => \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[505]~196_combout\,
-	datad => VCC,
-	cin => \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_14~3\,
-	combout => \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_14~4_combout\,
-	cout => \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_14~5\);
 
 -- Location: LCCOMB_X19_Y13_N20
 \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_14~12\ : cycloneii_lcell_comb
@@ -4931,27 +5246,6 @@ PORT MAP (
 	cin => \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_14~35\,
 	combout => \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_14~36_combout\,
 	cout => \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_14~37\);
-
--- Location: LCCOMB_X19_Y12_N14
-\U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_14~38\ : cycloneii_lcell_comb
--- Equation(s):
--- \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_14~38_combout\ = (\U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[522]~179_combout\ & 
--- (\U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_14~37\ & VCC)) # (!\U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[522]~179_combout\ & 
--- (!\U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_14~37\))
--- \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_14~39\ = CARRY((!\U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[522]~179_combout\ & 
--- !\U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_14~37\))
-
--- pragma translate_off
-GENERIC MAP (
-	lut_mask => "1100001100000011",
-	sum_lutc_input => "cin")
--- pragma translate_on
-PORT MAP (
-	datab => \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[522]~179_combout\,
-	datad => VCC,
-	cin => \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_14~37\,
-	combout => \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_14~38_combout\,
-	cout => \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_14~39\);
 
 -- Location: LCCOMB_X22_Y13_N8
 \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_15~0\ : cycloneii_lcell_comb
@@ -5380,11 +5674,11 @@ PORT MAP (
 
 -- pragma translate_off
 GENERIC MAP (
-	lut_mask => "0101101010101111",
+	lut_mask => "0011110011001111",
 	sum_lutc_input => "cin")
 -- pragma translate_on
 PORT MAP (
-	dataa => \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[547]~215_combout\,
+	datab => \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[547]~215_combout\,
 	datad => VCC,
 	cin => \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_15~39\,
 	combout => \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_15~40_combout\,
@@ -5685,24 +5979,6 @@ PORT MAP (
 	cin => \U_1HzClkDivider|Add0~5\,
 	combout => \U_1HzClkDivider|Add0~6_combout\,
 	cout => \U_1HzClkDivider|Add0~7\);
-
--- Location: LCCOMB_X25_Y2_N24
-\U_1HzClkDivider|Add0~14\ : cycloneii_lcell_comb
--- Equation(s):
--- \U_1HzClkDivider|Add0~14_combout\ = (\U_1HzClkDivider|cnt\(7) & (!\U_1HzClkDivider|Add0~13\)) # (!\U_1HzClkDivider|cnt\(7) & ((\U_1HzClkDivider|Add0~13\) # (GND)))
--- \U_1HzClkDivider|Add0~15\ = CARRY((!\U_1HzClkDivider|Add0~13\) # (!\U_1HzClkDivider|cnt\(7)))
-
--- pragma translate_off
-GENERIC MAP (
-	lut_mask => "0101101001011111",
-	sum_lutc_input => "cin")
--- pragma translate_on
-PORT MAP (
-	dataa => \U_1HzClkDivider|cnt\(7),
-	datad => VCC,
-	cin => \U_1HzClkDivider|Add0~13\,
-	combout => \U_1HzClkDivider|Add0~14_combout\,
-	cout => \U_1HzClkDivider|Add0~15\);
 
 -- Location: LCCOMB_X25_Y1_N6
 \U_1HzClkDivider|Add0~28\ : cycloneii_lcell_comb
@@ -6074,6 +6350,24 @@ PORT MAP (
 	datad => \U_Ranger_Top|timevector[15]~30_combout\,
 	combout => \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[242]~8_combout\);
 
+-- Location: LCCOMB_X13_Y6_N16
+\U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[298]~25\ : cycloneii_lcell_comb
+-- Equation(s):
+-- \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[298]~25_combout\ = (\U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_3~26_combout\ & 
+-- (\U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[273]~13_combout\)) # (!\U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_3~26_combout\ & 
+-- ((\U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_3~20_combout\)))
+
+-- pragma translate_off
+GENERIC MAP (
+	lut_mask => "1010111110100000",
+	sum_lutc_input => "datac")
+-- pragma translate_on
+PORT MAP (
+	dataa => \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[273]~13_combout\,
+	datac => \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_3~26_combout\,
+	datad => \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_3~20_combout\,
+	combout => \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[298]~25_combout\);
+
 -- Location: LCCOMB_X12_Y9_N18
 \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[297]~26\ : cycloneii_lcell_comb
 -- Equation(s):
@@ -6110,6 +6404,24 @@ PORT MAP (
 	datad => \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_3~26_combout\,
 	combout => \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[296]~27_combout\);
 
+-- Location: LCCOMB_X13_Y6_N20
+\U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[294]~29\ : cycloneii_lcell_comb
+-- Equation(s):
+-- \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[294]~29_combout\ = (\U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_3~26_combout\ & 
+-- (\U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[269]~17_combout\)) # (!\U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_3~26_combout\ & 
+-- ((\U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_3~12_combout\)))
+
+-- pragma translate_off
+GENERIC MAP (
+	lut_mask => "1100111111000000",
+	sum_lutc_input => "datac")
+-- pragma translate_on
+PORT MAP (
+	datab => \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[269]~17_combout\,
+	datac => \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_3~26_combout\,
+	datad => \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_3~12_combout\,
+	combout => \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[294]~29_combout\);
+
 -- Location: LCCOMB_X12_Y9_N12
 \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[322]~39\ : cycloneii_lcell_comb
 -- Equation(s):
@@ -6128,6 +6440,23 @@ PORT MAP (
 	datad => \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_4~20_combout\,
 	combout => \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[322]~39_combout\);
 
+-- Location: LCCOMB_X12_Y8_N6
+\U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[336]~64\ : cycloneii_lcell_comb
+-- Equation(s):
+-- \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[336]~64_combout\ = (\U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_5~30_combout\ & ((\U_Ranger_Top|timevector[9]~18_combout\))) # 
+-- (!\U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_5~30_combout\ & (\U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_5~0_combout\))
+
+-- pragma translate_off
+GENERIC MAP (
+	lut_mask => "1111101000001010",
+	sum_lutc_input => "datac")
+-- pragma translate_on
+PORT MAP (
+	dataa => \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_5~0_combout\,
+	datac => \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_5~30_combout\,
+	datad => \U_Ranger_Top|timevector[9]~18_combout\,
+	combout => \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[336]~64_combout\);
+
 -- Location: LCCOMB_X13_Y7_N20
 \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[368]~72\ : cycloneii_lcell_comb
 -- Equation(s):
@@ -6145,6 +6474,24 @@ PORT MAP (
 	datac => \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_6~16_combout\,
 	datad => \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_6~32_combout\,
 	combout => \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[368]~72_combout\);
+
+-- Location: LCCOMB_X13_Y8_N10
+\U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[361]~79\ : cycloneii_lcell_comb
+-- Equation(s):
+-- \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[361]~79_combout\ = (\U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_6~32_combout\ & 
+-- ((\U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[336]~64_combout\))) # (!\U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_6~32_combout\ & 
+-- (\U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_6~2_combout\))
+
+-- pragma translate_off
+GENERIC MAP (
+	lut_mask => "1111000011001100",
+	sum_lutc_input => "datac")
+-- pragma translate_on
+PORT MAP (
+	datab => \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_6~2_combout\,
+	datac => \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[336]~64_combout\,
+	datad => \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_6~32_combout\,
+	combout => \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[361]~79_combout\);
 
 -- Location: LCCOMB_X13_Y8_N12
 \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[360]~80\ : cycloneii_lcell_comb
@@ -6181,6 +6528,60 @@ PORT MAP (
 	datad => \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_7~30_combout\,
 	combout => \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[399]~82_combout\);
 
+-- Location: LCCOMB_X15_Y7_N16
+\U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[398]~83\ : cycloneii_lcell_comb
+-- Equation(s):
+-- \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[398]~83_combout\ = (\U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_7~34_combout\ & 
+-- (\U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[373]~67_combout\)) # (!\U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_7~34_combout\ & 
+-- ((\U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_7~28_combout\)))
+
+-- pragma translate_off
+GENERIC MAP (
+	lut_mask => "1010111110100000",
+	sum_lutc_input => "datac")
+-- pragma translate_on
+PORT MAP (
+	dataa => \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[373]~67_combout\,
+	datac => \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_7~34_combout\,
+	datad => \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_7~28_combout\,
+	combout => \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[398]~83_combout\);
+
+-- Location: LCCOMB_X14_Y7_N24
+\U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[394]~87\ : cycloneii_lcell_comb
+-- Equation(s):
+-- \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[394]~87_combout\ = (\U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_7~34_combout\ & 
+-- ((\U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[369]~71_combout\))) # (!\U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_7~34_combout\ & 
+-- (\U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_7~20_combout\))
+
+-- pragma translate_off
+GENERIC MAP (
+	lut_mask => "1100110010101010",
+	sum_lutc_input => "datac")
+-- pragma translate_on
+PORT MAP (
+	dataa => \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_7~20_combout\,
+	datab => \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[369]~71_combout\,
+	datad => \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_7~34_combout\,
+	combout => \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[394]~87_combout\);
+
+-- Location: LCCOMB_X14_Y8_N10
+\U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[386]~95\ : cycloneii_lcell_comb
+-- Equation(s):
+-- \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[386]~95_combout\ = (\U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_7~34_combout\ & 
+-- ((\U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[361]~79_combout\))) # (!\U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_7~34_combout\ & 
+-- (\U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_7~4_combout\))
+
+-- pragma translate_off
+GENERIC MAP (
+	lut_mask => "1111000011001100",
+	sum_lutc_input => "datac")
+-- pragma translate_on
+PORT MAP (
+	datab => \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_7~4_combout\,
+	datac => \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[361]~79_combout\,
+	datad => \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_7~34_combout\,
+	combout => \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[386]~95_combout\);
+
 -- Location: LCCOMB_X14_Y8_N12
 \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[385]~96\ : cycloneii_lcell_comb
 -- Equation(s):
@@ -6216,6 +6617,42 @@ PORT MAP (
 	datac => \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_8~34_combout\,
 	datad => \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_8~36_combout\,
 	combout => \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[425]~98_combout\);
+
+-- Location: LCCOMB_X15_Y7_N12
+\U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[423]~100\ : cycloneii_lcell_comb
+-- Equation(s):
+-- \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[423]~100_combout\ = (\U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_8~36_combout\ & 
+-- ((\U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[398]~83_combout\))) # (!\U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_8~36_combout\ & 
+-- (\U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_8~30_combout\))
+
+-- pragma translate_off
+GENERIC MAP (
+	lut_mask => "1111000010101010",
+	sum_lutc_input => "datac")
+-- pragma translate_on
+PORT MAP (
+	dataa => \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_8~30_combout\,
+	datac => \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[398]~83_combout\,
+	datad => \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_8~36_combout\,
+	combout => \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[423]~100_combout\);
+
+-- Location: LCCOMB_X15_Y9_N24
+\U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[419]~104\ : cycloneii_lcell_comb
+-- Equation(s):
+-- \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[419]~104_combout\ = (\U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_8~36_combout\ & 
+-- (\U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[394]~87_combout\)) # (!\U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_8~36_combout\ & 
+-- ((\U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_8~22_combout\)))
+
+-- pragma translate_off
+GENERIC MAP (
+	lut_mask => "1010101011110000",
+	sum_lutc_input => "datac")
+-- pragma translate_on
+PORT MAP (
+	dataa => \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[394]~87_combout\,
+	datac => \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_8~22_combout\,
+	datad => \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_8~36_combout\,
+	combout => \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[419]~104_combout\);
 
 -- Location: LCCOMB_X15_Y9_N20
 \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[417]~106\ : cycloneii_lcell_comb
@@ -6271,60 +6708,6 @@ PORT MAP (
 	datad => \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_9~38_combout\,
 	combout => \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[450]~116_combout\);
 
--- Location: LCCOMB_X15_Y7_N0
-\U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[448]~118\ : cycloneii_lcell_comb
--- Equation(s):
--- \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[448]~118_combout\ = (\U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_9~38_combout\ & 
--- (\U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[423]~100_combout\)) # (!\U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_9~38_combout\ & 
--- ((\U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_9~32_combout\)))
-
--- pragma translate_off
-GENERIC MAP (
-	lut_mask => "1100110011110000",
-	sum_lutc_input => "datac")
--- pragma translate_on
-PORT MAP (
-	datab => \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[423]~100_combout\,
-	datac => \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_9~32_combout\,
-	datad => \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_9~38_combout\,
-	combout => \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[448]~118_combout\);
-
--- Location: LCCOMB_X13_Y5_N20
-\U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[475]~135\ : cycloneii_lcell_comb
--- Equation(s):
--- \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[475]~135_combout\ = (\U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_10~40_combout\ & 
--- (\U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[450]~116_combout\)) # (!\U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_10~40_combout\ & 
--- ((\U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_10~38_combout\)))
-
--- pragma translate_off
-GENERIC MAP (
-	lut_mask => "1010111110100000",
-	sum_lutc_input => "datac")
--- pragma translate_on
-PORT MAP (
-	dataa => \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[450]~116_combout\,
-	datac => \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_10~40_combout\,
-	datad => \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_10~38_combout\,
-	combout => \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[475]~135_combout\);
-
--- Location: LCCOMB_X15_Y7_N12
-\U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[473]~137\ : cycloneii_lcell_comb
--- Equation(s):
--- \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[473]~137_combout\ = (\U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_10~40_combout\ & 
--- ((\U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[448]~118_combout\))) # (!\U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_10~40_combout\ & 
--- (\U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_10~34_combout\))
-
--- pragma translate_off
-GENERIC MAP (
-	lut_mask => "1111000011001100",
-	sum_lutc_input => "datac")
--- pragma translate_on
-PORT MAP (
-	datab => \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_10~34_combout\,
-	datac => \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[448]~118_combout\,
-	datad => \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_10~40_combout\,
-	combout => \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[473]~137_combout\);
-
 -- Location: LCCOMB_X16_Y9_N22
 \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[456]~154\ : cycloneii_lcell_comb
 -- Equation(s):
@@ -6341,24 +6724,6 @@ PORT MAP (
 	datac => \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_10~40_combout\,
 	datad => \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_10~0_combout\,
 	combout => \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[456]~154_combout\);
-
--- Location: LCCOMB_X15_Y7_N6
-\U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[496]~159\ : cycloneii_lcell_comb
--- Equation(s):
--- \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[496]~159_combout\ = (\U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_12~42_combout\ & 
--- (\U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[471]~139_combout\)) # (!\U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_12~42_combout\ & 
--- ((\U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_12~32_combout\)))
-
--- pragma translate_off
-GENERIC MAP (
-	lut_mask => "1010101011110000",
-	sum_lutc_input => "datac")
--- pragma translate_on
-PORT MAP (
-	dataa => \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[471]~139_combout\,
-	datac => \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_12~32_combout\,
-	datad => \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_12~42_combout\,
-	combout => \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[496]~159_combout\);
 
 -- Location: LCCOMB_X17_Y7_N24
 \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[493]~162\ : cycloneii_lcell_comb
@@ -6377,6 +6742,24 @@ PORT MAP (
 	datab => \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_12~26_combout\,
 	datac => \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_12~42_combout\,
 	combout => \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[493]~162_combout\);
+
+-- Location: LCCOMB_X15_Y8_N6
+\U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[519]~182\ : cycloneii_lcell_comb
+-- Equation(s):
+-- \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[519]~182_combout\ = (\U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_13~44_combout\ & 
+-- ((\U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[494]~161_combout\))) # (!\U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_13~44_combout\ & 
+-- (\U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_13~30_combout\))
+
+-- pragma translate_off
+GENERIC MAP (
+	lut_mask => "1100110010101010",
+	sum_lutc_input => "datac")
+-- pragma translate_on
+PORT MAP (
+	dataa => \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_13~30_combout\,
+	datab => \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[494]~161_combout\,
+	datad => \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_13~44_combout\,
+	combout => \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[519]~182_combout\);
 
 -- Location: LCCOMB_X18_Y7_N20
 \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[510]~191\ : cycloneii_lcell_comb
@@ -6412,6 +6795,42 @@ PORT MAP (
 	datac => \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_13~0_combout\,
 	datad => \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_13~44_combout\,
 	combout => \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[504]~197_combout\);
+
+-- Location: LCCOMB_X18_Y7_N12
+\U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[547]~201\ : cycloneii_lcell_comb
+-- Equation(s):
+-- \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[547]~201_combout\ = (\U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_14~46_combout\ & 
+-- (\U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[522]~179_combout\)) # (!\U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_14~46_combout\ & 
+-- ((\U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_14~38_combout\)))
+
+-- pragma translate_off
+GENERIC MAP (
+	lut_mask => "1010101011110000",
+	sum_lutc_input => "datac")
+-- pragma translate_on
+PORT MAP (
+	dataa => \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[522]~179_combout\,
+	datac => \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_14~38_combout\,
+	datad => \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_14~46_combout\,
+	combout => \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[547]~201_combout\);
+
+-- Location: LCCOMB_X15_Y8_N12
+\U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[544]~204\ : cycloneii_lcell_comb
+-- Equation(s):
+-- \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[544]~204_combout\ = (\U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_14~46_combout\ & 
+-- (\U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[519]~182_combout\)) # (!\U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_14~46_combout\ & 
+-- ((\U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_14~32_combout\)))
+
+-- pragma translate_off
+GENERIC MAP (
+	lut_mask => "1010101011110000",
+	sum_lutc_input => "datac")
+-- pragma translate_on
+PORT MAP (
+	dataa => \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[519]~182_combout\,
+	datac => \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_14~32_combout\,
+	datad => \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_14~46_combout\,
+	combout => \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[544]~204_combout\);
 
 -- Location: LCCOMB_X19_Y9_N0
 \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[541]~207\ : cycloneii_lcell_comb
@@ -6576,18 +6995,18 @@ PORT MAP (
 -- Location: LCCOMB_X18_Y11_N30
 \U_Ranger_Top|LessThan2~4\ : cycloneii_lcell_comb
 -- Equation(s):
--- \U_Ranger_Top|LessThan2~4_combout\ = (\U_Ranger_Top|timevector[0]~0_combout\) # ((\U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_14~46_combout\ & (\U_Ranger_Top|timevector[1]~2_combout\)) # 
--- (!\U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_14~46_combout\ & ((\U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_14~0_combout\))))
+-- \U_Ranger_Top|LessThan2~4_combout\ = (\U_Ranger_Top|timevector[0]~0_combout\) # ((\U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_14~46_combout\ & ((\U_Ranger_Top|timevector[1]~2_combout\))) # 
+-- (!\U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_14~46_combout\ & (\U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_14~0_combout\)))
 
 -- pragma translate_off
 GENERIC MAP (
-	lut_mask => "1110111011111100",
+	lut_mask => "1111110011101110",
 	sum_lutc_input => "datac")
 -- pragma translate_on
 PORT MAP (
-	dataa => \U_Ranger_Top|timevector[1]~2_combout\,
+	dataa => \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_14~0_combout\,
 	datab => \U_Ranger_Top|timevector[0]~0_combout\,
-	datac => \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_14~0_combout\,
+	datac => \U_Ranger_Top|timevector[1]~2_combout\,
 	datad => \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_14~46_combout\,
 	combout => \U_Ranger_Top|LessThan2~4_combout\);
 
@@ -6752,7 +7171,8 @@ PORT MAP (
 \U_Ranger_Botom|edgebegin[14]\ : cycloneii_lcell_ff
 PORT MAP (
 	clk => \clk~clkctrl_outclk\,
-	datain => \U_Ranger_Botom|edgebegin[14]~feeder_combout\,
+	sdata => \U_Ranger_Botom|count\(14),
+	sload => VCC,
 	ena => \U_Ranger_Botom|process_0~0_combout\,
 	devclrn => ww_devclrn,
 	devpor => ww_devpor,
@@ -6794,7 +7214,8 @@ PORT MAP (
 \U_Ranger_Botom|edgebegin[10]\ : cycloneii_lcell_ff
 PORT MAP (
 	clk => \clk~clkctrl_outclk\,
-	datain => \U_Ranger_Botom|edgebegin[10]~feeder_combout\,
+	sdata => \U_Ranger_Botom|count\(10),
+	sload => VCC,
 	ena => \U_Ranger_Botom|process_0~0_combout\,
 	devclrn => ww_devclrn,
 	devpor => ww_devpor,
@@ -6911,18 +7332,18 @@ PORT MAP (
 -- Location: LCCOMB_X14_Y12_N16
 \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[250]~0\ : cycloneii_lcell_comb
 -- Equation(s):
--- \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[250]~0_combout\ = (\U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_1~22_combout\ & ((\U_Ranger_Botom|timevector[23]~46_combout\))) # 
--- (!\U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_1~22_combout\ & (\U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_1~20_combout\))
+-- \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[250]~0_combout\ = (\U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_1~22_combout\ & (\U_Ranger_Botom|timevector[23]~46_combout\)) # 
+-- (!\U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_1~22_combout\ & ((\U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_1~20_combout\)))
 
 -- pragma translate_off
 GENERIC MAP (
-	lut_mask => "1111110000001100",
+	lut_mask => "1010111110100000",
 	sum_lutc_input => "datac")
 -- pragma translate_on
 PORT MAP (
-	datab => \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_1~20_combout\,
+	dataa => \U_Ranger_Botom|timevector[23]~46_combout\,
 	datac => \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_1~22_combout\,
-	datad => \U_Ranger_Botom|timevector[23]~46_combout\,
+	datad => \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_1~20_combout\,
 	combout => \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[250]~0_combout\);
 
 -- Location: LCCOMB_X13_Y11_N0
@@ -6942,12 +7363,12 @@ PORT MAP (
 	datad => \U_Ranger_Botom|timevector[16]~32_combout\,
 	combout => \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[243]~7_combout\);
 
--- Location: LCCOMB_X14_Y13_N10
-\U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[267]~19\ : cycloneii_lcell_comb
+-- Location: LCCOMB_X14_Y13_N0
+\U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[268]~18\ : cycloneii_lcell_comb
 -- Equation(s):
--- \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[267]~19_combout\ = (\U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_2~24_combout\ & 
--- (\U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[242]~8_combout\)) # (!\U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_2~24_combout\ & 
--- ((\U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_2~6_combout\)))
+-- \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[268]~18_combout\ = (\U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_2~24_combout\ & 
+-- (\U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[243]~7_combout\)) # (!\U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_2~24_combout\ & 
+-- ((\U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_2~8_combout\)))
 
 -- pragma translate_off
 GENERIC MAP (
@@ -6955,10 +7376,10 @@ GENERIC MAP (
 	sum_lutc_input => "datac")
 -- pragma translate_on
 PORT MAP (
-	dataa => \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[242]~8_combout\,
+	dataa => \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[243]~7_combout\,
 	datac => \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_2~24_combout\,
-	datad => \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_2~6_combout\,
-	combout => \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[267]~19_combout\);
+	datad => \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_2~8_combout\,
+	combout => \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[268]~18_combout\);
 
 -- Location: LCCOMB_X15_Y11_N4
 \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[264]~22\ : cycloneii_lcell_comb
@@ -6995,6 +7416,42 @@ PORT MAP (
 	datad => \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[275]~11_combout\,
 	combout => \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[300]~23_combout\);
 
+-- Location: LCCOMB_X12_Y13_N2
+\U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[298]~25\ : cycloneii_lcell_comb
+-- Equation(s):
+-- \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[298]~25_combout\ = (\U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_3~26_combout\ & 
+-- (\U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[273]~13_combout\)) # (!\U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_3~26_combout\ & 
+-- ((\U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_3~20_combout\)))
+
+-- pragma translate_off
+GENERIC MAP (
+	lut_mask => "1100110011110000",
+	sum_lutc_input => "datac")
+-- pragma translate_on
+PORT MAP (
+	datab => \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[273]~13_combout\,
+	datac => \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_3~20_combout\,
+	datad => \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_3~26_combout\,
+	combout => \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[298]~25_combout\);
+
+-- Location: LCCOMB_X14_Y13_N6
+\U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[293]~30\ : cycloneii_lcell_comb
+-- Equation(s):
+-- \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[293]~30_combout\ = (\U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_3~26_combout\ & 
+-- (\U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[268]~18_combout\)) # (!\U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_3~26_combout\ & 
+-- ((\U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_3~10_combout\)))
+
+-- pragma translate_off
+GENERIC MAP (
+	lut_mask => "1100110011110000",
+	sum_lutc_input => "datac")
+-- pragma translate_on
+PORT MAP (
+	datab => \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[268]~18_combout\,
+	datac => \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_3~10_combout\,
+	datad => \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_3~26_combout\,
+	combout => \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[293]~30_combout\);
+
 -- Location: LCCOMB_X12_Y13_N8
 \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[323]~38\ : cycloneii_lcell_comb
 -- Equation(s):
@@ -7012,6 +7469,23 @@ PORT MAP (
 	datac => \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_4~22_combout\,
 	datad => \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_4~28_combout\,
 	combout => \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[323]~38_combout\);
+
+-- Location: LCCOMB_X15_Y12_N30
+\U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[312]~49\ : cycloneii_lcell_comb
+-- Equation(s):
+-- \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[312]~49_combout\ = (\U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_4~28_combout\ & ((\U_Ranger_Botom|timevector[10]~20_combout\))) # 
+-- (!\U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_4~28_combout\ & (\U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_4~0_combout\))
+
+-- pragma translate_off
+GENERIC MAP (
+	lut_mask => "1111000011001100",
+	sum_lutc_input => "datac")
+-- pragma translate_on
+PORT MAP (
+	datab => \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_4~0_combout\,
+	datac => \U_Ranger_Botom|timevector[10]~20_combout\,
+	datad => \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_4~28_combout\,
+	combout => \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[312]~49_combout\);
 
 -- Location: LCCOMB_X12_Y13_N0
 \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[348]~52\ : cycloneii_lcell_comb
@@ -7066,6 +7540,42 @@ PORT MAP (
 	datac => \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_5~30_combout\,
 	datad => \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_5~16_combout\,
 	combout => \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[344]~56_combout\);
+
+-- Location: LCCOMB_X13_Y15_N12
+\U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[340]~60\ : cycloneii_lcell_comb
+-- Equation(s):
+-- \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[340]~60_combout\ = (\U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_5~30_combout\ & 
+-- (\U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[315]~46_combout\)) # (!\U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_5~30_combout\ & 
+-- ((\U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_5~8_combout\)))
+
+-- pragma translate_off
+GENERIC MAP (
+	lut_mask => "1010101011110000",
+	sum_lutc_input => "datac")
+-- pragma translate_on
+PORT MAP (
+	dataa => \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[315]~46_combout\,
+	datac => \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_5~8_combout\,
+	datad => \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_5~30_combout\,
+	combout => \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[340]~60_combout\);
+
+-- Location: LCCOMB_X14_Y11_N16
+\U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[337]~63\ : cycloneii_lcell_comb
+-- Equation(s):
+-- \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[337]~63_combout\ = (\U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_5~30_combout\ & 
+-- ((\U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[312]~49_combout\))) # (!\U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_5~30_combout\ & 
+-- (\U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_5~2_combout\))
+
+-- pragma translate_off
+GENERIC MAP (
+	lut_mask => "1111110000001100",
+	sum_lutc_input => "datac")
+-- pragma translate_on
+PORT MAP (
+	datab => \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_5~2_combout\,
+	datac => \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_5~30_combout\,
+	datad => \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[312]~49_combout\,
+	combout => \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[337]~63_combout\);
 
 -- Location: LCCOMB_X13_Y15_N6
 \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[336]~64\ : cycloneii_lcell_comb
@@ -7138,24 +7648,6 @@ PORT MAP (
 	datad => \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_6~32_combout\,
 	combout => \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[366]~74_combout\);
 
--- Location: LCCOMB_X13_Y15_N12
-\U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[365]~75\ : cycloneii_lcell_comb
--- Equation(s):
--- \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[365]~75_combout\ = (\U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_6~32_combout\ & 
--- ((\U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[340]~60_combout\))) # (!\U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_6~32_combout\ & 
--- (\U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_6~10_combout\))
-
--- pragma translate_off
-GENERIC MAP (
-	lut_mask => "1111000011001100",
-	sum_lutc_input => "datac")
--- pragma translate_on
-PORT MAP (
-	datab => \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_6~10_combout\,
-	datac => \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[340]~60_combout\,
-	datad => \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_6~32_combout\,
-	combout => \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[365]~75_combout\);
-
 -- Location: LCCOMB_X14_Y14_N20
 \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[398]~83\ : cycloneii_lcell_comb
 -- Equation(s):
@@ -7178,17 +7670,17 @@ PORT MAP (
 \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[390]~91\ : cycloneii_lcell_comb
 -- Equation(s):
 -- \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[390]~91_combout\ = (\U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_7~34_combout\ & 
--- (\U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[365]~75_combout\)) # (!\U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_7~34_combout\ & 
--- ((\U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_7~12_combout\)))
+-- ((\U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[365]~75_combout\))) # (!\U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_7~34_combout\ & 
+-- (\U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_7~12_combout\))
 
 -- pragma translate_off
 GENERIC MAP (
-	lut_mask => "1010101011001100",
+	lut_mask => "1111000011001100",
 	sum_lutc_input => "datac")
 -- pragma translate_on
 PORT MAP (
-	dataa => \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[365]~75_combout\,
 	datab => \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_7~12_combout\,
+	datac => \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[365]~75_combout\,
 	datad => \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_7~34_combout\,
 	combout => \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[390]~91_combout\);
 
@@ -7219,16 +7711,16 @@ PORT MAP (
 
 -- pragma translate_off
 GENERIC MAP (
-	lut_mask => "1010101011110000",
+	lut_mask => "1010111110100000",
 	sum_lutc_input => "datac")
 -- pragma translate_on
 PORT MAP (
 	dataa => \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[362]~78_combout\,
-	datac => \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_7~6_combout\,
-	datad => \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_7~34_combout\,
+	datac => \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_7~34_combout\,
+	datad => \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_7~6_combout\,
 	combout => \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[387]~94_combout\);
 
--- Location: LCCOMB_X15_Y15_N8
+-- Location: LCCOMB_X15_Y15_N0
 \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[414]~109\ : cycloneii_lcell_comb
 -- Equation(s):
 -- \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[414]~109_combout\ = (\U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_8~36_combout\ & 
@@ -7282,12 +7774,12 @@ PORT MAP (
 	datad => \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_8~36_combout\,
 	combout => \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[412]~111_combout\);
 
--- Location: LCCOMB_X16_Y12_N6
-\U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[411]~112\ : cycloneii_lcell_comb
+-- Location: LCCOMB_X16_Y14_N26
+\U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[444]~122\ : cycloneii_lcell_comb
 -- Equation(s):
--- \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[411]~112_combout\ = (\U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_8~36_combout\ & 
--- (\U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[386]~95_combout\)) # (!\U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_8~36_combout\ & 
--- ((\U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_8~6_combout\)))
+-- \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[444]~122_combout\ = (\U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_9~38_combout\ & 
+-- (\U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[419]~104_combout\)) # (!\U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_9~38_combout\ & 
+-- ((\U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_9~24_combout\)))
 
 -- pragma translate_off
 GENERIC MAP (
@@ -7295,10 +7787,28 @@ GENERIC MAP (
 	sum_lutc_input => "datac")
 -- pragma translate_on
 PORT MAP (
-	datab => \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[386]~95_combout\,
-	datac => \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_8~6_combout\,
-	datad => \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_8~36_combout\,
-	combout => \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[411]~112_combout\);
+	datab => \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[419]~104_combout\,
+	datac => \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_9~24_combout\,
+	datad => \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_9~38_combout\,
+	combout => \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[444]~122_combout\);
+
+-- Location: LCCOMB_X17_Y14_N22
+\U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[466]~144\ : cycloneii_lcell_comb
+-- Equation(s):
+-- \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[466]~144_combout\ = (\U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_10~40_combout\ & 
+-- (\U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[441]~125_combout\)) # (!\U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_10~40_combout\ & 
+-- ((\U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_10~20_combout\)))
+
+-- pragma translate_off
+GENERIC MAP (
+	lut_mask => "1100111111000000",
+	sum_lutc_input => "datac")
+-- pragma translate_on
+PORT MAP (
+	datab => \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[441]~125_combout\,
+	datac => \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_10~40_combout\,
+	datad => \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_10~20_combout\,
+	combout => \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[466]~144_combout\);
 
 -- Location: LCCOMB_X17_Y15_N6
 \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[464]~146\ : cycloneii_lcell_comb
@@ -7317,6 +7827,24 @@ PORT MAP (
 	datac => \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_10~40_combout\,
 	datad => \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_10~16_combout\,
 	combout => \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[464]~146_combout\);
+
+-- Location: LCCOMB_X14_Y12_N18
+\U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[500]~155\ : cycloneii_lcell_comb
+-- Equation(s):
+-- \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[500]~155_combout\ = (\U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_12~42_combout\ & 
+-- (\U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[475]~135_combout\)) # (!\U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_12~42_combout\ & 
+-- ((\U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_12~40_combout\)))
+
+-- pragma translate_off
+GENERIC MAP (
+	lut_mask => "1100111111000000",
+	sum_lutc_input => "datac")
+-- pragma translate_on
+PORT MAP (
+	datab => \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[475]~135_combout\,
+	datac => \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_12~42_combout\,
+	datad => \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_12~40_combout\,
+	combout => \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[500]~155_combout\);
 
 -- Location: LCCOMB_X17_Y13_N4
 \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[490]~165\ : cycloneii_lcell_comb
@@ -7345,13 +7873,13 @@ PORT MAP (
 
 -- pragma translate_off
 GENERIC MAP (
-	lut_mask => "1010111110100000",
+	lut_mask => "1010101011110000",
 	sum_lutc_input => "datac")
 -- pragma translate_on
 PORT MAP (
 	dataa => \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[464]~146_combout\,
-	datac => \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_12~42_combout\,
-	datad => \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_12~18_combout\,
+	datac => \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_12~18_combout\,
+	datad => \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_12~42_combout\,
 	combout => \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[489]~166_combout\);
 
 -- Location: LCCOMB_X16_Y13_N8
@@ -7408,6 +7936,24 @@ PORT MAP (
 	datad => \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_12~42_combout\,
 	combout => \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[481]~174_combout\);
 
+-- Location: LCCOMB_X14_Y12_N20
+\U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[525]~176\ : cycloneii_lcell_comb
+-- Equation(s):
+-- \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[525]~176_combout\ = (\U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_13~44_combout\ & 
+-- (\U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[500]~155_combout\)) # (!\U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_13~44_combout\ & 
+-- ((\U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_13~42_combout\)))
+
+-- pragma translate_off
+GENERIC MAP (
+	lut_mask => "1100111111000000",
+	sum_lutc_input => "datac")
+-- pragma translate_on
+PORT MAP (
+	datab => \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[500]~155_combout\,
+	datac => \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_13~44_combout\,
+	datad => \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_13~42_combout\,
+	combout => \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[525]~176_combout\);
+
 -- Location: LCCOMB_X21_Y12_N2
 \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[521]~180\ : cycloneii_lcell_comb
 -- Equation(s):
@@ -7417,13 +7963,13 @@ PORT MAP (
 
 -- pragma translate_off
 GENERIC MAP (
-	lut_mask => "1111001111000000",
+	lut_mask => "1100110011110000",
 	sum_lutc_input => "datac")
 -- pragma translate_on
 PORT MAP (
-	datab => \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_13~44_combout\,
-	datac => \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[496]~159_combout\,
-	datad => \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_13~34_combout\,
+	datab => \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[496]~159_combout\,
+	datac => \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_13~34_combout\,
+	datad => \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_13~44_combout\,
 	combout => \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[521]~180_combout\);
 
 -- Location: LCCOMB_X18_Y12_N30
@@ -7489,11 +8035,11 @@ PORT MAP (
 
 -- pragma translate_off
 GENERIC MAP (
-	lut_mask => "1100111111000000",
+	lut_mask => "1010111110100000",
 	sum_lutc_input => "datac")
 -- pragma translate_on
 PORT MAP (
-	datab => \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[485]~170_combout\,
+	dataa => \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[485]~170_combout\,
 	datac => \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_13~44_combout\,
 	datad => \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_13~12_combout\,
 	combout => \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[510]~191_combout\);
@@ -7615,13 +8161,13 @@ PORT MAP (
 
 -- pragma translate_off
 GENERIC MAP (
-	lut_mask => "1010101011110000",
+	lut_mask => "1010111110100000",
 	sum_lutc_input => "datac")
 -- pragma translate_on
 PORT MAP (
 	dataa => \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[504]~197_combout\,
-	datac => \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_14~2_combout\,
-	datad => \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_14~46_combout\,
+	datac => \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_14~46_combout\,
+	datad => \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_14~2_combout\,
 	combout => \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[529]~208_combout\);
 
 -- Location: LCCOMB_X22_Y13_N0
@@ -7732,24 +8278,6 @@ PORT MAP (
 	datad => \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_15~26_combout\,
 	combout => \U_Ranger_Botom|LessThan2~4_combout\);
 
--- Location: LCCOMB_X21_Y12_N10
-\U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[547]~215\ : cycloneii_lcell_comb
--- Equation(s):
--- \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[547]~215_combout\ = (\U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_14~46_combout\ & 
--- ((\U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[522]~179_combout\))) # (!\U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_14~46_combout\ & 
--- (\U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_14~38_combout\))
-
--- pragma translate_off
-GENERIC MAP (
-	lut_mask => "1111000011001100",
-	sum_lutc_input => "datac")
--- pragma translate_on
-PORT MAP (
-	datab => \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_14~38_combout\,
-	datac => \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[522]~179_combout\,
-	datad => \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_14~46_combout\,
-	combout => \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[547]~215_combout\);
-
 -- Location: LCCOMB_X21_Y12_N12
 \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[546]~216\ : cycloneii_lcell_comb
 -- Equation(s):
@@ -7759,13 +8287,13 @@ PORT MAP (
 
 -- pragma translate_off
 GENERIC MAP (
-	lut_mask => "1100110011110000",
+	lut_mask => "1100111111000000",
 	sum_lutc_input => "datac")
 -- pragma translate_on
 PORT MAP (
 	datab => \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[521]~180_combout\,
-	datac => \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_14~36_combout\,
-	datad => \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_14~46_combout\,
+	datac => \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_14~46_combout\,
+	datad => \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_14~36_combout\,
 	combout => \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[546]~216_combout\);
 
 -- Location: LCCOMB_X21_Y12_N14
@@ -7777,12 +8305,12 @@ PORT MAP (
 
 -- pragma translate_off
 GENERIC MAP (
-	lut_mask => "1111001111000000",
+	lut_mask => "1010111110100000",
 	sum_lutc_input => "datac")
 -- pragma translate_on
 PORT MAP (
-	datab => \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_14~46_combout\,
-	datac => \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[520]~181_combout\,
+	dataa => \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[520]~181_combout\,
+	datac => \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_14~46_combout\,
 	datad => \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_14~34_combout\,
 	combout => \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[545]~217_combout\);
 
@@ -7795,13 +8323,13 @@ PORT MAP (
 
 -- pragma translate_off
 GENERIC MAP (
-	lut_mask => "1100110011110000",
+	lut_mask => "1100111111000000",
 	sum_lutc_input => "datac")
 -- pragma translate_on
 PORT MAP (
 	datab => \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[519]~182_combout\,
-	datac => \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_14~32_combout\,
-	datad => \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_14~46_combout\,
+	datac => \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_14~46_combout\,
+	datad => \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_14~32_combout\,
 	combout => \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[544]~218_combout\);
 
 -- Location: LCCOMB_X22_Y12_N28
@@ -7985,7 +8513,7 @@ PORT MAP (
 -- Location: LCCOMB_X21_Y12_N4
 \U_Ranger_Botom|LessThan2~15\ : cycloneii_lcell_comb
 -- Equation(s):
--- \U_Ranger_Botom|LessThan2~15_combout\ = (\U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[542]~212_combout\) # ((\U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[541]~211_combout\) # 
+-- \U_Ranger_Botom|LessThan2~15_combout\ = (\U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[541]~211_combout\) # ((\U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[542]~212_combout\) # 
 -- ((\U_Ranger_Botom|LessThan2~14_combout\) # (\U_Ranger_Botom|LessThan2~9_combout\)))
 
 -- pragma translate_off
@@ -7994,8 +8522,8 @@ GENERIC MAP (
 	sum_lutc_input => "datac")
 -- pragma translate_on
 PORT MAP (
-	dataa => \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[542]~212_combout\,
-	datab => \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[541]~211_combout\,
+	dataa => \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[541]~211_combout\,
+	datab => \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[542]~212_combout\,
 	datac => \U_Ranger_Botom|LessThan2~14_combout\,
 	datad => \U_Ranger_Botom|LessThan2~9_combout\,
 	combout => \U_Ranger_Botom|LessThan2~15_combout\);
@@ -8190,15 +8718,6 @@ PORT MAP (
 	datad => \U_Ranger_Top|altitude[2]~4_combout\,
 	combout => \pwm4[2]~5_combout\);
 
--- Location: LCFF_X26_Y2_N5
-\U_1HzClkDivider|cnt[7]\ : cycloneii_lcell_ff
-PORT MAP (
-	clk => \clk~clkctrl_outclk\,
-	datain => \U_1HzClkDivider|cnt~4_combout\,
-	devclrn => ww_devclrn,
-	devpor => ww_devpor,
-	regout => \U_1HzClkDivider|cnt\(7));
-
 -- Location: LCFF_X25_Y2_N17
 \U_1HzClkDivider|cnt[3]\ : cycloneii_lcell_ff
 PORT MAP (
@@ -8220,7 +8739,7 @@ PORT MAP (
 -- Location: LCCOMB_X25_Y2_N6
 \U_1HzClkDivider|Equal0~3\ : cycloneii_lcell_comb
 -- Equation(s):
--- \U_1HzClkDivider|Equal0~3_combout\ = (!\U_1HzClkDivider|cnt\(15) & (!\U_1HzClkDivider|cnt\(12) & (!\U_1HzClkDivider|cnt\(14) & !\U_1HzClkDivider|cnt\(13))))
+-- \U_1HzClkDivider|Equal0~3_combout\ = (!\U_1HzClkDivider|cnt\(13) & (!\U_1HzClkDivider|cnt\(15) & (!\U_1HzClkDivider|cnt\(14) & !\U_1HzClkDivider|cnt\(12))))
 
 -- pragma translate_off
 GENERIC MAP (
@@ -8228,10 +8747,10 @@ GENERIC MAP (
 	sum_lutc_input => "datac")
 -- pragma translate_on
 PORT MAP (
-	dataa => \U_1HzClkDivider|cnt\(15),
-	datab => \U_1HzClkDivider|cnt\(12),
+	dataa => \U_1HzClkDivider|cnt\(13),
+	datab => \U_1HzClkDivider|cnt\(15),
 	datac => \U_1HzClkDivider|cnt\(14),
-	datad => \U_1HzClkDivider|cnt\(13),
+	datad => \U_1HzClkDivider|cnt\(12),
 	combout => \U_1HzClkDivider|Equal0~3_combout\);
 
 -- Location: LCFF_X25_Y1_N13
@@ -8428,11 +8947,11 @@ PORT MAP (
 
 -- pragma translate_off
 GENERIC MAP (
-	lut_mask => "1010101000000000",
+	lut_mask => "1111000000000000",
 	sum_lutc_input => "datac")
 -- pragma translate_on
 PORT MAP (
-	dataa => \U_Registers|RegCont|Equal3~0_combout\,
+	datac => \U_Registers|RegCont|Equal3~0_combout\,
 	datad => \U_Registers|RegCont|state.rd2~regout\,
 	combout => \U_Registers|MuxOut|tmp1[5]~7_combout\);
 
@@ -8538,30 +9057,6 @@ PORT MAP (
 	datad => \U_Registers|MuxOut|tmp1[5]~2_combout\,
 	combout => \U_Registers|MuxOut|tmp1[1]~12_combout\);
 
--- Location: LCFF_X23_Y17_N3
-\U_Registers|RegMisc|tmp[2]\ : cycloneii_lcell_ff
-PORT MAP (
-	clk => \clk~clkctrl_outclk\,
-	sdata => \PIC_PBUS_Data[2]~2\,
-	aclr => \Switch_2~combout\,
-	sload => VCC,
-	ena => \U_Registers|RegCont|regi07~0_combout\,
-	devclrn => ww_devclrn,
-	devpor => ww_devpor,
-	regout => \U_Registers|RegMisc|tmp\(2));
-
--- Location: LCFF_X23_Y17_N21
-\U_Registers|RegAD|tmp[2]\ : cycloneii_lcell_ff
-PORT MAP (
-	clk => \clk~clkctrl_outclk\,
-	sdata => \PIC_PBUS_Data[2]~2\,
-	aclr => \Switch_2~combout\,
-	sload => VCC,
-	ena => \U_Registers|RegCont|regi06~0_combout\,
-	devclrn => ww_devclrn,
-	devpor => ww_devpor,
-	regout => \U_Registers|RegAD|tmp\(2));
-
 -- Location: LCFF_X25_Y17_N21
 \U_Registers|RegZM|tmp[2]\ : cycloneii_lcell_ff
 PORT MAP (
@@ -8604,23 +9099,47 @@ PORT MAP (
 	datad => \U_Registers|MuxOut|tmp1[5]~2_combout\,
 	combout => \U_Registers|MuxOut|tmp1[2]~18_combout\);
 
--- Location: LCCOMB_X23_Y17_N20
-\U_Registers|MuxOut|tmp1[2]~19\ : cycloneii_lcell_comb
+-- Location: LCFF_X24_Y16_N23
+\U_Registers|RegYD|tmp[2]\ : cycloneii_lcell_ff
+PORT MAP (
+	clk => \clk~clkctrl_outclk\,
+	sdata => \PIC_PBUS_Data[2]~2\,
+	aclr => \Switch_2~combout\,
+	sload => VCC,
+	ena => \U_Registers|RegCont|regi01~0_combout\,
+	devclrn => ww_devclrn,
+	devpor => ww_devpor,
+	regout => \U_Registers|RegYD|tmp\(2));
+
+-- Location: LCFF_X24_Y16_N9
+\U_Registers|RegZD|tmp[2]\ : cycloneii_lcell_ff
+PORT MAP (
+	clk => \clk~clkctrl_outclk\,
+	sdata => \PIC_PBUS_Data[2]~2\,
+	aclr => \Switch_2~combout\,
+	sload => VCC,
+	ena => \U_Registers|RegCont|regi02~0_combout\,
+	devclrn => ww_devclrn,
+	devpor => ww_devpor,
+	regout => \U_Registers|RegZD|tmp\(2));
+
+-- Location: LCCOMB_X24_Y16_N8
+\U_Registers|MuxOut|tmp1[2]~20\ : cycloneii_lcell_comb
 -- Equation(s):
--- \U_Registers|MuxOut|tmp1[2]~19_combout\ = (\U_Registers|MuxOut|tmp1[2]~18_combout\ & (((\U_Registers|RegAD|tmp\(2)) # (\U_Registers|MuxOut|tmp1[5]~0_combout\)))) # (!\U_Registers|MuxOut|tmp1[2]~18_combout\ & (\U_Registers|RegMisc|tmp\(2) & 
--- ((!\U_Registers|MuxOut|tmp1[5]~0_combout\))))
+-- \U_Registers|MuxOut|tmp1[2]~20_combout\ = (\U_Registers|MuxOut|tmp1[5]~7_combout\ & ((\U_Registers|RegYD|tmp\(2)) # ((\U_Registers|MuxOut|tmp1[5]~6_combout\)))) # (!\U_Registers|MuxOut|tmp1[5]~7_combout\ & (((\U_Registers|RegZD|tmp\(2) & 
+-- !\U_Registers|MuxOut|tmp1[5]~6_combout\))))
 
 -- pragma translate_off
 GENERIC MAP (
-	lut_mask => "1010101011100100",
+	lut_mask => "1010101011011000",
 	sum_lutc_input => "datac")
 -- pragma translate_on
 PORT MAP (
-	dataa => \U_Registers|MuxOut|tmp1[2]~18_combout\,
-	datab => \U_Registers|RegMisc|tmp\(2),
-	datac => \U_Registers|RegAD|tmp\(2),
-	datad => \U_Registers|MuxOut|tmp1[5]~0_combout\,
-	combout => \U_Registers|MuxOut|tmp1[2]~19_combout\);
+	dataa => \U_Registers|MuxOut|tmp1[5]~7_combout\,
+	datab => \U_Registers|RegYD|tmp\(2),
+	datac => \U_Registers|RegZD|tmp\(2),
+	datad => \U_Registers|MuxOut|tmp1[5]~6_combout\,
+	combout => \U_Registers|MuxOut|tmp1[2]~20_combout\);
 
 -- Location: LCFF_X23_Y16_N9
 \U_Registers|RegYD|tmp[3]\ : cycloneii_lcell_ff
@@ -8634,7 +9153,7 @@ PORT MAP (
 	devpor => ww_devpor,
 	regout => \U_Registers|RegYD|tmp\(3));
 
--- Location: LCFF_X23_Y17_N31
+-- Location: LCFF_X23_Y17_N7
 \U_Registers|RegMisc|tmp[3]\ : cycloneii_lcell_ff
 PORT MAP (
 	clk => \clk~clkctrl_outclk\,
@@ -8702,19 +9221,19 @@ PORT MAP (
 -- Location: LCCOMB_X23_Y17_N8
 \U_Registers|MuxOut|tmp1[3]~25\ : cycloneii_lcell_comb
 -- Equation(s):
--- \U_Registers|MuxOut|tmp1[3]~25_combout\ = (\U_Registers|MuxOut|tmp1[3]~24_combout\ & (((\U_Registers|RegAD|tmp\(3)) # (\U_Registers|MuxOut|tmp1[5]~0_combout\)))) # (!\U_Registers|MuxOut|tmp1[3]~24_combout\ & (\U_Registers|RegMisc|tmp\(3) & 
--- ((!\U_Registers|MuxOut|tmp1[5]~0_combout\))))
+-- \U_Registers|MuxOut|tmp1[3]~25_combout\ = (\U_Registers|MuxOut|tmp1[5]~0_combout\ & (((\U_Registers|MuxOut|tmp1[3]~24_combout\)))) # (!\U_Registers|MuxOut|tmp1[5]~0_combout\ & ((\U_Registers|MuxOut|tmp1[3]~24_combout\ & ((\U_Registers|RegAD|tmp\(3)))) # 
+-- (!\U_Registers|MuxOut|tmp1[3]~24_combout\ & (\U_Registers|RegMisc|tmp\(3)))))
 
 -- pragma translate_off
 GENERIC MAP (
-	lut_mask => "1010101011100100",
+	lut_mask => "1111110000100010",
 	sum_lutc_input => "datac")
 -- pragma translate_on
 PORT MAP (
-	dataa => \U_Registers|MuxOut|tmp1[3]~24_combout\,
-	datab => \U_Registers|RegMisc|tmp\(3),
+	dataa => \U_Registers|RegMisc|tmp\(3),
+	datab => \U_Registers|MuxOut|tmp1[5]~0_combout\,
 	datac => \U_Registers|RegAD|tmp\(3),
-	datad => \U_Registers|MuxOut|tmp1[5]~0_combout\,
+	datad => \U_Registers|MuxOut|tmp1[3]~24_combout\,
 	combout => \U_Registers|MuxOut|tmp1[3]~25_combout\);
 
 -- Location: LCFF_X23_Y16_N3
@@ -8732,19 +9251,19 @@ PORT MAP (
 -- Location: LCCOMB_X23_Y16_N2
 \U_Registers|MuxOut|tmp1[3]~26\ : cycloneii_lcell_comb
 -- Equation(s):
--- \U_Registers|MuxOut|tmp1[3]~26_combout\ = (\U_Registers|MuxOut|tmp1[5]~7_combout\ & (((\U_Registers|MuxOut|tmp1[5]~6_combout\)))) # (!\U_Registers|MuxOut|tmp1[5]~7_combout\ & ((\U_Registers|MuxOut|tmp1[5]~6_combout\ & 
--- (\U_Registers|MuxOut|tmp1[3]~25_combout\)) # (!\U_Registers|MuxOut|tmp1[5]~6_combout\ & ((\U_Registers|RegZD|tmp\(3))))))
+-- \U_Registers|MuxOut|tmp1[3]~26_combout\ = (\U_Registers|MuxOut|tmp1[5]~7_combout\ & (\U_Registers|MuxOut|tmp1[5]~6_combout\)) # (!\U_Registers|MuxOut|tmp1[5]~7_combout\ & ((\U_Registers|MuxOut|tmp1[5]~6_combout\ & 
+-- ((\U_Registers|MuxOut|tmp1[3]~25_combout\))) # (!\U_Registers|MuxOut|tmp1[5]~6_combout\ & (\U_Registers|RegZD|tmp\(3)))))
 
 -- pragma translate_off
 GENERIC MAP (
-	lut_mask => "1110111001010000",
+	lut_mask => "1101110010011000",
 	sum_lutc_input => "datac")
 -- pragma translate_on
 PORT MAP (
 	dataa => \U_Registers|MuxOut|tmp1[5]~7_combout\,
-	datab => \U_Registers|MuxOut|tmp1[3]~25_combout\,
+	datab => \U_Registers|MuxOut|tmp1[5]~6_combout\,
 	datac => \U_Registers|RegZD|tmp\(3),
-	datad => \U_Registers|MuxOut|tmp1[5]~6_combout\,
+	datad => \U_Registers|MuxOut|tmp1[3]~25_combout\,
 	combout => \U_Registers|MuxOut|tmp1[3]~26_combout\);
 
 -- Location: LCFF_X25_Y16_N3
@@ -9011,19 +9530,19 @@ PORT MAP (
 -- Location: LCCOMB_X23_Y17_N24
 \U_Registers|MuxOut|tmp1[5]~37\ : cycloneii_lcell_comb
 -- Equation(s):
--- \U_Registers|MuxOut|tmp1[5]~37_combout\ = (\U_Registers|MuxOut|tmp1[5]~0_combout\ & (((\U_Registers|MuxOut|tmp1[5]~36_combout\)))) # (!\U_Registers|MuxOut|tmp1[5]~0_combout\ & ((\U_Registers|MuxOut|tmp1[5]~36_combout\ & ((\U_Registers|RegAD|tmp\(5)))) # 
--- (!\U_Registers|MuxOut|tmp1[5]~36_combout\ & (\U_Registers|RegMisc|tmp\(5)))))
+-- \U_Registers|MuxOut|tmp1[5]~37_combout\ = (\U_Registers|MuxOut|tmp1[5]~36_combout\ & ((\U_Registers|MuxOut|tmp1[5]~0_combout\) # ((\U_Registers|RegAD|tmp\(5))))) # (!\U_Registers|MuxOut|tmp1[5]~36_combout\ & (!\U_Registers|MuxOut|tmp1[5]~0_combout\ & 
+-- ((\U_Registers|RegMisc|tmp\(5)))))
 
 -- pragma translate_off
 GENERIC MAP (
-	lut_mask => "1111110000100010",
+	lut_mask => "1011100110101000",
 	sum_lutc_input => "datac")
 -- pragma translate_on
 PORT MAP (
-	dataa => \U_Registers|RegMisc|tmp\(5),
+	dataa => \U_Registers|MuxOut|tmp1[5]~36_combout\,
 	datab => \U_Registers|MuxOut|tmp1[5]~0_combout\,
 	datac => \U_Registers|RegAD|tmp\(5),
-	datad => \U_Registers|MuxOut|tmp1[5]~36_combout\,
+	datad => \U_Registers|RegMisc|tmp\(5),
 	combout => \U_Registers|MuxOut|tmp1[5]~37_combout\);
 
 -- Location: LCFF_X23_Y16_N7
@@ -9041,19 +9560,19 @@ PORT MAP (
 -- Location: LCCOMB_X23_Y16_N6
 \U_Registers|MuxOut|tmp1[5]~38\ : cycloneii_lcell_comb
 -- Equation(s):
--- \U_Registers|MuxOut|tmp1[5]~38_combout\ = (\U_Registers|MuxOut|tmp1[5]~7_combout\ & (((\U_Registers|MuxOut|tmp1[5]~6_combout\)))) # (!\U_Registers|MuxOut|tmp1[5]~7_combout\ & ((\U_Registers|MuxOut|tmp1[5]~6_combout\ & 
--- (\U_Registers|MuxOut|tmp1[5]~37_combout\)) # (!\U_Registers|MuxOut|tmp1[5]~6_combout\ & ((\U_Registers|RegZD|tmp\(5))))))
+-- \U_Registers|MuxOut|tmp1[5]~38_combout\ = (\U_Registers|MuxOut|tmp1[5]~6_combout\ & ((\U_Registers|MuxOut|tmp1[5]~37_combout\) # ((\U_Registers|MuxOut|tmp1[5]~7_combout\)))) # (!\U_Registers|MuxOut|tmp1[5]~6_combout\ & (((\U_Registers|RegZD|tmp\(5) & 
+-- !\U_Registers|MuxOut|tmp1[5]~7_combout\))))
 
 -- pragma translate_off
 GENERIC MAP (
-	lut_mask => "1110111001010000",
+	lut_mask => "1100110010111000",
 	sum_lutc_input => "datac")
 -- pragma translate_on
 PORT MAP (
-	dataa => \U_Registers|MuxOut|tmp1[5]~7_combout\,
-	datab => \U_Registers|MuxOut|tmp1[5]~37_combout\,
+	dataa => \U_Registers|MuxOut|tmp1[5]~37_combout\,
+	datab => \U_Registers|MuxOut|tmp1[5]~6_combout\,
 	datac => \U_Registers|RegZD|tmp\(5),
-	datad => \U_Registers|MuxOut|tmp1[5]~6_combout\,
+	datad => \U_Registers|MuxOut|tmp1[5]~7_combout\,
 	combout => \U_Registers|MuxOut|tmp1[5]~38_combout\);
 
 -- Location: LCFF_X25_Y16_N7
@@ -9181,7 +9700,7 @@ PORT MAP (
 	devpor => ww_devpor,
 	regout => \U_Registers|RegYD|tmp\(6));
 
--- Location: LCFF_X24_Y16_N9
+-- Location: LCFF_X24_Y16_N25
 \U_Registers|RegZD|tmp[6]\ : cycloneii_lcell_ff
 PORT MAP (
 	clk => \clk~clkctrl_outclk\,
@@ -9193,7 +9712,7 @@ PORT MAP (
 	devpor => ww_devpor,
 	regout => \U_Registers|RegZD|tmp\(6));
 
--- Location: LCCOMB_X24_Y16_N8
+-- Location: LCCOMB_X24_Y16_N24
 \U_Registers|MuxOut|tmp1[6]~44\ : cycloneii_lcell_comb
 -- Equation(s):
 -- \U_Registers|MuxOut|tmp1[6]~44_combout\ = (\U_Registers|MuxOut|tmp1[5]~7_combout\ & ((\U_Registers|RegYD|tmp\(6)) # ((\U_Registers|MuxOut|tmp1[5]~6_combout\)))) # (!\U_Registers|MuxOut|tmp1[5]~7_combout\ & (((\U_Registers|RegZD|tmp\(6) & 
@@ -9336,7 +9855,7 @@ PORT MAP (
 	datad => \U_Registers|MuxOut|tmp1[5]~0_combout\,
 	combout => \U_Registers|MuxOut|tmp1[7]~49_combout\);
 
--- Location: LCFF_X23_Y16_N27
+-- Location: LCFF_X23_Y16_N11
 \U_Registers|RegZD|tmp[7]\ : cycloneii_lcell_ff
 PORT MAP (
 	clk => \clk~clkctrl_outclk\,
@@ -9348,22 +9867,22 @@ PORT MAP (
 	devpor => ww_devpor,
 	regout => \U_Registers|RegZD|tmp\(7));
 
--- Location: LCCOMB_X23_Y16_N26
+-- Location: LCCOMB_X23_Y16_N10
 \U_Registers|MuxOut|tmp1[7]~50\ : cycloneii_lcell_comb
 -- Equation(s):
--- \U_Registers|MuxOut|tmp1[7]~50_combout\ = (\U_Registers|MuxOut|tmp1[5]~7_combout\ & (((\U_Registers|MuxOut|tmp1[5]~6_combout\)))) # (!\U_Registers|MuxOut|tmp1[5]~7_combout\ & ((\U_Registers|MuxOut|tmp1[5]~6_combout\ & 
--- (\U_Registers|MuxOut|tmp1[7]~49_combout\)) # (!\U_Registers|MuxOut|tmp1[5]~6_combout\ & ((\U_Registers|RegZD|tmp\(7))))))
+-- \U_Registers|MuxOut|tmp1[7]~50_combout\ = (\U_Registers|MuxOut|tmp1[5]~7_combout\ & (\U_Registers|MuxOut|tmp1[5]~6_combout\)) # (!\U_Registers|MuxOut|tmp1[5]~7_combout\ & ((\U_Registers|MuxOut|tmp1[5]~6_combout\ & 
+-- ((\U_Registers|MuxOut|tmp1[7]~49_combout\))) # (!\U_Registers|MuxOut|tmp1[5]~6_combout\ & (\U_Registers|RegZD|tmp\(7)))))
 
 -- pragma translate_off
 GENERIC MAP (
-	lut_mask => "1110111001010000",
+	lut_mask => "1101110010011000",
 	sum_lutc_input => "datac")
 -- pragma translate_on
 PORT MAP (
 	dataa => \U_Registers|MuxOut|tmp1[5]~7_combout\,
-	datab => \U_Registers|MuxOut|tmp1[7]~49_combout\,
+	datab => \U_Registers|MuxOut|tmp1[5]~6_combout\,
 	datac => \U_Registers|RegZD|tmp\(7),
-	datad => \U_Registers|MuxOut|tmp1[5]~6_combout\,
+	datad => \U_Registers|MuxOut|tmp1[7]~49_combout\,
 	combout => \U_Registers|MuxOut|tmp1[7]~50_combout\);
 
 -- Location: LCFF_X25_Y16_N27
@@ -9395,23 +9914,6 @@ PORT MAP (
 	datac => \U_Registers|RegXM|tmp\(7),
 	datad => \U_Registers|MuxOut|tmp1[5]~7_combout\,
 	combout => \U_Registers|MuxOut|tmp1[7]~51_combout\);
-
--- Location: LCCOMB_X26_Y2_N4
-\U_1HzClkDivider|cnt~4\ : cycloneii_lcell_comb
--- Equation(s):
--- \U_1HzClkDivider|cnt~4_combout\ = (\U_1HzClkDivider|Add0~14_combout\ & (((!\U_1HzClkDivider|Equal0~4_combout\) # (!\U_1HzClkDivider|Equal0~5_combout\)) # (!\U_1HzClkDivider|Equal0~6_combout\)))
-
--- pragma translate_off
-GENERIC MAP (
-	lut_mask => "0111111100000000",
-	sum_lutc_input => "datac")
--- pragma translate_on
-PORT MAP (
-	dataa => \U_1HzClkDivider|Equal0~6_combout\,
-	datab => \U_1HzClkDivider|Equal0~5_combout\,
-	datac => \U_1HzClkDivider|Equal0~4_combout\,
-	datad => \U_1HzClkDivider|Add0~14_combout\,
-	combout => \U_1HzClkDivider|cnt~4_combout\);
 
 -- Location: LCCOMB_X25_Y17_N4
 \U_Registers|RegCont|regi05~0\ : cycloneii_lcell_comb
@@ -9445,32 +9947,6 @@ PORT MAP (
 	datad => \U_Registers|RegCont|Equal4~0_combout\,
 	combout => \U_Registers|RegCont|regi04~0_combout\);
 
--- Location: PIN_3,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: Default
-\Switch_1[3]~I\ : cycloneii_io
--- pragma translate_off
-GENERIC MAP (
-	input_async_reset => "none",
-	input_power_up => "low",
-	input_register_mode => "none",
-	input_sync_reset => "none",
-	oe_async_reset => "none",
-	oe_power_up => "low",
-	oe_register_mode => "none",
-	oe_sync_reset => "none",
-	operation_mode => "input",
-	output_async_reset => "none",
-	output_power_up => "low",
-	output_register_mode => "none",
-	output_sync_reset => "none")
--- pragma translate_on
-PORT MAP (
-	devclrn => ww_devclrn,
-	devpor => ww_devpor,
-	devoe => ww_devoe,
-	oe => GND,
-	padio => ww_Switch_1(3),
-	combout => \Switch_1~combout\(3));
-
 -- Location: LCCOMB_X13_Y12_N26
 \U_Ranger_Botom|edgebegin[21]~feeder\ : cycloneii_lcell_comb
 -- Equation(s):
@@ -9498,20 +9974,6 @@ GENERIC MAP (
 PORT MAP (
 	datad => \U_Ranger_Botom|count\(9),
 	combout => \U_Ranger_Botom|edgebegin[9]~feeder_combout\);
-
--- Location: LCCOMB_X13_Y12_N16
-\U_Ranger_Botom|edgebegin[10]~feeder\ : cycloneii_lcell_comb
--- Equation(s):
--- \U_Ranger_Botom|edgebegin[10]~feeder_combout\ = \U_Ranger_Botom|count\(10)
-
--- pragma translate_off
-GENERIC MAP (
-	lut_mask => "1111111100000000",
-	sum_lutc_input => "datac")
--- pragma translate_on
-PORT MAP (
-	datad => \U_Ranger_Botom|count\(10),
-	combout => \U_Ranger_Botom|edgebegin[10]~feeder_combout\);
 
 -- Location: LCCOMB_X13_Y9_N0
 \U_Ranger_Top|edgebegin[10]~feeder\ : cycloneii_lcell_comb
@@ -9554,20 +10016,6 @@ GENERIC MAP (
 PORT MAP (
 	datad => \U_Ranger_Botom|count\(12),
 	combout => \U_Ranger_Botom|edgebegin[12]~feeder_combout\);
-
--- Location: LCCOMB_X13_Y12_N24
-\U_Ranger_Botom|edgebegin[14]~feeder\ : cycloneii_lcell_comb
--- Equation(s):
--- \U_Ranger_Botom|edgebegin[14]~feeder_combout\ = \U_Ranger_Botom|count\(14)
-
--- pragma translate_off
-GENERIC MAP (
-	lut_mask => "1111111100000000",
-	sum_lutc_input => "datac")
--- pragma translate_on
-PORT MAP (
-	datad => \U_Ranger_Botom|count\(14),
-	combout => \U_Ranger_Botom|edgebegin[14]~feeder_combout\);
 
 -- Location: LCCOMB_X13_Y9_N8
 \U_Ranger_Top|edgebegin[14]~feeder\ : cycloneii_lcell_comb
@@ -10146,16 +10594,16 @@ PORT MAP (
 -- Location: LCCOMB_X22_Y17_N16
 \U_Registers|reg_controller_reset\ : cycloneii_lcell_comb
 -- Equation(s):
--- \U_Registers|reg_controller_reset~combout\ = (\PIC_SPI_Select~combout\) # (\Switch_2~combout\)
+-- \U_Registers|reg_controller_reset~combout\ = (\Switch_2~combout\) # (\PIC_SPI_Select~combout\)
 
 -- pragma translate_off
 GENERIC MAP (
-	lut_mask => "1111111111110000",
+	lut_mask => "1111101011111010",
 	sum_lutc_input => "datac")
 -- pragma translate_on
 PORT MAP (
+	dataa => \Switch_2~combout\,
 	datac => \PIC_SPI_Select~combout\,
-	datad => \Switch_2~combout\,
 	combout => \U_Registers|reg_controller_reset~combout\);
 
 -- Location: CLKCTRL_G3
@@ -10314,18 +10762,6 @@ PORT MAP (
 	devpor => ww_devpor,
 	regout => \U_Registers|RegCont|state.wa1~regout\);
 
--- Location: LCFF_X24_Y17_N19
-\U_Registers|RegAdd|tmp[1]\ : cycloneii_lcell_ff
-PORT MAP (
-	clk => \clk~clkctrl_outclk\,
-	sdata => \PIC_PBUS_Data[1]~1\,
-	aclr => \Switch_2~combout\,
-	sload => VCC,
-	ena => \U_Registers|RegCont|state.wa1~regout\,
-	devclrn => ww_devclrn,
-	devpor => ww_devpor,
-	regout => \U_Registers|RegAdd|tmp\(1));
-
 -- Location: LCFF_X24_Y17_N9
 \U_Registers|RegAdd|tmp[3]\ : cycloneii_lcell_ff
 PORT MAP (
@@ -10374,7 +10810,7 @@ PORT MAP (
 	devpor => ww_devpor,
 	regout => \U_Registers|RegAdd|tmp\(6));
 
--- Location: LCFF_X24_Y17_N3
+-- Location: LCFF_X24_Y17_N27
 \U_Registers|RegAdd|tmp[5]\ : cycloneii_lcell_ff
 PORT MAP (
 	clk => \clk~clkctrl_outclk\,
@@ -10427,14 +10863,26 @@ PORT MAP (
 
 -- pragma translate_off
 GENERIC MAP (
-	lut_mask => "0011000000000000",
+	lut_mask => "0101000000000000",
 	sum_lutc_input => "datac")
 -- pragma translate_on
 PORT MAP (
-	datab => \U_Registers|RegAdd|tmp\(1),
+	dataa => \U_Registers|RegAdd|tmp\(1),
 	datac => \U_Registers|RegCont|Equal0~1_combout\,
 	datad => \U_Registers|RegCont|state.rd2~regout\,
 	combout => \U_Registers|RegCont|rego00~0_combout\);
+
+-- Location: LCFF_X24_Y17_N19
+\U_Registers|RegAdd|tmp[1]\ : cycloneii_lcell_ff
+PORT MAP (
+	clk => \clk~clkctrl_outclk\,
+	sdata => \PIC_PBUS_Data[1]~1\,
+	aclr => \Switch_2~combout\,
+	sload => VCC,
+	ena => \U_Registers|RegCont|state.wa1~regout\,
+	devclrn => ww_devclrn,
+	devpor => ww_devpor,
+	regout => \U_Registers|RegAdd|tmp\(1));
 
 -- Location: LCCOMB_X25_Y18_N6
 \U_Registers|RegCont|nextstate.wd1~0\ : cycloneii_lcell_comb
@@ -10466,7 +10914,7 @@ PORT MAP (
 -- Location: LCCOMB_X24_Y17_N22
 \U_Registers|RegCont|regi00~0\ : cycloneii_lcell_comb
 -- Equation(s):
--- \U_Registers|RegCont|regi00~0_combout\ = (!\U_Registers|RegAdd|tmp\(1) & (\U_Registers|RegCont|Equal0~1_combout\ & \U_Registers|RegCont|state.wd1~regout\))
+-- \U_Registers|RegCont|regi00~0_combout\ = (!\U_Registers|RegAdd|tmp\(1) & (\U_Registers|RegCont|state.wd1~regout\ & \U_Registers|RegCont|Equal0~1_combout\))
 
 -- pragma translate_off
 GENERIC MAP (
@@ -10475,8 +10923,8 @@ GENERIC MAP (
 -- pragma translate_on
 PORT MAP (
 	datab => \U_Registers|RegAdd|tmp\(1),
-	datac => \U_Registers|RegCont|Equal0~1_combout\,
-	datad => \U_Registers|RegCont|state.wd1~regout\,
+	datac => \U_Registers|RegCont|state.wd1~regout\,
+	datad => \U_Registers|RegCont|Equal0~1_combout\,
 	combout => \U_Registers|RegCont|regi00~0_combout\);
 
 -- Location: LCFF_X24_Y17_N1
@@ -10583,7 +11031,7 @@ PORT MAP (
 	datad => \U_Registers|RegCont|Equal0~0_combout\,
 	combout => \U_Registers|RegCont|Equal6~0_combout\);
 
--- Location: LCCOMB_X23_Y17_N6
+-- Location: LCCOMB_X23_Y17_N30
 \U_Registers|RegCont|regi06~0\ : cycloneii_lcell_comb
 -- Equation(s):
 -- \U_Registers|RegCont|regi06~0_combout\ = (!\U_Registers|RegAdd|tmp\(0) & (\U_Registers|RegCont|Equal6~0_combout\ & \U_Registers|RegCont|state.wd1~regout\))
@@ -10792,6 +11240,20 @@ PORT MAP (
 	devpor => ww_devpor,
 	regout => \U_Registers|RegYD|tmp\(1));
 
+-- Location: LCCOMB_X25_Y16_N20
+\U_Registers|RegXM|tmp[1]~feeder\ : cycloneii_lcell_comb
+-- Equation(s):
+-- \U_Registers|RegXM|tmp[1]~feeder_combout\ = \PIC_PBUS_Data[1]~1\
+
+-- pragma translate_off
+GENERIC MAP (
+	lut_mask => "1111111100000000",
+	sum_lutc_input => "datac")
+-- pragma translate_on
+PORT MAP (
+	datad => \PIC_PBUS_Data[1]~1\,
+	combout => \U_Registers|RegXM|tmp[1]~feeder_combout\);
+
 -- Location: LCCOMB_X24_Y16_N30
 \U_Registers|RegCont|regi03~0\ : cycloneii_lcell_comb
 -- Equation(s):
@@ -10812,9 +11274,8 @@ PORT MAP (
 \U_Registers|RegXM|tmp[1]\ : cycloneii_lcell_ff
 PORT MAP (
 	clk => \clk~clkctrl_outclk\,
-	sdata => \PIC_PBUS_Data[1]~1\,
+	datain => \U_Registers|RegXM|tmp[1]~feeder_combout\,
 	aclr => \Switch_2~combout\,
-	sload => VCC,
 	ena => \U_Registers|RegCont|regi03~0_combout\,
 	devclrn => ww_devclrn,
 	devpor => ww_devpor,
@@ -10862,13 +11323,13 @@ PORT MAP (
 
 -- pragma translate_off
 GENERIC MAP (
-	lut_mask => "1110101011101010",
+	lut_mask => "1111111110100000",
 	sum_lutc_input => "datac")
 -- pragma translate_on
 PORT MAP (
-	dataa => \U_Registers|MuxOut|tmp1[1]~16_combout\,
-	datab => \U_Registers|RegAdd|tmp\(1),
+	dataa => \U_Registers|RegAdd|tmp\(1),
 	datac => \U_Registers|RegCont|state.ra2~regout\,
+	datad => \U_Registers|MuxOut|tmp1[1]~16_combout\,
 	combout => \U_Registers|MuxOut|tmp1[1]~17_combout\);
 
 -- Location: LCFF_X25_Y16_N23
@@ -10883,47 +11344,47 @@ PORT MAP (
 	devpor => ww_devpor,
 	regout => \U_Registers|RegXD|tmp\(2));
 
--- Location: LCFF_X24_Y16_N23
-\U_Registers|RegYD|tmp[2]\ : cycloneii_lcell_ff
+-- Location: LCFF_X23_Y17_N3
+\U_Registers|RegMisc|tmp[2]\ : cycloneii_lcell_ff
 PORT MAP (
 	clk => \clk~clkctrl_outclk\,
 	sdata => \PIC_PBUS_Data[2]~2\,
 	aclr => \Switch_2~combout\,
 	sload => VCC,
-	ena => \U_Registers|RegCont|regi01~0_combout\,
+	ena => \U_Registers|RegCont|regi07~0_combout\,
 	devclrn => ww_devclrn,
 	devpor => ww_devpor,
-	regout => \U_Registers|RegYD|tmp\(2));
+	regout => \U_Registers|RegMisc|tmp\(2));
 
--- Location: LCFF_X24_Y16_N25
-\U_Registers|RegZD|tmp[2]\ : cycloneii_lcell_ff
+-- Location: LCFF_X23_Y17_N21
+\U_Registers|RegAD|tmp[2]\ : cycloneii_lcell_ff
 PORT MAP (
 	clk => \clk~clkctrl_outclk\,
 	sdata => \PIC_PBUS_Data[2]~2\,
 	aclr => \Switch_2~combout\,
 	sload => VCC,
-	ena => \U_Registers|RegCont|regi02~0_combout\,
+	ena => \U_Registers|RegCont|regi06~0_combout\,
 	devclrn => ww_devclrn,
 	devpor => ww_devpor,
-	regout => \U_Registers|RegZD|tmp\(2));
+	regout => \U_Registers|RegAD|tmp\(2));
 
--- Location: LCCOMB_X24_Y16_N24
-\U_Registers|MuxOut|tmp1[2]~20\ : cycloneii_lcell_comb
+-- Location: LCCOMB_X23_Y17_N20
+\U_Registers|MuxOut|tmp1[2]~19\ : cycloneii_lcell_comb
 -- Equation(s):
--- \U_Registers|MuxOut|tmp1[2]~20_combout\ = (\U_Registers|MuxOut|tmp1[5]~7_combout\ & ((\U_Registers|RegYD|tmp\(2)) # ((\U_Registers|MuxOut|tmp1[5]~6_combout\)))) # (!\U_Registers|MuxOut|tmp1[5]~7_combout\ & (((\U_Registers|RegZD|tmp\(2) & 
--- !\U_Registers|MuxOut|tmp1[5]~6_combout\))))
+-- \U_Registers|MuxOut|tmp1[2]~19_combout\ = (\U_Registers|MuxOut|tmp1[2]~18_combout\ & (((\U_Registers|RegAD|tmp\(2)) # (\U_Registers|MuxOut|tmp1[5]~0_combout\)))) # (!\U_Registers|MuxOut|tmp1[2]~18_combout\ & (\U_Registers|RegMisc|tmp\(2) & 
+-- ((!\U_Registers|MuxOut|tmp1[5]~0_combout\))))
 
 -- pragma translate_off
 GENERIC MAP (
-	lut_mask => "1010101011011000",
+	lut_mask => "1010101011100100",
 	sum_lutc_input => "datac")
 -- pragma translate_on
 PORT MAP (
-	dataa => \U_Registers|MuxOut|tmp1[5]~7_combout\,
-	datab => \U_Registers|RegYD|tmp\(2),
-	datac => \U_Registers|RegZD|tmp\(2),
-	datad => \U_Registers|MuxOut|tmp1[5]~6_combout\,
-	combout => \U_Registers|MuxOut|tmp1[2]~20_combout\);
+	dataa => \U_Registers|MuxOut|tmp1[2]~18_combout\,
+	datab => \U_Registers|RegMisc|tmp\(2),
+	datac => \U_Registers|RegAD|tmp\(2),
+	datad => \U_Registers|MuxOut|tmp1[5]~0_combout\,
+	combout => \U_Registers|MuxOut|tmp1[2]~19_combout\);
 
 -- Location: LCFF_X25_Y16_N1
 \U_Registers|RegXM|tmp[2]\ : cycloneii_lcell_ff
@@ -10945,12 +11406,12 @@ PORT MAP (
 
 -- pragma translate_off
 GENERIC MAP (
-	lut_mask => "1110001011001100",
+	lut_mask => "1110010010101010",
 	sum_lutc_input => "datac")
 -- pragma translate_on
 PORT MAP (
-	dataa => \U_Registers|MuxOut|tmp1[2]~19_combout\,
-	datab => \U_Registers|MuxOut|tmp1[2]~20_combout\,
+	dataa => \U_Registers|MuxOut|tmp1[2]~20_combout\,
+	datab => \U_Registers|MuxOut|tmp1[2]~19_combout\,
 	datac => \U_Registers|RegXM|tmp\(2),
 	datad => \U_Registers|MuxOut|tmp1[5]~6_combout\,
 	combout => \U_Registers|MuxOut|tmp1[2]~21_combout\);
@@ -11119,7 +11580,7 @@ PORT MAP (
 	datad => \U_Registers|RegCont|state.ra2~regout\,
 	combout => \U_Registers|MuxOut|tmp1[5]~40_combout\);
 
--- Location: LCCOMB_X24_Y17_N2
+-- Location: LCCOMB_X24_Y17_N26
 \U_Registers|MuxOut|tmp1[5]~41\ : cycloneii_lcell_comb
 -- Equation(s):
 -- \U_Registers|MuxOut|tmp1[5]~41_combout\ = (\U_Registers|MuxOut|tmp1[5]~40_combout\) # ((\U_Registers|RegAdd|tmp\(5) & \U_Registers|RegCont|state.ra2~regout\))
@@ -11135,7 +11596,7 @@ PORT MAP (
 	datad => \U_Registers|RegCont|state.ra2~regout\,
 	combout => \U_Registers|MuxOut|tmp1[5]~41_combout\);
 
--- Location: LCFF_X24_Y17_N27
+-- Location: LCFF_X24_Y17_N3
 \U_Registers|RegXD|tmp[6]\ : cycloneii_lcell_ff
 PORT MAP (
 	clk => \clk~clkctrl_outclk\,
@@ -11147,7 +11608,7 @@ PORT MAP (
 	devpor => ww_devpor,
 	regout => \U_Registers|RegXD|tmp\(6));
 
--- Location: LCCOMB_X24_Y17_N26
+-- Location: LCCOMB_X24_Y17_N2
 \U_Registers|MuxOut|tmp1[6]~46\ : cycloneii_lcell_comb
 -- Equation(s):
 -- \U_Registers|MuxOut|tmp1[6]~46_combout\ = (!\U_Registers|RegCont|state.ra2~regout\ & ((\U_Registers|RegCont|rego00~0_combout\ & ((\U_Registers|RegXD|tmp\(6)))) # (!\U_Registers|RegCont|rego00~0_combout\ & (\U_Registers|MuxOut|tmp1[6]~45_combout\))))
@@ -11511,7 +11972,7 @@ PORT MAP (
 	combout => \U_1HzClkDivider|Add0~2_combout\,
 	cout => \U_1HzClkDivider|Add0~3\);
 
--- Location: LCCOMB_X26_Y2_N24
+-- Location: LCCOMB_X26_Y2_N10
 \U_1HzClkDivider|cnt~9\ : cycloneii_lcell_comb
 -- Equation(s):
 -- \U_1HzClkDivider|cnt~9_combout\ = (\U_1HzClkDivider|Add0~2_combout\ & (((!\U_1HzClkDivider|Equal0~4_combout\) # (!\U_1HzClkDivider|Equal0~5_combout\)) # (!\U_1HzClkDivider|Equal0~6_combout\)))
@@ -11528,7 +11989,7 @@ PORT MAP (
 	datad => \U_1HzClkDivider|Add0~2_combout\,
 	combout => \U_1HzClkDivider|cnt~9_combout\);
 
--- Location: LCFF_X26_Y2_N25
+-- Location: LCFF_X26_Y2_N11
 \U_1HzClkDivider|cnt[1]\ : cycloneii_lcell_ff
 PORT MAP (
 	clk => \clk~clkctrl_outclk\,
@@ -11555,7 +12016,7 @@ PORT MAP (
 	combout => \U_1HzClkDivider|Add0~4_combout\,
 	cout => \U_1HzClkDivider|Add0~5\);
 
--- Location: LCCOMB_X26_Y2_N12
+-- Location: LCCOMB_X26_Y2_N22
 \U_1HzClkDivider|cnt~8\ : cycloneii_lcell_comb
 -- Equation(s):
 -- \U_1HzClkDivider|cnt~8_combout\ = (\U_1HzClkDivider|Add0~4_combout\ & (((!\U_1HzClkDivider|Equal0~4_combout\) # (!\U_1HzClkDivider|Equal0~5_combout\)) # (!\U_1HzClkDivider|Equal0~6_combout\)))
@@ -11572,7 +12033,7 @@ PORT MAP (
 	datad => \U_1HzClkDivider|Add0~4_combout\,
 	combout => \U_1HzClkDivider|cnt~8_combout\);
 
--- Location: LCFF_X26_Y2_N13
+-- Location: LCFF_X26_Y2_N23
 \U_1HzClkDivider|cnt[2]\ : cycloneii_lcell_ff
 PORT MAP (
 	clk => \clk~clkctrl_outclk\,
@@ -11599,7 +12060,7 @@ PORT MAP (
 	combout => \U_1HzClkDivider|Add0~8_combout\,
 	cout => \U_1HzClkDivider|Add0~9\);
 
--- Location: LCCOMB_X26_Y2_N22
+-- Location: LCCOMB_X26_Y2_N8
 \U_1HzClkDivider|cnt~7\ : cycloneii_lcell_comb
 -- Equation(s):
 -- \U_1HzClkDivider|cnt~7_combout\ = (\U_1HzClkDivider|Add0~8_combout\ & (((!\U_1HzClkDivider|Equal0~4_combout\) # (!\U_1HzClkDivider|Equal0~5_combout\)) # (!\U_1HzClkDivider|Equal0~6_combout\)))
@@ -11616,7 +12077,7 @@ PORT MAP (
 	datad => \U_1HzClkDivider|Add0~8_combout\,
 	combout => \U_1HzClkDivider|cnt~7_combout\);
 
--- Location: LCFF_X26_Y2_N23
+-- Location: LCFF_X26_Y2_N9
 \U_1HzClkDivider|cnt[4]\ : cycloneii_lcell_ff
 PORT MAP (
 	clk => \clk~clkctrl_outclk\,
@@ -11643,7 +12104,7 @@ PORT MAP (
 	combout => \U_1HzClkDivider|Add0~10_combout\,
 	cout => \U_1HzClkDivider|Add0~11\);
 
--- Location: LCCOMB_X26_Y2_N8
+-- Location: LCCOMB_X26_Y2_N12
 \U_1HzClkDivider|cnt~6\ : cycloneii_lcell_comb
 -- Equation(s):
 -- \U_1HzClkDivider|cnt~6_combout\ = (\U_1HzClkDivider|Add0~10_combout\ & (((!\U_1HzClkDivider|Equal0~5_combout\) # (!\U_1HzClkDivider|Equal0~6_combout\)) # (!\U_1HzClkDivider|Equal0~4_combout\)))
@@ -11660,7 +12121,7 @@ PORT MAP (
 	datad => \U_1HzClkDivider|Equal0~5_combout\,
 	combout => \U_1HzClkDivider|cnt~6_combout\);
 
--- Location: LCFF_X26_Y2_N9
+-- Location: LCFF_X26_Y2_N13
 \U_1HzClkDivider|cnt[5]\ : cycloneii_lcell_ff
 PORT MAP (
 	clk => \clk~clkctrl_outclk\,
@@ -11668,57 +12129,6 @@ PORT MAP (
 	devclrn => ww_devclrn,
 	devpor => ww_devpor,
 	regout => \U_1HzClkDivider|cnt\(5));
-
--- Location: LCCOMB_X25_Y2_N8
-\U_1HzClkDivider|Equal0~0\ : cycloneii_lcell_comb
--- Equation(s):
--- \U_1HzClkDivider|Equal0~0_combout\ = (\U_1HzClkDivider|cnt\(7) & (\U_1HzClkDivider|cnt\(6) & (\U_1HzClkDivider|cnt\(5) & \U_1HzClkDivider|cnt\(4))))
-
--- pragma translate_off
-GENERIC MAP (
-	lut_mask => "1000000000000000",
-	sum_lutc_input => "datac")
--- pragma translate_on
-PORT MAP (
-	dataa => \U_1HzClkDivider|cnt\(7),
-	datab => \U_1HzClkDivider|cnt\(6),
-	datac => \U_1HzClkDivider|cnt\(5),
-	datad => \U_1HzClkDivider|cnt\(4),
-	combout => \U_1HzClkDivider|Equal0~0_combout\);
-
--- Location: LCCOMB_X25_Y2_N2
-\U_1HzClkDivider|Equal0~1\ : cycloneii_lcell_comb
--- Equation(s):
--- \U_1HzClkDivider|Equal0~1_combout\ = (!\U_1HzClkDivider|cnt\(3) & (!\U_1HzClkDivider|cnt\(0) & (\U_1HzClkDivider|cnt\(2) & \U_1HzClkDivider|cnt\(1))))
-
--- pragma translate_off
-GENERIC MAP (
-	lut_mask => "0001000000000000",
-	sum_lutc_input => "datac")
--- pragma translate_on
-PORT MAP (
-	dataa => \U_1HzClkDivider|cnt\(3),
-	datab => \U_1HzClkDivider|cnt\(0),
-	datac => \U_1HzClkDivider|cnt\(2),
-	datad => \U_1HzClkDivider|cnt\(1),
-	combout => \U_1HzClkDivider|Equal0~1_combout\);
-
--- Location: LCCOMB_X25_Y2_N0
-\U_1HzClkDivider|Equal0~4\ : cycloneii_lcell_comb
--- Equation(s):
--- \U_1HzClkDivider|Equal0~4_combout\ = (\U_1HzClkDivider|Equal0~3_combout\ & (\U_1HzClkDivider|Equal0~2_combout\ & (\U_1HzClkDivider|Equal0~0_combout\ & \U_1HzClkDivider|Equal0~1_combout\)))
-
--- pragma translate_off
-GENERIC MAP (
-	lut_mask => "1000000000000000",
-	sum_lutc_input => "datac")
--- pragma translate_on
-PORT MAP (
-	dataa => \U_1HzClkDivider|Equal0~3_combout\,
-	datab => \U_1HzClkDivider|Equal0~2_combout\,
-	datac => \U_1HzClkDivider|Equal0~0_combout\,
-	datad => \U_1HzClkDivider|Equal0~1_combout\,
-	combout => \U_1HzClkDivider|Equal0~4_combout\);
 
 -- Location: LCCOMB_X25_Y2_N22
 \U_1HzClkDivider|Add0~12\ : cycloneii_lcell_comb
@@ -11763,6 +12173,101 @@ PORT MAP (
 	devclrn => ww_devclrn,
 	devpor => ww_devpor,
 	regout => \U_1HzClkDivider|cnt\(6));
+
+-- Location: LCCOMB_X25_Y2_N8
+\U_1HzClkDivider|Equal0~0\ : cycloneii_lcell_comb
+-- Equation(s):
+-- \U_1HzClkDivider|Equal0~0_combout\ = (\U_1HzClkDivider|cnt\(5) & (\U_1HzClkDivider|cnt\(6) & (\U_1HzClkDivider|cnt\(4) & \U_1HzClkDivider|cnt\(7))))
+
+-- pragma translate_off
+GENERIC MAP (
+	lut_mask => "1000000000000000",
+	sum_lutc_input => "datac")
+-- pragma translate_on
+PORT MAP (
+	dataa => \U_1HzClkDivider|cnt\(5),
+	datab => \U_1HzClkDivider|cnt\(6),
+	datac => \U_1HzClkDivider|cnt\(4),
+	datad => \U_1HzClkDivider|cnt\(7),
+	combout => \U_1HzClkDivider|Equal0~0_combout\);
+
+-- Location: LCCOMB_X25_Y2_N2
+\U_1HzClkDivider|Equal0~1\ : cycloneii_lcell_comb
+-- Equation(s):
+-- \U_1HzClkDivider|Equal0~1_combout\ = (!\U_1HzClkDivider|cnt\(3) & (!\U_1HzClkDivider|cnt\(0) & (\U_1HzClkDivider|cnt\(1) & \U_1HzClkDivider|cnt\(2))))
+
+-- pragma translate_off
+GENERIC MAP (
+	lut_mask => "0001000000000000",
+	sum_lutc_input => "datac")
+-- pragma translate_on
+PORT MAP (
+	dataa => \U_1HzClkDivider|cnt\(3),
+	datab => \U_1HzClkDivider|cnt\(0),
+	datac => \U_1HzClkDivider|cnt\(1),
+	datad => \U_1HzClkDivider|cnt\(2),
+	combout => \U_1HzClkDivider|Equal0~1_combout\);
+
+-- Location: LCCOMB_X25_Y2_N0
+\U_1HzClkDivider|Equal0~4\ : cycloneii_lcell_comb
+-- Equation(s):
+-- \U_1HzClkDivider|Equal0~4_combout\ = (\U_1HzClkDivider|Equal0~3_combout\ & (\U_1HzClkDivider|Equal0~2_combout\ & (\U_1HzClkDivider|Equal0~0_combout\ & \U_1HzClkDivider|Equal0~1_combout\)))
+
+-- pragma translate_off
+GENERIC MAP (
+	lut_mask => "1000000000000000",
+	sum_lutc_input => "datac")
+-- pragma translate_on
+PORT MAP (
+	dataa => \U_1HzClkDivider|Equal0~3_combout\,
+	datab => \U_1HzClkDivider|Equal0~2_combout\,
+	datac => \U_1HzClkDivider|Equal0~0_combout\,
+	datad => \U_1HzClkDivider|Equal0~1_combout\,
+	combout => \U_1HzClkDivider|Equal0~4_combout\);
+
+-- Location: LCCOMB_X25_Y2_N24
+\U_1HzClkDivider|Add0~14\ : cycloneii_lcell_comb
+-- Equation(s):
+-- \U_1HzClkDivider|Add0~14_combout\ = (\U_1HzClkDivider|cnt\(7) & (!\U_1HzClkDivider|Add0~13\)) # (!\U_1HzClkDivider|cnt\(7) & ((\U_1HzClkDivider|Add0~13\) # (GND)))
+-- \U_1HzClkDivider|Add0~15\ = CARRY((!\U_1HzClkDivider|Add0~13\) # (!\U_1HzClkDivider|cnt\(7)))
+
+-- pragma translate_off
+GENERIC MAP (
+	lut_mask => "0011110000111111",
+	sum_lutc_input => "cin")
+-- pragma translate_on
+PORT MAP (
+	datab => \U_1HzClkDivider|cnt\(7),
+	datad => VCC,
+	cin => \U_1HzClkDivider|Add0~13\,
+	combout => \U_1HzClkDivider|Add0~14_combout\,
+	cout => \U_1HzClkDivider|Add0~15\);
+
+-- Location: LCCOMB_X26_Y2_N30
+\U_1HzClkDivider|cnt~4\ : cycloneii_lcell_comb
+-- Equation(s):
+-- \U_1HzClkDivider|cnt~4_combout\ = (\U_1HzClkDivider|Add0~14_combout\ & (((!\U_1HzClkDivider|Equal0~4_combout\) # (!\U_1HzClkDivider|Equal0~5_combout\)) # (!\U_1HzClkDivider|Equal0~6_combout\)))
+
+-- pragma translate_off
+GENERIC MAP (
+	lut_mask => "0111111100000000",
+	sum_lutc_input => "datac")
+-- pragma translate_on
+PORT MAP (
+	dataa => \U_1HzClkDivider|Equal0~6_combout\,
+	datab => \U_1HzClkDivider|Equal0~5_combout\,
+	datac => \U_1HzClkDivider|Equal0~4_combout\,
+	datad => \U_1HzClkDivider|Add0~14_combout\,
+	combout => \U_1HzClkDivider|cnt~4_combout\);
+
+-- Location: LCFF_X26_Y2_N31
+\U_1HzClkDivider|cnt[7]\ : cycloneii_lcell_ff
+PORT MAP (
+	clk => \clk~clkctrl_outclk\,
+	datain => \U_1HzClkDivider|cnt~4_combout\,
+	devclrn => ww_devclrn,
+	devpor => ww_devpor,
+	regout => \U_1HzClkDivider|cnt\(7));
 
 -- Location: LCCOMB_X25_Y2_N26
 \U_1HzClkDivider|Add0~16\ : cycloneii_lcell_comb
@@ -11988,7 +12493,7 @@ PORT MAP (
 	datad => \U_1HzClkDivider|cnt\(16),
 	combout => \U_1HzClkDivider|Equal0~5_combout\);
 
--- Location: LCCOMB_X26_Y2_N6
+-- Location: LCCOMB_X26_Y2_N4
 \U_1HzClkDivider|Equal0~7\ : cycloneii_lcell_comb
 -- Equation(s):
 -- \U_1HzClkDivider|Equal0~7_combout\ = (\U_1HzClkDivider|Equal0~5_combout\ & (\U_1HzClkDivider|Equal0~4_combout\ & \U_1HzClkDivider|Equal0~6_combout\))
@@ -12004,7 +12509,7 @@ PORT MAP (
 	datad => \U_1HzClkDivider|Equal0~6_combout\,
 	combout => \U_1HzClkDivider|Equal0~7_combout\);
 
--- Location: LCFF_X26_Y2_N7
+-- Location: LCFF_X26_Y2_N5
 \U_1HzClkDivider|clk_out\ : cycloneii_lcell_ff
 PORT MAP (
 	clk => \clk~clkctrl_outclk\,
@@ -12071,42 +12576,6 @@ PORT MAP (
 	devclrn => ww_devclrn,
 	devpor => ww_devpor,
 	regout => \TLED_Orange_1~reg0_regout\);
-
--- Location: LCCOMB_X15_Y6_N2
-\U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_1~0\ : cycloneii_lcell_comb
--- Equation(s):
--- \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_1~0_combout\ = \U_Ranger_Top|timevector[13]~26_combout\ $ (VCC)
--- \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_1~1\ = CARRY(\U_Ranger_Top|timevector[13]~26_combout\)
-
--- pragma translate_off
-GENERIC MAP (
-	lut_mask => "0101010110101010",
-	sum_lutc_input => "datac")
--- pragma translate_on
-PORT MAP (
-	dataa => \U_Ranger_Top|timevector[13]~26_combout\,
-	datad => VCC,
-	combout => \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_1~0_combout\,
-	cout => \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_1~1\);
-
--- Location: LCCOMB_X15_Y6_N4
-\U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_1~2\ : cycloneii_lcell_comb
--- Equation(s):
--- \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_1~2_combout\ = (\U_Ranger_Top|timevector[14]~28_combout\ & (\U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_1~1\ & VCC)) # 
--- (!\U_Ranger_Top|timevector[14]~28_combout\ & (!\U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_1~1\))
--- \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_1~3\ = CARRY((!\U_Ranger_Top|timevector[14]~28_combout\ & !\U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_1~1\))
-
--- pragma translate_off
-GENERIC MAP (
-	lut_mask => "1010010100000101",
-	sum_lutc_input => "cin")
--- pragma translate_on
-PORT MAP (
-	dataa => \U_Ranger_Top|timevector[14]~28_combout\,
-	datad => VCC,
-	cin => \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_1~1\,
-	combout => \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_1~2_combout\,
-	cout => \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_1~3\);
 
 -- Location: LCCOMB_X17_Y11_N8
 \U_Ranger_Botom|count[0]~24\ : cycloneii_lcell_comb
@@ -12708,6 +13177,20 @@ PORT MAP (
 	devpor => ww_devpor,
 	regout => \U_Ranger_Botom|count\(22));
 
+-- Location: LCCOMB_X13_Y9_N16
+\U_Ranger_Top|edgebegin[22]~feeder\ : cycloneii_lcell_comb
+-- Equation(s):
+-- \U_Ranger_Top|edgebegin[22]~feeder_combout\ = \U_Ranger_Botom|count\(22)
+
+-- pragma translate_off
+GENERIC MAP (
+	lut_mask => "1111111100000000",
+	sum_lutc_input => "datac")
+-- pragma translate_on
+PORT MAP (
+	datad => \U_Ranger_Botom|count\(22),
+	combout => \U_Ranger_Top|edgebegin[22]~feeder_combout\);
+
 -- Location: PIN_32,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: Default
 \Ultra_T_Edge~I\ : cycloneii_io
 -- pragma translate_off
@@ -12763,8 +13246,7 @@ PORT MAP (
 \U_Ranger_Top|edgebegin[22]\ : cycloneii_lcell_ff
 PORT MAP (
 	clk => \clk~clkctrl_outclk\,
-	sdata => \U_Ranger_Botom|count\(22),
-	sload => VCC,
+	datain => \U_Ranger_Top|edgebegin[22]~feeder_combout\,
 	ena => \U_Ranger_Top|process_0~0_combout\,
 	devclrn => ww_devclrn,
 	devpor => ww_devpor,
@@ -12882,12 +13364,25 @@ PORT MAP (
 	devpor => ww_devpor,
 	regout => \U_Ranger_Botom|count\(17));
 
+-- Location: LCCOMB_X13_Y9_N26
+\U_Ranger_Top|edgebegin[17]~feeder\ : cycloneii_lcell_comb
+-- Equation(s):
+-- \U_Ranger_Top|edgebegin[17]~feeder_combout\ = \U_Ranger_Botom|count\(17)
+
+-- pragma translate_off
+GENERIC MAP (
+	lut_mask => "1111111100000000",
+	sum_lutc_input => "datac")
+-- pragma translate_on
+PORT MAP (
+	datad => \U_Ranger_Botom|count\(17),
+	combout => \U_Ranger_Top|edgebegin[17]~feeder_combout\);
+
 -- Location: LCFF_X13_Y9_N27
 \U_Ranger_Top|edgebegin[17]\ : cycloneii_lcell_ff
 PORT MAP (
 	clk => \clk~clkctrl_outclk\,
-	sdata => \U_Ranger_Botom|count\(17),
-	sload => VCC,
+	datain => \U_Ranger_Top|edgebegin[17]~feeder_combout\,
 	ena => \U_Ranger_Top|process_0~0_combout\,
 	devclrn => ww_devclrn,
 	devpor => ww_devpor,
@@ -13270,26 +13765,6 @@ PORT MAP (
 	combout => \U_Ranger_Top|timevector[7]~14_combout\,
 	cout => \U_Ranger_Top|timevector[7]~15\);
 
--- Location: LCCOMB_X14_Y10_N26
-\U_Ranger_Top|timevector[9]~18\ : cycloneii_lcell_comb
--- Equation(s):
--- \U_Ranger_Top|timevector[9]~18_combout\ = (\U_Ranger_Top|edgebegin\(9) & ((\U_Ranger_Top|edgeend\(9) & (!\U_Ranger_Top|timevector[8]~17\)) # (!\U_Ranger_Top|edgeend\(9) & ((\U_Ranger_Top|timevector[8]~17\) # (GND))))) # (!\U_Ranger_Top|edgebegin\(9) & 
--- ((\U_Ranger_Top|edgeend\(9) & (\U_Ranger_Top|timevector[8]~17\ & VCC)) # (!\U_Ranger_Top|edgeend\(9) & (!\U_Ranger_Top|timevector[8]~17\))))
--- \U_Ranger_Top|timevector[9]~19\ = CARRY((\U_Ranger_Top|edgebegin\(9) & ((!\U_Ranger_Top|timevector[8]~17\) # (!\U_Ranger_Top|edgeend\(9)))) # (!\U_Ranger_Top|edgebegin\(9) & (!\U_Ranger_Top|edgeend\(9) & !\U_Ranger_Top|timevector[8]~17\)))
-
--- pragma translate_off
-GENERIC MAP (
-	lut_mask => "0110100100101011",
-	sum_lutc_input => "cin")
--- pragma translate_on
-PORT MAP (
-	dataa => \U_Ranger_Top|edgebegin\(9),
-	datab => \U_Ranger_Top|edgeend\(9),
-	datad => VCC,
-	cin => \U_Ranger_Top|timevector[8]~17\,
-	combout => \U_Ranger_Top|timevector[9]~18_combout\,
-	cout => \U_Ranger_Top|timevector[9]~19\);
-
 -- Location: LCCOMB_X14_Y10_N28
 \U_Ranger_Top|timevector[10]~20\ : cycloneii_lcell_comb
 -- Equation(s):
@@ -13348,6 +13823,25 @@ PORT MAP (
 	cin => \U_Ranger_Top|timevector[12]~25\,
 	combout => \U_Ranger_Top|timevector[13]~26_combout\,
 	cout => \U_Ranger_Top|timevector[13]~27\);
+
+-- Location: LCCOMB_X14_Y9_N4
+\U_Ranger_Top|timevector[14]~28\ : cycloneii_lcell_comb
+-- Equation(s):
+-- \U_Ranger_Top|timevector[14]~28_combout\ = ((\U_Ranger_Top|edgebegin\(14) $ (\U_Ranger_Top|edgeend\(14) $ (\U_Ranger_Top|timevector[13]~27\)))) # (GND)
+-- \U_Ranger_Top|timevector[14]~29\ = CARRY((\U_Ranger_Top|edgebegin\(14) & (\U_Ranger_Top|edgeend\(14) & !\U_Ranger_Top|timevector[13]~27\)) # (!\U_Ranger_Top|edgebegin\(14) & ((\U_Ranger_Top|edgeend\(14)) # (!\U_Ranger_Top|timevector[13]~27\))))
+
+-- pragma translate_off
+GENERIC MAP (
+	lut_mask => "1001011001001101",
+	sum_lutc_input => "cin")
+-- pragma translate_on
+PORT MAP (
+	dataa => \U_Ranger_Top|edgebegin\(14),
+	datab => \U_Ranger_Top|edgeend\(14),
+	datad => VCC,
+	cin => \U_Ranger_Top|timevector[13]~27\,
+	combout => \U_Ranger_Top|timevector[14]~28_combout\,
+	cout => \U_Ranger_Top|timevector[14]~29\);
 
 -- Location: LCCOMB_X14_Y9_N6
 \U_Ranger_Top|timevector[15]~30\ : cycloneii_lcell_comb
@@ -13485,6 +13979,42 @@ PORT MAP (
 	cin => \U_Ranger_Top|timevector[20]~41\,
 	combout => \U_Ranger_Top|timevector[21]~42_combout\,
 	cout => \U_Ranger_Top|timevector[21]~43\);
+
+-- Location: LCCOMB_X15_Y6_N2
+\U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_1~0\ : cycloneii_lcell_comb
+-- Equation(s):
+-- \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_1~0_combout\ = \U_Ranger_Top|timevector[13]~26_combout\ $ (VCC)
+-- \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_1~1\ = CARRY(\U_Ranger_Top|timevector[13]~26_combout\)
+
+-- pragma translate_off
+GENERIC MAP (
+	lut_mask => "0101010110101010",
+	sum_lutc_input => "datac")
+-- pragma translate_on
+PORT MAP (
+	dataa => \U_Ranger_Top|timevector[13]~26_combout\,
+	datad => VCC,
+	combout => \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_1~0_combout\,
+	cout => \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_1~1\);
+
+-- Location: LCCOMB_X15_Y6_N4
+\U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_1~2\ : cycloneii_lcell_comb
+-- Equation(s):
+-- \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_1~2_combout\ = (\U_Ranger_Top|timevector[14]~28_combout\ & (\U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_1~1\ & VCC)) # 
+-- (!\U_Ranger_Top|timevector[14]~28_combout\ & (!\U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_1~1\))
+-- \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_1~3\ = CARRY((!\U_Ranger_Top|timevector[14]~28_combout\ & !\U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_1~1\))
+
+-- pragma translate_off
+GENERIC MAP (
+	lut_mask => "1100001100000011",
+	sum_lutc_input => "cin")
+-- pragma translate_on
+PORT MAP (
+	datab => \U_Ranger_Top|timevector[14]~28_combout\,
+	datad => VCC,
+	cin => \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_1~1\,
+	combout => \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_1~2_combout\,
+	cout => \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_1~3\);
 
 -- Location: LCCOMB_X15_Y6_N8
 \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_1~6\ : cycloneii_lcell_comb
@@ -13652,6 +14182,108 @@ PORT MAP (
 	cin => \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_1~21\,
 	combout => \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_1~22_combout\);
 
+-- Location: LCCOMB_X15_Y6_N0
+\U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[250]~0\ : cycloneii_lcell_comb
+-- Equation(s):
+-- \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[250]~0_combout\ = (\U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_1~22_combout\ & (\U_Ranger_Top|timevector[23]~46_combout\)) # 
+-- (!\U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_1~22_combout\ & ((\U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_1~20_combout\)))
+
+-- pragma translate_off
+GENERIC MAP (
+	lut_mask => "1010111110100000",
+	sum_lutc_input => "datac")
+-- pragma translate_on
+PORT MAP (
+	dataa => \U_Ranger_Top|timevector[23]~46_combout\,
+	datac => \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_1~22_combout\,
+	datad => \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_1~20_combout\,
+	combout => \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[250]~0_combout\);
+
+-- Location: LCCOMB_X15_Y6_N28
+\U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[248]~2\ : cycloneii_lcell_comb
+-- Equation(s):
+-- \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[248]~2_combout\ = (\U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_1~22_combout\ & (\U_Ranger_Top|timevector[21]~42_combout\)) # 
+-- (!\U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_1~22_combout\ & ((\U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_1~16_combout\)))
+
+-- pragma translate_off
+GENERIC MAP (
+	lut_mask => "1100111111000000",
+	sum_lutc_input => "datac")
+-- pragma translate_on
+PORT MAP (
+	datab => \U_Ranger_Top|timevector[21]~42_combout\,
+	datac => \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_1~22_combout\,
+	datad => \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_1~16_combout\,
+	combout => \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[248]~2_combout\);
+
+-- Location: LCCOMB_X15_Y6_N30
+\U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[247]~3\ : cycloneii_lcell_comb
+-- Equation(s):
+-- \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[247]~3_combout\ = (\U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_1~22_combout\ & ((\U_Ranger_Top|timevector[20]~40_combout\))) # 
+-- (!\U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_1~22_combout\ & (\U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_1~14_combout\))
+
+-- pragma translate_off
+GENERIC MAP (
+	lut_mask => "1111101001010000",
+	sum_lutc_input => "datac")
+-- pragma translate_on
+PORT MAP (
+	dataa => \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_1~22_combout\,
+	datac => \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_1~14_combout\,
+	datad => \U_Ranger_Top|timevector[20]~40_combout\,
+	combout => \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[247]~3_combout\);
+
+-- Location: LCCOMB_X12_Y7_N18
+\U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[246]~4\ : cycloneii_lcell_comb
+-- Equation(s):
+-- \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[246]~4_combout\ = (\U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_1~22_combout\ & (\U_Ranger_Top|timevector[19]~38_combout\)) # 
+-- (!\U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_1~22_combout\ & ((\U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_1~12_combout\)))
+
+-- pragma translate_off
+GENERIC MAP (
+	lut_mask => "1100110011110000",
+	sum_lutc_input => "datac")
+-- pragma translate_on
+PORT MAP (
+	datab => \U_Ranger_Top|timevector[19]~38_combout\,
+	datac => \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_1~12_combout\,
+	datad => \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_1~22_combout\,
+	combout => \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[246]~4_combout\);
+
+-- Location: LCCOMB_X13_Y6_N18
+\U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[244]~6\ : cycloneii_lcell_comb
+-- Equation(s):
+-- \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[244]~6_combout\ = (\U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_1~22_combout\ & (\U_Ranger_Top|timevector[17]~34_combout\)) # 
+-- (!\U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_1~22_combout\ & ((\U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_1~8_combout\)))
+
+-- pragma translate_off
+GENERIC MAP (
+	lut_mask => "1100111111000000",
+	sum_lutc_input => "datac")
+-- pragma translate_on
+PORT MAP (
+	datab => \U_Ranger_Top|timevector[17]~34_combout\,
+	datac => \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_1~22_combout\,
+	datad => \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_1~8_combout\,
+	combout => \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[244]~6_combout\);
+
+-- Location: LCCOMB_X13_Y6_N4
+\U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[243]~7\ : cycloneii_lcell_comb
+-- Equation(s):
+-- \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[243]~7_combout\ = (\U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_1~22_combout\ & (\U_Ranger_Top|timevector[16]~32_combout\)) # 
+-- (!\U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_1~22_combout\ & ((\U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_1~6_combout\)))
+
+-- pragma translate_off
+GENERIC MAP (
+	lut_mask => "1100110011110000",
+	sum_lutc_input => "datac")
+-- pragma translate_on
+PORT MAP (
+	datab => \U_Ranger_Top|timevector[16]~32_combout\,
+	datac => \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_1~6_combout\,
+	datad => \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_1~22_combout\,
+	combout => \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[243]~7_combout\);
+
 -- Location: LCCOMB_X13_Y6_N24
 \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[241]~9\ : cycloneii_lcell_comb
 -- Equation(s):
@@ -13765,129 +14397,6 @@ PORT MAP (
 	cin => \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_2~5\,
 	combout => \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_2~6_combout\,
 	cout => \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_2~7\);
-
--- Location: LCCOMB_X15_Y6_N0
-\U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[250]~0\ : cycloneii_lcell_comb
--- Equation(s):
--- \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[250]~0_combout\ = (\U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_1~22_combout\ & (\U_Ranger_Top|timevector[23]~46_combout\)) # 
--- (!\U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_1~22_combout\ & ((\U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_1~20_combout\)))
-
--- pragma translate_off
-GENERIC MAP (
-	lut_mask => "1010111110100000",
-	sum_lutc_input => "datac")
--- pragma translate_on
-PORT MAP (
-	dataa => \U_Ranger_Top|timevector[23]~46_combout\,
-	datac => \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_1~22_combout\,
-	datad => \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_1~20_combout\,
-	combout => \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[250]~0_combout\);
-
--- Location: LCCOMB_X15_Y6_N28
-\U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[248]~2\ : cycloneii_lcell_comb
--- Equation(s):
--- \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[248]~2_combout\ = (\U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_1~22_combout\ & (\U_Ranger_Top|timevector[21]~42_combout\)) # 
--- (!\U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_1~22_combout\ & ((\U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_1~16_combout\)))
-
--- pragma translate_off
-GENERIC MAP (
-	lut_mask => "1100111111000000",
-	sum_lutc_input => "datac")
--- pragma translate_on
-PORT MAP (
-	datab => \U_Ranger_Top|timevector[21]~42_combout\,
-	datac => \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_1~22_combout\,
-	datad => \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_1~16_combout\,
-	combout => \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[248]~2_combout\);
-
--- Location: LCCOMB_X15_Y6_N30
-\U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[247]~3\ : cycloneii_lcell_comb
--- Equation(s):
--- \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[247]~3_combout\ = (\U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_1~22_combout\ & ((\U_Ranger_Top|timevector[20]~40_combout\))) # 
--- (!\U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_1~22_combout\ & (\U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_1~14_combout\))
-
--- pragma translate_off
-GENERIC MAP (
-	lut_mask => "1111101001010000",
-	sum_lutc_input => "datac")
--- pragma translate_on
-PORT MAP (
-	dataa => \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_1~22_combout\,
-	datac => \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_1~14_combout\,
-	datad => \U_Ranger_Top|timevector[20]~40_combout\,
-	combout => \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[247]~3_combout\);
-
--- Location: LCCOMB_X12_Y7_N18
-\U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[246]~4\ : cycloneii_lcell_comb
--- Equation(s):
--- \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[246]~4_combout\ = (\U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_1~22_combout\ & (\U_Ranger_Top|timevector[19]~38_combout\)) # 
--- (!\U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_1~22_combout\ & ((\U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_1~12_combout\)))
-
--- pragma translate_off
-GENERIC MAP (
-	lut_mask => "1100110011110000",
-	sum_lutc_input => "datac")
--- pragma translate_on
-PORT MAP (
-	datab => \U_Ranger_Top|timevector[19]~38_combout\,
-	datac => \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_1~12_combout\,
-	datad => \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_1~22_combout\,
-	combout => \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[246]~4_combout\);
-
--- Location: LCCOMB_X13_Y6_N18
-\U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[244]~6\ : cycloneii_lcell_comb
--- Equation(s):
--- \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[244]~6_combout\ = (\U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_1~22_combout\ & (\U_Ranger_Top|timevector[17]~34_combout\)) # 
--- (!\U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_1~22_combout\ & ((\U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_1~8_combout\)))
-
--- pragma translate_off
-GENERIC MAP (
-	lut_mask => "1100111111000000",
-	sum_lutc_input => "datac")
--- pragma translate_on
-PORT MAP (
-	datab => \U_Ranger_Top|timevector[17]~34_combout\,
-	datac => \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_1~22_combout\,
-	datad => \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_1~8_combout\,
-	combout => \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[244]~6_combout\);
-
--- Location: LCCOMB_X13_Y6_N28
-\U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[243]~7\ : cycloneii_lcell_comb
--- Equation(s):
--- \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[243]~7_combout\ = (\U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_1~22_combout\ & (\U_Ranger_Top|timevector[16]~32_combout\)) # 
--- (!\U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_1~22_combout\ & ((\U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_1~6_combout\)))
-
--- pragma translate_off
-GENERIC MAP (
-	lut_mask => "1100110011110000",
-	sum_lutc_input => "datac")
--- pragma translate_on
-PORT MAP (
-	datab => \U_Ranger_Top|timevector[16]~32_combout\,
-	datac => \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_1~6_combout\,
-	datad => \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_1~22_combout\,
-	combout => \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[243]~7_combout\);
-
--- Location: LCCOMB_X14_Y6_N10
-\U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_2~8\ : cycloneii_lcell_comb
--- Equation(s):
--- \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_2~8_combout\ = (\U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[243]~7_combout\ & ((GND) # 
--- (!\U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_2~7\))) # (!\U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[243]~7_combout\ & 
--- (\U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_2~7\ $ (GND)))
--- \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_2~9\ = CARRY((\U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[243]~7_combout\) # 
--- (!\U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_2~7\))
-
--- pragma translate_off
-GENERIC MAP (
-	lut_mask => "0011110011001111",
-	sum_lutc_input => "cin")
--- pragma translate_on
-PORT MAP (
-	datab => \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[243]~7_combout\,
-	datad => VCC,
-	cin => \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_2~7\,
-	combout => \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_2~8_combout\,
-	cout => \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_2~9\);
 
 -- Location: LCCOMB_X14_Y6_N12
 \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_2~10\ : cycloneii_lcell_comb
@@ -14050,24 +14559,6 @@ PORT MAP (
 	cin => \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_2~23\,
 	combout => \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_2~24_combout\);
 
--- Location: LCCOMB_X14_Y6_N28
-\U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[267]~19\ : cycloneii_lcell_comb
--- Equation(s):
--- \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[267]~19_combout\ = (\U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_2~24_combout\ & 
--- (\U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[242]~8_combout\)) # (!\U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_2~24_combout\ & 
--- ((\U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_2~6_combout\)))
-
--- pragma translate_off
-GENERIC MAP (
-	lut_mask => "1010101011110000",
-	sum_lutc_input => "datac")
--- pragma translate_on
-PORT MAP (
-	dataa => \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[242]~8_combout\,
-	datac => \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_2~6_combout\,
-	datad => \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_2~24_combout\,
-	combout => \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[267]~19_combout\);
-
 -- Location: LCCOMB_X13_Y5_N8
 \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[275]~11\ : cycloneii_lcell_comb
 -- Equation(s):
@@ -14157,7 +14648,7 @@ PORT MAP (
 	datad => \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_1~10_combout\,
 	combout => \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[245]~5_combout\);
 
--- Location: LCCOMB_X13_Y6_N20
+-- Location: LCCOMB_X13_Y6_N28
 \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[270]~16\ : cycloneii_lcell_comb
 -- Equation(s):
 -- \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[270]~16_combout\ = (\U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_2~24_combout\ & 
@@ -14197,19 +14688,37 @@ PORT MAP (
 \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[268]~18\ : cycloneii_lcell_comb
 -- Equation(s):
 -- \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[268]~18_combout\ = (\U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_2~24_combout\ & 
--- (\U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[243]~7_combout\)) # (!\U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_2~24_combout\ & 
--- ((\U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_2~8_combout\)))
+-- ((\U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[243]~7_combout\))) # (!\U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_2~24_combout\ & 
+-- (\U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_2~8_combout\))
 
 -- pragma translate_off
 GENERIC MAP (
-	lut_mask => "1100110011110000",
+	lut_mask => "1111000010101010",
 	sum_lutc_input => "datac")
 -- pragma translate_on
 PORT MAP (
-	datab => \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[243]~7_combout\,
-	datac => \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_2~8_combout\,
+	dataa => \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_2~8_combout\,
+	datac => \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[243]~7_combout\,
 	datad => \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_2~24_combout\,
 	combout => \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[268]~18_combout\);
+
+-- Location: LCCOMB_X14_Y6_N28
+\U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[267]~19\ : cycloneii_lcell_comb
+-- Equation(s):
+-- \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[267]~19_combout\ = (\U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_2~24_combout\ & 
+-- (\U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[242]~8_combout\)) # (!\U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_2~24_combout\ & 
+-- ((\U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_2~6_combout\)))
+
+-- pragma translate_off
+GENERIC MAP (
+	lut_mask => "1010101011110000",
+	sum_lutc_input => "datac")
+-- pragma translate_on
+PORT MAP (
+	dataa => \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[242]~8_combout\,
+	datac => \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_2~6_combout\,
+	datad => \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_2~24_combout\,
+	combout => \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[267]~19_combout\);
 
 -- Location: LCCOMB_X12_Y6_N0
 \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[266]~20\ : cycloneii_lcell_comb
@@ -14247,23 +14756,6 @@ PORT MAP (
 	datad => \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_2~24_combout\,
 	combout => \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[265]~21_combout\);
 
--- Location: LCCOMB_X14_Y6_N30
-\U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[264]~22\ : cycloneii_lcell_comb
--- Equation(s):
--- \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[264]~22_combout\ = (\U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_2~24_combout\ & (\U_Ranger_Top|timevector[12]~24_combout\)) # 
--- (!\U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_2~24_combout\ & ((\U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_2~0_combout\)))
-
--- pragma translate_off
-GENERIC MAP (
-	lut_mask => "1010101011001100",
-	sum_lutc_input => "datac")
--- pragma translate_on
-PORT MAP (
-	dataa => \U_Ranger_Top|timevector[12]~24_combout\,
-	datab => \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_2~0_combout\,
-	datad => \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_2~24_combout\,
-	combout => \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[264]~22_combout\);
-
 -- Location: LCCOMB_X12_Y6_N4
 \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_3~0\ : cycloneii_lcell_comb
 -- Equation(s):
@@ -14280,27 +14772,6 @@ PORT MAP (
 	datad => VCC,
 	combout => \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_3~0_combout\,
 	cout => \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_3~1\);
-
--- Location: LCCOMB_X12_Y6_N8
-\U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_3~4\ : cycloneii_lcell_comb
--- Equation(s):
--- \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_3~4_combout\ = (\U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[265]~21_combout\ & ((GND) # 
--- (!\U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_3~3\))) # (!\U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[265]~21_combout\ & 
--- (\U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_3~3\ $ (GND)))
--- \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_3~5\ = CARRY((\U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[265]~21_combout\) # 
--- (!\U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_3~3\))
-
--- pragma translate_off
-GENERIC MAP (
-	lut_mask => "0011110011001111",
-	sum_lutc_input => "cin")
--- pragma translate_on
-PORT MAP (
-	datab => \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[265]~21_combout\,
-	datad => VCC,
-	cin => \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_3~3\,
-	combout => \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_3~4_combout\,
-	cout => \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_3~5\);
 
 -- Location: LCCOMB_X12_Y6_N10
 \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_3~6\ : cycloneii_lcell_comb
@@ -14323,6 +14794,27 @@ PORT MAP (
 	combout => \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_3~6_combout\,
 	cout => \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_3~7\);
 
+-- Location: LCCOMB_X12_Y6_N12
+\U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_3~8\ : cycloneii_lcell_comb
+-- Equation(s):
+-- \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_3~8_combout\ = (\U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[267]~19_combout\ & ((GND) # 
+-- (!\U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_3~7\))) # (!\U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[267]~19_combout\ & 
+-- (\U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_3~7\ $ (GND)))
+-- \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_3~9\ = CARRY((\U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[267]~19_combout\) # 
+-- (!\U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_3~7\))
+
+-- pragma translate_off
+GENERIC MAP (
+	lut_mask => "0011110011001111",
+	sum_lutc_input => "cin")
+-- pragma translate_on
+PORT MAP (
+	datab => \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[267]~19_combout\,
+	datad => VCC,
+	cin => \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_3~7\,
+	combout => \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_3~8_combout\,
+	cout => \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_3~9\);
+
 -- Location: LCCOMB_X12_Y6_N14
 \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_3~10\ : cycloneii_lcell_comb
 -- Equation(s):
@@ -14344,27 +14836,6 @@ PORT MAP (
 	combout => \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_3~10_combout\,
 	cout => \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_3~11\);
 
--- Location: LCCOMB_X12_Y6_N16
-\U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_3~12\ : cycloneii_lcell_comb
--- Equation(s):
--- \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_3~12_combout\ = (\U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[269]~17_combout\ & 
--- (\U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_3~11\ $ (GND))) # (!\U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[269]~17_combout\ & 
--- (!\U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_3~11\ & VCC))
--- \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_3~13\ = CARRY((\U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[269]~17_combout\ & 
--- !\U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_3~11\))
-
--- pragma translate_off
-GENERIC MAP (
-	lut_mask => "1100001100001100",
-	sum_lutc_input => "cin")
--- pragma translate_on
-PORT MAP (
-	datab => \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[269]~17_combout\,
-	datad => VCC,
-	cin => \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_3~11\,
-	combout => \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_3~12_combout\,
-	cout => \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_3~13\);
-
 -- Location: LCCOMB_X12_Y6_N18
 \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_3~14\ : cycloneii_lcell_comb
 -- Equation(s):
@@ -14385,27 +14856,6 @@ PORT MAP (
 	cin => \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_3~13\,
 	combout => \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_3~14_combout\,
 	cout => \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_3~15\);
-
--- Location: LCCOMB_X12_Y6_N24
-\U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_3~20\ : cycloneii_lcell_comb
--- Equation(s):
--- \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_3~20_combout\ = (\U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[273]~13_combout\ & 
--- (\U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_3~19\ $ (GND))) # (!\U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[273]~13_combout\ & 
--- (!\U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_3~19\ & VCC))
--- \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_3~21\ = CARRY((\U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[273]~13_combout\ & 
--- !\U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_3~19\))
-
--- pragma translate_off
-GENERIC MAP (
-	lut_mask => "1100001100001100",
-	sum_lutc_input => "cin")
--- pragma translate_on
-PORT MAP (
-	datab => \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[273]~13_combout\,
-	datad => VCC,
-	cin => \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_3~19\,
-	combout => \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_3~20_combout\,
-	cout => \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_3~21\);
 
 -- Location: LCCOMB_X12_Y6_N26
 \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_3~22\ : cycloneii_lcell_comb
@@ -14462,24 +14912,6 @@ GENERIC MAP (
 PORT MAP (
 	cin => \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_3~25\,
 	combout => \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_3~26_combout\);
-
--- Location: LCCOMB_X12_Y9_N30
-\U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[292]~31\ : cycloneii_lcell_comb
--- Equation(s):
--- \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[292]~31_combout\ = (\U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_3~26_combout\ & 
--- ((\U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[267]~19_combout\))) # (!\U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_3~26_combout\ & 
--- (\U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_3~8_combout\))
-
--- pragma translate_off
-GENERIC MAP (
-	lut_mask => "1100110010101010",
-	sum_lutc_input => "datac")
--- pragma translate_on
-PORT MAP (
-	dataa => \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_3~8_combout\,
-	datab => \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[267]~19_combout\,
-	datad => \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_3~26_combout\,
-	combout => \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[292]~31_combout\);
 
 -- Location: LCCOMB_X13_Y5_N12
 \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[300]~23\ : cycloneii_lcell_comb
@@ -14552,24 +14984,6 @@ PORT MAP (
 	datad => \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_3~22_combout\,
 	combout => \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[299]~24_combout\);
 
--- Location: LCCOMB_X13_Y6_N16
-\U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[298]~25\ : cycloneii_lcell_comb
--- Equation(s):
--- \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[298]~25_combout\ = (\U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_3~26_combout\ & 
--- (\U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[273]~13_combout\)) # (!\U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_3~26_combout\ & 
--- ((\U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_3~20_combout\)))
-
--- pragma translate_off
-GENERIC MAP (
-	lut_mask => "1010111110100000",
-	sum_lutc_input => "datac")
--- pragma translate_on
-PORT MAP (
-	dataa => \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[273]~13_combout\,
-	datac => \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_3~26_combout\,
-	datad => \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_3~20_combout\,
-	combout => \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[298]~25_combout\);
-
 -- Location: LCCOMB_X13_Y6_N2
 \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[295]~28\ : cycloneii_lcell_comb
 -- Equation(s):
@@ -14579,32 +14993,14 @@ PORT MAP (
 
 -- pragma translate_off
 GENERIC MAP (
-	lut_mask => "1010111110100000",
+	lut_mask => "1101100011011000",
 	sum_lutc_input => "datac")
 -- pragma translate_on
 PORT MAP (
-	dataa => \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[270]~16_combout\,
-	datac => \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_3~26_combout\,
-	datad => \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_3~14_combout\,
+	dataa => \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_3~26_combout\,
+	datab => \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[270]~16_combout\,
+	datac => \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_3~14_combout\,
 	combout => \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[295]~28_combout\);
-
--- Location: LCCOMB_X13_Y6_N12
-\U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[294]~29\ : cycloneii_lcell_comb
--- Equation(s):
--- \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[294]~29_combout\ = (\U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_3~26_combout\ & 
--- (\U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[269]~17_combout\)) # (!\U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_3~26_combout\ & 
--- ((\U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_3~12_combout\)))
-
--- pragma translate_off
-GENERIC MAP (
-	lut_mask => "1100111111000000",
-	sum_lutc_input => "datac")
--- pragma translate_on
-PORT MAP (
-	datab => \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[269]~17_combout\,
-	datac => \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_3~26_combout\,
-	datad => \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_3~12_combout\,
-	combout => \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[294]~29_combout\);
 
 -- Location: LCCOMB_X12_Y9_N4
 \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[293]~30\ : cycloneii_lcell_comb
@@ -14624,6 +15020,24 @@ PORT MAP (
 	datad => \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_3~26_combout\,
 	combout => \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[293]~30_combout\);
 
+-- Location: LCCOMB_X12_Y9_N30
+\U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[292]~31\ : cycloneii_lcell_comb
+-- Equation(s):
+-- \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[292]~31_combout\ = (\U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_3~26_combout\ & 
+-- (\U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[267]~19_combout\)) # (!\U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_3~26_combout\ & 
+-- ((\U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_3~8_combout\)))
+
+-- pragma translate_off
+GENERIC MAP (
+	lut_mask => "1100110011110000",
+	sum_lutc_input => "datac")
+-- pragma translate_on
+PORT MAP (
+	datab => \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[267]~19_combout\,
+	datac => \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_3~8_combout\,
+	datad => \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_3~26_combout\,
+	combout => \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[292]~31_combout\);
+
 -- Location: LCCOMB_X12_Y9_N24
 \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[291]~32\ : cycloneii_lcell_comb
 -- Equation(s):
@@ -14633,32 +15047,49 @@ PORT MAP (
 
 -- pragma translate_off
 GENERIC MAP (
-	lut_mask => "1100110011110000",
+	lut_mask => "1010111110100000",
 	sum_lutc_input => "datac")
 -- pragma translate_on
 PORT MAP (
-	datab => \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[266]~20_combout\,
-	datac => \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_3~6_combout\,
-	datad => \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_3~26_combout\,
+	dataa => \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[266]~20_combout\,
+	datac => \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_3~26_combout\,
+	datad => \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_3~6_combout\,
 	combout => \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[291]~32_combout\);
 
 -- Location: LCCOMB_X12_Y9_N2
 \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[290]~33\ : cycloneii_lcell_comb
 -- Equation(s):
 -- \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[290]~33_combout\ = (\U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_3~26_combout\ & 
--- (\U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[265]~21_combout\)) # (!\U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_3~26_combout\ & 
--- ((\U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_3~4_combout\)))
+-- ((\U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[265]~21_combout\))) # (!\U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_3~26_combout\ & 
+-- (\U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_3~4_combout\))
 
 -- pragma translate_off
 GENERIC MAP (
-	lut_mask => "1100110011110000",
+	lut_mask => "1111000010101010",
 	sum_lutc_input => "datac")
 -- pragma translate_on
 PORT MAP (
-	datab => \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[265]~21_combout\,
-	datac => \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_3~4_combout\,
+	dataa => \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_3~4_combout\,
+	datac => \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[265]~21_combout\,
 	datad => \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_3~26_combout\,
 	combout => \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[290]~33_combout\);
+
+-- Location: LCCOMB_X14_Y6_N30
+\U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[264]~22\ : cycloneii_lcell_comb
+-- Equation(s):
+-- \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[264]~22_combout\ = (\U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_2~24_combout\ & (\U_Ranger_Top|timevector[12]~24_combout\)) # 
+-- (!\U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_2~24_combout\ & ((\U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_2~0_combout\)))
+
+-- pragma translate_off
+GENERIC MAP (
+	lut_mask => "1010101011001100",
+	sum_lutc_input => "datac")
+-- pragma translate_on
+PORT MAP (
+	dataa => \U_Ranger_Top|timevector[12]~24_combout\,
+	datab => \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_2~0_combout\,
+	datad => \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_2~24_combout\,
+	combout => \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[264]~22_combout\);
 
 -- Location: LCCOMB_X12_Y5_N0
 \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[289]~34\ : cycloneii_lcell_comb
@@ -14703,11 +15134,11 @@ PORT MAP (
 
 -- pragma translate_off
 GENERIC MAP (
-	lut_mask => "0101010110101010",
+	lut_mask => "0011001111001100",
 	sum_lutc_input => "datac")
 -- pragma translate_on
 PORT MAP (
-	dataa => \U_Ranger_Top|timevector[10]~20_combout\,
+	datab => \U_Ranger_Top|timevector[10]~20_combout\,
 	datad => VCC,
 	combout => \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_4~0_combout\,
 	cout => \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_4~1\);
@@ -14849,11 +15280,11 @@ PORT MAP (
 
 -- pragma translate_off
 GENERIC MAP (
-	lut_mask => "0011110000111111",
+	lut_mask => "0101101001011111",
 	sum_lutc_input => "cin")
 -- pragma translate_on
 PORT MAP (
-	datab => \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[294]~29_combout\,
+	dataa => \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[294]~29_combout\,
 	datad => VCC,
 	cin => \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_4~13\,
 	combout => \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_4~14_combout\,
@@ -14912,11 +15343,11 @@ PORT MAP (
 
 -- pragma translate_off
 GENERIC MAP (
-	lut_mask => "1100001100000011",
+	lut_mask => "1010010100000101",
 	sum_lutc_input => "cin")
 -- pragma translate_on
 PORT MAP (
-	datab => \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[298]~25_combout\,
+	dataa => \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[298]~25_combout\,
 	datad => VCC,
 	cin => \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_4~21\,
 	combout => \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_4~22_combout\,
@@ -14978,24 +15409,6 @@ PORT MAP (
 	cin => \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_4~27\,
 	combout => \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_4~28_combout\);
 
--- Location: LCCOMB_X12_Y9_N0
-\U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[317]~44\ : cycloneii_lcell_comb
--- Equation(s):
--- \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[317]~44_combout\ = (\U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_4~28_combout\ & 
--- (\U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[292]~31_combout\)) # (!\U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_4~28_combout\ & 
--- ((\U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_4~10_combout\)))
-
--- pragma translate_off
-GENERIC MAP (
-	lut_mask => "1100111111000000",
-	sum_lutc_input => "datac")
--- pragma translate_on
-PORT MAP (
-	datab => \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[292]~31_combout\,
-	datac => \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_4~28_combout\,
-	datad => \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_4~10_combout\,
-	combout => \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[317]~44_combout\);
-
 -- Location: LCCOMB_X13_Y5_N0
 \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[325]~36\ : cycloneii_lcell_comb
 -- Equation(s):
@@ -15013,24 +15426,6 @@ PORT MAP (
 	datac => \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_4~28_combout\,
 	datad => \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_4~26_combout\,
 	combout => \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[325]~36_combout\);
-
--- Location: LCCOMB_X13_Y6_N6
-\U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[323]~38\ : cycloneii_lcell_comb
--- Equation(s):
--- \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[323]~38_combout\ = (\U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_4~28_combout\ & 
--- (\U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[298]~25_combout\)) # (!\U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_4~28_combout\ & 
--- ((\U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_4~22_combout\)))
-
--- pragma translate_off
-GENERIC MAP (
-	lut_mask => "1010111110100000",
-	sum_lutc_input => "datac")
--- pragma translate_on
-PORT MAP (
-	dataa => \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[298]~25_combout\,
-	datac => \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_4~28_combout\,
-	datad => \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_4~22_combout\,
-	combout => \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[323]~38_combout\);
 
 -- Location: LCCOMB_X12_Y7_N26
 \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[321]~40\ : cycloneii_lcell_comb
@@ -15090,18 +15485,18 @@ PORT MAP (
 \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[315]~46\ : cycloneii_lcell_comb
 -- Equation(s):
 -- \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[315]~46_combout\ = (\U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_4~28_combout\ & 
--- (\U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[290]~33_combout\)) # (!\U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_4~28_combout\ & 
--- ((\U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_4~6_combout\)))
+-- ((\U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[290]~33_combout\))) # (!\U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_4~28_combout\ & 
+-- (\U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_4~6_combout\))
 
 -- pragma translate_off
 GENERIC MAP (
-	lut_mask => "1100111111000000",
+	lut_mask => "1111110000001100",
 	sum_lutc_input => "datac")
 -- pragma translate_on
 PORT MAP (
-	datab => \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[290]~33_combout\,
+	datab => \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_4~6_combout\,
 	datac => \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_4~28_combout\,
-	datad => \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_4~6_combout\,
+	datad => \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[290]~33_combout\,
 	combout => \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[315]~46_combout\);
 
 -- Location: LCCOMB_X12_Y9_N22
@@ -15357,11 +15752,11 @@ PORT MAP (
 
 -- pragma translate_off
 GENERIC MAP (
-	lut_mask => "0011110011001111",
+	lut_mask => "0101101010101111",
 	sum_lutc_input => "cin")
 -- pragma translate_on
 PORT MAP (
-	datab => \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[323]~38_combout\,
+	dataa => \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[323]~38_combout\,
 	datad => VCC,
 	cin => \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_5~23\,
 	combout => \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_5~24_combout\,
@@ -15422,6 +15817,204 @@ GENERIC MAP (
 PORT MAP (
 	cin => \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_5~29\,
 	combout => \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_5~30_combout\);
+
+-- Location: LCCOMB_X13_Y5_N14
+\U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[350]~50\ : cycloneii_lcell_comb
+-- Equation(s):
+-- \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[350]~50_combout\ = (\U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_5~30_combout\ & 
+-- (\U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[325]~36_combout\)) # (!\U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_5~30_combout\ & 
+-- ((\U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_5~28_combout\)))
+
+-- pragma translate_off
+GENERIC MAP (
+	lut_mask => "1100111111000000",
+	sum_lutc_input => "datac")
+-- pragma translate_on
+PORT MAP (
+	datab => \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[325]~36_combout\,
+	datac => \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_5~30_combout\,
+	datad => \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_5~28_combout\,
+	combout => \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[350]~50_combout\);
+
+-- Location: LCCOMB_X13_Y5_N18
+\U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[324]~37\ : cycloneii_lcell_comb
+-- Equation(s):
+-- \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[324]~37_combout\ = (\U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_4~28_combout\ & 
+-- (\U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[299]~24_combout\)) # (!\U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_4~28_combout\ & 
+-- ((\U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_4~24_combout\)))
+
+-- pragma translate_off
+GENERIC MAP (
+	lut_mask => "1100111111000000",
+	sum_lutc_input => "datac")
+-- pragma translate_on
+PORT MAP (
+	datab => \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[299]~24_combout\,
+	datac => \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_4~28_combout\,
+	datad => \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_4~24_combout\,
+	combout => \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[324]~37_combout\);
+
+-- Location: LCCOMB_X13_Y5_N24
+\U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[349]~51\ : cycloneii_lcell_comb
+-- Equation(s):
+-- \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[349]~51_combout\ = (\U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_5~30_combout\ & 
+-- (\U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[324]~37_combout\)) # (!\U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_5~30_combout\ & 
+-- ((\U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_5~26_combout\)))
+
+-- pragma translate_off
+GENERIC MAP (
+	lut_mask => "1100110011110000",
+	sum_lutc_input => "datac")
+-- pragma translate_on
+PORT MAP (
+	datab => \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[324]~37_combout\,
+	datac => \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_5~26_combout\,
+	datad => \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_5~30_combout\,
+	combout => \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[349]~51_combout\);
+
+-- Location: LCCOMB_X13_Y6_N6
+\U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[323]~38\ : cycloneii_lcell_comb
+-- Equation(s):
+-- \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[323]~38_combout\ = (\U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_4~28_combout\ & 
+-- (\U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[298]~25_combout\)) # (!\U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_4~28_combout\ & 
+-- ((\U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_4~22_combout\)))
+
+-- pragma translate_off
+GENERIC MAP (
+	lut_mask => "1010111110100000",
+	sum_lutc_input => "datac")
+-- pragma translate_on
+PORT MAP (
+	dataa => \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[298]~25_combout\,
+	datac => \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_4~28_combout\,
+	datad => \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_4~22_combout\,
+	combout => \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[323]~38_combout\);
+
+-- Location: LCCOMB_X12_Y9_N8
+\U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[348]~52\ : cycloneii_lcell_comb
+-- Equation(s):
+-- \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[348]~52_combout\ = (\U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_5~30_combout\ & 
+-- (\U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[323]~38_combout\)) # (!\U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_5~30_combout\ & 
+-- ((\U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_5~24_combout\)))
+
+-- pragma translate_off
+GENERIC MAP (
+	lut_mask => "1100111111000000",
+	sum_lutc_input => "datac")
+-- pragma translate_on
+PORT MAP (
+	datab => \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[323]~38_combout\,
+	datac => \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_5~30_combout\,
+	datad => \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_5~24_combout\,
+	combout => \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[348]~52_combout\);
+
+-- Location: LCCOMB_X12_Y9_N10
+\U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[347]~53\ : cycloneii_lcell_comb
+-- Equation(s):
+-- \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[347]~53_combout\ = (\U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_5~30_combout\ & 
+-- (\U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[322]~39_combout\)) # (!\U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_5~30_combout\ & 
+-- ((\U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_5~22_combout\)))
+
+-- pragma translate_off
+GENERIC MAP (
+	lut_mask => "1010111110100000",
+	sum_lutc_input => "datac")
+-- pragma translate_on
+PORT MAP (
+	dataa => \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[322]~39_combout\,
+	datac => \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_5~30_combout\,
+	datad => \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_5~22_combout\,
+	combout => \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[347]~53_combout\);
+
+-- Location: LCCOMB_X12_Y7_N28
+\U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[346]~54\ : cycloneii_lcell_comb
+-- Equation(s):
+-- \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[346]~54_combout\ = (\U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_5~30_combout\ & 
+-- (\U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[321]~40_combout\)) # (!\U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_5~30_combout\ & 
+-- ((\U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_5~20_combout\)))
+
+-- pragma translate_off
+GENERIC MAP (
+	lut_mask => "1100110011110000",
+	sum_lutc_input => "datac")
+-- pragma translate_on
+PORT MAP (
+	datab => \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[321]~40_combout\,
+	datac => \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_5~20_combout\,
+	datad => \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_5~30_combout\,
+	combout => \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[346]~54_combout\);
+
+-- Location: LCCOMB_X13_Y6_N12
+\U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[345]~55\ : cycloneii_lcell_comb
+-- Equation(s):
+-- \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[345]~55_combout\ = (\U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_5~30_combout\ & 
+-- ((\U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[320]~41_combout\))) # (!\U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_5~30_combout\ & 
+-- (\U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_5~18_combout\))
+
+-- pragma translate_off
+GENERIC MAP (
+	lut_mask => "1111000011001100",
+	sum_lutc_input => "datac")
+-- pragma translate_on
+PORT MAP (
+	datab => \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_5~18_combout\,
+	datac => \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[320]~41_combout\,
+	datad => \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_5~30_combout\,
+	combout => \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[345]~55_combout\);
+
+-- Location: LCCOMB_X12_Y9_N6
+\U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[318]~43\ : cycloneii_lcell_comb
+-- Equation(s):
+-- \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[318]~43_combout\ = (\U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_4~28_combout\ & 
+-- (\U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[293]~30_combout\)) # (!\U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_4~28_combout\ & 
+-- ((\U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_4~12_combout\)))
+
+-- pragma translate_off
+GENERIC MAP (
+	lut_mask => "1100111111000000",
+	sum_lutc_input => "datac")
+-- pragma translate_on
+PORT MAP (
+	datab => \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[293]~30_combout\,
+	datac => \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_4~28_combout\,
+	datad => \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_4~12_combout\,
+	combout => \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[318]~43_combout\);
+
+-- Location: LCCOMB_X12_Y7_N30
+\U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[343]~57\ : cycloneii_lcell_comb
+-- Equation(s):
+-- \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[343]~57_combout\ = (\U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_5~30_combout\ & 
+-- ((\U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[318]~43_combout\))) # (!\U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_5~30_combout\ & 
+-- (\U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_5~14_combout\))
+
+-- pragma translate_off
+GENERIC MAP (
+	lut_mask => "1111000010101010",
+	sum_lutc_input => "datac")
+-- pragma translate_on
+PORT MAP (
+	dataa => \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_5~14_combout\,
+	datac => \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[318]~43_combout\,
+	datad => \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_5~30_combout\,
+	combout => \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[343]~57_combout\);
+
+-- Location: LCCOMB_X12_Y9_N0
+\U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[317]~44\ : cycloneii_lcell_comb
+-- Equation(s):
+-- \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[317]~44_combout\ = (\U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_4~28_combout\ & 
+-- (\U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[292]~31_combout\)) # (!\U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_4~28_combout\ & 
+-- ((\U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_4~10_combout\)))
+
+-- pragma translate_off
+GENERIC MAP (
+	lut_mask => "1100111111000000",
+	sum_lutc_input => "datac")
+-- pragma translate_on
+PORT MAP (
+	datab => \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[292]~31_combout\,
+	datac => \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_4~28_combout\,
+	datad => \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_4~10_combout\,
+	combout => \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[317]~44_combout\);
 
 -- Location: LCCOMB_X12_Y9_N20
 \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[342]~58\ : cycloneii_lcell_comb
@@ -15512,27 +16105,6 @@ PORT MAP (
 	datac => \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_5~30_combout\,
 	datad => \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_5~2_combout\,
 	combout => \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[337]~63_combout\);
-
--- Location: LCCOMB_X12_Y8_N18
-\U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_6~2\ : cycloneii_lcell_comb
--- Equation(s):
--- \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_6~2_combout\ = (\U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[336]~64_combout\ & 
--- (\U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_6~1\ & VCC)) # (!\U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[336]~64_combout\ & 
--- (!\U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_6~1\))
--- \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_6~3\ = CARRY((!\U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[336]~64_combout\ & 
--- !\U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_6~1\))
-
--- pragma translate_off
-GENERIC MAP (
-	lut_mask => "1010010100000101",
-	sum_lutc_input => "cin")
--- pragma translate_on
-PORT MAP (
-	dataa => \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[336]~64_combout\,
-	datad => VCC,
-	cin => \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_6~1\,
-	combout => \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_6~2_combout\,
-	cout => \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_6~3\);
 
 -- Location: LCCOMB_X12_Y8_N20
 \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_6~4\ : cycloneii_lcell_comb
@@ -15659,168 +16231,6 @@ PORT MAP (
 	cin => \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_6~13\,
 	combout => \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_6~14_combout\,
 	cout => \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_6~15\);
-
--- Location: LCCOMB_X13_Y5_N14
-\U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[350]~50\ : cycloneii_lcell_comb
--- Equation(s):
--- \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[350]~50_combout\ = (\U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_5~30_combout\ & 
--- (\U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[325]~36_combout\)) # (!\U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_5~30_combout\ & 
--- ((\U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_5~28_combout\)))
-
--- pragma translate_off
-GENERIC MAP (
-	lut_mask => "1100110011110000",
-	sum_lutc_input => "datac")
--- pragma translate_on
-PORT MAP (
-	datab => \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[325]~36_combout\,
-	datac => \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_5~28_combout\,
-	datad => \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_5~30_combout\,
-	combout => \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[350]~50_combout\);
-
--- Location: LCCOMB_X13_Y5_N18
-\U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[324]~37\ : cycloneii_lcell_comb
--- Equation(s):
--- \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[324]~37_combout\ = (\U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_4~28_combout\ & 
--- (\U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[299]~24_combout\)) # (!\U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_4~28_combout\ & 
--- ((\U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_4~24_combout\)))
-
--- pragma translate_off
-GENERIC MAP (
-	lut_mask => "1100111111000000",
-	sum_lutc_input => "datac")
--- pragma translate_on
-PORT MAP (
-	datab => \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[299]~24_combout\,
-	datac => \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_4~28_combout\,
-	datad => \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_4~24_combout\,
-	combout => \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[324]~37_combout\);
-
--- Location: LCCOMB_X13_Y5_N24
-\U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[349]~51\ : cycloneii_lcell_comb
--- Equation(s):
--- \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[349]~51_combout\ = (\U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_5~30_combout\ & 
--- (\U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[324]~37_combout\)) # (!\U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_5~30_combout\ & 
--- ((\U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_5~26_combout\)))
-
--- pragma translate_off
-GENERIC MAP (
-	lut_mask => "1100110011110000",
-	sum_lutc_input => "datac")
--- pragma translate_on
-PORT MAP (
-	datab => \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[324]~37_combout\,
-	datac => \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_5~26_combout\,
-	datad => \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_5~30_combout\,
-	combout => \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[349]~51_combout\);
-
--- Location: LCCOMB_X12_Y9_N8
-\U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[348]~52\ : cycloneii_lcell_comb
--- Equation(s):
--- \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[348]~52_combout\ = (\U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_5~30_combout\ & 
--- (\U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[323]~38_combout\)) # (!\U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_5~30_combout\ & 
--- ((\U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_5~24_combout\)))
-
--- pragma translate_off
-GENERIC MAP (
-	lut_mask => "1100111111000000",
-	sum_lutc_input => "datac")
--- pragma translate_on
-PORT MAP (
-	datab => \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[323]~38_combout\,
-	datac => \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_5~30_combout\,
-	datad => \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_5~24_combout\,
-	combout => \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[348]~52_combout\);
-
--- Location: LCCOMB_X12_Y9_N10
-\U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[347]~53\ : cycloneii_lcell_comb
--- Equation(s):
--- \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[347]~53_combout\ = (\U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_5~30_combout\ & 
--- (\U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[322]~39_combout\)) # (!\U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_5~30_combout\ & 
--- ((\U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_5~22_combout\)))
-
--- pragma translate_off
-GENERIC MAP (
-	lut_mask => "1010111110100000",
-	sum_lutc_input => "datac")
--- pragma translate_on
-PORT MAP (
-	dataa => \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[322]~39_combout\,
-	datac => \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_5~30_combout\,
-	datad => \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_5~22_combout\,
-	combout => \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[347]~53_combout\);
-
--- Location: LCCOMB_X12_Y7_N28
-\U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[346]~54\ : cycloneii_lcell_comb
--- Equation(s):
--- \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[346]~54_combout\ = (\U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_5~30_combout\ & 
--- (\U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[321]~40_combout\)) # (!\U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_5~30_combout\ & 
--- ((\U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_5~20_combout\)))
-
--- pragma translate_off
-GENERIC MAP (
-	lut_mask => "1100110011110000",
-	sum_lutc_input => "datac")
--- pragma translate_on
-PORT MAP (
-	datab => \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[321]~40_combout\,
-	datac => \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_5~20_combout\,
-	datad => \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_5~30_combout\,
-	combout => \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[346]~54_combout\);
-
--- Location: LCCOMB_X13_Y6_N4
-\U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[345]~55\ : cycloneii_lcell_comb
--- Equation(s):
--- \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[345]~55_combout\ = (\U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_5~30_combout\ & 
--- (\U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[320]~41_combout\)) # (!\U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_5~30_combout\ & 
--- ((\U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_5~18_combout\)))
-
--- pragma translate_off
-GENERIC MAP (
-	lut_mask => "1100110011110000",
-	sum_lutc_input => "datac")
--- pragma translate_on
-PORT MAP (
-	datab => \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[320]~41_combout\,
-	datac => \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_5~18_combout\,
-	datad => \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_5~30_combout\,
-	combout => \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[345]~55_combout\);
-
--- Location: LCCOMB_X12_Y9_N6
-\U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[318]~43\ : cycloneii_lcell_comb
--- Equation(s):
--- \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[318]~43_combout\ = (\U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_4~28_combout\ & 
--- (\U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[293]~30_combout\)) # (!\U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_4~28_combout\ & 
--- ((\U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_4~12_combout\)))
-
--- pragma translate_off
-GENERIC MAP (
-	lut_mask => "1100111111000000",
-	sum_lutc_input => "datac")
--- pragma translate_on
-PORT MAP (
-	datab => \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[293]~30_combout\,
-	datac => \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_4~28_combout\,
-	datad => \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_4~12_combout\,
-	combout => \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[318]~43_combout\);
-
--- Location: LCCOMB_X12_Y7_N30
-\U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[343]~57\ : cycloneii_lcell_comb
--- Equation(s):
--- \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[343]~57_combout\ = (\U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_5~30_combout\ & 
--- ((\U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[318]~43_combout\))) # (!\U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_5~30_combout\ & 
--- (\U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_5~14_combout\))
-
--- pragma translate_off
-GENERIC MAP (
-	lut_mask => "1111000010101010",
-	sum_lutc_input => "datac")
--- pragma translate_on
-PORT MAP (
-	dataa => \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_5~14_combout\,
-	datac => \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[318]~43_combout\,
-	datad => \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_5~30_combout\,
-	combout => \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[343]~57_combout\);
 
 -- Location: LCCOMB_X12_Y7_N2
 \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_6~18\ : cycloneii_lcell_comb
@@ -15983,6 +16393,150 @@ PORT MAP (
 	cin => \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_6~31\,
 	combout => \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_6~32_combout\);
 
+-- Location: LCCOMB_X13_Y5_N26
+\U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[375]~65\ : cycloneii_lcell_comb
+-- Equation(s):
+-- \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[375]~65_combout\ = (\U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_6~32_combout\ & 
+-- (\U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[350]~50_combout\)) # (!\U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_6~32_combout\ & 
+-- ((\U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_6~30_combout\)))
+
+-- pragma translate_off
+GENERIC MAP (
+	lut_mask => "1100110011110000",
+	sum_lutc_input => "datac")
+-- pragma translate_on
+PORT MAP (
+	datab => \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[350]~50_combout\,
+	datac => \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_6~30_combout\,
+	datad => \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_6~32_combout\,
+	combout => \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[375]~65_combout\);
+
+-- Location: LCCOMB_X13_Y5_N4
+\U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[374]~66\ : cycloneii_lcell_comb
+-- Equation(s):
+-- \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[374]~66_combout\ = (\U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_6~32_combout\ & 
+-- (\U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[349]~51_combout\)) # (!\U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_6~32_combout\ & 
+-- ((\U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_6~28_combout\)))
+
+-- pragma translate_off
+GENERIC MAP (
+	lut_mask => "1010101011110000",
+	sum_lutc_input => "datac")
+-- pragma translate_on
+PORT MAP (
+	dataa => \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[349]~51_combout\,
+	datac => \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_6~28_combout\,
+	datad => \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_6~32_combout\,
+	combout => \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[374]~66_combout\);
+
+-- Location: LCCOMB_X13_Y7_N18
+\U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[373]~67\ : cycloneii_lcell_comb
+-- Equation(s):
+-- \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[373]~67_combout\ = (\U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_6~32_combout\ & 
+-- (\U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[348]~52_combout\)) # (!\U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_6~32_combout\ & 
+-- ((\U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_6~26_combout\)))
+
+-- pragma translate_off
+GENERIC MAP (
+	lut_mask => "1111001111000000",
+	sum_lutc_input => "datac")
+-- pragma translate_on
+PORT MAP (
+	datab => \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_6~32_combout\,
+	datac => \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[348]~52_combout\,
+	datad => \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_6~26_combout\,
+	combout => \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[373]~67_combout\);
+
+-- Location: LCCOMB_X13_Y7_N28
+\U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[372]~68\ : cycloneii_lcell_comb
+-- Equation(s):
+-- \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[372]~68_combout\ = (\U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_6~32_combout\ & 
+-- (\U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[347]~53_combout\)) # (!\U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_6~32_combout\ & 
+-- ((\U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_6~24_combout\)))
+
+-- pragma translate_off
+GENERIC MAP (
+	lut_mask => "1111001111000000",
+	sum_lutc_input => "datac")
+-- pragma translate_on
+PORT MAP (
+	datab => \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_6~32_combout\,
+	datac => \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[347]~53_combout\,
+	datad => \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_6~24_combout\,
+	combout => \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[372]~68_combout\);
+
+-- Location: LCCOMB_X13_Y7_N30
+\U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[371]~69\ : cycloneii_lcell_comb
+-- Equation(s):
+-- \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[371]~69_combout\ = (\U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_6~32_combout\ & 
+-- (\U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[346]~54_combout\)) # (!\U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_6~32_combout\ & 
+-- ((\U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_6~22_combout\)))
+
+-- pragma translate_off
+GENERIC MAP (
+	lut_mask => "1100110011110000",
+	sum_lutc_input => "datac")
+-- pragma translate_on
+PORT MAP (
+	datab => \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[346]~54_combout\,
+	datac => \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_6~22_combout\,
+	datad => \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_6~32_combout\,
+	combout => \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[371]~69_combout\);
+
+-- Location: LCCOMB_X13_Y6_N26
+\U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[319]~42\ : cycloneii_lcell_comb
+-- Equation(s):
+-- \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[319]~42_combout\ = (\U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_4~28_combout\ & 
+-- (\U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[294]~29_combout\)) # (!\U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_4~28_combout\ & 
+-- ((\U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_4~14_combout\)))
+
+-- pragma translate_off
+GENERIC MAP (
+	lut_mask => "1010111110100000",
+	sum_lutc_input => "datac")
+-- pragma translate_on
+PORT MAP (
+	dataa => \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[294]~29_combout\,
+	datac => \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_4~28_combout\,
+	datad => \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_4~14_combout\,
+	combout => \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[319]~42_combout\);
+
+-- Location: LCCOMB_X13_Y6_N22
+\U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[344]~56\ : cycloneii_lcell_comb
+-- Equation(s):
+-- \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[344]~56_combout\ = (\U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_5~30_combout\ & 
+-- ((\U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[319]~42_combout\))) # (!\U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_5~30_combout\ & 
+-- (\U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_5~16_combout\))
+
+-- pragma translate_off
+GENERIC MAP (
+	lut_mask => "1111000011001100",
+	sum_lutc_input => "datac")
+-- pragma translate_on
+PORT MAP (
+	datab => \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_5~16_combout\,
+	datac => \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[319]~42_combout\,
+	datad => \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_5~30_combout\,
+	combout => \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[344]~56_combout\);
+
+-- Location: LCCOMB_X13_Y7_N26
+\U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[369]~71\ : cycloneii_lcell_comb
+-- Equation(s):
+-- \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[369]~71_combout\ = (\U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_6~32_combout\ & 
+-- (\U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[344]~56_combout\)) # (!\U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_6~32_combout\ & 
+-- ((\U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_6~18_combout\)))
+
+-- pragma translate_off
+GENERIC MAP (
+	lut_mask => "1111001111000000",
+	sum_lutc_input => "datac")
+-- pragma translate_on
+PORT MAP (
+	datab => \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_6~32_combout\,
+	datac => \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[344]~56_combout\,
+	datad => \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_6~18_combout\,
+	combout => \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[369]~71_combout\);
+
 -- Location: LCCOMB_X12_Y9_N14
 \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[367]~73\ : cycloneii_lcell_comb
 -- Equation(s):
@@ -16107,27 +16661,6 @@ PORT MAP (
 	datad => VCC,
 	combout => \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_7~0_combout\,
 	cout => \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_7~1\);
-
--- Location: LCCOMB_X13_Y8_N18
-\U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_7~4\ : cycloneii_lcell_comb
--- Equation(s):
--- \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_7~4_combout\ = (\U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[361]~79_combout\ & ((GND) # 
--- (!\U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_7~3\))) # (!\U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[361]~79_combout\ & 
--- (\U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_7~3\ $ (GND)))
--- \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_7~5\ = CARRY((\U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[361]~79_combout\) # 
--- (!\U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_7~3\))
-
--- pragma translate_off
-GENERIC MAP (
-	lut_mask => "0101101010101111",
-	sum_lutc_input => "cin")
--- pragma translate_on
-PORT MAP (
-	dataa => \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[361]~79_combout\,
-	datad => VCC,
-	cin => \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_7~3\,
-	combout => \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_7~4_combout\,
-	cout => \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_7~5\);
 
 -- Location: LCCOMB_X13_Y8_N20
 \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_7~6\ : cycloneii_lcell_comb
@@ -16276,150 +16809,6 @@ PORT MAP (
 	combout => \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_7~18_combout\,
 	cout => \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_7~19\);
 
--- Location: LCCOMB_X13_Y5_N26
-\U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[375]~65\ : cycloneii_lcell_comb
--- Equation(s):
--- \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[375]~65_combout\ = (\U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_6~32_combout\ & 
--- (\U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[350]~50_combout\)) # (!\U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_6~32_combout\ & 
--- ((\U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_6~30_combout\)))
-
--- pragma translate_off
-GENERIC MAP (
-	lut_mask => "1100110011110000",
-	sum_lutc_input => "datac")
--- pragma translate_on
-PORT MAP (
-	datab => \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[350]~50_combout\,
-	datac => \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_6~30_combout\,
-	datad => \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_6~32_combout\,
-	combout => \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[375]~65_combout\);
-
--- Location: LCCOMB_X13_Y5_N4
-\U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[374]~66\ : cycloneii_lcell_comb
--- Equation(s):
--- \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[374]~66_combout\ = (\U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_6~32_combout\ & 
--- (\U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[349]~51_combout\)) # (!\U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_6~32_combout\ & 
--- ((\U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_6~28_combout\)))
-
--- pragma translate_off
-GENERIC MAP (
-	lut_mask => "1010101011110000",
-	sum_lutc_input => "datac")
--- pragma translate_on
-PORT MAP (
-	dataa => \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[349]~51_combout\,
-	datac => \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_6~28_combout\,
-	datad => \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_6~32_combout\,
-	combout => \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[374]~66_combout\);
-
--- Location: LCCOMB_X13_Y7_N18
-\U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[373]~67\ : cycloneii_lcell_comb
--- Equation(s):
--- \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[373]~67_combout\ = (\U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_6~32_combout\ & 
--- (\U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[348]~52_combout\)) # (!\U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_6~32_combout\ & 
--- ((\U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_6~26_combout\)))
-
--- pragma translate_off
-GENERIC MAP (
-	lut_mask => "1111001111000000",
-	sum_lutc_input => "datac")
--- pragma translate_on
-PORT MAP (
-	datab => \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_6~32_combout\,
-	datac => \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[348]~52_combout\,
-	datad => \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_6~26_combout\,
-	combout => \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[373]~67_combout\);
-
--- Location: LCCOMB_X13_Y7_N28
-\U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[372]~68\ : cycloneii_lcell_comb
--- Equation(s):
--- \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[372]~68_combout\ = (\U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_6~32_combout\ & 
--- (\U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[347]~53_combout\)) # (!\U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_6~32_combout\ & 
--- ((\U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_6~24_combout\)))
-
--- pragma translate_off
-GENERIC MAP (
-	lut_mask => "1111001111000000",
-	sum_lutc_input => "datac")
--- pragma translate_on
-PORT MAP (
-	datab => \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_6~32_combout\,
-	datac => \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[347]~53_combout\,
-	datad => \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_6~24_combout\,
-	combout => \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[372]~68_combout\);
-
--- Location: LCCOMB_X13_Y7_N30
-\U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[371]~69\ : cycloneii_lcell_comb
--- Equation(s):
--- \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[371]~69_combout\ = (\U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_6~32_combout\ & 
--- (\U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[346]~54_combout\)) # (!\U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_6~32_combout\ & 
--- ((\U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_6~22_combout\)))
-
--- pragma translate_off
-GENERIC MAP (
-	lut_mask => "1100110011110000",
-	sum_lutc_input => "datac")
--- pragma translate_on
-PORT MAP (
-	datab => \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[346]~54_combout\,
-	datac => \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_6~22_combout\,
-	datad => \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_6~32_combout\,
-	combout => \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[371]~69_combout\);
-
--- Location: LCCOMB_X13_Y6_N26
-\U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[319]~42\ : cycloneii_lcell_comb
--- Equation(s):
--- \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[319]~42_combout\ = (\U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_4~28_combout\ & 
--- (\U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[294]~29_combout\)) # (!\U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_4~28_combout\ & 
--- ((\U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_4~14_combout\)))
-
--- pragma translate_off
-GENERIC MAP (
-	lut_mask => "1010111110100000",
-	sum_lutc_input => "datac")
--- pragma translate_on
-PORT MAP (
-	dataa => \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[294]~29_combout\,
-	datac => \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_4~28_combout\,
-	datad => \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_4~14_combout\,
-	combout => \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[319]~42_combout\);
-
--- Location: LCCOMB_X13_Y6_N22
-\U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[344]~56\ : cycloneii_lcell_comb
--- Equation(s):
--- \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[344]~56_combout\ = (\U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_5~30_combout\ & 
--- ((\U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[319]~42_combout\))) # (!\U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_5~30_combout\ & 
--- (\U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_5~16_combout\))
-
--- pragma translate_off
-GENERIC MAP (
-	lut_mask => "1111000011001100",
-	sum_lutc_input => "datac")
--- pragma translate_on
-PORT MAP (
-	datab => \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_5~16_combout\,
-	datac => \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[319]~42_combout\,
-	datad => \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_5~30_combout\,
-	combout => \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[344]~56_combout\);
-
--- Location: LCCOMB_X13_Y7_N26
-\U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[369]~71\ : cycloneii_lcell_comb
--- Equation(s):
--- \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[369]~71_combout\ = (\U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_6~32_combout\ & 
--- (\U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[344]~56_combout\)) # (!\U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_6~32_combout\ & 
--- ((\U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_6~18_combout\)))
-
--- pragma translate_off
-GENERIC MAP (
-	lut_mask => "1111001111000000",
-	sum_lutc_input => "datac")
--- pragma translate_on
-PORT MAP (
-	datab => \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_6~32_combout\,
-	datac => \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[344]~56_combout\,
-	datad => \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_6~18_combout\,
-	combout => \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[369]~71_combout\);
-
 -- Location: LCCOMB_X13_Y7_N4
 \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_7~22\ : cycloneii_lcell_comb
 -- Equation(s):
@@ -16483,27 +16872,6 @@ PORT MAP (
 	combout => \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_7~26_combout\,
 	cout => \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_7~27\);
 
--- Location: LCCOMB_X13_Y7_N10
-\U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_7~28\ : cycloneii_lcell_comb
--- Equation(s):
--- \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_7~28_combout\ = (\U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[373]~67_combout\ & ((GND) # 
--- (!\U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_7~27\))) # (!\U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[373]~67_combout\ & 
--- (\U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_7~27\ $ (GND)))
--- \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_7~29\ = CARRY((\U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[373]~67_combout\) # 
--- (!\U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_7~27\))
-
--- pragma translate_off
-GENERIC MAP (
-	lut_mask => "0011110011001111",
-	sum_lutc_input => "cin")
--- pragma translate_on
-PORT MAP (
-	datab => \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[373]~67_combout\,
-	datad => VCC,
-	cin => \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_7~27\,
-	combout => \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_7~28_combout\,
-	cout => \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_7~29\);
-
 -- Location: LCCOMB_X13_Y7_N14
 \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_7~32\ : cycloneii_lcell_comb
 -- Equation(s):
@@ -16538,24 +16906,6 @@ GENERIC MAP (
 PORT MAP (
 	cin => \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_7~33\,
 	combout => \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_7~34_combout\);
-
--- Location: LCCOMB_X14_Y7_N26
-\U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[393]~88\ : cycloneii_lcell_comb
--- Equation(s):
--- \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[393]~88_combout\ = (\U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_7~34_combout\ & 
--- (\U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[368]~72_combout\)) # (!\U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_7~34_combout\ & 
--- ((\U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_7~18_combout\)))
-
--- pragma translate_off
-GENERIC MAP (
-	lut_mask => "1010101011110000",
-	sum_lutc_input => "datac")
--- pragma translate_on
-PORT MAP (
-	dataa => \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[368]~72_combout\,
-	datac => \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_7~18_combout\,
-	datad => \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_7~34_combout\,
-	combout => \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[393]~88_combout\);
 
 -- Location: LCCOMB_X13_Y5_N6
 \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[400]~81\ : cycloneii_lcell_comb
@@ -16602,11 +16952,11 @@ PORT MAP (
 
 -- pragma translate_off
 GENERIC MAP (
-	lut_mask => "1010101011110000",
+	lut_mask => "1100110011110000",
 	sum_lutc_input => "datac")
 -- pragma translate_on
 PORT MAP (
-	dataa => \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[345]~55_combout\,
+	datab => \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[345]~55_combout\,
 	datac => \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_6~20_combout\,
 	datad => \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_6~32_combout\,
 	combout => \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[370]~70_combout\);
@@ -16628,6 +16978,24 @@ PORT MAP (
 	datac => \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_7~22_combout\,
 	datad => \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_7~34_combout\,
 	combout => \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[395]~86_combout\);
+
+-- Location: LCCOMB_X14_Y7_N26
+\U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[393]~88\ : cycloneii_lcell_comb
+-- Equation(s):
+-- \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[393]~88_combout\ = (\U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_7~34_combout\ & 
+-- (\U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[368]~72_combout\)) # (!\U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_7~34_combout\ & 
+-- ((\U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_7~18_combout\)))
+
+-- pragma translate_off
+GENERIC MAP (
+	lut_mask => "1010101011110000",
+	sum_lutc_input => "datac")
+-- pragma translate_on
+PORT MAP (
+	dataa => \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[368]~72_combout\,
+	datac => \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_7~18_combout\,
+	datad => \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_7~34_combout\,
+	combout => \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[393]~88_combout\);
 
 -- Location: LCCOMB_X14_Y7_N28
 \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[392]~89\ : cycloneii_lcell_comb
@@ -16879,27 +17247,6 @@ PORT MAP (
 	combout => \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_8~16_combout\,
 	cout => \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_8~17\);
 
--- Location: LCCOMB_X14_Y7_N4
-\U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_8~22\ : cycloneii_lcell_comb
--- Equation(s):
--- \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_8~22_combout\ = (\U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[394]~87_combout\ & 
--- (\U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_8~21\ & VCC)) # (!\U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[394]~87_combout\ & 
--- (!\U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_8~21\))
--- \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_8~23\ = CARRY((!\U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[394]~87_combout\ & 
--- !\U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_8~21\))
-
--- pragma translate_off
-GENERIC MAP (
-	lut_mask => "1010010100000101",
-	sum_lutc_input => "cin")
--- pragma translate_on
-PORT MAP (
-	dataa => \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[394]~87_combout\,
-	datad => VCC,
-	cin => \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_8~21\,
-	combout => \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_8~22_combout\,
-	cout => \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_8~23\);
-
 -- Location: LCCOMB_X14_Y7_N6
 \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_8~24\ : cycloneii_lcell_comb
 -- Equation(s):
@@ -16997,6 +17344,78 @@ GENERIC MAP (
 PORT MAP (
 	cin => \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_8~35\,
 	combout => \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_8~36_combout\);
+
+-- Location: LCCOMB_X15_Y7_N14
+\U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[422]~101\ : cycloneii_lcell_comb
+-- Equation(s):
+-- \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[422]~101_combout\ = (\U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_8~36_combout\ & 
+-- (\U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[397]~84_combout\)) # (!\U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_8~36_combout\ & 
+-- ((\U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_8~28_combout\)))
+
+-- pragma translate_off
+GENERIC MAP (
+	lut_mask => "1011101110001000",
+	sum_lutc_input => "datac")
+-- pragma translate_on
+PORT MAP (
+	dataa => \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[397]~84_combout\,
+	datab => \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_8~36_combout\,
+	datad => \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_8~28_combout\,
+	combout => \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[422]~101_combout\);
+
+-- Location: LCCOMB_X14_Y7_N20
+\U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[396]~85\ : cycloneii_lcell_comb
+-- Equation(s):
+-- \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[396]~85_combout\ = (\U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_7~34_combout\ & 
+-- (\U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[371]~69_combout\)) # (!\U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_7~34_combout\ & 
+-- ((\U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_7~24_combout\)))
+
+-- pragma translate_off
+GENERIC MAP (
+	lut_mask => "1111001111000000",
+	sum_lutc_input => "datac")
+-- pragma translate_on
+PORT MAP (
+	datab => \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_7~34_combout\,
+	datac => \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[371]~69_combout\,
+	datad => \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_7~24_combout\,
+	combout => \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[396]~85_combout\);
+
+-- Location: LCCOMB_X15_Y9_N28
+\U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[421]~102\ : cycloneii_lcell_comb
+-- Equation(s):
+-- \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[421]~102_combout\ = (\U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_8~36_combout\ & 
+-- (\U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[396]~85_combout\)) # (!\U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_8~36_combout\ & 
+-- ((\U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_8~26_combout\)))
+
+-- pragma translate_off
+GENERIC MAP (
+	lut_mask => "1100110011110000",
+	sum_lutc_input => "datac")
+-- pragma translate_on
+PORT MAP (
+	datab => \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[396]~85_combout\,
+	datac => \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_8~26_combout\,
+	datad => \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_8~36_combout\,
+	combout => \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[421]~102_combout\);
+
+-- Location: LCCOMB_X15_Y9_N22
+\U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[420]~103\ : cycloneii_lcell_comb
+-- Equation(s):
+-- \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[420]~103_combout\ = (\U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_8~36_combout\ & 
+-- (\U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[395]~86_combout\)) # (!\U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_8~36_combout\ & 
+-- ((\U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_8~24_combout\)))
+
+-- pragma translate_off
+GENERIC MAP (
+	lut_mask => "1010101011110000",
+	sum_lutc_input => "datac")
+-- pragma translate_on
+PORT MAP (
+	dataa => \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[395]~86_combout\,
+	datac => \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_8~24_combout\,
+	datad => \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_8~36_combout\,
+	combout => \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[420]~103_combout\);
 
 -- Location: LCCOMB_X15_Y9_N26
 \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[418]~105\ : cycloneii_lcell_comb
@@ -17387,150 +17806,6 @@ PORT MAP (
 	combout => \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_9~24_combout\,
 	cout => \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_9~25\);
 
--- Location: LCCOMB_X14_Y7_N24
-\U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[394]~87\ : cycloneii_lcell_comb
--- Equation(s):
--- \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[394]~87_combout\ = (\U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_7~34_combout\ & 
--- ((\U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[369]~71_combout\))) # (!\U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_7~34_combout\ & 
--- (\U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_7~20_combout\))
-
--- pragma translate_off
-GENERIC MAP (
-	lut_mask => "1100110010101010",
-	sum_lutc_input => "datac")
--- pragma translate_on
-PORT MAP (
-	dataa => \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_7~20_combout\,
-	datab => \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[369]~71_combout\,
-	datad => \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_7~34_combout\,
-	combout => \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[394]~87_combout\);
-
--- Location: LCCOMB_X15_Y9_N24
-\U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[419]~104\ : cycloneii_lcell_comb
--- Equation(s):
--- \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[419]~104_combout\ = (\U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_8~36_combout\ & 
--- (\U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[394]~87_combout\)) # (!\U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_8~36_combout\ & 
--- ((\U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_8~22_combout\)))
-
--- pragma translate_off
-GENERIC MAP (
-	lut_mask => "1100110011110000",
-	sum_lutc_input => "datac")
--- pragma translate_on
-PORT MAP (
-	datab => \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[394]~87_combout\,
-	datac => \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_8~22_combout\,
-	datad => \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_8~36_combout\,
-	combout => \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[419]~104_combout\);
-
--- Location: LCCOMB_X15_Y7_N16
-\U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[398]~83\ : cycloneii_lcell_comb
--- Equation(s):
--- \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[398]~83_combout\ = (\U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_7~34_combout\ & 
--- (\U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[373]~67_combout\)) # (!\U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_7~34_combout\ & 
--- ((\U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_7~28_combout\)))
-
--- pragma translate_off
-GENERIC MAP (
-	lut_mask => "1100111111000000",
-	sum_lutc_input => "datac")
--- pragma translate_on
-PORT MAP (
-	datab => \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[373]~67_combout\,
-	datac => \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_7~34_combout\,
-	datad => \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_7~28_combout\,
-	combout => \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[398]~83_combout\);
-
--- Location: LCCOMB_X15_Y7_N4
-\U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[423]~100\ : cycloneii_lcell_comb
--- Equation(s):
--- \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[423]~100_combout\ = (\U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_8~36_combout\ & 
--- ((\U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[398]~83_combout\))) # (!\U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_8~36_combout\ & 
--- (\U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_8~30_combout\))
-
--- pragma translate_off
-GENERIC MAP (
-	lut_mask => "1111000010101010",
-	sum_lutc_input => "datac")
--- pragma translate_on
-PORT MAP (
-	dataa => \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_8~30_combout\,
-	datac => \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[398]~83_combout\,
-	datad => \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_8~36_combout\,
-	combout => \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[423]~100_combout\);
-
--- Location: LCCOMB_X15_Y7_N14
-\U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[422]~101\ : cycloneii_lcell_comb
--- Equation(s):
--- \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[422]~101_combout\ = (\U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_8~36_combout\ & 
--- (\U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[397]~84_combout\)) # (!\U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_8~36_combout\ & 
--- ((\U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_8~28_combout\)))
-
--- pragma translate_off
-GENERIC MAP (
-	lut_mask => "1011101110001000",
-	sum_lutc_input => "datac")
--- pragma translate_on
-PORT MAP (
-	dataa => \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[397]~84_combout\,
-	datab => \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_8~36_combout\,
-	datad => \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_8~28_combout\,
-	combout => \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[422]~101_combout\);
-
--- Location: LCCOMB_X14_Y7_N20
-\U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[396]~85\ : cycloneii_lcell_comb
--- Equation(s):
--- \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[396]~85_combout\ = (\U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_7~34_combout\ & 
--- (\U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[371]~69_combout\)) # (!\U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_7~34_combout\ & 
--- ((\U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_7~24_combout\)))
-
--- pragma translate_off
-GENERIC MAP (
-	lut_mask => "1111001111000000",
-	sum_lutc_input => "datac")
--- pragma translate_on
-PORT MAP (
-	datab => \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_7~34_combout\,
-	datac => \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[371]~69_combout\,
-	datad => \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_7~24_combout\,
-	combout => \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[396]~85_combout\);
-
--- Location: LCCOMB_X15_Y9_N28
-\U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[421]~102\ : cycloneii_lcell_comb
--- Equation(s):
--- \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[421]~102_combout\ = (\U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_8~36_combout\ & 
--- (\U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[396]~85_combout\)) # (!\U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_8~36_combout\ & 
--- ((\U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_8~26_combout\)))
-
--- pragma translate_off
-GENERIC MAP (
-	lut_mask => "1100110011110000",
-	sum_lutc_input => "datac")
--- pragma translate_on
-PORT MAP (
-	datab => \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[396]~85_combout\,
-	datac => \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_8~26_combout\,
-	datad => \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_8~36_combout\,
-	combout => \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[421]~102_combout\);
-
--- Location: LCCOMB_X15_Y9_N30
-\U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[420]~103\ : cycloneii_lcell_comb
--- Equation(s):
--- \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[420]~103_combout\ = (\U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_8~36_combout\ & 
--- (\U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[395]~86_combout\)) # (!\U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_8~36_combout\ & 
--- ((\U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_8~24_combout\)))
-
--- pragma translate_off
-GENERIC MAP (
-	lut_mask => "1010101011110000",
-	sum_lutc_input => "datac")
--- pragma translate_on
-PORT MAP (
-	dataa => \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[395]~86_combout\,
-	datac => \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_8~24_combout\,
-	datad => \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_8~36_combout\,
-	combout => \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[420]~103_combout\);
-
 -- Location: LCCOMB_X15_Y9_N6
 \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_9~26\ : cycloneii_lcell_comb
 -- Equation(s):
@@ -17594,6 +17869,27 @@ PORT MAP (
 	combout => \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_9~30_combout\,
 	cout => \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_9~31\);
 
+-- Location: LCCOMB_X15_Y9_N12
+\U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_9~32\ : cycloneii_lcell_comb
+-- Equation(s):
+-- \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_9~32_combout\ = (\U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[423]~100_combout\ & ((GND) # 
+-- (!\U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_9~31\))) # (!\U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[423]~100_combout\ & 
+-- (\U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_9~31\ $ (GND)))
+-- \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_9~33\ = CARRY((\U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[423]~100_combout\) # 
+-- (!\U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_9~31\))
+
+-- pragma translate_off
+GENERIC MAP (
+	lut_mask => "0101101010101111",
+	sum_lutc_input => "cin")
+-- pragma translate_on
+PORT MAP (
+	dataa => \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[423]~100_combout\,
+	datad => VCC,
+	cin => \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_9~31\,
+	combout => \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_9~32_combout\,
+	cout => \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_9~33\);
+
 -- Location: LCCOMB_X15_Y9_N14
 \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_9~34\ : cycloneii_lcell_comb
 -- Equation(s):
@@ -17629,12 +17925,12 @@ PORT MAP (
 	cin => \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_9~37\,
 	combout => \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_9~38_combout\);
 
--- Location: LCCOMB_X18_Y8_N0
-\U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[444]~122\ : cycloneii_lcell_comb
+-- Location: LCCOMB_X15_Y7_N26
+\U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[447]~119\ : cycloneii_lcell_comb
 -- Equation(s):
--- \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[444]~122_combout\ = (\U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_9~38_combout\ & 
--- ((\U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[419]~104_combout\))) # (!\U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_9~38_combout\ & 
--- (\U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_9~24_combout\))
+-- \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[447]~119_combout\ = (\U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_9~38_combout\ & 
+-- ((\U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[422]~101_combout\))) # (!\U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_9~38_combout\ & 
+-- (\U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_9~30_combout\))
 
 -- pragma translate_off
 GENERIC MAP (
@@ -17642,8 +17938,26 @@ GENERIC MAP (
 	sum_lutc_input => "datac")
 -- pragma translate_on
 PORT MAP (
-	datab => \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_9~24_combout\,
-	datac => \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[419]~104_combout\,
+	datab => \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_9~30_combout\,
+	datac => \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[422]~101_combout\,
+	datad => \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_9~38_combout\,
+	combout => \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[447]~119_combout\);
+
+-- Location: LCCOMB_X18_Y8_N0
+\U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[444]~122\ : cycloneii_lcell_comb
+-- Equation(s):
+-- \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[444]~122_combout\ = (\U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_9~38_combout\ & 
+-- (\U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[419]~104_combout\)) # (!\U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_9~38_combout\ & 
+-- ((\U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_9~24_combout\)))
+
+-- pragma translate_off
+GENERIC MAP (
+	lut_mask => "1010101011110000",
+	sum_lutc_input => "datac")
+-- pragma translate_on
+PORT MAP (
+	dataa => \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[419]~104_combout\,
+	datac => \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_9~24_combout\,
 	datad => \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_9~38_combout\,
 	combout => \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[444]~122_combout\);
 
@@ -17710,11 +18024,11 @@ PORT MAP (
 
 -- pragma translate_off
 GENERIC MAP (
-	lut_mask => "1010101011110000",
+	lut_mask => "1100110011110000",
 	sum_lutc_input => "datac")
 -- pragma translate_on
 PORT MAP (
-	dataa => \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[414]~109_combout\,
+	datab => \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[414]~109_combout\,
 	datac => \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_9~14_combout\,
 	datad => \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_9~38_combout\,
 	combout => \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[439]~127_combout\);
@@ -17755,59 +18069,6 @@ PORT MAP (
 	datad => \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_9~38_combout\,
 	combout => \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[437]~129_combout\);
 
--- Location: LCCOMB_X12_Y8_N6
-\U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[336]~64\ : cycloneii_lcell_comb
--- Equation(s):
--- \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[336]~64_combout\ = (\U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_5~30_combout\ & ((\U_Ranger_Top|timevector[9]~18_combout\))) # 
--- (!\U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_5~30_combout\ & (\U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_5~0_combout\))
-
--- pragma translate_off
-GENERIC MAP (
-	lut_mask => "1111101000001010",
-	sum_lutc_input => "datac")
--- pragma translate_on
-PORT MAP (
-	dataa => \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_5~0_combout\,
-	datac => \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_5~30_combout\,
-	datad => \U_Ranger_Top|timevector[9]~18_combout\,
-	combout => \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[336]~64_combout\);
-
--- Location: LCCOMB_X13_Y8_N10
-\U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[361]~79\ : cycloneii_lcell_comb
--- Equation(s):
--- \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[361]~79_combout\ = (\U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_6~32_combout\ & 
--- ((\U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[336]~64_combout\))) # (!\U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_6~32_combout\ & 
--- (\U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_6~2_combout\))
-
--- pragma translate_off
-GENERIC MAP (
-	lut_mask => "1111000011001100",
-	sum_lutc_input => "datac")
--- pragma translate_on
-PORT MAP (
-	datab => \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_6~2_combout\,
-	datac => \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[336]~64_combout\,
-	datad => \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_6~32_combout\,
-	combout => \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[361]~79_combout\);
-
--- Location: LCCOMB_X14_Y8_N10
-\U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[386]~95\ : cycloneii_lcell_comb
--- Equation(s):
--- \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[386]~95_combout\ = (\U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_7~34_combout\ & 
--- ((\U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[361]~79_combout\))) # (!\U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_7~34_combout\ & 
--- (\U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_7~4_combout\))
-
--- pragma translate_off
-GENERIC MAP (
-	lut_mask => "1111000011001100",
-	sum_lutc_input => "datac")
--- pragma translate_on
-PORT MAP (
-	datab => \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_7~4_combout\,
-	datac => \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[361]~79_combout\,
-	datad => \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_7~34_combout\,
-	combout => \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[386]~95_combout\);
-
 -- Location: LCCOMB_X15_Y10_N6
 \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[411]~112\ : cycloneii_lcell_comb
 -- Equation(s):
@@ -17817,11 +18078,11 @@ PORT MAP (
 
 -- pragma translate_off
 GENERIC MAP (
-	lut_mask => "1100110011110000",
+	lut_mask => "1010101011110000",
 	sum_lutc_input => "datac")
 -- pragma translate_on
 PORT MAP (
-	datab => \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[386]~95_combout\,
+	dataa => \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[386]~95_combout\,
 	datac => \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_8~6_combout\,
 	datad => \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_8~36_combout\,
 	combout => \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[411]~112_combout\);
@@ -17862,7 +18123,7 @@ PORT MAP (
 	datad => \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_9~38_combout\,
 	combout => \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[434]~132_combout\);
 
--- Location: LCCOMB_X15_Y9_N22
+-- Location: LCCOMB_X15_Y9_N30
 \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[432]~134\ : cycloneii_lcell_comb
 -- Equation(s):
 -- \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[432]~134_combout\ = (\U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_9~38_combout\ & ((\U_Ranger_Top|timevector[5]~10_combout\))) # 
@@ -18173,23 +18434,65 @@ PORT MAP (
 	combout => \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_10~30_combout\,
 	cout => \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_10~31\);
 
--- Location: LCCOMB_X15_Y8_N20
-\U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[446]~120\ : cycloneii_lcell_comb
+-- Location: LCCOMB_X16_Y9_N12
+\U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_10~32\ : cycloneii_lcell_comb
 -- Equation(s):
--- \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[446]~120_combout\ = (\U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_9~38_combout\ & 
--- (\U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[421]~102_combout\)) # (!\U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_9~38_combout\ & 
--- ((\U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_9~28_combout\)))
+-- \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_10~32_combout\ = (\U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[447]~119_combout\ & ((GND) # 
+-- (!\U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_10~31\))) # (!\U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[447]~119_combout\ & 
+-- (\U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_10~31\ $ (GND)))
+-- \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_10~33\ = CARRY((\U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[447]~119_combout\) # 
+-- (!\U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_10~31\))
 
 -- pragma translate_off
 GENERIC MAP (
-	lut_mask => "1100110011110000",
+	lut_mask => "0011110011001111",
+	sum_lutc_input => "cin")
+-- pragma translate_on
+PORT MAP (
+	datab => \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[447]~119_combout\,
+	datad => VCC,
+	cin => \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_10~31\,
+	combout => \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_10~32_combout\,
+	cout => \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_10~33\);
+
+-- Location: LCCOMB_X16_Y9_N14
+\U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_10~34\ : cycloneii_lcell_comb
+-- Equation(s):
+-- \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_10~34_combout\ = (\U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[448]~118_combout\ & 
+-- (\U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_10~33\ & VCC)) # (!\U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[448]~118_combout\ & 
+-- (!\U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_10~33\))
+-- \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_10~35\ = CARRY((!\U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[448]~118_combout\ & 
+-- !\U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_10~33\))
+
+-- pragma translate_off
+GENERIC MAP (
+	lut_mask => "1010010100000101",
+	sum_lutc_input => "cin")
+-- pragma translate_on
+PORT MAP (
+	dataa => \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[448]~118_combout\,
+	datad => VCC,
+	cin => \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_10~33\,
+	combout => \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_10~34_combout\,
+	cout => \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_10~35\);
+
+-- Location: LCCOMB_X15_Y7_N0
+\U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[448]~118\ : cycloneii_lcell_comb
+-- Equation(s):
+-- \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[448]~118_combout\ = (\U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_9~38_combout\ & 
+-- (\U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[423]~100_combout\)) # (!\U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_9~38_combout\ & 
+-- ((\U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_9~32_combout\)))
+
+-- pragma translate_off
+GENERIC MAP (
+	lut_mask => "1010101011110000",
 	sum_lutc_input => "datac")
 -- pragma translate_on
 PORT MAP (
-	datab => \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[421]~102_combout\,
-	datac => \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_9~28_combout\,
+	dataa => \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[423]~100_combout\,
+	datac => \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_9~32_combout\,
 	datad => \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_9~38_combout\,
-	combout => \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[446]~120_combout\);
+	combout => \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[448]~118_combout\);
 
 -- Location: LCCOMB_X18_Y7_N2
 \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[424]~99\ : cycloneii_lcell_comb
@@ -18227,45 +18530,6 @@ PORT MAP (
 	datad => \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_9~38_combout\,
 	combout => \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[449]~117_combout\);
 
--- Location: LCCOMB_X15_Y7_N26
-\U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[447]~119\ : cycloneii_lcell_comb
--- Equation(s):
--- \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[447]~119_combout\ = (\U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_9~38_combout\ & 
--- ((\U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[422]~101_combout\))) # (!\U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_9~38_combout\ & 
--- (\U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_9~30_combout\))
-
--- pragma translate_off
-GENERIC MAP (
-	lut_mask => "1111000011001100",
-	sum_lutc_input => "datac")
--- pragma translate_on
-PORT MAP (
-	datab => \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_9~30_combout\,
-	datac => \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[422]~101_combout\,
-	datad => \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_9~38_combout\,
-	combout => \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[447]~119_combout\);
-
--- Location: LCCOMB_X16_Y9_N12
-\U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_10~32\ : cycloneii_lcell_comb
--- Equation(s):
--- \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_10~32_combout\ = (\U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[447]~119_combout\ & ((GND) # 
--- (!\U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_10~31\))) # (!\U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[447]~119_combout\ & 
--- (\U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_10~31\ $ (GND)))
--- \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_10~33\ = CARRY((\U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[447]~119_combout\) # 
--- (!\U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_10~31\))
-
--- pragma translate_off
-GENERIC MAP (
-	lut_mask => "0011110011001111",
-	sum_lutc_input => "cin")
--- pragma translate_on
-PORT MAP (
-	datab => \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[447]~119_combout\,
-	datad => VCC,
-	cin => \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_10~31\,
-	combout => \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_10~32_combout\,
-	cout => \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_10~33\);
-
 -- Location: LCCOMB_X16_Y9_N16
 \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_10~36\ : cycloneii_lcell_comb
 -- Equation(s):
@@ -18287,6 +18551,27 @@ PORT MAP (
 	combout => \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_10~36_combout\,
 	cout => \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_10~37\);
 
+-- Location: LCCOMB_X16_Y9_N18
+\U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_10~38\ : cycloneii_lcell_comb
+-- Equation(s):
+-- \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_10~38_combout\ = (\U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[450]~116_combout\ & 
+-- (\U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_10~37\ & VCC)) # (!\U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[450]~116_combout\ & 
+-- (!\U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_10~37\))
+-- \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_10~39\ = CARRY((!\U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[450]~116_combout\ & 
+-- !\U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_10~37\))
+
+-- pragma translate_off
+GENERIC MAP (
+	lut_mask => "1010010100000101",
+	sum_lutc_input => "cin")
+-- pragma translate_on
+PORT MAP (
+	dataa => \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[450]~116_combout\,
+	datad => VCC,
+	cin => \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_10~37\,
+	combout => \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_10~38_combout\,
+	cout => \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_10~39\);
+
 -- Location: LCCOMB_X16_Y9_N20
 \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_10~40\ : cycloneii_lcell_comb
 -- Equation(s):
@@ -18300,6 +18585,42 @@ GENERIC MAP (
 PORT MAP (
 	cin => \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_10~39\,
 	combout => \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_10~40_combout\);
+
+-- Location: LCCOMB_X15_Y7_N4
+\U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[473]~137\ : cycloneii_lcell_comb
+-- Equation(s):
+-- \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[473]~137_combout\ = (\U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_10~40_combout\ & 
+-- ((\U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[448]~118_combout\))) # (!\U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_10~40_combout\ & 
+-- (\U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_10~34_combout\))
+
+-- pragma translate_off
+GENERIC MAP (
+	lut_mask => "1111000011001100",
+	sum_lutc_input => "datac")
+-- pragma translate_on
+PORT MAP (
+	datab => \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_10~34_combout\,
+	datac => \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[448]~118_combout\,
+	datad => \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_10~40_combout\,
+	combout => \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[473]~137_combout\);
+
+-- Location: LCCOMB_X15_Y8_N20
+\U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[446]~120\ : cycloneii_lcell_comb
+-- Equation(s):
+-- \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[446]~120_combout\ = (\U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_9~38_combout\ & 
+-- (\U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[421]~102_combout\)) # (!\U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_9~38_combout\ & 
+-- ((\U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_9~28_combout\)))
+
+-- pragma translate_off
+GENERIC MAP (
+	lut_mask => "1010101011110000",
+	sum_lutc_input => "datac")
+-- pragma translate_on
+PORT MAP (
+	dataa => \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[421]~102_combout\,
+	datac => \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_9~28_combout\,
+	datad => \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_9~38_combout\,
+	combout => \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[446]~120_combout\);
 
 -- Location: LCCOMB_X15_Y7_N24
 \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[471]~139\ : cycloneii_lcell_comb
@@ -18579,11 +18900,11 @@ PORT MAP (
 
 -- pragma translate_off
 GENERIC MAP (
-	lut_mask => "1100111111000000",
+	lut_mask => "1010111110100000",
 	sum_lutc_input => "datac")
 -- pragma translate_on
 PORT MAP (
-	datab => \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[432]~134_combout\,
+	dataa => \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[432]~134_combout\,
 	datac => \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_10~40_combout\,
 	datad => \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_10~2_combout\,
 	combout => \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[457]~153_combout\);
@@ -18878,6 +19199,27 @@ PORT MAP (
 	combout => \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_12~30_combout\,
 	cout => \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_12~31\);
 
+-- Location: LCCOMB_X16_Y7_N10
+\U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_12~32\ : cycloneii_lcell_comb
+-- Equation(s):
+-- \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_12~32_combout\ = (\U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[471]~139_combout\ & ((GND) # 
+-- (!\U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_12~31\))) # (!\U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[471]~139_combout\ & 
+-- (\U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_12~31\ $ (GND)))
+-- \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_12~33\ = CARRY((\U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[471]~139_combout\) # 
+-- (!\U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_12~31\))
+
+-- pragma translate_off
+GENERIC MAP (
+	lut_mask => "0011110011001111",
+	sum_lutc_input => "cin")
+-- pragma translate_on
+PORT MAP (
+	datab => \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[471]~139_combout\,
+	datad => VCC,
+	cin => \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_12~31\,
+	combout => \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_12~32_combout\,
+	cout => \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_12~33\);
+
 -- Location: LCCOMB_X16_Y7_N12
 \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_12~34\ : cycloneii_lcell_comb
 -- Equation(s):
@@ -18910,15 +19252,33 @@ PORT MAP (
 
 -- pragma translate_off
 GENERIC MAP (
-	lut_mask => "0101101010101111",
+	lut_mask => "0011110011001111",
 	sum_lutc_input => "cin")
 -- pragma translate_on
 PORT MAP (
-	dataa => \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[473]~137_combout\,
+	datab => \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[473]~137_combout\,
 	datad => VCC,
 	cin => \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_12~35\,
 	combout => \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_12~36_combout\,
 	cout => \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_12~37\);
+
+-- Location: LCCOMB_X13_Y5_N20
+\U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[475]~135\ : cycloneii_lcell_comb
+-- Equation(s):
+-- \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[475]~135_combout\ = (\U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_10~40_combout\ & 
+-- (\U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[450]~116_combout\)) # (!\U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_10~40_combout\ & 
+-- ((\U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_10~38_combout\)))
+
+-- pragma translate_off
+GENERIC MAP (
+	lut_mask => "1010111110100000",
+	sum_lutc_input => "datac")
+-- pragma translate_on
+PORT MAP (
+	dataa => \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[450]~116_combout\,
+	datac => \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_10~40_combout\,
+	datad => \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_10~38_combout\,
+	combout => \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[475]~135_combout\);
 
 -- Location: LCCOMB_X18_Y7_N30
 \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[474]~136\ : cycloneii_lcell_comb
@@ -18970,11 +19330,11 @@ PORT MAP (
 
 -- pragma translate_off
 GENERIC MAP (
-	lut_mask => "0101101010101111",
+	lut_mask => "0011110011001111",
 	sum_lutc_input => "cin")
 -- pragma translate_on
 PORT MAP (
-	dataa => \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[475]~135_combout\,
+	datab => \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[475]~135_combout\,
 	datad => VCC,
 	cin => \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_12~39\,
 	combout => \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_12~40_combout\,
@@ -19003,11 +19363,11 @@ PORT MAP (
 
 -- pragma translate_off
 GENERIC MAP (
-	lut_mask => "1010101011110000",
+	lut_mask => "1100110011110000",
 	sum_lutc_input => "datac")
 -- pragma translate_on
 PORT MAP (
-	dataa => \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[473]~137_combout\,
+	datab => \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[473]~137_combout\,
 	datac => \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_12~36_combout\,
 	datad => \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_12~42_combout\,
 	combout => \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[498]~157_combout\);
@@ -19048,41 +19408,23 @@ PORT MAP (
 	datad => \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_12~42_combout\,
 	combout => \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[499]~156_combout\);
 
--- Location: LCCOMB_X15_Y7_N30
-\U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[472]~138\ : cycloneii_lcell_comb
+-- Location: LCCOMB_X15_Y7_N6
+\U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[496]~159\ : cycloneii_lcell_comb
 -- Equation(s):
--- \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[472]~138_combout\ = (\U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_10~40_combout\ & 
--- (\U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[447]~119_combout\)) # (!\U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_10~40_combout\ & 
--- ((\U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_10~32_combout\)))
+-- \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[496]~159_combout\ = (\U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_12~42_combout\ & 
+-- (\U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[471]~139_combout\)) # (!\U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_12~42_combout\ & 
+-- ((\U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_12~32_combout\)))
 
 -- pragma translate_off
 GENERIC MAP (
-	lut_mask => "1100110011110000",
+	lut_mask => "1010101011110000",
 	sum_lutc_input => "datac")
 -- pragma translate_on
 PORT MAP (
-	datab => \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[447]~119_combout\,
-	datac => \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_10~32_combout\,
-	datad => \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_10~40_combout\,
-	combout => \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[472]~138_combout\);
-
--- Location: LCCOMB_X15_Y7_N28
-\U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[497]~158\ : cycloneii_lcell_comb
--- Equation(s):
--- \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[497]~158_combout\ = (\U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_12~42_combout\ & 
--- (\U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[472]~138_combout\)) # (!\U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_12~42_combout\ & 
--- ((\U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_12~34_combout\)))
-
--- pragma translate_off
-GENERIC MAP (
-	lut_mask => "1100110011110000",
-	sum_lutc_input => "datac")
--- pragma translate_on
-PORT MAP (
-	datab => \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[472]~138_combout\,
-	datac => \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_12~34_combout\,
+	dataa => \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[471]~139_combout\,
+	datac => \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_12~32_combout\,
 	datad => \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_12~42_combout\,
-	combout => \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[497]~158_combout\);
+	combout => \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[496]~159_combout\);
 
 -- Location: LCCOMB_X15_Y8_N16
 \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[495]~160\ : cycloneii_lcell_comb
@@ -19659,27 +20001,6 @@ PORT MAP (
 	combout => \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_13~28_combout\,
 	cout => \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_13~29\);
 
--- Location: LCCOMB_X17_Y7_N8
-\U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_13~30\ : cycloneii_lcell_comb
--- Equation(s):
--- \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_13~30_combout\ = (\U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[494]~161_combout\ & 
--- (\U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_13~29\ & VCC)) # (!\U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[494]~161_combout\ & 
--- (!\U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_13~29\))
--- \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_13~31\ = CARRY((!\U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[494]~161_combout\ & 
--- !\U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_13~29\))
-
--- pragma translate_off
-GENERIC MAP (
-	lut_mask => "1100001100000011",
-	sum_lutc_input => "cin")
--- pragma translate_on
-PORT MAP (
-	datab => \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[494]~161_combout\,
-	datad => VCC,
-	cin => \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_13~29\,
-	combout => \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_13~30_combout\,
-	cout => \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_13~31\);
-
 -- Location: LCCOMB_X17_Y7_N10
 \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_13~32\ : cycloneii_lcell_comb
 -- Equation(s):
@@ -19712,11 +20033,11 @@ PORT MAP (
 
 -- pragma translate_off
 GENERIC MAP (
-	lut_mask => "1010010100000101",
+	lut_mask => "1100001100000011",
 	sum_lutc_input => "cin")
 -- pragma translate_on
 PORT MAP (
-	dataa => \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[496]~159_combout\,
+	datab => \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[496]~159_combout\,
 	datad => VCC,
 	cin => \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_13~33\,
 	combout => \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_13~34_combout\,
@@ -19733,11 +20054,11 @@ PORT MAP (
 
 -- pragma translate_off
 GENERIC MAP (
-	lut_mask => "0011110011001111",
+	lut_mask => "0101101010101111",
 	sum_lutc_input => "cin")
 -- pragma translate_on
 PORT MAP (
-	datab => \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[497]~158_combout\,
+	dataa => \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[497]~158_combout\,
 	datad => VCC,
 	cin => \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_13~35\,
 	combout => \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_13~36_combout\,
@@ -19838,6 +20159,42 @@ PORT MAP (
 	datad => \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_13~38_combout\,
 	combout => \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[523]~178_combout\);
 
+-- Location: LCCOMB_X15_Y7_N30
+\U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[472]~138\ : cycloneii_lcell_comb
+-- Equation(s):
+-- \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[472]~138_combout\ = (\U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_10~40_combout\ & 
+-- (\U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[447]~119_combout\)) # (!\U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_10~40_combout\ & 
+-- ((\U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_10~32_combout\)))
+
+-- pragma translate_off
+GENERIC MAP (
+	lut_mask => "1100110011110000",
+	sum_lutc_input => "datac")
+-- pragma translate_on
+PORT MAP (
+	datab => \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[447]~119_combout\,
+	datac => \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_10~32_combout\,
+	datad => \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_10~40_combout\,
+	combout => \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[472]~138_combout\);
+
+-- Location: LCCOMB_X15_Y7_N28
+\U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[497]~158\ : cycloneii_lcell_comb
+-- Equation(s):
+-- \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[497]~158_combout\ = (\U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_12~42_combout\ & 
+-- (\U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[472]~138_combout\)) # (!\U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_12~42_combout\ & 
+-- ((\U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_12~34_combout\)))
+
+-- pragma translate_off
+GENERIC MAP (
+	lut_mask => "1100110011110000",
+	sum_lutc_input => "datac")
+-- pragma translate_on
+PORT MAP (
+	datab => \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[472]~138_combout\,
+	datac => \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_12~34_combout\,
+	datad => \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_12~42_combout\,
+	combout => \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[497]~158_combout\);
+
 -- Location: LCCOMB_X15_Y7_N2
 \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[522]~179\ : cycloneii_lcell_comb
 -- Equation(s):
@@ -19847,13 +20204,13 @@ PORT MAP (
 
 -- pragma translate_off
 GENERIC MAP (
-	lut_mask => "1100110011110000",
+	lut_mask => "1100111111000000",
 	sum_lutc_input => "datac")
 -- pragma translate_on
 PORT MAP (
 	datab => \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[497]~158_combout\,
-	datac => \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_13~36_combout\,
-	datad => \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_13~44_combout\,
+	datac => \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_13~44_combout\,
+	datad => \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_13~36_combout\,
 	combout => \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[522]~179_combout\);
 
 -- Location: LCCOMB_X15_Y7_N20
@@ -19883,13 +20240,13 @@ PORT MAP (
 
 -- pragma translate_off
 GENERIC MAP (
-	lut_mask => "1010111110100000",
+	lut_mask => "1010101011110000",
 	sum_lutc_input => "datac")
 -- pragma translate_on
 PORT MAP (
 	dataa => \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[495]~160_combout\,
-	datac => \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_13~44_combout\,
-	datad => \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_13~32_combout\,
+	datac => \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_13~32_combout\,
+	datad => \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_13~44_combout\,
 	combout => \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[520]~181_combout\);
 
 -- Location: LCCOMB_X19_Y7_N26
@@ -20009,11 +20366,11 @@ PORT MAP (
 
 -- pragma translate_off
 GENERIC MAP (
-	lut_mask => "1100110011110000",
+	lut_mask => "1010101011110000",
 	sum_lutc_input => "datac")
 -- pragma translate_on
 PORT MAP (
-	datab => \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[486]~169_combout\,
+	dataa => \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[486]~169_combout\,
 	datac => \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_13~14_combout\,
 	datad => \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_13~44_combout\,
 	combout => \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[511]~190_combout\);
@@ -20300,27 +20657,6 @@ PORT MAP (
 	combout => \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_14~30_combout\,
 	cout => \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_14~31\);
 
--- Location: LCCOMB_X19_Y7_N8
-\U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_14~32\ : cycloneii_lcell_comb
--- Equation(s):
--- \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_14~32_combout\ = (\U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[519]~182_combout\ & ((GND) # 
--- (!\U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_14~31\))) # (!\U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[519]~182_combout\ & 
--- (\U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_14~31\ $ (GND)))
--- \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_14~33\ = CARRY((\U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[519]~182_combout\) # 
--- (!\U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_14~31\))
-
--- pragma translate_off
-GENERIC MAP (
-	lut_mask => "0101101010101111",
-	sum_lutc_input => "cin")
--- pragma translate_on
-PORT MAP (
-	dataa => \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[519]~182_combout\,
-	datad => VCC,
-	cin => \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_14~31\,
-	combout => \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_14~32_combout\,
-	cout => \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_14~33\);
-
 -- Location: LCCOMB_X19_Y7_N10
 \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_14~34\ : cycloneii_lcell_comb
 -- Equation(s):
@@ -20362,27 +20698,6 @@ PORT MAP (
 	cin => \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_14~35\,
 	combout => \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_14~36_combout\,
 	cout => \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_14~37\);
-
--- Location: LCCOMB_X19_Y7_N14
-\U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_14~38\ : cycloneii_lcell_comb
--- Equation(s):
--- \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_14~38_combout\ = (\U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[522]~179_combout\ & 
--- (\U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_14~37\ & VCC)) # (!\U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[522]~179_combout\ & 
--- (!\U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_14~37\))
--- \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_14~39\ = CARRY((!\U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[522]~179_combout\ & 
--- !\U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_14~37\))
-
--- pragma translate_off
-GENERIC MAP (
-	lut_mask => "1100001100000011",
-	sum_lutc_input => "cin")
--- pragma translate_on
-PORT MAP (
-	datab => \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[522]~179_combout\,
-	datad => VCC,
-	cin => \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_14~37\,
-	combout => \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_14~38_combout\,
-	cout => \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_14~39\);
 
 -- Location: LCCOMB_X19_Y7_N16
 \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_14~40\ : cycloneii_lcell_comb
@@ -20497,24 +20812,6 @@ PORT MAP (
 	datad => \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_14~46_combout\,
 	combout => \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[548]~200_combout\);
 
--- Location: LCCOMB_X18_Y7_N12
-\U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[547]~201\ : cycloneii_lcell_comb
--- Equation(s):
--- \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[547]~201_combout\ = (\U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_14~46_combout\ & 
--- (\U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[522]~179_combout\)) # (!\U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_14~46_combout\ & 
--- ((\U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_14~38_combout\)))
-
--- pragma translate_off
-GENERIC MAP (
-	lut_mask => "1100110011110000",
-	sum_lutc_input => "datac")
--- pragma translate_on
-PORT MAP (
-	datab => \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[522]~179_combout\,
-	datac => \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_14~38_combout\,
-	datad => \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_14~46_combout\,
-	combout => \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[547]~201_combout\);
-
 -- Location: LCCOMB_X15_Y8_N8
 \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[546]~202\ : cycloneii_lcell_comb
 -- Equation(s):
@@ -20524,13 +20821,13 @@ PORT MAP (
 
 -- pragma translate_off
 GENERIC MAP (
-	lut_mask => "1100111111000000",
+	lut_mask => "1100110011110000",
 	sum_lutc_input => "datac")
 -- pragma translate_on
 PORT MAP (
 	datab => \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[521]~180_combout\,
-	datac => \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_14~46_combout\,
-	datad => \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_14~36_combout\,
+	datac => \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_14~36_combout\,
+	datad => \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_14~46_combout\,
 	combout => \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[546]~202_combout\);
 
 -- Location: LCCOMB_X15_Y8_N18
@@ -20569,7 +20866,7 @@ PORT MAP (
 	datad => \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_13~44_combout\,
 	combout => \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[518]~183_combout\);
 
--- Location: LCCOMB_X15_Y8_N6
+-- Location: LCCOMB_X15_Y8_N22
 \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[543]~205\ : cycloneii_lcell_comb
 -- Equation(s):
 -- \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[543]~205_combout\ = (\U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_14~46_combout\ & 
@@ -20614,11 +20911,11 @@ PORT MAP (
 
 -- pragma translate_off
 GENERIC MAP (
-	lut_mask => "1010101011110000",
+	lut_mask => "1100110011110000",
 	sum_lutc_input => "datac")
 -- pragma translate_on
 PORT MAP (
-	dataa => \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[512]~189_combout\,
+	datab => \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[512]~189_combout\,
 	datac => \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_14~18_combout\,
 	datad => \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_14~46_combout\,
 	combout => \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[537]~211_combout\);
@@ -20722,11 +21019,11 @@ PORT MAP (
 
 -- pragma translate_off
 GENERIC MAP (
-	lut_mask => "1010101011110000",
+	lut_mask => "1100110011110000",
 	sum_lutc_input => "datac")
 -- pragma translate_on
 PORT MAP (
-	dataa => \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[507]~194_combout\,
+	datab => \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[507]~194_combout\,
 	datac => \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_14~8_combout\,
 	datad => \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_14~46_combout\,
 	combout => \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[532]~216_combout\);
@@ -20901,11 +21198,11 @@ PORT MAP (
 
 -- pragma translate_off
 GENERIC MAP (
-	lut_mask => "0011110011001111",
+	lut_mask => "0101101010101111",
 	sum_lutc_input => "cin")
 -- pragma translate_on
 PORT MAP (
-	datab => \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[547]~201_combout\,
+	dataa => \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[547]~201_combout\,
 	datad => VCC,
 	cin => \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_15~39\,
 	combout => \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_15~40_combout\,
@@ -21057,46 +21354,10 @@ PORT MAP (
 	datad => \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[549]~199_combout\,
 	combout => \U_Ranger_Top|LessThan2~9_combout\);
 
--- Location: LCCOMB_X15_Y8_N22
-\U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[519]~182\ : cycloneii_lcell_comb
--- Equation(s):
--- \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[519]~182_combout\ = (\U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_13~44_combout\ & 
--- (\U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[494]~161_combout\)) # (!\U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_13~44_combout\ & 
--- ((\U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_13~30_combout\)))
-
--- pragma translate_off
-GENERIC MAP (
-	lut_mask => "1100111111000000",
-	sum_lutc_input => "datac")
--- pragma translate_on
-PORT MAP (
-	datab => \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[494]~161_combout\,
-	datac => \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_13~44_combout\,
-	datad => \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_13~30_combout\,
-	combout => \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[519]~182_combout\);
-
--- Location: LCCOMB_X15_Y8_N12
-\U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[544]~204\ : cycloneii_lcell_comb
--- Equation(s):
--- \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[544]~204_combout\ = (\U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_14~46_combout\ & 
--- (\U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[519]~182_combout\)) # (!\U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_14~46_combout\ & 
--- ((\U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_14~32_combout\)))
-
--- pragma translate_off
-GENERIC MAP (
-	lut_mask => "1100110011110000",
-	sum_lutc_input => "datac")
--- pragma translate_on
-PORT MAP (
-	datab => \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[519]~182_combout\,
-	datac => \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_14~32_combout\,
-	datad => \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_14~46_combout\,
-	combout => \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[544]~204_combout\);
-
 -- Location: LCCOMB_X18_Y7_N10
 \U_Ranger_Top|LessThan2~10\ : cycloneii_lcell_comb
 -- Equation(s):
--- \U_Ranger_Top|LessThan2~10_combout\ = (\U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[543]~205_combout\) # ((\U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[544]~204_combout\) # 
+-- \U_Ranger_Top|LessThan2~10_combout\ = (\U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[544]~204_combout\) # ((\U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[543]~205_combout\) # 
 -- ((\U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[546]~202_combout\) # (\U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[545]~203_combout\)))
 
 -- pragma translate_off
@@ -21105,8 +21366,8 @@ GENERIC MAP (
 	sum_lutc_input => "datac")
 -- pragma translate_on
 PORT MAP (
-	dataa => \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[543]~205_combout\,
-	datab => \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[544]~204_combout\,
+	dataa => \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[544]~204_combout\,
+	datab => \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[543]~205_combout\,
 	datac => \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[546]~202_combout\,
 	datad => \U_Ranger_Top|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[545]~203_combout\,
 	combout => \U_Ranger_Top|LessThan2~10_combout\);
@@ -21357,11 +21618,11 @@ PORT MAP (
 
 -- pragma translate_off
 GENERIC MAP (
-	lut_mask => "0000000011110000",
+	lut_mask => "0000000010101010",
 	sum_lutc_input => "datac")
 -- pragma translate_on
 PORT MAP (
-	datac => \Ultra_B_Edge~combout\,
+	dataa => \Ultra_B_Edge~combout\,
 	datad => \U_Ranger_Botom|edgeYet2~regout\,
 	combout => \U_Ranger_Botom|process_0~0_combout\);
 
@@ -21402,12 +21663,25 @@ PORT MAP (
 	devpor => ww_devpor,
 	regout => \U_Ranger_Botom|edgeend\(23));
 
+-- Location: LCCOMB_X13_Y12_N8
+\U_Ranger_Botom|edgebegin[22]~feeder\ : cycloneii_lcell_comb
+-- Equation(s):
+-- \U_Ranger_Botom|edgebegin[22]~feeder_combout\ = \U_Ranger_Botom|count\(22)
+
+-- pragma translate_off
+GENERIC MAP (
+	lut_mask => "1111111100000000",
+	sum_lutc_input => "datac")
+-- pragma translate_on
+PORT MAP (
+	datad => \U_Ranger_Botom|count\(22),
+	combout => \U_Ranger_Botom|edgebegin[22]~feeder_combout\);
+
 -- Location: LCFF_X13_Y12_N9
 \U_Ranger_Botom|edgebegin[22]\ : cycloneii_lcell_ff
 PORT MAP (
 	clk => \clk~clkctrl_outclk\,
-	sdata => \U_Ranger_Botom|count\(22),
-	sload => VCC,
+	datain => \U_Ranger_Botom|edgebegin[22]~feeder_combout\,
 	ena => \U_Ranger_Botom|process_0~0_combout\,
 	devclrn => ww_devclrn,
 	devpor => ww_devpor,
@@ -21970,6 +22244,26 @@ PORT MAP (
 	combout => \U_Ranger_Botom|timevector[15]~30_combout\,
 	cout => \U_Ranger_Botom|timevector[15]~31\);
 
+-- Location: LCCOMB_X12_Y11_N12
+\U_Ranger_Botom|timevector[18]~36\ : cycloneii_lcell_comb
+-- Equation(s):
+-- \U_Ranger_Botom|timevector[18]~36_combout\ = ((\U_Ranger_Botom|edgeend\(18) $ (\U_Ranger_Botom|edgebegin\(18) $ (\U_Ranger_Botom|timevector[17]~35\)))) # (GND)
+-- \U_Ranger_Botom|timevector[18]~37\ = CARRY((\U_Ranger_Botom|edgeend\(18) & ((!\U_Ranger_Botom|timevector[17]~35\) # (!\U_Ranger_Botom|edgebegin\(18)))) # (!\U_Ranger_Botom|edgeend\(18) & (!\U_Ranger_Botom|edgebegin\(18) & 
+-- !\U_Ranger_Botom|timevector[17]~35\)))
+
+-- pragma translate_off
+GENERIC MAP (
+	lut_mask => "1001011000101011",
+	sum_lutc_input => "cin")
+-- pragma translate_on
+PORT MAP (
+	dataa => \U_Ranger_Botom|edgeend\(18),
+	datab => \U_Ranger_Botom|edgebegin\(18),
+	datad => VCC,
+	cin => \U_Ranger_Botom|timevector[17]~35\,
+	combout => \U_Ranger_Botom|timevector[18]~36_combout\,
+	cout => \U_Ranger_Botom|timevector[18]~37\);
+
 -- Location: LCCOMB_X12_Y11_N14
 \U_Ranger_Botom|timevector[19]~38\ : cycloneii_lcell_comb
 -- Equation(s):
@@ -22265,24 +22559,7 @@ PORT MAP (
 	datad => \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_1~16_combout\,
 	combout => \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[248]~2_combout\);
 
--- Location: LCCOMB_X14_Y13_N8
-\U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[247]~3\ : cycloneii_lcell_comb
--- Equation(s):
--- \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[247]~3_combout\ = (\U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_1~22_combout\ & (\U_Ranger_Botom|timevector[20]~40_combout\)) # 
--- (!\U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_1~22_combout\ & ((\U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_1~14_combout\)))
-
--- pragma translate_off
-GENERIC MAP (
-	lut_mask => "1100111111000000",
-	sum_lutc_input => "datac")
--- pragma translate_on
-PORT MAP (
-	datab => \U_Ranger_Botom|timevector[20]~40_combout\,
-	datac => \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_1~22_combout\,
-	datad => \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_1~14_combout\,
-	combout => \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[247]~3_combout\);
-
--- Location: LCCOMB_X14_Y11_N16
+-- Location: LCCOMB_X14_Y11_N24
 \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[246]~4\ : cycloneii_lcell_comb
 -- Equation(s):
 -- \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[246]~4_combout\ = (\U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_1~22_combout\ & (\U_Ranger_Botom|timevector[19]~38_combout\)) # 
@@ -22307,12 +22584,12 @@ PORT MAP (
 
 -- pragma translate_off
 GENERIC MAP (
-	lut_mask => "1011101110001000",
+	lut_mask => "1111001111000000",
 	sum_lutc_input => "datac")
 -- pragma translate_on
 PORT MAP (
-	dataa => \U_Ranger_Botom|timevector[18]~36_combout\,
 	datab => \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_1~22_combout\,
+	datac => \U_Ranger_Botom|timevector[18]~36_combout\,
 	datad => \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_1~10_combout\,
 	combout => \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[245]~5_combout\);
 
@@ -22371,26 +22648,26 @@ PORT MAP (
 	combout => \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_2~2_combout\,
 	cout => \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_2~3\);
 
--- Location: LCCOMB_X15_Y11_N14
-\U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_2~8\ : cycloneii_lcell_comb
+-- Location: LCCOMB_X15_Y11_N12
+\U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_2~6\ : cycloneii_lcell_comb
 -- Equation(s):
--- \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_2~8_combout\ = (\U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[243]~7_combout\ & ((GND) # 
--- (!\U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_2~7\))) # (!\U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[243]~7_combout\ & 
--- (\U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_2~7\ $ (GND)))
--- \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_2~9\ = CARRY((\U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[243]~7_combout\) # 
--- (!\U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_2~7\))
+-- \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_2~6_combout\ = (\U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[242]~8_combout\ & 
+-- (!\U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_2~5\)) # (!\U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[242]~8_combout\ & 
+-- ((\U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_2~5\) # (GND)))
+-- \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_2~7\ = CARRY((!\U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_2~5\) # 
+-- (!\U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[242]~8_combout\))
 
 -- pragma translate_off
 GENERIC MAP (
-	lut_mask => "0101101010101111",
+	lut_mask => "0011110000111111",
 	sum_lutc_input => "cin")
 -- pragma translate_on
 PORT MAP (
-	dataa => \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[243]~7_combout\,
+	datab => \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[242]~8_combout\,
 	datad => VCC,
-	cin => \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_2~7\,
-	combout => \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_2~8_combout\,
-	cout => \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_2~9\);
+	cin => \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_2~5\,
+	combout => \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_2~6_combout\,
+	cout => \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_2~7\);
 
 -- Location: LCCOMB_X15_Y11_N16
 \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_2~10\ : cycloneii_lcell_comb
@@ -22568,7 +22845,24 @@ PORT MAP (
 	datad => \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_2~24_combout\,
 	combout => \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[273]~13_combout\);
 
--- Location: LCCOMB_X14_Y13_N28
+-- Location: LCCOMB_X14_Y13_N8
+\U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[247]~3\ : cycloneii_lcell_comb
+-- Equation(s):
+-- \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[247]~3_combout\ = (\U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_1~22_combout\ & (\U_Ranger_Botom|timevector[20]~40_combout\)) # 
+-- (!\U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_1~22_combout\ & ((\U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_1~14_combout\)))
+
+-- pragma translate_off
+GENERIC MAP (
+	lut_mask => "1010111110100000",
+	sum_lutc_input => "datac")
+-- pragma translate_on
+PORT MAP (
+	dataa => \U_Ranger_Botom|timevector[20]~40_combout\,
+	datac => \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_1~22_combout\,
+	datad => \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_1~14_combout\,
+	combout => \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[247]~3_combout\);
+
+-- Location: LCCOMB_X14_Y13_N4
 \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[272]~14\ : cycloneii_lcell_comb
 -- Equation(s):
 -- \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[272]~14_combout\ = (\U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_2~24_combout\ & 
@@ -22577,12 +22871,12 @@ PORT MAP (
 
 -- pragma translate_off
 GENERIC MAP (
-	lut_mask => "1111000010101010",
+	lut_mask => "1100110010101010",
 	sum_lutc_input => "datac")
 -- pragma translate_on
 PORT MAP (
 	dataa => \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_2~16_combout\,
-	datac => \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[247]~3_combout\,
+	datab => \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[247]~3_combout\,
 	datad => \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_2~24_combout\,
 	combout => \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[272]~14_combout\);
 
@@ -22590,17 +22884,17 @@ PORT MAP (
 \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[271]~15\ : cycloneii_lcell_comb
 -- Equation(s):
 -- \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[271]~15_combout\ = (\U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_2~24_combout\ & 
--- (\U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[246]~4_combout\)) # (!\U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_2~24_combout\ & 
--- ((\U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_2~14_combout\)))
+-- ((\U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[246]~4_combout\))) # (!\U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_2~24_combout\ & 
+-- (\U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_2~14_combout\))
 
 -- pragma translate_off
 GENERIC MAP (
-	lut_mask => "1010101011110000",
+	lut_mask => "1111000011001100",
 	sum_lutc_input => "datac")
 -- pragma translate_on
 PORT MAP (
-	dataa => \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[246]~4_combout\,
-	datac => \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_2~14_combout\,
+	datab => \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_2~14_combout\,
+	datac => \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[246]~4_combout\,
 	datad => \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_2~24_combout\,
 	combout => \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[271]~15_combout\);
 
@@ -22758,27 +23052,6 @@ PORT MAP (
 	combout => \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_3~8_combout\,
 	cout => \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_3~9\);
 
--- Location: LCCOMB_X15_Y13_N14
-\U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_3~10\ : cycloneii_lcell_comb
--- Equation(s):
--- \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_3~10_combout\ = (\U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[268]~18_combout\ & 
--- (\U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_3~9\ & VCC)) # (!\U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[268]~18_combout\ & 
--- (!\U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_3~9\))
--- \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_3~11\ = CARRY((!\U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[268]~18_combout\ & 
--- !\U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_3~9\))
-
--- pragma translate_off
-GENERIC MAP (
-	lut_mask => "1010010100000101",
-	sum_lutc_input => "cin")
--- pragma translate_on
-PORT MAP (
-	dataa => \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[268]~18_combout\,
-	datad => VCC,
-	cin => \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_3~9\,
-	combout => \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_3~10_combout\,
-	cout => \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_3~11\);
-
 -- Location: LCCOMB_X15_Y13_N16
 \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_3~12\ : cycloneii_lcell_comb
 -- Equation(s):
@@ -22863,27 +23136,6 @@ PORT MAP (
 	combout => \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_3~18_combout\,
 	cout => \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_3~19\);
 
--- Location: LCCOMB_X15_Y13_N24
-\U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_3~20\ : cycloneii_lcell_comb
--- Equation(s):
--- \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_3~20_combout\ = (\U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[273]~13_combout\ & 
--- (\U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_3~19\ $ (GND))) # (!\U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[273]~13_combout\ & 
--- (!\U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_3~19\ & VCC))
--- \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_3~21\ = CARRY((\U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[273]~13_combout\ & 
--- !\U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_3~19\))
-
--- pragma translate_off
-GENERIC MAP (
-	lut_mask => "1100001100001100",
-	sum_lutc_input => "cin")
--- pragma translate_on
-PORT MAP (
-	datab => \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[273]~13_combout\,
-	datad => VCC,
-	cin => \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_3~19\,
-	combout => \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_3~20_combout\,
-	cout => \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_3~21\);
-
 -- Location: LCCOMB_X15_Y13_N26
 \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_3~22\ : cycloneii_lcell_comb
 -- Equation(s):
@@ -22955,24 +23207,6 @@ PORT MAP (
 	datad => \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_3~26_combout\,
 	combout => \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[299]~24_combout\);
 
--- Location: LCCOMB_X12_Y13_N2
-\U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[298]~25\ : cycloneii_lcell_comb
--- Equation(s):
--- \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[298]~25_combout\ = (\U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_3~26_combout\ & 
--- (\U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[273]~13_combout\)) # (!\U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_3~26_combout\ & 
--- ((\U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_3~20_combout\)))
-
--- pragma translate_off
-GENERIC MAP (
-	lut_mask => "1100110011110000",
-	sum_lutc_input => "datac")
--- pragma translate_on
-PORT MAP (
-	datab => \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[273]~13_combout\,
-	datac => \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_3~20_combout\,
-	datad => \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_3~26_combout\,
-	combout => \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[298]~25_combout\);
-
 -- Location: LCCOMB_X12_Y13_N20
 \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[297]~26\ : cycloneii_lcell_comb
 -- Equation(s):
@@ -22990,6 +23224,24 @@ PORT MAP (
 	datac => \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_3~18_combout\,
 	datad => \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_3~26_combout\,
 	combout => \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[297]~26_combout\);
+
+-- Location: LCCOMB_X14_Y11_N0
+\U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[296]~27\ : cycloneii_lcell_comb
+-- Equation(s):
+-- \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[296]~27_combout\ = (\U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_3~26_combout\ & 
+-- (\U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[271]~15_combout\)) # (!\U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_3~26_combout\ & 
+-- ((\U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_3~16_combout\)))
+
+-- pragma translate_off
+GENERIC MAP (
+	lut_mask => "1010111110100000",
+	sum_lutc_input => "datac")
+-- pragma translate_on
+PORT MAP (
+	dataa => \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[271]~15_combout\,
+	datac => \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_3~26_combout\,
+	datad => \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_3~16_combout\,
+	combout => \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[296]~27_combout\);
 
 -- Location: LCCOMB_X14_Y11_N14
 \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[270]~16\ : cycloneii_lcell_comb
@@ -23018,103 +23270,32 @@ PORT MAP (
 
 -- pragma translate_off
 GENERIC MAP (
-	lut_mask => "1100111111000000",
+	lut_mask => "1100110011110000",
 	sum_lutc_input => "datac")
 -- pragma translate_on
 PORT MAP (
 	datab => \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[270]~16_combout\,
-	datac => \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_3~26_combout\,
-	datad => \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_3~14_combout\,
+	datac => \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_3~14_combout\,
+	datad => \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_3~26_combout\,
 	combout => \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[295]~28_combout\);
 
--- Location: LCCOMB_X14_Y13_N26
-\U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[244]~6\ : cycloneii_lcell_comb
+-- Location: LCCOMB_X14_Y13_N2
+\U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[267]~19\ : cycloneii_lcell_comb
 -- Equation(s):
--- \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[244]~6_combout\ = (\U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_1~22_combout\ & (\U_Ranger_Botom|timevector[17]~34_combout\)) # 
--- (!\U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_1~22_combout\ & ((\U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_1~8_combout\)))
+-- \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[267]~19_combout\ = (\U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_2~24_combout\ & 
+-- (\U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[242]~8_combout\)) # (!\U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_2~24_combout\ & 
+-- ((\U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_2~6_combout\)))
 
 -- pragma translate_off
 GENERIC MAP (
-	lut_mask => "1010111110100000",
+	lut_mask => "1100110011110000",
 	sum_lutc_input => "datac")
 -- pragma translate_on
 PORT MAP (
-	dataa => \U_Ranger_Botom|timevector[17]~34_combout\,
-	datac => \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_1~22_combout\,
-	datad => \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_1~8_combout\,
-	combout => \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[244]~6_combout\);
-
--- Location: LCCOMB_X14_Y13_N30
-\U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[269]~17\ : cycloneii_lcell_comb
--- Equation(s):
--- \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[269]~17_combout\ = (\U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_2~24_combout\ & 
--- ((\U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[244]~6_combout\))) # (!\U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_2~24_combout\ & 
--- (\U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_2~10_combout\))
-
--- pragma translate_off
-GENERIC MAP (
-	lut_mask => "1111000011001100",
-	sum_lutc_input => "datac")
--- pragma translate_on
-PORT MAP (
-	datab => \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_2~10_combout\,
-	datac => \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[244]~6_combout\,
+	datab => \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[242]~8_combout\,
+	datac => \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_2~6_combout\,
 	datad => \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_2~24_combout\,
-	combout => \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[269]~17_combout\);
-
--- Location: LCCOMB_X14_Y13_N12
-\U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[294]~29\ : cycloneii_lcell_comb
--- Equation(s):
--- \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[294]~29_combout\ = (\U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_3~26_combout\ & 
--- (\U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[269]~17_combout\)) # (!\U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_3~26_combout\ & 
--- ((\U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_3~12_combout\)))
-
--- pragma translate_off
-GENERIC MAP (
-	lut_mask => "1100110011110000",
-	sum_lutc_input => "datac")
--- pragma translate_on
-PORT MAP (
-	datab => \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[269]~17_combout\,
-	datac => \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_3~12_combout\,
-	datad => \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_3~26_combout\,
-	combout => \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[294]~29_combout\);
-
--- Location: LCCOMB_X14_Y13_N0
-\U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[268]~18\ : cycloneii_lcell_comb
--- Equation(s):
--- \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[268]~18_combout\ = (\U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_2~24_combout\ & 
--- (\U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[243]~7_combout\)) # (!\U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_2~24_combout\ & 
--- ((\U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_2~8_combout\)))
-
--- pragma translate_off
-GENERIC MAP (
-	lut_mask => "1010111110100000",
-	sum_lutc_input => "datac")
--- pragma translate_on
-PORT MAP (
-	dataa => \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[243]~7_combout\,
-	datac => \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_2~24_combout\,
-	datad => \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_2~8_combout\,
-	combout => \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[268]~18_combout\);
-
--- Location: LCCOMB_X14_Y13_N6
-\U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[293]~30\ : cycloneii_lcell_comb
--- Equation(s):
--- \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[293]~30_combout\ = (\U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_3~26_combout\ & 
--- (\U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[268]~18_combout\)) # (!\U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_3~26_combout\ & 
--- ((\U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_3~10_combout\)))
-
--- pragma translate_off
-GENERIC MAP (
-	lut_mask => "1100110011110000",
-	sum_lutc_input => "datac")
--- pragma translate_on
-PORT MAP (
-	datab => \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[268]~18_combout\,
-	datac => \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_3~10_combout\,
-	datad => \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_3~26_combout\,
-	combout => \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[293]~30_combout\);
+	combout => \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[267]~19_combout\);
 
 -- Location: LCCOMB_X14_Y13_N16
 \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[292]~31\ : cycloneii_lcell_comb
@@ -23125,16 +23306,16 @@ PORT MAP (
 
 -- pragma translate_off
 GENERIC MAP (
-	lut_mask => "1010101011110000",
+	lut_mask => "1100110011110000",
 	sum_lutc_input => "datac")
 -- pragma translate_on
 PORT MAP (
-	dataa => \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[267]~19_combout\,
+	datab => \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[267]~19_combout\,
 	datac => \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_3~8_combout\,
 	datad => \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_3~26_combout\,
 	combout => \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[292]~31_combout\);
 
--- Location: LCCOMB_X14_Y13_N2
+-- Location: LCCOMB_X14_Y13_N10
 \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[291]~32\ : cycloneii_lcell_comb
 -- Equation(s):
 -- \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[291]~32_combout\ = (\U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_3~26_combout\ & 
@@ -23152,22 +23333,23 @@ PORT MAP (
 	datad => \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_3~26_combout\,
 	combout => \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[291]~32_combout\);
 
--- Location: LCCOMB_X15_Y12_N0
-\U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_4~0\ : cycloneii_lcell_comb
+-- Location: LCCOMB_X15_Y13_N0
+\U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[290]~33\ : cycloneii_lcell_comb
 -- Equation(s):
--- \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_4~0_combout\ = \U_Ranger_Botom|timevector[10]~20_combout\ $ (VCC)
--- \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_4~1\ = CARRY(\U_Ranger_Botom|timevector[10]~20_combout\)
+-- \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[290]~33_combout\ = (\U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_3~26_combout\ & 
+-- (\U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[265]~21_combout\)) # (!\U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_3~26_combout\ & 
+-- ((\U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_3~4_combout\)))
 
 -- pragma translate_off
 GENERIC MAP (
-	lut_mask => "0011001111001100",
+	lut_mask => "1100110011110000",
 	sum_lutc_input => "datac")
 -- pragma translate_on
 PORT MAP (
-	datab => \U_Ranger_Botom|timevector[10]~20_combout\,
-	datad => VCC,
-	combout => \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_4~0_combout\,
-	cout => \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_4~1\);
+	datab => \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[265]~21_combout\,
+	datac => \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_3~4_combout\,
+	datad => \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_3~26_combout\,
+	combout => \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[290]~33_combout\);
 
 -- Location: LCCOMB_X15_Y12_N2
 \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_4~2\ : cycloneii_lcell_comb
@@ -23190,27 +23372,6 @@ PORT MAP (
 	combout => \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_4~2_combout\,
 	cout => \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_4~3\);
 
--- Location: LCCOMB_X15_Y12_N4
-\U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_4~4\ : cycloneii_lcell_comb
--- Equation(s):
--- \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_4~4_combout\ = (\U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[289]~34_combout\ & ((GND) # 
--- (!\U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_4~3\))) # (!\U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[289]~34_combout\ & 
--- (\U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_4~3\ $ (GND)))
--- \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_4~5\ = CARRY((\U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[289]~34_combout\) # 
--- (!\U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_4~3\))
-
--- pragma translate_off
-GENERIC MAP (
-	lut_mask => "0101101010101111",
-	sum_lutc_input => "cin")
--- pragma translate_on
-PORT MAP (
-	dataa => \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[289]~34_combout\,
-	datad => VCC,
-	cin => \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_4~3\,
-	combout => \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_4~4_combout\,
-	cout => \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_4~5\);
-
 -- Location: LCCOMB_X15_Y12_N6
 \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_4~6\ : cycloneii_lcell_comb
 -- Equation(s):
@@ -23222,11 +23383,11 @@ PORT MAP (
 
 -- pragma translate_off
 GENERIC MAP (
-	lut_mask => "0101101001011111",
+	lut_mask => "0011110000111111",
 	sum_lutc_input => "cin")
 -- pragma translate_on
 PORT MAP (
-	dataa => \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[290]~33_combout\,
+	datab => \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[290]~33_combout\,
 	datad => VCC,
 	cin => \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_4~5\,
 	combout => \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_4~6_combout\,
@@ -23285,11 +23446,11 @@ PORT MAP (
 
 -- pragma translate_off
 GENERIC MAP (
-	lut_mask => "1100001100001100",
+	lut_mask => "1010010100001010",
 	sum_lutc_input => "cin")
 -- pragma translate_on
 PORT MAP (
-	datab => \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[293]~30_combout\,
+	dataa => \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[293]~30_combout\,
 	datad => VCC,
 	cin => \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_4~11\,
 	combout => \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_4~12_combout\,
@@ -23306,11 +23467,11 @@ PORT MAP (
 
 -- pragma translate_off
 GENERIC MAP (
-	lut_mask => "0011110000111111",
+	lut_mask => "0101101001011111",
 	sum_lutc_input => "cin")
 -- pragma translate_on
 PORT MAP (
-	datab => \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[294]~29_combout\,
+	dataa => \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[294]~29_combout\,
 	datad => VCC,
 	cin => \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_4~13\,
 	combout => \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_4~14_combout\,
@@ -23327,11 +23488,11 @@ PORT MAP (
 
 -- pragma translate_off
 GENERIC MAP (
-	lut_mask => "1010010100000101",
+	lut_mask => "1100001100000011",
 	sum_lutc_input => "cin")
 -- pragma translate_on
 PORT MAP (
-	dataa => \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[296]~27_combout\,
+	datab => \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[296]~27_combout\,
 	datad => VCC,
 	cin => \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_4~17\,
 	combout => \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_4~18_combout\,
@@ -23450,24 +23611,6 @@ PORT MAP (
 	datad => \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_4~28_combout\,
 	combout => \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[322]~39_combout\);
 
--- Location: LCCOMB_X14_Y11_N0
-\U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[296]~27\ : cycloneii_lcell_comb
--- Equation(s):
--- \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[296]~27_combout\ = (\U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_3~26_combout\ & 
--- (\U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[271]~15_combout\)) # (!\U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_3~26_combout\ & 
--- ((\U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_3~16_combout\)))
-
--- pragma translate_off
-GENERIC MAP (
-	lut_mask => "1010111110100000",
-	sum_lutc_input => "datac")
--- pragma translate_on
-PORT MAP (
-	dataa => \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[271]~15_combout\,
-	datac => \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_3~26_combout\,
-	datad => \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_3~16_combout\,
-	combout => \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[296]~27_combout\);
-
 -- Location: LCCOMB_X14_Y11_N12
 \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[321]~40\ : cycloneii_lcell_comb
 -- Equation(s):
@@ -23504,6 +23647,59 @@ PORT MAP (
 	datad => \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_4~28_combout\,
 	combout => \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[320]~41_combout\);
 
+-- Location: LCCOMB_X14_Y13_N26
+\U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[244]~6\ : cycloneii_lcell_comb
+-- Equation(s):
+-- \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[244]~6_combout\ = (\U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_1~22_combout\ & (\U_Ranger_Botom|timevector[17]~34_combout\)) # 
+-- (!\U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_1~22_combout\ & ((\U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_1~8_combout\)))
+
+-- pragma translate_off
+GENERIC MAP (
+	lut_mask => "1010111110100000",
+	sum_lutc_input => "datac")
+-- pragma translate_on
+PORT MAP (
+	dataa => \U_Ranger_Botom|timevector[17]~34_combout\,
+	datac => \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_1~22_combout\,
+	datad => \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_1~8_combout\,
+	combout => \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[244]~6_combout\);
+
+-- Location: LCCOMB_X14_Y13_N14
+\U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[269]~17\ : cycloneii_lcell_comb
+-- Equation(s):
+-- \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[269]~17_combout\ = (\U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_2~24_combout\ & 
+-- ((\U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[244]~6_combout\))) # (!\U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_2~24_combout\ & 
+-- (\U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_2~10_combout\))
+
+-- pragma translate_off
+GENERIC MAP (
+	lut_mask => "1111000011001100",
+	sum_lutc_input => "datac")
+-- pragma translate_on
+PORT MAP (
+	datab => \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_2~10_combout\,
+	datac => \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[244]~6_combout\,
+	datad => \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_2~24_combout\,
+	combout => \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[269]~17_combout\);
+
+-- Location: LCCOMB_X14_Y13_N20
+\U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[294]~29\ : cycloneii_lcell_comb
+-- Equation(s):
+-- \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[294]~29_combout\ = (\U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_3~26_combout\ & 
+-- (\U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[269]~17_combout\)) # (!\U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_3~26_combout\ & 
+-- ((\U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_3~12_combout\)))
+
+-- pragma translate_off
+GENERIC MAP (
+	lut_mask => "1100110011110000",
+	sum_lutc_input => "datac")
+-- pragma translate_on
+PORT MAP (
+	datab => \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[269]~17_combout\,
+	datac => \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_3~12_combout\,
+	datad => \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_3~26_combout\,
+	combout => \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[294]~29_combout\);
+
 -- Location: LCCOMB_X14_Y11_N8
 \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[319]~42\ : cycloneii_lcell_comb
 -- Equation(s):
@@ -23522,7 +23718,25 @@ PORT MAP (
 	datad => \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_4~28_combout\,
 	combout => \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[319]~42_combout\);
 
--- Location: LCCOMB_X14_Y13_N22
+-- Location: LCCOMB_X14_Y13_N28
+\U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[318]~43\ : cycloneii_lcell_comb
+-- Equation(s):
+-- \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[318]~43_combout\ = (\U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_4~28_combout\ & 
+-- (\U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[293]~30_combout\)) # (!\U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_4~28_combout\ & 
+-- ((\U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_4~12_combout\)))
+
+-- pragma translate_off
+GENERIC MAP (
+	lut_mask => "1010111110100000",
+	sum_lutc_input => "datac")
+-- pragma translate_on
+PORT MAP (
+	dataa => \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[293]~30_combout\,
+	datac => \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_4~28_combout\,
+	datad => \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_4~12_combout\,
+	combout => \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[318]~43_combout\);
+
+-- Location: LCCOMB_X14_Y13_N30
 \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[317]~44\ : cycloneii_lcell_comb
 -- Equation(s):
 -- \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[317]~44_combout\ = (\U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_4~28_combout\ & 
@@ -23531,13 +23745,13 @@ PORT MAP (
 
 -- pragma translate_off
 GENERIC MAP (
-	lut_mask => "1010101011110000",
+	lut_mask => "1011100010111000",
 	sum_lutc_input => "datac")
 -- pragma translate_on
 PORT MAP (
 	dataa => \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[292]~31_combout\,
+	datab => \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_4~28_combout\,
 	datac => \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_4~10_combout\,
-	datad => \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_4~28_combout\,
 	combout => \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[317]~44_combout\);
 
 -- Location: LCCOMB_X14_Y13_N24
@@ -23549,49 +23763,31 @@ PORT MAP (
 
 -- pragma translate_off
 GENERIC MAP (
-	lut_mask => "1100110011110000",
+	lut_mask => "1010111110100000",
 	sum_lutc_input => "datac")
 -- pragma translate_on
 PORT MAP (
-	datab => \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[291]~32_combout\,
-	datac => \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_4~8_combout\,
-	datad => \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_4~28_combout\,
+	dataa => \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[291]~32_combout\,
+	datac => \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_4~28_combout\,
+	datad => \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_4~8_combout\,
 	combout => \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[316]~45_combout\);
-
--- Location: LCCOMB_X15_Y13_N0
-\U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[290]~33\ : cycloneii_lcell_comb
--- Equation(s):
--- \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[290]~33_combout\ = (\U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_3~26_combout\ & 
--- (\U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[265]~21_combout\)) # (!\U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_3~26_combout\ & 
--- ((\U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_3~4_combout\)))
-
--- pragma translate_off
-GENERIC MAP (
-	lut_mask => "1100110011110000",
-	sum_lutc_input => "datac")
--- pragma translate_on
-PORT MAP (
-	datab => \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[265]~21_combout\,
-	datac => \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_3~4_combout\,
-	datad => \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_3~26_combout\,
-	combout => \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[290]~33_combout\);
 
 -- Location: LCCOMB_X14_Y13_N18
 \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[315]~46\ : cycloneii_lcell_comb
 -- Equation(s):
 -- \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[315]~46_combout\ = (\U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_4~28_combout\ & 
--- ((\U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[290]~33_combout\))) # (!\U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_4~28_combout\ & 
--- (\U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_4~6_combout\))
+-- (\U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[290]~33_combout\)) # (!\U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_4~28_combout\ & 
+-- ((\U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_4~6_combout\)))
 
 -- pragma translate_off
 GENERIC MAP (
-	lut_mask => "1111000011001100",
+	lut_mask => "1100111111000000",
 	sum_lutc_input => "datac")
 -- pragma translate_on
 PORT MAP (
-	datab => \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_4~6_combout\,
-	datac => \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[290]~33_combout\,
-	datad => \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_4~28_combout\,
+	datab => \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[290]~33_combout\,
+	datac => \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_4~28_combout\,
+	datad => \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_4~6_combout\,
 	combout => \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[315]~46_combout\);
 
 -- Location: LCCOMB_X14_Y12_N14
@@ -23616,17 +23812,17 @@ PORT MAP (
 \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[314]~47\ : cycloneii_lcell_comb
 -- Equation(s):
 -- \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[314]~47_combout\ = (\U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_4~28_combout\ & 
--- (\U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[289]~34_combout\)) # (!\U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_4~28_combout\ & 
--- ((\U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_4~4_combout\)))
+-- ((\U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[289]~34_combout\))) # (!\U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_4~28_combout\ & 
+-- (\U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_4~4_combout\))
 
 -- pragma translate_off
 GENERIC MAP (
-	lut_mask => "1100110011110000",
+	lut_mask => "1111000010101010",
 	sum_lutc_input => "datac")
 -- pragma translate_on
 PORT MAP (
-	datab => \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[289]~34_combout\,
-	datac => \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_4~4_combout\,
+	dataa => \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_4~4_combout\,
+	datac => \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[289]~34_combout\,
 	datad => \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_4~28_combout\,
 	combout => \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[314]~47_combout\);
 
@@ -23665,27 +23861,6 @@ PORT MAP (
 	datad => \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_4~28_combout\,
 	combout => \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[313]~48_combout\);
 
--- Location: LCCOMB_X13_Y13_N2
-\U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_5~2\ : cycloneii_lcell_comb
--- Equation(s):
--- \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_5~2_combout\ = (\U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[312]~49_combout\ & 
--- (\U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_5~1\ & VCC)) # (!\U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[312]~49_combout\ & 
--- (!\U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_5~1\))
--- \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_5~3\ = CARRY((!\U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[312]~49_combout\ & 
--- !\U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_5~1\))
-
--- pragma translate_off
-GENERIC MAP (
-	lut_mask => "1010010100000101",
-	sum_lutc_input => "cin")
--- pragma translate_on
-PORT MAP (
-	dataa => \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[312]~49_combout\,
-	datad => VCC,
-	cin => \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_5~1\,
-	combout => \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_5~2_combout\,
-	cout => \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_5~3\);
-
 -- Location: LCCOMB_X13_Y13_N6
 \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_5~6\ : cycloneii_lcell_comb
 -- Equation(s):
@@ -23706,27 +23881,6 @@ PORT MAP (
 	cin => \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_5~5\,
 	combout => \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_5~6_combout\,
 	cout => \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_5~7\);
-
--- Location: LCCOMB_X13_Y13_N8
-\U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_5~8\ : cycloneii_lcell_comb
--- Equation(s):
--- \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_5~8_combout\ = (\U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[315]~46_combout\ & ((GND) # 
--- (!\U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_5~7\))) # (!\U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[315]~46_combout\ & 
--- (\U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_5~7\ $ (GND)))
--- \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_5~9\ = CARRY((\U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[315]~46_combout\) # 
--- (!\U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_5~7\))
-
--- pragma translate_off
-GENERIC MAP (
-	lut_mask => "0011110011001111",
-	sum_lutc_input => "cin")
--- pragma translate_on
-PORT MAP (
-	datab => \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[315]~46_combout\,
-	datad => VCC,
-	cin => \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_5~7\,
-	combout => \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_5~8_combout\,
-	cout => \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_5~9\);
 
 -- Location: LCCOMB_X13_Y13_N10
 \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_5~10\ : cycloneii_lcell_comb
@@ -23749,27 +23903,6 @@ PORT MAP (
 	combout => \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_5~10_combout\,
 	cout => \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_5~11\);
 
--- Location: LCCOMB_X13_Y13_N12
-\U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_5~12\ : cycloneii_lcell_comb
--- Equation(s):
--- \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_5~12_combout\ = (\U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[317]~44_combout\ & 
--- (\U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_5~11\ $ (GND))) # (!\U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[317]~44_combout\ & 
--- (!\U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_5~11\ & VCC))
--- \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_5~13\ = CARRY((\U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[317]~44_combout\ & 
--- !\U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_5~11\))
-
--- pragma translate_off
-GENERIC MAP (
-	lut_mask => "1100001100001100",
-	sum_lutc_input => "cin")
--- pragma translate_on
-PORT MAP (
-	datab => \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[317]~44_combout\,
-	datad => VCC,
-	cin => \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_5~11\,
-	combout => \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_5~12_combout\,
-	cout => \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_5~13\);
-
 -- Location: LCCOMB_X13_Y13_N14
 \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_5~14\ : cycloneii_lcell_comb
 -- Equation(s):
@@ -23781,11 +23914,11 @@ PORT MAP (
 
 -- pragma translate_off
 GENERIC MAP (
-	lut_mask => "0101101001011111",
+	lut_mask => "0011110000111111",
 	sum_lutc_input => "cin")
 -- pragma translate_on
 PORT MAP (
-	dataa => \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[318]~43_combout\,
+	datab => \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[318]~43_combout\,
 	datad => VCC,
 	cin => \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_5~13\,
 	combout => \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_5~14_combout\,
@@ -23961,25 +24094,7 @@ PORT MAP (
 	datad => \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[320]~41_combout\,
 	combout => \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[345]~55_combout\);
 
--- Location: LCCOMB_X14_Y13_N4
-\U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[318]~43\ : cycloneii_lcell_comb
--- Equation(s):
--- \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[318]~43_combout\ = (\U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_4~28_combout\ & 
--- (\U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[293]~30_combout\)) # (!\U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_4~28_combout\ & 
--- ((\U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_4~12_combout\)))
-
--- pragma translate_off
-GENERIC MAP (
-	lut_mask => "1010101011110000",
-	sum_lutc_input => "datac")
--- pragma translate_on
-PORT MAP (
-	dataa => \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[293]~30_combout\,
-	datac => \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_4~12_combout\,
-	datad => \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_4~28_combout\,
-	combout => \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[318]~43_combout\);
-
--- Location: LCCOMB_X14_Y13_N20
+-- Location: LCCOMB_X14_Y13_N12
 \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[343]~57\ : cycloneii_lcell_comb
 -- Equation(s):
 -- \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[343]~57_combout\ = (\U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_5~30_combout\ & 
@@ -24001,18 +24116,18 @@ PORT MAP (
 \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[342]~58\ : cycloneii_lcell_comb
 -- Equation(s):
 -- \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[342]~58_combout\ = (\U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_5~30_combout\ & 
--- (\U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[317]~44_combout\)) # (!\U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_5~30_combout\ & 
--- ((\U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_5~12_combout\)))
+-- ((\U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[317]~44_combout\))) # (!\U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_5~30_combout\ & 
+-- (\U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_5~12_combout\))
 
 -- pragma translate_off
 GENERIC MAP (
-	lut_mask => "1111001111000000",
+	lut_mask => "1100110010101010",
 	sum_lutc_input => "datac")
 -- pragma translate_on
 PORT MAP (
-	datab => \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_5~30_combout\,
-	datac => \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[317]~44_combout\,
-	datad => \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_5~12_combout\,
+	dataa => \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_5~12_combout\,
+	datab => \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[317]~44_combout\,
+	datad => \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_5~30_combout\,
 	combout => \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[342]~58_combout\);
 
 -- Location: LCCOMB_X13_Y15_N2
@@ -24033,24 +24148,6 @@ PORT MAP (
 	datad => \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_5~10_combout\,
 	combout => \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[341]~59_combout\);
 
--- Location: LCCOMB_X13_Y15_N4
-\U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[340]~60\ : cycloneii_lcell_comb
--- Equation(s):
--- \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[340]~60_combout\ = (\U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_5~30_combout\ & 
--- (\U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[315]~46_combout\)) # (!\U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_5~30_combout\ & 
--- ((\U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_5~8_combout\)))
-
--- pragma translate_off
-GENERIC MAP (
-	lut_mask => "1100110011110000",
-	sum_lutc_input => "datac")
--- pragma translate_on
-PORT MAP (
-	datab => \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[315]~46_combout\,
-	datac => \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_5~8_combout\,
-	datad => \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_5~30_combout\,
-	combout => \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[340]~60_combout\);
-
 -- Location: LCCOMB_X14_Y12_N30
 \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[339]~61\ : cycloneii_lcell_comb
 -- Equation(s):
@@ -24068,41 +24165,6 @@ PORT MAP (
 	datac => \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_5~30_combout\,
 	datad => \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_5~6_combout\,
 	combout => \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[339]~61_combout\);
-
--- Location: LCCOMB_X15_Y12_N30
-\U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[312]~49\ : cycloneii_lcell_comb
--- Equation(s):
--- \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[312]~49_combout\ = (\U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_4~28_combout\ & ((\U_Ranger_Botom|timevector[10]~20_combout\))) # 
--- (!\U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_4~28_combout\ & (\U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_4~0_combout\))
-
--- pragma translate_off
-GENERIC MAP (
-	lut_mask => "1111000011001100",
-	sum_lutc_input => "datac")
--- pragma translate_on
-PORT MAP (
-	datab => \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_4~0_combout\,
-	datac => \U_Ranger_Botom|timevector[10]~20_combout\,
-	datad => \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_4~28_combout\,
-	combout => \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[312]~49_combout\);
-
--- Location: LCCOMB_X14_Y11_N24
-\U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[337]~63\ : cycloneii_lcell_comb
--- Equation(s):
--- \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[337]~63_combout\ = (\U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_5~30_combout\ & 
--- ((\U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[312]~49_combout\))) # (!\U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_5~30_combout\ & 
--- (\U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_5~2_combout\))
-
--- pragma translate_off
-GENERIC MAP (
-	lut_mask => "1111110000001100",
-	sum_lutc_input => "datac")
--- pragma translate_on
-PORT MAP (
-	datab => \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_5~2_combout\,
-	datac => \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_5~30_combout\,
-	datad => \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[312]~49_combout\,
-	combout => \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[337]~63_combout\);
 
 -- Location: LCCOMB_X13_Y15_N16
 \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_6~0\ : cycloneii_lcell_comb
@@ -24153,11 +24215,11 @@ PORT MAP (
 
 -- pragma translate_off
 GENERIC MAP (
-	lut_mask => "0011110011001111",
+	lut_mask => "0101101010101111",
 	sum_lutc_input => "cin")
 -- pragma translate_on
 PORT MAP (
-	datab => \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[337]~63_combout\,
+	dataa => \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[337]~63_combout\,
 	datad => VCC,
 	cin => \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_6~3\,
 	combout => \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_6~4_combout\,
@@ -24204,6 +24266,27 @@ PORT MAP (
 	cin => \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_6~7\,
 	combout => \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_6~8_combout\,
 	cout => \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_6~9\);
+
+-- Location: LCCOMB_X13_Y15_N26
+\U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_6~10\ : cycloneii_lcell_comb
+-- Equation(s):
+-- \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_6~10_combout\ = (\U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[340]~60_combout\ & 
+-- (\U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_6~9\ & VCC)) # (!\U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[340]~60_combout\ & 
+-- (!\U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_6~9\))
+-- \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_6~11\ = CARRY((!\U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[340]~60_combout\ & 
+-- !\U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_6~9\))
+
+-- pragma translate_off
+GENERIC MAP (
+	lut_mask => "1010010100000101",
+	sum_lutc_input => "cin")
+-- pragma translate_on
+PORT MAP (
+	dataa => \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[340]~60_combout\,
+	datad => VCC,
+	cin => \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_6~9\,
+	combout => \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_6~10_combout\,
+	cout => \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_6~11\);
 
 -- Location: LCCOMB_X13_Y15_N30
 \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_6~14\ : cycloneii_lcell_comb
@@ -24366,7 +24449,7 @@ PORT MAP (
 	cin => \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_6~31\,
 	combout => \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_6~32_combout\);
 
--- Location: LCCOMB_X13_Y14_N26
+-- Location: LCCOMB_X13_Y14_N18
 \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[374]~66\ : cycloneii_lcell_comb
 -- Equation(s):
 -- \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[374]~66_combout\ = (\U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_6~32_combout\ & 
@@ -24393,12 +24476,12 @@ PORT MAP (
 
 -- pragma translate_off
 GENERIC MAP (
-	lut_mask => "1100111111000000",
+	lut_mask => "1111001111000000",
 	sum_lutc_input => "datac")
 -- pragma translate_on
 PORT MAP (
-	datab => \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[322]~39_combout\,
-	datac => \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_5~30_combout\,
+	datab => \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_5~30_combout\,
+	datac => \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[322]~39_combout\,
 	datad => \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_5~22_combout\,
 	combout => \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[347]~53_combout\);
 
@@ -24438,7 +24521,7 @@ PORT MAP (
 	datad => \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_6~22_combout\,
 	combout => \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[371]~69_combout\);
 
--- Location: LCCOMB_X13_Y14_N18
+-- Location: LCCOMB_X13_Y14_N26
 \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[370]~70\ : cycloneii_lcell_comb
 -- Equation(s):
 -- \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[370]~70_combout\ = (\U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_6~32_combout\ & 
@@ -24473,6 +24556,24 @@ PORT MAP (
 	datac => \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_6~32_combout\,
 	datad => \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_6~18_combout\,
 	combout => \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[369]~71_combout\);
+
+-- Location: LCCOMB_X13_Y15_N4
+\U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[365]~75\ : cycloneii_lcell_comb
+-- Equation(s):
+-- \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[365]~75_combout\ = (\U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_6~32_combout\ & 
+-- (\U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[340]~60_combout\)) # (!\U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_6~32_combout\ & 
+-- ((\U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_6~10_combout\)))
+
+-- pragma translate_off
+GENERIC MAP (
+	lut_mask => "1010101011001100",
+	sum_lutc_input => "datac")
+-- pragma translate_on
+PORT MAP (
+	dataa => \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[340]~60_combout\,
+	datab => \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_6~10_combout\,
+	datad => \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_6~32_combout\,
+	combout => \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[365]~75_combout\);
 
 -- Location: LCCOMB_X14_Y15_N0
 \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[364]~76\ : cycloneii_lcell_comb
@@ -24829,7 +24930,7 @@ PORT MAP (
 	cin => \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_7~33\,
 	combout => \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_7~34_combout\);
 
--- Location: LCCOMB_X14_Y14_N18
+-- Location: LCCOMB_X14_Y14_N26
 \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[399]~82\ : cycloneii_lcell_comb
 -- Equation(s):
 -- \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[399]~82_combout\ = (\U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_7~34_combout\ & 
@@ -24882,6 +24983,24 @@ PORT MAP (
 	datac => \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_7~34_combout\,
 	datad => \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_7~24_combout\,
 	combout => \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[396]~85_combout\);
+
+-- Location: LCCOMB_X14_Y14_N18
+\U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[395]~86\ : cycloneii_lcell_comb
+-- Equation(s):
+-- \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[395]~86_combout\ = (\U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_7~34_combout\ & 
+-- ((\U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[370]~70_combout\))) # (!\U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_7~34_combout\ & 
+-- (\U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_7~22_combout\))
+
+-- pragma translate_off
+GENERIC MAP (
+	lut_mask => "1111101001010000",
+	sum_lutc_input => "datac")
+-- pragma translate_on
+PORT MAP (
+	dataa => \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_7~34_combout\,
+	datac => \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_7~22_combout\,
+	datad => \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[370]~70_combout\,
+	combout => \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[395]~86_combout\);
 
 -- Location: LCCOMB_X14_Y14_N28
 \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[394]~87\ : cycloneii_lcell_comb
@@ -24955,7 +25074,7 @@ PORT MAP (
 	datad => \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_7~34_combout\,
 	combout => \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[391]~90_combout\);
 
--- Location: LCCOMB_X15_Y15_N0
+-- Location: LCCOMB_X15_Y15_N8
 \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[388]~93\ : cycloneii_lcell_comb
 -- Equation(s):
 -- \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[388]~93_combout\ = (\U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_7~34_combout\ & 
@@ -25086,6 +25205,27 @@ PORT MAP (
 	combout => \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_8~4_combout\,
 	cout => \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_8~5\);
 
+-- Location: LCCOMB_X15_Y15_N20
+\U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_8~6\ : cycloneii_lcell_comb
+-- Equation(s):
+-- \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_8~6_combout\ = (\U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[386]~95_combout\ & 
+-- (!\U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_8~5\)) # (!\U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[386]~95_combout\ & 
+-- ((\U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_8~5\) # (GND)))
+-- \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_8~7\ = CARRY((!\U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_8~5\) # 
+-- (!\U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[386]~95_combout\))
+
+-- pragma translate_off
+GENERIC MAP (
+	lut_mask => "0011110000111111",
+	sum_lutc_input => "cin")
+-- pragma translate_on
+PORT MAP (
+	datab => \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[386]~95_combout\,
+	datad => VCC,
+	cin => \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_8~5\,
+	combout => \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_8~6_combout\,
+	cout => \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_8~7\);
+
 -- Location: LCCOMB_X15_Y15_N28
 \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_8~14\ : cycloneii_lcell_comb
 -- Equation(s):
@@ -25202,11 +25342,11 @@ PORT MAP (
 
 -- pragma translate_off
 GENERIC MAP (
-	lut_mask => "0101101010101111",
+	lut_mask => "0011110011001111",
 	sum_lutc_input => "cin")
 -- pragma translate_on
 PORT MAP (
-	dataa => \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[395]~86_combout\,
+	datab => \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[395]~86_combout\,
 	datad => VCC,
 	cin => \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_8~23\,
 	combout => \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_8~24_combout\,
@@ -25265,11 +25405,11 @@ PORT MAP (
 
 -- pragma translate_off
 GENERIC MAP (
-	lut_mask => "0011110011001111",
+	lut_mask => "0101101010101111",
 	sum_lutc_input => "cin")
 -- pragma translate_on
 PORT MAP (
-	datab => \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[399]~82_combout\,
+	dataa => \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[399]~82_combout\,
 	datad => VCC,
 	cin => \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_8~31\,
 	combout => \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_8~32_combout\,
@@ -25381,24 +25521,6 @@ PORT MAP (
 	datac => \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_8~26_combout\,
 	datad => \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_8~36_combout\,
 	combout => \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[421]~102_combout\);
-
--- Location: LCCOMB_X14_Y14_N26
-\U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[395]~86\ : cycloneii_lcell_comb
--- Equation(s):
--- \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[395]~86_combout\ = (\U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_7~34_combout\ & 
--- ((\U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[370]~70_combout\))) # (!\U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_7~34_combout\ & 
--- (\U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_7~22_combout\))
-
--- pragma translate_off
-GENERIC MAP (
-	lut_mask => "1111101001010000",
-	sum_lutc_input => "datac")
--- pragma translate_on
-PORT MAP (
-	dataa => \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_7~34_combout\,
-	datac => \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_7~22_combout\,
-	datad => \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[370]~70_combout\,
-	combout => \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[395]~86_combout\);
 
 -- Location: LCCOMB_X15_Y14_N24
 \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[420]~103\ : cycloneii_lcell_comb
@@ -25526,6 +25648,24 @@ PORT MAP (
 	datad => \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_8~14_combout\,
 	combout => \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[415]~108_combout\);
 
+-- Location: LCCOMB_X16_Y12_N6
+\U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[411]~112\ : cycloneii_lcell_comb
+-- Equation(s):
+-- \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[411]~112_combout\ = (\U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_8~36_combout\ & 
+-- (\U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[386]~95_combout\)) # (!\U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_8~36_combout\ & 
+-- ((\U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_8~6_combout\)))
+
+-- pragma translate_off
+GENERIC MAP (
+	lut_mask => "1100110011110000",
+	sum_lutc_input => "datac")
+-- pragma translate_on
+PORT MAP (
+	datab => \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[386]~95_combout\,
+	datac => \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_8~6_combout\,
+	datad => \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_8~36_combout\,
+	combout => \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[411]~112_combout\);
+
 -- Location: LCCOMB_X16_Y15_N8
 \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[408]~115\ : cycloneii_lcell_comb
 -- Equation(s):
@@ -25602,27 +25742,6 @@ PORT MAP (
 	combout => \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_9~4_combout\,
 	cout => \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_9~5\);
 
--- Location: LCCOMB_X16_Y15_N18
-\U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_9~6\ : cycloneii_lcell_comb
--- Equation(s):
--- \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_9~6_combout\ = (\U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[410]~113_combout\ & 
--- (!\U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_9~5\)) # (!\U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[410]~113_combout\ & 
--- ((\U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_9~5\) # (GND)))
--- \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_9~7\ = CARRY((!\U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_9~5\) # 
--- (!\U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[410]~113_combout\))
-
--- pragma translate_off
-GENERIC MAP (
-	lut_mask => "0101101001011111",
-	sum_lutc_input => "cin")
--- pragma translate_on
-PORT MAP (
-	dataa => \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[410]~113_combout\,
-	datad => VCC,
-	cin => \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_9~5\,
-	combout => \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_9~6_combout\,
-	cout => \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_9~7\);
-
 -- Location: LCCOMB_X16_Y15_N20
 \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_9~8\ : cycloneii_lcell_comb
 -- Equation(s):
@@ -25634,11 +25753,11 @@ PORT MAP (
 
 -- pragma translate_off
 GENERIC MAP (
-	lut_mask => "0101101010101111",
+	lut_mask => "0011110011001111",
 	sum_lutc_input => "cin")
 -- pragma translate_on
 PORT MAP (
-	dataa => \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[411]~112_combout\,
+	datab => \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[411]~112_combout\,
 	datad => VCC,
 	cin => \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_9~7\,
 	combout => \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_9~8_combout\,
@@ -25791,27 +25910,6 @@ PORT MAP (
 	combout => \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_9~22_combout\,
 	cout => \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_9~23\);
 
--- Location: LCCOMB_X16_Y14_N4
-\U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_9~24\ : cycloneii_lcell_comb
--- Equation(s):
--- \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_9~24_combout\ = (\U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[419]~104_combout\ & ((GND) # 
--- (!\U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_9~23\))) # (!\U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[419]~104_combout\ & 
--- (\U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_9~23\ $ (GND)))
--- \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_9~25\ = CARRY((\U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[419]~104_combout\) # 
--- (!\U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_9~23\))
-
--- pragma translate_off
-GENERIC MAP (
-	lut_mask => "0011110011001111",
-	sum_lutc_input => "cin")
--- pragma translate_on
-PORT MAP (
-	datab => \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[419]~104_combout\,
-	datad => VCC,
-	cin => \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_9~23\,
-	combout => \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_9~24_combout\,
-	cout => \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_9~25\);
-
 -- Location: LCCOMB_X16_Y14_N8
 \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_9~28\ : cycloneii_lcell_comb
 -- Equation(s):
@@ -25935,18 +26033,18 @@ PORT MAP (
 \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[449]~117\ : cycloneii_lcell_comb
 -- Equation(s):
 -- \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[449]~117_combout\ = (\U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_9~38_combout\ & 
--- ((\U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[424]~99_combout\))) # (!\U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_9~38_combout\ & 
--- (\U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_9~34_combout\))
+-- (\U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[424]~99_combout\)) # (!\U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_9~38_combout\ & 
+-- ((\U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_9~34_combout\)))
 
 -- pragma translate_off
 GENERIC MAP (
-	lut_mask => "1111110000110000",
+	lut_mask => "1100110011110000",
 	sum_lutc_input => "datac")
 -- pragma translate_on
 PORT MAP (
-	datab => \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_9~38_combout\,
+	datab => \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[424]~99_combout\,
 	datac => \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_9~34_combout\,
-	datad => \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[424]~99_combout\,
+	datad => \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_9~38_combout\,
 	combout => \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[449]~117_combout\);
 
 -- Location: LCCOMB_X14_Y12_N4
@@ -25976,13 +26074,13 @@ PORT MAP (
 
 -- pragma translate_off
 GENERIC MAP (
-	lut_mask => "1100111111000000",
+	lut_mask => "1100110011110000",
 	sum_lutc_input => "datac")
 -- pragma translate_on
 PORT MAP (
 	datab => \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[425]~98_combout\,
-	datac => \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_9~38_combout\,
-	datad => \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_9~36_combout\,
+	datac => \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_9~36_combout\,
+	datad => \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_9~38_combout\,
 	combout => \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[450]~116_combout\);
 
 -- Location: LCCOMB_X16_Y12_N4
@@ -25994,11 +26092,11 @@ PORT MAP (
 
 -- pragma translate_off
 GENERIC MAP (
-	lut_mask => "1111001111000000",
+	lut_mask => "1111010110100000",
 	sum_lutc_input => "datac")
 -- pragma translate_on
 PORT MAP (
-	datab => \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_9~38_combout\,
+	dataa => \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_9~38_combout\,
 	datac => \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[423]~100_combout\,
 	datad => \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_9~32_combout\,
 	combout => \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[448]~118_combout\);
@@ -26020,24 +26118,6 @@ PORT MAP (
 	datab => \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[420]~103_combout\,
 	datad => \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_9~38_combout\,
 	combout => \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[445]~121_combout\);
-
--- Location: LCCOMB_X16_Y14_N26
-\U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[444]~122\ : cycloneii_lcell_comb
--- Equation(s):
--- \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[444]~122_combout\ = (\U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_9~38_combout\ & 
--- (\U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[419]~104_combout\)) # (!\U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_9~38_combout\ & 
--- ((\U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_9~24_combout\)))
-
--- pragma translate_off
-GENERIC MAP (
-	lut_mask => "1100110011110000",
-	sum_lutc_input => "datac")
--- pragma translate_on
-PORT MAP (
-	datab => \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[419]~104_combout\,
-	datac => \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_9~24_combout\,
-	datad => \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_9~38_combout\,
-	combout => \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[444]~122_combout\);
 
 -- Location: LCCOMB_X16_Y14_N28
 \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[443]~123\ : cycloneii_lcell_comb
@@ -26066,12 +26146,12 @@ PORT MAP (
 
 -- pragma translate_off
 GENERIC MAP (
-	lut_mask => "1100111111000000",
+	lut_mask => "1111001111000000",
 	sum_lutc_input => "datac")
 -- pragma translate_on
 PORT MAP (
-	datab => \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[392]~89_combout\,
-	datac => \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_8~36_combout\,
+	datab => \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_8~36_combout\,
+	datac => \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[392]~89_combout\,
 	datad => \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_8~18_combout\,
 	combout => \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[417]~106_combout\);
 
@@ -26092,6 +26172,24 @@ PORT MAP (
 	datac => \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[417]~106_combout\,
 	datad => \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_9~38_combout\,
 	combout => \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[442]~124_combout\);
+
+-- Location: LCCOMB_X16_Y15_N10
+\U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[441]~125\ : cycloneii_lcell_comb
+-- Equation(s):
+-- \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[441]~125_combout\ = (\U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_9~38_combout\ & 
+-- (\U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[416]~107_combout\)) # (!\U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_9~38_combout\ & 
+-- ((\U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_9~18_combout\)))
+
+-- pragma translate_off
+GENERIC MAP (
+	lut_mask => "1100111111000000",
+	sum_lutc_input => "datac")
+-- pragma translate_on
+PORT MAP (
+	datab => \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[416]~107_combout\,
+	datac => \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_9~38_combout\,
+	datad => \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_9~18_combout\,
+	combout => \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[441]~125_combout\);
 
 -- Location: LCCOMB_X16_Y15_N4
 \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[440]~126\ : cycloneii_lcell_comb
@@ -26129,7 +26227,7 @@ PORT MAP (
 	datad => \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_9~14_combout\,
 	combout => \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[439]~127_combout\);
 
--- Location: LCCOMB_X17_Y15_N0
+-- Location: LCCOMB_X17_Y15_N8
 \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[437]~129\ : cycloneii_lcell_comb
 -- Equation(s):
 -- \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[437]~129_combout\ = (\U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_9~38_combout\ & 
@@ -26169,18 +26267,18 @@ PORT MAP (
 \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[435]~131\ : cycloneii_lcell_comb
 -- Equation(s):
 -- \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[435]~131_combout\ = (\U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_9~38_combout\ & 
--- (\U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[410]~113_combout\)) # (!\U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_9~38_combout\ & 
--- ((\U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_9~6_combout\)))
+-- ((\U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[410]~113_combout\))) # (!\U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_9~38_combout\ & 
+-- (\U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_9~6_combout\))
 
 -- pragma translate_off
 GENERIC MAP (
-	lut_mask => "1100111111000000",
+	lut_mask => "1111101000001010",
 	sum_lutc_input => "datac")
 -- pragma translate_on
 PORT MAP (
-	datab => \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[410]~113_combout\,
+	dataa => \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_9~6_combout\,
 	datac => \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_9~38_combout\,
-	datad => \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_9~6_combout\,
+	datad => \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[410]~113_combout\,
 	combout => \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[435]~131_combout\);
 
 -- Location: LCCOMB_X15_Y15_N12
@@ -26379,27 +26477,6 @@ PORT MAP (
 	combout => \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_10~12_combout\,
 	cout => \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_10~13\);
 
--- Location: LCCOMB_X17_Y15_N26
-\U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_10~14\ : cycloneii_lcell_comb
--- Equation(s):
--- \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_10~14_combout\ = (\U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[438]~128_combout\ & 
--- (!\U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_10~13\)) # (!\U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[438]~128_combout\ & 
--- ((\U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_10~13\) # (GND)))
--- \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_10~15\ = CARRY((!\U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_10~13\) # 
--- (!\U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[438]~128_combout\))
-
--- pragma translate_off
-GENERIC MAP (
-	lut_mask => "0101101001011111",
-	sum_lutc_input => "cin")
--- pragma translate_on
-PORT MAP (
-	dataa => \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[438]~128_combout\,
-	datad => VCC,
-	cin => \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_10~13\,
-	combout => \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_10~14_combout\,
-	cout => \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_10~15\);
-
 -- Location: LCCOMB_X17_Y15_N30
 \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_10~18\ : cycloneii_lcell_comb
 -- Equation(s):
@@ -26420,27 +26497,6 @@ PORT MAP (
 	cin => \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_10~17\,
 	combout => \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_10~18_combout\,
 	cout => \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_10~19\);
-
--- Location: LCCOMB_X17_Y14_N0
-\U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_10~20\ : cycloneii_lcell_comb
--- Equation(s):
--- \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_10~20_combout\ = (\U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[441]~125_combout\ & 
--- (\U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_10~19\ $ (GND))) # (!\U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[441]~125_combout\ & 
--- (!\U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_10~19\ & VCC))
--- \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_10~21\ = CARRY((\U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[441]~125_combout\ & 
--- !\U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_10~19\))
-
--- pragma translate_off
-GENERIC MAP (
-	lut_mask => "1010010100001010",
-	sum_lutc_input => "cin")
--- pragma translate_on
-PORT MAP (
-	dataa => \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[441]~125_combout\,
-	datad => VCC,
-	cin => \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_10~19\,
-	combout => \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_10~20_combout\,
-	cout => \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_10~21\);
 
 -- Location: LCCOMB_X17_Y14_N2
 \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_10~22\ : cycloneii_lcell_comb
@@ -26495,11 +26551,11 @@ PORT MAP (
 
 -- pragma translate_off
 GENERIC MAP (
-	lut_mask => "1100001100000011",
+	lut_mask => "1010010100000101",
 	sum_lutc_input => "cin")
 -- pragma translate_on
 PORT MAP (
-	datab => \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[444]~122_combout\,
+	dataa => \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[444]~122_combout\,
 	datad => VCC,
 	cin => \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_10~25\,
 	combout => \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_10~26_combout\,
@@ -26726,11 +26782,11 @@ PORT MAP (
 
 -- pragma translate_off
 GENERIC MAP (
-	lut_mask => "1100111111000000",
+	lut_mask => "1010111110100000",
 	sum_lutc_input => "datac")
 -- pragma translate_on
 PORT MAP (
-	datab => \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[444]~122_combout\,
+	dataa => \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[444]~122_combout\,
 	datac => \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_10~40_combout\,
 	datad => \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_10~26_combout\,
 	combout => \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[469]~141_combout\);
@@ -26752,42 +26808,6 @@ PORT MAP (
 	datac => \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_10~40_combout\,
 	datad => \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[443]~123_combout\,
 	combout => \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[468]~142_combout\);
-
--- Location: LCCOMB_X16_Y15_N10
-\U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[441]~125\ : cycloneii_lcell_comb
--- Equation(s):
--- \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[441]~125_combout\ = (\U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_9~38_combout\ & 
--- (\U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[416]~107_combout\)) # (!\U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_9~38_combout\ & 
--- ((\U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_9~18_combout\)))
-
--- pragma translate_off
-GENERIC MAP (
-	lut_mask => "1100111111000000",
-	sum_lutc_input => "datac")
--- pragma translate_on
-PORT MAP (
-	datab => \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[416]~107_combout\,
-	datac => \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_9~38_combout\,
-	datad => \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_9~18_combout\,
-	combout => \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[441]~125_combout\);
-
--- Location: LCCOMB_X17_Y14_N22
-\U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[466]~144\ : cycloneii_lcell_comb
--- Equation(s):
--- \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[466]~144_combout\ = (\U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_10~40_combout\ & 
--- (\U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[441]~125_combout\)) # (!\U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_10~40_combout\ & 
--- ((\U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_10~20_combout\)))
-
--- pragma translate_off
-GENERIC MAP (
-	lut_mask => "1111010110100000",
-	sum_lutc_input => "datac")
--- pragma translate_on
-PORT MAP (
-	dataa => \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_10~40_combout\,
-	datac => \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[441]~125_combout\,
-	datad => \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_10~20_combout\,
-	combout => \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[466]~144_combout\);
 
 -- Location: LCCOMB_X17_Y15_N4
 \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[465]~145\ : cycloneii_lcell_comb
@@ -26829,18 +26849,18 @@ PORT MAP (
 \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[463]~147\ : cycloneii_lcell_comb
 -- Equation(s):
 -- \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[463]~147_combout\ = (\U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_10~40_combout\ & 
--- (\U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[438]~128_combout\)) # (!\U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_10~40_combout\ & 
--- ((\U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_10~14_combout\)))
+-- ((\U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[438]~128_combout\))) # (!\U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_10~40_combout\ & 
+-- (\U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_10~14_combout\))
 
 -- pragma translate_off
 GENERIC MAP (
-	lut_mask => "1100111111000000",
+	lut_mask => "1111101000001010",
 	sum_lutc_input => "datac")
 -- pragma translate_on
 PORT MAP (
-	datab => \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[438]~128_combout\,
+	dataa => \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_10~14_combout\,
 	datac => \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_10~40_combout\,
-	datad => \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_10~14_combout\,
+	datad => \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[438]~128_combout\,
 	combout => \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[463]~147_combout\);
 
 -- Location: LCCOMB_X16_Y12_N30
@@ -26852,12 +26872,12 @@ PORT MAP (
 
 -- pragma translate_off
 GENERIC MAP (
-	lut_mask => "1010101011001100",
+	lut_mask => "1010101011110000",
 	sum_lutc_input => "datac")
 -- pragma translate_on
 PORT MAP (
 	dataa => \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[411]~112_combout\,
-	datab => \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_9~8_combout\,
+	datac => \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_9~8_combout\,
 	datad => \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_9~38_combout\,
 	combout => \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[436]~130_combout\);
 
@@ -27042,11 +27062,11 @@ PORT MAP (
 
 -- pragma translate_off
 GENERIC MAP (
-	lut_mask => "1100001100000011",
+	lut_mask => "1010010100000101",
 	sum_lutc_input => "cin")
 -- pragma translate_on
 PORT MAP (
-	datab => \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[466]~144_combout\,
+	dataa => \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[466]~144_combout\,
 	datad => VCC,
 	cin => \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_12~21\,
 	combout => \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_12~22_combout\,
@@ -27237,27 +27257,6 @@ PORT MAP (
 	datac => \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_10~40_combout\,
 	datad => \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_10~38_combout\,
 	combout => \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[475]~135_combout\);
-
--- Location: LCCOMB_X17_Y12_N18
-\U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_12~40\ : cycloneii_lcell_comb
--- Equation(s):
--- \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_12~40_combout\ = (\U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[475]~135_combout\ & ((GND) # 
--- (!\U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_12~39\))) # (!\U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[475]~135_combout\ & 
--- (\U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_12~39\ $ (GND)))
--- \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_12~41\ = CARRY((\U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[475]~135_combout\) # 
--- (!\U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_12~39\))
-
--- pragma translate_off
-GENERIC MAP (
-	lut_mask => "0011110011001111",
-	sum_lutc_input => "cin")
--- pragma translate_on
-PORT MAP (
-	datab => \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[475]~135_combout\,
-	datad => VCC,
-	cin => \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_12~39\,
-	combout => \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_12~40_combout\,
-	cout => \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_12~41\);
 
 -- Location: LCCOMB_X17_Y12_N20
 \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_12~42\ : cycloneii_lcell_comb
@@ -27498,11 +27497,11 @@ PORT MAP (
 
 -- pragma translate_off
 GENERIC MAP (
-	lut_mask => "1100111111000000",
+	lut_mask => "1010111110100000",
 	sum_lutc_input => "datac")
 -- pragma translate_on
 PORT MAP (
-	datab => \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[466]~144_combout\,
+	dataa => \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[466]~144_combout\,
 	datac => \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_12~42_combout\,
 	datad => \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_12~22_combout\,
 	combout => \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[491]~164_combout\);
@@ -27525,7 +27524,7 @@ PORT MAP (
 	datad => \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_12~16_combout\,
 	combout => \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[488]~167_combout\);
 
--- Location: LCCOMB_X17_Y15_N8
+-- Location: LCCOMB_X17_Y15_N0
 \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[462]~148\ : cycloneii_lcell_comb
 -- Equation(s):
 -- \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[462]~148_combout\ = (\U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_10~40_combout\ & 
@@ -27547,18 +27546,18 @@ PORT MAP (
 \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[487]~168\ : cycloneii_lcell_comb
 -- Equation(s):
 -- \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[487]~168_combout\ = (\U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_12~42_combout\ & 
--- (\U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[462]~148_combout\)) # (!\U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_12~42_combout\ & 
--- ((\U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_12~14_combout\)))
+-- ((\U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[462]~148_combout\))) # (!\U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_12~42_combout\ & 
+-- (\U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_12~14_combout\))
 
 -- pragma translate_off
 GENERIC MAP (
-	lut_mask => "1100111111000000",
+	lut_mask => "1111000011001100",
 	sum_lutc_input => "datac")
 -- pragma translate_on
 PORT MAP (
-	datab => \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[462]~148_combout\,
-	datac => \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_12~42_combout\,
-	datad => \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_12~14_combout\,
+	datab => \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_12~14_combout\,
+	datac => \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[462]~148_combout\,
+	datad => \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_12~42_combout\,
 	combout => \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[487]~168_combout\);
 
 -- Location: LCCOMB_X16_Y13_N0
@@ -27888,44 +27887,23 @@ PORT MAP (
 	combout => \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_13~40_combout\,
 	cout => \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_13~41\);
 
--- Location: LCCOMB_X14_Y12_N18
-\U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[500]~155\ : cycloneii_lcell_comb
+-- Location: LCCOMB_X16_Y12_N12
+\U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[524]~177\ : cycloneii_lcell_comb
 -- Equation(s):
--- \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[500]~155_combout\ = (\U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_12~42_combout\ & 
--- (\U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[475]~135_combout\)) # (!\U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_12~42_combout\ & 
--- ((\U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_12~40_combout\)))
+-- \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[524]~177_combout\ = (\U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_13~44_combout\ & 
+-- (\U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[499]~156_combout\)) # (!\U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_13~44_combout\ & 
+-- ((\U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_13~40_combout\)))
 
 -- pragma translate_off
 GENERIC MAP (
-	lut_mask => "1111001111000000",
+	lut_mask => "1101110110001000",
 	sum_lutc_input => "datac")
 -- pragma translate_on
 PORT MAP (
-	datab => \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_12~42_combout\,
-	datac => \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[475]~135_combout\,
-	datad => \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_12~40_combout\,
-	combout => \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[500]~155_combout\);
-
--- Location: LCCOMB_X18_Y12_N20
-\U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_13~42\ : cycloneii_lcell_comb
--- Equation(s):
--- \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_13~42_combout\ = (\U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[500]~155_combout\ & 
--- (\U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_13~41\ & VCC)) # (!\U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[500]~155_combout\ & 
--- (!\U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_13~41\))
--- \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_13~43\ = CARRY((!\U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[500]~155_combout\ & 
--- !\U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_13~41\))
-
--- pragma translate_off
-GENERIC MAP (
-	lut_mask => "1100001100000011",
-	sum_lutc_input => "cin")
--- pragma translate_on
-PORT MAP (
-	datab => \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[500]~155_combout\,
-	datad => VCC,
-	cin => \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_13~41\,
-	combout => \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_13~42_combout\,
-	cout => \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_13~43\);
+	dataa => \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_13~44_combout\,
+	datab => \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[499]~156_combout\,
+	datad => \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_13~40_combout\,
+	combout => \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[524]~177_combout\);
 
 -- Location: LCCOMB_X18_Y12_N22
 \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_13~44\ : cycloneii_lcell_comb
@@ -27941,24 +27919,6 @@ PORT MAP (
 	cin => \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_13~43\,
 	combout => \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_13~44_combout\);
 
--- Location: LCCOMB_X16_Y12_N12
-\U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[524]~177\ : cycloneii_lcell_comb
--- Equation(s):
--- \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[524]~177_combout\ = (\U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_13~44_combout\ & 
--- (\U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[499]~156_combout\)) # (!\U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_13~44_combout\ & 
--- ((\U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_13~40_combout\)))
-
--- pragma translate_off
-GENERIC MAP (
-	lut_mask => "1100110011110000",
-	sum_lutc_input => "datac")
--- pragma translate_on
-PORT MAP (
-	datab => \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[499]~156_combout\,
-	datac => \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_13~40_combout\,
-	datad => \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_13~44_combout\,
-	combout => \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[524]~177_combout\);
-
 -- Location: LCCOMB_X21_Y12_N8
 \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[522]~179\ : cycloneii_lcell_comb
 -- Equation(s):
@@ -27968,11 +27928,11 @@ PORT MAP (
 
 -- pragma translate_off
 GENERIC MAP (
-	lut_mask => "1010101011110000",
+	lut_mask => "1100110011110000",
 	sum_lutc_input => "datac")
 -- pragma translate_on
 PORT MAP (
-	dataa => \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[497]~158_combout\,
+	datab => \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[497]~158_combout\,
 	datac => \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_13~36_combout\,
 	datad => \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_13~44_combout\,
 	combout => \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[522]~179_combout\);
@@ -27986,12 +27946,12 @@ PORT MAP (
 
 -- pragma translate_off
 GENERIC MAP (
-	lut_mask => "1111001111000000",
+	lut_mask => "1011101110001000",
 	sum_lutc_input => "datac")
 -- pragma translate_on
 PORT MAP (
+	dataa => \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[495]~160_combout\,
 	datab => \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_13~44_combout\,
-	datac => \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[495]~160_combout\,
 	datad => \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_13~32_combout\,
 	combout => \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[520]~181_combout\);
 
@@ -28004,31 +27964,31 @@ PORT MAP (
 
 -- pragma translate_off
 GENERIC MAP (
-	lut_mask => "1100110011110000",
+	lut_mask => "1111001111000000",
 	sum_lutc_input => "datac")
 -- pragma translate_on
 PORT MAP (
-	datab => \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[494]~161_combout\,
-	datac => \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_13~30_combout\,
-	datad => \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_13~44_combout\,
+	datab => \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_13~44_combout\,
+	datac => \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[494]~161_combout\,
+	datad => \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_13~30_combout\,
 	combout => \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[519]~182_combout\);
 
 -- Location: LCCOMB_X17_Y12_N30
 \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[493]~162\ : cycloneii_lcell_comb
 -- Equation(s):
 -- \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[493]~162_combout\ = (\U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_12~42_combout\ & 
--- (\U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[468]~142_combout\)) # (!\U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_12~42_combout\ & 
--- ((\U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_12~26_combout\)))
+-- ((\U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[468]~142_combout\))) # (!\U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_12~42_combout\ & 
+-- (\U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_12~26_combout\))
 
 -- pragma translate_off
 GENERIC MAP (
-	lut_mask => "1100110011110000",
+	lut_mask => "1111101001010000",
 	sum_lutc_input => "datac")
 -- pragma translate_on
 PORT MAP (
-	datab => \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[468]~142_combout\,
+	dataa => \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_12~42_combout\,
 	datac => \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_12~26_combout\,
-	datad => \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_12~42_combout\,
+	datad => \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[468]~142_combout\,
 	combout => \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[493]~162_combout\);
 
 -- Location: LCCOMB_X18_Y12_N24
@@ -28244,6 +28204,27 @@ PORT MAP (
 	combout => \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_14~0_combout\,
 	cout => \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_14~1\);
 
+-- Location: LCCOMB_X19_Y13_N12
+\U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_14~4\ : cycloneii_lcell_comb
+-- Equation(s):
+-- \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_14~4_combout\ = (\U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[505]~196_combout\ & ((GND) # 
+-- (!\U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_14~3\))) # (!\U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[505]~196_combout\ & 
+-- (\U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_14~3\ $ (GND)))
+-- \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_14~5\ = CARRY((\U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[505]~196_combout\) # 
+-- (!\U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_14~3\))
+
+-- pragma translate_off
+GENERIC MAP (
+	lut_mask => "0011110011001111",
+	sum_lutc_input => "cin")
+-- pragma translate_on
+PORT MAP (
+	datab => \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[505]~196_combout\,
+	datad => VCC,
+	cin => \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_14~3\,
+	combout => \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_14~4_combout\,
+	cout => \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_14~5\);
+
 -- Location: LCCOMB_X19_Y13_N14
 \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_14~6\ : cycloneii_lcell_comb
 -- Equation(s):
@@ -28391,6 +28372,27 @@ PORT MAP (
 	combout => \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_14~28_combout\,
 	cout => \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_14~29\);
 
+-- Location: LCCOMB_X19_Y12_N14
+\U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_14~38\ : cycloneii_lcell_comb
+-- Equation(s):
+-- \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_14~38_combout\ = (\U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[522]~179_combout\ & 
+-- (\U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_14~37\ & VCC)) # (!\U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[522]~179_combout\ & 
+-- (!\U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_14~37\))
+-- \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_14~39\ = CARRY((!\U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[522]~179_combout\ & 
+-- !\U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_14~37\))
+
+-- pragma translate_off
+GENERIC MAP (
+	lut_mask => "1100001100000011",
+	sum_lutc_input => "cin")
+-- pragma translate_on
+PORT MAP (
+	datab => \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[522]~179_combout\,
+	datad => VCC,
+	cin => \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_14~37\,
+	combout => \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_14~38_combout\,
+	cout => \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_14~39\);
+
 -- Location: LCCOMB_X19_Y12_N16
 \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_14~40\ : cycloneii_lcell_comb
 -- Equation(s):
@@ -28468,24 +28470,6 @@ PORT MAP (
 	cin => \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_14~45\,
 	combout => \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_14~46_combout\);
 
--- Location: LCCOMB_X14_Y12_N20
-\U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[525]~176\ : cycloneii_lcell_comb
--- Equation(s):
--- \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[525]~176_combout\ = (\U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_13~44_combout\ & 
--- (\U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[500]~155_combout\)) # (!\U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_13~44_combout\ & 
--- ((\U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_13~42_combout\)))
-
--- pragma translate_off
-GENERIC MAP (
-	lut_mask => "1100111111000000",
-	sum_lutc_input => "datac")
--- pragma translate_on
-PORT MAP (
-	datab => \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[500]~155_combout\,
-	datac => \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_13~44_combout\,
-	datad => \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_13~42_combout\,
-	combout => \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[525]~176_combout\);
-
 -- Location: LCCOMB_X21_Y12_N28
 \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[550]~220\ : cycloneii_lcell_comb
 -- Equation(s):
@@ -28495,12 +28479,12 @@ PORT MAP (
 
 -- pragma translate_off
 GENERIC MAP (
-	lut_mask => "1111001111000000",
+	lut_mask => "1010111110100000",
 	sum_lutc_input => "datac")
 -- pragma translate_on
 PORT MAP (
-	datab => \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_14~46_combout\,
-	datac => \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[525]~176_combout\,
+	dataa => \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[525]~176_combout\,
+	datac => \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_14~46_combout\,
 	datad => \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_14~44_combout\,
 	combout => \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[550]~220_combout\);
 
@@ -28513,12 +28497,12 @@ PORT MAP (
 
 -- pragma translate_off
 GENERIC MAP (
-	lut_mask => "1111001111000000",
+	lut_mask => "1100111111000000",
 	sum_lutc_input => "datac")
 -- pragma translate_on
 PORT MAP (
-	datab => \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_14~46_combout\,
-	datac => \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[524]~177_combout\,
+	datab => \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[524]~177_combout\,
+	datac => \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_14~46_combout\,
 	datad => \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_14~42_combout\,
 	combout => \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[549]~219_combout\);
 
@@ -28531,13 +28515,13 @@ PORT MAP (
 
 -- pragma translate_off
 GENERIC MAP (
-	lut_mask => "1010101011110000",
+	lut_mask => "1010111110100000",
 	sum_lutc_input => "datac")
 -- pragma translate_on
 PORT MAP (
 	dataa => \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[498]~157_combout\,
-	datac => \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_13~38_combout\,
-	datad => \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_13~44_combout\,
+	datac => \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_13~44_combout\,
+	datad => \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_13~38_combout\,
 	combout => \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[523]~178_combout\);
 
 -- Location: LCCOMB_X21_Y12_N16
@@ -28549,14 +28533,32 @@ PORT MAP (
 
 -- pragma translate_off
 GENERIC MAP (
-	lut_mask => "1100110011110000",
+	lut_mask => "1100111111000000",
 	sum_lutc_input => "datac")
 -- pragma translate_on
 PORT MAP (
 	datab => \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[523]~178_combout\,
-	datac => \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_14~40_combout\,
-	datad => \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_14~46_combout\,
+	datac => \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_14~46_combout\,
+	datad => \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_14~40_combout\,
 	combout => \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[548]~214_combout\);
+
+-- Location: LCCOMB_X21_Y12_N10
+\U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[547]~215\ : cycloneii_lcell_comb
+-- Equation(s):
+-- \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[547]~215_combout\ = (\U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_14~46_combout\ & 
+-- (\U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[522]~179_combout\)) # (!\U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_14~46_combout\ & 
+-- ((\U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_14~38_combout\)))
+
+-- pragma translate_off
+GENERIC MAP (
+	lut_mask => "1100111111000000",
+	sum_lutc_input => "datac")
+-- pragma translate_on
+PORT MAP (
+	datab => \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[522]~179_combout\,
+	datac => \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_14~46_combout\,
+	datad => \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_14~38_combout\,
+	combout => \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[547]~215_combout\);
 
 -- Location: LCCOMB_X19_Y12_N30
 \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[543]~213\ : cycloneii_lcell_comb
@@ -28603,12 +28605,12 @@ PORT MAP (
 
 -- pragma translate_off
 GENERIC MAP (
-	lut_mask => "1111001111000000",
+	lut_mask => "1100111111000000",
 	sum_lutc_input => "datac")
 -- pragma translate_on
 PORT MAP (
-	datab => \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_14~46_combout\,
-	datac => \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[516]~185_combout\,
+	datab => \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[516]~185_combout\,
+	datac => \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_14~46_combout\,
 	datad => \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_14~26_combout\,
 	combout => \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[541]~211_combout\);
 
@@ -28657,13 +28659,13 @@ PORT MAP (
 
 -- pragma translate_off
 GENERIC MAP (
-	lut_mask => "1100111111000000",
+	lut_mask => "1100110011110000",
 	sum_lutc_input => "datac")
 -- pragma translate_on
 PORT MAP (
 	datab => \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[508]~193_combout\,
-	datac => \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_14~46_combout\,
-	datad => \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_14~10_combout\,
+	datac => \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_14~10_combout\,
+	datad => \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_14~46_combout\,
 	combout => \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[533]~204_combout\);
 
 -- Location: LCCOMB_X21_Y13_N4
@@ -28706,18 +28708,18 @@ PORT MAP (
 \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[530]~207\ : cycloneii_lcell_comb
 -- Equation(s):
 -- \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[530]~207_combout\ = (\U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_14~46_combout\ & 
--- ((\U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[505]~196_combout\))) # (!\U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_14~46_combout\ & 
--- (\U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_14~4_combout\))
+-- (\U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[505]~196_combout\)) # (!\U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_14~46_combout\ & 
+-- ((\U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_14~4_combout\)))
 
 -- pragma translate_off
 GENERIC MAP (
-	lut_mask => "1111000010101010",
+	lut_mask => "1100111111000000",
 	sum_lutc_input => "datac")
 -- pragma translate_on
 PORT MAP (
-	dataa => \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_14~4_combout\,
-	datac => \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[505]~196_combout\,
-	datad => \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_14~46_combout\,
+	datab => \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[505]~196_combout\,
+	datac => \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_14~46_combout\,
+	datad => \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|op_14~4_combout\,
 	combout => \U_Ranger_Botom|Div|LPM_DIVIDE_component|auto_generated|divider|divider|StageOut[530]~207_combout\);
 
 -- Location: LCCOMB_X21_Y13_N28
@@ -31020,6 +31022,32 @@ PORT MAP (
 	devpor => ww_devpor,
 	regout => \U_Motor_3|pwm~regout\);
 
+-- Location: PIN_3,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: Default
+\Switch_1[3]~I\ : cycloneii_io
+-- pragma translate_off
+GENERIC MAP (
+	input_async_reset => "none",
+	input_power_up => "low",
+	input_register_mode => "none",
+	input_sync_reset => "none",
+	oe_async_reset => "none",
+	oe_power_up => "low",
+	oe_register_mode => "none",
+	oe_sync_reset => "none",
+	operation_mode => "input",
+	output_async_reset => "none",
+	output_power_up => "low",
+	output_register_mode => "none",
+	output_sync_reset => "none")
+-- pragma translate_on
+PORT MAP (
+	devclrn => ww_devclrn,
+	devpor => ww_devpor,
+	devoe => ww_devoe,
+	oe => GND,
+	padio => ww_Switch_1(3),
+	combout => \Switch_1~combout\(3));
+
 -- Location: LCCOMB_X23_Y10_N4
 \pwm4[7]~0\ : cycloneii_lcell_comb
 -- Equation(s):
@@ -31027,12 +31055,12 @@ PORT MAP (
 
 -- pragma translate_off
 GENERIC MAP (
-	lut_mask => "0010101010000000",
+	lut_mask => "0100110010000000",
 	sum_lutc_input => "datac")
 -- pragma translate_on
 PORT MAP (
-	dataa => \Switch_1~combout\(3),
-	datab => \U_Ranger_Top|altitude[6]~12_combout\,
+	dataa => \U_Ranger_Top|altitude[6]~12_combout\,
+	datab => \Switch_1~combout\(3),
 	datac => \Add3~0_combout\,
 	datad => \U_Ranger_Top|altitude[7]~14_combout\,
 	combout => \pwm4[7]~0_combout\);
@@ -31044,11 +31072,11 @@ PORT MAP (
 
 -- pragma translate_off
 GENERIC MAP (
-	lut_mask => "0000101010100000",
+	lut_mask => "0000110011000000",
 	sum_lutc_input => "datac")
 -- pragma translate_on
 PORT MAP (
-	dataa => \Switch_1~combout\(3),
+	datab => \Switch_1~combout\(3),
 	datac => \Add3~0_combout\,
 	datad => \U_Ranger_Top|altitude[6]~12_combout\,
 	combout => \pwm4[6]~1_combout\);
