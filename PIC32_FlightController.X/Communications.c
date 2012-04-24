@@ -26,20 +26,12 @@ Sentence    xbee_baud = {0, 0};
 Sentence    xbee_channel = {0, 0};
 Sentence    xbee_network = {0, 0};
 
-// Simple Delay Functions
-void Delayms(unsigned t) {
-    T1CON = 0x8020;     // enable TMR1, Tpb, 1:1
-    while (t--) {
-        //PR1   = 0xffff;           // set period register to max
-        TMR1 = 0;
-        while (TMR1 < 1250);
-    }
-}
-
-void Delayus(unsigned t) {
-    T1CON = 0x8010;     // enable TMR1, Tpb, 1:1
-    TMR1 = 0;
-    while (TMR1 < (10 * t));
+void FPGA_RESET_FETCH_STATE() {
+    //SPI_FPGA_CS = 1, FPGA_OK_OUT = 0, Delayus(1000), SPI_FPGA_CS = 0;
+    LATDbits.LATD4 = 1;
+    LATFbits.LATF1 = 0;
+    Delayus(100);
+    LATDbits.LATD4 = 0;
 }
 
 // Initialize all Applicable UART Channels
@@ -362,12 +354,8 @@ void sendFPGAData(UINT8 address, UINT8 data) {
     PORTE = 0x00;
 
     // Send FPGA to Fetch State, and wait for Low Flag
-    SPI_FPGA_CS = 1;
-    Delayms(1);
-    SPI_FPGA_CS = 0;
+    FPGA_RESET_FETCH_STATE();
     while (PORTFbits.RF0 == 1) ;
-
-
 
     // Send Out Address
     setFPGAParallelPins(address);
@@ -382,12 +370,8 @@ void sendFPGAData(UINT8 address, UINT8 data) {
     // - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 
 
-    // Send FPGA to Fetch State
-    SPI_FPGA_CS = 1;
-    Delayms(1);
-    SPI_FPGA_CS = 0;
-
-    // Wait for FPGA to Ackowledge Low, back to Fetch State
+    // Send FPGA to Fetch State, wait for OK_IN Low
+    FPGA_RESET_FETCH_STATE();
     while (PORTFbits.RF0 == 1) ;
 
     // Send Out Data
@@ -410,9 +394,7 @@ UINT8 getFPGAData(UINT8 address) {
     PORTE = 0x00;
 
     // Send FPGA to Fetch State
-    SPI_FPGA_CS = 1;
-    Delayms(1);
-    SPI_FPGA_CS = 0;
+    FPGA_RESET_FETCH_STATE();
 
     // Send Out Address
     setFPGAParallelPins(address);
@@ -427,9 +409,7 @@ UINT8 getFPGAData(UINT8 address) {
     // - - - - - - - - - - - - - - - - - - - - - - - - - -
 
     // Send FPGA to Fetch State
-    SPI_FPGA_CS = 1;
-    Delayms(1);
-    SPI_FPGA_CS = 0;
+    FPGA_RESET_FETCH_STATE();
 
 
     // Wait for FPGA to Ackowledge Low, back to Fetch State

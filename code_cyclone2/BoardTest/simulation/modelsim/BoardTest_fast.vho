@@ -16,7 +16,7 @@
 -- PROGRAM "Quartus II 32-bit"
 -- VERSION "Version 11.1 Build 216 11/23/2011 Service Pack 1 SJ Web Edition"
 
--- DATE "04/23/2012 01:54:36"
+-- DATE "04/23/2012 23:15:35"
 
 -- 
 -- Device: Altera EP2C8T144C8 Package TQFP144
@@ -2261,6 +2261,11 @@ SIGNAL \U_Motor_4|LessThan0~13_cout\ : std_logic;
 SIGNAL \U_Motor_4|LessThan0~14_combout\ : std_logic;
 SIGNAL \U_Motor_4|LessThan0~16_combout\ : std_logic;
 SIGNAL \U_Motor_4|pwm~regout\ : std_logic;
+SIGNAL \Switch_1~combout\ : std_logic_vector(3 DOWNTO 0);
+SIGNAL \U_Registers|RegXD|tmp\ : std_logic_vector(7 DOWNTO 0);
+SIGNAL \U_Registers|RegAdd|tmp\ : std_logic_vector(7 DOWNTO 0);
+SIGNAL \U_Motor_1|clockcount\ : std_logic_vector(6 DOWNTO 0);
+SIGNAL \U_Motor_1|pulsecount\ : std_logic_vector(11 DOWNTO 0);
 SIGNAL \U_Ranger_Top|edgebegin\ : std_logic_vector(23 DOWNTO 0);
 SIGNAL \U_Ranger_Top|edgeend\ : std_logic_vector(23 DOWNTO 0);
 SIGNAL \U_1HzClkDivider|cnt\ : std_logic_vector(22 DOWNTO 0);
@@ -2276,11 +2281,6 @@ SIGNAL \U_Registers|RegYD|tmp\ : std_logic_vector(7 DOWNTO 0);
 SIGNAL \U_Ranger_Botom|edgeend\ : std_logic_vector(23 DOWNTO 0);
 SIGNAL \U_Ranger_Botom|count\ : std_logic_vector(23 DOWNTO 0);
 SIGNAL \U_Ranger_Botom|edgebegin\ : std_logic_vector(23 DOWNTO 0);
-SIGNAL \Switch_1~combout\ : std_logic_vector(3 DOWNTO 0);
-SIGNAL \U_Registers|RegXD|tmp\ : std_logic_vector(7 DOWNTO 0);
-SIGNAL \U_Registers|RegAdd|tmp\ : std_logic_vector(7 DOWNTO 0);
-SIGNAL \U_Motor_1|clockcount\ : std_logic_vector(6 DOWNTO 0);
-SIGNAL \U_Motor_1|pulsecount\ : std_logic_vector(11 DOWNTO 0);
 
 BEGIN
 

@@ -10,6 +10,8 @@
       <itemPath>Gyroscope.h</itemPath>
       <itemPath>Accelerometer.h</itemPath>
       <itemPath>Orientation.h</itemPath>
+      <itemPath>Timers.h</itemPath>
+      <itemPath>Magnetometer.h</itemPath>
     </logicalFolder>
     <logicalFolder name="LibraryFiles"
                    displayName="Library Files"
@@ -32,6 +34,8 @@
       <itemPath>Gyroscope.c</itemPath>
       <itemPath>Accelerometer.c</itemPath>
       <itemPath>Orientation.c</itemPath>
+      <itemPath>Timers.c</itemPath>
+      <itemPath>Magnetometer.c</itemPath>
     </logicalFolder>
     <logicalFolder name="ExternalFiles"
                    displayName="Important Files"

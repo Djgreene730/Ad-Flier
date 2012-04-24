@@ -14,9 +14,9 @@
 #include "Gyroscope.h"
 #include "Accelerometer.h"
 #include "Orientation.h"
+#include "Timers.h"
 
-
-
+// Configure the PIC's System Registers
 #pragma config FNOSC = PRIPLL       // Oscillator Selection
 #pragma config FPLLIDIV = DIV_2     // PLL Input Divider (PIC32MX Starter Kit: use divide by 2 only)
 #pragma config FPLLMUL = MUL_20     // PLL Multiplier
@@ -34,9 +34,6 @@
 #pragma config PWP = OFF            // Program Flash Write Protect
 #pragma config ICESEL = ICS_PGx1    // ICE/ICD Comm Channel Select
 #pragma config DEBUG = ON          // Debugger Disabled for Starter Kit
-
-int ellapsedTime = 10;
-
 
 // Main Application
 int main(int argc, char** argv) {
@@ -63,6 +60,9 @@ int main(int argc, char** argv) {
     // Configure for multi-vectored mode & Enable Interrupts
     INTConfigureSystem(INT_SYSTEM_CONFIG_MULT_VECTOR);
     INTEnableInterrupts();
+
+    // Initialize Angle Variables and Calibrate Sensors
+    calibrateSensors();
 
     // Loop Infinitely
     while(1) {
@@ -108,10 +108,61 @@ int main(int argc, char** argv) {
          */
 
         
-        updateSensors();
-        Delayms(100);
+  /*
 
-        
+        // Variables
+        UINT8 i;
+        int totalTime = 0, tempTime;
+        int avgReadTime, avgWriteTime;
+
+        // Check Write Time
+        for( i = 0; i < 256; i++) {
+            // Start Timer 2
+            startTimeCounter2();
+
+            // Send Data to the FPGA
+            sendFPGAData(0x00, i);
+            Delayms(10);
+
+            // Stop the Timer and add time to total
+            tempTime = stopTimeCounter2();
+            totalTime += tempTime;
+        }
+
+        // Divide by total tests run
+        totalTime = totalTime / 256;
+        avgWriteTime = totalTime;
+        totalTime = 0;
+
+        // Check Write Time
+        for( i = 0; i < 7; i++) {
+            // Start Timer 2
+            startTimeCounter2();
+
+            // Send Data to the FPGA
+            getFPGAData(i);
+            Delayms(10);
+
+            // Stop the Timer and add time to total
+            tempTime = stopTimeCounter2();
+            totalTime += tempTime;
+        }
+
+        // Divide by total tests run
+        totalTime = totalTime / 8;
+        avgReadTime = totalTime;
+
+*/
+        // Update Sensors Every 100mS
+        Delayms(100 - updateSensors());
+
+       // Delayms(1000);
+        //sendFPGAData(0x07, 0x06);
+        //Delayms(1000);
+        //sendFPGAData(0x07, 0x09);
+        //Delayms(1000);
+        //sendFPGAData(0x07, 0xFF);
+
 
     }
 

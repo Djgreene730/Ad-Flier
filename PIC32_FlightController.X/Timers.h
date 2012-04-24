@@ -3,7 +3,7 @@
  *  Team SkyLights, Senior Design, Spring 2012
  *
  *  Include into Main File for Operability:
- *  #include "Accelerometer.h"
+ *  #include "Timers.h"
  *
  */
 
@@ -13,6 +13,7 @@
 
 
 // Global Functions
-extern int      updateSensors();
-extern void     calibrateSensors();
-extern void     initializeSensorVariables();
+extern void     Delayms(unsigned);
+extern void     Delayus(unsigned);
+extern void     startTimeCounter2();
+extern int      stopTimeCounter2();     // Returns mS Timer2 has Ellapsed

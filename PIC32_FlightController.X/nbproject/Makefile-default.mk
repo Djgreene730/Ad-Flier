@@ -41,11 +41,11 @@ OBJECTDIR=build/${CND_CONF}/${IMAGE_TYPE}
 DISTDIR=dist/${CND_CONF}/${IMAGE_TYPE}
 
 # Object Files Quoted if spaced
-OBJECTFILES_QUOTED_IF_SPACED=${OBJECTDIR}/Communications.o ${OBJECTDIR}/Ad-Flier_Pins.o ${OBJECTDIR}/RTCC.o ${OBJECTDIR}/Gyroscope.o ${OBJECTDIR}/Accelerometer.o ${OBJECTDIR}/Orientation.o ${OBJECTDIR}/Main.o
-POSSIBLE_DEPFILES=${OBJECTDIR}/Communications.o.d ${OBJECTDIR}/Ad-Flier_Pins.o.d ${OBJECTDIR}/RTCC.o.d ${OBJECTDIR}/Gyroscope.o.d ${OBJECTDIR}/Accelerometer.o.d ${OBJECTDIR}/Orientation.o.d ${OBJECTDIR}/Main.o.d
+OBJECTFILES_QUOTED_IF_SPACED=${OBJECTDIR}/Communications.o ${OBJECTDIR}/Ad-Flier_Pins.o ${OBJECTDIR}/RTCC.o ${OBJECTDIR}/Gyroscope.o ${OBJECTDIR}/Accelerometer.o ${OBJECTDIR}/Orientation.o ${OBJECTDIR}/Main.o ${OBJECTDIR}/Timers.o ${OBJECTDIR}/Magnetometer.o
+POSSIBLE_DEPFILES=${OBJECTDIR}/Communications.o.d ${OBJECTDIR}/Ad-Flier_Pins.o.d ${OBJECTDIR}/RTCC.o.d ${OBJECTDIR}/Gyroscope.o.d ${OBJECTDIR}/Accelerometer.o.d ${OBJECTDIR}/Orientation.o.d ${OBJECTDIR}/Main.o.d ${OBJECTDIR}/Timers.o.d ${OBJECTDIR}/Magnetometer.o.d
 
 # Object Files
-OBJECTFILES=${OBJECTDIR}/Communications.o ${OBJECTDIR}/Ad-Flier_Pins.o ${OBJECTDIR}/RTCC.o ${OBJECTDIR}/Gyroscope.o ${OBJECTDIR}/Accelerometer.o ${OBJECTDIR}/Orientation.o ${OBJECTDIR}/Main.o
+OBJECTFILES=${OBJECTDIR}/Communications.o ${OBJECTDIR}/Ad-Flier_Pins.o ${OBJECTDIR}/RTCC.o ${OBJECTDIR}/Gyroscope.o ${OBJECTDIR}/Accelerometer.o ${OBJECTDIR}/Orientation.o ${OBJECTDIR}/Main.o ${OBJECTDIR}/Timers.o ${OBJECTDIR}/Magnetometer.o
 
 
 CFLAGS=
@@ -116,6 +116,16 @@ ${OBJECTDIR}/Main.o: Main.c  nbproject/Makefile-${CND_CONF}.mk
 	@${RM} ${OBJECTDIR}/Main.o.d 
 	@${FIXDEPS} "${OBJECTDIR}/Main.o.d" $(SILENT) -c ${MP_CC} $(MP_EXTRA_CC_PRE) -g -D__DEBUG -D__MPLAB_DEBUGGER_PK3=1 -x c -c -mprocessor=$(MP_PROCESSOR_OPTION)  -MMD -MF "${OBJECTDIR}/Main.o.d" -o ${OBJECTDIR}/Main.o Main.c  
 	
+${OBJECTDIR}/Timers.o: Timers.c  nbproject/Makefile-${CND_CONF}.mk
+	@${MKDIR} ${OBJECTDIR} 
+	@${RM} ${OBJECTDIR}/Timers.o.d 
+	@${FIXDEPS} "${OBJECTDIR}/Timers.o.d" $(SILENT) -c ${MP_CC} $(MP_EXTRA_CC_PRE) -g -D__DEBUG -D__MPLAB_DEBUGGER_PK3=1 -x c -c -mprocessor=$(MP_PROCESSOR_OPTION)  -MMD -MF "${OBJECTDIR}/Timers.o.d" -o ${OBJECTDIR}/Timers.o Timers.c  
+	
+${OBJECTDIR}/Magnetometer.o: Magnetometer.c  nbproject/Makefile-${CND_CONF}.mk
+	@${MKDIR} ${OBJECTDIR} 
+	@${RM} ${OBJECTDIR}/Magnetometer.o.d 
+	@${FIXDEPS} "${OBJECTDIR}/Magnetometer.o.d" $(SILENT) -c ${MP_CC} $(MP_EXTRA_CC_PRE) -g -D__DEBUG -D__MPLAB_DEBUGGER_PK3=1 -x c -c -mprocessor=$(MP_PROCESSOR_OPTION)  -MMD -MF "${OBJECTDIR}/Magnetometer.o.d" -o ${OBJECTDIR}/Magnetometer.o Magnetometer.c  
+	
 else
 ${OBJECTDIR}/Communications.o: Communications.c  nbproject/Makefile-${CND_CONF}.mk
 	@${MKDIR} ${OBJECTDIR} 
@@ -151,6 +161,16 @@ ${OBJECTDIR}/Main.o: Main.c  nbproject/Makefile-${CND_CONF}.mk
 	@${MKDIR} ${OBJECTDIR} 
 	@${RM} ${OBJECTDIR}/Main.o.d 
 	@${FIXDEPS} "${OBJECTDIR}/Main.o.d" $(SILENT) -c ${MP_CC} $(MP_EXTRA_CC_PRE)  -g -x c -c -mprocessor=$(MP_PROCESSOR_OPTION)  -MMD -MF "${OBJECTDIR}/Main.o.d" -o ${OBJECTDIR}/Main.o Main.c  
+	
+${OBJECTDIR}/Timers.o: Timers.c  nbproject/Makefile-${CND_CONF}.mk
+	@${MKDIR} ${OBJECTDIR} 
+	@${RM} ${OBJECTDIR}/Timers.o.d 
+	@${FIXDEPS} "${OBJECTDIR}/Timers.o.d" $(SILENT) -c ${MP_CC} $(MP_EXTRA_CC_PRE)  -g -x c -c -mprocessor=$(MP_PROCESSOR_OPTION)  -MMD -MF "${OBJECTDIR}/Timers.o.d" -o ${OBJECTDIR}/Timers.o Timers.c  
+	
+${OBJECTDIR}/Magnetometer.o: Magnetometer.c  nbproject/Makefile-${CND_CONF}.mk
+	@${MKDIR} ${OBJECTDIR} 
+	@${RM} ${OBJECTDIR}/Magnetometer.o.d 
+	@${FIXDEPS} "${OBJECTDIR}/Magnetometer.o.d" $(SILENT) -c ${MP_CC} $(MP_EXTRA_CC_PRE)  -g -x c -c -mprocessor=$(MP_PROCESSOR_OPTION)  -MMD -MF "${OBJECTDIR}/Magnetometer.o.d" -o ${OBJECTDIR}/Magnetometer.o Magnetometer.c  
 	
 endif
 

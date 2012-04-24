@@ -104,6 +104,7 @@ begin
 				ok_out <= '0';
 				nextstate <= rd2;
 			else 
+				ok_out <= '1';
 				nextstate <= rd1;
 			end if;
 			

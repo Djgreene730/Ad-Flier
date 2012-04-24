@@ -126,11 +126,7 @@ extern Sentence xbee_baud;
 extern Sentence xbee_channel;
 extern Sentence xbee_network;
 
-
-
 // Initialization Commands
-extern void     Delayms(unsigned);
-extern void     Delayus(unsigned);
 extern void     initializeUART(void);
 
 // GPS Commands

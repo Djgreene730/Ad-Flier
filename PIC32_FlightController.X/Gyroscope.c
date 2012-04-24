@@ -87,13 +87,13 @@ UINT8 setupGyroscope() {
 }
 
 void updateGyroscopeReadings (void) {
-    // Copy X-Value
-    gyroCurrent.XU = readGyroscope(OUT_X_H);
-    gyroCurrent.XL = readGyroscope(OUT_X_L);
+    // Copy X-Value (Change Orientation to -Y)
+    gyroCurrent.XU = readGyroscope(OUT_Y_H);
+    gyroCurrent.XL = readGyroscope(OUT_Y_L);
 
-    // Copy Y-Value
-    gyroCurrent.YU = readGyroscope(OUT_Y_H);
-    gyroCurrent.YL = readGyroscope(OUT_Y_L);
+    // Copy Y-Value (Change Orientation to X)
+    gyroCurrent.YU = readGyroscope(OUT_X_H);
+    gyroCurrent.YL = readGyroscope(OUT_X_L);
     
     // Copy Z-Value
     gyroCurrent.ZU = readGyroscope(OUT_Z_H);

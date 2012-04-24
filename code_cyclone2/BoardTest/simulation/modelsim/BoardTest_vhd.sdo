@@ -24,7 +24,7 @@
 (DELAYFILE
   (SDFVERSION "2.1")
   (DESIGN "BoardTest")
-  (DATE "04/23/2012 01:54:37")
+  (DATE "04/23/2012 23:15:35")
   (VENDOR "Altera")
   (PROGRAM "Quartus II 32-bit")
   (VERSION "Version 11.1 Build 216 11/23/2011 Service Pack 1 SJ Web Edition")
