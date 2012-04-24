@@ -1,14 +1,14 @@
-Fitter Status : Successful - Mon Apr 23 23:15:13 2012
-Quartus II 32-bit Version : 11.1 Build 216 11/23/2011 SP 1 SJ Web Edition
+Fitter Status : Successful - Tue Apr 24 03:34:18 2012
+Quartus II Version : 11.0 Build 157 04/27/2011 SJ Web Edition
 Revision Name : BoardTest
 Top-level Entity Name : BoardTest
 Family : Cyclone II
 Device : EP2C8T144C8
 Timing Models : Final
-Total logic elements : 1,412 / 8,256 ( 17 % )
-    Total combinational functions : 1,338 / 8,256 ( 16 % )
-    Dedicated logic registers : 279 / 8,256 ( 3 % )
-Total registers : 279
+Total logic elements : 3,909 / 8,256 ( 47 % )
+    Total combinational functions : 3,837 / 8,256 ( 46 % )
+    Dedicated logic registers : 451 / 8,256 ( 5 % )
+Total registers : 451
 Total pins : 72 / 85 ( 85 % )
 Total virtual pins : 0
 Total memory bits : 0 / 165,888 ( 0 % )

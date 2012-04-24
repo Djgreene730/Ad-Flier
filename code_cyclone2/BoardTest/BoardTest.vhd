@@ -162,6 +162,7 @@ architecture STR of BoardTest is
 	component pid_pitch_controller is 
 		port (
 			clk : in std_logic;
+			reset : in std_logic;
 			set_point, measured_point : in std_logic_vector(7 downto 0);
 			pwm_input : out std_logic_vector(8 downto 0)
 		   );
@@ -170,6 +171,7 @@ architecture STR of BoardTest is
 	component pid_roll_controller is 
 		port (
 			clk : in std_logic;
+			reset : in std_logic;
 			set_point, measured_point : in std_logic_vector(7 downto 0);
 			pwm_input : out std_logic_vector(8 downto 0)
 		   );
@@ -178,6 +180,7 @@ architecture STR of BoardTest is
 	component pid_altitude_controller is 
 		port (
 			clk : in std_logic;
+			reset :in std_logic;
 			set_point, measured_point : in std_logic_vector(7 downto 0);
 			pwm_input : out std_logic_vector(8 downto 0)
 		   );
@@ -221,9 +224,9 @@ begin
 	
 	--PID Instations
 	U_Yaw                   : pid_yaw_controller port map (clk, RegZD, RegZM, pwm_yaw);
-	U_Pitch                 : pid_pitch_controller port map (clk, RegYD, RegYM, pwm_pitch);
-	U_Roll                  : pid_roll_controller port map (clk, RegXD, RegXM, pwm_roll);
-	U_Altitude              : pid_altitude_controller port map (clk, RegAD, RegAMA, pwm_altitude);
+	U_Pitch                 : pid_pitch_controller port map (clk, Switch_1(0), RegYD, RegYM, pwm_pitch);
+	U_Roll                  : pid_roll_controller port map (clk, Switch_1(0), RegXD, RegXM, pwm_roll);
+	U_Altitude              : pid_altitude_controller port map (clk, Switch_1(0), RegAD, RegAMA, pwm_altitude);
 
 	
 	-- Setup: Bi-Directional Ports to High Impedance
@@ -245,7 +248,7 @@ begin
 	PIC_SPI_MISO		   <= '0';
 	
 
-	process(pwm_pitch, pwm_roll, pwm_altitude, pwm_a, RegTR) --Adding Components of PID for PWM
+	process(pwm_pitch, pwm_roll, pwm_altitude, pwm_a, RegTR)    --Adding Components of PID for PWM
 	begin
 	
 		pwm_n <= "000000000";
@@ -254,72 +257,44 @@ begin
 		pwm_w <= "000000000";
 		pwm_a <= "000000000";
 		
-		if RegTR < "00110010" then --Top Object Avoidance
+		if RegTR < "00110010" then                               --Top Object Avoidance
 			pwm_a <= pwm_altitude - "000011010"; --10% Reduction
 		elsif RegTR > "00110010" or RegTR = "00110010" then
 			pwm_a <= pwm_altitude;
 		end if;
-		
+
 		if pwm_pitch(8) = '0' then
-			pwm_n <= pwm_a + ('0' & pwm_pitch(7 downto 0)); --North Motor Component
-			if pwm_altitude > pwm_pitch then
-				pwm_s <= pwm_a - ('0' & pwm_pitch(7 downto 0)); --South Motor Component
-			else
-				pwm_s <= '0' & pwm_pitch(7 downto 0);
+			if pwm_a > pwm_pitch then
+				pwm_n <= pwm_a + pwm_pitch(7 downto 0);
+			else 
+				pwm_n <= "000000000";
 			end if;
-		elsif pwm_pitch(8) = '0' then
-			pwm_s <= pwm_a + ('0' & pwm_pitch(7 downto 0)); --South Motor Component
-			if pwm_altitude > pwm_pitch then
-				pwm_n <= pwm_a - ('0' & pwm_pitch(7 downto 0)); --North Motor Component
+			pwm_s <= pwm_a - pwm_pitch(7 downto 0);
+		else
+			pwm_n <= pwm_a - pwm_pitch(7 downto 0);
+			if pwm_a > pwm_pitch then
+				pwm_s <= pwm_a + pwm_pitch(7 downto 0);
 			else
-				pwm_n <= '0' & pwm_pitch(7 downto 0);
+				pwm_s <= "000000000";
 			end if;
 		end if;
 		
 		if pwm_roll(8) = '0' then
-			pwm_e <= pwm_a + ('0' & pwm_roll(7 downto 0)); --East Motor Component
-			if pwm_altitude > pwm_roll then
-				pwm_w <= pwm_a - ('0' & pwm_roll(7 downto 0)); --West Motor Component
-			else
-				pwm_w <= '0' & pwm_roll(7 downto 0);
+			if pwm_a > pwm_pitch then
+				pwm_e <= pwm_a + pwm_pitch(7 downto 0);
+			else 
+				pwm_e <= "000000000";
 			end if;
-		elsif pwm_roll(8) = '0' then
-			pwm_e <= pwm_a + ('0' & pwm_roll(7 downto 0)); --West Motor Component
-			if pwm_altitude > pwm_roll then
-				pwm_e <= pwm_a - ('0' & pwm_roll(7 downto 0)); --East Motor Component
+			pwm_w <= pwm_a - pwm_pitch(7 downto 0);
+		else
+			pwm_e <= pwm_a - pwm_pitch(7 downto 0);
+			if pwm_a > pwm_pitch then
+				pwm_w <= pwm_a + pwm_pitch(7 downto 0);
 			else
-				pwm_e <= '0' & pwm_roll(7 downto 0);
+				pwm_w <= "000000000";
 			end if;
 		end if;
-		
 	end process;
---	
---	process(pwm_n, pwm_s, pwm_e, pwm_w)
---	begin
---		if pwm_n(8) = '1' then
---			pwm1 <= "11111111";
---		else
---			pwm1 <= pwm_n(7 downto 0);
---		end if;
---
---		if pwm_e(8) = '1' then
---			pwm2 <= "11111111";
---		else
---			pwm2 <= pwm_e(7 downto 0);
---		end if;
---		
---		if pwm_s(8) = '1' then
---			pwm3 <= "11111111";
---		else
---			pwm3 <= pwm_s(7 downto 0);
---		end if;
---		
---		if pwm_w(8) = '1' then
---			pwm4 <= "11111111";
---		else
---			pwm4 <= pwm_w(7 downto 0);
---		end if;
---	end process;
 		
 	-- Test 1:
 	-- A.) Set TLED_Orange_1 on reset	
@@ -362,9 +337,47 @@ begin
 	
 	--Test 3:
 	--A.) Run Motors
-		pwm1 <= (Top_Range + "00010110")  when Switch_1(0) = '1' else (others => '0');
-      pwm2 <= (Top_Range + "00011110")  when Switch_1(1) = '1' else (others => '0');
-		pwm3 <= (Top_Range + "00011100")  when Switch_1(2) = '1' else (others => '0');
-		pwm4 <= (Top_Range + "00011100")  when Switch_1(3) = '1' else (others => '0');
+	process(pwm_n, pwm_e, pwm_s, pwm_w, Switch_1)
+	begin
+	if Switch_1(3) = '0' then
+		pwm1 <= "00000000";
+	else
+		if pwm_n(8) = '1' then                       --North
+			pwm1 <= "11111111";
+		else
+			pwm1 <= (pwm_n(7 downto 0) + "00010111");
+		end if;
+	end if;
 		
+	if Switch_1(2) = '0' then
+		pwm2 <= "00000000";
+	else
+		if pwm_e(8) = '1' then                       --East
+			pwm2 <= "11111111";
+		else
+			pwm2 <= (pwm_e(7 downto 0) + "00010110");  
+		end if;
+	end if;
+	
+	if Switch_1(1) = '0' then
+		pwm3 <= "00000000";
+	else
+		if pwm_s(8) = '1' then                       --South
+			pwm3 <= "11111111";
+		else
+			pwm3 <= (pwm_s(7 downto 0) + "00010000"); 
+		end if;
+	end if;
+		
+	if Switch_1(0) = '0' then
+		pwm4 <= "00000000";
+	else
+		if pwm_w(8) = '1' then                       --West
+			pwm4 <= "11111111";
+		else
+			pwm4 <= (pwm_w(7 downto 0) + "00011000");
+		end if;
+	end if;
+	end process;
+	
 end STR; 
