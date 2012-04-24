@@ -1,12 +1,12 @@
-Analysis & Synthesis Status : Successful - Mon Apr 23 23:30:01 2012
+Analysis & Synthesis Status : Successful - Tue Apr 24 03:34:07 2012
 Quartus II Version : 11.0 Build 157 04/27/2011 SJ Web Edition
 Revision Name : BoardTest
 Top-level Entity Name : BoardTest
 Family : Cyclone II
-Total logic elements : 1,510
-    Total combinational functions : 1,338
-    Dedicated logic registers : 279
-Total registers : 279
+Total logic elements : 4,063
+    Total combinational functions : 3,837
+    Dedicated logic registers : 451
+Total registers : 451
 Total pins : 72
 Total virtual pins : 0
 Total memory bits : 0
