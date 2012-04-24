@@ -34,8 +34,14 @@
 #pragma config ICESEL = ICS_PGx1    // ICE/ICD Comm Channel Select
 #pragma config DEBUG = ON          // Debugger Disabled for Starter Kit
 
+#define degrees_per_radian  (180 / M_PI)
+
 // Keep Track of Output Number
 int outputs = 0;
+
+// Create Temporary Variables
+UINT8   buf[1024];
+float   magGain[8] = {0.73, 0.92, 1.22, 1.52, 2.27, 2.56, 3.03, 4.35};
 
 // Main Application
 int main(int argc, char** argv) {
@@ -150,11 +156,29 @@ int main(int argc, char** argv) {
             RtccSetTimeDate(currentTime.UValue, 0);
         }
  */
-            // Create Temporary Variables
-            UINT8       buf[1024];
+            // Perform Magnetometer Calculations
+            float tempMX = (float) compassCurrent.Signed.X;
+            tempMX *= magGain[1] / 1000;
+
+            float tempMY = (float) compassCurrent.Signed.Y;
+            tempMY *= magGain[1] / 1000;
+
+            float tempMZ = (float) compassCurrent.Signed.Z;
+            tempMZ *= magGain[1] / 1000;
+
+            // Create Unit Vectors
+            float totalM = sqrtf(powf(tempMX,2) + powf(tempMY,2) + powf(tempMZ,2));
+            tempMX /= totalM;
+            tempMY /= totalM;
+            tempMZ /= totalM;
+
+            // Convert to Degrees
+            //tempMX = acosf(tempMX) * degrees_per_radian;
+            //tempMY = acosf(tempMY) * degrees_per_radian;
+            //tempMZ = acosf(tempMZ) * degrees_per_radian;
 
             // Match Current Angle with Calculated
-            sprintf(buf, "%04d X:%+07.2f Y:%+07.2f Z:%+07.2f %02dmS %02dC \r\n", outputs, angleCurrent.X.Value, angleCurrent.Y.Value, angleCurrent.Z.Value, angleCurrent.T, gyroCurrent.TU);
+            sprintf(buf, "%04d X(%+07.2f, %5.3f) Y(%+07.2f, %5.3f) Z(%+07.2f, %5.3f) %02dmS %02dC \r\n", outputs, angleCurrent.X.Value, tempMX, angleCurrent.Y.Value, tempMY, angleCurrent.Z.Value, tempMZ, angleCurrent.T, gyroCurrent.TU);
             outputs++;
 
             // Working, Shows Gyroscope Calculated Angles!

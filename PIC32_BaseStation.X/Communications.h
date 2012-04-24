@@ -166,10 +166,11 @@ typedef union {
         unsigned ZU:8;
     };
     struct {
-        unsigned X:16;
-        unsigned Y:16;
-        unsigned Z:16;
-    };
+        signed X:16;
+        signed Y:16;
+        signed Z:16;
+    } Signed;
+
 } MagnetometerReading;
 
 typedef union {

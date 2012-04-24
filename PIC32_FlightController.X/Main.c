@@ -15,6 +15,7 @@
 #include "Accelerometer.h"
 #include "Orientation.h"
 #include "Timers.h"
+#include "Magnetometer.h"
 
 // Configure the PIC's System Registers
 #pragma config FNOSC = PRIPLL       // Oscillator Selection
@@ -50,6 +51,7 @@ int main(int argc, char** argv) {
     setupGyroscope();
     while (!I2C_IS_Initialized) initializeI2C();
     setupAccelerometer();
+    setupMagnetometer();
 
     // Configure XBee
     xbee_baud.size = 1;     strcpy(xbee_baud.data, "6");

@@ -7,6 +7,7 @@
 #include "Communications.h"
 #include "Gyroscope.h"
 #include "Accelerometer.h"
+#include "Magnetometer.h"
 #include <math.h>
 #include <float.h>
 
@@ -26,6 +27,7 @@ int totalTime = 10;
 float angleAccelX, angleAccelY;
 float tempGX, tempGY, tempGZ;
 float tempAX, tempAY, tempAZ;
+float tempMX, tempMY, tempMZ;
 
 void initializeSensorVariables() {
     // Ellapsed Time in Milliseconds
@@ -39,6 +41,9 @@ void initializeSensorVariables() {
     tempGX = 0;
     tempGY = 0;
     tempGZ = 0;
+    tempMX = 0;
+    tempMY = 0;
+    tempMZ = 0;
 
     // Accelerometer Direct Angles
     angleAccelX = 0;
@@ -120,6 +125,7 @@ int updateSensors() {
     // Grab Latest Readings
     updateGyroscopeReadings();
     updateAccelerometerReadings();
+    updateMagnetometerReadings();
 
     // Perform Gyroscope Calculations
     tempGX = (float) gyroCurrent.Signed.X;
@@ -144,7 +150,17 @@ int updateSensors() {
     // Convert Accelerometer G's to Angles
     angleAccelX = degrees_per_radian * atanf(tempAX / sqrtf(powf(tempAY, 2) + powf(tempAZ, 2)));
     angleAccelY = degrees_per_radian * atanf(tempAY / sqrtf(powf(tempAX, 2) + powf(tempAZ, 2)));
-    
+
+    // Perform Magnetometer Calculations
+    tempMX = (float) magCurrent.Signed.X;
+    tempMX *= magGain[magScale];
+
+    tempMY = (float) magCurrent.Signed.Y;
+    tempMY *= magGain[magScale];
+
+    tempMZ = (float) magCurrent.Signed.Z;
+    tempMZ *= magGain[magScale];
+
     // Initialize Angles
     if (!firstRun) {
         lastAngle.X.Value = angleAccelX;
@@ -189,6 +205,15 @@ int updateSensors() {
         buf[13] = accelCurrent.ZU;
         buf[14] = accelCurrent.ZL;
 
+        // Format Accelerometer Data
+        buf[8] = 'M';
+        buf[9] =  magCurrent.Bytes.XU;
+        buf[10] = magCurrent.Bytes.XL;
+        buf[11] = magCurrent.Bytes.YU;
+        buf[12] = magCurrent.Bytes.YL;
+        buf[13] = magCurrent.Bytes.ZU;
+        buf[14] = magCurrent.Bytes.ZL;
+
         // Format Current Angle Data
         buf[15] =  'C';
         buf[16] =  currentAngle.X.bytes.B3;
@@ -215,23 +240,30 @@ int updateSensors() {
         sendFPGAData(0x00, 0x7F);
 
         //X Angle Measured  $01
-        sendFPGAData(0x01, (UINT8)currentAngle.X.UValue + 0x80);
+        sendFPGAData(0x01, ((UINT8)currentAngle.X.Value) + 0x7F);
 
         //Y Angle Desired  $02
         sendFPGAData(0x02, 0x7F);
 
         //Y Angle Measured  $03
-        sendFPGAData(0x03, (UINT8)currentAngle.Y.UValue + 0x80);
+        sendFPGAData(0x03, ((UINT8)currentAngle.Y.Value) + 0x7F);
 
         //Z Angle Desired  $04
         sendFPGAData(0x04, 0x7F);
 
         //Z Angle Measured  $05
-        sendFPGAData(0x05, (UINT8)currentAngle.Y.UValue + 0x80);
+        sendFPGAData(0x05, ((UINT8)currentAngle.Z.Value) + 0x7F);
 
         //Altitude Desired $06 (0 cm)  // For Testing
         sendFPGAData(0x06, 0x00);
     }
+
+    /*
+    UINT8 temp11 = 0, temp12 = 0, temp13 = 0;
+    temp11 = (((UINT8)currentAngle.X.Value) + 0x7F);
+    temp12 = (((UINT8)currentAngle.Y.Value) + 0x7F);
+    temp13 = (((UINT8)currentAngle.Z.Value) + 0x7F);
+    */
 
     // Store Previous Values
     lastAngle.X.UValue = currentAngle.X.UValue;
