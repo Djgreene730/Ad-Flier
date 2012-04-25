@@ -125,7 +125,9 @@ architecture STR of BoardTest is
          r_w : in std_logic;
 			ok_in : in std_logic;
 			ok_out : out std_logic;
+			P1, P2, P3, P4, EX, EY, EZ, EA, AM : in std_logic_vector(7 downto 0);
 			reg0c, reg1c, reg2c, reg3c, reg4c, reg5c, reg6c, reg7c : out std_logic_vector(7 downto 0);
+			reg8c, reg9c, regAc, regBc, regCc, regDc, regEc, regFc, reg10c : out std_logic_vector(7 downto 0);
 			fetch_state : in std_logic
 			);
    end component;
@@ -152,9 +154,11 @@ architecture STR of BoardTest is
 	end component;
 	
 	component pid_yaw_controller is 
-		port (
+	port (
 			clk : in std_logic;
+			reset : in std_logic;
 			set_point, measured_point : in std_logic_vector(7 downto 0);
+			E : out std_logic_vector(7 downto 0);
 			pwm_input : out std_logic_vector(8 downto 0)
 		   );
 	end component;
@@ -164,6 +168,7 @@ architecture STR of BoardTest is
 			clk : in std_logic;
 			reset : in std_logic;
 			set_point, measured_point : in std_logic_vector(7 downto 0);
+			E : out std_logic_vector(7 downto 0);
 			pwm_input : out std_logic_vector(8 downto 0)
 		   );
 	end component;
@@ -173,6 +178,7 @@ architecture STR of BoardTest is
 			clk : in std_logic;
 			reset : in std_logic;
 			set_point, measured_point : in std_logic_vector(7 downto 0);
+			E : out std_logic_vector(7 downto 0);
 			pwm_input : out std_logic_vector(8 downto 0)
 		   );
 	end component;
@@ -180,8 +186,9 @@ architecture STR of BoardTest is
 	component pid_altitude_controller is 
 		port (
 			clk : in std_logic;
-			reset :in std_logic;
+			reset : in std_logic;
 			set_point, measured_point : in std_logic_vector(7 downto 0);
+			E : out std_logic_vector(7 downto 0);
 			pwm_input : out std_logic_vector(8 downto 0)
 		   );
 	end component;
@@ -191,8 +198,10 @@ architecture STR of BoardTest is
 	signal pwm1, pwm2, pwm3, pwm4, count, countpwm : std_logic_vector(7 downto 0) := "00000000";
 	signal RegXD, RegYD, RegZD, RegXM, RegYM, RegZM, RegAD, RegMisc : std_logic_vector(7 downto 0) := "00000000";
 	signal RegAM, RegAMc, RegTR, RegTRc, RegAMA : std_logic_vector(7 downto 0) := "00000000";
+	signal EX, EY, EZ, EA : std_logic_vector(7 downto 0) := "00000000";
 	signal pwm_yaw, pwm_pitch, pwm_roll, pwm_altitude, pwm_a : std_logic_vector(8 downto 0) := "000000000";
 	signal pwm_n, pwm_s, pwm_e, pwm_w : std_logic_vector(8 downto 0) := "000000000";
+	signal reg8c, reg9c, regAc, regBc, regCc, regDc, regEc, regFc, reg10c : std_logic_vector(7 downto 0) := "00000000";
 
 	-- Temp Register for Ultrasonics
 	signal Top_Range, Altitude : std_logic_vector(7 downto 0) := (others => '0');
@@ -217,16 +226,19 @@ begin
 	
 	--Register Instantations
 	U_Registers             :  regmap    port map (clk, Switch_2, PIC_PBUS_Data, PIC_PBUS_A_D, PIC_PBUS_R_W,
-															  PIC_PBUS_OK_IN, PIC_PBUS_OK_OUT, 
-															  RegXD, RegYD, RegZD, RegXM, RegYM, RegZM, RegAD, RegMisc, PIC_SPI_Select);
+															  PIC_PBUS_OK_IN, PIC_PBUS_OK_OUT,
+															  pwm1, pwm2, pwm3, pwm4, EX, EY, EZ, EA, RegAMA,
+															  RegXD, RegYD, RegZD, RegXM, RegYM, RegZM, RegAD, RegMisc, 
+															  reg8c, reg9c, regAc, regBc, regCc, regDc, regEc, regFc, reg10c,
+															  PIC_SPI_Select);
 	U_RegAM                 : quadreg port map(clk, Altitude, Switch_2, '1', '1', RegAM, RegAMc);
 	U_RegTR                 : quadreg port map(clk, Top_Range, Switch_2, '1', '1', RegTR, RegTRc);
 	
 	--PID Instations
-	U_Yaw                   : pid_yaw_controller port map (clk, RegZD, RegZM, pwm_yaw);
-	U_Pitch                 : pid_pitch_controller port map (clk, Switch_1(0), RegYD, RegYM, pwm_pitch);
-	U_Roll                  : pid_roll_controller port map (clk, Switch_1(0), RegXD, RegXM, pwm_roll);
-	U_Altitude              : pid_altitude_controller port map (clk, Switch_1(0), RegAD, RegAMA, pwm_altitude);
+	U_Yaw                   : pid_yaw_controller port map (clk,Switch_1(0), RegZD, RegZM, EZ, pwm_yaw);
+	U_Pitch                 : pid_pitch_controller port map (clk, Switch_1(0), RegYD, RegYM, EY, pwm_pitch);
+	U_Roll                  : pid_roll_controller port map (clk, Switch_1(0), RegXD, RegXM, EX, pwm_roll);
+	U_Altitude              : pid_altitude_controller port map (clk, Switch_1(0), RegAD, RegAMA,EA,  pwm_altitude);
 
 	
 	-- Setup: Bi-Directional Ports to High Impedance
@@ -345,7 +357,7 @@ begin
 		if pwm_n(8) = '1' then                       --North
 			pwm1 <= "11111111";
 		else
-			pwm1 <= (pwm_n(7 downto 0) + "00010111");
+			pwm1 <= (pwm_n(7 downto 0)) + "00010111";
 		end if;
 	end if;
 		
@@ -355,7 +367,7 @@ begin
 		if pwm_e(8) = '1' then                       --East
 			pwm2 <= "11111111";
 		else
-			pwm2 <= (pwm_e(7 downto 0) + "00010110");  
+			pwm2 <= (pwm_e(7 downto 0))+ "00010110";  
 		end if;
 	end if;
 	
@@ -365,7 +377,7 @@ begin
 		if pwm_s(8) = '1' then                       --South
 			pwm3 <= "11111111";
 		else
-			pwm3 <= (pwm_s(7 downto 0) + "00010000"); 
+			pwm3 <= (pwm_s(7 downto 0)) + "00101000"; 
 		end if;
 	end if;
 		
@@ -375,9 +387,25 @@ begin
 		if pwm_w(8) = '1' then                       --West
 			pwm4 <= "11111111";
 		else
-			pwm4 <= (pwm_w(7 downto 0) + "00011000");
+			pwm4 <= (pwm_w(7 downto 0)) + "01111000";
 		end if;
 	end if;
 	end process;
-	
+
+--process(Switch_1(0))
+--begin
+--
+--if Switch_1(0) = '1' then
+--	pwm1 <= "00110111";
+--	pwm2 <= "00110110";
+--	pwm3 <= "00110000";
+--	pwm4 <= "00111001";	
+--else
+--	pwm1 <= "00000000";
+--	pwm2 <= "00000000";
+--	pwm3 <= "00000000";
+--	pwm4 <= "00000000";
+--end if;
+--end process;
+
 end STR; 

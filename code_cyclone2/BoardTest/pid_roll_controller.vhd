@@ -13,11 +13,13 @@ entity pid_roll_controller is
 			clk : in std_logic;
 			reset : in std_logic;
 			set_point, measured_point : in std_logic_vector(7 downto 0);
+			E : out std_logic_vector(7 downto 0);
 			pwm_input : out std_logic_vector(8 downto 0)
 		   );
 end pid_roll_controller;
 
 architecture behavior of pid_roll_controller is 
+
 
 signal pwm : std_logic_vector(8 downto 0) := "000000000";
 signal Iset_point, Imeasured_point : integer range 0 to 255;
@@ -75,15 +77,24 @@ begin
 	v <= u_old + P + I + D;                                     --Calculating PID Output
 	
 	if v > 255 then                                             -- +V Exceeds 8 Bits
-		u <= 255/30;                                                  -- U Set to Max 255
+		u <= 255/15;                                                  -- U Set to Max 255
 	elsif v < -255 then                                         -- -V Exceeds 8 bits
-		u <= -255/30;                                                 -- U Set to Min -255
+		u <= -255/15;                                                 -- U Set to Min -255
 	else                                                        -- V Withing Range
-		u <= v/30;                                                    -- U Set to V
+		u <= v/15;                                                    -- U Set to V
 	end if;
    end if;
 end process;
 
 	pwm_input <= pwm;                                           -- Setting Output to Variable
+	
+	process(error)
+	begin
+	if error < 0 then
+		E <= '1' & std_logic_vector(to_unsigned(-error, 7));
+	else
+		E <= '0' & std_logic_vector(to_unsigned(error, 7));
+	end if;
+	end process;
 
 end behavior;

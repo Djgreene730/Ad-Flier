@@ -20,6 +20,7 @@ entity reg_controller is
 			add_rego_en, add_reg_en : out std_logic;
 			regi00, regi01, regi02, regi03, regi04, regi05, regi06, regi07 : out std_logic;
 			rego00, rego01, rego02, rego03, rego04, rego05, rego06, rego07 : out std_logic;
+			rego08, rego09, rego0A, rego0B, rego0C, rego0D, rego0E, rego0F, rego10 : out std_logic;
 			tbo, outsel : out std_logic
 			);
 end reg_controller;
@@ -60,6 +61,15 @@ begin
 	rego06 <= '0';
 	regi07 <= '0';
 	rego07 <= '0';
+	rego08 <= '0';
+	rego09 <= '0';
+	rego0A <= '0';
+	rego0B <= '0';
+	rego0C <= '0';
+	rego0D <= '0';
+	rego0E <= '0';
+	rego0F <= '0';
+	rego10 <= '0';
 	add_rego_en <= '0';
 	add_reg_en <= '0';
 	ok_out <= '0';
@@ -126,6 +136,24 @@ begin
 				rego06 <= '1';
 			elsif address = "00000111" then
 				rego07 <= '1';
+			elsif address = "00001000" then
+				rego08 <= '1';
+			elsif address = "00001001" then
+				rego09 <= '1';
+			elsif address = "00001010" then
+				rego0A <= '1';
+			elsif address = "00001011" then
+				rego0B <= '1';
+			elsif address = "00001100" then
+				rego0C <= '1';
+			elsif address = "00001101" then
+				rego0D <= '1';
+			elsif address = "00001110" then
+				rego0E <= '1';
+			elsif address = "00001111" then
+				rego0F <= '1';
+			elsif address = "00010000" then
+				rego10 <= '1';
 			end if;
 			tbo <= '1';
 			outsel <= '1';

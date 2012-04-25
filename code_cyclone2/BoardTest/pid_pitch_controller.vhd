@@ -13,6 +13,7 @@ entity pid_pitch_controller is
 			clk : in std_logic;
 			reset : in std_logic;
 			set_point, measured_point : in std_logic_vector(7 downto 0);
+			E : out std_logic_vector(7 downto 0);
 			pwm_input : out std_logic_vector(8 downto 0)
 		   );
 end pid_pitch_controller;
@@ -86,5 +87,14 @@ begin
 end process;
 
 	pwm_input <= pwm;                                           -- Setting Output to Variable
+	
+	process(error)
+	begin
+	if error < 0 then
+		E <= '1' & std_logic_vector(to_unsigned(-error, 7));
+	else
+		E <= '0' & std_logic_vector(to_unsigned(error, 7));
+	end if;
+	end process;
 
 end behavior;
