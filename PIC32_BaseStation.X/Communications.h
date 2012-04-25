@@ -285,6 +285,12 @@ extern AngleReading         angleCurrent;
 extern rtccTime             timeFCBCurrent;
 extern GPSReading           gpsBaseCurrent;
 
+// FPGA Internal Data
+extern UINT8               pwmReading[4];
+extern INT8                errorReading[4];
+extern UINT8               altitudeReading[2];
+
+
 // Initialization Commands
 extern void initializeUART(void);
 

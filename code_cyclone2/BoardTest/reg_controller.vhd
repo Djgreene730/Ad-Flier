@@ -27,7 +27,7 @@ end reg_controller;
 
 architecture behavior of reg_controller is
 
-type statetype is (fetch, ra1, ra2, rd1, rd2, wa1, wa2, wd1, wd2);
+type statetype is (fetch, ra1, ra2, rd1, rd2, rd3, rd4, wa1, wa2, wd1, wd2);
 
 signal state, nextstate : statetype := fetch;
 
@@ -108,18 +108,19 @@ begin
 		
 		-- Grab the Address
 		when rd1 => 									-- Entered Read Data Command
-			ok_out <= '1';
-		
 			if ok_in = '0' then
-				ok_out <= '0';
 				nextstate <= rd2;
 			else 
 				ok_out <= '1';
 				nextstate <= rd1;
 			end if;
 			
+		when rd2 => 
+			ok_out <= '0';
+			nextstate <= rd3;
+			
 		-- Set the Output
-		when rd2 => 									-- Grab Address and Place on Bus
+		when rd3 => 									-- Grab Address and Place on Bus
 			if address = "00000000" then
 				rego00 <= '1';
 			elsif address = "00000001" then
@@ -157,14 +158,22 @@ begin
 			end if;
 			tbo <= '1';
 			outsel <= '1';
+			
 			--add_rego_en <= '1';
 			ok_out <= '1';
 			if ok_in = '1' then
-				tbo <= '0';
-				ok_out <= '0';
-				nextstate <= fetch;
+				nextstate <= rd3;
 			else
 				nextstate <= rd2;
+			end if;
+		
+		when rd4 =>
+			tbo <= '0';
+			ok_out <= '0';
+			if (ok_in = '1') then
+				nextstate <= rd3;
+			else
+				nextstate <= fetch;
 			end if;
 				
 				

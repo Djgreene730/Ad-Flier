@@ -19,6 +19,9 @@
 #define ReadSize_GPS            1
 #define ReadSize_Angles         14
 #define ReadSize_Time           5
+#define ReadSize_PWM            5
+#define ReadSize_Error          5
+#define ReadSize_Altitude       3
 
 // Last SPI Device Used
 SPI1_Devices        LastSPI1Initialize = None;
@@ -38,6 +41,9 @@ Sentence             voltageTempBuf = {0, 0};
 Sentence             angleTempBuf = {0, 0};
 Sentence             gpsFCBTempBuf = {0, 0};
 Sentence             timeTempBuf = {0, 0};
+Sentence             pwmTempBuf = {0, 0};
+Sentence             errorTempBuf = {0, 0};
+Sentence             altitudeTempBuf = {0, 0};
 
 GyroscopeReading     gyroCurrent;
 AccelerometerReading accelCurrent;
@@ -48,6 +54,10 @@ VoltageReading       voltageCurrent;
 AngleReading         angleCurrent;
 rtccTime             timeFCBCurrent;
 GPSReading           gpsBaseCurrent;
+
+UINT8               pwmReading[4];
+INT8                errorReading[4];
+UINT8               altitudeReading[2];
 
 
 // XBee Configuration Global Variables
@@ -462,6 +472,22 @@ void read_XBee_Sentence() {
                     // Flight Control Board Time Reading
                     timeTempBuf.size = 0;
                     currentReadState = 'T';
+                    break;
+                case 'Q':
+                    // Flight Control Board Time Reading
+                    pwmTempBuf.size = 0;
+                    currentReadState = 'Q';
+                    break;
+                case 'E':
+                    // Flight Control Board Time Reading
+                    errorTempBuf.size = 0;
+                    currentReadState = 'E';
+                    break;
+                case 'L':
+                    // Flight Control Board Time Reading
+                    altitudeTempBuf.size = 0;
+                    currentReadState = 'L';
+                    break;
                 default:
                     // Error
                     currentReadState = 0;
@@ -654,7 +680,56 @@ void read_XBee_Sentence() {
                     // Mark Register as Ready
                     currentReadState = 0;
                 }
+                break;
+            case 'Q':
+                // PWM Output Reading
+                pwmTempBuf.data[pwmTempBuf.size] = character;
+                pwmTempBuf.size ++;
 
+                // Is Reading Full?
+                if (pwmTempBuf.size >= ReadSize_PWM) {
+                    // Copy Time Byte's
+                    pwmReading[0] = pwmTempBuf.data[1];
+                    pwmReading[1] = pwmTempBuf.data[2];
+                    pwmReading[2] = pwmTempBuf.data[3];
+                    pwmReading[3] = pwmTempBuf.data[4];
+
+                    // Mark Register as Ready
+                    currentReadState = 0;
+                }
+                break;
+            case 'E':
+                // Calculated Error Reading
+                errorTempBuf.data[errorTempBuf.size] = character;
+                errorTempBuf.size ++;
+
+                // Is Reading Full?
+                if (errorTempBuf.size >= ReadSize_Error) {
+                    // Copy Time Byte's
+                    errorReading[0] = (unsigned)errorTempBuf.data[1];
+                    errorReading[1] = (unsigned)errorTempBuf.data[2];
+                    errorReading[2] = (unsigned)errorTempBuf.data[3];
+                    errorReading[3] = (unsigned)errorTempBuf.data[4];
+
+                    // Mark Register as Ready
+                    currentReadState = 0;
+                }
+                break;
+            case 'L':
+                // Altitude Reading
+                altitudeTempBuf.data[altitudeTempBuf.size] = character;
+                altitudeTempBuf.size ++;
+
+                // Is Reading Full?
+                if (altitudeTempBuf.size >= ReadSize_Altitude) {
+                    // Copy Time Byte's
+                    altitudeReading[0] = altitudeTempBuf.data[1];
+                    altitudeReading[1] = altitudeTempBuf.data[2];
+
+                    // Mark Register as Ready
+                    currentReadState = 0;
+                }
+                break;
             case 'C':
                 // Current Angles Reading
                 angleTempBuf.data[angleTempBuf.size] = character;

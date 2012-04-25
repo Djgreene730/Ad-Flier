@@ -393,8 +393,9 @@ UINT8 getFPGAData(UINT8 address) {
     TRISE = 0x00;
     PORTE = 0x00;
 
-    // Send FPGA to Fetch State
+    // Send FPGA to Fetch State, and wait for Low Flag
     FPGA_RESET_FETCH_STATE();
+    while (PORTFbits.RF0 == 1) ;
 
     // Send Out Address
     setFPGAParallelPins(address);
@@ -410,9 +411,6 @@ UINT8 getFPGAData(UINT8 address) {
 
     // Send FPGA to Fetch State
     FPGA_RESET_FETCH_STATE();
-
-
-    // Wait for FPGA to Ackowledge Low, back to Fetch State
     while (PORTFbits.RF0 == 1) ;
 
     // Set Port Direction as Output & Hold Low

@@ -1,6 +1,6 @@
 Fitter report for BoardTest
-Wed Apr 25 17:53:55 2012
-Quartus II Version 11.0 Build 157 04/27/2011 SJ Web Edition
+Wed Apr 25 18:26:59 2012
+Quartus II 32-bit Version 11.1 Build 216 11/23/2011 Service Pack 1 SJ Web Edition
 
 
 ---------------------
@@ -60,26 +60,26 @@ applicable agreement for further details.
 
 
 
-+-------------------------------------------------------------------------------+
-; Fitter Summary                                                                ;
-+------------------------------------+------------------------------------------+
-; Fitter Status                      ; Successful - Wed Apr 25 17:53:54 2012    ;
-; Quartus II Version                 ; 11.0 Build 157 04/27/2011 SJ Web Edition ;
-; Revision Name                      ; BoardTest                                ;
-; Top-level Entity Name              ; BoardTest                                ;
-; Family                             ; Cyclone II                               ;
-; Device                             ; EP2C8T144C8                              ;
-; Timing Models                      ; Final                                    ;
-; Total logic elements               ; 4,007 / 8,256 ( 49 % )                   ;
-;     Total combinational functions  ; 3,925 / 8,256 ( 48 % )                   ;
-;     Dedicated logic registers      ; 533 / 8,256 ( 6 % )                      ;
-; Total registers                    ; 533                                      ;
-; Total pins                         ; 72 / 85 ( 85 % )                         ;
-; Total virtual pins                 ; 0                                        ;
-; Total memory bits                  ; 0 / 165,888 ( 0 % )                      ;
-; Embedded Multiplier 9-bit elements ; 0 / 36 ( 0 % )                           ;
-; Total PLLs                         ; 0 / 2 ( 0 % )                            ;
-+------------------------------------+------------------------------------------+
++------------------------------------------------------------------------------------+
+; Fitter Summary                                                                     ;
++------------------------------------+-----------------------------------------------+
+; Fitter Status                      ; Successful - Wed Apr 25 18:26:59 2012         ;
+; Quartus II 32-bit Version          ; 11.1 Build 216 11/23/2011 SP 1 SJ Web Edition ;
+; Revision Name                      ; BoardTest                                     ;
+; Top-level Entity Name              ; BoardTest                                     ;
+; Family                             ; Cyclone II                                    ;
+; Device                             ; EP2C8T144C8                                   ;
+; Timing Models                      ; Final                                         ;
+; Total logic elements               ; 4,008 / 8,256 ( 49 % )                        ;
+;     Total combinational functions  ; 3,926 / 8,256 ( 48 % )                        ;
+;     Dedicated logic registers      ; 534 / 8,256 ( 6 % )                           ;
+; Total registers                    ; 534                                           ;
+; Total pins                         ; 72 / 85 ( 85 % )                              ;
+; Total virtual pins                 ; 0                                             ;
+; Total memory bits                  ; 0 / 165,888 ( 0 % )                           ;
+; Embedded Multiplier 9-bit elements ; 0 / 36 ( 0 % )                                ;
+; Total PLLs                         ; 0 / 2 ( 0 % )                                 ;
++------------------------------------+-----------------------------------------------+
 
 
 +----------------------------------------------------------------------------------------------------------------------------------------------+
@@ -95,7 +95,6 @@ applicable agreement for further details.
 ; Use smart compilation                                                      ; Off                            ; Off                            ;
 ; Enable parallel Assembler and TimeQuest Timing Analyzer during compilation ; On                             ; On                             ;
 ; Enable compact report table                                                ; Off                            ; Off                            ;
-; Use TimeQuest Timing Analyzer                                              ; Off                            ; Off                            ;
 ; Auto Merge PLLs                                                            ; On                             ; On                             ;
 ; Ignore PLL Mode When Merging PLLs                                          ; Off                            ; Off                            ;
 ; Router Timing Optimization Level                                           ; Normal                         ; Normal                         ;
@@ -150,8 +149,8 @@ Parallel compilation was disabled, but you have multiple processors available. E
 ; Type                ; Value                  ;
 +---------------------+------------------------+
 ; Placement (by node) ;                        ;
-;     -- Requested    ; 0 / 4539 ( 0.00 % )    ;
-;     -- Achieved     ; 0 / 4539 ( 0.00 % )    ;
+;     -- Requested    ; 0 / 4541 ( 0.00 % )    ;
+;     -- Achieved     ; 0 / 4541 ( 0.00 % )    ;
 ;                     ;                        ;
 ; Routing (by net)    ;                        ;
 ;     -- Requested    ; 0 / 0 ( 0.00 % )       ;
@@ -174,7 +173,7 @@ Parallel compilation was disabled, but you have multiple processors available. E
 +--------------------------------+---------+-------------------+-------------------------+-------------------+
 ; Partition Name                 ; # Nodes ; # Preserved Nodes ; Preservation Level Used ; Netlist Type Used ;
 +--------------------------------+---------+-------------------+-------------------------+-------------------+
-; Top                            ; 4536    ; 0                 ; N/A                     ; Source File       ;
+; Top                            ; 4538    ; 0                 ; N/A                     ; Source File       ;
 ; hard_block:auto_generated_inst ; 3       ; 0                 ; N/A                     ; Source File       ;
 +--------------------------------+---------+-------------------+-------------------------+-------------------+
 
@@ -182,7 +181,7 @@ Parallel compilation was disabled, but you have multiple processors available. E
 +--------------+
 ; Pin-Out File ;
 +--------------+
-The pin-out file can be found in C:/Users/Salvatore/Desktop/Ad-Flier/code_cyclone2/BoardTest/BoardTest.pin.
+The pin-out file can be found in C:/Users/David/GitHub Work/BoardTest/BoardTest.pin.
 
 
 +----------------------------------------------------------------------+
@@ -190,26 +189,26 @@ The pin-out file can be found in C:/Users/Salvatore/Desktop/Ad-Flier/code_cyclon
 +---------------------------------------------+------------------------+
 ; Resource                                    ; Usage                  ;
 +---------------------------------------------+------------------------+
-; Total logic elements                        ; 4,007 / 8,256 ( 49 % ) ;
+; Total logic elements                        ; 4,008 / 8,256 ( 49 % ) ;
 ;     -- Combinational with no register       ; 3474                   ;
 ;     -- Register only                        ; 82                     ;
-;     -- Combinational with a register        ; 451                    ;
+;     -- Combinational with a register        ; 452                    ;
 ;                                             ;                        ;
 ; Logic element usage by number of LUT inputs ;                        ;
-;     -- 4 input functions                    ; 807                    ;
-;     -- 3 input functions                    ; 1465                   ;
-;     -- <=2 input functions                  ; 1653                   ;
+;     -- 4 input functions                    ; 806                    ;
+;     -- 3 input functions                    ; 1468                   ;
+;     -- <=2 input functions                  ; 1652                   ;
 ;     -- Register only                        ; 82                     ;
 ;                                             ;                        ;
 ; Logic elements by mode                      ;                        ;
-;     -- normal mode                          ; 2198                   ;
+;     -- normal mode                          ; 2199                   ;
 ;     -- arithmetic mode                      ; 1727                   ;
 ;                                             ;                        ;
-; Total registers*                            ; 533 / 8,487 ( 6 % )    ;
-;     -- Dedicated logic registers            ; 533 / 8,256 ( 6 % )    ;
+; Total registers*                            ; 534 / 8,487 ( 6 % )    ;
+;     -- Dedicated logic registers            ; 534 / 8,256 ( 6 % )    ;
 ;     -- I/O registers                        ; 0 / 231 ( 0 % )        ;
 ;                                             ;                        ;
-; Total LABs:  partially or completely used   ; 307 / 516 ( 59 % )     ;
+; Total LABs:  partially or completely used   ; 311 / 516 ( 60 % )     ;
 ; User inserted logic elements                ; 0                      ;
 ; Virtual pins                                ; 0                      ;
 ; I/O pins                                    ; 72 / 85 ( 85 % )       ;
@@ -224,13 +223,13 @@ The pin-out file can be found in C:/Users/Salvatore/Desktop/Ad-Flier/code_cyclon
 ; JTAGs                                       ; 0 / 1 ( 0 % )          ;
 ; ASMI blocks                                 ; 0 / 1 ( 0 % )          ;
 ; CRC blocks                                  ; 0 / 1 ( 0 % )          ;
-; Average interconnect usage (total/H/V)      ; 16% / 16% / 16%        ;
-; Peak interconnect usage (total/H/V)         ; 29% / 29% / 30%        ;
+; Average interconnect usage (total/H/V)      ; 15% / 15% / 16%        ;
+; Peak interconnect usage (total/H/V)         ; 33% / 31% / 35%        ;
 ; Maximum fan-out node                        ; clk~clkctrl            ;
-; Maximum fan-out                             ; 531                    ;
+; Maximum fan-out                             ; 532                    ;
 ; Highest non-global fan-out signal           ; Switch_1[0]            ;
 ; Highest non-global fan-out                  ; 269                    ;
-; Total fan-out                               ; 12373                  ;
+; Total fan-out                               ; 12383                  ;
 ; Average fan-out                             ; 2.70                   ;
 +---------------------------------------------+------------------------+
 *  Register count does not include registers inside RAM blocks or DSP blocks.
@@ -244,26 +243,26 @@ The pin-out file can be found in C:/Users/Salvatore/Desktop/Ad-Flier/code_cyclon
 +---------------------------------------------+----------------------+--------------------------------+
 ; Difficulty Clustering Region                ; Low                  ; Low                            ;
 ;                                             ;                      ;                                ;
-; Total logic elements                        ; 4007 / 8256 ( 48 % ) ; 0 / 8256 ( 0 % )               ;
+; Total logic elements                        ; 4008 / 8256 ( 48 % ) ; 0 / 8256 ( 0 % )               ;
 ;     -- Combinational with no register       ; 3474                 ; 0                              ;
 ;     -- Register only                        ; 82                   ; 0                              ;
-;     -- Combinational with a register        ; 451                  ; 0                              ;
+;     -- Combinational with a register        ; 452                  ; 0                              ;
 ;                                             ;                      ;                                ;
 ; Logic element usage by number of LUT inputs ;                      ;                                ;
-;     -- 4 input functions                    ; 807                  ; 0                              ;
-;     -- 3 input functions                    ; 1465                 ; 0                              ;
-;     -- <=2 input functions                  ; 1653                 ; 0                              ;
+;     -- 4 input functions                    ; 806                  ; 0                              ;
+;     -- 3 input functions                    ; 1468                 ; 0                              ;
+;     -- <=2 input functions                  ; 1652                 ; 0                              ;
 ;     -- Register only                        ; 82                   ; 0                              ;
 ;                                             ;                      ;                                ;
 ; Logic elements by mode                      ;                      ;                                ;
-;     -- normal mode                          ; 2198                 ; 0                              ;
+;     -- normal mode                          ; 2199                 ; 0                              ;
 ;     -- arithmetic mode                      ; 1727                 ; 0                              ;
 ;                                             ;                      ;                                ;
-; Total registers                             ; 533                  ; 0                              ;
-;     -- Dedicated logic registers            ; 533 / 8256 ( 6 % )   ; 0 / 8256 ( 0 % )               ;
+; Total registers                             ; 534                  ; 0                              ;
+;     -- Dedicated logic registers            ; 534 / 8256 ( 6 % )   ; 0 / 8256 ( 0 % )               ;
 ;     -- I/O registers                        ; 0                    ; 0                              ;
 ;                                             ;                      ;                                ;
-; Total LABs:  partially or completely used   ; 307 / 516 ( 59 % )   ; 0 / 516 ( 0 % )                ;
+; Total LABs:  partially or completely used   ; 311 / 516 ( 60 % )   ; 0 / 516 ( 0 % )                ;
 ;                                             ;                      ;                                ;
 ; Virtual pins                                ; 0                    ; 0                              ;
 ; I/O pins                                    ; 72                   ; 0                              ;
@@ -280,8 +279,8 @@ The pin-out file can be found in C:/Users/Salvatore/Desktop/Ad-Flier/code_cyclon
 ;     -- Registered Output Connections        ; 0                    ; 0                              ;
 ;                                             ;                      ;                                ;
 ; Internal Connections                        ;                      ;                                ;
-;     -- Total Connections                    ; 12373                ; 0                              ;
-;     -- Registered Connections               ; 1248                 ; 0                              ;
+;     -- Total Connections                    ; 12383                ; 0                              ;
+;     -- Registered Connections               ; 1249                 ; 0                              ;
 ;                                             ;                      ;                                ;
 ; External Connections                        ;                      ;                                ;
 ;     -- Top                                  ; 0                    ; 0                              ;
@@ -330,7 +329,7 @@ The pin-out file can be found in C:/Users/Salvatore/Desktop/Ad-Flier/code_cyclon
 ; Gyro_DataReady   ; 47    ; 4        ; 3            ; 0            ; 0           ; 0                     ; 0                  ; no     ; no             ; no            ; no              ; no       ; Off          ; 3.3-V LVTTL  ; Off         ; User                 ;
 ; Gyro_Interrupt   ; 48    ; 4        ; 5            ; 0            ; 2           ; 0                     ; 0                  ; no     ; no             ; no            ; no              ; no       ; Off          ; 3.3-V LVTTL  ; Off         ; User                 ;
 ; PIC_PBUS_A_D     ; 122   ; 2        ; 25           ; 19           ; 0           ; 4                     ; 0                  ; no     ; no             ; no            ; no              ; no       ; Off          ; 3.3-V LVTTL  ; Off         ; User                 ;
-; PIC_PBUS_OK_IN   ; 129   ; 2        ; 14           ; 19           ; 1           ; 12                    ; 0                  ; no     ; no             ; no            ; no              ; no       ; Off          ; 3.3-V LVTTL  ; Off         ; User                 ;
+; PIC_PBUS_OK_IN   ; 129   ; 2        ; 14           ; 19           ; 1           ; 13                    ; 0                  ; no     ; no             ; no            ; no              ; no       ; Off          ; 3.3-V LVTTL  ; Off         ; User                 ;
 ; PIC_PBUS_R_W     ; 125   ; 2        ; 18           ; 19           ; 0           ; 3                     ; 0                  ; no     ; no             ; no            ; no              ; no       ; Off          ; 3.3-V LVTTL  ; Off         ; User                 ;
 ; PIC_SPI_MOSI     ; 133   ; 2        ; 9            ; 19           ; 1           ; 0                     ; 0                  ; no     ; no             ; no            ; no              ; no       ; Off          ; 3.3-V LVTTL  ; Off         ; User                 ;
 ; PIC_SPI_SCLK     ; 132   ; 2        ; 9            ; 19           ; 0           ; 0                     ; 0                  ; no     ; no             ; no            ; no              ; no       ; Off          ; 3.3-V LVTTL  ; Off         ; User                 ;
@@ -620,7 +619,7 @@ Note: User assignments will override these defaults. The user specified values a
 +----------------------------------------------+-------------+---------------------------+---------------+-------------+------+--------------+---------+-----------+------+--------------+--------------+-------------------+------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------+--------------+
 ; Compilation Hierarchy Node                   ; Logic Cells ; Dedicated Logic Registers ; I/O Registers ; Memory Bits ; M4Ks ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; LUT-Only LCs ; Register-Only LCs ; LUT/Register LCs ; Full Hierarchy Name                                                                                                                                               ; Library Name ;
 +----------------------------------------------+-------------+---------------------------+---------------+-------------+------+--------------+---------+-----------+------+--------------+--------------+-------------------+------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------+--------------+
-; |BoardTest                                   ; 4007 (157)  ; 533 (10)                  ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 72   ; 0            ; 3474 (113)   ; 82 (3)            ; 451 (41)         ; |BoardTest                                                                                                                                                        ;              ;
+; |BoardTest                                   ; 4008 (157)  ; 534 (10)                  ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 72   ; 0            ; 3474 (113)   ; 82 (3)            ; 452 (41)         ; |BoardTest                                                                                                                                                        ;              ;
 ;    |clk_div:U_1HzClkDivider|                 ; 41 (41)     ; 24 (24)                   ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 17 (17)      ; 0 (0)             ; 24 (24)          ; |BoardTest|clk_div:U_1HzClkDivider                                                                                                                                ;              ;
 ;    |motor_pwm:U_Motor_1|                     ; 31 (31)     ; 21 (21)                   ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 10 (10)      ; 0 (0)             ; 21 (21)          ; |BoardTest|motor_pwm:U_Motor_1                                                                                                                                    ;              ;
 ;    |motor_pwm:U_Motor_2|                     ; 9 (9)       ; 1 (1)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 8 (8)        ; 0 (0)             ; 1 (1)            ; |BoardTest|motor_pwm:U_Motor_2                                                                                                                                    ;              ;
@@ -659,7 +658,7 @@ Note: User assignments will override these defaults. The user specified values a
 ;             |lpm_divide_gup:auto_generated|  ; 480 (0)     ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 480 (0)      ; 0 (0)             ; 0 (0)            ; |BoardTest|rangefinder:U_Ranger_Top|Divider:Div|lpm_divide:LPM_DIVIDE_component|lpm_divide_gup:auto_generated                                                     ;              ;
 ;                |sign_div_unsign_bnh:divider| ; 480 (0)     ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 480 (0)      ; 0 (0)             ; 0 (0)            ; |BoardTest|rangefinder:U_Ranger_Top|Divider:Div|lpm_divide:LPM_DIVIDE_component|lpm_divide_gup:auto_generated|sign_div_unsign_bnh:divider                         ;              ;
 ;                   |alt_u_div_o5f:divider|    ; 480 (480)   ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 480 (480)    ; 0 (0)             ; 0 (0)            ; |BoardTest|rangefinder:U_Ranger_Top|Divider:Div|lpm_divide:LPM_DIVIDE_component|lpm_divide_gup:auto_generated|sign_div_unsign_bnh:divider|alt_u_div_o5f:divider   ;              ;
-;    |regmap:U_Registers|                      ; 220 (1)     ; 153 (0)                   ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 67 (1)       ; 10 (0)            ; 143 (0)          ; |BoardTest|regmap:U_Registers                                                                                                                                     ;              ;
+;    |regmap:U_Registers|                      ; 221 (1)     ; 154 (0)                   ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 67 (1)       ; 10 (0)            ; 144 (0)          ; |BoardTest|regmap:U_Registers                                                                                                                                     ;              ;
 ;       |addreg:RegAdd|                        ; 8 (8)       ; 8 (8)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 8 (8)            ; |BoardTest|regmap:U_Registers|addreg:RegAdd                                                                                                                       ;              ;
 ;       |outmux:MuxOut|                        ; 98 (98)     ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 56 (56)      ; 0 (0)             ; 42 (42)          ; |BoardTest|regmap:U_Registers|outmux:MuxOut                                                                                                                       ;              ;
 ;       |quadreg:RegAD|                        ; 8 (8)       ; 8 (8)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 8 (8)            ; |BoardTest|regmap:U_Registers|quadreg:RegAD                                                                                                                       ;              ;
@@ -679,7 +678,7 @@ Note: User assignments will override these defaults. The user specified values a
 ;       |quadreg:RegYM|                        ; 8 (8)       ; 8 (8)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 0 (0)        ; 2 (2)             ; 6 (6)            ; |BoardTest|regmap:U_Registers|quadreg:RegYM                                                                                                                       ;              ;
 ;       |quadreg:RegZD|                        ; 8 (8)       ; 8 (8)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 8 (8)            ; |BoardTest|regmap:U_Registers|quadreg:RegZD                                                                                                                       ;              ;
 ;       |quadreg:RegZM|                        ; 8 (8)       ; 8 (8)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 0 (0)        ; 2 (2)             ; 6 (6)            ; |BoardTest|regmap:U_Registers|quadreg:RegZM                                                                                                                       ;              ;
-;       |reg_controller:RegCont|               ; 24 (24)     ; 9 (9)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 10 (10)      ; 0 (0)             ; 14 (14)          ; |BoardTest|regmap:U_Registers|reg_controller:RegCont                                                                                                              ;              ;
+;       |reg_controller:RegCont|               ; 25 (25)     ; 10 (10)                   ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 10 (10)      ; 0 (0)             ; 15 (15)          ; |BoardTest|regmap:U_Registers|reg_controller:RegCont                                                                                                              ;              ;
 +----------------------------------------------+-------------+---------------------------+---------------+-------------+------+--------------+---------+-----------+------+--------------+--------------+-------------------+------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
 
@@ -773,62 +772,62 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ;      - regmap:U_Registers|quadreg:RegAD|tmp[0]                                                                                                   ; 0                 ; 6       ;
 ;      - regmap:U_Registers|quadreg:RegYM|tmp[0]                                                                                                   ; 0                 ; 6       ;
 ;      - regmap:U_Registers|quadreg:RegYD|tmp[0]                                                                                                   ; 0                 ; 6       ;
-;      - regmap:U_Registers|quadreg:RegXM|tmp[0]                                                                                                   ; 0                 ; 6       ;
 ;      - regmap:U_Registers|quadreg:RegXD|tmp[0]                                                                                                   ; 0                 ; 6       ;
 ;      - regmap:U_Registers|quadreg:RegZM|tmp[0]                                                                                                   ; 0                 ; 6       ;
 ;      - regmap:U_Registers|addreg:RegAdd|tmp[0]                                                                                                   ; 0                 ; 6       ;
 ;      - regmap:U_Registers|quadreg:RegZD|tmp[0]                                                                                                   ; 0                 ; 6       ;
 ;      - regmap:U_Registers|quadreg:RegMi|tmp[0]                                                                                                   ; 0                 ; 6       ;
+;      - regmap:U_Registers|quadreg:RegXM|tmp[0]~feeder                                                                                            ; 0                 ; 6       ;
 ; PIC_PBUS_Data[1]                                                                                                                                 ;                   ;         ;
 ;      - regmap:U_Registers|quadreg:RegAD|tmp[1]                                                                                                   ; 0                 ; 6       ;
+;      - regmap:U_Registers|quadreg:RegYM|tmp[1]                                                                                                   ; 0                 ; 6       ;
 ;      - regmap:U_Registers|quadreg:RegYD|tmp[1]                                                                                                   ; 0                 ; 6       ;
-;      - regmap:U_Registers|quadreg:RegXM|tmp[1]                                                                                                   ; 0                 ; 6       ;
 ;      - regmap:U_Registers|quadreg:RegXD|tmp[1]                                                                                                   ; 0                 ; 6       ;
 ;      - regmap:U_Registers|addreg:RegAdd|tmp[1]                                                                                                   ; 0                 ; 6       ;
 ;      - regmap:U_Registers|quadreg:RegZM|tmp[1]                                                                                                   ; 0                 ; 6       ;
 ;      - regmap:U_Registers|quadreg:RegMi|tmp[1]                                                                                                   ; 0                 ; 6       ;
 ;      - regmap:U_Registers|quadreg:RegZD|tmp[1]                                                                                                   ; 0                 ; 6       ;
-;      - regmap:U_Registers|quadreg:RegYM|tmp[1]~feeder                                                                                            ; 0                 ; 6       ;
+;      - regmap:U_Registers|quadreg:RegXM|tmp[1]~feeder                                                                                            ; 0                 ; 6       ;
 ; PIC_PBUS_Data[2]                                                                                                                                 ;                   ;         ;
-;      - regmap:U_Registers|quadreg:RegAD|tmp[2]                                                                                                   ; 1                 ; 6       ;
-;      - regmap:U_Registers|quadreg:RegYM|tmp[2]                                                                                                   ; 1                 ; 6       ;
-;      - regmap:U_Registers|quadreg:RegYD|tmp[2]                                                                                                   ; 1                 ; 6       ;
-;      - regmap:U_Registers|quadreg:RegXM|tmp[2]                                                                                                   ; 1                 ; 6       ;
-;      - regmap:U_Registers|quadreg:RegXD|tmp[2]                                                                                                   ; 1                 ; 6       ;
-;      - regmap:U_Registers|addreg:RegAdd|tmp[2]                                                                                                   ; 1                 ; 6       ;
-;      - regmap:U_Registers|quadreg:RegZD|tmp[2]                                                                                                   ; 1                 ; 6       ;
-;      - regmap:U_Registers|quadreg:RegZM|tmp[2]                                                                                                   ; 1                 ; 6       ;
-;      - regmap:U_Registers|quadreg:RegMi|tmp[2]                                                                                                   ; 1                 ; 6       ;
+;      - regmap:U_Registers|quadreg:RegAD|tmp[2]                                                                                                   ; 0                 ; 6       ;
+;      - regmap:U_Registers|quadreg:RegYM|tmp[2]                                                                                                   ; 0                 ; 6       ;
+;      - regmap:U_Registers|quadreg:RegYD|tmp[2]                                                                                                   ; 0                 ; 6       ;
+;      - regmap:U_Registers|quadreg:RegXM|tmp[2]                                                                                                   ; 0                 ; 6       ;
+;      - regmap:U_Registers|quadreg:RegXD|tmp[2]                                                                                                   ; 0                 ; 6       ;
+;      - regmap:U_Registers|addreg:RegAdd|tmp[2]                                                                                                   ; 0                 ; 6       ;
+;      - regmap:U_Registers|quadreg:RegZD|tmp[2]                                                                                                   ; 0                 ; 6       ;
+;      - regmap:U_Registers|quadreg:RegZM|tmp[2]                                                                                                   ; 0                 ; 6       ;
+;      - regmap:U_Registers|quadreg:RegMi|tmp[2]                                                                                                   ; 0                 ; 6       ;
 ; PIC_PBUS_Data[3]                                                                                                                                 ;                   ;         ;
-;      - regmap:U_Registers|quadreg:RegAD|tmp[3]                                                                                                   ; 1                 ; 6       ;
-;      - regmap:U_Registers|quadreg:RegYM|tmp[3]                                                                                                   ; 1                 ; 6       ;
-;      - regmap:U_Registers|quadreg:RegYD|tmp[3]                                                                                                   ; 1                 ; 6       ;
-;      - regmap:U_Registers|quadreg:RegXM|tmp[3]                                                                                                   ; 1                 ; 6       ;
-;      - regmap:U_Registers|quadreg:RegXD|tmp[3]                                                                                                   ; 1                 ; 6       ;
-;      - regmap:U_Registers|addreg:RegAdd|tmp[3]                                                                                                   ; 1                 ; 6       ;
-;      - regmap:U_Registers|quadreg:RegZM|tmp[3]                                                                                                   ; 1                 ; 6       ;
-;      - regmap:U_Registers|quadreg:RegMi|tmp[3]                                                                                                   ; 1                 ; 6       ;
-;      - regmap:U_Registers|quadreg:RegZD|tmp[3]                                                                                                   ; 1                 ; 6       ;
+;      - regmap:U_Registers|quadreg:RegAD|tmp[3]                                                                                                   ; 0                 ; 6       ;
+;      - regmap:U_Registers|quadreg:RegYM|tmp[3]                                                                                                   ; 0                 ; 6       ;
+;      - regmap:U_Registers|quadreg:RegYD|tmp[3]                                                                                                   ; 0                 ; 6       ;
+;      - regmap:U_Registers|quadreg:RegXM|tmp[3]                                                                                                   ; 0                 ; 6       ;
+;      - regmap:U_Registers|quadreg:RegXD|tmp[3]                                                                                                   ; 0                 ; 6       ;
+;      - regmap:U_Registers|addreg:RegAdd|tmp[3]                                                                                                   ; 0                 ; 6       ;
+;      - regmap:U_Registers|quadreg:RegZM|tmp[3]                                                                                                   ; 0                 ; 6       ;
+;      - regmap:U_Registers|quadreg:RegMi|tmp[3]                                                                                                   ; 0                 ; 6       ;
+;      - regmap:U_Registers|quadreg:RegZD|tmp[3]                                                                                                   ; 0                 ; 6       ;
 ; PIC_PBUS_Data[4]                                                                                                                                 ;                   ;         ;
-;      - regmap:U_Registers|quadreg:RegAD|tmp[4]                                                                                                   ; 0                 ; 6       ;
-;      - regmap:U_Registers|quadreg:RegYM|tmp[4]                                                                                                   ; 0                 ; 6       ;
-;      - regmap:U_Registers|quadreg:RegYD|tmp[4]                                                                                                   ; 0                 ; 6       ;
-;      - regmap:U_Registers|quadreg:RegXD|tmp[4]                                                                                                   ; 0                 ; 6       ;
-;      - regmap:U_Registers|addreg:RegAdd|tmp[4]                                                                                                   ; 0                 ; 6       ;
-;      - regmap:U_Registers|quadreg:RegZM|tmp[4]                                                                                                   ; 0                 ; 6       ;
-;      - regmap:U_Registers|quadreg:RegZD|tmp[4]                                                                                                   ; 0                 ; 6       ;
-;      - regmap:U_Registers|quadreg:RegMi|tmp[4]                                                                                                   ; 0                 ; 6       ;
-;      - regmap:U_Registers|quadreg:RegXM|tmp[4]~feeder                                                                                            ; 0                 ; 6       ;
+;      - regmap:U_Registers|quadreg:RegAD|tmp[4]                                                                                                   ; 1                 ; 6       ;
+;      - regmap:U_Registers|quadreg:RegYM|tmp[4]                                                                                                   ; 1                 ; 6       ;
+;      - regmap:U_Registers|quadreg:RegYD|tmp[4]                                                                                                   ; 1                 ; 6       ;
+;      - regmap:U_Registers|quadreg:RegXD|tmp[4]                                                                                                   ; 1                 ; 6       ;
+;      - regmap:U_Registers|addreg:RegAdd|tmp[4]                                                                                                   ; 1                 ; 6       ;
+;      - regmap:U_Registers|quadreg:RegZM|tmp[4]                                                                                                   ; 1                 ; 6       ;
+;      - regmap:U_Registers|quadreg:RegZD|tmp[4]                                                                                                   ; 1                 ; 6       ;
+;      - regmap:U_Registers|quadreg:RegMi|tmp[4]                                                                                                   ; 1                 ; 6       ;
+;      - regmap:U_Registers|quadreg:RegXM|tmp[4]~feeder                                                                                            ; 1                 ; 6       ;
 ; PIC_PBUS_Data[5]                                                                                                                                 ;                   ;         ;
-;      - regmap:U_Registers|quadreg:RegAD|tmp[5]                                                                                                   ; 1                 ; 6       ;
-;      - regmap:U_Registers|quadreg:RegYD|tmp[5]                                                                                                   ; 1                 ; 6       ;
-;      - regmap:U_Registers|quadreg:RegXD|tmp[5]                                                                                                   ; 1                 ; 6       ;
-;      - regmap:U_Registers|addreg:RegAdd|tmp[5]                                                                                                   ; 1                 ; 6       ;
-;      - regmap:U_Registers|quadreg:RegZM|tmp[5]                                                                                                   ; 1                 ; 6       ;
-;      - regmap:U_Registers|quadreg:RegMi|tmp[5]                                                                                                   ; 1                 ; 6       ;
-;      - regmap:U_Registers|quadreg:RegZD|tmp[5]                                                                                                   ; 1                 ; 6       ;
-;      - regmap:U_Registers|quadreg:RegXM|tmp[5]~feeder                                                                                            ; 1                 ; 6       ;
-;      - regmap:U_Registers|quadreg:RegYM|tmp[5]~feeder                                                                                            ; 1                 ; 6       ;
+;      - regmap:U_Registers|quadreg:RegAD|tmp[5]                                                                                                   ; 0                 ; 6       ;
+;      - regmap:U_Registers|quadreg:RegYM|tmp[5]                                                                                                   ; 0                 ; 6       ;
+;      - regmap:U_Registers|quadreg:RegYD|tmp[5]                                                                                                   ; 0                 ; 6       ;
+;      - regmap:U_Registers|quadreg:RegXM|tmp[5]                                                                                                   ; 0                 ; 6       ;
+;      - regmap:U_Registers|quadreg:RegXD|tmp[5]                                                                                                   ; 0                 ; 6       ;
+;      - regmap:U_Registers|addreg:RegAdd|tmp[5]                                                                                                   ; 0                 ; 6       ;
+;      - regmap:U_Registers|quadreg:RegZM|tmp[5]                                                                                                   ; 0                 ; 6       ;
+;      - regmap:U_Registers|quadreg:RegMi|tmp[5]                                                                                                   ; 0                 ; 6       ;
+;      - regmap:U_Registers|quadreg:RegZD|tmp[5]                                                                                                   ; 0                 ; 6       ;
 ; PIC_PBUS_Data[6]                                                                                                                                 ;                   ;         ;
 ;      - regmap:U_Registers|quadreg:RegAD|tmp[6]                                                                                                   ; 0                 ; 6       ;
 ;      - regmap:U_Registers|quadreg:RegYM|tmp[6]                                                                                                   ; 0                 ; 6       ;
@@ -874,181 +873,182 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; Accel_Interrupt1                                                                                                                                 ;                   ;         ;
 ; Accel_Interrupt2                                                                                                                                 ;                   ;         ;
 ; PIC_PBUS_OK_IN                                                                                                                                   ;                   ;         ;
-;      - regmap:U_Registers|reg_controller:RegCont|Selector0~0                                                                                     ; 0                 ; 6       ;
-;      - regmap:U_Registers|reg_controller:RegCont|Selector6~0                                                                                     ; 0                 ; 6       ;
-;      - regmap:U_Registers|reg_controller:RegCont|Selector5~1                                                                                     ; 0                 ; 6       ;
-;      - regmap:U_Registers|reg_controller:RegCont|Selector7~0                                                                                     ; 0                 ; 6       ;
-;      - regmap:U_Registers|reg_controller:RegCont|Selector4~0                                                                                     ; 0                 ; 6       ;
-;      - regmap:U_Registers|reg_controller:RegCont|Selector8~0                                                                                     ; 0                 ; 6       ;
-;      - regmap:U_Registers|reg_controller:RegCont|Selector2~0                                                                                     ; 0                 ; 6       ;
-;      - regmap:U_Registers|reg_controller:RegCont|Selector2~1                                                                                     ; 0                 ; 6       ;
-;      - regmap:U_Registers|reg_controller:RegCont|nextstate.wa1~0                                                                                 ; 0                 ; 6       ;
-;      - regmap:U_Registers|reg_controller:RegCont|Selector3~0                                                                                     ; 0                 ; 6       ;
-;      - regmap:U_Registers|reg_controller:RegCont|nextstate.wd1~0                                                                                 ; 0                 ; 6       ;
-;      - regmap:U_Registers|reg_controller:RegCont|Selector1~0                                                                                     ; 0                 ; 6       ;
+;      - regmap:U_Registers|reg_controller:RegCont|Selector0~0                                                                                     ; 1                 ; 6       ;
+;      - regmap:U_Registers|reg_controller:RegCont|Selector4~0                                                                                     ; 1                 ; 6       ;
+;      - regmap:U_Registers|reg_controller:RegCont|Selector5~1                                                                                     ; 1                 ; 6       ;
+;      - regmap:U_Registers|reg_controller:RegCont|Selector8~0                                                                                     ; 1                 ; 6       ;
+;      - regmap:U_Registers|reg_controller:RegCont|Selector7~0                                                                                     ; 1                 ; 6       ;
+;      - regmap:U_Registers|reg_controller:RegCont|Selector9~0                                                                                     ; 1                 ; 6       ;
+;      - regmap:U_Registers|reg_controller:RegCont|Selector3~0                                                                                     ; 1                 ; 6       ;
+;      - regmap:U_Registers|reg_controller:RegCont|Selector2~0                                                                                     ; 1                 ; 6       ;
+;      - regmap:U_Registers|reg_controller:RegCont|Selector2~1                                                                                     ; 1                 ; 6       ;
+;      - regmap:U_Registers|reg_controller:RegCont|nextstate.wa1~0                                                                                 ; 1                 ; 6       ;
+;      - regmap:U_Registers|reg_controller:RegCont|Selector6~0                                                                                     ; 1                 ; 6       ;
+;      - regmap:U_Registers|reg_controller:RegCont|nextstate.wd1~0                                                                                 ; 1                 ; 6       ;
+;      - regmap:U_Registers|reg_controller:RegCont|Selector1~0                                                                                     ; 1                 ; 6       ;
 ; clk                                                                                                                                              ;                   ;         ;
 ; Switch_2                                                                                                                                         ;                   ;         ;
-;      - quadreg:U_RegAM|tmp[0]                                                                                                                    ; 1                 ; 6       ;
-;      - quadreg:U_RegTR|tmp[0]                                                                                                                    ; 1                 ; 6       ;
-;      - quadreg:U_RegAM|tmp[1]                                                                                                                    ; 1                 ; 6       ;
-;      - quadreg:U_RegTR|tmp[1]                                                                                                                    ; 1                 ; 6       ;
-;      - quadreg:U_RegAM|tmp[2]                                                                                                                    ; 1                 ; 6       ;
-;      - quadreg:U_RegTR|tmp[2]                                                                                                                    ; 1                 ; 6       ;
-;      - quadreg:U_RegAM|tmp[3]                                                                                                                    ; 1                 ; 6       ;
-;      - quadreg:U_RegTR|tmp[3]                                                                                                                    ; 1                 ; 6       ;
-;      - quadreg:U_RegAM|tmp[4]                                                                                                                    ; 1                 ; 6       ;
-;      - quadreg:U_RegTR|tmp[4]                                                                                                                    ; 1                 ; 6       ;
-;      - quadreg:U_RegAM|tmp[5]                                                                                                                    ; 1                 ; 6       ;
-;      - quadreg:U_RegTR|tmp[5]                                                                                                                    ; 1                 ; 6       ;
-;      - quadreg:U_RegAM|tmp[6]                                                                                                                    ; 1                 ; 6       ;
-;      - quadreg:U_RegTR|tmp[6]                                                                                                                    ; 1                 ; 6       ;
-;      - quadreg:U_RegAM|tmp[7]                                                                                                                    ; 1                 ; 6       ;
-;      - quadreg:U_RegTR|tmp[7]                                                                                                                    ; 1                 ; 6       ;
-;      - regmap:U_Registers|quadreg:RegEy|tmp[0]                                                                                                   ; 1                 ; 6       ;
-;      - regmap:U_Registers|quadreg:RegEz|tmp[0]                                                                                                   ; 1                 ; 6       ;
-;      - regmap:U_Registers|quadreg:RegEx|tmp[0]                                                                                                   ; 1                 ; 6       ;
-;      - regmap:U_Registers|quadreg:RegEa|tmp[0]                                                                                                   ; 1                 ; 6       ;
-;      - regmap:U_Registers|quadreg:RegEy|tmp[1]                                                                                                   ; 1                 ; 6       ;
-;      - regmap:U_Registers|quadreg:RegEz|tmp[1]                                                                                                   ; 1                 ; 6       ;
-;      - regmap:U_Registers|quadreg:RegEx|tmp[1]                                                                                                   ; 1                 ; 6       ;
-;      - regmap:U_Registers|quadreg:RegEa|tmp[1]                                                                                                   ; 1                 ; 6       ;
-;      - regmap:U_Registers|quadreg:RegEz|tmp[2]                                                                                                   ; 1                 ; 6       ;
-;      - regmap:U_Registers|quadreg:RegEy|tmp[2]                                                                                                   ; 1                 ; 6       ;
-;      - regmap:U_Registers|quadreg:RegEx|tmp[2]                                                                                                   ; 1                 ; 6       ;
-;      - regmap:U_Registers|quadreg:RegEa|tmp[2]                                                                                                   ; 1                 ; 6       ;
-;      - regmap:U_Registers|quadreg:RegEz|tmp[3]                                                                                                   ; 1                 ; 6       ;
-;      - regmap:U_Registers|quadreg:RegEy|tmp[3]                                                                                                   ; 1                 ; 6       ;
-;      - regmap:U_Registers|quadreg:RegEx|tmp[3]                                                                                                   ; 1                 ; 6       ;
-;      - regmap:U_Registers|quadreg:RegEa|tmp[3]                                                                                                   ; 1                 ; 6       ;
-;      - regmap:U_Registers|quadreg:RegEy|tmp[4]                                                                                                   ; 1                 ; 6       ;
-;      - regmap:U_Registers|quadreg:RegEz|tmp[4]                                                                                                   ; 1                 ; 6       ;
-;      - regmap:U_Registers|quadreg:RegEx|tmp[4]                                                                                                   ; 1                 ; 6       ;
-;      - regmap:U_Registers|quadreg:RegEa|tmp[4]                                                                                                   ; 1                 ; 6       ;
-;      - regmap:U_Registers|quadreg:RegEy|tmp[5]                                                                                                   ; 1                 ; 6       ;
-;      - regmap:U_Registers|quadreg:RegEz|tmp[5]                                                                                                   ; 1                 ; 6       ;
-;      - regmap:U_Registers|quadreg:RegEx|tmp[5]                                                                                                   ; 1                 ; 6       ;
-;      - regmap:U_Registers|quadreg:RegEa|tmp[5]                                                                                                   ; 1                 ; 6       ;
-;      - regmap:U_Registers|quadreg:RegEz|tmp[6]                                                                                                   ; 1                 ; 6       ;
-;      - regmap:U_Registers|quadreg:RegEy|tmp[6]                                                                                                   ; 1                 ; 6       ;
-;      - regmap:U_Registers|quadreg:RegEx|tmp[6]                                                                                                   ; 1                 ; 6       ;
-;      - regmap:U_Registers|quadreg:RegEa|tmp[6]                                                                                                   ; 1                 ; 6       ;
-;      - regmap:U_Registers|reg_controller_reset                                                                                                   ; 1                 ; 6       ;
-;      - regmap:U_Registers|quadreg:RegAD|tmp[7]                                                                                                   ; 1                 ; 6       ;
-;      - regmap:U_Registers|quadreg:RegAD|tmp[6]                                                                                                   ; 1                 ; 6       ;
-;      - regmap:U_Registers|quadreg:RegAD|tmp[5]                                                                                                   ; 1                 ; 6       ;
-;      - regmap:U_Registers|quadreg:RegAD|tmp[4]                                                                                                   ; 1                 ; 6       ;
-;      - regmap:U_Registers|quadreg:RegAD|tmp[3]                                                                                                   ; 1                 ; 6       ;
-;      - regmap:U_Registers|quadreg:RegAD|tmp[2]                                                                                                   ; 1                 ; 6       ;
-;      - regmap:U_Registers|quadreg:RegAD|tmp[1]                                                                                                   ; 1                 ; 6       ;
-;      - regmap:U_Registers|quadreg:RegAD|tmp[0]                                                                                                   ; 1                 ; 6       ;
-;      - regmap:U_Registers|quadreg:RegYM|tmp[6]                                                                                                   ; 1                 ; 6       ;
-;      - regmap:U_Registers|quadreg:RegYD|tmp[6]                                                                                                   ; 1                 ; 6       ;
-;      - regmap:U_Registers|quadreg:RegYM|tmp[5]                                                                                                   ; 1                 ; 6       ;
-;      - regmap:U_Registers|quadreg:RegYD|tmp[5]                                                                                                   ; 1                 ; 6       ;
-;      - regmap:U_Registers|quadreg:RegYM|tmp[4]                                                                                                   ; 1                 ; 6       ;
-;      - regmap:U_Registers|quadreg:RegYD|tmp[4]                                                                                                   ; 1                 ; 6       ;
-;      - regmap:U_Registers|quadreg:RegYM|tmp[3]                                                                                                   ; 1                 ; 6       ;
-;      - regmap:U_Registers|quadreg:RegYD|tmp[3]                                                                                                   ; 1                 ; 6       ;
-;      - regmap:U_Registers|quadreg:RegYM|tmp[2]                                                                                                   ; 1                 ; 6       ;
-;      - regmap:U_Registers|quadreg:RegYD|tmp[2]                                                                                                   ; 1                 ; 6       ;
-;      - regmap:U_Registers|quadreg:RegYM|tmp[1]                                                                                                   ; 1                 ; 6       ;
-;      - regmap:U_Registers|quadreg:RegYD|tmp[1]                                                                                                   ; 1                 ; 6       ;
-;      - regmap:U_Registers|quadreg:RegYM|tmp[0]                                                                                                   ; 1                 ; 6       ;
-;      - regmap:U_Registers|quadreg:RegYD|tmp[0]                                                                                                   ; 1                 ; 6       ;
-;      - regmap:U_Registers|quadreg:RegYM|tmp[7]                                                                                                   ; 1                 ; 6       ;
-;      - regmap:U_Registers|quadreg:RegYD|tmp[7]                                                                                                   ; 1                 ; 6       ;
-;      - regmap:U_Registers|quadreg:RegXM|tmp[7]                                                                                                   ; 1                 ; 6       ;
-;      - regmap:U_Registers|quadreg:RegXD|tmp[7]                                                                                                   ; 1                 ; 6       ;
-;      - regmap:U_Registers|quadreg:RegXM|tmp[6]                                                                                                   ; 1                 ; 6       ;
-;      - regmap:U_Registers|quadreg:RegXD|tmp[6]                                                                                                   ; 1                 ; 6       ;
-;      - regmap:U_Registers|quadreg:RegXM|tmp[5]                                                                                                   ; 1                 ; 6       ;
-;      - regmap:U_Registers|quadreg:RegXD|tmp[5]                                                                                                   ; 1                 ; 6       ;
-;      - regmap:U_Registers|quadreg:RegXM|tmp[4]                                                                                                   ; 1                 ; 6       ;
-;      - regmap:U_Registers|quadreg:RegXD|tmp[4]                                                                                                   ; 1                 ; 6       ;
-;      - regmap:U_Registers|quadreg:RegXM|tmp[3]                                                                                                   ; 1                 ; 6       ;
-;      - regmap:U_Registers|quadreg:RegXD|tmp[3]                                                                                                   ; 1                 ; 6       ;
-;      - regmap:U_Registers|quadreg:RegXM|tmp[2]                                                                                                   ; 1                 ; 6       ;
-;      - regmap:U_Registers|quadreg:RegXD|tmp[2]                                                                                                   ; 1                 ; 6       ;
-;      - regmap:U_Registers|quadreg:RegXM|tmp[1]                                                                                                   ; 1                 ; 6       ;
-;      - regmap:U_Registers|quadreg:RegXD|tmp[1]                                                                                                   ; 1                 ; 6       ;
-;      - regmap:U_Registers|quadreg:RegXM|tmp[0]                                                                                                   ; 1                 ; 6       ;
-;      - regmap:U_Registers|quadreg:RegXD|tmp[0]                                                                                                   ; 1                 ; 6       ;
-;      - regmap:U_Registers|quadreg:RegZM|tmp[0]                                                                                                   ; 1                 ; 6       ;
-;      - regmap:U_Registers|addreg:RegAdd|tmp[2]                                                                                                   ; 1                 ; 6       ;
-;      - regmap:U_Registers|quadreg:RegP2|tmp[0]                                                                                                   ; 1                 ; 6       ;
-;      - regmap:U_Registers|addreg:RegAdd|tmp[3]                                                                                                   ; 1                 ; 6       ;
-;      - regmap:U_Registers|addreg:RegAdd|tmp[0]                                                                                                   ; 1                 ; 6       ;
-;      - regmap:U_Registers|quadreg:RegP3|tmp[0]                                                                                                   ; 1                 ; 6       ;
-;      - regmap:U_Registers|quadreg:RegZD|tmp[0]                                                                                                   ; 1                 ; 6       ;
-;      - regmap:U_Registers|addreg:RegAdd|tmp[1]                                                                                                   ; 1                 ; 6       ;
-;      - regmap:U_Registers|quadreg:RegP1|tmp[0]                                                                                                   ; 1                 ; 6       ;
-;      - regmap:U_Registers|quadreg:RegP4|tmp[0]                                                                                                   ; 1                 ; 6       ;
-;      - regmap:U_Registers|quadreg:RegMi|tmp[0]                                                                                                   ; 1                 ; 6       ;
-;      - regmap:U_Registers|quadreg:RegAM|tmp[0]                                                                                                   ; 1                 ; 6       ;
-;      - regmap:U_Registers|addreg:RegAdd|tmp[4]                                                                                                   ; 1                 ; 6       ;
-;      - regmap:U_Registers|addreg:RegAdd|tmp[7]                                                                                                   ; 1                 ; 6       ;
-;      - regmap:U_Registers|addreg:RegAdd|tmp[6]                                                                                                   ; 1                 ; 6       ;
-;      - regmap:U_Registers|addreg:RegAdd|tmp[5]                                                                                                   ; 1                 ; 6       ;
-;      - regmap:U_Registers|quadreg:RegZM|tmp[1]                                                                                                   ; 1                 ; 6       ;
-;      - regmap:U_Registers|quadreg:RegMi|tmp[1]                                                                                                   ; 1                 ; 6       ;
-;      - regmap:U_Registers|quadreg:RegP2|tmp[1]                                                                                                   ; 1                 ; 6       ;
-;      - regmap:U_Registers|quadreg:RegP3|tmp[1]                                                                                                   ; 1                 ; 6       ;
-;      - regmap:U_Registers|quadreg:RegP1|tmp[1]                                                                                                   ; 1                 ; 6       ;
-;      - regmap:U_Registers|quadreg:RegP4|tmp[1]                                                                                                   ; 1                 ; 6       ;
-;      - regmap:U_Registers|quadreg:RegZD|tmp[1]                                                                                                   ; 1                 ; 6       ;
-;      - regmap:U_Registers|quadreg:RegAM|tmp[1]                                                                                                   ; 1                 ; 6       ;
-;      - regmap:U_Registers|quadreg:RegP3|tmp[2]                                                                                                   ; 1                 ; 6       ;
-;      - regmap:U_Registers|quadreg:RegZD|tmp[2]                                                                                                   ; 1                 ; 6       ;
-;      - regmap:U_Registers|quadreg:RegP2|tmp[2]                                                                                                   ; 1                 ; 6       ;
-;      - regmap:U_Registers|quadreg:RegZM|tmp[2]                                                                                                   ; 1                 ; 6       ;
-;      - regmap:U_Registers|quadreg:RegP1|tmp[2]                                                                                                   ; 1                 ; 6       ;
-;      - regmap:U_Registers|quadreg:RegMi|tmp[2]                                                                                                   ; 1                 ; 6       ;
-;      - regmap:U_Registers|quadreg:RegP4|tmp[2]                                                                                                   ; 1                 ; 6       ;
-;      - regmap:U_Registers|quadreg:RegAM|tmp[2]                                                                                                   ; 1                 ; 6       ;
-;      - regmap:U_Registers|quadreg:RegP3|tmp[3]                                                                                                   ; 1                 ; 6       ;
-;      - regmap:U_Registers|quadreg:RegP2|tmp[3]                                                                                                   ; 1                 ; 6       ;
-;      - regmap:U_Registers|quadreg:RegP1|tmp[3]                                                                                                   ; 1                 ; 6       ;
-;      - regmap:U_Registers|quadreg:RegP4|tmp[3]                                                                                                   ; 1                 ; 6       ;
-;      - regmap:U_Registers|quadreg:RegZM|tmp[3]                                                                                                   ; 1                 ; 6       ;
-;      - regmap:U_Registers|quadreg:RegMi|tmp[3]                                                                                                   ; 1                 ; 6       ;
-;      - regmap:U_Registers|quadreg:RegZD|tmp[3]                                                                                                   ; 1                 ; 6       ;
-;      - regmap:U_Registers|quadreg:RegAM|tmp[3]                                                                                                   ; 1                 ; 6       ;
-;      - regmap:U_Registers|quadreg:RegAM|tmp[4]                                                                                                   ; 1                 ; 6       ;
-;      - regmap:U_Registers|quadreg:RegZM|tmp[4]                                                                                                   ; 1                 ; 6       ;
-;      - regmap:U_Registers|quadreg:RegP2|tmp[4]                                                                                                   ; 1                 ; 6       ;
-;      - regmap:U_Registers|quadreg:RegP3|tmp[4]                                                                                                   ; 1                 ; 6       ;
-;      - regmap:U_Registers|quadreg:RegZD|tmp[4]                                                                                                   ; 1                 ; 6       ;
-;      - regmap:U_Registers|quadreg:RegP1|tmp[4]                                                                                                   ; 1                 ; 6       ;
-;      - regmap:U_Registers|quadreg:RegP4|tmp[4]                                                                                                   ; 1                 ; 6       ;
-;      - regmap:U_Registers|quadreg:RegMi|tmp[4]                                                                                                   ; 1                 ; 6       ;
-;      - regmap:U_Registers|quadreg:RegZM|tmp[5]                                                                                                   ; 1                 ; 6       ;
-;      - regmap:U_Registers|quadreg:RegMi|tmp[5]                                                                                                   ; 1                 ; 6       ;
-;      - regmap:U_Registers|quadreg:RegP2|tmp[5]                                                                                                   ; 1                 ; 6       ;
-;      - regmap:U_Registers|quadreg:RegP3|tmp[5]                                                                                                   ; 1                 ; 6       ;
-;      - regmap:U_Registers|quadreg:RegP1|tmp[5]                                                                                                   ; 1                 ; 6       ;
-;      - regmap:U_Registers|quadreg:RegP4|tmp[5]                                                                                                   ; 1                 ; 6       ;
-;      - regmap:U_Registers|quadreg:RegZD|tmp[5]                                                                                                   ; 1                 ; 6       ;
-;      - regmap:U_Registers|quadreg:RegAM|tmp[5]                                                                                                   ; 1                 ; 6       ;
-;      - regmap:U_Registers|quadreg:RegP3|tmp[6]                                                                                                   ; 1                 ; 6       ;
-;      - regmap:U_Registers|quadreg:RegZD|tmp[6]                                                                                                   ; 1                 ; 6       ;
-;      - regmap:U_Registers|quadreg:RegP2|tmp[6]                                                                                                   ; 1                 ; 6       ;
-;      - regmap:U_Registers|quadreg:RegZM|tmp[6]                                                                                                   ; 1                 ; 6       ;
-;      - regmap:U_Registers|quadreg:RegP1|tmp[6]                                                                                                   ; 1                 ; 6       ;
-;      - regmap:U_Registers|quadreg:RegMi|tmp[6]                                                                                                   ; 1                 ; 6       ;
-;      - regmap:U_Registers|quadreg:RegP4|tmp[6]                                                                                                   ; 1                 ; 6       ;
-;      - regmap:U_Registers|quadreg:RegAM|tmp[6]                                                                                                   ; 1                 ; 6       ;
-;      - regmap:U_Registers|quadreg:RegP3|tmp[7]                                                                                                   ; 1                 ; 6       ;
-;      - regmap:U_Registers|quadreg:RegP2|tmp[7]                                                                                                   ; 1                 ; 6       ;
-;      - regmap:U_Registers|quadreg:RegP1|tmp[7]                                                                                                   ; 1                 ; 6       ;
-;      - regmap:U_Registers|quadreg:RegP4|tmp[7]                                                                                                   ; 1                 ; 6       ;
-;      - regmap:U_Registers|quadreg:RegZM|tmp[7]                                                                                                   ; 1                 ; 6       ;
-;      - regmap:U_Registers|quadreg:RegMi|tmp[7]                                                                                                   ; 1                 ; 6       ;
-;      - regmap:U_Registers|quadreg:RegZD|tmp[7]                                                                                                   ; 1                 ; 6       ;
-;      - regmap:U_Registers|quadreg:RegEz|tmp[7]                                                                                                   ; 1                 ; 6       ;
-;      - regmap:U_Registers|quadreg:RegEy|tmp[7]                                                                                                   ; 1                 ; 6       ;
-;      - regmap:U_Registers|quadreg:RegEx|tmp[7]                                                                                                   ; 1                 ; 6       ;
-;      - regmap:U_Registers|quadreg:RegEa|tmp[7]                                                                                                   ; 1                 ; 6       ;
-;      - regmap:U_Registers|quadreg:RegAM|tmp[7]                                                                                                   ; 1                 ; 6       ;
+;      - quadreg:U_RegAM|tmp[0]                                                                                                                    ; 0                 ; 6       ;
+;      - quadreg:U_RegTR|tmp[0]                                                                                                                    ; 0                 ; 6       ;
+;      - quadreg:U_RegAM|tmp[1]                                                                                                                    ; 0                 ; 6       ;
+;      - quadreg:U_RegTR|tmp[1]                                                                                                                    ; 0                 ; 6       ;
+;      - quadreg:U_RegAM|tmp[2]                                                                                                                    ; 0                 ; 6       ;
+;      - quadreg:U_RegTR|tmp[2]                                                                                                                    ; 0                 ; 6       ;
+;      - quadreg:U_RegAM|tmp[3]                                                                                                                    ; 0                 ; 6       ;
+;      - quadreg:U_RegTR|tmp[3]                                                                                                                    ; 0                 ; 6       ;
+;      - quadreg:U_RegAM|tmp[4]                                                                                                                    ; 0                 ; 6       ;
+;      - quadreg:U_RegTR|tmp[4]                                                                                                                    ; 0                 ; 6       ;
+;      - quadreg:U_RegAM|tmp[5]                                                                                                                    ; 0                 ; 6       ;
+;      - quadreg:U_RegTR|tmp[5]                                                                                                                    ; 0                 ; 6       ;
+;      - quadreg:U_RegAM|tmp[6]                                                                                                                    ; 0                 ; 6       ;
+;      - quadreg:U_RegTR|tmp[6]                                                                                                                    ; 0                 ; 6       ;
+;      - quadreg:U_RegAM|tmp[7]                                                                                                                    ; 0                 ; 6       ;
+;      - quadreg:U_RegTR|tmp[7]                                                                                                                    ; 0                 ; 6       ;
+;      - regmap:U_Registers|quadreg:RegEy|tmp[0]                                                                                                   ; 0                 ; 6       ;
+;      - regmap:U_Registers|quadreg:RegEz|tmp[0]                                                                                                   ; 0                 ; 6       ;
+;      - regmap:U_Registers|quadreg:RegEx|tmp[0]                                                                                                   ; 0                 ; 6       ;
+;      - regmap:U_Registers|quadreg:RegEa|tmp[0]                                                                                                   ; 0                 ; 6       ;
+;      - regmap:U_Registers|quadreg:RegEy|tmp[1]                                                                                                   ; 0                 ; 6       ;
+;      - regmap:U_Registers|quadreg:RegEz|tmp[1]                                                                                                   ; 0                 ; 6       ;
+;      - regmap:U_Registers|quadreg:RegEx|tmp[1]                                                                                                   ; 0                 ; 6       ;
+;      - regmap:U_Registers|quadreg:RegEa|tmp[1]                                                                                                   ; 0                 ; 6       ;
+;      - regmap:U_Registers|quadreg:RegEz|tmp[2]                                                                                                   ; 0                 ; 6       ;
+;      - regmap:U_Registers|quadreg:RegEy|tmp[2]                                                                                                   ; 0                 ; 6       ;
+;      - regmap:U_Registers|quadreg:RegEx|tmp[2]                                                                                                   ; 0                 ; 6       ;
+;      - regmap:U_Registers|quadreg:RegEa|tmp[2]                                                                                                   ; 0                 ; 6       ;
+;      - regmap:U_Registers|quadreg:RegEz|tmp[3]                                                                                                   ; 0                 ; 6       ;
+;      - regmap:U_Registers|quadreg:RegEy|tmp[3]                                                                                                   ; 0                 ; 6       ;
+;      - regmap:U_Registers|quadreg:RegEx|tmp[3]                                                                                                   ; 0                 ; 6       ;
+;      - regmap:U_Registers|quadreg:RegEa|tmp[3]                                                                                                   ; 0                 ; 6       ;
+;      - regmap:U_Registers|quadreg:RegEy|tmp[4]                                                                                                   ; 0                 ; 6       ;
+;      - regmap:U_Registers|quadreg:RegEz|tmp[4]                                                                                                   ; 0                 ; 6       ;
+;      - regmap:U_Registers|quadreg:RegEx|tmp[4]                                                                                                   ; 0                 ; 6       ;
+;      - regmap:U_Registers|quadreg:RegEa|tmp[4]                                                                                                   ; 0                 ; 6       ;
+;      - regmap:U_Registers|quadreg:RegEy|tmp[5]                                                                                                   ; 0                 ; 6       ;
+;      - regmap:U_Registers|quadreg:RegEz|tmp[5]                                                                                                   ; 0                 ; 6       ;
+;      - regmap:U_Registers|quadreg:RegEx|tmp[5]                                                                                                   ; 0                 ; 6       ;
+;      - regmap:U_Registers|quadreg:RegEa|tmp[5]                                                                                                   ; 0                 ; 6       ;
+;      - regmap:U_Registers|quadreg:RegEz|tmp[6]                                                                                                   ; 0                 ; 6       ;
+;      - regmap:U_Registers|quadreg:RegEy|tmp[6]                                                                                                   ; 0                 ; 6       ;
+;      - regmap:U_Registers|quadreg:RegEx|tmp[6]                                                                                                   ; 0                 ; 6       ;
+;      - regmap:U_Registers|quadreg:RegEa|tmp[6]                                                                                                   ; 0                 ; 6       ;
+;      - regmap:U_Registers|reg_controller_reset                                                                                                   ; 0                 ; 6       ;
+;      - regmap:U_Registers|quadreg:RegAD|tmp[7]                                                                                                   ; 0                 ; 6       ;
+;      - regmap:U_Registers|quadreg:RegAD|tmp[6]                                                                                                   ; 0                 ; 6       ;
+;      - regmap:U_Registers|quadreg:RegAD|tmp[5]                                                                                                   ; 0                 ; 6       ;
+;      - regmap:U_Registers|quadreg:RegAD|tmp[4]                                                                                                   ; 0                 ; 6       ;
+;      - regmap:U_Registers|quadreg:RegAD|tmp[3]                                                                                                   ; 0                 ; 6       ;
+;      - regmap:U_Registers|quadreg:RegAD|tmp[2]                                                                                                   ; 0                 ; 6       ;
+;      - regmap:U_Registers|quadreg:RegAD|tmp[1]                                                                                                   ; 0                 ; 6       ;
+;      - regmap:U_Registers|quadreg:RegAD|tmp[0]                                                                                                   ; 0                 ; 6       ;
+;      - regmap:U_Registers|quadreg:RegYM|tmp[6]                                                                                                   ; 0                 ; 6       ;
+;      - regmap:U_Registers|quadreg:RegYD|tmp[6]                                                                                                   ; 0                 ; 6       ;
+;      - regmap:U_Registers|quadreg:RegYM|tmp[5]                                                                                                   ; 0                 ; 6       ;
+;      - regmap:U_Registers|quadreg:RegYD|tmp[5]                                                                                                   ; 0                 ; 6       ;
+;      - regmap:U_Registers|quadreg:RegYM|tmp[4]                                                                                                   ; 0                 ; 6       ;
+;      - regmap:U_Registers|quadreg:RegYD|tmp[4]                                                                                                   ; 0                 ; 6       ;
+;      - regmap:U_Registers|quadreg:RegYM|tmp[3]                                                                                                   ; 0                 ; 6       ;
+;      - regmap:U_Registers|quadreg:RegYD|tmp[3]                                                                                                   ; 0                 ; 6       ;
+;      - regmap:U_Registers|quadreg:RegYM|tmp[2]                                                                                                   ; 0                 ; 6       ;
+;      - regmap:U_Registers|quadreg:RegYD|tmp[2]                                                                                                   ; 0                 ; 6       ;
+;      - regmap:U_Registers|quadreg:RegYM|tmp[1]                                                                                                   ; 0                 ; 6       ;
+;      - regmap:U_Registers|quadreg:RegYD|tmp[1]                                                                                                   ; 0                 ; 6       ;
+;      - regmap:U_Registers|quadreg:RegYM|tmp[0]                                                                                                   ; 0                 ; 6       ;
+;      - regmap:U_Registers|quadreg:RegYD|tmp[0]                                                                                                   ; 0                 ; 6       ;
+;      - regmap:U_Registers|quadreg:RegYM|tmp[7]                                                                                                   ; 0                 ; 6       ;
+;      - regmap:U_Registers|quadreg:RegYD|tmp[7]                                                                                                   ; 0                 ; 6       ;
+;      - regmap:U_Registers|quadreg:RegXM|tmp[7]                                                                                                   ; 0                 ; 6       ;
+;      - regmap:U_Registers|quadreg:RegXD|tmp[7]                                                                                                   ; 0                 ; 6       ;
+;      - regmap:U_Registers|quadreg:RegXM|tmp[6]                                                                                                   ; 0                 ; 6       ;
+;      - regmap:U_Registers|quadreg:RegXD|tmp[6]                                                                                                   ; 0                 ; 6       ;
+;      - regmap:U_Registers|quadreg:RegXM|tmp[5]                                                                                                   ; 0                 ; 6       ;
+;      - regmap:U_Registers|quadreg:RegXD|tmp[5]                                                                                                   ; 0                 ; 6       ;
+;      - regmap:U_Registers|quadreg:RegXM|tmp[4]                                                                                                   ; 0                 ; 6       ;
+;      - regmap:U_Registers|quadreg:RegXD|tmp[4]                                                                                                   ; 0                 ; 6       ;
+;      - regmap:U_Registers|quadreg:RegXM|tmp[3]                                                                                                   ; 0                 ; 6       ;
+;      - regmap:U_Registers|quadreg:RegXD|tmp[3]                                                                                                   ; 0                 ; 6       ;
+;      - regmap:U_Registers|quadreg:RegXM|tmp[2]                                                                                                   ; 0                 ; 6       ;
+;      - regmap:U_Registers|quadreg:RegXD|tmp[2]                                                                                                   ; 0                 ; 6       ;
+;      - regmap:U_Registers|quadreg:RegXM|tmp[1]                                                                                                   ; 0                 ; 6       ;
+;      - regmap:U_Registers|quadreg:RegXD|tmp[1]                                                                                                   ; 0                 ; 6       ;
+;      - regmap:U_Registers|quadreg:RegXM|tmp[0]                                                                                                   ; 0                 ; 6       ;
+;      - regmap:U_Registers|quadreg:RegXD|tmp[0]                                                                                                   ; 0                 ; 6       ;
+;      - regmap:U_Registers|quadreg:RegZM|tmp[0]                                                                                                   ; 0                 ; 6       ;
+;      - regmap:U_Registers|addreg:RegAdd|tmp[2]                                                                                                   ; 0                 ; 6       ;
+;      - regmap:U_Registers|quadreg:RegP2|tmp[0]                                                                                                   ; 0                 ; 6       ;
+;      - regmap:U_Registers|addreg:RegAdd|tmp[3]                                                                                                   ; 0                 ; 6       ;
+;      - regmap:U_Registers|addreg:RegAdd|tmp[0]                                                                                                   ; 0                 ; 6       ;
+;      - regmap:U_Registers|quadreg:RegP3|tmp[0]                                                                                                   ; 0                 ; 6       ;
+;      - regmap:U_Registers|quadreg:RegZD|tmp[0]                                                                                                   ; 0                 ; 6       ;
+;      - regmap:U_Registers|addreg:RegAdd|tmp[1]                                                                                                   ; 0                 ; 6       ;
+;      - regmap:U_Registers|quadreg:RegP1|tmp[0]                                                                                                   ; 0                 ; 6       ;
+;      - regmap:U_Registers|quadreg:RegP4|tmp[0]                                                                                                   ; 0                 ; 6       ;
+;      - regmap:U_Registers|quadreg:RegMi|tmp[0]                                                                                                   ; 0                 ; 6       ;
+;      - regmap:U_Registers|quadreg:RegAM|tmp[0]                                                                                                   ; 0                 ; 6       ;
+;      - regmap:U_Registers|addreg:RegAdd|tmp[4]                                                                                                   ; 0                 ; 6       ;
+;      - regmap:U_Registers|addreg:RegAdd|tmp[7]                                                                                                   ; 0                 ; 6       ;
+;      - regmap:U_Registers|addreg:RegAdd|tmp[6]                                                                                                   ; 0                 ; 6       ;
+;      - regmap:U_Registers|addreg:RegAdd|tmp[5]                                                                                                   ; 0                 ; 6       ;
+;      - regmap:U_Registers|quadreg:RegZM|tmp[1]                                                                                                   ; 0                 ; 6       ;
+;      - regmap:U_Registers|quadreg:RegMi|tmp[1]                                                                                                   ; 0                 ; 6       ;
+;      - regmap:U_Registers|quadreg:RegP2|tmp[1]                                                                                                   ; 0                 ; 6       ;
+;      - regmap:U_Registers|quadreg:RegP3|tmp[1]                                                                                                   ; 0                 ; 6       ;
+;      - regmap:U_Registers|quadreg:RegP1|tmp[1]                                                                                                   ; 0                 ; 6       ;
+;      - regmap:U_Registers|quadreg:RegP4|tmp[1]                                                                                                   ; 0                 ; 6       ;
+;      - regmap:U_Registers|quadreg:RegZD|tmp[1]                                                                                                   ; 0                 ; 6       ;
+;      - regmap:U_Registers|quadreg:RegAM|tmp[1]                                                                                                   ; 0                 ; 6       ;
+;      - regmap:U_Registers|quadreg:RegP3|tmp[2]                                                                                                   ; 0                 ; 6       ;
+;      - regmap:U_Registers|quadreg:RegZD|tmp[2]                                                                                                   ; 0                 ; 6       ;
+;      - regmap:U_Registers|quadreg:RegP2|tmp[2]                                                                                                   ; 0                 ; 6       ;
+;      - regmap:U_Registers|quadreg:RegZM|tmp[2]                                                                                                   ; 0                 ; 6       ;
+;      - regmap:U_Registers|quadreg:RegP1|tmp[2]                                                                                                   ; 0                 ; 6       ;
+;      - regmap:U_Registers|quadreg:RegMi|tmp[2]                                                                                                   ; 0                 ; 6       ;
+;      - regmap:U_Registers|quadreg:RegP4|tmp[2]                                                                                                   ; 0                 ; 6       ;
+;      - regmap:U_Registers|quadreg:RegAM|tmp[2]                                                                                                   ; 0                 ; 6       ;
+;      - regmap:U_Registers|quadreg:RegP3|tmp[3]                                                                                                   ; 0                 ; 6       ;
+;      - regmap:U_Registers|quadreg:RegP2|tmp[3]                                                                                                   ; 0                 ; 6       ;
+;      - regmap:U_Registers|quadreg:RegP1|tmp[3]                                                                                                   ; 0                 ; 6       ;
+;      - regmap:U_Registers|quadreg:RegP4|tmp[3]                                                                                                   ; 0                 ; 6       ;
+;      - regmap:U_Registers|quadreg:RegZM|tmp[3]                                                                                                   ; 0                 ; 6       ;
+;      - regmap:U_Registers|quadreg:RegMi|tmp[3]                                                                                                   ; 0                 ; 6       ;
+;      - regmap:U_Registers|quadreg:RegZD|tmp[3]                                                                                                   ; 0                 ; 6       ;
+;      - regmap:U_Registers|quadreg:RegAM|tmp[3]                                                                                                   ; 0                 ; 6       ;
+;      - regmap:U_Registers|quadreg:RegAM|tmp[4]                                                                                                   ; 0                 ; 6       ;
+;      - regmap:U_Registers|quadreg:RegZM|tmp[4]                                                                                                   ; 0                 ; 6       ;
+;      - regmap:U_Registers|quadreg:RegP2|tmp[4]                                                                                                   ; 0                 ; 6       ;
+;      - regmap:U_Registers|quadreg:RegP3|tmp[4]                                                                                                   ; 0                 ; 6       ;
+;      - regmap:U_Registers|quadreg:RegZD|tmp[4]                                                                                                   ; 0                 ; 6       ;
+;      - regmap:U_Registers|quadreg:RegP1|tmp[4]                                                                                                   ; 0                 ; 6       ;
+;      - regmap:U_Registers|quadreg:RegP4|tmp[4]                                                                                                   ; 0                 ; 6       ;
+;      - regmap:U_Registers|quadreg:RegMi|tmp[4]                                                                                                   ; 0                 ; 6       ;
+;      - regmap:U_Registers|quadreg:RegZM|tmp[5]                                                                                                   ; 0                 ; 6       ;
+;      - regmap:U_Registers|quadreg:RegMi|tmp[5]                                                                                                   ; 0                 ; 6       ;
+;      - regmap:U_Registers|quadreg:RegP2|tmp[5]                                                                                                   ; 0                 ; 6       ;
+;      - regmap:U_Registers|quadreg:RegP3|tmp[5]                                                                                                   ; 0                 ; 6       ;
+;      - regmap:U_Registers|quadreg:RegP1|tmp[5]                                                                                                   ; 0                 ; 6       ;
+;      - regmap:U_Registers|quadreg:RegP4|tmp[5]                                                                                                   ; 0                 ; 6       ;
+;      - regmap:U_Registers|quadreg:RegZD|tmp[5]                                                                                                   ; 0                 ; 6       ;
+;      - regmap:U_Registers|quadreg:RegAM|tmp[5]                                                                                                   ; 0                 ; 6       ;
+;      - regmap:U_Registers|quadreg:RegP3|tmp[6]                                                                                                   ; 0                 ; 6       ;
+;      - regmap:U_Registers|quadreg:RegZD|tmp[6]                                                                                                   ; 0                 ; 6       ;
+;      - regmap:U_Registers|quadreg:RegP2|tmp[6]                                                                                                   ; 0                 ; 6       ;
+;      - regmap:U_Registers|quadreg:RegZM|tmp[6]                                                                                                   ; 0                 ; 6       ;
+;      - regmap:U_Registers|quadreg:RegP1|tmp[6]                                                                                                   ; 0                 ; 6       ;
+;      - regmap:U_Registers|quadreg:RegMi|tmp[6]                                                                                                   ; 0                 ; 6       ;
+;      - regmap:U_Registers|quadreg:RegP4|tmp[6]                                                                                                   ; 0                 ; 6       ;
+;      - regmap:U_Registers|quadreg:RegAM|tmp[6]                                                                                                   ; 0                 ; 6       ;
+;      - regmap:U_Registers|quadreg:RegP3|tmp[7]                                                                                                   ; 0                 ; 6       ;
+;      - regmap:U_Registers|quadreg:RegP2|tmp[7]                                                                                                   ; 0                 ; 6       ;
+;      - regmap:U_Registers|quadreg:RegP1|tmp[7]                                                                                                   ; 0                 ; 6       ;
+;      - regmap:U_Registers|quadreg:RegP4|tmp[7]                                                                                                   ; 0                 ; 6       ;
+;      - regmap:U_Registers|quadreg:RegZM|tmp[7]                                                                                                   ; 0                 ; 6       ;
+;      - regmap:U_Registers|quadreg:RegMi|tmp[7]                                                                                                   ; 0                 ; 6       ;
+;      - regmap:U_Registers|quadreg:RegZD|tmp[7]                                                                                                   ; 0                 ; 6       ;
+;      - regmap:U_Registers|quadreg:RegEz|tmp[7]                                                                                                   ; 0                 ; 6       ;
+;      - regmap:U_Registers|quadreg:RegEy|tmp[7]                                                                                                   ; 0                 ; 6       ;
+;      - regmap:U_Registers|quadreg:RegEx|tmp[7]                                                                                                   ; 0                 ; 6       ;
+;      - regmap:U_Registers|quadreg:RegEa|tmp[7]                                                                                                   ; 0                 ; 6       ;
+;      - regmap:U_Registers|quadreg:RegAM|tmp[7]                                                                                                   ; 0                 ; 6       ;
 ; PIC_SPI_Select                                                                                                                                   ;                   ;         ;
 ;      - regmap:U_Registers|reg_controller_reset                                                                                                   ; 0                 ; 6       ;
 ; PIC_PBUS_R_W                                                                                                                                     ;                   ;         ;
@@ -1057,8 +1057,8 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ;      - regmap:U_Registers|reg_controller:RegCont|nextstate.wd1~0                                                                                 ; 0                 ; 6       ;
 ; PIC_PBUS_A_D                                                                                                                                     ;                   ;         ;
 ;      - regmap:U_Registers|reg_controller:RegCont|Selector5~1                                                                                     ; 0                 ; 6       ;
-;      - regmap:U_Registers|reg_controller:RegCont|nextstate.wa1~0                                                                                 ; 0                 ; 6       ;
 ;      - regmap:U_Registers|reg_controller:RegCont|Selector3~0                                                                                     ; 0                 ; 6       ;
+;      - regmap:U_Registers|reg_controller:RegCont|nextstate.wa1~0                                                                                 ; 0                 ; 6       ;
 ;      - regmap:U_Registers|reg_controller:RegCont|nextstate.wd1~0                                                                                 ; 0                 ; 6       ;
 ; Switch_1[0]                                                                                                                                      ;                   ;         ;
 ;      - pid_altitude_controller:U_Altitude|Add4~0                                                                                                 ; 1                 ; 6       ;
@@ -1128,7 +1128,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ;      - pid_altitude_controller:U_Altitude|pwm_input[6]~5                                                                                         ; 1                 ; 6       ;
 ;      - pid_altitude_controller:U_Altitude|pwm_input[3]~9                                                                                         ; 1                 ; 6       ;
 ;      - pid_altitude_controller:U_Altitude|pwm_input[2]~12                                                                                        ; 1                 ; 6       ;
-;      - pid_pitch_controller:U_Pitch|pwm_input[1]~1                                                                                               ; 1                 ; 6       ;
+;      - pid_pitch_controller:U_Pitch|pwm_input[2]~1                                                                                               ; 1                 ; 6       ;
 ;      - pid_pitch_controller:U_Pitch|Add3~24                                                                                                      ; 1                 ; 6       ;
 ;      - pid_pitch_controller:U_Pitch|Add1~20                                                                                                      ; 1                 ; 6       ;
 ;      - pid_pitch_controller:U_Pitch|Add1~21                                                                                                      ; 1                 ; 6       ;
@@ -1330,14 +1330,14 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ;      - pid_roll_controller:U_Roll|u[0]~73                                                                                                        ; 1                 ; 6       ;
 ;      - pid_roll_controller:U_Roll|u[20]~75                                                                                                       ; 1                 ; 6       ;
 ; Switch_1[3]                                                                                                                                      ;                   ;         ;
-;      - Add10~16                                                                                                                                  ; 0                 ; 6       ;
-;      - Add10~17                                                                                                                                  ; 0                 ; 6       ;
-;      - Add10~18                                                                                                                                  ; 0                 ; 6       ;
-;      - Add10~19                                                                                                                                  ; 0                 ; 6       ;
-;      - Add10~20                                                                                                                                  ; 0                 ; 6       ;
-;      - Add10~21                                                                                                                                  ; 0                 ; 6       ;
-;      - Add10~22                                                                                                                                  ; 0                 ; 6       ;
-;      - Add10~23                                                                                                                                  ; 0                 ; 6       ;
+;      - Add10~16                                                                                                                                  ; 1                 ; 6       ;
+;      - Add10~17                                                                                                                                  ; 1                 ; 6       ;
+;      - Add10~18                                                                                                                                  ; 1                 ; 6       ;
+;      - Add10~19                                                                                                                                  ; 1                 ; 6       ;
+;      - Add10~20                                                                                                                                  ; 1                 ; 6       ;
+;      - Add10~21                                                                                                                                  ; 1                 ; 6       ;
+;      - Add10~22                                                                                                                                  ; 1                 ; 6       ;
+;      - Add10~23                                                                                                                                  ; 1                 ; 6       ;
 ; Switch_1[2]                                                                                                                                      ;                   ;         ;
 ;      - Add11~14                                                                                                                                  ; 1                 ; 6       ;
 ;      - Add11~15                                                                                                                                  ; 1                 ; 6       ;
@@ -1362,9 +1362,9 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ;      - rangefinder:U_Ranger_Botom|process_0~0                                                                                                    ; 0                 ; 6       ;
 ;      - rangefinder:U_Ranger_Botom|process_0~1                                                                                                    ; 0                 ; 6       ;
 ; Ultra_T_Edge                                                                                                                                     ;                   ;         ;
-;      - rangefinder:U_Ranger_Top|edgeYet2                                                                                                         ; 0                 ; 6       ;
-;      - rangefinder:U_Ranger_Top|process_0~0                                                                                                      ; 0                 ; 6       ;
-;      - rangefinder:U_Ranger_Top|process_0~1                                                                                                      ; 0                 ; 6       ;
+;      - rangefinder:U_Ranger_Top|edgeYet2                                                                                                         ; 1                 ; 6       ;
+;      - rangefinder:U_Ranger_Top|process_0~0                                                                                                      ; 1                 ; 6       ;
+;      - rangefinder:U_Ranger_Top|process_0~1                                                                                                      ; 1                 ; 6       ;
 +--------------------------------------------------------------------------------------------------------------------------------------------------+-------------------+---------+
 
 
@@ -1376,25 +1376,25 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; Switch_1[0]                                           ; PIN_8              ; 269     ; Clock                     ; no     ; --                   ; --               ; --                        ;
 ; Switch_1[0]~clk_delay_ctrl                            ; CLKDELAYCTRL_G0    ; 182     ; Async. clear              ; yes    ; Global Clock         ; GCLK0            ; --                        ;
 ; Switch_2                                              ; PIN_9              ; 161     ; Async. clear              ; no     ; --                   ; --               ; --                        ;
-; clk                                                   ; PIN_17             ; 531     ; Clock                     ; yes    ; Global Clock         ; GCLK2            ; --                        ;
-; clk_div:U_1HzClkDivider|clk_out                       ; LCFF_X30_Y8_N1     ; 2       ; Clock                     ; yes    ; Global Clock         ; GCLK4            ; --                        ;
-; motor_pwm:U_Motor_1|clocktick                         ; LCFF_X12_Y17_N1    ; 19      ; Clock enable, Sync. clear ; no     ; --                   ; --               ; --                        ;
-; rangefinder:U_Ranger_Botom|LessThan0~1                ; LCCOMB_X16_Y5_N30  ; 24      ; Sync. clear               ; no     ; --                   ; --               ; --                        ;
-; rangefinder:U_Ranger_Botom|process_0~0                ; LCCOMB_X15_Y6_N28  ; 24      ; Clock enable              ; no     ; --                   ; --               ; --                        ;
-; rangefinder:U_Ranger_Botom|process_0~1                ; LCCOMB_X15_Y6_N10  ; 24      ; Clock enable              ; no     ; --                   ; --               ; --                        ;
-; rangefinder:U_Ranger_Top|process_0~0                  ; LCCOMB_X14_Y1_N12  ; 24      ; Clock enable              ; no     ; --                   ; --               ; --                        ;
-; rangefinder:U_Ranger_Top|process_0~1                  ; LCCOMB_X14_Y1_N10  ; 24      ; Clock enable              ; no     ; --                   ; --               ; --                        ;
-; regmap:U_Registers|reg_controller:RegCont|Selector1~0 ; LCCOMB_X22_Y14_N22 ; 8       ; Output enable             ; no     ; --                   ; --               ; --                        ;
-; regmap:U_Registers|reg_controller:RegCont|regi00~0    ; LCCOMB_X18_Y14_N0  ; 8       ; Clock enable              ; no     ; --                   ; --               ; --                        ;
-; regmap:U_Registers|reg_controller:RegCont|regi01~0    ; LCCOMB_X10_Y16_N26 ; 8       ; Clock enable              ; no     ; --                   ; --               ; --                        ;
-; regmap:U_Registers|reg_controller:RegCont|regi02~0    ; LCCOMB_X18_Y14_N30 ; 8       ; Clock enable              ; no     ; --                   ; --               ; --                        ;
-; regmap:U_Registers|reg_controller:RegCont|regi03~0    ; LCCOMB_X10_Y16_N12 ; 8       ; Clock enable              ; no     ; --                   ; --               ; --                        ;
-; regmap:U_Registers|reg_controller:RegCont|regi04~0    ; LCCOMB_X10_Y16_N8  ; 8       ; Clock enable              ; no     ; --                   ; --               ; --                        ;
-; regmap:U_Registers|reg_controller:RegCont|regi05~0    ; LCCOMB_X10_Y16_N6  ; 8       ; Clock enable              ; no     ; --                   ; --               ; --                        ;
-; regmap:U_Registers|reg_controller:RegCont|regi06~2    ; LCCOMB_X10_Y16_N22 ; 8       ; Clock enable              ; no     ; --                   ; --               ; --                        ;
-; regmap:U_Registers|reg_controller:RegCont|regi07~0    ; LCCOMB_X18_Y14_N24 ; 8       ; Clock enable              ; no     ; --                   ; --               ; --                        ;
-; regmap:U_Registers|reg_controller:RegCont|state.wa1   ; LCFF_X21_Y14_N5    ; 9       ; Clock enable              ; no     ; --                   ; --               ; --                        ;
-; regmap:U_Registers|reg_controller_reset               ; LCCOMB_X16_Y16_N0  ; 9       ; Async. clear              ; yes    ; Global Clock         ; GCLK7            ; --                        ;
+; clk                                                   ; PIN_17             ; 532     ; Clock                     ; yes    ; Global Clock         ; GCLK2            ; --                        ;
+; clk_div:U_1HzClkDivider|clk_out                       ; LCFF_X19_Y17_N19   ; 2       ; Clock                     ; yes    ; Global Clock         ; GCLK7            ; --                        ;
+; motor_pwm:U_Motor_1|clocktick                         ; LCFF_X9_Y9_N1      ; 19      ; Clock enable, Sync. clear ; no     ; --                   ; --               ; --                        ;
+; rangefinder:U_Ranger_Botom|LessThan0~1                ; LCCOMB_X12_Y5_N30  ; 24      ; Sync. clear               ; no     ; --                   ; --               ; --                        ;
+; rangefinder:U_Ranger_Botom|process_0~0                ; LCCOMB_X10_Y4_N20  ; 24      ; Clock enable              ; no     ; --                   ; --               ; --                        ;
+; rangefinder:U_Ranger_Botom|process_0~1                ; LCCOMB_X10_Y4_N10  ; 24      ; Clock enable              ; no     ; --                   ; --               ; --                        ;
+; rangefinder:U_Ranger_Top|process_0~0                  ; LCCOMB_X10_Y7_N4   ; 24      ; Clock enable              ; no     ; --                   ; --               ; --                        ;
+; rangefinder:U_Ranger_Top|process_0~1                  ; LCCOMB_X10_Y7_N26  ; 24      ; Clock enable              ; no     ; --                   ; --               ; --                        ;
+; regmap:U_Registers|reg_controller:RegCont|Selector1~0 ; LCCOMB_X17_Y11_N20 ; 8       ; Output enable             ; no     ; --                   ; --               ; --                        ;
+; regmap:U_Registers|reg_controller:RegCont|regi00~0    ; LCCOMB_X15_Y17_N20 ; 8       ; Clock enable              ; no     ; --                   ; --               ; --                        ;
+; regmap:U_Registers|reg_controller:RegCont|regi01~0    ; LCCOMB_X14_Y16_N4  ; 8       ; Clock enable              ; no     ; --                   ; --               ; --                        ;
+; regmap:U_Registers|reg_controller:RegCont|regi02~0    ; LCCOMB_X15_Y17_N8  ; 8       ; Clock enable              ; no     ; --                   ; --               ; --                        ;
+; regmap:U_Registers|reg_controller:RegCont|regi03~0    ; LCCOMB_X14_Y16_N6  ; 8       ; Clock enable              ; no     ; --                   ; --               ; --                        ;
+; regmap:U_Registers|reg_controller:RegCont|regi04~0    ; LCCOMB_X14_Y16_N2  ; 8       ; Clock enable              ; no     ; --                   ; --               ; --                        ;
+; regmap:U_Registers|reg_controller:RegCont|regi05~0    ; LCCOMB_X16_Y8_N10  ; 8       ; Clock enable              ; no     ; --                   ; --               ; --                        ;
+; regmap:U_Registers|reg_controller:RegCont|regi06~2    ; LCCOMB_X14_Y16_N30 ; 8       ; Clock enable              ; no     ; --                   ; --               ; --                        ;
+; regmap:U_Registers|reg_controller:RegCont|regi07~0    ; LCCOMB_X15_Y17_N6  ; 8       ; Clock enable              ; no     ; --                   ; --               ; --                        ;
+; regmap:U_Registers|reg_controller:RegCont|state.wa1   ; LCFF_X17_Y11_N13   ; 9       ; Clock enable              ; no     ; --                   ; --               ; --                        ;
+; regmap:U_Registers|reg_controller_reset               ; LCCOMB_X17_Y10_N0  ; 10      ; Async. clear              ; yes    ; Global Clock         ; GCLK3            ; --                        ;
 +-------------------------------------------------------+--------------------+---------+---------------------------+--------+----------------------+------------------+---------------------------+
 
 
@@ -1404,9 +1404,9 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; Name                                    ; Location          ; Fan-Out ; Global Resource Used ; Global Line Name ; Enable Signal Source Name ;
 +-----------------------------------------+-------------------+---------+----------------------+------------------+---------------------------+
 ; Switch_1[0]~clk_delay_ctrl              ; CLKDELAYCTRL_G0   ; 182     ; Global Clock         ; GCLK0            ; --                        ;
-; clk                                     ; PIN_17            ; 531     ; Global Clock         ; GCLK2            ; --                        ;
-; clk_div:U_1HzClkDivider|clk_out         ; LCFF_X30_Y8_N1    ; 2       ; Global Clock         ; GCLK4            ; --                        ;
-; regmap:U_Registers|reg_controller_reset ; LCCOMB_X16_Y16_N0 ; 9       ; Global Clock         ; GCLK7            ; --                        ;
+; clk                                     ; PIN_17            ; 532     ; Global Clock         ; GCLK2            ; --                        ;
+; clk_div:U_1HzClkDivider|clk_out         ; LCFF_X19_Y17_N19  ; 2       ; Global Clock         ; GCLK7            ; --                        ;
+; regmap:U_Registers|reg_controller_reset ; LCCOMB_X17_Y10_N0 ; 10      ; Global Clock         ; GCLK3            ; --                        ;
 +-----------------------------------------+-------------------+---------+----------------------+------------------+---------------------------+
 
 
@@ -1418,6 +1418,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; Switch_1[0]                                                                                                                                                            ; 269     ;
 ; Switch_2                                                                                                                                                               ; 161     ;
 ; pid_roll_controller:U_Roll|v[31]~1                                                                                                                                     ; 59      ;
+; pid_pitch_controller:U_Pitch|u[23]~71                                                                                                                                  ; 59      ;
 ; pid_altitude_controller:U_Altitude|v[31]~0                                                                                                                             ; 59      ;
 ; pid_pitch_controller:U_Pitch|v[31]~1                                                                                                                                   ; 57      ;
 ; regmap:U_Registers|addreg:RegAdd|tmp[1]                                                                                                                                ; 40      ;
@@ -1425,14 +1426,12 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; regmap:U_Registers|addreg:RegAdd|tmp[2]                                                                                                                                ; 40      ;
 ; LessThan2~16                                                                                                                                                           ; 36      ;
 ; regmap:U_Registers|addreg:RegAdd|tmp[3]                                                                                                                                ; 33      ;
-; pid_pitch_controller:U_Pitch|u[23]~70                                                                                                                                  ; 32      ;
 ; pid_altitude_controller:U_Altitude|u[4]~68                                                                                                                             ; 32      ;
 ; pid_roll_controller:U_Roll|u[20]~75                                                                                                                                    ; 31      ;
 ; pid_pitch_controller:U_Pitch|LessThan4~9                                                                                                                               ; 30      ;
 ; pid_altitude_controller:U_Altitude|LessThan4~9                                                                                                                         ; 30      ;
 ; pid_roll_controller:U_Roll|u[20]~72                                                                                                                                    ; 29      ;
 ; pid_altitude_controller:U_Altitude|u[4]~70                                                                                                                             ; 29      ;
-; pid_pitch_controller:U_Pitch|u[23]~71                                                                                                                                  ; 28      ;
 ; rangefinder:U_Ranger_Botom|LessThan0~1                                                                                                                                 ; 24      ;
 ; rangefinder:U_Ranger_Top|process_0~1                                                                                                                                   ; 24      ;
 ; rangefinder:U_Ranger_Top|process_0~0                                                                                                                                   ; 24      ;
@@ -1554,10 +1553,10 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; pid_altitude_controller:U_Altitude|lpm_divide:Div0|lpm_divide_7so:auto_generated|abs_divider_kbg:divider|alt_u_div_k2f:divider|op_22~8                                 ; 14      ;
 ; rangefinder:U_Ranger_Top|Divider:Div|lpm_divide:LPM_DIVIDE_component|lpm_divide_gup:auto_generated|sign_div_unsign_bnh:divider|alt_u_div_o5f:divider|op_4~28           ; 14      ;
 ; rangefinder:U_Ranger_Botom|Divider:Div|lpm_divide:LPM_DIVIDE_component|lpm_divide_gup:auto_generated|sign_div_unsign_bnh:divider|alt_u_div_o5f:divider|op_4~28         ; 14      ;
+; PIC_PBUS_OK_IN                                                                                                                                                         ; 13      ;
 ; pid_pitch_controller:U_Pitch|lpm_divide:Div0|lpm_divide_7so:auto_generated|abs_divider_kbg:divider|op_1~60                                                             ; 13      ;
 ; rangefinder:U_Ranger_Top|Divider:Div|lpm_divide:LPM_DIVIDE_component|lpm_divide_gup:auto_generated|sign_div_unsign_bnh:divider|alt_u_div_o5f:divider|op_3~26           ; 13      ;
 ; rangefinder:U_Ranger_Botom|Divider:Div|lpm_divide:LPM_DIVIDE_component|lpm_divide_gup:auto_generated|sign_div_unsign_bnh:divider|alt_u_div_o5f:divider|op_3~26         ; 13      ;
-; PIC_PBUS_OK_IN                                                                                                                                                         ; 12      ;
 ; pid_altitude_controller:U_Altitude|pwm_input[7]~1                                                                                                                      ; 12      ;
 ; regmap:U_Registers|reg_controller:RegCont|state.ra2                                                                                                                    ; 12      ;
 ; rangefinder:U_Ranger_Top|Divider:Div|lpm_divide:LPM_DIVIDE_component|lpm_divide_gup:auto_generated|sign_div_unsign_bnh:divider|alt_u_div_o5f:divider|op_2~24           ; 12      ;
@@ -1598,13 +1597,13 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; regmap:U_Registers|reg_controller:RegCont|regi06~2                                                                                                                     ; 8       ;
 ; regmap:U_Registers|reg_controller:RegCont|regi06~1                                                                                                                     ; 8       ;
 ; regmap:U_Registers|reg_controller:RegCont|Selector1~0                                                                                                                  ; 8       ;
-; regmap:U_Registers|outmux:MuxOut|tmp1[6]~26                                                                                                                            ; 8       ;
-; regmap:U_Registers|outmux:MuxOut|tmp1[6]~24                                                                                                                            ; 8       ;
+; regmap:U_Registers|outmux:MuxOut|tmp1[5]~26                                                                                                                            ; 8       ;
+; regmap:U_Registers|outmux:MuxOut|tmp1[5]~24                                                                                                                            ; 8       ;
 ; pwm_w[8]~1                                                                                                                                                             ; 8       ;
 ; pwm_w[8]~0                                                                                                                                                             ; 8       ;
 ; pwm3[0]~0                                                                                                                                                              ; 8       ;
 ; pwm1[0]~0                                                                                                                                                              ; 8       ;
-; pid_pitch_controller:U_Pitch|pwm_input[1]~1                                                                                                                            ; 8       ;
+; pid_pitch_controller:U_Pitch|pwm_input[2]~1                                                                                                                            ; 8       ;
 ; process_0~1                                                                                                                                                            ; 8       ;
 ; pid_altitude_controller:U_Altitude|Add7~62                                                                                                                             ; 8       ;
 ; pwm2[3]~0                                                                                                                                                              ; 7       ;
@@ -1640,7 +1639,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; pid_roll_controller:U_Roll|previous_error[31]                                                                                                                          ; 5       ;
 ; pid_pitch_controller:U_Pitch|previous_error[31]                                                                                                                        ; 5       ;
 ; pid_altitude_controller:U_Altitude|previous_error[31]                                                                                                                  ; 5       ;
-; regmap:U_Registers|reg_controller:RegCont|state.rd2                                                                                                                    ; 5       ;
+; regmap:U_Registers|reg_controller:RegCont|state.rd3                                                                                                                    ; 5       ;
 ; rangefinder:U_Ranger_Botom|count[0]                                                                                                                                    ; 5       ;
 ; rangefinder:U_Ranger_Botom|count[1]                                                                                                                                    ; 5       ;
 ; rangefinder:U_Ranger_Botom|count[2]                                                                                                                                    ; 5       ;
@@ -1664,6 +1663,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; motor_pwm:U_Motor_1|pulsecount[6]                                                                                                                                      ; 5       ;
 ; Add2~16                                                                                                                                                                ; 5       ;
 ; Add4~16                                                                                                                                                                ; 5       ;
+; pid_pitch_controller:U_Pitch|Add7~60                                                                                                                                   ; 5       ;
 ; pid_pitch_controller:U_Pitch|error[7]                                                                                                                                  ; 5       ;
 ; pid_altitude_controller:U_Altitude|error[7]                                                                                                                            ; 5       ;
 ; motor_pwm:U_Motor_1|pulsecount[7]                                                                                                                                      ; 5       ;
@@ -1696,7 +1696,6 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; Add4~4                                                                                                                                                                 ; 4       ;
 ; Add4~2                                                                                                                                                                 ; 4       ;
 ; Add4~0                                                                                                                                                                 ; 4       ;
-; pid_pitch_controller:U_Pitch|Add7~60                                                                                                                                   ; 4       ;
 ; pid_pitch_controller:U_Pitch|error[0]                                                                                                                                  ; 4       ;
 ; pid_altitude_controller:U_Altitude|Add7~60                                                                                                                             ; 4       ;
 ; pid_altitude_controller:U_Altitude|error[0]                                                                                                                            ; 4       ;
@@ -2292,10 +2291,10 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; pid_pitch_controller:U_Pitch|u[4]~76                                                                                                                                   ; 2       ;
 ; pid_pitch_controller:U_Pitch|u[5]~75                                                                                                                                   ; 2       ;
 ; pid_pitch_controller:U_Pitch|v[30]~2                                                                                                                                   ; 2       ;
-; pid_pitch_controller:U_Pitch|u[23]~69                                                                                                                                  ; 2       ;
-; pid_pitch_controller:U_Pitch|u_old[30]                                                                                                                                 ; 2       ;
+; pid_pitch_controller:U_Pitch|u[23]~70                                                                                                                                  ; 2       ;
 ; pid_pitch_controller:U_Pitch|v[29]~0                                                                                                                                   ; 2       ;
-; pid_pitch_controller:U_Pitch|pwm_input[1]~0                                                                                                                            ; 2       ;
+; pid_pitch_controller:U_Pitch|u_old[30]                                                                                                                                 ; 2       ;
+; pid_pitch_controller:U_Pitch|pwm_input[2]~0                                                                                                                            ; 2       ;
 ; pid_pitch_controller:U_Pitch|LessThan1~1                                                                                                                               ; 2       ;
 ; pid_altitude_controller:U_Altitude|Add4~18                                                                                                                             ; 2       ;
 ; pid_altitude_controller:U_Altitude|pwm_input[2]~12                                                                                                                     ; 2       ;
@@ -2314,8 +2313,8 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; pid_altitude_controller:U_Altitude|pwm_input[8]~0                                                                                                                      ; 2       ;
 ; rangefinder:U_Ranger_Top|LessThan1~4                                                                                                                                   ; 2       ;
 ; regmap:U_Registers|reg_controller:RegCont|state.wd1                                                                                                                    ; 2       ;
-; regmap:U_Registers|reg_controller:RegCont|state.ra1                                                                                                                    ; 2       ;
 ; regmap:U_Registers|reg_controller:RegCont|Selector5~0                                                                                                                  ; 2       ;
+; regmap:U_Registers|reg_controller:RegCont|state.ra1                                                                                                                    ; 2       ;
 ; rangefinder:U_Ranger_Top|Divider:Div|lpm_divide:LPM_DIVIDE_component|lpm_divide_gup:auto_generated|sign_div_unsign_bnh:divider|alt_u_div_o5f:divider|StageOut[550]~220 ; 2       ;
 ; rangefinder:U_Ranger_Top|Divider:Div|lpm_divide:LPM_DIVIDE_component|lpm_divide_gup:auto_generated|sign_div_unsign_bnh:divider|alt_u_div_o5f:divider|StageOut[549]~219 ; 2       ;
 ; rangefinder:U_Ranger_Top|Divider:Div|lpm_divide:LPM_DIVIDE_component|lpm_divide_gup:auto_generated|sign_div_unsign_bnh:divider|alt_u_div_o5f:divider|StageOut[544]~218 ; 2       ;
@@ -2415,6 +2414,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; rangefinder:U_Ranger_Top|Divider:Div|lpm_divide:LPM_DIVIDE_component|lpm_divide_gup:auto_generated|sign_div_unsign_bnh:divider|alt_u_div_o5f:divider|StageOut[442]~124 ; 2       ;
 ; rangefinder:U_Ranger_Top|Divider:Div|lpm_divide:LPM_DIVIDE_component|lpm_divide_gup:auto_generated|sign_div_unsign_bnh:divider|alt_u_div_o5f:divider|StageOut[443]~123 ; 2       ;
 ; rangefinder:U_Ranger_Top|Divider:Div|lpm_divide:LPM_DIVIDE_component|lpm_divide_gup:auto_generated|sign_div_unsign_bnh:divider|alt_u_div_o5f:divider|StageOut[444]~122 ; 2       ;
+; rangefinder:U_Ranger_Top|Divider:Div|lpm_divide:LPM_DIVIDE_component|lpm_divide_gup:auto_generated|sign_div_unsign_bnh:divider|alt_u_div_o5f:divider|StageOut[445]~121 ; 2       ;
 +------------------------------------------------------------------------------------------------------------------------------------------------------------------------+---------+
 
 
@@ -2423,167 +2423,166 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +----------------------------+-------------------------+
 ; Interconnect Resource Type ; Usage                   ;
 +----------------------------+-------------------------+
-; Block interconnects        ; 4,905 / 26,052 ( 19 % ) ;
-; C16 interconnects          ; 26 / 1,156 ( 2 % )      ;
-; C4 interconnects           ; 2,876 / 17,952 ( 16 % ) ;
-; Direct links               ; 1,223 / 26,052 ( 5 % )  ;
+; Block interconnects        ; 4,871 / 26,052 ( 19 % ) ;
+; C16 interconnects          ; 41 / 1,156 ( 4 % )      ;
+; C4 interconnects           ; 2,905 / 17,952 ( 16 % ) ;
+; Direct links               ; 1,182 / 26,052 ( 5 % )  ;
 ; Global clocks              ; 4 / 8 ( 50 % )          ;
-; Local interconnects        ; 1,336 / 8,256 ( 16 % )  ;
-; R24 interconnects          ; 91 / 1,020 ( 9 % )      ;
-; R4 interconnects           ; 3,414 / 22,440 ( 15 % ) ;
+; Local interconnects        ; 1,363 / 8,256 ( 17 % )  ;
+; R24 interconnects          ; 103 / 1,020 ( 10 % )    ;
+; R4 interconnects           ; 3,208 / 22,440 ( 14 % ) ;
 +----------------------------+-------------------------+
 
 
 +-----------------------------------------------------------------------------+
 ; LAB Logic Elements                                                          ;
 +---------------------------------------------+-------------------------------+
-; Number of Logic Elements  (Average = 13.05) ; Number of LABs  (Total = 307) ;
+; Number of Logic Elements  (Average = 12.89) ; Number of LABs  (Total = 311) ;
 +---------------------------------------------+-------------------------------+
-; 1                                           ; 30                            ;
-; 2                                           ; 9                             ;
-; 3                                           ; 10                            ;
-; 4                                           ; 2                             ;
-; 5                                           ; 2                             ;
-; 6                                           ; 3                             ;
-; 7                                           ; 3                             ;
-; 8                                           ; 2                             ;
+; 1                                           ; 31                            ;
+; 2                                           ; 11                            ;
+; 3                                           ; 11                            ;
+; 4                                           ; 3                             ;
+; 5                                           ; 1                             ;
+; 6                                           ; 6                             ;
+; 7                                           ; 4                             ;
+; 8                                           ; 1                             ;
 ; 9                                           ; 2                             ;
-; 10                                          ; 2                             ;
+; 10                                          ; 0                             ;
 ; 11                                          ; 0                             ;
 ; 12                                          ; 5                             ;
-; 13                                          ; 4                             ;
-; 14                                          ; 9                             ;
-; 15                                          ; 4                             ;
-; 16                                          ; 220                           ;
+; 13                                          ; 3                             ;
+; 14                                          ; 5                             ;
+; 15                                          ; 2                             ;
+; 16                                          ; 226                           ;
 +---------------------------------------------+-------------------------------+
 
 
 +--------------------------------------------------------------------+
 ; LAB-wide Signals                                                   ;
 +------------------------------------+-------------------------------+
-; LAB-wide Signals  (Average = 0.43) ; Number of LABs  (Total = 307) ;
+; LAB-wide Signals  (Average = 0.43) ; Number of LABs  (Total = 311) ;
 +------------------------------------+-------------------------------+
 ; 1 Async. clear                     ; 46                            ;
 ; 1 Clock                            ; 66                            ;
-; 1 Clock enable                     ; 6                             ;
+; 1 Clock enable                     ; 9                             ;
 ; 1 Sync. clear                      ; 2                             ;
-; 2 Async. clears                    ; 2                             ;
-; 2 Clock enables                    ; 11                            ;
+; 2 Async. clears                    ; 1                             ;
+; 2 Clock enables                    ; 9                             ;
 +------------------------------------+-------------------------------+
 
 
 +------------------------------------------------------------------------------+
 ; LAB Signals Sourced                                                          ;
 +----------------------------------------------+-------------------------------+
-; Number of Signals Sourced  (Average = 14.25) ; Number of LABs  (Total = 307) ;
+; Number of Signals Sourced  (Average = 14.09) ; Number of LABs  (Total = 311) ;
 +----------------------------------------------+-------------------------------+
 ; 0                                            ; 0                             ;
 ; 1                                            ; 31                            ;
-; 2                                            ; 9                             ;
-; 3                                            ; 6                             ;
-; 4                                            ; 3                             ;
-; 5                                            ; 6                             ;
-; 6                                            ; 3                             ;
-; 7                                            ; 2                             ;
-; 8                                            ; 1                             ;
+; 2                                            ; 11                            ;
+; 3                                            ; 8                             ;
+; 4                                            ; 6                             ;
+; 5                                            ; 3                             ;
+; 6                                            ; 6                             ;
+; 7                                            ; 3                             ;
+; 8                                            ; 0                             ;
 ; 9                                            ; 2                             ;
-; 10                                           ; 3                             ;
+; 10                                           ; 2                             ;
 ; 11                                           ; 0                             ;
 ; 12                                           ; 1                             ;
 ; 13                                           ; 1                             ;
-; 14                                           ; 9                             ;
+; 14                                           ; 6                             ;
 ; 15                                           ; 72                            ;
-; 16                                           ; 104                           ;
-; 17                                           ; 4                             ;
-; 18                                           ; 3                             ;
-; 19                                           ; 2                             ;
-; 20                                           ; 3                             ;
+; 16                                           ; 106                           ;
+; 17                                           ; 2                             ;
+; 18                                           ; 2                             ;
+; 19                                           ; 1                             ;
+; 20                                           ; 1                             ;
 ; 21                                           ; 3                             ;
-; 22                                           ; 4                             ;
-; 23                                           ; 2                             ;
-; 24                                           ; 9                             ;
+; 22                                           ; 5                             ;
+; 23                                           ; 6                             ;
+; 24                                           ; 8                             ;
 ; 25                                           ; 9                             ;
 ; 26                                           ; 6                             ;
-; 27                                           ; 1                             ;
-; 28                                           ; 2                             ;
-; 29                                           ; 1                             ;
+; 27                                           ; 3                             ;
+; 28                                           ; 1                             ;
+; 29                                           ; 2                             ;
 ; 30                                           ; 1                             ;
 ; 31                                           ; 1                             ;
-; 32                                           ; 3                             ;
+; 32                                           ; 2                             ;
 +----------------------------------------------+-------------------------------+
 
 
 +----------------------------------------------------------------------------------+
 ; LAB Signals Sourced Out                                                          ;
 +--------------------------------------------------+-------------------------------+
-; Number of Signals Sourced Out  (Average = 10.48) ; Number of LABs  (Total = 307) ;
+; Number of Signals Sourced Out  (Average = 10.26) ; Number of LABs  (Total = 311) ;
 +--------------------------------------------------+-------------------------------+
 ; 0                                                ; 0                             ;
-; 1                                                ; 34                            ;
-; 2                                                ; 9                             ;
-; 3                                                ; 13                            ;
-; 4                                                ; 3                             ;
-; 5                                                ; 5                             ;
-; 6                                                ; 3                             ;
-; 7                                                ; 6                             ;
-; 8                                                ; 7                             ;
-; 9                                                ; 17                            ;
-; 10                                               ; 24                            ;
+; 1                                                ; 36                            ;
+; 2                                                ; 10                            ;
+; 3                                                ; 12                            ;
+; 4                                                ; 5                             ;
+; 5                                                ; 4                             ;
+; 6                                                ; 6                             ;
+; 7                                                ; 8                             ;
+; 8                                                ; 4                             ;
+; 9                                                ; 20                            ;
+; 10                                               ; 28                            ;
 ; 11                                               ; 34                            ;
-; 12                                               ; 49                            ;
-; 13                                               ; 17                            ;
-; 14                                               ; 14                            ;
+; 12                                               ; 47                            ;
+; 13                                               ; 16                            ;
+; 14                                               ; 10                            ;
 ; 15                                               ; 13                            ;
-; 16                                               ; 46                            ;
-; 17                                               ; 1                             ;
+; 16                                               ; 44                            ;
+; 17                                               ; 0                             ;
 ; 18                                               ; 3                             ;
-; 19                                               ; 2                             ;
+; 19                                               ; 3                             ;
 ; 20                                               ; 0                             ;
-; 21                                               ; 0                             ;
+; 21                                               ; 1                             ;
 ; 22                                               ; 3                             ;
 ; 23                                               ; 3                             ;
-; 24                                               ; 0                             ;
-; 25                                               ; 1                             ;
+; 24                                               ; 1                             ;
 +--------------------------------------------------+-------------------------------+
 
 
 +------------------------------------------------------------------------------+
 ; LAB Distinct Inputs                                                          ;
 +----------------------------------------------+-------------------------------+
-; Number of Distinct Inputs  (Average = 14.79) ; Number of LABs  (Total = 307) ;
+; Number of Distinct Inputs  (Average = 14.61) ; Number of LABs  (Total = 311) ;
 +----------------------------------------------+-------------------------------+
 ; 0                                            ; 0                             ;
 ; 1                                            ; 1                             ;
-; 2                                            ; 28                            ;
-; 3                                            ; 8                             ;
-; 4                                            ; 7                             ;
-; 5                                            ; 8                             ;
+; 2                                            ; 26                            ;
+; 3                                            ; 10                            ;
+; 4                                            ; 8                             ;
+; 5                                            ; 9                             ;
 ; 6                                            ; 1                             ;
-; 7                                            ; 4                             ;
+; 7                                            ; 6                             ;
 ; 8                                            ; 3                             ;
-; 9                                            ; 7                             ;
-; 10                                           ; 12                            ;
-; 11                                           ; 16                            ;
-; 12                                           ; 9                             ;
-; 13                                           ; 18                            ;
-; 14                                           ; 11                            ;
+; 9                                            ; 8                             ;
+; 10                                           ; 13                            ;
+; 11                                           ; 15                            ;
+; 12                                           ; 12                            ;
+; 13                                           ; 19                            ;
+; 14                                           ; 10                            ;
 ; 15                                           ; 38                            ;
-; 16                                           ; 20                            ;
+; 16                                           ; 18                            ;
 ; 17                                           ; 25                            ;
-; 18                                           ; 11                            ;
-; 19                                           ; 6                             ;
-; 20                                           ; 8                             ;
-; 21                                           ; 7                             ;
+; 18                                           ; 10                            ;
+; 19                                           ; 7                             ;
+; 20                                           ; 6                             ;
+; 21                                           ; 6                             ;
 ; 22                                           ; 8                             ;
-; 23                                           ; 5                             ;
-; 24                                           ; 7                             ;
-; 25                                           ; 3                             ;
+; 23                                           ; 4                             ;
+; 24                                           ; 9                             ;
+; 25                                           ; 2                             ;
 ; 26                                           ; 11                            ;
-; 27                                           ; 4                             ;
-; 28                                           ; 7                             ;
-; 29                                           ; 3                             ;
-; 30                                           ; 6                             ;
-; 31                                           ; 5                             ;
+; 27                                           ; 3                             ;
+; 28                                           ; 9                             ;
+; 29                                           ; 2                             ;
+; 30                                           ; 10                            ;
+; 31                                           ; 2                             ;
 +----------------------------------------------+-------------------------------+
 
 
@@ -2620,118 +2619,117 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; Fitter Messages ;
 +-----------------+
 Info: *******************************************************************
-Info: Running Quartus II Fitter
-    Info: Version 11.0 Build 157 04/27/2011 SJ Web Edition
-    Info: Processing started: Wed Apr 25 17:53:44 2012
+Info: Running Quartus II 32-bit Fitter
+    Info: Version 11.1 Build 216 11/23/2011 Service Pack 1 SJ Web Edition
+    Info: Processing started: Wed Apr 25 18:26:29 2012
 Info: Command: quartus_fit --read_settings_files=off --write_settings_files=off BoardTest -c BoardTest
-Warning: Parallel compilation is not licensed and has been disabled
-Info: Selected device EP2C8T144C8 for design "BoardTest"
-Info: Low junction temperature is 0 degrees C
-Info: High junction temperature is 85 degrees C
-Info: Fitter is performing an Auto Fit compilation, which may decrease Fitter effort to reduce compilation time
-Warning: Feature LogicLock is only available with a valid subscription license. You can purchase a software subscription to gain full access to this feature.
-Info: Device migration not selected. If you intend to use device migration later, you may need to change the pin assignments as they may be incompatible with other devices
-    Info: Device EP2C5T144C8 is compatible
-    Info: Device EP2C5T144I8 is compatible
-    Info: Device EP2C8T144I8 is compatible
-Info: Fitter converted 3 user pins into dedicated programming pins
-    Info: Pin ~ASDO~ is reserved at location 1
-    Info: Pin ~nCSO~ is reserved at location 2
-    Info: Pin ~LVDS54p/nCEO~ is reserved at location 76
-Info: Timing-driven compilation is using the TimeQuest Timing Analyzer
-Critical Warning: Synopsys Design Constraints File file not found: 'BoardTest.sdc'. A Synopsys Design Constraints File is required by the TimeQuest Timing Analyzer to get proper timing constraints. Without it, the Compiler will not properly optimize the design.
-Info: No user constrained base clocks found in the design
-Info: Timing requirements not specified -- quality metrics such as performance may be sacrificed to reduce compilation time.
-Info: Automatically promoted node clk (placed in PIN 17 (CLK0, LVDSCLK0p, Input))
-    Info: Automatically promoted destinations to use location or clock signal Global Clock CLKCTRL_G2
-Info: Automatically promoted node clk_div:U_1HzClkDivider|clk_out 
-    Info: Automatically promoted destinations to use location or clock signal Global Clock
-Info: Automatically promoted node Switch_1[0] (placed in PIN 8 (LVDS8p, DPCLK0/DQS0L/CQ1L))
-    Info: Automatically promoted destinations to use location or clock signal Global Clock CLKCTRL_G0
-    Info: Following destination nodes may be non-global or may not use global or regional clocks
-        Info: Destination node pid_altitude_controller:U_Altitude|Add4~0
-        Info: Destination node pid_pitch_controller:U_Pitch|Add4~1
-        Info: Destination node pid_altitude_controller:U_Altitude|pwm_input[8]~0
-        Info: Destination node pid_altitude_controller:U_Altitude|Add3~24
-        Info: Destination node pid_altitude_controller:U_Altitude|Add1~20
-        Info: Destination node pid_altitude_controller:U_Altitude|Add1~21
-        Info: Destination node pid_altitude_controller:U_Altitude|Add1~22
-        Info: Destination node pid_altitude_controller:U_Altitude|Add1~23
-        Info: Destination node pid_altitude_controller:U_Altitude|Add1~24
-        Info: Destination node pid_altitude_controller:U_Altitude|Add1~25
-        Info: Non-global destination nodes limited to 10 nodes
-Info: Automatically promoted node regmap:U_Registers|reg_controller_reset 
-    Info: Automatically promoted destinations to use location or clock signal Global Clock
-Info: Starting register packing
-Extra Info: Performing register packing on registers with non-logic cell location assignments
-Extra Info: Completed register packing on registers with non-logic cell location assignments
-Extra Info: Started Fast Input/Output/OE register processing
-Extra Info: Finished Fast Input/Output/OE register processing
-Extra Info: Moving registers into I/O cells, Multiplier Blocks, and RAM blocks to improve timing and density
-Extra Info: Finished moving registers into I/O cells, Multiplier Blocks, and RAM blocks
-Info: Finished register packing
-    Extra Info: No registers were packed into other blocks
-Info: Fitter preparation operations ending: elapsed time is 00:00:01
-Info: Fitter placement preparation operations beginning
-Info: Fitter placement preparation operations ending: elapsed time is 00:00:00
-Info: Fitter placement operations beginning
-Info: Fitter placement was successful
-Info: Fitter placement operations ending: elapsed time is 00:00:02
-Info: Fitter routing operations beginning
-Info: Router estimated average interconnect usage is 13% of the available device resources
-    Info: Router estimated peak interconnect usage is 25% of the available device resources in the region that extends from location X11_Y10 to location X22_Y19
-Info: Fitter routing operations ending: elapsed time is 00:00:03
-Info: The Fitter performed an Auto Fit compilation.  Optimizations were skipped to reduce compilation time.
-    Info: Optimizations that may affect the design's routability were skipped
-    Info: Optimizations that may affect the design's timing were skipped
-Info: Started post-fitting delay annotation
-Warning: Found 38 output pins without output pin load capacitance assignment
-    Info: Pin "PIC_PBUS_Data[0]" has no specified output pin load capacitance -- assuming default load capacitance of 0 pF for timing analysis
-    Info: Pin "PIC_PBUS_Data[1]" has no specified output pin load capacitance -- assuming default load capacitance of 0 pF for timing analysis
-    Info: Pin "PIC_PBUS_Data[2]" has no specified output pin load capacitance -- assuming default load capacitance of 0 pF for timing analysis
-    Info: Pin "PIC_PBUS_Data[3]" has no specified output pin load capacitance -- assuming default load capacitance of 0 pF for timing analysis
-    Info: Pin "PIC_PBUS_Data[4]" has no specified output pin load capacitance -- assuming default load capacitance of 0 pF for timing analysis
-    Info: Pin "PIC_PBUS_Data[5]" has no specified output pin load capacitance -- assuming default load capacitance of 0 pF for timing analysis
-    Info: Pin "PIC_PBUS_Data[6]" has no specified output pin load capacitance -- assuming default load capacitance of 0 pF for timing analysis
-    Info: Pin "PIC_PBUS_Data[7]" has no specified output pin load capacitance -- assuming default load capacitance of 0 pF for timing analysis
-    Info: Pin "Camera_SDA" has no specified output pin load capacitance -- assuming default load capacitance of 0 pF for timing analysis
-    Info: Pin "FPGA_I2C_Data" has no specified output pin load capacitance -- assuming default load capacitance of 0 pF for timing analysis
-    Info: Pin "TLED_Orange_1" has no specified output pin load capacitance -- assuming default load capacitance of 0 pF for timing analysis
-    Info: Pin "TLED_Orange_2" has no specified output pin load capacitance -- assuming default load capacitance of 0 pF for timing analysis
-    Info: Pin "BLED_Blue[0]" has no specified output pin load capacitance -- assuming default load capacitance of 0 pF for timing analysis
-    Info: Pin "BLED_Blue[1]" has no specified output pin load capacitance -- assuming default load capacitance of 0 pF for timing analysis
-    Info: Pin "BLED_Blue[2]" has no specified output pin load capacitance -- assuming default load capacitance of 0 pF for timing analysis
-    Info: Pin "BLED_Blue[3]" has no specified output pin load capacitance -- assuming default load capacitance of 0 pF for timing analysis
-    Info: Pin "BLED_Orange[0]" has no specified output pin load capacitance -- assuming default load capacitance of 0 pF for timing analysis
-    Info: Pin "BLED_Orange[1]" has no specified output pin load capacitance -- assuming default load capacitance of 0 pF for timing analysis
-    Info: Pin "BLED_Orange[2]" has no specified output pin load capacitance -- assuming default load capacitance of 0 pF for timing analysis
-    Info: Pin "BLED_Orange[3]" has no specified output pin load capacitance -- assuming default load capacitance of 0 pF for timing analysis
-    Info: Pin "PIC_PBUS_OK_OUT" has no specified output pin load capacitance -- assuming default load capacitance of 0 pF for timing analysis
-    Info: Pin "PIC_SPI_MISO" has no specified output pin load capacitance -- assuming default load capacitance of 0 pF for timing analysis
-    Info: Pin "Ultra_T_Trigger" has no specified output pin load capacitance -- assuming default load capacitance of 0 pF for timing analysis
-    Info: Pin "Ultra_B_Trigger" has no specified output pin load capacitance -- assuming default load capacitance of 0 pF for timing analysis
-    Info: Pin "Motor_North" has no specified output pin load capacitance -- assuming default load capacitance of 0 pF for timing analysis
-    Info: Pin "Motor_East" has no specified output pin load capacitance -- assuming default load capacitance of 0 pF for timing analysis
-    Info: Pin "Motor_South" has no specified output pin load capacitance -- assuming default load capacitance of 0 pF for timing analysis
-    Info: Pin "Motor_West" has no specified output pin load capacitance -- assuming default load capacitance of 0 pF for timing analysis
-    Info: Pin "Camera_SCL" has no specified output pin load capacitance -- assuming default load capacitance of 0 pF for timing analysis
-    Info: Pin "Camera_RESET" has no specified output pin load capacitance -- assuming default load capacitance of 0 pF for timing analysis
-    Info: Pin "Camera_EXTCLK" has no specified output pin load capacitance -- assuming default load capacitance of 0 pF for timing analysis
-    Info: Pin "FPGA_SPI_Clock" has no specified output pin load capacitance -- assuming default load capacitance of 0 pF for timing analysis
-    Info: Pin "FPGA_SPI_MOSI" has no specified output pin load capacitance -- assuming default load capacitance of 0 pF for timing analysis
-    Info: Pin "FPGA_I2C_Clock" has no specified output pin load capacitance -- assuming default load capacitance of 0 pF for timing analysis
-    Info: Pin "Gyro_ChipSelect" has no specified output pin load capacitance -- assuming default load capacitance of 0 pF for timing analysis
-    Info: Pin "SRAM_ChipSelect" has no specified output pin load capacitance -- assuming default load capacitance of 0 pF for timing analysis
-    Info: Pin "SRAM_WriteProtect" has no specified output pin load capacitance -- assuming default load capacitance of 0 pF for timing analysis
-    Info: Pin "Accel_SelAddr0" has no specified output pin load capacitance -- assuming default load capacitance of 0 pF for timing analysis
-Info: Delay annotation completed successfully
-Warning: Following 2 pins have no output enable or a GND or VCC output enable - later changes to this connectivity may change fitting results
-    Info: Pin Camera_SDA has a permanently disabled output enable
-    Info: Pin FPGA_I2C_Data has a permanently disabled output enable
-Info: Quartus II Fitter was successful. 0 errors, 5 warnings
-    Info: Peak virtual memory: 340 megabytes
-    Info: Processing ended: Wed Apr 25 17:53:55 2012
-    Info: Elapsed time: 00:00:11
-    Info: Total CPU time (on all processors): 00:00:11
+Warning (20028): Parallel compilation is not licensed and has been disabled
+Info (119006): Selected device EP2C8T144C8 for design "BoardTest"
+Info (21077): Low junction temperature is 0 degrees C
+Info (21077): High junction temperature is 85 degrees C
+Info (171003): Fitter is performing an Auto Fit compilation, which may decrease Fitter effort to reduce compilation time
+Warning (292013): Feature LogicLock is only available with a valid subscription license. You can purchase a software subscription to gain full access to this feature.
+Info (176444): Device migration not selected. If you intend to use device migration later, you may need to change the pin assignments as they may be incompatible with other devices
+    Info (176445): Device EP2C5T144C8 is compatible
+    Info (176445): Device EP2C5T144I8 is compatible
+    Info (176445): Device EP2C8T144I8 is compatible
+Info (169124): Fitter converted 3 user pins into dedicated programming pins
+    Info (169125): Pin ~ASDO~ is reserved at location 1
+    Info (169125): Pin ~nCSO~ is reserved at location 2
+    Info (169125): Pin ~LVDS54p/nCEO~ is reserved at location 76
+Critical Warning (332012): Synopsys Design Constraints File file not found: 'BoardTest.sdc'. A Synopsys Design Constraints File is required by the TimeQuest Timing Analyzer to get proper timing constraints. Without it, the Compiler will not properly optimize the design.
+Info (332144): No user constrained base clocks found in the design
+Info (332130): Timing requirements not specified -- quality metrics such as performance may be sacrificed to reduce compilation time.
+Info (176353): Automatically promoted node clk (placed in PIN 17 (CLK0, LVDSCLK0p, Input))
+    Info (176355): Automatically promoted destinations to use location or clock signal Global Clock CLKCTRL_G2
+Info (176353): Automatically promoted node clk_div:U_1HzClkDivider|clk_out 
+    Info (176355): Automatically promoted destinations to use location or clock signal Global Clock
+Info (176353): Automatically promoted node Switch_1[0] (placed in PIN 8 (LVDS8p, DPCLK0/DQS0L/CQ1L))
+    Info (176355): Automatically promoted destinations to use location or clock signal Global Clock CLKCTRL_G0
+    Info (176356): Following destination nodes may be non-global or may not use global or regional clocks
+        Info (176357): Destination node pid_altitude_controller:U_Altitude|Add4~0
+        Info (176357): Destination node pid_pitch_controller:U_Pitch|Add4~1
+        Info (176357): Destination node pid_altitude_controller:U_Altitude|pwm_input[8]~0
+        Info (176357): Destination node pid_altitude_controller:U_Altitude|Add3~24
+        Info (176357): Destination node pid_altitude_controller:U_Altitude|Add1~20
+        Info (176357): Destination node pid_altitude_controller:U_Altitude|Add1~21
+        Info (176357): Destination node pid_altitude_controller:U_Altitude|Add1~22
+        Info (176357): Destination node pid_altitude_controller:U_Altitude|Add1~23
+        Info (176357): Destination node pid_altitude_controller:U_Altitude|Add1~24
+        Info (176357): Destination node pid_altitude_controller:U_Altitude|Add1~25
+        Info (176358): Non-global destination nodes limited to 10 nodes
+Info (176353): Automatically promoted node regmap:U_Registers|reg_controller_reset 
+    Info (176355): Automatically promoted destinations to use location or clock signal Global Clock
+Info (176233): Starting register packing
+Extra Info (176273): Performing register packing on registers with non-logic cell location assignments
+Extra Info (176274): Completed register packing on registers with non-logic cell location assignments
+Extra Info (176236): Started Fast Input/Output/OE register processing
+Extra Info (176237): Finished Fast Input/Output/OE register processing
+Extra Info (176248): Moving registers into I/O cells, Multiplier Blocks, and RAM blocks to improve timing and density
+Extra Info (176249): Finished moving registers into I/O cells, Multiplier Blocks, and RAM blocks
+Info (176235): Finished register packing
+    Extra Info (176219): No registers were packed into other blocks
+Info (171121): Fitter preparation operations ending: elapsed time is 00:00:04
+Info (170189): Fitter placement preparation operations beginning
+Info (170190): Fitter placement preparation operations ending: elapsed time is 00:00:01
+Info (170191): Fitter placement operations beginning
+Info (170137): Fitter placement was successful
+Info (170192): Fitter placement operations ending: elapsed time is 00:00:04
+Info (170193): Fitter routing operations beginning
+Info (170195): Router estimated average interconnect usage is 13% of the available device resources
+    Info (170196): Router estimated peak interconnect usage is 26% of the available device resources in the region that extends from location X11_Y10 to location X22_Y19
+Info (170194): Fitter routing operations ending: elapsed time is 00:00:07
+Info (170199): The Fitter performed an Auto Fit compilation.  Optimizations were skipped to reduce compilation time.
+    Info (170201): Optimizations that may affect the design's routability were skipped
+    Info (170200): Optimizations that may affect the design's timing were skipped
+Info (306004): Started post-fitting delay annotation
+Warning (306006): Found 38 output pins without output pin load capacitance assignment
+    Info (306007): Pin "PIC_PBUS_Data[0]" has no specified output pin load capacitance -- assuming default load capacitance of 0 pF for timing analysis
+    Info (306007): Pin "PIC_PBUS_Data[1]" has no specified output pin load capacitance -- assuming default load capacitance of 0 pF for timing analysis
+    Info (306007): Pin "PIC_PBUS_Data[2]" has no specified output pin load capacitance -- assuming default load capacitance of 0 pF for timing analysis
+    Info (306007): Pin "PIC_PBUS_Data[3]" has no specified output pin load capacitance -- assuming default load capacitance of 0 pF for timing analysis
+    Info (306007): Pin "PIC_PBUS_Data[4]" has no specified output pin load capacitance -- assuming default load capacitance of 0 pF for timing analysis
+    Info (306007): Pin "PIC_PBUS_Data[5]" has no specified output pin load capacitance -- assuming default load capacitance of 0 pF for timing analysis
+    Info (306007): Pin "PIC_PBUS_Data[6]" has no specified output pin load capacitance -- assuming default load capacitance of 0 pF for timing analysis
+    Info (306007): Pin "PIC_PBUS_Data[7]" has no specified output pin load capacitance -- assuming default load capacitance of 0 pF for timing analysis
+    Info (306007): Pin "Camera_SDA" has no specified output pin load capacitance -- assuming default load capacitance of 0 pF for timing analysis
+    Info (306007): Pin "FPGA_I2C_Data" has no specified output pin load capacitance -- assuming default load capacitance of 0 pF for timing analysis
+    Info (306007): Pin "TLED_Orange_1" has no specified output pin load capacitance -- assuming default load capacitance of 0 pF for timing analysis
+    Info (306007): Pin "TLED_Orange_2" has no specified output pin load capacitance -- assuming default load capacitance of 0 pF for timing analysis
+    Info (306007): Pin "BLED_Blue[0]" has no specified output pin load capacitance -- assuming default load capacitance of 0 pF for timing analysis
+    Info (306007): Pin "BLED_Blue[1]" has no specified output pin load capacitance -- assuming default load capacitance of 0 pF for timing analysis
+    Info (306007): Pin "BLED_Blue[2]" has no specified output pin load capacitance -- assuming default load capacitance of 0 pF for timing analysis
+    Info (306007): Pin "BLED_Blue[3]" has no specified output pin load capacitance -- assuming default load capacitance of 0 pF for timing analysis
+    Info (306007): Pin "BLED_Orange[0]" has no specified output pin load capacitance -- assuming default load capacitance of 0 pF for timing analysis
+    Info (306007): Pin "BLED_Orange[1]" has no specified output pin load capacitance -- assuming default load capacitance of 0 pF for timing analysis
+    Info (306007): Pin "BLED_Orange[2]" has no specified output pin load capacitance -- assuming default load capacitance of 0 pF for timing analysis
+    Info (306007): Pin "BLED_Orange[3]" has no specified output pin load capacitance -- assuming default load capacitance of 0 pF for timing analysis
+    Info (306007): Pin "PIC_PBUS_OK_OUT" has no specified output pin load capacitance -- assuming default load capacitance of 0 pF for timing analysis
+    Info (306007): Pin "PIC_SPI_MISO" has no specified output pin load capacitance -- assuming default load capacitance of 0 pF for timing analysis
+    Info (306007): Pin "Ultra_T_Trigger" has no specified output pin load capacitance -- assuming default load capacitance of 0 pF for timing analysis
+    Info (306007): Pin "Ultra_B_Trigger" has no specified output pin load capacitance -- assuming default load capacitance of 0 pF for timing analysis
+    Info (306007): Pin "Motor_North" has no specified output pin load capacitance -- assuming default load capacitance of 0 pF for timing analysis
+    Info (306007): Pin "Motor_East" has no specified output pin load capacitance -- assuming default load capacitance of 0 pF for timing analysis
+    Info (306007): Pin "Motor_South" has no specified output pin load capacitance -- assuming default load capacitance of 0 pF for timing analysis
+    Info (306007): Pin "Motor_West" has no specified output pin load capacitance -- assuming default load capacitance of 0 pF for timing analysis
+    Info (306007): Pin "Camera_SCL" has no specified output pin load capacitance -- assuming default load capacitance of 0 pF for timing analysis
+    Info (306007): Pin "Camera_RESET" has no specified output pin load capacitance -- assuming default load capacitance of 0 pF for timing analysis
+    Info (306007): Pin "Camera_EXTCLK" has no specified output pin load capacitance -- assuming default load capacitance of 0 pF for timing analysis
+    Info (306007): Pin "FPGA_SPI_Clock" has no specified output pin load capacitance -- assuming default load capacitance of 0 pF for timing analysis
+    Info (306007): Pin "FPGA_SPI_MOSI" has no specified output pin load capacitance -- assuming default load capacitance of 0 pF for timing analysis
+    Info (306007): Pin "FPGA_I2C_Clock" has no specified output pin load capacitance -- assuming default load capacitance of 0 pF for timing analysis
+    Info (306007): Pin "Gyro_ChipSelect" has no specified output pin load capacitance -- assuming default load capacitance of 0 pF for timing analysis
+    Info (306007): Pin "SRAM_ChipSelect" has no specified output pin load capacitance -- assuming default load capacitance of 0 pF for timing analysis
+    Info (306007): Pin "SRAM_WriteProtect" has no specified output pin load capacitance -- assuming default load capacitance of 0 pF for timing analysis
+    Info (306007): Pin "Accel_SelAddr0" has no specified output pin load capacitance -- assuming default load capacitance of 0 pF for timing analysis
+Info (306005): Delay annotation completed successfully
+Warning (169064): Following 2 pins have no output enable or a GND or VCC output enable - later changes to this connectivity may change fitting results
+    Info (169065): Pin Camera_SDA has a permanently disabled output enable
+    Info (169065): Pin FPGA_I2C_Data has a permanently disabled output enable
+Info: Quartus II 32-bit Fitter was successful. 0 errors, 5 warnings
+    Info: Peak virtual memory: 365 megabytes
+    Info: Processing ended: Wed Apr 25 18:27:01 2012
+    Info: Elapsed time: 00:00:32
+    Info: Total CPU time (on all processors): 00:00:31
 
 

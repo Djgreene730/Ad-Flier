@@ -178,13 +178,47 @@ int updateSensors() {
     currentAngle.Y.Value -= offsetAngle.Y.Value;
     currentAngle.Z.Value -= offsetAngle.Z.Value;
 
+
+    // Collect Information From FPGA
+    UINT8 P1 = getFPGAData(0x08);
+    UINT8 P2 = getFPGAData(0x09);
+    UINT8 P3 = getFPGAData(0x0A);
+    UINT8 P4 = getFPGAData(0x0B);
+    UINT8 EX = getFPGAData(0x0C);
+    UINT8 EY = getFPGAData(0x0D);
+    UINT8 EZ = getFPGAData(0x0E);
+    UINT8 EA = getFPGAData(0x0F);
+    UINT8 AM = getFPGAData(0x10);
+
+    INT8 newEX, newEY, newEZ, newEA;
+
+    if ((EX & 0x80) == 0x80)
+        newEX = 0 - (INT8)((EX & 0x7F));
+    else
+        newEX = (INT8)(EX);
+
+    if ((EY & 0x80) == 0x80)
+        newEY = 0 - (INT8)((EY & 0x7F));
+    else
+        newEY = (INT8)(EX);
+
+    if ((EZ & 0x80) == 0x80)
+        newEZ = 0 - (INT8)((EZ & 0x7F));
+    else
+        newEZ = (INT8)(EX);
+
+    if ((EA & 0x80) == 0x80)
+        newEA = 0 - (INT8)((EA & 0x7F));
+    else
+        newEA = (INT8)(EX);
+
+
     // Determine Total Time
     totalTime = stopTimeCounter2();
 
     // Output to Screen
     if (SEND_TO_XBEE == TRUE) {
         UINT8 buf[1024];
-
 
         // Format Gyroscope Data
         buf[0] = 'Y';
@@ -230,8 +264,28 @@ int updateSensors() {
         buf[27] = currentAngle.Z.bytes.B0;
         buf[28] = totalTime;
 
+        // Send Pulse Width Modulation Values
+        buf[29] = 'Q';
+        buf[30] = P1;
+        buf[31] = P2;
+        buf[32] = P3;
+        buf[33] = P4;
+
+        // Send Current Errors
+        buf[34] = 'E';
+        buf[35] = EX;
+        buf[36] = EY;
+        buf[37] = EZ;
+        buf[38] = EA;
+
+        // Send Current Altitudes
+        buf[39] = 'L';
+        buf[40] = AM;
+        buf[41] = '0';
+
+
         // Transmit Sensor Data
-        putsXBee(buf, 29);
+        putsXBee(buf, 42);
     }
 
     // Dump Angles to FPGA

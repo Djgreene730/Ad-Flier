@@ -156,7 +156,8 @@ int main(int argc, char** argv) {
             RtccSetTimeDate(currentTime.UValue, 0);
         }
  */
-            // Perform Magnetometer Calculations
+  /*
+        // Perform Magnetometer Calculations
             float tempMX = (float) compassCurrent.Signed.X;
             tempMX *= magGain[1] / 1000;
 
@@ -171,6 +172,7 @@ int main(int argc, char** argv) {
             tempMX /= totalM;
             tempMY /= totalM;
             tempMZ /= totalM;
+*/
 
             // Convert to Degrees
             //tempMX = acosf(tempMX) * degrees_per_radian;
@@ -178,7 +180,11 @@ int main(int argc, char** argv) {
             //tempMZ = acosf(tempMZ) * degrees_per_radian;
 
             // Match Current Angle with Calculated
-            sprintf(buf, "%04d X(%+07.2f, %5.3f) Y(%+07.2f, %5.3f) Z(%+07.2f, %5.3f) %02dmS %02dC \r\n", outputs, angleCurrent.X.Value, tempMX, angleCurrent.Y.Value, tempMY, angleCurrent.Z.Value, tempMZ, angleCurrent.T, gyroCurrent.TU);
+            //sprintf(buf, "%04d X(%+07.2f, %5.3f) Y(%+07.2f, %5.3f) Z(%+07.2f, %5.3f) %02dmS %02dC \r\n", outputs, angleCurrent.X.Value, tempMX, angleCurrent.Y.Value, tempMY, angleCurrent.Z.Value, tempMZ, angleCurrent.T, gyroCurrent.TU);
+
+
+            
+            sprintf(buf, "%04d X(%+07.2f, %4d)\tY(%+07.2f, %4d)\tZ(%+07.2f, %4d)\tA(%3d, %4d)\tPWM(%3d, %3d, %3d, %3d) \r\n", outputs, angleCurrent.X.Value, errorReading[0], angleCurrent.Y.Value, errorReading[1], angleCurrent.Z.Value, errorReading[2], altitudeReading[0], errorReading[3], pwmReading[0], pwmReading[1], pwmReading[2], pwmReading[3]);
             outputs++;
 
             // Working, Shows Gyroscope Calculated Angles!
