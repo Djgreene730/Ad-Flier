@@ -1,5 +1,5 @@
 --lpm_add_sub CARRY_CHAIN="MANUAL" CARRY_CHAIN_LENGTH=48 DEVICE_FAMILY="Cyclone II" LPM_DIRECTION="SUB" LPM_WIDTH=2 cout dataa datab result
---VERSION_BEGIN 11.1SP1 cbx_cycloneii 2011:11:23:21:09:51:SJ cbx_lpm_add_sub 2011:11:23:21:09:51:SJ cbx_mgl 2011:11:23:21:11:22:SJ cbx_stratix 2011:11:23:21:09:51:SJ cbx_stratixii 2011:11:23:21:09:51:SJ  VERSION_END
+--VERSION_BEGIN 11.0 cbx_cycloneii 2011:04:27:21:07:09:SJ cbx_lpm_add_sub 2011:04:27:21:07:09:SJ cbx_mgl 2011:04:27:21:08:59:SJ cbx_stratix 2011:04:27:21:07:09:SJ cbx_stratixii 2011:04:27:21:07:09:SJ  VERSION_END
 
 
 -- Copyright (C) 1991-2011 Altera Corporation

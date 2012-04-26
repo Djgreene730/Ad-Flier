@@ -6,7 +6,6 @@
 
 LIBRARY IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
-use IEEE.STD_LOGIC_ARITH.ALL;
 use IEEE.NUMERIC_STD.ALL;
 use IEEE.STD_LOGIC_UNSIGNED.ALL;
 
@@ -236,8 +235,8 @@ begin
 	
 	--PID Instations
 	U_Yaw                   : pid_yaw_controller port map (clk,Switch_1(0), RegZD, RegZM, EZ, pwm_yaw);
-	U_Pitch                 : pid_pitch_controller port map (clk, Switch_1(0), RegYD, RegYM, EY, pwm_pitch);
-	U_Roll                  : pid_roll_controller port map (clk, Switch_1(0), RegXD, RegXM, EX, pwm_roll);
+	U_Pitch                 : pid_pitch_controller port map (clk, Switch_1(0), RegXD, RegXM, EY, pwm_pitch);
+	U_Roll                  : pid_roll_controller port map (clk, Switch_1(0), RegYD, RegYM, EX, pwm_roll);
 	U_Altitude              : pid_altitude_controller port map (clk, Switch_1(0), RegAD, RegAMA,EA,  pwm_altitude);
 
 	
@@ -269,44 +268,62 @@ begin
 		pwm_w <= "000000000";
 		pwm_a <= "000000000";
 		
-		if RegTR < "00110010" then                               --Top Object Avoidance
-			pwm_a <= pwm_altitude - "000011010"; --10% Reduction
-		elsif RegTR > "00110010" or RegTR = "00110010" then
-			pwm_a <= pwm_altitude;
-		end if;
+--		if RegTR < "00110010" then                               --Top Object Avoidance 50cm
+--			pwm_a <= pwm_altitude - "000011010";                  --10% Reduction
+--		elsif RegTR > "00110010" or RegTR = "00110010" then
+--			pwm_a <= pwm_altitude;
+--		end if;
 
-		if pwm_pitch(8) = '0' then
-			if pwm_a > pwm_pitch then
-				pwm_n <= pwm_a + pwm_pitch(7 downto 0);
-			else 
-				pwm_n <= "000000000";
-			end if;
-			pwm_s <= pwm_a - pwm_pitch(7 downto 0);
+		if pwm_pitch(8) = '1' then
+			pwm_n <= '0' & pwm_pitch(7 downto 0);
+			pwm_s <= pwm_a;
 		else
-			pwm_n <= pwm_a - pwm_pitch(7 downto 0);
-			if pwm_a > pwm_pitch then
-				pwm_s <= pwm_a + pwm_pitch(7 downto 0);
-			else
-				pwm_s <= "000000000";
-			end if;
+			pwm_n <= pwm_a;
+			pwm_s <= '0' & pwm_pitch(7 downto 0);
 		end if;
 		
 		if pwm_roll(8) = '0' then
-			if pwm_a > pwm_pitch then
-				pwm_e <= pwm_a + pwm_pitch(7 downto 0);
-			else 
-				pwm_e <= "000000000";
-			end if;
-			pwm_w <= pwm_a - pwm_pitch(7 downto 0);
+			pwm_e <= '0' & pwm_roll(7 downto 0);
+			pwm_w <= pwm_a;
 		else
-			pwm_e <= pwm_a - pwm_pitch(7 downto 0);
-			if pwm_a > pwm_pitch then
-				pwm_w <= pwm_a + pwm_pitch(7 downto 0);
-			else
-				pwm_w <= "000000000";
-			end if;
+			pwm_e <= pwm_a;
+			pwm_w <= '0' & pwm_roll(7 downto 0);
 		end if;
 	end process;
+	
+process(pwm_n, pwm_e, pwm_s, pwm_w, Switch_1)
+begin
+if Switch_1(0) = '1' then
+	if Switch_1(3) = '0' then                  --NORTH
+		pwm1 <= "00000000";
+	else
+		pwm1 <= pwm_n(7 downto 0) + "00110010";
+	end if;
+		
+	if Switch_1(2) = '0' then                  --EAST
+		pwm2 <= "00000000";
+	else
+		pwm2 <= pwm_e(7 downto 0) + "00110010";
+	end if;
+	 
+	if Switch_1(1) = '0' then                 --SOUTH
+		pwm3 <= "00000000";
+	else
+		pwm3 <= pwm_s(7 downto 0) + "00001101";
+	end if;
+		
+	if Switch_1(0) = '0' then                 --WEST
+		pwm4 <= "00000000";
+	else
+		pwm4 <= pwm_w(7 downto 0) + "00001101";
+	end if;
+else 
+	pwm1 <= "00000000";
+	pwm2 <= "00000000";
+	pwm3 <= "00000000";
+	pwm4 <= "00000000";
+end if;
+end process;
 		
 	-- Test 1:
 	-- A.) Set TLED_Orange_1 on reset	
@@ -347,59 +364,17 @@ begin
 		end if;
 	end process;
 	
-	--Test 3:
-	--A.) Run Motors
-	process(pwm_n, pwm_e, pwm_s, pwm_w, Switch_1)
-	begin
-	if Switch_1(3) = '0' then
-		pwm1 <= "00000000";
-	else
-		if pwm_n(8) = '1' then                       --North
-			pwm1 <= "11111111";
-		else
-			pwm1 <= (pwm_n(7 downto 0)) + "00010111";
-		end if;
-	end if;
-		
-	if Switch_1(2) = '0' then
-		pwm2 <= "00000000";
-	else
-		if pwm_e(8) = '1' then                       --East
-			pwm2 <= "11111111";
-		else
-			pwm2 <= (pwm_e(7 downto 0))+ "00010110";  
-		end if;
-	end if;
 	
-	if Switch_1(1) = '0' then
-		pwm3 <= "00000000";
-	else
-		if pwm_s(8) = '1' then                       --South
-			pwm3 <= "11111111";
-		else
-			pwm3 <= (pwm_s(7 downto 0)) + "00101000"; 
-		end if;
-	end if;
-		
-	if Switch_1(0) = '0' then
-		pwm4 <= "00000000";
-	else
-		if pwm_w(8) = '1' then                       --West
-			pwm4 <= "11111111";
-		else
-			pwm4 <= (pwm_w(7 downto 0)) + "01111000";
-		end if;
-	end if;
-	end process;
-
+--Test 3:
+--A.) Run Motors and Calculate Offsets
 --process(Switch_1(0))
 --begin
 --
 --if Switch_1(0) = '1' then
---	pwm1 <= "00110111";
---	pwm2 <= "00110110";
---	pwm3 <= "00110000";
---	pwm4 <= "00111001";	
+--	pwm1 <= "00110010";
+--	pwm2 <= "00110010";
+--	pwm3 <= "00001101";
+--	pwm4 <= "00001101";	
 --else
 --	pwm1 <= "00000000";
 --	pwm2 <= "00000000";

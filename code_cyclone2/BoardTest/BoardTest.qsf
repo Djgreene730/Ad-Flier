@@ -41,7 +41,7 @@ set_global_assignment -name DEVICE EP2C8T144C8
 set_global_assignment -name TOP_LEVEL_ENTITY BoardTest
 set_global_assignment -name ORIGINAL_QUARTUS_VERSION "11.1 SP1"
 set_global_assignment -name PROJECT_CREATION_TIME_DATE "01:56:08  APRIL 09, 2012"
-set_global_assignment -name LAST_QUARTUS_VERSION "11.1 SP1"
+set_global_assignment -name LAST_QUARTUS_VERSION 11.0
 set_global_assignment -name MIN_CORE_JUNCTION_TEMP 0
 set_global_assignment -name MAX_CORE_JUNCTION_TEMP 85
 set_global_assignment -name ERROR_CHECK_FREQUENCY_DIVISOR 1
@@ -142,11 +142,6 @@ set_instance_assignment -name IO_STANDARD "2.5 V" -to Camera_SDA
 set_instance_assignment -name IO_STANDARD "2.5 V" -to Camera_VD
 set_global_assignment -name STRATIX_CONFIGURATION_DEVICE EPCS16
 set_global_assignment -name RESERVE_ALL_UNUSED_PINS_NO_OUTPUT_GND "AS INPUT TRI-STATED"
-set_global_assignment -name LL_ROOT_REGION ON -section_id "Root Region"
-set_global_assignment -name LL_MEMBER_STATE LOCKED -section_id "Root Region"
-set_global_assignment -name PARTITION_NETLIST_TYPE SOURCE -section_id Top
-set_global_assignment -name PARTITION_FITTER_PRESERVATION_LEVEL PLACEMENT_AND_ROUTING -section_id Top
-set_global_assignment -name PARTITION_COLOR 16764057 -section_id Top
 set_global_assignment -name QIP_FILE Divider.qip
 set_global_assignment -name VHDL_FILE Divider.vhd
 set_global_assignment -name VHDL_FILE clk_div.vhd
@@ -164,4 +159,9 @@ set_global_assignment -name VHDL_FILE pid_roll_controller.vhd
 set_global_assignment -name VHDL_FILE pid_altitude_controller.vhd
 set_global_assignment -name POWER_PRESET_COOLING_SOLUTION "23 MM HEAT SINK WITH 200 LFPM AIRFLOW"
 set_global_assignment -name POWER_BOARD_THERMAL_MODEL "NONE (CONSERVATIVE)"
+set_global_assignment -name LL_ROOT_REGION ON -section_id "Root Region"
+set_global_assignment -name LL_MEMBER_STATE LOCKED -section_id "Root Region"
+set_global_assignment -name PARTITION_NETLIST_TYPE SOURCE -section_id Top
+set_global_assignment -name PARTITION_FITTER_PRESERVATION_LEVEL PLACEMENT_AND_ROUTING -section_id Top
+set_global_assignment -name PARTITION_COLOR 16764057 -section_id Top
 set_instance_assignment -name PARTITION_HIERARCHY root_partition -to | -section_id Top

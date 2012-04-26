@@ -3,8 +3,5 @@
 	<PROJECT NAME="BoardTest">
 		<CBX_INST_ENTRY INSTANCE_NAME="|BoardTest|rangefinder:U_Ranger_Botom|Divider:Div|lpm_divide:LPM_DIVIDE_component" CBX_FILE_NAME="lpm_divide_gup.tdf"/>
 		<CBX_INST_ENTRY INSTANCE_NAME="|BoardTest|rangefinder:U_Ranger_Top|Divider:Div|lpm_divide:LPM_DIVIDE_component" CBX_FILE_NAME="lpm_divide_gup.tdf"/>
-		<CBX_INST_ENTRY INSTANCE_NAME="|BoardTest|pid_altitude_controller:U_Altitude|lpm_divide:Div0" CBX_FILE_NAME="lpm_divide_7so.tdf"/>
-		<CBX_INST_ENTRY INSTANCE_NAME="|BoardTest|pid_pitch_controller:U_Pitch|lpm_divide:Div0" CBX_FILE_NAME="lpm_divide_7so.tdf"/>
-		<CBX_INST_ENTRY INSTANCE_NAME="|BoardTest|pid_roll_controller:U_Roll|lpm_divide:Div0" CBX_FILE_NAME="lpm_divide_7so.tdf"/>
 	</PROJECT>
 </LOG_ROOT>
