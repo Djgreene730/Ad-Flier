@@ -194,7 +194,7 @@ architecture STR of BoardTest is
 	
 	-- Signals
 	signal clk_1Hz			:	std_logic := '0';
-	signal pwm1, pwm2, pwm3, pwm4, count, countpwm : std_logic_vector(7 downto 0) := "00000000";
+	signal pwm1, pwm2, pwm3, pwm4, pwm1n, pwm2n, pwm3n, pwm4n, count, countpwm : std_logic_vector(7 downto 0) := "00000000";
 	signal RegXD, RegYD, RegZD, RegXM, RegYM, RegZM, RegAD, RegMisc : std_logic_vector(7 downto 0) := "00000000";
 	signal RegAM, RegAMc, RegTR, RegTRc, RegAMA : std_logic_vector(7 downto 0) := "00000000";
 	signal EX, EY, EZ, EA : std_logic_vector(7 downto 0) := "00000000";
@@ -237,7 +237,7 @@ begin
 	U_Yaw                   : pid_yaw_controller port map (clk,Switch_1(0), RegZD, RegZM, EZ, pwm_yaw);
 	U_Pitch                 : pid_pitch_controller port map (clk, Switch_1(0), RegXD, RegXM, EY, pwm_pitch);
 	U_Roll                  : pid_roll_controller port map (clk, Switch_1(0), RegYD, RegYM, EX, pwm_roll);
-	U_Altitude              : pid_altitude_controller port map (clk, Switch_1(0), RegAD, RegAMA,EA,  pwm_altitude);
+	U_Altitude              : pid_altitude_controller port map (clk, Switch_1(0), "00001010", RegAMA,EA,  pwm_altitude);
 
 	
 	-- Setup: Bi-Directional Ports to High Impedance
@@ -273,21 +273,22 @@ begin
 --		elsif RegTR > "00110010" or RegTR = "00110010" then
 --			pwm_a <= pwm_altitude;
 --		end if;
+		pwm_a <= pwm_altitude;
 
-		if pwm_pitch(8) = '1' then
-			pwm_n <= '0' & pwm_pitch(7 downto 0);
+		if pwm_pitch(8) = '0' then
+			pwm_n <= pwm_a + ('0' & pwm_pitch(7 downto 0));
 			pwm_s <= pwm_a;
 		else
 			pwm_n <= pwm_a;
-			pwm_s <= '0' & pwm_pitch(7 downto 0);
+			pwm_s <= pwm_a + ('0' & pwm_pitch(7 downto 0));
 		end if;
 		
-		if pwm_roll(8) = '0' then
-			pwm_e <= '0' & pwm_roll(7 downto 0);
+		if pwm_roll(8) = '1' then
+			pwm_e <= pwm_a + ('0' & pwm_roll(7 downto 0));
 			pwm_w <= pwm_a;
 		else
 			pwm_e <= pwm_a;
-			pwm_w <= '0' & pwm_roll(7 downto 0);
+			pwm_w <= pwm_a + ('0' & pwm_roll(7 downto 0));
 		end if;
 	end process;
 	
@@ -303,7 +304,7 @@ if Switch_1(0) = '1' then
 	if Switch_1(2) = '0' then                  --EAST
 		pwm2 <= "00000000";
 	else
-		pwm2 <= pwm_e(7 downto 0) + "00110010";
+		pwm2 <=   pwm_e(7 downto 0) + "00110010";
 	end if;
 	 
 	if Switch_1(1) = '0' then                 --SOUTH
@@ -324,6 +325,33 @@ else
 	pwm4 <= "00000000";
 end if;
 end process;
+
+--process(pwm1n, pwm2n, pwm3n, pwm4n)
+--begin
+--	if pwm1n > "01011000" then
+--		pwm1 <= "01011000";
+--	else
+--		pwm1 <= pwm1n;
+--	end if;
+--	
+--	if pwm2n > "01011000" then
+--		pwm2 <= "01011000";
+--	else
+--		pwm2 <= pwm2n;
+--	end if;
+--	
+--	if pwm3n > "01011000" then
+--		pwm3 <= "01011000";
+--	else
+--		pwm3 <= pwm3n;
+--	end if;
+--	
+--	if pwm4n > "01011000" then
+--		pwm4 <= "01011000";
+--	else
+--		pwm4 <= pwm4n;
+--	end if;
+--end process;
 		
 	-- Test 1:
 	-- A.) Set TLED_Orange_1 on reset	

@@ -3027,26 +3027,16 @@ r_w => nextstate.OUTPUTSELECT
 r_w => nextstate.OUTPUTSELECT
 ok_in => nextstate.OUTPUTSELECT
 ok_in => nextstate.OUTPUTSELECT
-ok_in => Selector0.IN5
-ok_in => Selector2.IN6
-ok_in => Selector3.IN3
-ok_in => Selector5.IN3
-ok_in => Selector7.IN4
-ok_in => Selector8.IN3
-ok_in => Selector9.IN3
-ok_in => nextstate.OUTPUTSELECT
-ok_in => nextstate.OUTPUTSELECT
-ok_in => nextstate.OUTPUTSELECT
-ok_in => nextstate.OUTPUTSELECT
-ok_in => nextstate.OUTPUTSELECT
-ok_in => nextstate.OUTPUTSELECT
-ok_in => Selector1.IN2
-ok_in => Selector2.IN1
-ok_in => Selector2.IN2
+ok_in => Selector1.IN3
 ok_in => Selector2.IN3
-ok_in => Selector4.IN1
-ok_in => Selector6.IN1
-ok_in => Selector2.IN4
+ok_in => Selector3.IN3
+ok_in => nextstate.OUTPUTSELECT
+ok_in => nextstate.OUTPUTSELECT
+ok_in => nextstate.OUTPUTSELECT
+ok_in => nextstate.OUTPUTSELECT
+ok_in => nextstate.OUTPUTSELECT
+ok_in => nextstate.OUTPUTSELECT
+ok_in => Selector0.IN1
 
 
 |BoardTest|regmap:U_Registers|addreg:RegAdd

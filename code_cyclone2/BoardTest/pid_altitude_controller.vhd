@@ -26,6 +26,7 @@ signal error, previous_error, previous_error2 : integer range -500 to 500;
 
 signal u, u_old, v : signed(9 downto 0) := "0000000000";                            --Creating integer signal for pwm
 signal P, I, D : integer range -1000 to 1000;                                --Creating P I and D terms
+signal old_pwm : std_logic_vector(8 downto 0) := "000000000";
 
 constant K_p : integer := 5;                                  --Fix values after tuning
 constant K_i : integer := 0;                                  --Creating values for PID
@@ -79,7 +80,7 @@ begin
 		if (u > 0  or u = 0) then                                --PID Output Positive (Increase Negative Axis)
 			pwm <= '1' & std_logic_vector((unsigned(u(7 downto 0))));           --PWM Set to U with 1 Sign Bit
 		elsif (u < 0) then	                                    --PID Output Negative (Increase Positive Axis)
-			pwm <= '0' & std_logic_vector((unsigned(-u(7 downto 0))));          --PID Set to Positive U with 0 Sign Bit
+			pwm <= old_pwm - "000000010";          --PID Set to Positive U with 0 Sign Bit
 		end if;
 	end if;
 	
@@ -92,7 +93,8 @@ begin
 	end if;
 end process;
 
-	pwm_input <= pwm;                                           -- Setting Output to Variable
+	pwm_input <= pwm; 	-- Setting Output to Variable
+	old_pwm <= pwm;
 	
 	process(error)
 	begin

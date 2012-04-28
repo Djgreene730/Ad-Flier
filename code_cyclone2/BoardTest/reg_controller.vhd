@@ -27,7 +27,7 @@ end reg_controller;
 
 architecture behavior of reg_controller is
 
-type statetype is (fetch, ra1, ra2, rd1, rd2, rd3, rd4, wa1, wa2, wd1, wd2);
+type statetype is (fetch, ra1, ra2, rd1, rd2, wa1, wa2, wd1, wd2);
 
 signal state, nextstate : statetype := fetch;
 
@@ -95,6 +95,7 @@ begin
 						nextstate <= ra1;			 	-- READ ADDRESS (ra1)
 					elsif a_d = '0' then
 						nextstate <= rd1;				-- READ DATA (rd1)			
+						ok_out <= '0';
 					end if;
 				elsif r_w = '0' then			
 					if a_d = '1' then
@@ -108,19 +109,6 @@ begin
 		
 		-- Grab the Address
 		when rd1 => 									-- Entered Read Data Command
-			if ok_in = '0' then
-				nextstate <= rd2;
-			else 
-				ok_out <= '1';
-				nextstate <= rd1;
-			end if;
-			
-		when rd2 => 
-			ok_out <= '0';
-			nextstate <= rd3;
-			
-		-- Set the Output
-		when rd3 => 									-- Grab Address and Place on Bus
 			if address = "00000000" then
 				rego00 <= '1';
 			elsif address = "00000001" then
@@ -158,42 +146,67 @@ begin
 			end if;
 			tbo <= '1';
 			outsel <= '1';
+			nextstate <= rd2;
 			
-			--add_rego_en <= '1';
+		when rd2 => 
+			if address = "00000000" then
+				rego00 <= '1';
+			elsif address = "00000001" then
+				rego01 <= '1';
+			elsif address = "00000010" then
+				rego02 <= '1';
+			elsif address = "00000011" then
+				rego03 <= '1';
+			elsif address = "00000100" then
+				rego04 <= '1';
+			elsif address = "00000101" then
+				rego05 <= '1';
+			elsif address = "00000110" then
+				rego06 <= '1';
+			elsif address = "00000111" then
+				rego07 <= '1';
+			elsif address = "00001000" then
+				rego08 <= '1';
+			elsif address = "00001001" then
+				rego09 <= '1';
+			elsif address = "00001010" then
+				rego0A <= '1';
+			elsif address = "00001011" then
+				rego0B <= '1';
+			elsif address = "00001100" then
+				rego0C <= '1';
+			elsif address = "00001101" then
+				rego0D <= '1';
+			elsif address = "00001110" then
+				rego0E <= '1';
+			elsif address = "00001111" then
+				rego0F <= '1';
+			elsif address = "00010000" then
+				rego10 <= '1';
+			end if;
+			tbo <= '1';
+			outsel <= '1';
 			ok_out <= '1';
 			if ok_in = '1' then
-				nextstate <= rd3;
-			else
-				nextstate <= rd2;
-			end if;
-		
-		when rd4 =>
-			tbo <= '0';
-			ok_out <= '0';
-			if (ok_in = '1') then
-				nextstate <= rd3;
+				nextstate <= rd1;
 			else
 				nextstate <= fetch;
 			end if;
-				
-				
-		when ra1 =>  									--Read Address
-			if ok_in = '0' then	
-				nextstate <= ra2;
-			else	
-				nextstate <= ra1;
-			end if;
-			
+							
+		when ra1 =>
+			add_rego_en <= '1';
+			outsel <= '0';
+			tbo <= '1';
+			nextstate <= ra2;
+		
 		when ra2 =>
 			add_rego_en <= '1';
 			outsel <= '0';
 			tbo <= '1';
-			ok_out <= '1';
 			if ok_in = '1' then
-				tbo <= '0';
-				nextstate <= fetch;
+				nextstate <= ra1;
 			else
-				nextstate <= ra2;
+				nextstate <= fetch;
 			end if;
 				
 		when wa1 =>                           --Write Address
@@ -202,17 +215,13 @@ begin
 			nextstate <= wa2;
 			
 		when wa2 =>
-			ok_out <= '1';
 			tbo <= '0';
-			-- Wait for PIC to go Low
+			ok_out <= '1';
 			if (ok_in = '0') then
-				ok_out <= '0';
 				nextstate <= fetch;
 			else
-				nextstate <= wa2;
+				nextstate <= wa1;
 			end if;
-			
-			
 			
 		when wd1 => 									--Write Data
 			if address = "00000000" then
@@ -235,15 +244,13 @@ begin
 			nextstate <= wd2;
 			tbo <= '0';
 		when wd2 =>
-			ok_out <= '1'; 
-			tbo <= '0';
-			-- Wait for PIC to go Low
-			if (ok_in = '0') then
+			ok_out <= '1';
+			if ok_in <= '1' then
+				nextstate <= wd1;
+			else 
 				nextstate <= fetch;
-			else
-				nextstate <= wd2;
 			end if;
-			
+				
 	end case;
 end process;
 

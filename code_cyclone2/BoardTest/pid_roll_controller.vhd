@@ -27,7 +27,7 @@ signal error, previous_error, previous_error2 : integer range -500 to 500;
 signal u, u_old, v : signed(9 downto 0) := "0000000000";                            --Creating integer signal for pwm
 signal P, I, D : integer range -1000 to 1000;                                --Creating P I and D terms
 
-constant K_p : integer := 5;                                  --Fix values after tuning
+constant K_p : integer := 3;                                  --Fix values after tuning
 constant K_i : integer := 0;                                  --Creating values for PID
 constant K_d : integer := 0; 
 
