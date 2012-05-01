@@ -369,23 +369,23 @@ void sendFPGAData(UINT8 address, UINT8 data) {
 
     // - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 
+    // Set Port Direction as Output & Hold Low
+    TRISE = 0x00;
+    PORTE = 0x00;
 
-    // Send FPGA to Fetch State, wait for OK_IN Low
+    // Send FPGA to Fetch State, and wait for Low Flag
     FPGA_RESET_FETCH_STATE();
     while (PORTFbits.RF0 == 1) ;
 
-    // Send Out Data
+    // Send Out Address
     setFPGAParallelPins(data);
     FPGA_A_D = 0;
     FPGA_R_W = 0;
     FPGA_OK_OUT = 1;
-    
+
     // Wait for FPGA to Acknowledge High
     while (PORTFbits.RF0 == 0) ;
     FPGA_OK_OUT = 0;
-    
-    // Wait for FPGA to Ackowledge Low, back to Fetch State
-    while (PORTFbits.RF0 == 1) ;
 }
 
 UINT8 getFPGAData(UINT8 address) {
@@ -414,8 +414,9 @@ UINT8 getFPGAData(UINT8 address) {
     while (PORTFbits.RF0 == 1) ;
 
     // Set Port Direction as Output & Hold Low
-    TRISE = 0x00;
-    PORTE = 0x00;
+    TRISE = 0xFF;
+    TRISEbits.TRISE8 = 0;
+    TRISEbits.TRISE9 = 0;
 
     // Send Out Address
     FPGA_A_D = 0;
@@ -424,20 +425,8 @@ UINT8 getFPGAData(UINT8 address) {
 
     // Wait for FPGA to Acknowledge High, Drop Flag, then Switch to Input
     while (PORTFbits.RF0 == 0) ;
-    FPGA_OK_OUT = 0;
-    TRISE = 0xFF;
-
-    // Wait for FPGA to Ackowledge Low, back to Fetch State
-    while (PORTFbits.RF0 == 1) ;
-
-    // Wait for FPGA to Raise Flag, then grab data
-    while (PORTFbits.RF0 == 0) ;
     UINT tempData;
     tempData = getFPGAParallelPins();
-    FPGA_OK_OUT = 1;
-
-    // Wait for FPGA to go to Fetch State, then drop Flag
-    while (PORTFbits.RF0 == 1) ;
     FPGA_OK_OUT = 0;
 
     // Return the Result

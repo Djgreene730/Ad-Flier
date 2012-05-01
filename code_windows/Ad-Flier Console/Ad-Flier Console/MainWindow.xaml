@@ -1,0 +1,58 @@
+﻿<Window x:Class="MainWindow"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    Title="The Ad-Flier! Console" Height="400" Width="600">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition />
+            <RowDefinition Height="Auto" />
+        </Grid.RowDefinitions>
+        <StatusBar Grid.Row="1" Name="StatusBar1" HorizontalContentAlignment="Stretch" VerticalContentAlignment="Stretch" VerticalAlignment="Stretch" HorizontalAlignment="Stretch">
+            <StatusBarItem HorizontalAlignment="Stretch" HorizontalContentAlignment="Stretch" VerticalAlignment="Stretch" VerticalContentAlignment="Stretch">
+            <Grid HorizontalAlignment="Stretch" VerticalAlignment="Stretch">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition />
+                    <ColumnDefinition />
+                    <ColumnDefinition />
+                    <ColumnDefinition />
+                </Grid.ColumnDefinitions>
+                    <Label Content="BSB Time: 00:00:00" Grid.Column="1" FontSize="9" HorizontalAlignment="Center"/>
+                    <Label Content="FCB Time: 00:00:00" Grid.Column="2" FontSize="9" HorizontalAlignment="Center"/>
+                    <ToggleButton HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Grid.Column="3" Name="userInput_CONNECT2" Content="Disconnected" FontSize="9" Background="LightPink" />
+            </Grid>
+            </StatusBarItem>
+        </StatusBar>
+        <TabControl Grid.Row="0" HorizontalAlignment="Stretch" Name="TabControl1" VerticalAlignment="Stretch">
+            <TabItem Header="Settings" Name="TabItem1">
+                <StackPanel HorizontalAlignment="Stretch" VerticalAlignment="Stretch">
+                    <Label Content="COM Port:" />
+                    <Grid HorizontalAlignment="Stretch" Margin="10,0,10,0">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition />
+                            <ColumnDefinition Width="Auto" />
+                        </Grid.ColumnDefinitions>
+                        <ComboBox Name="userInput_COMPORT" Margin="0,0,10,0"/>
+                        <Button Grid.Column="1" HorizontalAlignment="Right" Content="Refresh" FontSize="9" Name="Button2" />
+                    </Grid>
+                    <Label Content="BAUD Rate:" />
+                    <TextBox Text="57600" Name="userInput_BAUDRATE" Margin="10,0,10,0" />
+                </StackPanel>
+            </TabItem>
+            <TabItem Header="Direct Output" Name="TabItem2">
+                <Grid>
+                    <Grid.RowDefinitions>
+                        <RowDefinition />
+                        <RowDefinition Height="25"/>
+                    </Grid.RowDefinitions>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition />
+                        <ColumnDefinition Width="80" />
+                    </Grid.ColumnDefinitions>
+                    <TextBox Grid.ColumnSpan="2" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Name="IncomingDataBox" AcceptsTab="True" AcceptsReturn="True" IsReadOnly="True" />
+                    <TextBox HorizontalAlignment="Stretch" Name="userInput_TextInput" VerticalAlignment="Stretch" Grid.Row="1" AcceptsTab="True" AcceptsReturn="False" />
+                    <Button Content="Send" HorizontalAlignment="Stretch" Name="Button1" VerticalAlignment="stretch" Grid.Column="1" Grid.Row="1"/>
+                </Grid>
+            </TabItem>
+        </TabControl>
+    </Grid>
+</Window>

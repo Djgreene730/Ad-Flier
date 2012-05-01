@@ -21,14 +21,37 @@ UINT8   numberOfSamples = 0;
 
 // Angle Determination Variables & defines
 #define degrees_per_radian  (180 / M_PI)
+
+// PID Control Variables - X
+#define X_epsilon 0.01      // Smallest Increment
+#define X_dt 0.01           // 100ms loop time
+#define X_MAX 255           // Max Motor Output
+#define X_MIN 0             // Min Motor Output
+#define X_Kp  0.1           // PID Proportional Term
+#define X_Kd  0.01          // PID Derivative Term
+#define X_Ki  0.005         // PID Integral Term
+
+// PID Control Variables - Y
+#define Y_epsilon 0.01      // Smallest Increment
+#define Y_dt 0.01           // 100ms loop time
+#define Y_MAX 255           // Max Motor Output
+#define Y_MIN 0             // Min Motor Output
+#define Y_Kp  0.1           // PID Proportional Term
+#define Y_Kd  0.01          // PID Derivative Term
+#define Y_Ki  0.005         // PID Integral Term
+
+
+
 BOOL firstRun = 0;
-AngleReading currentAngle, lastAngle, offsetAngle;
+AngleReading currentAngle, lastAngle, offsetAngle, desiredAngle;
 int totalTime = 10;
 float angleAccelX, angleAccelY;
 float tempGX, tempGY, tempGZ;
 float tempAX, tempAY, tempAZ;
 float tempMX, tempMY, tempMZ;
 
+
+// Setup initial conditions
 void initializeSensorVariables() {
     // Ellapsed Time in Milliseconds
     totalTime = 10;
@@ -59,8 +82,12 @@ void initializeSensorVariables() {
     offsetAngle.X.Value = 0;
     offsetAngle.Y.Value = 0;
     offsetAngle.Z.Value = 0;
+    desiredAngle.X.Value = 0;
+    desiredAngle.Y.Value = 0;
+    desiredAngle.Z.Value = 0;
 }
 
+// Calibrate the Positional Output - Only on flat surface!
 void calibrateSensors() {
     // Reset all Variables
     initializeSensorVariables();
@@ -118,6 +145,7 @@ void calibrateSensors() {
     offsetAngle.Z.Value /= calibrationSampleCount;
 }
 
+// Get latest values and calculate current orientation
 int updateSensors() {
     // Start Timer
     startTimeCounter2();
@@ -191,22 +219,18 @@ int updateSensors() {
     UINT8 AM = getFPGAData(0x10);
 
     INT8 newEX, newEY, newEZ, newEA;
-
     if ((EX & 0x80) == 0x80)
         newEX = 0 - (INT8)((EX & 0x7F));
     else
         newEX = (INT8)(EX);
-
     if ((EY & 0x80) == 0x80)
         newEY = 0 - (INT8)((EY & 0x7F));
     else
         newEY = (INT8)(EX);
-
     if ((EZ & 0x80) == 0x80)
         newEZ = 0 - (INT8)((EZ & 0x7F));
     else
         newEZ = (INT8)(EX);
-
     if ((EA & 0x80) == 0x80)
         newEA = 0 - (INT8)((EA & 0x7F));
     else
@@ -273,10 +297,10 @@ int updateSensors() {
 
         // Send Current Errors
         buf[34] = 'E';
-        buf[35] = EX;
-        buf[36] = EY;
-        buf[37] = EZ;
-        buf[38] = EA;
+        buf[35] = newEX;
+        buf[36] = newEY;
+        buf[37] = newEZ;
+        buf[38] = newEA;
 
         // Send Current Altitudes
         buf[39] = 'L';
@@ -312,13 +336,6 @@ int updateSensors() {
         sendFPGAData(0x06, 0x00);
     }
 
-    /*
-    UINT8 temp11 = 0, temp12 = 0, temp13 = 0;
-    temp11 = (((UINT8)currentAngle.X.Value) + 0x7F);
-    temp12 = (((UINT8)currentAngle.Y.Value) + 0x7F);
-    temp13 = (((UINT8)currentAngle.Z.Value) + 0x7F);
-    */
-
     // Store Previous Values
     lastAngle.X.UValue = currentAngle.X.UValue;
     lastAngle.Y.UValue = currentAngle.Y.UValue;
@@ -326,3 +343,36 @@ int updateSensors() {
 
     return totalTime;
 }
+
+
+// Run PID Control Loop
+float PIDController_X() {
+    static float integral = 0;
+    float derivative;
+    float output;
+
+    //Caculate P,I,D
+    currentAngle.Error = desiredAngle.X.Value - currentAngle.X.Value;
+
+    //In case of error too small then stop intergration
+    if(abs(currentAngle.Error) > X_epsilon)
+            integral = integral + currentAngle.Error*X_dt;
+
+    derivative = (currentAngle.Error - lastAngle.Error)/X_dt;
+    output = X_Kp*currentAngle.Error + X_Ki*integral + X_Kd*derivative;
+
+    //Saturation Filter
+    if(output > X_MAX)
+        output = X_MAX;
+    else if(output < X_MIN) 
+        output = X_MIN;
+
+    //Update error
+    lastAngle.Error = currentAngle.Error;
+
+    return output;
+}
+
+
+
+

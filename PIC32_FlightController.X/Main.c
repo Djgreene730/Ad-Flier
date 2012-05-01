@@ -46,6 +46,9 @@ int main(int argc, char** argv) {
     // Initialize System Pins
     initializeAllPins();
 
+    // Initialize the Real Time Clock
+    initializeRTCC();
+
     // Initialize Communication Systems
     initializeUART();
     setupGyroscope();
@@ -68,104 +71,8 @@ int main(int argc, char** argv) {
 
     // Loop Infinitely
     while(1) {
-        
-        // Send Current Position
-        /*
-        Delayms(1000);        
-        while (gps_nmea_position.ready == 0);
-        putsXBee(gps_nmea_position.data, gps_nmea_position.size);
-
-        // Send Current Velocity
-        Delayms(1000);        
-        while (gps_nmea_velocity.ready == 0);
-        putsXBee(gps_nmea_velocity.data, gps_nmea_velocity.size);
-        
-
-        // Send Gyroscope Reading to XBee
-        Delayms(100);
-        gyroReading[0] = readGyroscope(WHO_AM_I);
-        putsXBee(gyroReading, 1);
-
-        Delayms(100);
-        gyroReading[0] = readGyroscope(OUT_TEMP);
-        putsXBee(gyroReading, 1);
-         *
-         
-
-
-        // Gyroscope Output to XBee
-        updateGyroscopeReadings();
-        UINT8 bufG[7] = {'G', gyroCurrent.XU, gyroCurrent.XL, gyroCurrent.YU, gyroCurrent.YL, gyroCurrent.ZU, gyroCurrent.ZL};
-        putsXBee(bufG , 7);
-        Delayms(250);
-
-        
-
-        // Test Accelerometer Readings
-        updateAccelerometerReadings();
-        UINT8 bufA[7] = {'A', accelCurrent.XU, accelCurrent.YU, accelCurrent.ZU};
-        putsXBee(bufA , 4);
-        Delayms(250);
-         *
-         */
-
-        
-  /*
-
-        // Variables
-        UINT8 i;
-        int totalTime = 0, tempTime;
-        int avgReadTime, avgWriteTime;
-
-        // Check Write Time
-        for( i = 0; i < 256; i++) {
-            // Start Timer 2
-            startTimeCounter2();
-
-            // Send Data to the FPGA
-            sendFPGAData(0x00, i);
-            Delayms(10);
-
-            // Stop the Timer and add time to total
-            tempTime = stopTimeCounter2();
-            totalTime += tempTime;
-        }
-
-        // Divide by total tests run
-        totalTime = totalTime / 256;
-        avgWriteTime = totalTime;
-        totalTime = 0;
-
-        // Check Write Time
-        for( i = 0; i < 7; i++) {
-            // Start Timer 2
-            startTimeCounter2();
-
-            // Send Data to the FPGA
-            getFPGAData(i);
-            Delayms(10);
-
-            // Stop the Timer and add time to total
-            tempTime = stopTimeCounter2();
-            totalTime += tempTime;
-        }
-
-        // Divide by total tests run
-        totalTime = totalTime / 8;
-        avgReadTime = totalTime;
-
-*/
         // Update Sensors Every 100mS
         Delayms(100 - updateSensors());
-
-       // Delayms(1000);
-        //sendFPGAData(0x07, 0x06);
-        //Delayms(1000);
-        //sendFPGAData(0x07, 0x09);
-        //Delayms(1000);
-        //sendFPGAData(0x07, 0xFF);
-
-
     }
 
     return (EXIT_SUCCESS);

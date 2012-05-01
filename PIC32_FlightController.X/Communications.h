@@ -48,6 +48,7 @@ typedef union {
         DFloat  Y;
         DFloat  Z;
         UINT8   T;
+        float   Error;
     };
 } AngleReading;
 

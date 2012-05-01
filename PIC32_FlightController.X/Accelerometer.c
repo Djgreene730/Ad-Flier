@@ -45,6 +45,9 @@ void setupAccelerometer() {
     // Configure XYZ_DATA_CFG Register
     writeAccelerometer(ACCEL_XYZ_DATA_CFG, 0x00); //2g, HPF Disabled
 
+    // Configure High-Pass Filter
+    writeAccelerometer(ACCEL_HP_FILTER_CUTOFF, 0x00); //2g, HPF Disabled
+
     // Configure Register 1
     writeAccelerometer(ACCEL_CTRL_REG1, (0x05 | (accelUpdateRate << 3))); //100Hz, LowNoise, Full-Read
 

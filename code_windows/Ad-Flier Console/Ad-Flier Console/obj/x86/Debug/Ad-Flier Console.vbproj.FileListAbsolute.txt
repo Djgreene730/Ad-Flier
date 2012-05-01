@@ -1,0 +1,30 @@
+C:\Users\David\AppData\Local\Temporary Projects\Ad-Flier Console\bin\Debug\Ad-Flier Console.exe
+C:\Users\David\AppData\Local\Temporary Projects\Ad-Flier Console\bin\Debug\Ad-Flier Console.pdb
+C:\Users\David\AppData\Local\Temporary Projects\Ad-Flier Console\bin\Debug\Ad-Flier Console.xml
+C:\Users\David\AppData\Local\Temporary Projects\Ad-Flier Console\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\Users\David\AppData\Local\Temporary Projects\Ad-Flier Console\obj\x86\Debug\MainWindow.baml
+C:\Users\David\AppData\Local\Temporary Projects\Ad-Flier Console\obj\x86\Debug\MainWindow.g.vb
+C:\Users\David\AppData\Local\Temporary Projects\Ad-Flier Console\obj\x86\Debug\Application.g.vb
+C:\Users\David\AppData\Local\Temporary Projects\Ad-Flier Console\obj\x86\Debug\Ad-Flier Console_MarkupCompile.cache
+C:\Users\David\AppData\Local\Temporary Projects\Ad-Flier Console\obj\x86\Debug\Ad-Flier Console.g.resources
+C:\Users\David\AppData\Local\Temporary Projects\Ad-Flier Console\obj\x86\Debug\Ad_Flier_Console.Resources.resources
+C:\Users\David\AppData\Local\Temporary Projects\Ad-Flier Console\obj\x86\Debug\GenerateResource.read.1.tlog
+C:\Users\David\AppData\Local\Temporary Projects\Ad-Flier Console\obj\x86\Debug\GenerateResource.write.1.tlog
+C:\Users\David\AppData\Local\Temporary Projects\Ad-Flier Console\obj\x86\Debug\Ad-Flier Console.exe
+C:\Users\David\AppData\Local\Temporary Projects\Ad-Flier Console\obj\x86\Debug\Ad-Flier Console.xml
+C:\Users\David\AppData\Local\Temporary Projects\Ad-Flier Console\obj\x86\Debug\Ad-Flier Console.pdb
+C:\Users\David\documents\visual studio 2010\Projects\Ad-Flier Console\Ad-Flier Console\obj\x86\Debug\Ad-Flier Console.exe
+C:\Users\David\documents\visual studio 2010\Projects\Ad-Flier Console\Ad-Flier Console\obj\x86\Debug\Ad-Flier Console.xml
+C:\Users\David\documents\visual studio 2010\Projects\Ad-Flier Console\Ad-Flier Console\obj\x86\Debug\Ad-Flier Console.pdb
+C:\Users\David\documents\visual studio 2010\Projects\Ad-Flier Console\Ad-Flier Console\bin\Debug\Ad-Flier Console.exe
+C:\Users\David\documents\visual studio 2010\Projects\Ad-Flier Console\Ad-Flier Console\bin\Debug\Ad-Flier Console.pdb
+C:\Users\David\documents\visual studio 2010\Projects\Ad-Flier Console\Ad-Flier Console\bin\Debug\Ad-Flier Console.xml
+C:\Users\David\documents\visual studio 2010\Projects\Ad-Flier Console\Ad-Flier Console\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\Users\David\documents\visual studio 2010\Projects\Ad-Flier Console\Ad-Flier Console\obj\x86\Debug\MainWindow.baml
+C:\Users\David\documents\visual studio 2010\Projects\Ad-Flier Console\Ad-Flier Console\obj\x86\Debug\MainWindow.g.vb
+C:\Users\David\documents\visual studio 2010\Projects\Ad-Flier Console\Ad-Flier Console\obj\x86\Debug\Application.g.vb
+C:\Users\David\documents\visual studio 2010\Projects\Ad-Flier Console\Ad-Flier Console\obj\x86\Debug\Ad-Flier Console_MarkupCompile.cache
+C:\Users\David\documents\visual studio 2010\Projects\Ad-Flier Console\Ad-Flier Console\obj\x86\Debug\Ad-Flier Console.g.resources
+C:\Users\David\documents\visual studio 2010\Projects\Ad-Flier Console\Ad-Flier Console\obj\x86\Debug\Ad_Flier_Console.Resources.resources
+C:\Users\David\documents\visual studio 2010\Projects\Ad-Flier Console\Ad-Flier Console\obj\x86\Debug\GenerateResource.read.1.tlog
+C:\Users\David\documents\visual studio 2010\Projects\Ad-Flier Console\Ad-Flier Console\obj\x86\Debug\GenerateResource.write.1.tlog
